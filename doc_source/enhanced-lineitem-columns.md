@@ -8,15 +8,15 @@ The ID of the account that used this line item\. For organizations, this can be 
 ** lineItem/LineItemType**  
 The type of charge covered by this line item\. There are seven possible types:  
 
-+ **Credits** \- Any credits that AWS applied to your bill\. Check the **Description** column for details\.
++ **Credit** \- Any credits that AWS applied to your bill\. Check the **Description** column for details\.
 
-+ **Discounted Usage** \- The rate for any instances for which you had RI benefits\.
++ **DiscountedUsage** \- The rate for any instances for which you had RI benefits\.
 
 + **Fee** \- Any upfront annual fee that you paid for subscriptions\. For example, the upfront fee that you paid for an **All Upfront RI** or a **Partial Upfront RI**\.
 
 + **Refund** \- Negative charges for which AWS refunded money to you\. Check the **Description** column for details\.
 
-+ **RI Fee** \- The monthly recurring fee for subscriptions\. For example, the recurring fee for **Partial Upfront RI**s and **No Upfront RI**s that you pay every month\.
++ **RIFee** \- The monthly recurring fee for subscriptions\. For example, the recurring fee for **Partial Upfront RI**s and **No Upfront RI**s that you pay every month\.
 
 + **Tax** \- Any taxes that AWS applied to your bill\. For example, VAT, US Sales Tax, and so on\.
 

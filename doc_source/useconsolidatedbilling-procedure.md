@@ -1,8 +1,8 @@
 # Consolidated Billing Process<a name="useconsolidatedbilling-procedure"></a>
 
-AWS Organizations provides consolidated billing so that you can track the combined costs of all the member accounts in your organization\. The following steps provide an overview of the process for creating an organization and viewing your consolidated bill\.
+AWS Organizations provides consolidated billing so that you can track the combined costs of all the member accounts in your organization\. The following steps provide an overview of the process for creating an organization and viewing your consolidated bill:
 
-1. Open the AWS Organizations console or the AWS Billing and Cost Management console\. If you open the AWS Billing and Cost Management console, select **Consolidated Billing** and then choose **Get started**\. You will be redirected to the AWS Organizations console\.
+1. Open the [AWS Organizations console](https://console.aws.amazon.com/organizations/) or the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing/)\. If you open the AWS Billing and Cost Management console, choose **Consolidated Billing**, and then choose **Get started**\. You are redirected to the AWS Organizations console\.
 
 1. Choose **Create organization** on the AWS Organizations console\.
 
@@ -16,7 +16,7 @@ AWS Organizations provides consolidated billing so that you can track the combin
 
 ![\[Consolidated bill for an organization's master account\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/images/BillingBitsOfOrganizations.png)
 
-The master account is billed for all charges of the member accounts\. However, unless the organization is changed to support all features in the organization \(not consolidated billing features only\) and member accounts are explicitly restricted by policies, each member account is otherwise completely independent from the other member accounts\. For example, the owner of a member account can sign up for AWS services, access resources, and use AWS Premium Support unless the master account restricts those actions\. Each account owner continues to use their own IAM user name and password, with account permissions assigned independently of other accounts in the organization\.
+The master account is billed for all charges of the member accounts\. However, unless the organization is changed to support all features in the organization \(not consolidated billing features only\) and member accounts are explicitly restricted by policies, each member account is otherwise independent from the other member accounts\. For example, the owner of a member account can sign up for AWS services, access resources, and use AWS Premium Support unless the master account restricts those actions\. Each account owner continues to use their own IAM user name and password, with account permissions assigned independently of other accounts in the organization\.
 
-**Securing the Consolidated Billing Payer's Account**  
+**Securing the Consolidated Billing Master Account**  
 The owner of the master account in an organization should secure the account by using [AWS Multi\-Factor Authentication](https://aws.amazon.com/mfa/) and a strong password that has a minimum of eight characters with both uppercase and lowercase letters, at least one digit, and at least one special character\. You can change your password on the [AWS Security Credentials](https://aws.amazon.com/security-credentials) page\.

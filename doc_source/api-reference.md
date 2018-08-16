@@ -4,6 +4,6 @@ This section contains the Billing and Cost Management API Reference documentatio
 
 If you are using a language for which an AWS SDK exists, use the SDK rather than trying to work your way through the APIs\. The SDKs make authentication simpler, integrate easily with your development environment, and provide easy access to Billing and Cost Management commands\. For more information about the AWS SDKs, including how to set up your environment, links to the SDK documentation, and sample code, see [Tools for Amazon Web Services, Inc\.](https://aws.amazon.com/tools)
 
-
+**Topics**
 + [Actions](operations.md)
 + [Data Types](data-types.md)

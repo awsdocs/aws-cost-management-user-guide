@@ -1,4 +1,4 @@
-# Region Reserved Instances<a name="region-reserved-instances"></a>
+# Region Reserved Instance Line Items<a name="region-reserved-instances"></a>
 
 Amazon EC2 Reserved Instances \(RIs\) that apply to a region provide Availability Zone flexibility and instance size flexibility\. RIs that provide Availability Zone flexibility provide a discount on usage in any Availability Zone in the region\. RIs that provide instance size flexibility provide a discount on usage, regardless of instance size within that family\. To understand how instance size flexibility provided by your RI is applied to your usage, refer to the **lineItem/NormalizationFactor** and **lineItem/NormalizedUsageAmount** columns\.
 

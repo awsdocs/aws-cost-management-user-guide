@@ -3,12 +3,12 @@
 You can use the pricing columns to find information about the prices for a line item\. The columns include but are not limited to the following:
 
 ** pricing/LeaseContractLength**  
-The length of time that your Reserved Instance \(RI\) is reserved for\.
+The length of time that your RI is reserved for\.
 
-** pricing/PublicOnDemandCost**  
+** pricing/publicOnDemandCost**  
 The total cost for the line item based on public On\-Demand Instance rates\.
 
-** pricing/PublicOnDemandRate**  
+** pricing/publicOnDemandRate**  
 The public On\-Demand Instance rate in this billing period for the specific line item of usage\.
 
 ** pricing/PurchaseOption**  

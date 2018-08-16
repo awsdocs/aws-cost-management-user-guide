@@ -2,24 +2,16 @@
 
 The following table describes the current limits within Billing and Cost Management\.
 
-
-+ [Accounts](#limits-accounts)
+**Topics**
 + [Budgets](#limits-budgets)
 + [Reports](#limits-reports)
-
-## Accounts<a name="limits-accounts"></a>
-
-
-|  |  | 
-| --- |--- |
-|  Number of consolidated accounts linked to a paying account  |  20  | 
 
 ## Budgets<a name="limits-budgets"></a>
 
 
 |  |  | 
 | --- |--- |
-| Number of free budgets | 2 | 
+| Number of free budgets per account | 2 | 
 | Total number of budgets per master account | 20,000 | 
 | Characters allowed in a budget name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
 
@@ -28,4 +20,4 @@ The following table describes the current limits within Billing and Cost Managem
 
 |  |  | 
 | --- |--- |
-| Number of AWS Cost and Usage reports | 4 | 
+| Number of AWS Cost and Usage reports | 5 | 

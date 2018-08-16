@@ -4,7 +4,7 @@ Cost Explorer provides preconfigured views that are designed to give you at\-a\-
 
 The preconfigured views display charts based on fixed filter settings\. They provide quick access to information that is most commonly useful to an organization\. All the preconfigured views display a chart\. Under the chart, the page shows a *data table* that displays the cost figures that were used to create the chart\. You can also download a CSV report that contains the line items that are used to generate the views\.
 
-Preconfigured views are available for monthly and daily time ranges\. If you use the consolidated billing feature, you have the option to view member accounts in a monthly time\-range format\. You access the preconfigured reports by using the **Reports** drop\-down in the Billing and Cost Management console\. 
+Preconfigured views are available for monthly and daily time ranges\. If you use the consolidated billing feature, you have the option to view member accounts in a monthly time\-range format\. You access the preconfigured reports by using the **Reports** drop down in the Billing and Cost Management console\. 
 
 For more information about how the chart displays services and how the data table displays cost figures, see [Reading the Cost Explorer Chart](aboutchart.md) and [Reading the Cost Explorer Data Table](aboutdatatable.md), respectively\. 
 
@@ -16,7 +16,7 @@ For more information about how the chart displays services and how the data tabl
 
 1. On the Cost Explorer page, choose **Launch Cost Explorer**\.
 
-1. For the **Reports** drop\-down list, choose the view that you want\.
+1. For the **Reports** drop down list, choose the view that you want\.
 
 In all the preconfigured views, a data table below the chart displays the actual figures that were used to generate the chart\. 
 

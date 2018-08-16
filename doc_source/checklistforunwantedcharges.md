@@ -5,7 +5,7 @@ Here are some suggestions to help you avoid unexpected charges on your bill\. Th
 **Note**  
 If you close your account or unsubscribe from a service, make sure that you take the appropriate steps for every region in which you've allocated AWS resources\.
 
-
+**Topics**
 + [Usage Exceeds Free Tier](#checkexceedfree)
 + [AWS Free Tier Expired](#checkfreetierexpired)
 + [Bill Received After Account Closure](#checkbillafterclosure)
@@ -25,7 +25,7 @@ If you use the free tier, make sure that your usage does not exceed the limits t
 **Note**  
 Free tier usage alerts are available only to master accounts in an organization\. They are not available for individual member accounts in an organization\. 
 
-For more information about tracking your free tier usage, see [Tracking Your AWS Free Tier Usage](tracking-free-tier-usage.md)\.
+For more information about tracking your free tier usage, see [Tracking Your Free Tier Usage](tracking-free-tier-usage.md)\.
 
 ## AWS Free Tier Expired<a name="checkfreetierexpired"></a>
 

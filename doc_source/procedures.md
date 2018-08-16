@@ -2,7 +2,7 @@
 
 You can use the offer files to find the prices and terms for a specific product\. For example, you can find a list of Amazon EC2 instance prices\.
 
-The following procedures show how to find Amazon EC2 products by downloading an offer file as a CSV or JSON file and sorting the results\.
+The following procedures show how to find Amazon EC2 products by downloading an offer file as a CSV or JSON file and sorting the results\.<a name="csv-procedure"></a>
 
 **To find an EC2 Reserved Instance using the CSV file**
 
@@ -16,9 +16,9 @@ The following procedures show how to find Amazon EC2 products by downloading an 
 
 1. In the **Data** bar, choose **Sort**\.
 
-1. In the **Sort by** dropdown list, choose column **TermType**, and then choose **OK**\.
+1. In the **Sort by** drop down list, choose column **TermType**, and then choose **OK**\.
 
-1. Scroll down until you find the value `reserved` in the **TermType** column\. Products that are marked `reserved` in the **TermType** column have reserved rate pricing\.
+1. Scroll down until you find the value `reserved` in the **TermType** column\. Products that are marked `reserved` in the **TermType** column have reserved rate pricing\.<a name="json-procedure"></a>
 
 **To find an EC2 Reserved Instance using the JSON file**
 
@@ -26,7 +26,7 @@ The following procedures show how to find Amazon EC2 products by downloading an 
 
 1. Open the JSON file with your program of choice\. For this example, we use Notepad\+\+\.
 
-1. Press CRTL\+F\.
+1. Press CTRL\+F\.
 
 1. For **Find what**, type *reserved*\.
 

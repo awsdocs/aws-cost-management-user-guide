@@ -2,12 +2,12 @@
 
 This reference summarizes the default actions that are permitted in Billing and Cost Management for each type of billing user and the billing permissions that you can apply to your IAM users\. The reference also provides examples of policies that you can use to allow or deny an IAM user access to your billing information and tools\.
 
-
+**Topics**
 + [User Types and Billing Permissions](#user-types)
 + [Billing Permissions Descriptions](#user-permissions)
 + [Billing and Cost Management Policy Examples](#billing-example-policies)
 
-For a full discussion of AWS accounts and IAM users, see [What is IAM?](http://docs.aws.amazon.com/IAM/latest/UserGuide//IAM_Introduction.html) in the *IAM User Guide*\.
+For a full discussion of AWS accounts and IAM users, see [What Is IAM?](http://docs.aws.amazon.com/IAM/latest/UserGuide//IAM_Introduction.html) in the *IAM User Guide*\.
 
 ## User Types and Billing Permissions<a name="user-types"></a>
 
@@ -22,7 +22,7 @@ This table summarizes the default actions that are permitted in Billing and Cost
 | Organization member account owner |  The person or entity associated with an AWS Organizations member account\. The master account pays for AWS usage that is incurred by a member account in an organization\.   |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html)  | 
 
 **Note**  
-For more information about organization master and member accounts, see the [ AWS Organizations User Guide](http://docs.aws.amazon.com/organizations/latest/userguide/)\.
+For more information about organization master and member accounts, see the *[AWS Organizations User Guide](http://docs.aws.amazon.com/organizations/latest/userguide/)*\.
 
 ## Billing Permissions Descriptions<a name="user-permissions"></a>
 
@@ -32,88 +32,63 @@ This table summarizes the permissions that you use to allow or deny IAM users ac
 | Permission Name | Description | 
 | --- | --- | 
 |  `ViewBilling`  |  Allow or deny IAM users permission to view the following Billing and Cost Management console pages: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html)  | 
-|  `ModifyBilling`  |  Allow or deny IAM users permission to modify the following Billing and Cost Management console pages: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html) To allow IAM users to modify these console pages, you must allow both `ModifyBilling` and `ViewBilling`\. For an example policy, see Example [Example 6: Allow IAM users to modify billing information](#example-billing-deny-modifybilling)\.  | 
-|  `ViewAccount`  |  Allow or deny IAM users permission to view [Account Settings](https://portal.aws.amazon.com/billing/home#/account)\.  | 
-| ModifyAccount |  Allow or deny IAM users permission to modify [Account Settings](https://portal.aws.amazon.com/billing/home#/account)\. To allow IAM users to modify account settings, you must allow both `ModifyAccount` and `ViewAccount`\. For an example of a policy that explicitly denies an IAM user access to the Account Settings console page, see Example [Example 8: Deny access to Account Settings, but allow full access to all other billing and usage information](#example-billing-deny-modifyaccount)\.   | 
+|  `ModifyBilling`  |  Allow or deny IAM users permission to modify the following Billing and Cost Management console pages: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html) To allow IAM users to modify these console pages, you must allow both `ModifyBilling` and `ViewBilling`\. For an example policy, see [Example 6: Allow IAM users to modify billing information](#example-billing-deny-modifybilling)\.  | 
+|  `ViewAccount`  |  Allow or deny IAM users permission to view the following Billing and Cost Management console pages: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html)  | 
+| ModifyAccount |  Allow or deny IAM users permission to modify [Account Settings](https://portal.aws.amazon.com/billing/home#/account)\. To allow IAM users to modify account settings, you must allow both `ModifyAccount` and `ViewAccount`\. For an example of a policy that explicitly denies an IAM user access to the Account Settings console page, see [Example 8: Deny access to Account Settings, but allow full access to all other billing and usage information](#example-billing-deny-modifyaccount)\.   | 
 | ViewBudget |  Allow or deny IAM users permission to view [Budgets](https://portal.aws.amazon.com/billing/home#/budgets)\. To allow IAM users to view budgets, you must also allow `ViewBilling`\.  | 
 | ModifyBudget |  Allow or deny IAM users permission to modify [Budgets](https://portal.aws.amazon.com/billing/home#/budgets)\. To allow IAM users to view and modify budgets, you must also allow `ViewBilling`\.  | 
 | ViewPaymentMethods |  Allow or deny IAM users permission to view [Payment Methods](https://portal.aws.amazon.com/billing/home#/paymentmethods)\.  | 
 | ModifyPaymentMethods |  Allow or deny IAM users permission to modify [Payment Methods](https://portal.aws.amazon.com/billing/home#/paymentmethods)\. To allow users to modify payment methods, you must allow both `ModifyPaymentMethods` and `ViewPaymentMethods`\.  | 
-|  `DescribeReportDefinition`  |  Allow or deny IAM users permission to view a [Cost and Usage Report](billing-reports-costusage.md) using the API\. For an example policy, see Example [Example 10: Create, view, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
-|  `PutReportDefinitions`  |  Allow or deny IAM users permission to create a [Cost and Usage Report](billing-reports-costusage.md) using the API\. For an example policy, see Example [Example 10: Create, view, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
-|  `DeleteReportDefinition`  |  Allow or deny IAM users permission to delete [Cost and Usage Report](billing-reports-costusage.md) using the API\. For an example policy, see Example [Example 10: Create, view, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
-| ViewUsage |  Allow or deny IAM users permission to view AWS usage [Reports](https://portal.aws.amazon.com/billing/home#/reports)\. To allow IAM users to view usage reports, you must allow both ViewUsage and ViewBilling\. For an example policy, see Example [Example 2: Allow IAM users to access the Reports console page](#example-billing-view-reports)\.   | 
-| DescribeServices |  Allow or deny IAM users permission to view AWS service products and pricing via AWS Price List Service API\. To allow IAM users to use AWS Price List Service API, you must allow `DescribeServices`, `GetAttributeValues`, and `GetProducts`\. For an example policy, see Example [Example 11: Find products and prices](#example-policy-pe-api)\.  | 
-| GetAttributeValues |  Allow or deny IAM users permission to view AWS service products and pricing via AWS Price List Service API\. To allow IAM users to use AWS Price List Service API, you must allow `DescribeServices`, `GetAttributeValues`, and `GetProducts`\. For an example policy, see Example [Example 11: Find products and prices](#example-policy-pe-api)\.  | 
-| GetProducts |  Allow or deny IAM users permission to view AWS service products and pricing via AWS Price List Service API\. To allow IAM users to use AWS Price List Service API, you must allow `DescribeServices`, `GetAttributeValues`, and `GetProducts`\. For an example policy, see Example [Example 11: Find products and prices](#example-policy-pe-api)\.  | 
+|  `DescribeReportDefinition`  |  Allow or deny IAM users permission to view a [AWS Cost and Usage Report](billing-reports-costusage.md) using the API\. For an example policy, see [Example 10: Create, view, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
+|  `PutReportDefinitions`  |  Allow or deny IAM users permission to create a [AWS Cost and Usage Report](billing-reports-costusage.md) using the API\. For an example policy, see [Example 10: Create, view, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
+|  `DeleteReportDefinition`  |  Allow or deny IAM users permission to delete [AWS Cost and Usage Report](billing-reports-costusage.md) using the API\. For an example policy, see [Example 10: Create, view, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
+| ViewUsage |  Allow or deny IAM users permission to view AWS usage [Reports](https://portal.aws.amazon.com/billing/home#/reports)\. To allow IAM users to view usage reports, you must allow both `ViewUsage` and `ViewBilling`\. For an example policy, see [Example 2: Allow IAM users to access the Reports console page](#example-billing-view-reports)\.   | 
+| DescribeServices |  Allow or deny IAM users permission to view AWS service products and pricing via AWS Price List Service API\. To allow IAM users to use AWS Price List Service API, you must allow `DescribeServices`, `GetAttributeValues`, and `GetProducts`\. For an example policy, see [Example 11: Find products and prices](#example-policy-pe-api)\.  | 
+| GetAttributeValues |  Allow or deny IAM users permission to view AWS service products and pricing via AWS Price List Service API\. To allow IAM users to use AWS Price List Service API, you must allow `DescribeServices`, `GetAttributeValues`, and `GetProducts`\. For an example policy, see [Example 11: Find products and prices](#example-policy-pe-api)\.  | 
+| GetProducts |  Allow or deny IAM users permission to view AWS service products and pricing via AWS Price List Service API\. To allow IAM users to use AWS Price List Service API, you must allow `DescribeServices`, `GetAttributeValues`, and `GetProducts`\. For an example policy, see [Example 11: Find products and prices](#example-policy-pe-api)\.  | 
 
 ## Billing and Cost Management Policy Examples<a name="billing-example-policies"></a>
 
 This topic contains example policies that you can attach to your IAM user or group to control access to your account's billing information and tools\. The following basic rules apply to IAM policies:
-
 + `Version` is always `2012-10-17`\.
-
 + `Effect` is always `Allow` or `Deny`\.
-
 + `Action` indicates access, and it can take a wild card \(`*`\)\. 
 
-  For consoles, the action prefix in China is `awsbillingconsole`\. Everywhere else it is `aws-portal`\.
+  For consoles, the action prefix in China is `awsbillingconsole`\. Everywhere else, it's `aws-portal`\.
 
-  For the API, the action prefix is either `budgets` for budgets, or `cur` for AWS Cost and Usage reports\.
-
+  For the API, the action prefix is either `budgets` for budgets or `cur` for AWS Cost and Usage reports\.
 + `Resource` is always `*` for the console\.
 
   For the budget API, the resource is the ARN of the budget\.
-
 + It's possible to have multiple statements in one policy\.
 
 **Note**  
-These policies require that you activate IAM user access to the AWS Billing and Cost Management console on the [Account Settings](https://portal.aws.amazon.com/billing/home#/account) console page\. For more information about activating IAM user access, see [Activating Access to the Billing and Cost Management Console](grantaccess.md#ControllingAccessWebsite-Activate)\.
+These policies require that you activate IAM user access to the Billing and Cost Management console on the [Account Settings](https://portal.aws.amazon.com/billing/home#/account) console page\. For more information about activating IAM user access, see [Activating Access to the Billing and Cost Management Console](grantaccess.md#ControllingAccessWebsite-Activate)\.
 
 **Example Topics**
-
 + [Example 1: Allow IAM users to view your billing information](#example-billing-view-billing-only)
-
 + [Example 2: Allow IAM users to access the Reports console page](#example-billing-view-reports)
-
 + [Example 3: Deny IAM users access to the Billing and Cost Management console](#example-billing-deny-all)
-
 + [Example 4: Allow full access to AWS services but deny IAM users access to the Billing and Cost Management console](#ExampleAllowAllDenyBilling)
-
 + [Example 5: Allow IAM users to view the Billing and Cost Management console, except Account Settings](#example-billing-read-only)
-
 + [Example 6: Allow IAM users to modify billing information](#example-billing-deny-modifybilling)
-
 + [Example 7: Allow IAM users to create budgets](#example-billing-allow-createbudgets)
-
 + [Example 8: Deny access to Account Settings, but allow full access to all other billing and usage information](#example-billing-deny-modifyaccount)
-
 + [Example 9: Deposit reports into an Amazon S3 bucket](#example-billing-s3-bucket)
-
 + [Example 10: Create, view, or delete an AWS Cost and Usage report](#example-policy-report-definition)
-
 + [Example 11: Find products and prices](#example-policy-pe-api)
-
 + [Example 12: View costs and usage](#example-policy-ce-api)
 
 ### Example 1: Allow IAM users to view your billing information<a name="example-billing-view-billing-only"></a>
 
 To allow an IAM user to view your billing information without giving the IAM user access to sensitive account information, such as your password and account activity reports, use a policy similar to the following example policy\. This policy allows IAM users to view the following Billing and Cost Management console pages, without giving them access to the **Account Settings** or **Reports** console pages:
-
 + **Dashboard**
-
 + **Cost Explorer**
-
 + **Bills**
-
 + **Payment History**
-
 + **Consolidated Billing**
-
 + **Preferences**
-
 + **Credits**
-
 + **Advance Payment**
 
 ```
@@ -131,7 +106,7 @@ To allow an IAM user to view your billing information without giving the IAM use
 
 ### Example 2: Allow IAM users to access the Reports console page<a name="example-billing-view-reports"></a>
 
-To allow an IAM user to access the **Reports** console page and to view the usage reports that contain account activity information, use a policy similar to this example policy:
+To allow an IAM user to access the **Reports** console page and to view the usage reports that contain account activity information, use a policy similar to this example policy\.
 
 ```
 {
@@ -151,7 +126,7 @@ To allow an IAM user to access the **Reports** console page and to view the usag
 
 ### Example 3: Deny IAM users access to the Billing and Cost Management console<a name="example-billing-deny-all"></a>
 
-To explicitly deny an IAM user access to the all Billing and Cost Management console pages, use a policy similar to this example policy:
+To explicitly deny an IAM user access to the all Billing and Cost Management console pages, use a policy similar to this example policy\.
 
 ```
 {
@@ -168,7 +143,7 @@ To explicitly deny an IAM user access to the all Billing and Cost Management con
 
 ### Example 4: Allow full access to AWS services but deny IAM users access to the Billing and Cost Management console<a name="ExampleAllowAllDenyBilling"></a>
 
-To enable full access to all AWS services but deny the IAM user access to everything on the Billing and Cost Management console, use the following policy\. In this case, you should also deny user access to AWS Identity and Access Management \(IAM\), so that the users can't access the policies that control access to billing information and tools:
+To enable full access to all AWS services but deny the IAM user access to everything on the Billing and Cost Management console, use the following policy\. In this case, you should also deny user access to AWS Identity and Access Management \(IAM\) so that the users can't access the policies that control access to billing information and tools\.
 
 ```
 {
@@ -193,7 +168,7 @@ To enable full access to all AWS services but deny the IAM user access to everyt
 
 ### Example 5: Allow IAM users to view the Billing and Cost Management console, except Account Settings<a name="example-billing-read-only"></a>
 
-To protect your account password, contact information, and security questions, you can deny user access to **Account Settings**, while still enabling read\-only access to the rest of the functionality in the Billing and Cost Management console\. Applying this policy to an IAM user enables the user to view all the Billing and Cost Management console pages, including the **Payments Method** and **Reports** console pages, but denies the user access to **Account Settings**:
+To protect your account password, contact information, and security questions, you can deny user access to **Account Settings** while still enabling read\-only access to the rest of the functionality in the Billing and Cost Management console\. Applying this policy to an IAM user allows the user to view all the Billing and Cost Management console pages, including the **Payments Method** and **Reports** console pages, but denies the user access to **Account Settings**\.
 
 ```
 {
@@ -216,15 +191,10 @@ To protect your account password, contact information, and security questions, y
 ### Example 6: Allow IAM users to modify billing information<a name="example-billing-deny-modifybilling"></a>
 
 To allow IAM users to modify account billing information in the Billing and Cost Management console, you must also allow IAM users to view your billing information\. The following policy example allows an IAM user to modify the **Consolidated Billing**, **Preferences**, and **Credits** console pages\. It also allows an IAM user to view the following Billing and Cost Management console pages:
-
 + **Dashboard**
-
 + **Cost Explorer**
-
 + **Bills**
-
 + **Payment History**
-
 + **Advance Payment**
 
 ```
@@ -242,9 +212,9 @@ To allow IAM users to modify account billing information in the Billing and Cost
 
 ### Example 7: Allow IAM users to create budgets<a name="example-billing-allow-createbudgets"></a>
 
-To apply this policy, the user must have IAM permissions to view your Billing console\.
+To apply this policy, the user must have IAM permissions to view your Billing and Cost Management console\.
 
-If you use consolidated billing in an organization, only the master account can create and manage budgets\. Individual member accounts can't create and manage budgets\. You can grant linked accounts read\-only access to your budgets using an IAM policy\. For more information, see [Controlling Access](control-access-billing.md)\.
+If you are in an organization, only the master account can create and manage budgets\. Individual member accounts can't create and manage budgets\. You can grant member accounts read\-only access to your budgets using an IAM policy\. For more information, see [Controlling Access](control-access-billing.md)\.
 
 To allow IAM users to create budgets in the Billing and Cost Management console, you must also allow IAM users to view your billing information, create CloudWatch alarms, and create Amazon SNS notifications\. The following policy example allows an IAM user to modify the **Budget** console page:
 
@@ -291,7 +261,7 @@ To allow IAM users to create budgets in the Billing and Cost Management console,
 
 ### Example 8: Deny access to Account Settings, but allow full access to all other billing and usage information<a name="example-billing-deny-modifyaccount"></a>
 
-To protect your account password, contact information, and security questions, you can deny IAM user access to **Account Settings**, while still enabling full access to the rest of the functionality in the Billing and Cost Management console, as shown in the following example:
+To protect your account password, contact information, and security questions, you can deny IAM user access to **Account Settings** while still enabling full access to the rest of the functionality in the Billing and Cost Management console, as shown in the following example\.
 
 ```
 {
@@ -317,7 +287,7 @@ To protect your account password, contact information, and security questions, y
 
 ### Example 9: Deposit reports into an Amazon S3 bucket<a name="example-billing-s3-bucket"></a>
 
-The following policy allows Billing and Cost Management to save your detailed AWS bills to an Amazon S3 bucket, as long as you own both the AWS account and the Amazon S3 bucket\. Note that this policy must be applied to the Amazon S3 bucket, instead of to an IAM user\. That is, it is a resource\-based policy, not a user\-based policy\. You should deny IAM user access to the bucket for IAM users who do not need access to your bills\.
+The following policy allows Billing and Cost Management to save your detailed AWS bills to an Amazon S3 bucket, as long as you own both the AWS account and the Amazon S3 bucket\. Note that this policy must be applied to the Amazon S3 bucket, instead of to an IAM user\. That is, it's a resource\-based policy, not a user\-based policy\. You should deny IAM user access to the bucket for IAM users who don't need access to your bills\.
 
 Replace *bucketname* with the name of your bucket\.
 
@@ -352,7 +322,7 @@ For more information, see [ Using Bucket Policies and User Policies](http://docs
 
 ### Example 10: Create, view, or delete an AWS Cost and Usage report<a name="example-policy-report-definition"></a>
 
-This policy allows an IAM user to create, view, or delete an AWS Cost and Usage report using the API:
+This policy allows an IAM user to create, view, or delete an AWS Cost and Usage report using the API\.
 
 ```
 {
@@ -375,7 +345,7 @@ This policy allows an IAM user to create, view, or delete an AWS Cost and Usage 
 
 ### Example 11: Find products and prices<a name="example-policy-pe-api"></a>
 
-To allow an IAM user to use the AWS Price List Service API, use the following policy to grant them access: 
+To allow an IAM user to use the AWS Price List Service API, use the following policy to grant them access\.
 
 ```
 {
@@ -398,7 +368,7 @@ To allow an IAM user to use the AWS Price List Service API, use the following po
 
 ### Example 12: View costs and usage<a name="example-policy-ce-api"></a>
 
-To allow IAM users to use the AWS Cost Explorer API, use the following policy to grant them access: 
+To allow IAM users to use the AWS Cost Explorer API, use the following policy to grant them access\.
 
 ```
 {

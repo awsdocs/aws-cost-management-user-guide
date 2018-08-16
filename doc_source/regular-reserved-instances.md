@@ -1,4 +1,4 @@
-# Reserved Instances<a name="regular-reserved-instances"></a>
+# Reserved Instance Line Items<a name="regular-reserved-instances"></a>
 
 Reserved Instances provide you a significant discount compared to On\-Demand Instance pricing\. Reserved Instances are not physical instances\. They are a billing discount applied to the use of On\-Demand Instances in your account\. These On\-Demand Instances must match certain attributes in order to benefit from the billing discount\. 
 

@@ -1,6 +1,6 @@
 # AWS\-Generated Cost Allocation Tags<a name="aws-tags"></a>
 
-The AWS generated tag `createdBy` is a tag that AWS defines and applies to supported AWS resources for cost allocation purposes\. To use the AWS generated tag, a master account owner must activate it in the Billing and Cost Management console\. When a master account owner activates the tag, the tag is also activated for all member accounts\. After the tag is activated, AWS starts applying the tag to resources that are created after the AWS generated tag was activated\.  The AWS generated tag is available only in the Billing and Cost Management console and reports, and doesn't appear anywhere else in the AWS console, including the AWS Tag Editor\. The `createdBy` tag does not count towards your tags per resource limit\.
+The AWS generated tags `createdBy` is a tag that AWS defines and applies to supported AWS resources for cost allocation purposes\. To use the AWS generated tags, a master account owner must activate it in the Billing and Cost Management console\. When a master account owner activates the tag, the tag is also activated for all member accounts\. After the tag is activated, AWS starts applying the tag to resources that are created after the AWS generated tags was activated\.  The AWS generated tags is available only in the Billing and Cost Management console and reports, and doesn't appear anywhere else in the AWS console, including the AWS Tag Editor\. The `createdBy` tag does not count towards your tags per resource limit\.
 
 The `createdBy` tag uses the following key\-value definition:
 
@@ -39,46 +39,49 @@ The `createdBy` tag is applied only to the following services and resources afte
 
 | AWS Product | API or Console Event | Resource Type | 
 | --- | --- | --- | 
-| AWS CloudFormation \(AWS CloudFormation\) | CreateStack | Stack | 
-| AWS Data Pipeline \(AWS Data Pipeline\) | CreatePipeline | Pipeline | 
-| Amazon Elastic Compute Cloud \(Amazon EC2\) | CreateCustomerGateway | Customer gateway | 
-|  | CreateDhcpOptions | DHCP options | 
-|  | CreateImage | Image | 
-|  | CreateInternetGateway | Internet gateway | 
-|  | CreateNetworkAcl | Network ACL | 
-|  | CreateNetworkInterface | Network interface | 
-|  | CreateRouteTable | Route table | 
-|  | CreateSecurityGroup | Security group | 
-|  | CreateSnapshot | Snapshot | 
-|  | CreateSubnet | Subnet | 
-|  | CreateVolume | Volume | 
-|  | CreateVpc | VPC | 
-|  | CreateVpcPeeringConnection | VPC peering connection | 
-|  | CreateVpnConnection | VPN connection | 
-|  | CreateVpnGateway | VPN gateway | 
-|  | PurchaseReservedInstancesOffering | Reserved\-instance | 
-|  | RequestSpotInstances | Spot\-instance\-request | 
-|  | RunInstance | Instance | 
-| Amazon ElastiCache \(ElastiCache\) | CreateSnapshot | Snapshot | 
-|  | CreateCacheCluster | Cluster | 
-| AWS Elastic Beanstalk \(Elastic Beanstalk\) | CreateEnvironment | Environment | 
-|  | CreateApplication | Application | 
-| Elastic Load Balancing \(Elastic Load Balancing\) | CreateLoadBalancer | Loadbalancer | 
-| Amazon Glacier \(Amazon Glacier\) | CreateVault | Vault | 
-| Amazon Kinesis \(Kinesis\) | CreateStream | Stream | 
-| Amazon Relational Database Service \(Amazon RDS\) | CreateDBInstanceReadReplica | Database | 
-|  | CreateDBParameterGroup | ParameterGroup | 
-|  | CreateDBSnapshot | Snapshot | 
-|  | CreateDBSubnetGroup | SubnetGroup | 
-|  | CreateEventSubscription | EventSubscription | 
-|  | CreateOptionGroup | OptionGroup | 
-|  | PurchaseReservedDBInstancesOffering | ReservedDBInstance | 
-|  | CreateDBInstance | Database | 
-| Amazon Redshift \(Amazon Redshift\) | CreateClusterParameterGroup | ParameterGroup | 
-|  | CreateClusterSnapshot | Snapshot | 
-|  | CreateClusterSubnetGroup | SubnetGroup | 
-|  | CreateCluster | Cluster | 
-| Amazon Route 53 \(Amazon Route 53\) | CreateHealthCheck | HealthCheck | 
-|  | CreatedHostedZone | HostedZone | 
-| Amazon Simple Storage Service \(Amazon S3\) | CreateBucket | Bucket | 
-| AWS Storage Gateway \(AWS Storage Gateway\) | ActivateGateway | Gateway | 
+| AWS CloudFormation \(AWS CloudFormation\) |  CreateStack  |  Stack  | 
+| AWS Data Pipeline \(AWS Data Pipeline\) |  CreatePipeline  |  Pipeline  | 
+| Amazon Elastic Compute Cloud \(Amazon EC2\) |  CreateCustomerGateway  |  Customer gateway  | 
+|   |  CreateDhcpOptions  |  DHCP options  | 
+|   |  CreateImage  |  Image  | 
+|   |  CreateInternetGateway  |  Internet gateway  | 
+|   |  CreateNetworkAcl  |  Network ACL  | 
+|   |  CreateNetworkInterface  |  Network interface  | 
+|   |  CreateRouteTable  |  Route table  | 
+|   |  CreateSecurityGroup  |  Security group  | 
+|   |  CreateSnapshot  |  Snapshot  | 
+|   |  CreateSubnet  |  Subnet  | 
+|   |  CreateVolume  |  Volume  | 
+|   |  CreateVpc  |  VPC  | 
+|   |  CreateVpcPeeringConnection  |  VPC peering connection  | 
+|   |  CreateVpnConnection  |  VPN connection  | 
+|   |  CreateVpnGateway  |  VPN gateway  | 
+|   |  PurchaseReservedInstancesOffering  |  Reserved\-instance  | 
+|   |  RequestSpotInstances  |  Spot\-instance\-request  | 
+|   |  RunInstance  |  Instance  | 
+| Amazon ElastiCache \(ElastiCache\) |  CreateSnapshot  |  Snapshot  | 
+|   |  CreateCacheCluster  |  Cluster  | 
+| AWS Elastic Beanstalk \(Elastic Beanstalk\) |  CreateEnvironment  |  Environment  | 
+|   |  CreateApplication  |  Application  | 
+| Elastic Load Balancing \(Elastic Load Balancing\) |  CreateLoadBalancer  |  Loadbalancer  | 
+| Amazon Glacier \(Amazon Glacier\) |  CreateVault  |  Vault  | 
+| Amazon Kinesis \(Kinesis\) |  CreateStream  |  Stream  | 
+| Amazon Relational Database Service \(Amazon RDS\) |  CreateDBInstanceReadReplica  |  Database  | 
+|   |  CreateDBParameterGroup  |  ParameterGroup  | 
+|   |  CreateDBSnapshot  |  Snapshot  | 
+|   |  CreateDBSubnetGroup  |  SubnetGroup  | 
+|   |  CreateEventSubscription  |  EventSubscription  | 
+|   |  CreateOptionGroup  |  OptionGroup  | 
+|   |  PurchaseReservedDBInstancesOffering  |  ReservedDBInstance  | 
+|   |  CreateDBInstance  |  Database  | 
+| Amazon Redshift \(Amazon Redshift\) |  CreateClusterParameterGroup  |  ParameterGroup  | 
+|   |  CreateClusterSnapshot  |  Snapshot  | 
+|   |  CreateClusterSubnetGroup  |  SubnetGroup  | 
+|   |  CreateCluster  |  Cluster  | 
+| Amazon Route 53 \(Route 53\) |  CreateHealthCheck  |  HealthCheck  | 
+|   |  CreatedHostedZone  |  HostedZone  | 
+| Amazon Simple Storage Service \(Amazon S3\) |  CreateBucket  |  Bucket  | 
+| AWS Storage Gateway \(AWS Storage Gateway\) |  ActivateGateway  |  Gateway  | 
+
+**Note**  
+The CreateDBSnapshot tag is not applied to the snapshot backup storage\.

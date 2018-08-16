@@ -1,6 +1,6 @@
-# Setting Up Change Notifications<a name="price-notification"></a>
+# Setting Up Notifications<a name="price-notification"></a>
 
-You can sign up to receive notifications when AWS prices change, such as when AWS cuts prices, when new instance types are launched, or when new services are introduced\. You can sign up to be notified every time a price changes, or once a day\. If you sign up to be notified once a day, the notification includes all price changes applied during that day\.
+You can sign up to receive notifications when AWS prices change, such as when AWS cuts prices, when new instance types are launched, or when new services are introduced\. You can sign up to be notified every time a price changes, or once a day\. If you sign up to be notified once a day, the notification includes all price changes applied during that day\.<a name="price-change-notification-1"></a>
 
 **To sign up for price update notifications**
 

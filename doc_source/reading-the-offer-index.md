@@ -2,7 +2,7 @@
 
 After you have the offer index file, you can use it to find an offer file\.
 
-
+**Topics**
 + [Offer Index File](#offer-index-example)
 + [Offer Index Definitions](#offer-index-termdef)
 

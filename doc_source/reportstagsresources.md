@@ -1,7 +1,7 @@
 # Detailed Billing Report with Resources and Tags<a name="reportstagsresources"></a>
 
 **Important**  
-The Detailed Billing Report with Resources and Tags will be unavailable at a later date\. We strongly recommend that you use the [Cost and Usage Report](billing-reports-costusage.md) instead\.
+The Detailed Billing Report with Resources and Tags will be unavailable at a later date\. We strongly recommend that you use the [AWS Cost and Usage Report](billing-reports-costusage.md) instead\.
 
 The detailed billing report with resources and tags adds additional dimensions by which you can view your AWS charges\. This report includes resource identifiers for many of the AWS services\. Amazon EC2, for example, provides a ResourceID value for each Amazon EC2 instance that is run under your account\. You can use this field for viewing your charges for each AWS resource, as well as for data filtering and aggregation\. 
 

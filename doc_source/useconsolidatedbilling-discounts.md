@@ -12,14 +12,14 @@ For the 12 TB that Bob and Susan used, Bob's master account is charged \($174\.0
 
 ![\[Volume discounts\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/images/VolumeDiscount.png)
 
-The average cost\-per\-unit of data transfer out for the month is therefore $2,007\.04 / 12 TB = $167\.25 per TB\. That is the average tiered rate shown on the **Bills** page and in the downloadable cost report for each member account on the consolidated bill\.
+The average cost\-per\-unit of data transfer out for the month is therefore $2,007\.04 / 12 TB = $167\.25 per TB\. That is the average tiered rate that is shown on the **Bills** page and in the downloadable cost report for each member account on the consolidated bill\.
 
 Without the benefit of tiering across the consolidated bill, AWS would have charged Bob and Susan each $174\.08 per TB for their usage, for a total of $2,088\.96\.
 
 ## AWS Free Tier for Organizations<a name="cb-free"></a>
 
-For services such as Amazon EC2 that support a free tier, AWS applies the free tier to the total usage across all accounts in an organization\. AWS does not apply the free tier to each account individually\.
+For services such as Amazon EC2 that support a free tier, AWS applies the free tier to the total usage across all accounts in an AWS organization\. AWS does not apply the free tier to each account individually\.
 
 AWS provides budgets that track whether you exceed the free tier limits or are forecast to go over the free tier limits\. Free tier budgets are not enabled for organizations by default\. Master accounts can opt\-in to free tier usage alerts through the Billing and Cost Management console\. Free tier usage alerts aren't available to individual member accounts\.
 
-For more information about free tiers, see [AWS Free Usage Tier FAQs](https://aws.amazon.com/free/faqs/)\. For more information about AWS Free Tier usage alerts via AWS Budgets and opting in, see [AWS Free Tier Usage Alerts Using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.
+For more information about free tiers, see [AWS Free Usage Tier FAQs](https://aws.amazon.com/free/faqs/)\. For more information about AWS Free Tier usage alerts through AWS Budgets and opting in, see [Free Tier Usage Alerts Using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.

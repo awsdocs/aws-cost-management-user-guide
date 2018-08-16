@@ -13,7 +13,7 @@ Required: Yes
 **TimeUnit**  
 The length of time covered by this report\.  
 Type: String  
-Valid values: HOURLY | DAILY   
+Valid values: HOURLY \| DAILY   
 Required: Yes
 
 **Format**  
@@ -25,7 +25,7 @@ Required: Yes
 **Compression**  
 The compression type that is applied to the report\.  
 Type: String  
-Valid values: ZIP | GZIP   
+Valid values: ZIP \| GZIP   
 Required: Yes
 
 **AdditionalSchemaElements**  
@@ -52,5 +52,5 @@ Required: Yes
 **AdditionalArtifacts**  
 A list of manifests that you want to be created for this report\.  
 Type: List of Strings  
-Valid values: REDSHIFT | QUICKSIGHT   
+Valid values: REDSHIFT \| QUICKSIGHT   
 Required: No

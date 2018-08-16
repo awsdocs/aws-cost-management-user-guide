@@ -2,12 +2,12 @@
 
 AWS Billing and Cost Management is the service that you use to pay your AWS bill, monitor your usage, and budget your costs\. 
 
-The service automatically charges the credit card you provided when you signed up for a new account with AWS\. Charges appear on your credit card bill monthly\. You can view or update credit card information, and designate a different credit card for AWS to charge, on the [https://console.aws.amazon.com/billing/home?#/paymentmethods](https://console.aws.amazon.com/billing/home?#/paymentmethods) page in the Billing and Cost Management console\. For more information about accessing the console, see [Opening the Billing and Cost Management Console and Dashboard](view-billing-dashboard.md#opening-billing-dashboard)\.
+AWS automatically charges the credit card you provided when you signed up for a new account with AWS\. Charges appear on your credit card bill monthly\. You can view or update credit card information, and designate a different credit card for AWS to charge, on the [https://console.aws.amazon.com/billing/home?#/paymentmethods](https://console.aws.amazon.com/billing/home?#/paymentmethods) page in the Billing and Cost Management console\. For more information about accessing the console, see [Opening the Billing and Cost Management Console and Dashboard](view-billing-dashboard.md#opening-billing-dashboard)\.
 
 **Note**  
 If you chose India as your contact address country when you signed up, you might be an Amazon Internet Services Pvt\. Ltd \(AISPL\) customer, and you might need to approve the charges before your credit card can be billed\. For more information about paying as an AISPL customer, see [To pay your AISPL bill](edit-aispl-payment-method.md#aispl-pay-bill)\.
 
-
+**Topics**
 + [Features in Billing and Cost Management](#billingfeatures)
 + [Are You a First\-Time Billing User?](#billingresources)
 + [Related Services](#relatedservices)
@@ -17,25 +17,20 @@ If you chose India as your contact address country when you signed up, you might
 The Billing and Cost Management service provides features that you can use to estimate and plan your AWS costs, receive alerts if your costs exceed a threshold that you set, assess your biggest investments in AWS resources, and, if you work with multiple AWS accounts, simplify your accounting\.
 
 **Analyzing Costs with Graphs**  
-The AWS Billing and Cost Management console includes the no\-cost Cost Explorer tool for viewing your AWS cost data as a graph\. With Cost Explorer, you can filter graphs by API operation, Availability Zone, AWS service, custom cost allocation tag, Amazon EC2 instance type, purchase option, region, usage type, and usage type group\. If you use consolidated billing, you can also filter by member account\. In addition, you can see a forecast of future costs based on your historical cost data\.
+The AWS Billing and Cost Management console includes the no\-cost [Cost Explorer](cost-explorer-what-is.md) tool for viewing your AWS cost data as a graph\. With Cost Explorer, you can filter graphs by values such as API operation, Availability Zone, AWS service, custom cost allocation tag, Amazon EC2 instance type, purchase option, region, usage type, usage type group, and more\. If you use consolidated billing, you can also filter by member account\. In addition, you can see a forecast of future costs based on your historical cost data\.
 
 **Budgets**  
-You can use budgets to track your AWS usage and costs\. Budgets use the cost visualization provided by Cost Explorer to show you the status of your budgets, to provide forecasts of your estimated costs, and to track your AWS usage, including your free tier usage\. You can also use budgets to create CloudWatch alarms that notify you when you go over your budgeted amounts, or when your estimated costs exceed your budgets\.  
+You can use budgets to track your AWS usage and costs\. Budgets use the cost visualization provided by Cost Explorer to show you the status of your budgets, to provide forecasts of your estimated costs, and to track your AWS usage, including your free tier usage\. You can also use budgets to create Amazon SNS notifications that notify you when you go over your budgeted amounts, or when your estimated costs exceed your budgets\.  
 For more information about budgets, see [Managing Your Costs with Budgets](budgets-managing-costs.md)\.
 
 **Payment Currencies**  
-When you set a payment currency, you can view your estimated bills and pay your AWS invoices in your preferred currency\.  
-The currency conversion happens after your bill is finalized\. Until then, all preferred currency amounts shown in the console are estimated in USD\. AWS guarantees your exchange rate, so that refunds use the same exchange rate as your original transaction\.  
+You can view your estimated bills and pay your AWS invoices in your preferred currency by setting a payment currency\.  
+AWS converts your bill to your preferred currency after your bill is finalized\. Until then, all of the preferred currency amounts shown in the console are estimated in USD\. AWS guarantees your exchange rate, so that refunds use the same exchange rate as your original transaction\.  
 Additional details:  
-
 + AWS Marketplace and DevPay invoices are not eligible for this service and are processed in USD\.
-
 + This service is available only if your default payment method is Visa or MasterCard\.
-
 + The rates change daily\. The rate applied to your invoice is the current rate when your invoice is created\. You can check the current rate on the Billing and Cost Management console\.
-
 + You can switch back to USD\.
-
 + Currency conversion is provided by Amazon Services LLC\.
 
 **AWS Cost and Usage reports**  

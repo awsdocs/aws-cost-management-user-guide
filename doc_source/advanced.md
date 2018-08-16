@@ -1,6 +1,6 @@
 # Choosing Advanced Options<a name="advanced"></a>
 
-You can customize how you view your data in Cost Explorer using **Advanced Options** to include or exclude specific types of data\. The following types of data are included by default:
+You can customize how you view your data in Cost Explorer using **Advanced Options** to include or exclude specific types of data\. The following types of data are included by default\.
 
 **Refunds**  
 Any refunds that you received\. Refunds are listed as a separate line item in the data table\. They do not appear as an item in the chart because they represent a negative value in the calculation of your costs\. The chart displays only positive values\.
@@ -17,7 +17,7 @@ Any recurring charges to your account\. When you purchase a Partial Upfront or N
 **Taxes**  
 Any taxes that are associated with the charges or fees in your cost chart\. Cost Explorer adds all taxes together as a single component of your costs\. If you select five or fewer filters, Cost Explorer displays your tax expenses as a single bar\. If you select six or more filters, Cost Explorer displays five bars, stacks, or lines, and then aggregates all remaining items, including taxes, into a sixth bar, stack slice, or plot line that is labeled **Other**\.   
 If you choose to omit **RI upfront fees**, **RI recurring charges**, or **Support charges** from your chart, Cost Explorer continues to include any taxes that are associated with the charges\.  
-Cost Explorer displays your tax costs in the chart only when you choose the **Month** tab\. When you filter your cost chart, the following rules govern the inclusion of taxes:   
+Cost Explorer displays your tax costs in the chart only when you choose **Monthly** drop down\. When you filter your cost chart, the following rules govern the inclusion of taxes:   
 
 1. Taxes are excluded if you select non\-**Linked Account** filters, either singly or in combination with other filters\. 
 
@@ -27,9 +27,9 @@ Cost Explorer displays your tax costs in the chart only when you choose the **Mo
 Any charges that AWS charges you for a support plan\. When you purchase a support plan from AWS, you pay a monthly charge in exchange for service support\. The monthly charges can result in spikes on the first day of every month, when AWS charges your account\.
 
 **Other subscription costs**  
-Other applicable subscription costs that are not covered by the other data categories\. These costs can include data such as AWS training fees, AWS competency fees, out\-of\-cycle charges such as registering a domain with Amazon Route 53, and more\.
+Other applicable subscription costs that are not covered by the other data categories\. These costs can include data such as AWS training fees, AWS competency fees, out\-of\-cycle charges such as registering a domain with Route 53, and more\.
 
-You can exclude these data types from your chart using the following procedure:
+You can exclude these data types from your chart using the following procedure\.
 
 **To exclude data from your chart**
 
@@ -43,13 +43,18 @@ Cost Explorer is available in any AWS account for no cost\.
 
 1. In the right pane, under **Advanced Options**, under **Include costs related to**, deselect the data type that you want to exclude\. 
 
-In addition to the costs that Cost Explorer includes, you can show specific costs such as untagged resources or blended costs\. This allows you to see the following alternate views of your costs:
+In addition to the costs that Cost Explorer includes, you can show specific costs such as untagged resources or blended costs\. This allows you to see the following alternate views of your costs\.
 
 **Show only untagged resources**  
 By default, Cost Explorer includes costs both for resources that have cost allocation tags and for resources that don't have cost allocation tags\. To find untagged resources that add to your costs, select **Show only untagged resources**\. For more information about cost allocation tags, see [Using Cost Allocation Tags](cost-alloc-tags.md)\.
 
 **Show blended costs**  
-If you use the consolidated billing feature in AWS Organizations, you can view costs using *blended rates*\. For more information, see Blended Rates\.
+If you use the consolidated billing feature in AWS Organizations, you can view costs using *blended rates*\. For more information, see [Blended Rates](con-bill-blended-rates.md#Blended_CB)\.
+
+**Show amortized costs**  
+By default, Cost Explorer shows the fees for Reserved Instances as a spike on the day that you're charged, but if you choose to show costs as amortized costs, the costs are amortized over the billing period\. This means that the costs are broken out into the effective daily rate\. AWS estimates your amortized costs by combining your unblended costs with the amortized portion of your upfront and recurring reservation fees\. For the daily view, Cost Explorer shows the unused portion of your upfront reservation fees and recurring RI charges on the first of the month\.   
+For example, suppose that Alejandro purchases a Partial Upfront `t2.micro` RI for a one\-year term at $30 dollars upfront, with a monthly fee of $2\.48\. Cost Explorer shows the costs for this RI as a spike on the first of the month\. If Alejandro chooses **Amortized costs** for a 30\-day month, the Cost Explorer chart shows a daily effective rate of $0\.168, which is the EC2 effective rate multiplied by the number of hours in a day\.  
+Amortized costs are not available for billing periods prior to 2018\. If you want to see how much of your reservation was unused, group by purchase option\.
 
 You can show these specific costs by using the following procedure\.
 

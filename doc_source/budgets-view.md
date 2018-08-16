@@ -1,15 +1,10 @@
 # Viewing Your Budgets<a name="budgets-view"></a>
 
 The **Budgets** dashboard shows you the state of your budgets at a glance\. Your budgets are listed on the dashboard along with the following data:
-
 + The usage or costs already accrued for that budget during this budget period
-
 + Your forecasted usage or costs for the budget period
-
 + The total usage or amount that you specified for the budget period
-
 + A status bar that shows your usage or costs compared to your budgeted or forecasted amount
-
 + A status bar that shows your forecasted usage or costs compared to your budgeted or forecasted amount
 
 **To view your budgets**

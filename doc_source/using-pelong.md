@@ -1,4 +1,4 @@
-# Using the AWS Price List Service API<a name="using-pelong"></a>
+# Using the Query API<a name="using-pelong"></a>
 
 AWS Price List Service API is a centralized and convenient way to programmatically query AWS for services, products, and pricing information\. The Price List Service API uses standardized product attributes such as `Location`, `Storage Class`, and `Operating System`, and provides prices at the SKU level\. You can use Price List Service to build cost control and scenario planning tools, reconcile billing data, forecast future spend for budgeting purposes, and provide cost benefit analyses that compare your internal workloads with AWS\. 
 

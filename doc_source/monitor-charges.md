@@ -59,7 +59,7 @@ After you enable billing alerts, you can set them up and subscribe to notificati
 
    1. Choose **Create Alarm**\.
 
-1. In the **Confirm new email addresses** dialog box, confirm the email address or choose **I will do it later**\. If you don't confirm the email address now, the alarm remains in the `Pending confirmation` status until you do so, and does not send an alert\. To view the status of your alarm, choose **Alarms** in the navigation pane\.
+1. In the **Confirm new email addresses** dialog box, confirm the email address or choose **I will do it later**\. If you don't confirm the email address now, the alarm remains in the `Pending confirmation` status until you do so, and does not send an alert\. To view the status of your alarm, choose **Alarms** in the navigation pane\.<a name="price-change-notification-2"></a>
 
 **To sign up for price update notifications**
 

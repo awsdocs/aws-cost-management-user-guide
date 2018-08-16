@@ -8,7 +8,7 @@ If your account is with AISPL, follow the procedures in this chapter to manage y
 
 As part of the credit card verification during signup, AISPL charges your credit card 2 INR\. AISPL refunds the 2 INR after verification is done\. You might be redirected to your bank as part of the verification process\.
 
-
+**Topics**
 + [Determining Which Company Your Account is With](#determine-seller)
 + [Signing Up for AISPL](#aisplsignup)
 + [Managing Your AISPL Account](#manage-aispl-account)
@@ -48,7 +48,7 @@ If your contact address is in India and you want to open an account, you sign up
 
 1. Under **PAN Information**, choose **No** if you do not have a Permanent Account Number \(PAN\) or want to add it later\. If you have a PAN and want to add it now, choose **Yes**, and in the **PAN** field type your PAN\.
 
-1. Choose **Verify Card and Continue**\. AISPL charges your card 2 INR as part of the verification process\. AISPL refunds the 2 INR after verification is done\.
+1. Choose **Verify Card and Continue**\. You must provide your CVV as part of the verification process\. AISPL charges your card 2 INR as part of the verification process\. AISPL refunds the 2 INR after verification is done\.
 
 1. For **Provide a telephone number**, type your phone number\. If you have a phone extension, for **Ext**, type your phone extension\.
 
@@ -63,16 +63,13 @@ If your contact address is in India and you want to open an account, you sign up
 ## Managing Your AISPL Account<a name="manage-aispl-account"></a>
 
 Use the [Account Settings](https://console.aws.amazon.com/billing/home#/account) and [Tax Settings](https://console.aws.amazon.com/billing/home#/tax) pages of the Billing and Cost Management console to perform the following tasks:
-
 + [Edit your user name, password, or email address](#aispl-account-info)
-
 + [Edit your contact information](#aispl-contact-info)
-
 + [Add, update, or remove alternate contacts](#aispl-account-contacts)
-
 + [Add or edit a Permanent Account Number (PAN)](#aispl-add-pan)
-
-+ [View a tax invoice](#aispl-view-tax)
++ [Edit multiple Permanent Account Numbers (PANs)](#aispl-edit-pan)
++ [Edit multiple Goods and Services Tax Numbers (GSTs)](#aispl-edit-gst)
++ [View a tax invoice](#aispl-view-tax)<a name="aispl-account-info"></a>
 
 **To edit your user name, password, or email address**
 
@@ -88,7 +85,7 @@ You can change the name, password, and email address associated with your AISPL 
 
 1. After you have entered your changes, choose **Save changes**\.
 
-1. After you have made your changes, choose **Done**\.
+1. After you have made your changes, choose **Done**\.<a name="aispl-contact-info"></a>
 
 **To edit your contact information**
 
@@ -103,7 +100,7 @@ You can change the contact information associated with your AISPL account, inclu
 1. For the fields that you want to change, type your updated information, and then choose **Update**\.
 
 **Note**  
-You can choose to add an email address for billing in the **Alternate Contacts** section to have AISPL send a copy of billing\-related emails to that email address\. For example, AISPL sends a copy of your monthly bill to your Billing contact address\.
+You can choose to add an email address for billing in the **Alternate Contacts** section to have AISPL send a copy of billing\-related emails to that email address\. For example, AISPL sends a copy of your monthly bill to your Billing contact address\.<a name="aispl-account-contacts"></a>
 
 **To add, update, or remove alternate contacts**
 
@@ -115,7 +112,7 @@ You can add alternate contacts to your account\. Alternate contacts enable AISPL
 
 1. Scroll down to the **Alternate Contacts** section, and then choose **Edit**\.
 
-1. For the fields that you want to change, type your updated information, and then choose **Update**\.
+1. For the fields that you want to change, type your updated information, and then choose **Update**\.<a name="aispl-add-pan"></a>
 
 **To add or edit a PAN**
 
@@ -123,11 +120,39 @@ You can add your Permanent Account Number \(PAN\) to your account and edit it\.
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
-1. On the navigation pane, choose **Tax Settings**\.
+1. In the navigation pane, choose **Tax Settings**\.
 
 1. On the **Tax Settings** navigation bar, choose **Edit**\.
 
-1. For **Permanent Account Number \(PAN\)**, enter your PAN, and then choose **Update**\.
+1. For **Permanent Account Number \(PAN\)**, enter your PAN, and then choose **Update**\.<a name="aispl-edit-pan"></a>
+
+**To edit multiple PAN numberss**
+
+You can edit multiple Permanent Account Numbers \(PANs\) in your account\. 
+
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+
+1. In the navigation pane, choose **Tax Settings**\.
+
+1. Under **Manage Tax Registration Numbers**, select the PAN numbers that you want to edit\.
+
+1. For **Manage Tax Registration**, choose **Edit**\.
+
+1. Update the fields that you want to change, and then choose **Update**\.<a name="aispl-edit-gst"></a>
+
+**To edit multiple GST numbers**
+
+You can edit multiple Goods and Services Tax numbers \(GSTs\) in your account\. 
+
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+
+1. On the navigation pane, choose **Tax Settings**\.
+
+1. Under **Manage Tax Registration Numbers**, select the GST numbers that you want to edit or choose **Edit all**\.
+
+1. For **Manage Tax Registration**, choose **Edit**\.
+
+1. Update the fields that you want to change and choose **Update**\.<a name="aispl-view-tax"></a>
 
 **To view a tax invoice**
 

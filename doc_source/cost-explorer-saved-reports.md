@@ -2,7 +2,7 @@
 
 You can save the results of a Cost Explorer query as a Cost Explorer report\. This allows you to track your Cost Explorer results and forecasts over time\.
 
-
+**Topics**
 + [Creating a Cost Explorer Report](#save-ce-reports)
 + [Viewing a Cost Explorer Report](#view-saved-ce-reports)
 + [Editing a Cost Explorer Report](#edit-saved-ce-reports)
@@ -25,7 +25,7 @@ Cost Explorer reports can be modified\. We strongly recommend that you do not us
 **Note**  
 Cost Explorer is available in any AWS account for no cost\.
 
-1. Choose **New report**\. This resets all of your Cost Explorer settings to you default settings\. 
+1. Choose **New report**\. This resets all of your Cost Explorer settings to your default settings\. 
 
 1. For the report name text field, enter a name for your report\.
 

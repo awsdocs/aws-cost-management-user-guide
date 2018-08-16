@@ -4,7 +4,7 @@ AWS is switching accounts that have an address in India from AWS to Amazon Inter
 
 This FAQ guides you through the changes\.
 
-
+**Topics**
 + [What's happening?](#question-1)
 + [Should I expect any AWS service downtime during the change to AISPL?](#question-2)
 + [Will I have access to the same AWS services after my account is changed to AISPL?](#question-3)
@@ -45,15 +45,10 @@ Access to and pricing of AWS services generally will remain the same following t
 ## What will change?<a name="question-4"></a>
 
 Following the switch of your account from AWS to AISPL:
-
 + Your contract will be with AISPL, and not Amazon Web Services, Inc\. By continuing to use AWS services after the change, you are agreeing to sign up for a new [Customer Agreement with AISPL](https://aws.amazon.com/aispl/agreement/)\. Your Customer Agreement with Amazon Web Services, Inc\. will be terminated and will no longer apply to your account\.
-
 + Payments to AISPL will be in Indian Rupees \(INR\)\. You will no longer pay for your AWS services in U\.S\. dollars \(USD\)\. 
-
 + Service tax is owed to Indian tax authorities for services provided by AISPL, and AISPL will begin assessing, collecting, and remitting to the Indian government these taxes during invoicing\. If you are currently self\-assessing a service tax and providing your service tax registration number to Amazon Web Services, Inc\., you will no longer need to do this after switching to AISPL\. 
-
 + As your transactions with AISPL will be domestic India transactions, you might be required to pay an additional 10% of your invoice amount to the Indian tax authorities as withholding tax, if you so determine\. You might be eligible to receive a refund from AISPL for certain withholding tax amounts paid \(for more information, continue reading this FAQ\)\. 
-
 + Certain services, such as Amazon DevPay, might not be available from AISPL\.
 
 ## What are the benefits to you?<a name="question-5"></a>
@@ -99,41 +94,25 @@ Not at the present time\. AISPL accounts can be accessed from the current [AWS w
 ## What will my commercial invoice look like after the change to AISPL?<a name="question-12"></a>
 
 Commercial invoices delivered by AISPL will look similar to commercial invoices delivered by Amazon Web Services, Inc\., with the following changes:
-
 + A greeting from AISPL
-
 + A statement summary in Indian Rupees \(INR\)
-
 + Detailed charges, credits and taxes in U\.S\. dollars \(USD\)
-
 + Conversion rate from U\.S\. dollars \(USD\) to Indian Rupees \(INR\) at the time of invoice creation
 
 ## What will my service tax invoice look like?<a name="question-13"></a>
 
 As a customer of AISPL, you will receive a separate, tax\-compliant invoice from AISPL that contains details of the local taxes applicable to your services\. Service tax invoices delivered by AISPL will contain the following:
-
 + Name and address of AISPL in the invoice footer
-
 + Customer name, address, and Permanent Account Number \(PAN\)
-
 + Invoice number
-
 + Permanent Account Number \(PAN\) of AISPL
-
 + Service tax registration number of AISPL in the invoice footer
-
 + Signature of the authorized signatory
-
 + Detail of applicable services, including the following:
-
   + Service name
-
   + Service charge
-
   + Service tax 
-
   + Swachh Bharat Cess 
-
   + Krishi Kalyan Cess 
 
 **Note**  
@@ -144,13 +123,9 @@ With this service tax invoice, you might be entitled to claim CENVAT Credit, dep
 ## How do I claim a reimbursement from AISPL for withholding taxes paid to Indian tax authorities?<a name="question-14"></a>
 
 Because your transactions with AISPL will be domestic India transactions, you might be required to pay an additional 10% of your invoice amount to the Indian tax authorities as withholding tax, if you so determine\. You will have the right to claim a reimbursement of this 10% payment from AISPL by furnishing specified documents and information within 90 days of the invoice\. These include the following:
-
 + A withholding tax certificate \(evidence of the deposit of the amount\)
-
 + Details of the invoice against which withholding tax has been paid 
-
 + Your Indian billing address and Permanent Account Number \(PAN\)
-
 + A copy of the canceled cheque or confirmation of the bank account, including National Electronic Fund Transfer \(NEFT\) details
 
 After providing this documentation and the amounts are confirmed, AISPL will provide a refund\. 

@@ -2,7 +2,7 @@
 
 You can copy an existing budget to a new one\. This allows you to retain the filters and notification settings from your original budget while still allowing you to make changes\. Billing and Cost Management automatically populates the fields on the creation page for the new budget, where you can update the budget parameters\. 
 
-Budgets created before October 20, 2016 can't be copied\.
+Budgets created before October 20, 2016 can't be copied\.<a name="budgets-copy-proc"></a>
 
 **To copy a budget**
 

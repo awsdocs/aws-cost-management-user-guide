@@ -18,7 +18,6 @@ IAM users need explicit permission to see some of the pages in the Billing and C
    If you use the consolidated billing feature in AWS Organizations, the **Bills** page lists totals for all accounts on the **Consolidated Bill Details** tab\. Choose the **Bill Details by Account** tab to see the activity for each account in the organization\. For more information about consolidated billing, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
 
 **To view your charges for a different month**
-
 + On the **Bills** page, select the month you want from the **Date** list\.
 
 **To download a copy of your charges as a PDF document**
@@ -30,5 +29,4 @@ IAM users need explicit permission to see some of the pages in the Billing and C
 1. Choose the **Invoice <invoiceID>** link\. 
 
 **To download a monthly report**
-
 + Choose the **Download CSV** button, and then choose the appropriate option\.

@@ -1,6 +1,6 @@
 # Turning Off Reserved Instance Sharing<a name="ri-turn-off"></a>
 
-The master account of an organization can turn off Reserved Instance \(RI\) sharing for member accounts in that organization\. This means that Reserved Instances are not shared between that member account and other member accounts\. You can change this preference multiple times\. Each estimated bill is computed using the last set of preferences\. The final bill for the month is calculated based on the preferences set at midnight UTC time, on the last day of the month\. 
+The master account of an organization can turn off Reserved Instance \(RI\) sharing for member accounts in that organization\. This means that Reserved Instances are not shared between that member account and other member accounts\. You can change this preference multiple times\. Each estimated bill is computed using the last set of preferences\. The final bill for the month is calculated based on the preferences set at 23:59:59 UTC time, on the last day of the month\. 
 
 **Important**  
 Turning off Reserved Instance sharing can result in a higher monthly bill\.
@@ -25,7 +25,7 @@ You can turn off Reserved Instance \(RI\) sharing for individual member accounts
 
 **To turn on shared Reserved Instances**
 
-If shared Reserved Instances is turned off for an account and you want to turn it back on, you can use the same console page to turn sharing on\.
+If shared Reserved Instances is turned off for an account and you want to turn it back on, you can use the same console page to turn on sharing\.
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 

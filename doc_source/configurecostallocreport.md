@@ -2,7 +2,7 @@
 
 The monthly cost allocation report lists the AWS usage for your account by product category and IAM user\. The report contains the same line items as the detailed billing report \(see [Understanding Your Usage with Billing Reports](billing-reports.md)\) and additional columns for your tag keys\. For more information, see the following topics: 
 
-
+**Topics**
 + [Setting Up a Monthly Cost Allocation Report](#allocation-report)
 + [Getting an Hourly Cost Allocation Report](#allocation-get)
 + [Viewing a Cost Allocation Report](#allocation-viewing)
@@ -31,7 +31,7 @@ AWS stores billing reports in an Amazon S3 bucket that you create and own\. You 
 
    The page displays a list of tags you've created using either the API or the console for the applicable AWS service\. Tag keys that currently appear in the report are selected, while the check boxes for excluded tag keys are cleared\. 
 
-1. For **Filter**, choose **Inactive tags** in the dropdown list, and then select the tags that you want to activate for your report\.  
+1. For **Filter**, choose **Inactive tags** in the drop down list, and then select the tags that you want to activate for your report\.  
 ![\[Cost Allocation Management page\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Cost Allocation Management page\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Cost Allocation Management page\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
 
 1. Choose **Activate**\.
@@ -53,8 +53,7 @@ The following example tracks the charges for several cost centers and applicatio
 
 You can use a desktop spreadsheet application to create pivot tables that group the keys and the values for each key so that you can see combined values for tagged resources\. The following example organizes information first by "Cost Center," and within each cost center further organizes the information by the "Application" tag\.
 
-![\[An Example of a Microsoft Excel Pivot Table using tagged
-                        resources\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/images/AllocatedBillingReport.png)
+![\[An Example of a Microsoft Excel Pivot Table using tagged resources\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/images/AllocatedBillingReport.png)
 
 Pick your keys carefully so that you have a consistent hierarchy of values\. Otherwise, your report won't group costs effectively, and you'll have many line items\.
 
@@ -64,15 +63,10 @@ If you add or change the tags on a resource part way through a billing period, c
 ### Unallocated Resources in Your Report<a name="allocation-untagged"></a>
 
 Any charges that cannot be grouped by tags in your Cost Allocation Report default to the standard billing aggregation \(organized by Account/Product/Line Item\) and are included in your report\. Situations where you can have unallocated costs include:
-
 + You signed up for a Cost Allocation Report mid\-month\.
-
 + Some resources aren't tagged for part, or all, of the billing period\.
-
 + You are using services that currently do not support tagging\.
-
 + Subscription\-based charges, such as Premium Support and AWS Marketplace monthly fees, cannot be allocated\.
-
 + One\-time fees, such as Amazon EC2 Reserved Instance upfront charges, cannot be allocated\.
 
 ### Unexpected Costs Associated with Tagged Resources<a name="cost-alloc-tag-costs"></a>

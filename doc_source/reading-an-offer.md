@@ -3,17 +3,14 @@
 An offer file lists the products and prices for a single AWS service in all regions or a single AWS service in a specific region\. Offer files are available as either CSV or JSON files\. You can read the files in multiple ways, such as using a spreadsheet program to read and sort the CSV file, a text program to read the file, or a program that parses JSON\.
 
 Offer files include the following types of information:
-
 + [Offer File Details](#offer-term-defs) – File metadata about the offer file itself, such as the format version and the publication date\.
-
 + [Product Details](#offer-product-defs) – Product metadata that lists the products in an offer file along with product information\.
-
 + [Pricing Details \(Terms\)](#pricing-details) – Prices for all the products in this offer file\.
 
 **Note**  
 In a CSV file, the product and pricing details are combined into one section\. In a JSON file, the product details and pricing details are in separate sections\.
 
-
+**Topics**
 + [CSV File](#csv)
 + [JSON File](#json)
 + [Offer File Definitions](#pps-defs)
@@ -77,11 +74,8 @@ A JSON offer file looks like this:
 ## Offer File Definitions<a name="pps-defs"></a>
 
 Each of the sections in an offer file includes specific details about that product:
-
 + [Offer File Details](#offer-term-defs) – File metadata about the offer file itself, such as the format version and the publication date\.
-
 + [Product Details](#offer-product-defs) – Product metadata that lists the products in an offer file along with product information\.
-
 + [Pricing Details \(Terms\)](#pricing-details) – Prices for all the products in this offer file\.
 
 **Note**  

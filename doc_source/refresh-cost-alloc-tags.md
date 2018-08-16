@@ -2,7 +2,7 @@
 
 Cost allocation tags created by linked accounts can take up to 24 hours to appear in the Billing and Cost Management console\. After the tags appear, you can activate them to be included in your cost allocation report\. Every 24 hours, you can manually trigger a refresh of your cost allocation tags, shortening the wait time for your tags appear\. After a refresh, AWS applies your tags and sends you an email when the refresh is complete\. 
 
-Before you can refresh your tags, you must create them and apply them to your resources\. For more information, see [Applying User\-Defined Cost Allocation Tags](custom-tags.md#allocation-how)\.
+Before you can refresh your tags, you must create them and apply them to your resources\. For more information, see [Applying User\-Defined Cost Allocation Tags](custom-tags.md#allocation-how)\.<a name="trigger-tag-refresh"></a>
 
 **To refresh your cost allocation tags**
 

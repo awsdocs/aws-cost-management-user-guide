@@ -1,6 +1,6 @@
 # Viewing Your AWS Cost and Usage Reports<a name="download-billing-data-report"></a>
 
-You can use the Billing and Cost Management console to see a list of the AWS Cost and Usage reports that AWS is generating for you\.
+You can use the Billing and Cost Management console to see a list of the AWS Cost and Usage reports that AWS is generating for you\.<a name="list-billing-data-report"></a>
 
 **To view your AWS Cost and Usage reports**
 

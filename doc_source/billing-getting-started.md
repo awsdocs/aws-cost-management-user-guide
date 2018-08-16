@@ -2,7 +2,7 @@
 
 The following steps discuss a few of the most common tasks you're likely to perform when using the Billing and Cost Management console\. 
 
-
+**Topics**
 + [Step 1: Review Your Usage](#billing-gs-review)
 + [Step 2: Turn on Reports](#step-2)
 + [Step 3: Download or Print Your Bill](#billing-gs-download)
@@ -22,8 +22,8 @@ Billing and Cost Management offers you a number of different ways to view and mo
 **Cost Explorer**  
  Choose [https://console.aws.amazon.com/cost-reports/home?#/custom](https://console.aws.amazon.com/cost-reports/home?#/custom) to track and analyze your AWS usage\. Cost Explorer is free for all accounts\. For more information about Cost Explorer, see [Analyzing Your Costs with Cost Explorer](cost-explorer-what-is.md)\.   
 **Budgets**  
- Choose [https://console.aws.amazon.com/billing/home?region=us-east-1#/budgets](https://console.aws.amazon.com/billing/home?region=us-east-1#/budgets) to view, create, or delete budgets for your account\. For more information about budgets, see [Monitoring Your Usage and Costs](monitoring-costs.md)\.   
-You can also check the status of your free tier usage using the provided AWS Free Tier usage alerts using AWS Budgets\. For more information about AWS Free Tier usage alerts, see [AWS Free Tier Usage Alerts Using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.   
+ Choose [https://console.aws.amazon.com/billing/home?region=us-east-1#/budgets](https://console.aws.amazon.com/billing/home?region=us-east-1#/budgets) to manage budgets for your account\. For more information about budgets, see [Monitoring Your Usage and Costs](monitoring-costs.md)\.   
+You can also check the status of your free tier with the provided AWS Free Tier usage alerts using AWS Budgets\. For more information about AWS Free Tier usage alerts, see [Free Tier Usage Alerts Using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.   
 **Bills**  
  Choose [https://console.aws.amazon.com/billing/home?region=us-east-1#/bill](https://console.aws.amazon.com/billing/home?region=us-east-1#/bill) to see details about your current charges\.   
 **Payment History**  
@@ -138,19 +138,16 @@ Your bucket name must be all lowercase, from 3 to 63 characters long, and cannot
 
 If you use the AWS Free Tier, Billing and Cost Management automatically provides AWS Free Tier usage alerts via AWS Budgets to track your free tier usage and notify you when you go over the free tier limits or are forecasted to go over the free tier limits\. AWS sends these notifications to the email that you used to create your AWS account\.
 
-In addition to the free tier usage alerts, you can use budgets or Amazon CloudWatch to create and email alerts to you when your monthly charges for using an AWS product exceed a threshold that you set\. These alerts can be set only for exceeding a threshold\. If you want to be alerted before a certain threshold is reached, create an alert for a threshold that is lower than the one that you don't want to exceed\. Alerts are emails that AWS sends when a CloudWatch alarm triggers\. CloudWatch alarms are alarms that monitor your services\. To create alarms that notify you, you must first enable alerts and then create the alarm\. You need to enable alerts only once\.
+In addition to the free tier usage alerts, you can use budgets to notify you when your monthly charges for using an AWS product exceed or are forecast to exceed a threshold that you set\. 
 
-**Important**  
-Turning on billing alerts enables the creation of billing alarms, but does not create any alarms for you\. For best results, wait at least 15 minutes after enabling alerts before you create a CloudWatch alarm\.
-
- By default, IAM users don't have access to billing information, and therefore do not have access to billing alerts or alarms\. If you are logged in to AWS as an IAM user, verify that the AWS account owner has granted IAM users access to the billing information\. For more information about IAM restrictions, see [Granting Access to Your Billing Information and Tools](grantaccess.md)\. 
+ By default, IAM users don't have access to billing information, and therefore do not have access to billing alerts or budgets\. If you are logged in to AWS as an IAM user, verify that the AWS account owner has granted IAM users access to the billing information\. For more information about IAM restrictions, see [Granting Access to Your Billing Information and Tools](grantaccess.md)\. 
 
 **Note**  
 If your account is linked to a reseller account, billing alerts are not available for your account\. 
 
 **To enable billing alerts**
 
-Before you create a billing alarm, you must enable billing alerts\. You need to do this only once\. After you enable billing alerts, you can't turn them off\.
+Before you create a budget, you must enable billing alerts\. You need to do this only once\. After you enable billing alerts, you can't turn them off\.
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
@@ -194,7 +191,7 @@ Before you create a billing alarm, you must enable billing alerts\. You need to 
 
    1. Choose the **New list** link next to the **send a notification to** box\. 
 
-   1.  When prompted, enter your email address or choose your Amazon SNS notification from the dropdown list\. 
+   1.  When prompted, enter your email address or choose your Amazon SNS notification from the drop down list\. 
 
    1. Choose **Create Alarm**\.
 
@@ -209,13 +206,8 @@ If you have questions about your bill, see the [AWS Knowledge Center](http://aws
 ## Where Do I Go from Here?<a name="whereto"></a>
 
  Explore some of the features designed to help you dig a little deeper and streamline your accounting practices\. 
-
-+ [Tracking Your AWS Free Tier Usage](tracking-free-tier-usage.md)
-
++ [Tracking Your Free Tier Usage](tracking-free-tier-usage.md)
 + [Understanding Your Usage with Billing Reports](billing-reports.md)
-
 + [Analyzing Your Costs with Cost Explorer](cost-explorer-what-is.md)
-
 + [Managing Your Costs with Budgets](budgets-managing-costs.md)
-
 + [Consolidated Billing for Organizations](consolidated-billing.md)

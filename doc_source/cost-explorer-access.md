@@ -28,9 +28,9 @@ You can grant or restrict the access that a linked account has to some of the in
 
 1. On the Cost Explorer page, choose **Launch Cost Explorer**\.
 
-1. On the Cost Explorer dashboard, choose the three\-bar icon on the left to access the left navigation pane and choose **Payer Account Settings**\.
+1. On the Cost Explorer dashboard, choose **Settings** on the top right\.
 
-1. On the **Payer Account Settings** page, select the data categories that you want your member accounts to have access to\.
+1. On the **Settings** page, select the data categories that you want your member accounts to have access to\.
 
 1. Choose **Save**\.
 

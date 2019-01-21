@@ -58,7 +58,7 @@ The `createdBy` tag is applied only to the following services and resources afte
 |   |  CreateVpnGateway  |  VPN gateway  | 
 |   |  PurchaseReservedInstancesOffering  |  Reserved\-instance  | 
 |   |  RequestSpotInstances  |  Spot\-instance\-request  | 
-|   |  RunInstance  |  Instance  | 
+|   |  RunInstances  |  Instance  | 
 | Amazon ElastiCache \(ElastiCache\) |  CreateSnapshot  |  Snapshot  | 
 |   |  CreateCacheCluster  |  Cluster  | 
 | AWS Elastic Beanstalk \(Elastic Beanstalk\) |  CreateEnvironment  |  Environment  | 

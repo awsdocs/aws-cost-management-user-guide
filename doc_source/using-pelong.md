@@ -7,7 +7,7 @@ If you use a programming language for which AWS provides an SDK, we recommend th
 **Note**  
 The Price List Service API provides pricing details for your information only\. If there is a discrepancy between the offer file and a service pricing page, AWS charges the prices that are listed on the service pricing page\. For more information about AWS service pricing, see [Cloud Services Pricing](https://aws.amazon.com/pricing/services/)\.
 
-For more information about available SDKs, see [Tools for Amazon Web Services](https://aws.amazon.com/tools)\. For more information about the AWS Price List Service API, see the [AWS Billing and Cost Management API Reference](http://docs.aws.amazon.com/aws-cost-management/latest/APIReference/)\.
+For more information about available SDKs, see [Tools for Amazon Web Services](https://aws.amazon.com/tools)\. For more information about the AWS Price List Service API, see the [AWS Billing and Cost Management API Reference](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/)\.
 
 ## Service Endpoint<a name="pe-endpoint"></a>
 

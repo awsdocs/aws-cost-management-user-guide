@@ -14,11 +14,11 @@ The public On\-Demand Instance rate in this billing period for the specific line
 ** pricing/PurchaseOption**  
 How you chose to pay for this line item\. Valid values are `All Upfront`, `Partial Upfront`, and `No Upfront`\.
 
-** pricing/rateType**  
-The type of rate that applies to this line item, such as `Fixed`\.
-
-** pricing/RateUnit**  
-The pricing unit that AWS used for calculating your usage cost\. For example, the pricing unit for Amazon EC2 instance usage is in hours\.
+** pricing/RateId**  
+The ID of the rate for a line item\. You can use the **RateId** to get up\-to\-date pricing for a product by using the [Using the AWS Price List API ](price-changes.md)\.
 
 ** pricing/term**  
 Whether your AWS usage is Reserved or On\-Demand\. 
+
+** pricing/unit**  
+The pricing unit that AWS used for calculating your usage cost\. For example, the pricing unit for Amazon EC2 instance usage is in hours\.

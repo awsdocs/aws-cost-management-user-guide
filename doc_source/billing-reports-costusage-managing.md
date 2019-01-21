@@ -9,3 +9,4 @@ Use the following topics for information about managing your AWS Cost and Usage 
 + [Viewing AWS Cost and Usage Report Files in Amazon S3](billing-reports-costusage-files.md)
 + [Editing an AWS Cost and Usage Report](billing-reports-costusage-edit-report.md)
 + [Uploading an AWS Cost and Usage Report to Amazon Redshift](billing-reports-costusage-upload.md)
++ [Uploading an AWS Cost and Usage Report to Amazon Athena](athena.md)

@@ -1,6 +1,6 @@
 # Monthly Cost Allocation Report<a name="configurecostallocreport"></a>
 
-The monthly cost allocation report lists the AWS usage for your account by product category and IAM user\. The report contains the same line items as the detailed billing report \(see [Understanding Your Usage with Billing Reports](billing-reports.md)\) and additional columns for your tag keys\. For more information, see the following topics: 
+The monthly cost allocation report lists the AWS usage for your account by product category and linked account user\. The report contains the same line items as the detailed billing report \(see [Understanding Your Usage with Billing Reports](billing-reports.md)\) and additional columns for your tag keys\. For more information, see the following topics: 
 
 **Topics**
 + [Setting Up a Monthly Cost Allocation Report](#allocation-report)
@@ -65,7 +65,7 @@ If you add or change the tags on a resource part way through a billing period, c
 Any charges that cannot be grouped by tags in your Cost Allocation Report default to the standard billing aggregation \(organized by Account/Product/Line Item\) and are included in your report\. Situations where you can have unallocated costs include:
 + You signed up for a Cost Allocation Report mid\-month\.
 + Some resources aren't tagged for part, or all, of the billing period\.
-+ You are using services that currently do not support tagging\.
++ You are using services that currently don't support tagging\.
 + Subscription\-based charges, such as Premium Support and AWS Marketplace monthly fees, cannot be allocated\.
 + One\-time fees, such as Amazon EC2 Reserved Instance upfront charges, cannot be allocated\.
 

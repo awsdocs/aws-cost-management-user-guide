@@ -36,7 +36,7 @@ To add an ACH direct debit account, you must have the following information read
 
    Routing numbers are always nine digits long\. Some banks list the routing number first on a check, and other banks list the account number first\. 
 
-1. For **Bank Account Number**, enter the account number\. Account numbers may be up to 17 digits\. The account must be an ACH\-enabled checking account at a bank located in the US\.
+1. For **Bank Account Number**, enter the account number\. Account numbers might have up to 17 digits\. The account must be an ACH\-enabled checking account at a bank located in the US\.
 
 1. For **Bank Account Type**, select **Personal** or **Business**\.
 

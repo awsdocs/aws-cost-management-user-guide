@@ -1,8 +1,8 @@
-# Enabling Cost Explorer<a name="cost-explorer-signup"></a>
+# Enabling Cost Explorer<a name="ce-enable"></a>
 
 You can enable Cost Explorer for your account using this procedure\. After you enable Cost Explorer, AWS prepares the data about your costs for the current month and the last three months, and then calculates the forecast for the next three months\. The current month's data is available for viewing in about 24 hours\. The rest of your data takes a few days longer\. Cost Explorer updates your cost data at least once every 24 hours\.
 
-By default you can launch Cost Explorer if your account is a member account in an organization\. The master account can, however, block your access\. For more information, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
+By default, you can launch Cost Explorer if your account is a member account in an organization\. The master account can, however, block your access\. For more information, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
 
 **Note**  
 An account’s status with an organization affects what cost and usage data is visible:  
@@ -11,7 +11,7 @@ If a member account leaves an organization and becomes a standalone account, the
 If a member account leaves organization A to join organization B, the account no longer has access to cost and usage data from the time range when the account was a member of organization A\. The account has access only to the data that is generated as a member of organization B\. 
 If an account rejoins an organization that it previously belonged to, the account regains access to its historical cost and usage data\.
 
-Signing up to receive the AWS Cost and Usage Report or the Detailed Billing Report does not automatically enable Cost Explorer\. You must still enable it by performing the following procedure\.
+Signing up to receive the AWS Cost and Usage Report or the Detailed Billing Report doesn't automatically enable Cost Explorer\. You must still enable it by performing the following procedure\.
 
 **To sign up for Cost Explorer**
 
@@ -21,4 +21,4 @@ Signing up to receive the AWS Cost and Usage Report or the Detailed Billing Repo
 
 1. On the **Welcome to Cost Explorer** page, choose **Enable Cost Explorer**\. 
 
-For more information about controlling access to Cost Explorer see [Controlling Access for Cost Explorer](cost-explorer-access.md)\. 
+For more information about controlling access to Cost Explorer, see [Controlling Access for Cost Explorer](ce-access.md)\. 

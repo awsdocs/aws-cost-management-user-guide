@@ -28,7 +28,7 @@ You can use the console to view the payment methods associated with your account
 
 AWS charges your default payment method automatically at the beginning of each month\. If that charge doesn't process successfully, you can use the console to update your payment method and make a payment\.
 **Note**  
-If you pay by ACH direct debit, AWS provides you with your invoice and initiates the charge to your payment method within 10 days of the start of the month\. It can take 3\-5 days for your payment to succeed\. For more information, see [Managing Your ACH Direct Debit Payment Methods](manage-debit.md)\.
+If you pay by ACH direct debit, AWS provides you with your invoice and initiates the charge to your payment method within 10 days of the start of the month\. It can take 3–5 days for your payment to succeed\. For more information, see [Managing Your ACH Direct Debit Payment Methods](manage-debit.md)\.
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 

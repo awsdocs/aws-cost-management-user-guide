@@ -62,7 +62,7 @@ To confirm that your notification subscriptions have been accepted or to resend 
 
 1. On the **Subscriptions** page, for **Filter**, enter `budget`\. A list of your budget notifications appears\.
 
-1. Under **Subscription ARN**, you will see `PendingConfirmation` if a subscription has not been accepted\. If you do not see a `PendingConfirmation`, all of your budget notifications have been activated\.
+1. Under **Subscription ARN**, you will see `PendingConfirmation` if a subscription has not been accepted\. If you don't see a `PendingConfirmation`, all of your budget notifications have been activated\.
 
 1. \(Optional\) To resend a confirmation request, select the subscription with a pending confirmation, and choose **Request confirmations**\. Amazon SNS will send a confirmation request to the email addresses that are subscribed to the notification\.
 

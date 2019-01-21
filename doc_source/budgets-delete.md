@@ -1,6 +1,6 @@
 # Deleting a Budget<a name="budgets-delete"></a>
 
-You can delete your budgets and the associated notifications at any time\. You can't recover a budget after you delete it\.
+You can delete your budgets and the associated email and Amazon SNS notifications at any time\. You can't recover a budget after you delete it\. Deleting a budget also deletes all notifications and notification subscribers\.
 
 **To delete a budget**
 
@@ -8,6 +8,6 @@ You can delete your budgets and the associated notifications at any time\. You c
 
 1. On the navigation pane, choose **Budgets**\.
 
-1. On the **Budgets** page, select the budgets that you want to delete, and then choose **Delete**\.
+1. On the **Budgets** page, choose the budget's name in your list of budgets\.
 
-1. In the **Delete Budget** box, choose **Delete**\.
+1. On the **budget page** box, under **\.\.\.**, choose **Delete**\.

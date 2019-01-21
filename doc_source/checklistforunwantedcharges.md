@@ -39,34 +39,34 @@ Each month’s usage is calculated and billed at the beginning of the following 
 
 ## Elastic Beanstalk Environments<a name="checkelasticbeanstalk"></a>
 
-Elastic Beanstalk is designed to ensure that all the resources that you need are running, which means that it automatically relaunches any services that you stop\. To avoid this, you must terminate your Elastic Beanstalk environment before you terminate resources that Elastic Beanstalk has created\. For more information, see [Terminating an Environment](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.terminating.html) in the *AWS Elastic Beanstalk Developer Guide*\. 
+Elastic Beanstalk is designed to ensure that all the resources that you need are running, which means that it automatically relaunches any services that you stop\. To avoid this, you must terminate your Elastic Beanstalk environment before you terminate resources that Elastic Beanstalk has created\. For more information, see [Terminating an Environment](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features.terminating.html) in the *AWS Elastic Beanstalk Developer Guide*\. 
 
 ## Elastic Load Balancing \(ELB\)<a name="checkloadbalancers"></a>
 
-Like Elastic Beanstalk environments, ELB load balancers are designed to keep a minimum number of Amazon Elastic Compute Cloud \(Amazon EC2\) instances running\. You must terminate your load balancer before you delete the Amazon EC2 instances that are registered with it\. For more information, see [Delete Your Load Balancer](http://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/US_EndLoadBalancing02.html) in the *Elastic Load Balancing User Guide*\. 
+Like Elastic Beanstalk environments, ELB load balancers are designed to keep a minimum number of Amazon Elastic Compute Cloud \(Amazon EC2\) instances running\. You must terminate your load balancer before you delete the Amazon EC2 instances that are registered with it\. For more information, see [Delete Your Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/US_EndLoadBalancing02.html) in the *Elastic Load Balancing User Guide*\. 
 
 ## Services Started in AWS OpsWorks<a name="opsworks"></a>
 
-If you use the AWS OpsWorks environment to create AWS resources, you must use AWS OpsWorks to terminate those resources or AWS OpsWorks restarts them\. For example, if you use AWS OpsWorks to create an Amazon EC2 instance, but then terminate it by using the Amazon EC2 console, the AWS OpsWorks auto healing feature categorizes the instance as failed and restarts it\. For more information, see [AWS OpsWorks User Guide](http://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html)\.
+If you use the AWS OpsWorks environment to create AWS resources, you must use AWS OpsWorks to terminate those resources or AWS OpsWorks restarts them\. For example, if you use AWS OpsWorks to create an Amazon EC2 instance, but then terminate it by using the Amazon EC2 console, the AWS OpsWorks auto healing feature categorizes the instance as failed and restarts it\. For more information, see [AWS OpsWorks User Guide](https://docs.aws.amazon.com/opsworks/latest/userguide/welcome.html)\.
 
 ## Amazon EC2 Instances<a name="checkec2instances"></a>
 
-After you remove load balancers and Elastic Load Balancing environments, you can stop or terminate Amazon EC2 instances\. Stopping an instance allows you to start it again later, but you might be charged for storage\. Terminating an instance permanently deletes it\. For more information, see [Instance Lifecycle](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) in the *Amazon EC2 User Guide for Linux Instances*, particularly [Stop and Start Your Instance](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html) and [Terminate Your Instance](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html)\.
+After you remove load balancers and Elastic Load Balancing environments, you can stop or terminate Amazon EC2 instances\. Stopping an instance allows you to start it again later, but you might be charged for storage\. Terminating an instance permanently deletes it\. For more information, see [Instance Lifecycle](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-lifecycle.html) in the *Amazon EC2 User Guide for Linux Instances*, particularly [Stop and Start Your Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html) and [Terminate Your Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html)\.
 
 **Note**  
 Amazon EC2 instances serve as the foundation for multiple AWS services\. They can appear in the Amazon EC2 console Instances list even if they were started by other services\. For example, Amazon Relational Database Service \(Amazon RDS\) instances run on Amazon EC2 instances\. If you terminate an underlying Amazon EC2 instance, the service that started it might interpret the termination as a failure and restart the instance\. For example, the AWS OpsWorks service has a feature called *auto healing* that restarts resources when it detects failures\. In general, it is a best practice to delete resources through the services that started them\. 
 
-Additionally, if you create Amazon EC2 instances from an Amazon Machine Image \(AMI\) that is backed by an instance store, check Amazon S3 for the related bundle\. Deregistering an AMI does not delete the bundle\. For more information, see [Deregistering Your AMI](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/deregister-ami.html)\. 
+Additionally, if you create Amazon EC2 instances from an Amazon Machine Image \(AMI\) that is backed by an instance store, check Amazon S3 for the related bundle\. Deregistering an AMI does not delete the bundle\. For more information, see [Deregistering Your AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/deregister-ami.html)\. 
 
 ## Amazon Elastic Block Store Volumes and Snapshots<a name="checkebsvolumes"></a>
 
-Most Amazon EC2 instances are configured so that their associated Amazon EBS volumes are deleted when they are terminated, but it is possible to set up an instance that preserves its volume and the data\. Check the **Volumes** pane in the Amazon EC2 console for volumes that you don’t need anymore\. For more information, see [Deleting an Amazon EBS Volume](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-deleting-volume.html) in the *Amazon EC2 User Guide for Linux Instances*\. 
+Most Amazon EC2 instances are configured so that their associated Amazon EBS volumes are deleted when they are terminated, but it is possible to set up an instance that preserves its volume and the data\. Check the **Volumes** pane in the Amazon EC2 console for volumes that you don’t need anymore\. For more information, see [Deleting an Amazon EBS Volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-deleting-volume.html) in the *Amazon EC2 User Guide for Linux Instances*\. 
 
 If you have stored snapshots of your Amazon EBS volumes and no longer need them, you should delete them as well\. Deleting a volume does not automatically delete the associated snapshots\. 
 
 **Note**  
 Deleting a snapshot might not reduce your organization's data storage costs\. Other snapshots might reference that snapshot's data, and referenced data is always preserved\.   
-For example, when you take the first snapshot of a volume with 10 GiB of data, the size of the snapshot is also 10 GiB\. Because snapshots are incremental, the second snapshot that you take of the same volume contains only blocks of data that changed since the first snapshot was taken\. The second snapshot also references the data in the first snapshot\. That is, if you modify 4 GiB of data and take a second snapshot, the size of the second snapshot is 4 GiB\. In addition, the second snapshot references the unchanged 6 GiB in the first snapshot\. For more information, see [ How Incremental Snapshots Work](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html#how_snapshots_work)\.   
+For example, when you take the first snapshot of a volume with 10 GiB of data, the size of the snapshot is also 10 GiB\. Because snapshots are incremental, the second snapshot that you take of the same volume contains only blocks of data that changed since the first snapshot was taken\. The second snapshot also references the data in the first snapshot\. That is, if you modify 4 GiB of data and take a second snapshot, the size of the second snapshot is 4 GiB\. In addition, the second snapshot references the unchanged 6 GiB in the first snapshot\. For more information, see [ How Incremental Snapshots Work](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html#how_snapshots_work)\.   
 In the following example, you are charged 0\.70 cents per day for both snapshots\. This charge can change daily\.   
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/images/ebs-snapshot-1.png)
@@ -75,11 +75,11 @@ In the following example, you are charged 0\.50 cents per day for storing the 10
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/images/ebs-snapshot-2.png)
 
-For more information about deleting snapshots, see [Deleting an Amazon EBS Snapshot](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-deleting-snapshot.html)\.
+For more information about deleting snapshots, see [Deleting an Amazon EBS Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-deleting-snapshot.html)\.
 
 ## Elastic IP Addresses<a name="checkelasticipaddresses"></a>
 
-Any Elastic IP addresses that are attached to an instance that you terminate are unattached, but they are still allocated to you\. If you don’t need that IP address anymore, release it to avoid additional charges\. For more information, see [Releasing an Elastic IP Address](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#using-instance-addressing-eips-releasing) in the *Amazon EC2 User Guide for Linux Instances*\. 
+Any Elastic IP addresses that are attached to an instance that you terminate are unattached, but they are still allocated to you\. If you don’t need that IP address anymore, release it to avoid additional charges\. For more information, see [Releasing an Elastic IP Address](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html#using-instance-addressing-eips-releasing) in the *Amazon EC2 User Guide for Linux Instances*\. 
 
 ## Services Launched by Other Services<a name="servicesnotfree"></a>
 

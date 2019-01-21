@@ -6,7 +6,7 @@ The AWS Price List API is actually a URL that provides up\-to\-date pricing info
 To find a list of all available offer files, download the offer index file:
 + **Offer index file** – A JSON file that lists the supported AWS services, with a URL for each offer file where you can download pricing details\. The file also includes metadata about the offer index file itself, URLs for service offer files, and URLs for regional offer index files\. For more information, see [Downloading an Offer Index File](#download-the-offer-index)\.
 
-Offer files do not include information about expiring free tier offers or Amazon EC2 Spot Instances\. 
+Offer files don't include information about expiring free tier offers or Amazon EC2 Spot Instances\. 
 
 **Note**  
 The AWS Price List API provides pricing details for your information only\. If there is a discrepancy between the offer file and a service pricing page, AWS charges the prices that are listed on the service pricing page\. For more information about AWS service pricing, see [Cloud Services Pricing](https://aws.amazon.com/pricing/services/)\.
@@ -40,7 +40,7 @@ To download the offer file for the service that you want, go to the URL for that
 https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/index.json
 ```
 
-The offer index file includes the JSON URLS\. To download the CSV version, replace the `.json` extension in the offer file URL with `.csv`\. If you want to download the offer file for a specific service and you know the service code, replace the `AmazonEC2` in the URL with the service code to download the offer file for that service\. If you do not know the service code, download the offer index file to find it\. If you want to download the offer file for a specific service in a specific region and you know the service code and region, use the URL for that regional offer file\. For example, to download the current JSON version of the Amazon EC2 offer file for US East \(N\. Virginia\), use the following [URL](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json):
+The offer index file includes the JSON URLS\. To download the CSV version, replace the `.json` extension in the offer file URL with `.csv`\. If you want to download the offer file for a specific service and you know the service code, replace the `AmazonEC2` in the URL with the service code to download the offer file for that service\. If you don't know the service code, download the offer index file to find it\. If you want to download the offer file for a specific service in a specific region and you know the service code and region, use the URL for that regional offer file\. For example, to download the current JSON version of the Amazon EC2 offer file for US East \(N\. Virginia\), use the following [URL](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json):
 
 ```
 https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json

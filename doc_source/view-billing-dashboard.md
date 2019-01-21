@@ -14,7 +14,7 @@ The **Spend Summary** graph shows you how much you spent last month, the estimat
 The **Month\-to\-Date Spend by Service** graph shows the top services that you use most, and the proportion of your costs that that service contributed to\. The **Month\-to\-Date Spend by Service** graph does not include forecasting\.
 
 **Month\-to\-Date Top Services by Spend**  
-The **Month\-to\-Date Top Services by Spend** graph shows the services that you use most, along with the costs accrued for the month\-to\-date\. The **Month\-to\-Date Top Services by Spend** graph does not include forecasting\.
+The **Month\-to\-Date Top Services by Spend** graph shows the services that you use most, along with the costs incurred for the month\-to\-date\. The **Month\-to\-Date Top Services by Spend** graph does not include forecasting\.
 
 ## Opening the Billing and Cost Management Console and Dashboard<a name="opening-billing-dashboard"></a>
 

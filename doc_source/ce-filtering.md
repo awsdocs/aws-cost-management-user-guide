@@ -1,9 +1,10 @@
-# Filtering the Data That You Want to View<a name="selectdim"></a>
+# Filtering the Data That You Want to View<a name="ce-filtering"></a>
 
 With Cost Explorer, you can filter how you view your AWS costs by one or more of the following values:
 + **API operation**
 + **Availability Zone \(AZ\)**
 + **Billing Entity**
++ **Charge Types**
 + **Include All**
 + **Instance Type**
 + **Legal Entity**
@@ -25,25 +26,29 @@ You can use Cost Explorer to see which service you use the most, which Availabil
 
 1. For **Filters**, choose a value\. After you make a selection, a new control appears with additional options\.
 
-1. In the new control, select the items from each list that you want to display in the chart, or begin typing in the search box to have Cost Explorer autocomplete your selection\. After you choose your filters, choose **Apply filters**\.
+1. In the new control, select the items from each list that you want to display in the chart or begin typing in the search box to have Cost Explorer autocomplete your selection\. After you choose your filters, choose **Apply filters**\.
 **Note**  
-Each time that you apply filters to your costs, Cost Explorer creates a new chart\. You can, however, use your browser's bookmark feature to [save configuration settings](savewithbookmarks.md) for repeated use\. Forecasts are not saved, and the most recent forecast is displayed when you revisit your saved chart\.
+Each time that you apply filters to your costs, Cost Explorer creates a new chart\. However, you can use your browser's bookmark feature to [save configuration settings](ce-bookmarks.md) for repeated use\. Forecasts aren't saved, and Cost Explorer displays the most recent forecast when you revisit your saved chart\.
 
 You can continue refining your cost analysis by using multiple filters, by grouping your data by filter type, and by using the options in the **Advanced Options** tab\. 
 
 ## Combining Filters to Show Data in Common<a name="filtersandoperators"></a>
 
-Cost Explorer displays a chart that represents the data in common to the filters you've selected, which means that you can use filters together to analyze subsets of cost data\. For example, if you set the **Service** filter to show costs related to Amazon EC2 and Amazon RDS services, and then select **Reserved** using the **Purchase Option** filter, the cost chart shows how much money **Reserved** instances on Amazon EC2 and Amazon RDS cost for each of the three months specified\.
+Cost Explorer displays a chart that represents the data in common to the filters that you have selected, which means that you can use filters together to analyze subsets of cost data\. For example, if you set the **Service** filter to show costs related to Amazon EC2 and Amazon RDS services and then select **Reserved** using the **Purchase Option** filter, the cost chart shows how much money **Reserved** instances on Amazon EC2 and Amazon RDS cost for each of the three months specified\.
 
 **Note**  
 The RI Utilization reports allow filtering by only one service at a time, and only for the following services:  
-**Amazon EC2**, **Amazon Redshift**, **Amazon RDS**, **ElastiCache**
+Amazon EC2
+Amazon Redshift
+Amazon RDS
+ElastiCache
+Amazon ES
 
 ## Filters and Logical Operations \(AND/OR\)<a name="logicops"></a>
 
 When you select multiple filters, and values for each filter, Cost Explorer applies rules that emulate the logical AND and OR operators to your selections\. Within each filter, Cost Explorer emulates the logical OR filter to your selection of filter types\. In other words, the chart it displays adds the aggregate costs for each item together\. Using the previous example, you see bars for both of the selected services, Amazon EC2 and Amazon RDS\. 
 
-When you select multiple filters, Cost Explorer applies the logical AND operator to your selections\. In other words, if you use the **Services** filter and specify Amazon EC2 and Amazon RDS costs for inclusion, and then also apply the **Purchase Options** filter to select a single type of purchase option, you see *only* the **Non\-Reserved** charges incurred by Amazon EC2 and Amazon RDS\. 
+When you select multiple filters, Cost Explorer applies the logical AND operator to your selections\. In other words, if you use the **Services** filter and specify Amazon EC2 and Amazon RDS costs for inclusion and then also apply the **Purchase Options** filter to select a single type of purchase option, you see *only* the **Non\-Reserved** charges incurred by Amazon EC2 and Amazon RDS\. 
 
 ## Filter and Group Options<a name="filtergrouptypes"></a>
 
@@ -53,31 +58,31 @@ In Cost Explorer, you can filter by the following groups:
   Requests made to and tasks performed by a service, such as write and get requests to Amazon S3\.
 + **Availability Zone**
 
-  Distinct locations within a region that are insulated from failures in other Availability Zones\. They provide inexpensive, low\-latency network connectivity to other Availability Zones in the same region\. 
+  Distinct locations within a region that are insulated from failures in other AZs\. They provide inexpensive, low\-latency network connectivity to other AZs in the same region\. 
 + **Billing Entity**
 
-  The organization that bills the customer for a service\. For AWS service charges, AWS is the billing entity\. For third party services sold through AWS Marketplace, AWS Marketplace is the billing entity\. 
+  The organization that bills the customer for a service\. For AWS service charges, AWS is the billing entity\. For third\-party services sold through AWS Marketplace, AWS Marketplace is the billing entity\. 
 + **Instance Type**
 
-  Type of RI that you specified when you launched an Amazon EC2 host, Amazon RDS instance class, Amazon Redshift node, or Amazon ElastiCache node\. The instance type determines the hardware of the computer used to host your instance\.
+  The type of RI that you specified when you launched an Amazon EC2 host, Amazon RDS instance class, Amazon Redshift node, or Amazon ElastiCache node\. The instance type determines the hardware of the computer used to host your instance\.
 + **Legal Entity**
 
   The provider of your AWS services\. For AWS service charges, AWS is the legal entity\. For AWS service charges in India, AISPL is the legal entity\. 
 + **Linked Account**
 
-  Member accounts in an organization\. For more information, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
+  The member accounts in an organization\. For more information, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
 + **Platform**
 
-  The operating system that your RI runs on\. Platform is either **Linux** or **Windows**\.
+  The operating system that your RI runs on\. **Platform** is either **Linux** or **Windows**\.
 + **Purchase Option**
 
-   The method you choose to pay for your Amazon EC2 instances, including Reserved Instances, Spot Instances, Scheduled Reserved Instances, and On\-Demand Instances\. 
+  The method you choose to pay for your Amazon EC2 instances, including Reserved Instances, Spot Instances, Scheduled Reserved Instances, and On\-Demand Instances\. 
 + **Region**
 
-  Geographic areas where AWS hosts your resources\.
+  The geographic areas where AWS hosts your resources\.
 + **Service**
 
-  AWS products\. To learn what's available, see [AWS Products and Services](https://aws.amazon.com/products/)\. You can use this dimension to filter costs by specific AWS Marketplace software, including your costs for AMIs, web services, and desktop apps\. See the [ What is AWS Marketplace? ](http://docs.aws.amazon.com/marketplace/latest/controlling-access/what-is-marketplace.html) guide for more information\. 
+  AWS products\. To learn what's available, see [AWS Products and Services](https://aws.amazon.com/products/)\. You can use this dimension to filter costs by specific AWS Marketplace software, including your costs for AMIs, web services, and desktop apps\. See the [ What is AWS Marketplace? ](https://docs.aws.amazon.com/marketplace/latest/controlling-access/what-is-marketplace.html) guide for more information\. 
 **Note**  
 The RI Utilization reports allow filtering by only one service at a time, and only for the following services:  
 **Amazon EC2**, **Amazon Redshift**, **Amazon RDS**, **ElastiCache**
@@ -86,7 +91,7 @@ The RI Utilization reports allow filtering by only one service at a time, and on
   Label that you can use to track costs associated with specific areas/entities within your business\. For more information about working with tags, see [Applying User\-Defined Cost Allocation Tags](custom-tags.md#allocation-how)\.
 + **Tenancy**
 
-  Specifies whether you share an Amazon EC2 RI with another user or not\. Tenancy is either **Dedicated** or **Default**\. 
+  Specifies whether you share an Amazon EC2 RI with another user\. Tenancy is either **Dedicated** or **Default**\. 
 + **Usage Type**
 
   Usage types are the units that each service uses to measure the usage of a specific type of resource\. For example, the `BoxUsage:t2.micro(Hrs)` usage type filters by the running hours of Amazon EC2 `t2.micro` instances\.
@@ -94,7 +99,7 @@ The RI Utilization reports allow filtering by only one service at a time, and on
 
   Usage type groups are filters that collect a specific category of usage type filters into one filter\. For example, `BoxUsage:c1.medium(Hrs)`, `BoxUsage:m3.xlarge(Hrs)`, and `BoxUsage:t1.micro(Hrs)` are all filters for Amazon EC2 instance running hours, so they are collected into the `EC2: Running Hours` filter\.
 
-  Usage type groups are available for Amazon EC2, DynamoDB, and Amazon S3\. The specific groups available to your account depend on what services you've used\. The list of groups that might be available includes but is not limited to the following:
+  Usage type groups are available for Amazon EC2, DynamoDB, and Amazon S3\. The specific groups available to your account depend on what services you've used\. The list of groups that might be available includes but isn't limited to the following:
   + **DDB: Data Transfer \- Internet \(In\)**
 
     Filters by costs associated with how many GB are transferred to your DynamoDB databases\.
@@ -127,13 +132,13 @@ The RI Utilization reports allow filtering by only one service at a time, and on
     Filters by costs associated with how many GB are transferred to your Amazon EC2 instances from a CloudFront distribution\.
   + **EC2: Data Transfer \- Inter AZ**
 
-    Filters by costs associated with how many GB are transferred into, out of, or between your Amazon EC2 instances in different Availability Zones\.
+    Filters by costs associated with how many GB are transferred into, out of, or between your Amazon EC2 instances in different AZs\.
   + **EC2: Data Transfer \- Internet \(In\)**
 
-    Filters by costs associated with how many GB are transferred to your Amazon EC2 instances from outside of the AWS network\.
+    Filters by costs associated with how many GB are transferred to your Amazon EC2 instances from outside the AWS network\.
   + **EC2: Data Transfer \- Internet \(Out\)**
 
-    Filters by costs associated with how many GB are transferred from an Amazon EC2 instance to a host outside of the AWS network\.
+    Filters by costs associated with how many GB are transferred from an Amazon EC2 instance to a host outside the AWS network\.
   + **EC2: Data Transfer \- Region to Region \(In\)**
 
     Filters by costs associated with how many GB are transferred to your Amazon EC2 instances from a different AWS Region\.
@@ -179,6 +184,18 @@ The RI Utilization reports allow filtering by only one service at a time, and on
   + **EC2: Running Hours**
 
     Filters by costs associated with how many hours that your Amazon EC2 instances ran\.
+
+    This **Usage Type Group** contains only the following **Usage Types**:
+    + AlwaysOnUsage
+    + BoxUsage
+    + DedicatedUsage
+    + HighUsage
+    + HostBoxUsage
+    + HostUsage
+    + ReservedHostUsage
+    + SchedUsage
+    + SpotUsage
+    + UnusedBox
   + **ElastiCache: Running Hours**
 
     Filters by costs associated with how many hours that your Amazon ElastiCache nodes ran\.
@@ -188,6 +205,16 @@ The RI Utilization reports allow filtering by only one service at a time, and on
   + **RDS: Running Hours**
 
     Filters by costs associated with how many hours that your Amazon RDS databases ran\.
+
+    This **Usage Type Group** contains only the following **Usage Types**:
+    + AlwaysOnUsage
+    + BoxUsage
+    + DedicatedUsage
+    + HighUsage
+    + InstanceUsage
+    + MirrorUsage
+    + Multi\-AZUsage
+    + SpotUsage
   + **RDS: Data Transfer – CloudFront – In**
 
     Filters by costs associated with how many GB are transferred into Amazon RDS from a CloudFront distribution\.
@@ -202,7 +229,7 @@ The RI Utilization reports allow filtering by only one service at a time, and on
     Filters by costs associated with how many GB are transferred from Amazon RDS through a Direct Connect network connection\.
   + **RDS: Data Transfer – InterAZ**
 
-    Filters by costs associated with how many GB are transferred into, out of, or between Amazon RDS buckets in different Availability Zones\.
+    Filters by costs associated with how many GB are transferred into, out of, or between Amazon RDS buckets in different AZs\.
   + **RDS: Data Transfer – Internet – In**
 
     Filters by costs associated with how many GB are transferred to your Amazon RDS databases\.
@@ -241,13 +268,13 @@ The RI Utilization reports allow filtering by only one service at a time, and on
     Filters by costs associated with how many GB are transferred from a CloudFront distribution to Amazon S3 data transfers, such as how much data was uploaded from your Amazon S3 bucket to your CloudFront distribution\.
   + **S3: Data Transfer \- Inter AZ**
 
-    Filters by costs associated with how many GB are transferred into, out of, or between Amazon S3 buckets in different Availability Zones\.
+    Filters by costs associated with how many GB are transferred into, out of, or between Amazon S3 buckets in different AZs\.
   + **S3: Data Transfer \- Internet \(In\)**
 
-    Filters by costs associated with how many GB are transferred to an Amazon S3 bucket from outside of the AWS network\.
+    Filters by costs associated with how many GB are transferred to an Amazon S3 bucket from outside the AWS network\.
   + **S3: Data Transfer \- Internet \(Out\)**
 
-    Filters by costs associated with how many GB are transferred from an Amazon S3 bucket to a host outside of the AWS network\.
+    Filters by costs associated with how many GB are transferred from an Amazon S3 bucket to a host outside the AWS network\.
   + **S3: Data Transfer \- Region to Region \(In\)**
 
     Filters by costs associated with how many GB are transferred to Amazon S3 from a different AWS Region\.
@@ -257,3 +284,30 @@ The RI Utilization reports allow filtering by only one service at a time, and on
   + **S3: Storage \- Standard**
 
     Filters by costs associated with how many GB that you have stored in Amazon S3\.
++ **Charge Type**
+
+  Charge types are different types of charges or fees\.  
+**Credit**  
+Any AWS credits that are applied to your account\.  
+**Other out\-of\-cycle charges**  
+Any subscription charges that aren't upfront reservation charges or support charges\.  
+**Recurring reservation fee**  
+Any recurring charges to your account\. When you purchase a Partial Upfront or No Upfront Reserved Instance from AWS, you pay a recurring charge in exchange for a lower rate for using the instance\. The recurring fees can result in spikes on the first day of every month, when AWS charges your account\.  
+**Refund**  
+Any refunds that you received\. Refunds are listed as a separate line item in the data table\. They do not appear as an item in the chart because they represent a negative value in the calculation of your costs\. The chart displays only positive values\.  
+**Reservation applied usage **  
+Usage that AWS applied reservation discounts to\.  
+**Support fee**  
+Any charges that AWS charges you for a support plan\. When you purchase a support plan from AWS, you pay a monthly charge in exchange for service support\. The monthly fees can result in spikes on the first day of every month, when AWS charges your account\.  
+**Tax**  
+Any taxes that are associated with the charges or fees in your cost chart\. Cost Explorer adds all taxes together as a single component of your costs\. If you select five or fewer filters, Cost Explorer displays your tax expenses as a single bar\. If you select six or more filters, Cost Explorer displays five bars, stacks, or lines, and then aggregates all remaining items, including taxes, into a sixth bar, stack slice, or plot line that is labeled **Other**\.   
+If you choose to omit **RI upfront fees**, **RI recurring charges**, or **Support charges** from your chart, Cost Explorer continues to include any taxes that are associated with the charges\.  
+Cost Explorer displays your tax costs in the chart only when you choose **Monthly** drop down\. When you filter your cost chart, the following rules govern the inclusion of taxes:   
+
+  1. Taxes are excluded if you select non\-**Linked Account** filters, either singly or in combination with other filters\. 
+
+  1. Taxes are included if you select the **Linked Accounts** filters\.   
+**Upfront reservation fee**  
+Any upfront fees that are charged to your account\. When you purchase an All Upfront or Partial Upfront Reserved Instance from AWS, you pay an upfront fee in exchange for a lower rate for using the instance\. The upfront fees can result in spikes in the chart for the days or months when you make your purchases\.  
+**Usage**  
+Usage that AWS didn't apply reservation discounts to\.

@@ -55,17 +55,29 @@ For more information, see [Billing and Cost Management Permissions Reference](bi
 
 1. On the **Cost Explorer** page, choose **Launch Cost Explorer**\.
 
-1. On the navigation bar, choose the menu\. Under **Select a service**, choose the service that you want recommendations for\. The default recommendation is for RIs with a one\-year term and a payment option of Partial Upfront \(based on your previous seven days of usage\)\.
+1. On the navigation bar, choose the menu\. Under **Select a service**, choose the service that you want recommendations for\. The default recommendation is for RIs with a one\-year term and a payment option of Partial Upfront \(based on your previous 30 days of usage\)\.
 
 ## Reading the Cost Explorer RI Recommendations<a name="reading-rex"></a>
 
-At the top of the RI recommendation page there are three numbers: your **Estimated Annual Savings**, your **Savings vs\. On\-Demand**, and your **Purchase Recommendations**\. Your **Estimated Annual Savings** is how much Cost Explorer calculates that you could save by purchasing all the recommended RIs\. Your **Savings vs\. On\-Demand** is your estimated savings as a percentage of your current costs\. Your **Purchase Recommendations** is how many different RI purchase options that Cost Explorer found for you\. The pane on the right has four parameters that control which settings Cost Explorer uses to generate your recommendations\.
+The RI recommendation page shows you your estimated potential savings, your RI purchase recommendations, and the parameters that Cost Explorer used to create your recommendations\. You can change the parameters to get recommendations that might match your use case more closely\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
+The top of the RI recommendations page show you three numbers:
++ **Estimated Annual Savings** – Your **Estimated Annual Savings** is how much Cost Explorer calculates that you could save by purchasing all the recommended RIs\.
++ **Savings vs\. On\-Demand** – Your **Savings vs\. On\-Demand** is your estimated savings as a percentage of your current costs\.
++ **Purchase Recommendations** – Your **Purchase Recommendations** is how many different RI purchase options that Cost Explorer found for you\.
 
-At the bottom of the page are three savings estimates\. The table shows the different purchase recommendations and details about the recommendations\. If you want to see the usage that Cost Explorer based a recommendation on, choose the **View Usage in Cost Explorer** link in the recommendation details\. This takes you to a report that shows the exact parameters that Cost Explorer used to generate your recommendation\. The report also shows your costs and associated usage grouped by **Purchase Option**, so that you can view the On\-Demand Instance usage that your recommendation is based on\.
+These numbers enable you to see a rough estimate of how much you could potentially save by buying more RIs\. You can recalculate these numbers for a different use case by using the parameters in the pane on the right\. The pane allows you to change the following parameters:
++ **RI term** – The length of the RI reservation that you want recommendations for\.
++ **Offering class** – Whether you want recommendations for a standard RI or a convertible RI\.
++ **Payment option** – Whether you want to pay for recommended RIs upfront\.
++ **Based on the past** – How many days of your previous instance usage that you want your recommendations to take into account\.
 
-You can sort your recommendations by **Monthly Estimated Savings**, **Upfront RI Cost**, **Purchase recommendation**, or **Instance Type**\.
+At the bottom of the page are tabs with some of your savings estimates\. The **All accounts** tab enables you to see the recommendations based on the combined usage across your entire organization, and the **Individual accounts** tab enables you to see recommendations that Cost Explorer generated on a per\-linked\-account basis\. The table on each tab shows the different purchase recommendations and details about the recommendations\. If you want to see the usage that Cost Explorer based a recommendation on, choose the **View associated usage** link in the recommendation details\. This takes you to a report that shows the exact parameters that Cost Explorer used to generate your recommendation\. The report also shows your costs and associated usage grouped by **Purchase option**, so that you can view the On\-Demand Instance usage that your recommendation is based on\.
+
+**Note**  
+Recommendations that Cost Explorer bases on an individual linked account consider all usage by that linked account, including any RIs used by that linked account\. This includes RIs shared by another linked account\. The recommendations don't assume that an RI will be shared with the linked account in the future\. 
+
+You can sort your recommendations by **Monthly estimated savings**, **Upfront RI cost**, **Purchase recommendation**, or **Instance type**\.
 
 ## Modifying Your RI Recommendations<a name="modifying-rex"></a>
 
@@ -94,7 +106,11 @@ Instead of forecasting your future usage, Cost Explorer assumes that your future
 
    1. For **Payment option**, select the purchase option that you want\.
 
+   1. For **Recommendation type**, select the logic that you want your recommendations based on\.
+
    1. For **Based on the past**, select how many days of usage that you want your RI recommendations to be based on\.
+
+1. Choose either **All accounts** or **Individual accounts** to see recommendations based either on your organization\-wide usage or on all of your linked accounts based on their individual account usage\.
 
 ## Saving Your RI Recommendations<a name="saving-rex"></a>
 
@@ -102,7 +118,7 @@ You can save your RI recommendations as a CSV file\.<a name="save-rex"></a>
 
 **To save your RI recommendations**
 
-1. On the **Reserved Instance Recommendations** page, in the parameter pane, change the parameters that you want to change\. Your estimated savings update automatically\.
+1. On the **Reserved Instance Recommendations** page, in the RI parameter pane, change any parameters that you want to change\. Your estimated savings update automatically\.
 
 1. Above the recommendation table, choose **Download CSV**\.
 
@@ -113,32 +129,31 @@ The CSV file contains the following columns\.
 
 |  Column Name  | Service |  Column Explanation  | 
 | --- | --- | --- | 
-|  Recommendation Date  | EC2, RDS, RS, ELC, ES |  The date that Cost Explorer generated your recommendation\.  | 
-|  Owner Account   | EC2, RDS, RS, ELC, ES |  The account associated with your recommendation\.  | 
-|  Instance Type   | EC2, RDS, ES |  The type of instance that the recommendation is generated for \(for example, `m4.large` or `t2.nano`\)\. For size\-flexible recommendations, Cost Explorer aggregates all usage in a organization \(for example, the m4 family\) and shows a recommendation for the smallest instance type RI that is available for purchase \(for example, `m4.large`\)\.  | 
-|  Node Type   | ELC, RS |  The type of node that the recommendation is generated for, such as `ds2.xlarge`\.  | 
-|  Size Flexible Recommendation   | EC2, RDS |  Whether a recommended RI is size\-flexible\.  | 
-|  Max hourly usage in Historical Period   | EC2, RDS, RS, ELC, ES |  The maximum number of instance hours used in an hour over the period chosen for generating recommendations\.  | 
-|  Min hourly usage in Historical Period   | EC2, RDS, RS, ELC, ES |  The minimum number of instance hours used in an hour over the period chosen for generating recommendations\.  | 
-|  Average hourly usage in Historical Period   | EC2, RDS, RS, ELC, ES |  The average number of instance hours used per hour over the period chosen for generating recommendations\.  | 
-|  Max hourly normalized unit usage in Historical Period   | EC2, RDS |  The maximum number of normalized units used in an hour over the period chosen for generating recommendations\.  | 
-|  Min hourly normalized unit usage in Historical Period   | EC2, RDS |  The minimum number of normalized units used in an hour over the period chosen for generating recommendations\.  | 
 |  Average hourly normalized unit usage in Historical Period   | EC2, RDS |  The average number of normalized units used per hour over the period chosen for generating recommendations\.  | 
-|  Projected RI Utilization   | EC2, RDS, RS, ELC, ES |  How much of the recommended RI Cost Explorer estimates you will use\.  | 
-|  Location   | EC2, RDS, RS, ELC, ES |  The region of the instances used to generate a recommendation\. You must purchase the recommended RIs in the recommended region to see potential savings\.  | 
-|  Tenancy   | EC2 |  The tenancy for the recommended RI purchase\. Valid values are **shared** or **dedicated**\.  | 
-|  OS   | EC2 |  The operating system and license model for the recommended RI instance type\.  | 
-|  Term  | EC2, RDS, RS, ELC, ES |  The recommended term length for the recommendation\.  | 
-|  Payment Option   | EC2, RDS, RS, ELC, ES |  The recommended payment option for the recommendation\.  | 
-|  Recurring Monthly Cost   | EC2, RDS, RS, ELC, ES |  The recurring monthly cost of the recommended reservations\.  | 
-|  Recommended Instance Quantity Purchase   | EC2, RDS |  How many reservations Cost Explorer recommends that you buy\.  | 
-|  Recurring Monthly Cost   | EC2, RDS, RS, ELC, ES |  The recurring monthly cost of the recommended reservations\.  | 
-|  Recommended Normalized Unit Quantity Purchase  | EC2, RDS, RS, ELC, ES |  How many normalized units that Cost Explorer recommends that you buy\.  | 
+|  Average hourly usage in Historical Period   | EC2, RDS, RS, ELC, ES |  The average number of instance hours used per hour over the period chosen for generating recommendations\.  | 
 |  Break Even Months  | EC2, RDS, RS, ELC, ES |  The estimated length of time before you recoup your upfront costs for this set of recommended reservations\.  | 
+| Cache Engine | ELC | The kind of engine that the recommended ElastiCache reserved node runs, such as Redis or Memcheched\. | 
 | Database Edition | RDS | The edition of the database engine that the recommended RDS reserved instance runs\. | 
 | Database Engine | RDS | The kind of engine that the recommended RDS RI runs, such as Aurora MySQL or MariaDB\. | 
-| Cache Engine | ELC | The kind of engine that the recommended ElastiCache reserved node runs, such as Redis or Memcheched\. | 
 | Deployment Option | RDS | Whether your RI is for an RDS instance in a single Availability Zone or an RDS instance with a backup in another Availability Zone\. | 
+|  Instance Type   | EC2, RDS, ES |  The type of instance that the recommendation is generated for \(for example, `m4.large` or `t2.nano`\)\. For size\-flexible recommendations, Cost Explorer aggregates all usage in a organization \(for example, the m4 family\) and shows a recommendation for the smallest instance type RI that is available for purchase \(for example, `m4.large`\)\.  | 
+|  Location   | EC2, RDS, RS, ELC, ES |  The region of the instances used to generate a recommendation\. You must purchase the recommended RIs in the recommended region to see potential savings\.  | 
+|  Max hourly normalized unit usage in Historical Period   | EC2, RDS |  The maximum number of normalized units used in an hour over the period chosen for generating recommendations\.  | 
+|  Max hourly usage in Historical Period   | EC2, RDS, RS, ELC, ES |  The maximum number of instance hours used in an hour over the period chosen for generating recommendations\.  | 
+|  Min hourly normalized unit usage in Historical Period   | EC2, RDS |  The minimum number of normalized units used in an hour over the period chosen for generating recommendations\.  | 
+|  Min hourly usage in Historical Period   | EC2, RDS, RS, ELC, ES |  The minimum number of instance hours used in an hour over the period chosen for generating recommendations\.  | 
+|  Node Type   | ELC, RS |  The type of node that the recommendation is generated for, such as `ds2.xlarge`\.  | 
+|  OS   | EC2 |  The operating system and license model for the recommended RI instance type\.  | 
+|  Owner Account   | EC2, RDS, RS, ELC, ES |  The account associated with your recommendation\.  | 
+|  Payment Option   | EC2, RDS, RS, ELC, ES |  The recommended payment option for the recommendation\.  | 
+|  Projected RI Utilization   | EC2, RDS, RS, ELC, ES |  How much of the recommended RI Cost Explorer estimates you will use\.  | 
+|  Recommendation Date  | EC2, RDS, RS, ELC, ES |  The date that Cost Explorer generated your recommendation\.  | 
+|  Recommended Instance Quantity Purchase   | EC2, RDS |  How many reservations Cost Explorer recommends that you buy\.  | 
+|  Recommended Normalized Unit Quantity Purchase  | EC2, RDS, RS, ELC, ES |  How many normalized units that Cost Explorer recommends that you buy\.  | 
+|  Recurring Monthly Cost   | EC2, RDS, RS, ELC, ES |  The recurring monthly cost of the recommended reservations\.  | 
+|  Size Flexible Recommendation   | EC2, RDS |  Whether a recommended RI is size\-flexible\.  | 
+|  Tenancy   | EC2 |  The tenancy for the recommended RI purchase\. Valid values are **shared** or **dedicated**\.  | 
+|  Term  | EC2, RDS, RS, ELC, ES |  The recommended term length for the recommendation\.  | 
 
 ## Using Your RI Recommendations<a name="using-rex"></a>
 
@@ -148,28 +163,28 @@ To purchase the recommended reservations, go to the purchase page on a service c
 
 1. On the **Reserved Instance Recommendations** page, choose [Amazon EC2 RI Purchase Console](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#ReservedInstances:sort=reservedInstancesId) to go to the Amazon EC2 Purchase Console\.
 
-1. Purchase your RIs by following the instructions at [Buying Reserved Instances](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-concepts-buying.html) in the *Amazon EC2 User Guide for Linux Instances*\.<a name="use-rex-rds"></a>
+1. Purchase your RIs by following the instructions at [Buying Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ri-market-concepts-buying.html) in the *Amazon EC2 User Guide for Linux Instances*\.<a name="use-rex-rds"></a>
 
 **To use Amazon Relational Database Service recommendations**
 
 1. On the **Reserved Instances** page in the Amazon RDS console, choose **Purchase Reserved DB Instance**\. 
 
-1. Purchase your reservations by following the instructions at [Working with Reserved DB Instances](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithReservedDBInstances.html) in the *Amazon RDS User Guide*\.<a name="use-rex-rs"></a>
+1. Purchase your reservations by following the instructions at [Working with Reserved DB Instances](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithReservedDBInstances.html) in the *Amazon RDS User Guide*\.<a name="use-rex-rs"></a>
 
 **To use Amazon Redshift recommendations**
 
 1. On the **Reserved Node** page in the Amazon Redshift console, choose **Purchase Reserved Nodes**\. 
 
-1. Purchase your reservations by following the instructions at [Purchasing a Reserved Node Offering with the Amazon Redshift Console](http://docs.aws.amazon.com/redshift/latest/mgmt/purchase-reserved-node-offering-console.html) in the *Amazon Redshift Cluster Management Guide*\.<a name="use-rex-es"></a>
+1. Purchase your reservations by following the instructions at [Purchasing a Reserved Node Offering with the Amazon Redshift Console](https://docs.aws.amazon.com/redshift/latest/mgmt/purchase-reserved-node-offering-console.html) in the *Amazon Redshift Cluster Management Guide*\.<a name="use-rex-es"></a>
 
 **To use Amazon Elasticsearch Service recommendations**
 
 1. On the **Reserved Instances** page in the Amazon ES console, choose **Purchase Reserved Instance**\. 
 
-1. Purchase your reservations by following the instructions at [Amazon Elasticsearch Service Reserved Instances](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-ri.html) in the *Amazon Elasticsearch Service Developer Guide*\.<a name="use-rex-elc"></a>
+1. Purchase your reservations by following the instructions at [Amazon Elasticsearch Service Reserved Instances](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-ri.html) in the *Amazon Elasticsearch Service Developer Guide*\.<a name="use-rex-elc"></a>
 
 **To use Amazon ElastiCache recommendations**
 
 1. On the **Reserved Cache Nodes** page in the ElastiCache console, choose **Purchase Reserved Cache Node**\. 
 
-1. Purchase your reservations by following the instructions at [Purchasing a Reserved Node](http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/reserved-nodes-purchasing.html) in the *Amazon ElastiCache User Guide*\.
+1. Purchase your reservations by following the instructions at [Purchasing a Reserved Node](https://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/reserved-nodes-purchasing.html) in the *Amazon ElastiCache User Guide*\.

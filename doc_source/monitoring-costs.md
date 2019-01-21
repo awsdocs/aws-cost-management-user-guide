@@ -4,8 +4,7 @@ You can monitor your AWS usage with the following methods:
 
 **Topics**
 + [Reading Your Dashboard Graphs](view-billing-dashboard.md)
-+ [Analyzing Your Costs with Cost Explorer](cost-explorer-what-is.md)
-+ [Accessing Reserved Instance Recommendations](ri-recommendations.md)
++ [Analyzing Your Costs with Cost Explorer](ce-what-is.md)
 + [Monitoring Charges with Alerts and Notifications](monitor-charges.md)
 + [Managing Your Costs with Budgets](budgets-managing-costs.md)
 + [Using Cost Allocation Tags](cost-alloc-tags.md)

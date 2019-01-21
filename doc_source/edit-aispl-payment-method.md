@@ -4,7 +4,9 @@ If your account is with AISPL, follow the procedures in this section to manage y
 + [View credit cards associated with your account](#aispl-view-credit)
 + [Add a credit card to your AISPL account](#aispl-add-credit)
 + [Pay your AISPL bill](#aispl-pay-bill)
++ [Enable recurring payments](#aispl-enable-recurring)
 + [Remove a credit card from your AISPL account](#aispl-remove-credit)
++ [Disable recurring payments](#aispl-disable-recurring)
 + [Activate your subscription](#aispl-activate-subscription)
 
 **Note**  
@@ -34,7 +36,11 @@ AISPL charges your card 2 INR as part of the credit card verification process\. 
 
 1. For the credit card information fields, enter your card billing address\.
 
+1. \(Optional\) Select **Make Default**\.
+
 1. Choose **Continue**\.
+
+1. \(If you chose **Make Default**\) In the dialog box, choose **Ok**\.
 
 **Note**  
 If you use Visa or Mastercard, you might be redirected to your bank to authorize the verification charge\.<a name="aispl-pay-bill"></a>
@@ -42,6 +48,8 @@ If you use Visa or Mastercard, you might be redirected to your bank to authorize
 **To pay your AISPL bill**
 
 You can use the console to pay your AISPL bills\.
+**Note**  
+If your bill is less than 10,000 rupees and you have recurring payments set up, AISPL charges your account two days after you're billed\.
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
@@ -53,7 +61,19 @@ You can use the console to pay your AISPL bills\.
 
 1. In the **Make Payment** box, enter the three\-digit or four\-digit security code of your payment method and then choose **Make Payment**\.
 
-1. For Visa and Mastercard payment methods, you're redirected to your bank to verify your payment\. For American Express payment methods, your bank processes your payment with no action required from you\. After your payment is verified, you're redirected to your account page\. Your invoice shows the **Pay Now** link until your bank processes your payment\.<a name="aispl-remove-credit"></a>
+1. In the dialog box, choose **Ok**\.
+
+1. For Visa and Mastercard payment methods, you're redirected to your bank to verify your payment\. For American Express payment methods, your bank processes your payment with no action required from you\. After your payment is verified, you're redirected to your account page\. Your invoice shows the **Pay Now** link until your bank processes your payment\.<a name="aispl-enable-recurring"></a>
+
+**To enable recurring payments for your AISPL account**
+
+You can use the console to enable recurring payments for your account\.
+
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+
+1. In the navigation pane, choose **Payment Methods**\.
+
+1. Above your credit cards, select the **Reccuring payments for default payments enabled\.** check box\.<a name="aispl-remove-credit"></a>
 
 **To remove a credit card from your AISPL account**
 
@@ -65,7 +85,19 @@ You can use the console to remove a credit card from your account\.
 
 1. Ensure that your account has another valid payment method set as the default\.
 
-1. Next to the card that you want to remove, choose **Delete**\.<a name="aispl-activate-subscription"></a>
+1. Next to the card that you want to remove, choose **Delete**\.<a name="aispl-disable-recurring"></a>
+
+**To disable recurring payments for your AISPL account**
+
+You can use the console to disable recurring payments for your account\.
+
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+
+1. In the navigation pane, choose **Payment Methods**\.
+
+1. Above your credit cards, clear the **Reccuring payments for default payments enabled\.** check box\.
+
+1. In the **Are you sure?** dialog box, choose **Yes**\.<a name="aispl-activate-subscription"></a>
 
 **To activate your subscription**
 

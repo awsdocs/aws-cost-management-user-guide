@@ -69,7 +69,7 @@ If there are member accounts within an organization with a registered address ou
 
 If any unlinked member accounts will continue to use AWS services under a contract with Amazon Web Services, Inc\., you will need to add a payment method for each unlinked account or link that account to a separate master account \(also under a contract with Amazon Web Services, Inc\.\)\. 
 
-For more information about consolidated billing, see [ Consolidated Billing and AWS Organizations](http://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_from-consolidatedbilling.html)\.
+For more information about consolidated billing, see [ Consolidated Billing and AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started_from-consolidatedbilling.html)\.
 
 ## How do I manage the date for my change to AISPL?<a name="question-7"></a>
 

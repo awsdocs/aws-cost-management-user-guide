@@ -22,7 +22,7 @@ If you receive an error message while trying to close your AWS account, you can 
 
 When you close your AWS account, the following things happen:
 + Your access to the AWS Management Console for the closed AWS account is restricted\. You can still sign in to your AWS account to view your past billing information and access AWS Support during the Post\-Closure Period\. You can't access any other AWS services or start any new AWS services in the closed account\.
-+ Any remaining content and unterminated AWS services in your AWS account is deleted and terminated after the Post\-Closure Period\. You should retrieve all content from your AWS account before closing your AWS account\. For instructions on how to retrieve your content, see [ documentation for that service](http://docs.aws.amazon.com/)\.
++ Any remaining content and unterminated AWS services in your AWS account is deleted and terminated after the Post\-Closure Period\. You should retrieve all content from your AWS account before closing your AWS account\. For instructions on how to retrieve your content, see [ documentation for that service](https://docs.aws.amazon.com/)\.
 + Billing for on\-demand charges stops, but you're billed for any usage that has accrued up until the time you closed your account, and you're charged for that usage at the beginning of the next month\. In addition, if you purchased any subscriptions with ongoing payment obligations, you might continue to be charged for them after your account is closed\.
 
 ## Q: What could I be charged if I reopen my AWS account?<a name="closure-question-3"></a>
@@ -35,7 +35,7 @@ Closing an account removes it from an organization after the Post\-Closure Perio
 
 ## Q: Are you retaining my content after I close my account?<a name="closure-question-5"></a>
 
-We don't retain any content that you delete before account closure, but we might not delete your content during the Post\-Closure Period\. After the Post\-Closure Period, any remaining content in your account is deleted\. If you want to delete your content before that time, you should delete your content before closing your account\. 
+During the Post\-Closure Period, AWS may retain any content that you didn't delete and any AWS services that you didn't terminate before you closed your AWS account\. You can access any remaining content or AWS services only by reopening your account during the Post\-Closure Period\. After the Post\-Closure Period, any remaining content in your account is deleted\. If you want to delete your content before that time, you should delete your content before closing your account\. 
 
 ## Q: I have granted other AWS accounts access to my account's AWS services\. Can they access my AWS services after I have closed my account?<a name="closure-question-6"></a>
 

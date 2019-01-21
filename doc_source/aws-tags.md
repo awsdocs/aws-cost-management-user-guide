@@ -30,7 +30,7 @@ AssumedRole:EXAMPLEACCESSKEY:exampleRole
 FederatedUser:1234567890:exampleUser
 ```
 
-For more information about IAM users, roles, and federation, see the [IAM User Guide](http://docs.aws.amazon.com/IAM/latest/UserGuide/)\.
+For more information about IAM users, roles, and federation, see the [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/)\.
 
 AWS\-generated cost allocation tags are applied on a best\-effort basis\. Issues with services that AWS\-generated tags depend on, such as CloudTrail, can cause a gap in tagging\. 
 
@@ -64,7 +64,7 @@ The `createdBy` tag is applied only to the following services and resources afte
 | AWS Elastic Beanstalk \(Elastic Beanstalk\) |  CreateEnvironment  |  Environment  | 
 |   |  CreateApplication  |  Application  | 
 | Elastic Load Balancing \(Elastic Load Balancing\) |  CreateLoadBalancer  |  Loadbalancer  | 
-| Amazon Glacier \(Amazon Glacier\) |  CreateVault  |  Vault  | 
+| Amazon S3 Glacier \(Glacier\) |  CreateVault  |  Vault  | 
 | Amazon Kinesis \(Kinesis\) |  CreateStream  |  Stream  | 
 | Amazon Relational Database Service \(Amazon RDS\) |  CreateDBInstanceReadReplica  |  Database  | 
 |   |  CreateDBParameterGroup  |  ParameterGroup  | 

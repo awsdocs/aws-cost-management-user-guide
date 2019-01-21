@@ -1,4 +1,4 @@
-# Controlling Access for Cost Explorer<a name="cost-explorer-access"></a>
+# Controlling Access for Cost Explorer<a name="ce-access"></a>
 
 How you manage access to the information in Cost Explorer depends on how your AWS account is set up\. Your account might be set up to use the AWS Identity and Access Management \(IAM\) service to grant different levels of access to different IAM users\. Your account might be part of consolidated billing in AWS Organizations, in which case it is either a *master account* or a *member account*\. For information about managing access to Billing and Cost Management pages, see [Controlling Access](control-access-billing.md)\. For more information about consolidated billing, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
 
@@ -14,7 +14,7 @@ An IAM user must be granted explicit permission to view pages in the Billing and
 
 ## Cost Explorer and Consolidated Billing<a name="cbconsiderations"></a>
 
-The owner of the payer \(master\) account in an AWS Organizations organization has full access to all Billing and Cost Management information for costs incurred by the master account and by linked \(member\) accounts, and can view all costs in Cost Explorer\. The owner of a payer account can also grant linked accounts the permissions to see the costs for the linked account, refunds and credits, and RI recommendations\. Owners of a linked account can't see the costs, refunds, or RI recommendations for any other account in the organization\. For more information about consolidated billing, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
+The owner of the payer \(master\) account in an AWS Organizations organization has full access to all Billing and Cost Management information for costs incurred by the payer account and by linked \(member\) accounts\. The owner of a payer account can view all costs in Cost Explorer\. The owner can also grant linked accounts the permissions to see the costs for the linked account, refunds and credits, and RI recommendations\. Owners of a linked account can't see the costs, refunds, or RI recommendations for any other account in the organization\. For more information about consolidated billing, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
 
 ### Granting Owners of a Member Account Access to Cost Explorer Data<a name="cb-granted-members-access"></a>
 
@@ -28,9 +28,9 @@ You can grant or restrict the access that a linked account has to some of the in
 
 1. On the Cost Explorer page, choose **Launch Cost Explorer**\.
 
-1. On the Cost Explorer dashboard, choose the three\-bar icon on the left to access the left navigation pane and choose **Payer Account Settings**\.
+1. On the Cost Explorer dashboard, **Settings** on the top right\.
 
-1. On the **Payer Account Settings** page, select the data categories that you want your member accounts to have access to\.
+1. On the **Account Settings** page, select the data categories that you want your linked accounts to have access to\.
 
 1. Choose **Save**\.
 

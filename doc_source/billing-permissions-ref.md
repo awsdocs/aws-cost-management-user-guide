@@ -7,7 +7,7 @@ This reference summarizes the default actions that are permitted in Billing and 
 + [Billing Permissions Descriptions](#user-permissions)
 + [Billing and Cost Management Policy Examples](#billing-example-policies)
 
-For a full discussion of AWS accounts and IAM users, see [What Is IAM?](http://docs.aws.amazon.com/IAM/latest/UserGuide//IAM_Introduction.html) in the *IAM User Guide*\.
+For a full discussion of AWS accounts and IAM users, see [What Is IAM?](https://docs.aws.amazon.com/IAM/latest/UserGuide//IAM_Introduction.html) in the *IAM User Guide*\.
 
 ## User Types and Billing Permissions<a name="user-types"></a>
 
@@ -22,7 +22,7 @@ This table summarizes the default actions that are permitted in Billing and Cost
 | Organization member account owner |  The person or entity associated with an AWS Organizations member account\. The master account pays for AWS usage that is incurred by a member account in an organization\.   |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html)  | 
 
 **Note**  
-For more information about organization master and member accounts, see the *[AWS Organizations User Guide](http://docs.aws.amazon.com/organizations/latest/userguide/)*\.
+For more information about organization master and member accounts, see the *[AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/)*\.
 
 ## Billing Permissions Descriptions<a name="user-permissions"></a>
 
@@ -291,7 +291,7 @@ The following policy allows Billing and Cost Management to save your detailed AW
 
 Replace *bucketname* with the name of your bucket\.
 
-For more information, see [ Using Bucket Policies and User Policies](http://docs.aws.amazon.com/AmazonS3/latest/dev/using-iam-policies.html)\.
+For more information, see [ Using Bucket Policies and User Policies](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-iam-policies.html)\.
 
 ```
 {

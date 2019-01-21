@@ -1,3 +1,0 @@
-# Reading the Cost Explorer Chart<a name="aboutchart"></a>
-
-When using **Group By**, the Cost Explorer chart displays data for up to six values within the **Group By** filter\. If your data contains additional values, the chart displays five bars or lines, and then aggregates all remaining items in a sixth\. The data table below the chart, however, breaks out the data for individual services that are aggregated in the chart\. 

@@ -49,9 +49,9 @@ When you choose to overwrite your previous AWS Cost and Usage report, your AWS C
 For example, your report could be delivered as a collection of the following files\.
 
 ```
-<example-report-prefix>/<example-report-name>/<example-report-name>/year=2018/month=12/<example-report-name>/>-<1>.csv.<zip><
-<example-report-prefix>/<example-report-name>/<example-report-name>/year=2018/month=12/<example-report-name>/>-<2>.csv.<zip><
-<example-report-prefix>/<example-report-name>/<example-report-name>/year=2018/month=12/<example-report-name>/>-<3>.csv.<zip><
+<example-report-prefix>/<example-report-name>/<example-report-name>/year=2018/month=12/<example-report-name>-<1>.csv.<zip>
+<example-report-prefix>/<example-report-name>/<example-report-name>/year=2018/month=12/<example-report-name>-<2>.csv.<zip>
+<example-report-prefix>/<example-report-name>/<example-report-name>/year=2018/month=12/<example-report-name>-<3>.csv.<zip>
 <example-report-prefix>/<example-report-name>/<example-report-name>/year=2018/month=12/<example-report-name>-Manifest.json
 ```
 

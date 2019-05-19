@@ -8,7 +8,7 @@ AWS Organizations provides consolidated billing so that you can track the combin
 
 1. Create an organization from the account that you want to be the payer account of your new organization\. For details, see [Creating an Organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_create.html)\. The payer account is responsible for paying the charges of all the linked accounts\.
 
-1. \(Optional\) Create accounts that are automatically llinked to the organization\. For details, see [ Creating an AWS Account in Your Organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html)\.
+1. \(Optional\) Create accounts that are automatically linked to the organization\. For details, see [ Creating an AWS Account in Your Organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_create.html)\.
 
 1. \(Optional\) Invite existing accounts to join your organization\. For details, see [ Inviting an AWS Account to Join Your Organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_invites.html)\.
 

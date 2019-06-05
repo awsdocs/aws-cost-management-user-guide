@@ -331,8 +331,8 @@ This policy allows an IAM user to create, view, or delete an AWS Cost and Usage 
         {
             "Effect": "Allow",
             "Action": [
-                "cur:PutReportDefinitions",
-                "cur:DescribeReportDefinition",
+                "cur:PutReportDefinition",
+                "cur:DescribeReportDefinitions",
                 "cur:DeleteReportDefinition"
             ],
             "Resource": [

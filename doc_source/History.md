@@ -4,6 +4,22 @@ The following table describes the documentation for this release of the *AWS Bil
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Added normalized units to Cost Explorer](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-default-reports.html) | Cost Explorer reports now include normalized units\. | February 5, 2019 | 
+| [Credit application changes](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html) | AWS changed how they apply credits\. | January 17, 2019 | 
+| [New payment behavior](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/edit-aispl-payment-method.html#aispl-enable-recurring) | AISPL customers can now enable the auto\-charge ability for their payments\. | December 20, 2018 | 
+| [New AWS Price List Service endpoint](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/using-pelong.html) | Added a new endpoint for AWS Price List Service\. | December 17, 2018 | 
+| [Updated the Cost Explorer UI](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-exploring-data.html) | Updated the Cost Explorer UI\. | November 15, 2018 | 
+| [Integrated Amazon Athena into AWS Cost and Usage Report](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/athena.html) | Added the ability to upload the data from an AWS Cost and Usage report into Athena\. | November 15, 2018 | 
+| [Added budget history](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-view.html) | Added the ability to see the history of a budget\. | November 13, 2018 | 
+| [Expanded budget services](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html) | Expanded RI budgets to Amazon Elasticsearch Service\. | November 8, 2018 | 
+| [Added a new payment method](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-debit-emea.html) | Added the SEPA Direct Debit payment method\. | October 25, 2018 | 
+| [Added On\-Demand capacity reservations](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage-cr.html) | Added documentation about AWS Cost and Usage report line items that apply to capacity reservations\. | October 25, 2018 | 
+| [Redesigned budget experience](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create.html) | Updated the budget UI and workflow\. | October 23, 2018 | 
+| [New Reserved Instance recommendation columns](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-recommendations.html#saving-rex) | Added new columns to the Cost Explorer RI recommendations\. | October 18, 2018 | 
+| [New AWS CloudTrail actions](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/logging-using-cloudtrail.html) | More actions added to CloudTrail logging\.\. | October 18, 2018 | 
+| [Added a new Reserved Instance report](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-default-reports.html) | Expanded RI reports to Amazon Elasticsearch Service\. | October 10, 2018 | 
+| [New AWS Cost and Usage Report columns](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage-details.html) | New columns added to the AWS Cost and Usage report\. | September 27, 2018 | 
+| [Cost Explorer walkthrough](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-getting-started.html) | Cost Explorer now provides a walkthrough for the most common functionality\. | September 24, 2018 | 
 | [Added CloudTrail events](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/logging-using-cloudtrail.html) | Added additional CloudTrail events\. | August 13, 2018 | 
 | [Added a new payment method](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-debit.html) | Added the ACH Direct Debit payment method\. | July 24, 2018 | 
 | [Updated the AWS Free Tier Widget](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/tracking-free-tier-usage.html#free-tier-table) | Updated the AWS Free Tier Widget\. | July 19, 2018 | 

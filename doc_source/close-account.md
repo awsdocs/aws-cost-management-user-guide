@@ -23,7 +23,7 @@ In addition, you should retrieve all of your content from the account, including
 
 1. [Sign in as the root user of the account](https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html) that you want to close, using the email address and password that are associated with the account\. If you sign in as an IAM user or role, you can't close an account\.
 **Note**  
- By default, member accounts that you create with AWS Organizations don't have a password associated with the account's root user\. To close a member account, the member account must leave the organization and request a password change\. For more information, see [Closing an AWS Account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_close.html) in the *AWS Organizations User Guide*\. 
+ We recommend that member accounts that you create with AWS Organizations leave the organization before you close them\. Otherwise, the closed account counts toward the limit on the number of accounts that the organization can have\. By default, member accounts that you create with AWS Organizations don't have a password associated with the account's root user\. To close a member account, the member account must leave the organization and request a password change\. For more information, see [Closing an AWS Account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_close.html) in the *AWS Organizations User Guide*\. 
 
 1. Open the Billing and Cost Management console at [https://console.aws.amazon.com/billing/home#/](https://console.aws.amazon.com/billing/home#/)\.
 

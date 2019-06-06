@@ -2,7 +2,7 @@
 
 A tag is a label that you or AWS assigns to an AWS resource\. Each tag consists of a *key* and a *value*\. A key can have more than one value\. You can use tags to organize your resources, and cost allocation tags to track your AWS costs on a detailed level\. After you activate cost allocation tags, AWS uses the cost allocation tags to organize your resource costs on your cost allocation report, to make it easier for you to categorize and track your AWS costs\. AWS provides two types of cost allocation tags, an *AWS generated tags* and *user\-defined tags*\. AWS defines, creates, and applies the AWS generated tags for you, and you define, create, and apply user\-defined tags\. You must activate both types of tags separately before they can appear in Cost Explorer or on a cost allocation report\.
 
-The following diagram illustrates the concept\. In the example, you've assigned and activated tags on two Amazon EC2 instances, one tag called Cost Center and another tag called Stack\. Each of the tags has an associated value\. You also activated the AWS generated tags, `createdBy` before creating these resources\. The `createdBy` tag tracks who created a resource\. The user\-defined tags use the `user` prefix, and the AWS Generated Tag uses the `aws:` prefix\.
+The following diagram illustrates the concept\. In the example, you've assigned and activated tags on two Amazon EC2 instances, one tag called Cost Center and another tag called Stack\. Each of the tags has an associated value\. You also activated the AWS generated tags, `createdBy` before creating these resources\. The `createdBy` tag tracks who created a resource\. The user\-defined tags use the `user` prefix, and the AWS generated tag uses the `aws:` prefix\.
 
 ![\[Example Keys\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/images/Tag_Example.png)
 
@@ -16,7 +16,7 @@ At the end of the billing cycle, the total charges \(tagged and untagged\) on th
 
 You can also use tags to filter views in Cost Explorer\. For more information about Cost Explorer, see [Analyzing Your Costs with Cost Explorer](ce-what-is.md)\. 
 
- For more information about activating the AWS generated tags, see [Activating the AWS\-Generated Cost Allocation Tag](activate-built-in-tags.md)\. For more information about applying and activating user\-defined tags, see [User\-Defined Cost Allocation Tags](custom-tags.md)\. All tags can take up to 24 hours to appear in the Billing and Cost Management console\.
+ For more information about activating the AWS generated tags, see [Activating the AWS\-Generated Cost Allocation Tags](activate-built-in-tags.md)\. For more information about applying and activating user\-defined tags, see [User\-Defined Cost Allocation Tags](custom-tags.md)\. All tags can take up to 24 hours to appear in the Billing and Cost Management console\.
 
 **Note**  
 You can't delete or merge tags\. Instead, deactivate tags so that they aren't used in your billing reports\.

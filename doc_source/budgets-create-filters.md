@@ -23,7 +23,7 @@ Choose the provider that provides your AWS services\. For AWS services, **AWS** 
 Choose an AWS account that is linked to the account that you're creating the budget for\.
 
 **Tag**  
-If you have activated any tags, choose a resource tag\. A tag is a label that you can use to organize your resource costs and track them on a detailed level\. There are AWS generated tags and user\-defined tags\. You must activate tags to use them\. For more information, see [Activating the AWS\-Generated Cost Allocation Tag](activate-built-in-tags.md) and [Activating User\-Defined Cost Allocation Tags](activating-tags.md)\.
+If you have activated any tags, choose a resource tag\. A tag is a label that you can use to organize your resource costs and track them on a detailed level\. There are AWS generated tags and user\-defined tags\. You must activate tags to use them\. For more information, see [Activating the AWS\-Generated Cost Allocation Tags](activate-built-in-tags.md) and [Activating User\-Defined Cost Allocation Tags](activating-tags.md)\.
 
 **Purchase Option**  
 Choose `On Demand Instances` or `Standard Reserved Instances`\.
@@ -39,6 +39,9 @@ Choose the organization that bills you for a service\. For AWS service charges, 
 
 **Instance Type**  
 Choose the type of instance that you want to track with this budget\. 
+
+**Instance Family**  
+ Choose the family of instances to track using this budget\.
 
 **Platform**  
 Choose the operating system that your RI runs on\. **Platform** is either **Linux** or **Windows**\.

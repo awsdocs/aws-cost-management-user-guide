@@ -1,6 +1,6 @@
 # Activating User\-Defined Cost Allocation Tags<a name="activating-tags"></a>
 
-In order for tags to appear on your billing reports, you must activate your applied tags in the billing console\. 
+For tags to appear on your billing reports, you must activate your applied tags in the Billing and Cost Management console\. 
 
 **To activate your tags**
 

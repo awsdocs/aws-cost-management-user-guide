@@ -4,8 +4,7 @@
 The following reports will be unavailable at a later date\. We strongly recommend that you use the [AWS Cost and Usage Report](billing-reports-costusage.md) instead\.
 
 **Topics**
-+ [Detailed Billing Report](DetailedBillingReport.md)
-+ [Detailed Billing Report with Resources and Tags](reportstagsresources.md)
++ [Detailed Billing Reports](detailed-billing-reports.md)
 + [Monthly Report](monthly-report.md)
 + [Monthly Cost Allocation Report](reportwithtags.md)
 + [Amazon EC2 Usage and Reserved Instance Utilization Reports](ec2reportlinks.md)

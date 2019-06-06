@@ -1,6 +1,6 @@
-# Activating the AWS\-Generated Cost Allocation Tag<a name="activate-built-in-tags"></a>
+# Activating the AWS\-Generated Cost Allocation Tags<a name="activate-built-in-tags"></a>
 
-Master account owners can activate the AWS generated tags in the Billing and Cost Management console\. When a master account owner activates the tag it is also activated for all member accounts\. This tag is visible only in the Billing and Cost Management console and reports\.<a name="activate-built-in-tag"></a>
+Master account owners can activate the AWS generated tags in the Billing and Cost Management console\. When a master account owner activates the tag, it's also activated for all member accounts\. This tag is visible only in the Billing and Cost Management console and reports\.<a name="activate-built-in-tag"></a>
 
 **To activate the AWS generated tags**
 

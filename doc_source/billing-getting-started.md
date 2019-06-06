@@ -1,12 +1,12 @@
 # Getting Started<a name="billing-getting-started"></a>
 
-The following steps discuss a few of the most common tasks you're likely to perform when using the Billing and Cost Management console\. 
+The following steps discuss a few of the most common tasks that you're likely to perform when using the Billing and Cost Management console\. 
 
 **Topics**
 + [Step 1: Review Your Usage](#billing-gs-review)
 + [Step 2: Turn on Reports](#step-2)
 + [Step 3: Download or Print Your Bill](#billing-gs-download)
-+ [Step 4: Set Up Alerts to Monitor Charges to Your Account](#billing-gs-alerts)
++ [Step 4: Set Up Budgets to Monitor Your Account](#billing-gs-alerts)
 + [Step 5: Get Answers to Questions About Your Bill](#billing-gs-answer)
 + [Where Do I Go from Here?](#whereto)
 
@@ -20,14 +20,14 @@ Billing and Cost Management offers you a number of different ways to view and mo
 
 1. On the navigation pane, choose the applicable option:  
 **Cost Explorer**  
- Choose [https://console.aws.amazon.com/cost-reports/home?#/custom](https://console.aws.amazon.com/cost-reports/home?#/custom) to track and analyze your AWS usage\. Cost Explorer is free for all accounts\. For more information about Cost Explorer, see [Analyzing Your Costs with Cost Explorer](ce-what-is.md)\.   
+ Choose [Cost Explorer](https://console.aws.amazon.com/cost-reports/home?#/custom) to track and analyze your AWS usage\. Cost Explorer is free for all accounts\. For more information about Cost Explorer, see [Analyzing Your Costs with Cost Explorer](ce-what-is.md)\.   
 **Budgets**  
- Choose [https://console.aws.amazon.com/billing/home?region=us-east-1#/budgets](https://console.aws.amazon.com/billing/home?region=us-east-1#/budgets) to manage budgets for your account\. For more information about budgets, see [Monitoring Your Usage and Costs](monitoring-costs.md)\.   
+ Choose [Budgets](https://console.aws.amazon.com/billing/home?region=us-east-1#/budgets) to manage budgets for your account\. For more information about budgets, see [Monitoring Your Usage and Costs](monitoring-costs.md)\.   
 You can also check the status of your free tier with the provided AWS Free Tier usage alerts using AWS Budgets\. For more information about AWS Free Tier usage alerts, see [Free Tier Usage Alerts Using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.   
 **Bills**  
- Choose [https://console.aws.amazon.com/billing/home?region=us-east-1#/bill](https://console.aws.amazon.com/billing/home?region=us-east-1#/bill) to see details about your current charges\.   
+ Choose [Bills](https://console.aws.amazon.com/billing/home?region=us-east-1#/bill) to see details about your current charges\.   
 **Payment History**  
- Choose [https://console.aws.amazon.com/billing/home?region=us-east-1#/paymenthistory/history?redirected](https://console.aws.amazon.com/billing/home?region=us-east-1#/paymenthistory/history?redirected) to see your past payment transactions\. 
+ Choose [Payment History](https://console.aws.amazon.com/billing/home?region=us-east-1#/paymenthistory/history?redirected) to see your past payment transactions\. 
 
 ## Step 2: Turn on Reports<a name="step-2"></a>
 
@@ -35,7 +35,7 @@ You can also check the status of your free tier with the provided AWS Free Tier 
 
  Billing and Cost Management can deliver your reports to an Amazon S3 bucket that you create\. Amazon S3 is the AWS Cloud storage offering\. The payer account must own the Amazon S3 bucket\. Reports can't be delivered to a bucket owned by a linked account\. 
 
-**Create an Amazon S3 bucket for your reports**
+**To create an Amazon S3 bucket for your reports**
 
 1. Open the Amazon S3 console at [https://console\.aws\.amazon\.com/s3/](https://console.aws.amazon.com/s3/)\.
 
@@ -57,7 +57,7 @@ Your bucket name must be all lowercase, from 3 to 63 characters long, and can't 
 
 1. Choose **Create bucket**\.
 
-**Grant Billing and Cost Management permission to deliver reports to your Amazon S3 bucket**
+**To grant Billing and Cost Management permission to deliver reports to your Amazon S3 bucket**
 
 1. Open the Amazon S3 console at [https://console\.aws\.amazon\.com/s3/](https://console.aws.amazon.com/s3/)\.
 
@@ -76,7 +76,7 @@ Your bucket name must be all lowercase, from 3 to 63 characters long, and can't 
      {
        "Effect": "Allow",
        "Principal": {
-         "AWS": "386209384616"
+         "Service": "billingreports.amazonaws.com"
        },
        "Action": [
          "s3:GetBucketAcl",
@@ -87,7 +87,7 @@ Your bucket name must be all lowercase, from 3 to 63 characters long, and can't 
      {
        "Effect": "Allow",
        "Principal": {
-         "AWS": "386209384616"
+         "Service": "billingreports.amazonaws.com"
        },
        "Action": "s3:PutObject",
        "Resource": "arn:aws:s3:::bucketname/*"
@@ -96,15 +96,15 @@ Your bucket name must be all lowercase, from 3 to 63 characters long, and can't 
    }
    ```
 
-1. Replace *bucketname* with the name of your bucket\. Don't replace the **Principal** number `386209384616`\. AWS uses that account to deliver reports to the S3 bucket\.
+1. Replace *bucketname* with the name of your bucket\. 
 
 1. Choose **Save**\.
 
-**Create an AWS Cost and Usage report**
+**To create an AWS Cost and Usage report**
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
-1. On the navigation pane, choose **Reports**\.
+1. On the navigation pane, choose **Cost and Usage Reports**\.
 
 1. Choose **Create report**\.
 
@@ -112,19 +112,35 @@ Your bucket name must be all lowercase, from 3 to 63 characters long, and can't 
 
 1. For **Additional report details**, to include the IDs of each individual resource in the report, select **Include resource IDs**\.
 
-1. For **Data refresh settings**, select whether you want the AWS Cost and Usage report to refresh if AWS applies refunds, credits, or support fees to your account after finalizing your bill\. When a report refreshes, a new report is upload to Amazon S3\.
+1. For **Data refresh settings**, select whether you want the AWS Cost and Usage report to refresh if AWS applies refunds, credits, or support fees to your account after finalizing your bill\. When a report refreshes, a new report is uploaded to Amazon S3\.
+**Note**  
+Detailed billing reports \(DBRs\) don't refresh automatically, whether you select **Data refresh settings** or not\. To refresh a DBR, open a support case\. For more information, see [Contacting Customer Support About Your Bill](billing-get-answers.md)\.
 
 1. Choose **Next**\.
 
-1. For **S3 bucket**, enter the name of the Amazon S3 bucket where you want the reports to be delivered and choose **Verify**\. The bucket must have appropriate permissions to be valid\. For more information on adding permissions to the bucket, see [ Setting Bucket and Object Access Permissions](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/set-permissions.html) in the *[Amazon Simple Storage Service Console User Guide](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/)*\. 
+1. For **S3 bucket**, choose **Configure**\.
 
-1. \(Optional\) For **Report path prefix**, enter the report path prefix that you want prepended to the name of your report\. 
+1. In the **Configure S3 Bucket** dialog box, do one of the following:
+   + Select an existing bucket from the drop down list and choose **Next**\.
+   + Enter a bucket name and the Region where you want to create a new bucket and choose **Next**\.
+
+1. Select **I have confirmed that this policy is correct** and choose **Save**\.
+
+1. For **Report path prefix**, enter the report path prefix that you want prepended to the name of your report\. 
+
+   This step is optional for Amazon Redshift or Amazon QuickSight, but required for Amazon Athena\.
+
+   If you don't specify a prefix, the default prefix is the name that you specified for the report in step 4 and the date range for the report, in the following format:
+
+   `/report-name/date-range/`
 
 1. For **Time granularity**, choose **Hourly** if you want the line items in the report to be aggregated by the hour\. Choose **Daily** if you want the line items in the report to be aggregated by the day\.
 
 1. For **Report versioning**, choose whether you want each version of the report to overwrite the previous version of the report or to be delivered in addition to the previous versions\.
 
-1. For **Enable report data integration for**, select whether you want to upload your AWS Cost and Usage report to Amazon Redshift, Amazon QuickSight, or Amazon Athena\. If you select an Amazon Redshift or Amazon QuickSight manifest, your report is stored with \.gz compression\. If you select an Athena manifest, your report is stored with parquet compression\.
+1. For **Enable report data integration for**, select whether you want to upload your AWS Cost and Usage report to Amazon Redshift, Amazon QuickSight, or Amazon Athena\. The report is compressed in the following formats:
+   + **Amazon Redshift or Amazon QuickSight**: \.gz compression
+   + **Athena**: parquet compression
 
 1. Choose **Next**\.
 
@@ -144,70 +160,94 @@ AWS Billing and Cost Management closes the billing period at midnight on the las
 
 1. Choose **Download CSV** to download a comma\-separated variable file or choose **Print**\.
 
-## Step 4: Set Up Alerts to Monitor Charges to Your Account<a name="billing-gs-alerts"></a>
+## Step 4: Set Up Budgets to Monitor Your Account<a name="billing-gs-alerts"></a>
 
 If you use the AWS Free Tier, Billing and Cost Management automatically provides AWS Free Tier usage alerts via AWS Budgets to track your free tier usage\. Billing and Cost Management notifies you when you go over the free tier limits or are forecasted to go over the free tier limits\. AWS sends these notifications to the email that you used to create your AWS account\.
 
 In addition to the free tier usage alerts, you can use budgets to notify you when your monthly charges for using an AWS product exceed or are forecast to exceed a threshold that you set\. 
 
- By default, IAM users don't have access to billing information and therefore don't have access to billing alerts or budgets\. If you're logged in to AWS as an IAM user, verify that the AWS account owner has granted IAM users access to the billing information\. For more information about IAM restrictions, see [Granting Access to Your Billing Information and Tools](grantaccess.md)\. 
+ By default, IAM users don't have access to billing information, and therefore don't have access to budgets\. If you're logged in to AWS as an IAM user, verify that the account owner has granted IAM users access to AWS Budgets\. For more information about IAM restrictions, see [Granting Access to Your Billing Information and Tools](grantaccess.md)\. <a name="cost-budget-alarm"></a>
 
-**Note**  
-If your account is linked to a reseller account, billing alerts aren't available for your account\. 
+**To create a budget**
 
-**To enable billing alerts**
-
-Before you create a budget, you must enable billing alerts\. You need to do this only once\. After you enable billing alerts, you can't turn them off\.
+Use this procedure to create a cost\-based budget\.
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
-1. On the navigation pane, choose **Preferences**\.
+1. In the navigation pane, choose **Budgets**\.
 
-1. Select the **Receive Billing Alerts** check box\.
+1. At the top of the page, choose **Create budget**\.
 
-1. Choose **Save preferences**\.
+1. For **Select budget type**, choose **Cost budget**\.
 
-**To create a billing alarm**
+1. Choose **Set up your budget**\.
 
-1.  \(Optional\) If you want to send your alert to an AWS\-managed distribution list instead of a single email address, follow these steps to set up an Amazon Simple Notification Service \(Amazon SNS\) notification list\. If you want to send your alert to a single email address, go to step 2\. 
+1. For **Name**, enter the name of your budget\. Your budget name must be unique within your account and can use A\-Z, a\-z, spaces, and the following characters:
 
-   To create an Amazon SNS notification list:
+   ```
+   _.:/=+-%@
+   ```
 
-   1. Open the Amazon SNS console at [https://console\.aws\.amazon\.com/sns/v2/home](https://console.aws.amazon.com/sns/v2/home)\.
+1. For **Period**, choose how often you want the budget to reset the actual and forecasted spend\. Choose **Monthly** for every month, **Quarterly** for every three months, and **Annually** for every year\.
 
-   1. On the navigation pane, choose **SNS Home**\.
+1. For **Budgeted Amount**, enter the total amount that you want to spend for this budget period\.
 
-   1. In the **Common actions** section, choose **Create topic**\.
+1. \(Optional\) For **Budget effective dates**, choose **Recurring Budget** for a budget that resets after the budget period or **Expiring Budget** for a one\-time budget that doesn't reset after the budget period\.
 
-   1. In the dialog box, for **Topic name**, enter the name for your notification list\.
+   For **Start Month**, choose the month that you want the budget to start on\.
 
-   1. \(Optional\) If you want to use this notification list to send SMS messages, for **Display name**, enter the name that you want to appear on your SMS messages\.
+   For an **Expiring Budget**, for **End Month**, choose the month that you want the budget to end on\.
 
-   1. Choose **Create topic**\.
+   All budget times are in UTC\.
 
-1. Open the CloudWatch console at [https://console\.aws\.amazon\.com/cloudwatch/](https://console.aws.amazon.com/cloudwatch/)\.
+1. \(Optional\) Under **Budget parameters \(optional\)**, for **Filtering**, choose one or more of the [available filters](budgets-create-filters.md)\. Your choice of budget type determines the set of filters that is displayed on the console\.
 
-1.  If necessary, change the Region on the navigation bar to US East \(N\. Virginia\)\. The billing metric data is stored in this Region, even for resources in other Regions\. 
+1. \(Optional\) Under **Budget parameters \(optional\)**, for **Advanced options**, choose one or more of the following filters\. If you're signed in from a member account in an organization instead of from a master account, you might not see all of the advanced options\.  
+**Refunds**  
+Any refunds that you received\.   
+**Credits**  
+Any AWS credits that are applied to your account\.  
+**Upfront reservation fees**  
+Any upfront fees that are charged to your account\. When you purchase an All Upfront or Partial Upfront Reserved Instance from AWS, you pay an upfront fee in exchange for a lower rate for using the instance\.   
+**Recurring reservation charges**  
+Any recurring charges to your account\. When you purchase a Partial Upfront or No Upfront Reserved Instance from AWS, you pay a recurring charge in exchange for a lower rate for using the instance\.   
+**Taxes**  
+Any taxes that are associated with the charges or fees in your budget\.  
+**Support charges**  
+Any charges that AWS charges you for a support plan\. When you purchase a support plan from AWS, you pay a monthly charge in exchange for service support\.   
+**Other subscription costs**  
+Other applicable subscription costs that are not covered by the other data categories\. These costs can include data such as AWS training fees, AWS competency fees, out\-of\-cycle charges such as registering a domain with Route 53, and more\.  
+**Use blended costs**  
+The cost of the instance hours that you used\. A blended rate doesn't include either the RI upfront costs or the RI discounted hourly rate\.  
+**Use amortized costs**  
+The amortized cost of any reservation hours that you used\. For more information about amortized costs, see [Show amortized costs](ce-advanced.md#show-amortized-costs)\.
 
-1. On the navigation pane, under **Metrics**, choose **Billing**\.
+1. Choose **Configure alerts**\.
 
-1.  In the list of billing metrics, select the check box next to **Currency** `USD`, for the metric named **EstimatedCharges**\. 
+1. Under **Configure alerts**, for **Alert 1**, choose **Actual** to create a notification for actual spend and **Forecast** to create a notification for your forecasted spend\.
 
-1. Choose **Create Alarm**\.
+1. For **Alert threshold**, enter the amount that you want to be notified at\. This can be either an absolute value or a percentage\. For example, for a budget of 200 dollars, if you want to be notified at 160 dollars \(80% of your budget\), enter 160 for an absolute budget or 80 for a percentage budget\.
 
-1. Define the alarm as follows\.
+   Next to the amount, choose **Absolute amount** to be notified when the threshold amount is passed and **% of budgeted amount** to be notified when the threshold percentage of the budget is passed\.
 
-   1. If you want the alarm to trigger as soon as you go over the free tier, set **When my total AWS charges for the month exceed** to $\.01\. This means that you receive a notification as soon as you incur a charge\. Otherwise, set it to the amount you want to trigger the alarm, and you're notified when you go over that amount\. 
+1. \(Optional\) For **Email contacts**, enter the email addresses that you want the notifications to be sent to and choose **Add email contact**\. Separate multiple email addresses with a comma\. A notification can have up to 10 email addresses\.
 
-   1. Choose the **New list** link next to the **send a notification to** box\. 
+   To receive a notification, you must specify an email address\. You can also specify an Amazon SNS topic\.
 
-   1.  When prompted, enter your email address or choose your Amazon SNS notification from the dropdown list\. 
+1. \(Optional\) For **SNS topic ARN**, enter the ARN for your Amazon SNS topic and then choose **Verify**\. If you want to use an Amazon SNS topic for your notification but don't have one, see [Create a Topic](https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html) in the *Amazon Simple Notification Service Developer Guide*\.
 
-   1. Choose **Create Alarm**\.
+   AWS verifies that your budget has permission to send notifications to your Amazon SNS topic by sending a test email to your Amazon SNS topic\. If the Amazon SNS topic ARN is valid but the **Verify** step fails, check the Amazon SNS topic policy to make sure that it allows your budget to publish to that topic\. 
 
-1. In the **Confirm new email addresses** dialog box, confirm the email address or choose **I will do it later**\. If you don't confirm the email address now, the alarm remains in the `Pending confirmation` status until you do so, and it doesn't send an alert\. To view the status of your alarm, choose **Alarms** in the navigation pane\. 
+   For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS Topic for Budget Notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
 
- For more information about CloudWatch alarms, see [Monitor Your Estimated Charges Using Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/monitor_estimated_charges_with_cloudwatch.html) in the *Amazon CloudWatch User Guide*\. 
+   To receive a notification, you must specify an email address\. You can also specify an Amazon SNS topic\.
+
+1. Choose **Confirm budget**\.
+
+1. Review your budget settings and choose **Create**\.
+
+**Important**  
+When you finish creating a budget with Amazon SNS notifications, Amazon SNS sends a confirmation email to the email addresses that you specify\. The subject line is **AWS Notification \- Subscription Confirmation**\. A recipient must choose **Confirm subscription** in the confirmation email to begin receiving notifications\. 
 
 ## Step 5: Get Answers to Questions About Your Bill<a name="billing-gs-answer"></a>
 

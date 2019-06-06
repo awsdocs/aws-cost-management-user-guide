@@ -13,3 +13,5 @@ You can refresh your cost allocation tags in the Billing and Cost Management con
 1. In the navigation pane, choose **Cost Allocation Tags**\.
 
 1. Under **Cost allocation tags**, choose **Refresh**\.
+
+After AWS refreshes your tags, you can use the new tag in your AWS Cost and Usage report or cost allocation report\. AWS doesn’t apply tags to resources, spend, or usage that happened before AWS applied the tag\. For more information, see [AWS Cost and Usage Report](billing-reports-costusage.md)\.

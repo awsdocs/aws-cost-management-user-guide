@@ -1,6 +1,6 @@
 # Setting Up Notifications<a name="price-notification"></a>
 
-You can sign up to receive notifications when AWS prices change, such as when AWS cuts prices, when new instance types are launched, or when new services are introduced\. You can sign up to be notified every time a price changes, or once a day\. If you sign up to be notified once a day, the notification includes all price changes applied during that day\.<a name="price-change-notification-1"></a>
+You can sign up to receive notifications when AWS prices change, such as when AWS cuts prices, when new instance types are launched, or when new services are introduced\. You can sign up to be notified every time a price changes or once a day\. If you sign up to be notified once a day, the notification includes all price changes applied during that day\.<a name="price-change-notification-1"></a>
 
 **To sign up for price update notifications**
 
@@ -10,7 +10,7 @@ You can use the console to sign up for Amazon SNS notifications\.
 
 1. If you are new to Amazon SNS, choose **Get Started**\.
 
-1. If necessary, change the region on the navigation bar to US East \(N\. Virginia\)\. The billing metric data is stored in this region, even for resources in other regions\.
+1. If necessary, change the Region on the navigation bar to US East \(N\. Virginia\)\. The billing metric data is stored in this Region, even for resources in other Regions\.
 
 1. On the navigation pane, choose **Subscriptions**\.
 
@@ -20,6 +20,6 @@ You can use the console to sign up for Amazon SNS notifications\.
 
 1. For **Protocol**, use the default `HTTP` setting\.
 
-1. For **Endpoint**, choose the format that you want to receive the notification in, such as SQS, Lambda, or email\.
+1. For **Endpoint**, choose the format that you want to receive the notification in, such as Amazon SQS, Lambda, or email\.
 
 1. Choose **Create Subscription**\.

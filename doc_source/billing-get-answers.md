@@ -7,7 +7,7 @@ In addition, all AWS account owners have access to account and billing support f
 This section guides you through contacting AWS Support and opening a support case for your billing inquiry, which is the fastest and most direct method for communicating with AWS Support\. AWS Support does not publish a direct phone number for reaching a support representative\. 
 
 **Note**  
-To open an AWS Support case where you specify *Regarding: Account and Billing Support*, you must be signed into AWS as the root account owner\. 
+To open an AWS Support case where you specify *Regarding: Account and Billing Support*, you must either be signed into AWS as the root account owner, or have IAM permissions to open a support case\. For more information, see [Accessing AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/getting-started.html#accessing-support) in the AWS Support User Guide\.
 
 **Contacting AWS Support**
 

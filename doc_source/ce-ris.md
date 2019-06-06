@@ -9,3 +9,23 @@ You can use the **RI reports** page in the Cost Explorer console to see how many
 Cost Explorer breaks down your reservations and savings by service and lists your potential savings: that is, the costs of On\-Demand usage compared to what that usage could cost you with an RI\.
 
 To take advantage of your potential savings, see [Accessing Reserved Instance Recommendations](ri-recommendations.md)\.
+
+## Managing Your Reservation Expiration Alerts<a name="managing-ri-alerts"></a>
+
+You can track your reservations and their expiration in Cost Explorer\. Reservation expiration alerts enable you to receive email alerts 7, 30, or 60 days in advance before your reservation expiration date\. These notifications also alert you on the date of expiration and can be sent to up to 10 email recipients\. Reservation expiration alerts are supported for Amazon EC2, Amazon RDS, Amazon Redshift, Amazon ElastiCache, and Amazon Elasticsearch Service reservations\.
+
+**To turn on reservation expiration alerts**
+
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+
+1. Navigate to the **Reservation summary** page\.
+
+1. In the **Reservation expiring** section, choose **Manage alerts** in the upper right corner\.
+
+1. Select the check boxes for when you want to receive your alerts\.
+
+1. Enter email addresses for who you want to notify\. You can add up to 10 emails\. 
+
+1. Choose **Save**\. 
+
+AWS begins monitoring your reservation portfolio and automatically sends alerts at your preference\.

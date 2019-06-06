@@ -27,7 +27,7 @@ The type of charge covered by this line item\. There are seven possible types:
 + **DiscountedUsage** – The rate for any instances for which you had Reserved Instance \(RI\) benefits\.
 + **Fee** – Any upfront annual fee that you paid for subscriptions\. For example, the upfront fee that you paid for an **All Upfront RI** or a **Partial Upfront RI**\.
 + **Refund** – Negative charges that AWS refunded money to you for\. Check the **Description** column for details\. AWS might update reports after they have been finalized if AWS applies a refund to your account for the month after finalizing your bill\.
-+ **RIFee** – The monthly recurring fee for subscriptions\. For example, the recurring fee for **Partial Upfront RI**s and **No Upfront RI**s that you pay every month\.
++ **RIFee** – The monthly recurring fee for subscriptions\. For example, the recurring fee for **Partial Upfront RI**s, **No Upfront RI**s, and **All Upfront**s that you pay every month\.
 + **Tax** – Any taxes that AWS applied to your bill: for example, VAT or US sales tax\.
 + **Usage** – Any usage that is charged at On\-Demand Instance rates\.
 
@@ -38,7 +38,7 @@ The description for a usage line item with an RI discount contains the pricing p
 
 ** lineItem/NormalizationFactor**  
 AWS can apply all regional Linux or Unix Amazon EC2 and Amazon RDS RI discounts to all instance sizes in an instance family and AWS Region, as long as the instance has shared tenancy\. This also applies to RI discounts for member accounts in an organization\. All new and existing Amazon EC2 and Amazon RDS size\-flexible RIs are sized according to a normalization factor that is based on the instance size\. The following table shows the normalization factor that AWS applies to each instance size\.    
-**Normalization Factors for Amazon EC2 size\-flexible RIs**    
+**Normalization Factors for Amazon EC2 Size\-Flexible RIs**    
 <a name="aws-normalization-factors"></a>[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/enhanced-lineitem-columns.html)
 
 ** lineItem/NormalizedUsageAmount**  

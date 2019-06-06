@@ -10,7 +10,7 @@ After you have the offer index file, you can use it to find an offer file\.
 
 The offer index file is available as a JSON file\. You can read the file multiple ways, such as using a text program to read the JSON file or a program that parses the JSON\.
 
-The offer index file consists of two main sections: the metadata about the offer index file itself, and either a list of the services that AWS offers \(for the offer index file\) or a list of regions where a service is offered \(for the regional offer index file\)\. The information about an offer file includes the URL where you can download the prices and a URL for a regional offer index file for that service\.
+The offer index file consists of two main sections: the metadata about the offer index file itself, and either a list of the services that AWS offers \(for the offer index file\) or a list of Regions where a service is offered \(for the regional offer index file\)\. The information about an offer file includes the URL where you can download the prices and a URL for a regional offer index file for that service\.
 
 The offer index file looks like this:
 

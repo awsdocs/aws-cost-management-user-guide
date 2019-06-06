@@ -27,7 +27,7 @@ For more information about budgets, see [Managing Your Costs with Budgets](budge
 You can view your estimated bills and pay your AWS invoices in your preferred currency by setting a payment currency\.  
 AWS converts your bill to your preferred currency after your bill is finalized\. Until then, all of the preferred currency amounts shown in the console are estimated in USD\. AWS guarantees your exchange rate, so that refunds use the same exchange rate as your original transaction\.  
 Additional details:  
-+ AWS Marketplace and DevPay invoices are not eligible for this service and are processed in USD\.
++ AWS Marketplace invoices are not eligible for this service and are processed in USD\.
 + This service is available only if your default payment method is Visa or MasterCard\.
 + The rates change daily\. The rate applied to your invoice is the current rate when your invoice is created\. You can check the current rate on the Billing and Cost Management console\.
 + You can switch back to USD\.

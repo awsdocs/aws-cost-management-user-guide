@@ -1,6 +1,6 @@
 # Reading an Offer File<a name="reading-an-offer"></a>
 
-An offer file lists the products and prices for a single AWS service in all regions or a single AWS service in a specific region\. Offer files are available as either CSV or JSON files\. You can read the files in multiple ways, such as using a spreadsheet program to read and sort the CSV file, a text program to read the file, or a program that parses JSON\.
+An offer file lists the products and prices for a single AWS service in all Regions or a single AWS service in a specific Region\. Offer files are available as either CSV or JSON files\. You can read the files in multiple ways, such as using a spreadsheet program to read and sort the CSV file, a text program to read the file, or a program that parses JSON\.
 
 Offer files include the following types of information:
 + [Offer File Details](#offer-term-defs) – File metadata about the offer file itself, such as the format version and the publication date\.

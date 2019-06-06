@@ -8,7 +8,7 @@ select status from cost_and_usage_data_status
 
 The two possible results are `READY` and `UPDATING`\. If the status is `READY`, then you can query your Athena database\. If the status is `UPDATING`, then Athena might return incomplete results\.
 
-After you have confirmed that AWS isn't refreshing your data, you can run your own queries\. For example, the following query shows year\-to\-date costs by service for each month\.
+After you have confirmed that AWS isn't refreshing your data, you can run your own queries\. For example, the following query shows year\-to\-date costs by service for each month in the example database called `mycostandusage_parquet`\.
 
 ```
 SELECT line_item_product_code,

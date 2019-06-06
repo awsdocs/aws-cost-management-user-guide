@@ -37,7 +37,7 @@ To create an Amazon SNS topic and grant permissions to your budget, use the Amaz
      },
      "Action": "SNS:Publish",
      "Resource": "your topic ARN"
-   }
+   },
    ```
 
 1. Replace **ExampleSid123456789012** with a string\. The Sid must be unique within the policy\.

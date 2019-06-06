@@ -36,6 +36,8 @@ The **Monthly EC2 running hours costs and usage** report shows how much you have
 ## Reserved Instance Reports<a name="ce-ri-reports"></a>
 
 Cost Explorer provides you with the following reports for understanding your reservations\.
+
+The reservation reports show your Amazon EC2 coverage and utilization in either hours or normalized units\. Normalized units enable you to see your Amazon EC2 usage for multiple sizes of instances in a uniform way\. For example, suppose you run an `xlarge` instance and a `2xlarge` instance\. If you run both instances for the same amount of time, the `2xlarge` instance uses twice as much of your reservation as the `xlarge` instance, even though both instances show only one instance\-hour\. Using normalized units instead of instance\-hours, the `xlarge` instance used 8 normalized units, and the `2xlarge` instance used 16 normalized units\. For more information, see [Instance Size Flexibility for EC2 Reserved Instances](https://aws.amazon.com/blogs/aws/new-instance-size-flexibility-for-ec2-reserved-instances)\.
 + [RI Utilization Reports](#ce-utilization-views)
 + [RI Coverage Reports](#ce-coverage-views)
 

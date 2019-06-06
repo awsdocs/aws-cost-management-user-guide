@@ -77,7 +77,7 @@ AWS allocates a regional RI by instance size: The RI is applied first to the sma
 Blended rates are the averaged rates of the Reserved Instances and On\-Demand Instances that are used by member accounts in an organization in AWS Organizations\. AWS calculates blended costs by multiplying the blended rate for each service with an account’s usage of that service\.
 
 **Note**  
-AWS shows each linked account thier charges as unblended costs\. AWS continues to apply all of the consolidated billing benefits such as reservations and tiered prices across all linked accounts in an AWS Organizations organization\. 
+AWS shows each linked account their charges as unblended costs\. AWS continues to apply all of the consolidated billing benefits such as reservations and tiered prices across all linked accounts in an AWS Organizations organization\. 
 
  This section includes examples that show how AWS calculates blended rates for the following services\.
 + [Calculating Blended Rates for Amazon S3 Standard Storage](#Blended_S3_Stand_Storage)

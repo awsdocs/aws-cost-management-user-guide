@@ -22,10 +22,9 @@ To be able to grant your IAM users access to your account's Billing and Cost Man
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
 
-1. Next to **IAM User Access to Billing Information**, choose **Edit**\. 
+1. Next to **IAM User and Role Access to Billing Information**, choose **Edit**\. 
 
-1. Select the ** Activate IAM Access** check box to activate access to the Billing and Cost Management pages\. You can now use IAM policies to control which pages a user can access\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
+1. Select the ** Activate IAM Access** check box to activate access to the Billing and Cost Management pages\. You can now use IAM policies to control which pages a user can access\.
 
    After you have activated IAM user access, you can attach IAM policies to grant or deny access to specific billing features\. For more information about using policies to grant IAM users access to Billing and Cost Management features, see [Billing and Cost Management Permissions Reference](billing-permissions-ref.md)\.
 **Important**  

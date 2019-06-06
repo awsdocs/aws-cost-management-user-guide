@@ -9,6 +9,7 @@ If you close your account or unsubscribe from a service, make sure that you take
 + [Usage Exceeds Free Tier](#checkexceedfree)
 + [AWS Free Tier Expired](#checkfreetierexpired)
 + [Bill Received After Account Closure](#checkbillafterclosure)
++ [Disabled Regions](#check-disabled-region)
 + [Elastic Beanstalk Environments](#checkelasticbeanstalk)
 + [Elastic Load Balancing \(ELB\)](#checkloadbalancers)
 + [Services Started in AWS OpsWorks](#opsworks)
@@ -23,19 +24,23 @@ If you close your account or unsubscribe from a service, make sure that you take
 If you use the free tier, make sure that your usage does not exceed the limits that are specified at [AWS Free Tier](http://aws.amazon.com/free/)\. You are charged On\-Demand Instance rates for any usage that exceeds the free tier limits\. You can check your AWS Free Tier usage alerts and your free tier usage alerts on the Billing and Cost Management console\.
 
 **Note**  
-Free tier usage alerts are available only to master accounts in an organization\. They are not available for individual member accounts in an organization\. 
+Free tier usage alerts are available only to master accounts in an organization\. They aren't available for individual member accounts in an organization\. 
 
 For more information about tracking your free tier usage, see [Tracking Your Free Tier Usage](tracking-free-tier-usage.md)\.
 
 ## AWS Free Tier Expired<a name="checkfreetierexpired"></a>
 
-If you receive unexpected charges after a period of inactivity, your free tier period might have expired\. Any resources that are allocated to your account after your free tier period expires begin to incur charges\. To check for resources in use, open the [AWS Management Console](https://console.aws.amazon.com/console/home?#)\. **Be sure to check each region where you have allocated resources\.**
+If you receive unexpected charges after a period of inactivity, your free tier period might have expired\. Any resources that are allocated to your account after your free tier period expires begin to incur charges\. To check for resources in use, open the [AWS Management Console](https://console.aws.amazon.com/console/home?#)\. **Be sure to check each Region where you have allocated resources\.**
 
 For more information about free tier offerings and terms, see [AWS Free Tier](http://aws.amazon.com/free/)\.
 
 ## Bill Received After Account Closure<a name="checkbillafterclosure"></a>
 
-Each month’s usage is calculated and billed at the beginning of the following month\. If you close your account, but use opt\-in services during the month, you receive a bill for the opt\-in service usage at the beginning of the following month\.
+Each month’s usage is calculated and billed at the beginning of the following month\. If you close your account but use opt\-in services during the month, you receive a bill for the opt\-in service usage at the beginning of the following month\.
+
+## Disabled Regions<a name="check-disabled-region"></a>
+
+If you disable a Region and you still have resources in that Region, you continue to incur charges for those resources\. \(There is no charge for enabling a Region, only charges for the resources that you create in a Region\.\) For more information, see [Enabling and Disabling Regions](manage-account-payment.md#manage-account-payment-enable-disable-regions)\.
 
 ## Elastic Beanstalk Environments<a name="checkelasticbeanstalk"></a>
 

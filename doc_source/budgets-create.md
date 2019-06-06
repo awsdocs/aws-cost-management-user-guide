@@ -27,9 +27,11 @@ Use this procedure to create a cost\-based budget\.
    _.:/=+-%@
    ```
 
-1. For **Period**, choose how often you want the budget to reset the actual and forecasted spend\. Choose **Monthly** for every month, **Quarterly** for every three months, and **Annually** for every year\.
+1. For **Period**, choose how often you want the budget to reset the actual and forecasted spend\. Choose **Monthly** for every month, **Quarterly** for every three months, and **Annually** for every year\. You can also set custom future budgeted amounts for **Monthly** and **Quarterly** by using the Budget Planning feature\.
 
-1. For **Budgeted Amount**, enter the total amount that you want to spend for this budget period\. 
+1. For a fixed **Budgeted Amount**, enter the total amount that you want to spend for this budget period\. For **Monthly** and **Quarterly** Planning budgets, enter the amount you want to spend for each planned period\.
+**Note**  
+After all of the **Budgeted Amounts** values in Planned Budget are used, the budget continues to use the last limit as the **Budgeted Amount**\. At that point, the planned budget provides the same experience as a fixed budget\. 
 
 1. \(Optional\) For **Budget effective dates**, choose **Recurring Budget** for a budget that resets after the budget period or **Expiring Budget** for a one\-time budget that doesn't reset after the budget period\.
 
@@ -108,7 +110,7 @@ Use this procedure to create a usage\-based budget\.
    _.:/=+-%@
    ```
 
-1. For **Period**, choose how often you want the budget to reset the actual and forecasted spend\. Choose **Monthly** for every month, **Quarterly** for every three months, or **Annually** for every year\.
+1. For **Period**, choose how often you want the budget to reset the actual and forecasted usage\. Choose **Monthly** for every month, **Quarterly** for every three months, or **Annually** for every year\. You can also set custom future budgeted amounts for **Monthly** and **Quarterly** by using the Budget Planning feature\.
 
 1. Under **Usage unit\(s\)**, choose either **Usage Type Group** or **Usage Type**\. A usage type group is a collection of usage types that have the same unit of measure, such as resources that measure usage by the hour\.
 
@@ -116,7 +118,9 @@ Use this procedure to create a usage\-based budget\.
 
    1. For **Usage Type**, choose the service that you want to include in the budget and then choose the unit of measurement that you want the budget to use\.
 
-1. For **Budgeted Amount**, enter the total amount of units that you want to use for this budget period\.
+1. For a fixed **Budgeted Amount**, enter the total amount of units that you want to use for this budget period\. For **Monthly** and **Quarterly** Planning budgets, enter the amount you want to spend for each planned period\.
+**Note**  
+After all of the **Budgeted Amounts** values in Planned Budget are used, the budget continues to use the last limit as the **Budgeted Amount**\. At that point, the planned budget provides the same experience as a fixed budget\. 
 
 1. \(Optional\) For **Budget effective dates**, choose **Recurring Budget** for a budget that resets after the budget period or **Expiring Budget** for a one\-time budget that doesn't reset after the budget period\.
 

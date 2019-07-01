@@ -2,6 +2,9 @@
 
 You can use the Billing and Cost Management console to change account settings, including your contact and alternate contact information, the currency that you pay your bills in, the Regions that you can create resources in, and your tax registration numbers\.
 
+**Note**  
+Some sections can only be edited by the AWS account root user\. If you do not see the **Edit** option, switch to the root user\.
+
 **Topics**
 + [Editing Your User Name, Password, and Email Address](#manage-account-payment-edit-user-name)
 + [Editing Contact Information](#manage-account-payment-edit-contacts)

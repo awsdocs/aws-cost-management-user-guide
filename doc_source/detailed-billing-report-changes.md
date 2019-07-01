@@ -42,8 +42,8 @@ Table 1 below shows how a DBR or DBR\-RT, prior to June 17, 2019, presents data 
 
 | ProductName | UsageType | Operation | Availability Zone | Reserved Instance | ItemDescription | Usage Quantity | Unblended Rate | Unblended Cost | 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
-|  Amazon Elastic Compute Cloud  | HeavyUsage:c3\.8xlarge | RunInstances | us\-east\-1a | Y | USD 0\.10 hourly fee per Linux/UNIX \(Amazon VPC\), c3:8xlarge \(744 hours purchased\) | 744 | 0\.1 | 74\.4 | 
-|  Amazon Elastic Compute Cloud  | USE1\-BoxUsage:c3\.8xlarge | RunInstances | us\-east\-1a | Y | USD 0\.10 hourly fee per Linux/UNIX \(Amazon VPC\), c3:8xlarge | 644 | 0\.1 | 64\.4 | 
+|  Amazon Elastic Compute Cloud  | HeavyUsage:c3\.8xlarge | RunInstances | us\-east\-1a | Y | USD 0\.10 hourly fee per Linux/UNIX \(Amazon VPC\), c3:8xlarge | 744 | 0\.1 | 74\.4 | 
+|  Amazon Elastic Compute Cloud  | USE1\-BoxUsage:c3\.8xlarge | RunInstances | us\-east\-1a | Y | USD 0\.10 hourly fee per Linux/UNIX \(Amazon VPC\), c3:8xlarge | 644 | 0 | 0 | 
 
 ## Understanding unused RI costs via the CUR<a name="dbr-unused-ri-via-cur"></a>
 
@@ -99,7 +99,7 @@ Utilizing the CUR, you can understand your unused RI usage and costs by referrin
 
 | lineitem/ Productcode | UsageType | lineitem/ LineItemType | lineitem/ LineItemDescription | lineitem/ UsageAmount | lineitem/ NormalizedUsageAmount | lineitem/ UnblendedRate | lineitem/ UnblendedCost | reservation/ UnusedQuantity | reservation/ UnusedRecurringFee | reservation/ UnusedAmortizedUpfrontFeeForBillingPeriod | reservation/ RecurringFeeForUsage | reservation/ AmortizedUpfrontCostForUsage | reservation/ EffectiveCost | 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
-|  Amazon EC2  | HeavyUsage:c3\.8xlarge | RI Fee | USD 0\.10 hourly fee per Linux/UNIX \(Amazon VPC\), c3:8xlarge | 744 | 47,616 | 0\.1 | 74\.4 | 0 | 0 | 1 |  |  |  | 
+|  Amazon EC2  | HeavyUsage:c3\.8xlarge | RI Fee | USD 0\.10 hourly fee per Linux/UNIX \(Amazon VPC\), c3:8xlarge | 744 | 47,616 | 0\.1 | 74\.4 | 100 | 0 | 1 |  |  |  | 
 |  Amazon EC2  | USW2\-BoxUsage:c3\.8xlarge | DiscountedUsage | USD 0\.00 hourly fee per Linux/UNIX \(Amazon VPC\), c3:8xlarge | 644 | 47,216 | 0 | 0 |  |  |  | 64\.4 | 5 | 69\.4 | 
 
 In addition to matching the current functionality supported by DBR/DBR\-RT, CUR has the following advantages:

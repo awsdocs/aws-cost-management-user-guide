@@ -127,6 +127,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Managing Your Payments in the EU](emea-payments.md)
       + [Managing Your AWS Europe Payment Methods](edit-emea-payment-method.md)
       + [Managing Your AWS Europe Credit Card Payment Methods](manage-cc-emea.md)
+      + [Managing Your AWS Europe Credit Card Payment Verifications](manage-emea-cc-verification.md)
       + [Managing Your SEPA Direct Debit Payment Methods](manage-debit-emea.md)
 + [Controlling Access](control-access-billing.md)
    + [Granting Access to Your Billing Information and Tools](grantaccess.md)

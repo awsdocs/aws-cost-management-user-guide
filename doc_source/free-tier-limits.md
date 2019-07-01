@@ -16,6 +16,9 @@ In some cases, leaving your resources running maximizes your free tier benefits\
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
 
+**Note**  
+Several services measure usage in seconds\. See each service page's details to see how your service is measured and billed\.
+
 For more information, see [Amazon EC2 Pricing](https://aws.amazon.com/ec2/pricing/)\.
 
 ## Amazon Machine Images<a name="ami-limits"></a>

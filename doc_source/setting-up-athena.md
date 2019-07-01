@@ -137,9 +137,15 @@ The AWS CloudFormation template removes all events associated with your Amazon S
 
 1. Open the Amazon S3 console at [https://console\.aws\.amazon\.com/s3/](https://console.aws.amazon.com/s3/)\.
 
-1. From the list of buckets, choose the bucket image next to the bucket where you chose to receive your AWS Cost and Usage report\.
+1. From the list of buckets, choose the bucket name\.
 
-1. Select to download the template file\.
+1. Choose the prefix name\.
+
+1. Choose the report name\.
+
+1. Select the `.yml` template file\.
+
+1. Select **download**\.
 
 1. Open the AWS CloudFormation console at [https://console\.aws\.amazon\.com/cloudformation](https://console.aws.amazon.com/cloudformation/)\.
 

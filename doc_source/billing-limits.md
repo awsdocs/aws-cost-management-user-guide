@@ -20,4 +20,4 @@ The following table describes the current limits within Billing and Cost Managem
 
 |  |  | 
 | --- |--- |
-| Number of AWS Cost and Usage reports | 5 | 
+| Number of AWS Cost and Usage reports | 10 | 

@@ -26,7 +26,7 @@ You can opt in to or out of the AWS Free Tier usage alerts through the Billing a
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
-1. Under **Prefences** in the navigation pane, choose ** Billing preferences**\.
+1. Under **Preferences** in the navigation pane, choose ** Billing preferences**\.
 
 1. Under **Cost Management Preferences**, select **Receive Free Tier Usage Alerts** to opt in to free tier usage alerts\. To opt out, clear the **Receive Free Tier Usage Alerts** check box\.<a name="customize-email"></a>
 
@@ -36,7 +36,7 @@ AWS sends free tier usage alerts to the email address that you used when you cre
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
-1. Under **Prefences** in the navigation pane, choose ** Billing preferences**\.
+1. Under **Preferences** in the navigation pane, choose ** Billing preferences**\.
 
 1. Under **Cost Management Preferences**, under **Receive Free Tier Usage Alerts** in the **Email Address** dialog box, enter the email address where you want to receive the usage alerts\.
 

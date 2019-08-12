@@ -9,7 +9,7 @@ AWS delivers the report files to an Amazon S3 bucket that you specify in your ac
 You can download the report from the Amazon S3 console, upload the report into Amazon Redshift or Amazon QuickSight, or query the report in Amazon S3 using Amazon Athena\. For more information about uploading to Amazon Redshift, see [Uploading an AWS Cost and Usage Report to Amazon Redshift](billing-reports-costusage-upload.md)\. For more information about uploading to Amazon QuickSight, see [Create a Data Set Using Amazon S3 Files](https://docs.aws.amazon.com/quicksight/latest/user/create-a-data-set-s3.html) in the *Amazon QuickSight User Guide*\. For more information about using Athena to query your data, see [Uploading an AWS Cost and Usage Report to Amazon Athena](athena.md)\. If you chose to create Amazon Redshift, Amazon QuickSight, or Athena manifests when you created your report, Billing and Cost Management provides the Amazon S3 data and manifests for you\.
 
 **Note**  
-AWS supports five AWS Cost and Usage reports per account\. The reports are free of charge, but standard Amazon S3 storage rates apply\. 
+AWS supports ten AWS Cost and Usage reports per account\. The reports are free of charge, but standard Amazon S3 storage rates apply\. 
 
 **Topics**
 + [Managing AWS Cost and Usage Reports](billing-reports-costusage-managing.md)

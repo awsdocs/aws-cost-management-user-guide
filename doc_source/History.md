@@ -4,6 +4,7 @@ The following table describes the documentation for this release of the *AWS Bil
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [New Reporting Method Using AWS Budgets](reporting-cost-budget.html) | Added a new reporting functionality using AWS Budgets reports\. | June 27, 2019 | 
 | [Added normalized units to Cost Explorer](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-default-reports.html) | Cost Explorer reports now include normalized units\. | February 5, 2019 | 
 | [Credit application changes](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html) | AWS changed how they apply credits\. | January 17, 2019 | 
 | [New payment behavior](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/edit-aispl-payment-method.html#aispl-enable-recurring) | AISPL customers can now enable the auto\-charge ability for their payments\. | December 20, 2018 | 

@@ -30,7 +30,7 @@ For more information about organization master and member accounts, see the *[AW
 This table summarizes the permissions that allow or deny IAM users access to your billing information and tools\. For examples of policies that use these permissions, see [Billing and Cost Management Policy Examples](#billing-example-policies)\. 
 
 **Important**  
-Starting July 22, 2019, the permissions `cur:DescribeReportDefinitions`, `cur:PutReportDefinitions`, and `cur:DeleteReportDefinition` applies to all reports created using both the [AWS Cost and Usage Report](billing-reports-costusage.md) API and the Billing and Cost Management console\. If you create reports using the Billing and Cost Management console, we recommend that you update the permissions for IAM users\. Not updating the permissions will result in users losing access to viewing, editing, and removing reports on the console reports page\.
+Starting August 19, 2019, the permissions `cur:DescribeReportDefinitions`, `cur:PutReportDefinition`, and `cur:DeleteReportDefinition` applies to all reports created using both the [AWS Cost and Usage Report](billing-reports-costusage.md) API and the Billing and Cost Management console\. If you create reports using the Billing and Cost Management console, we recommend that you update the permissions for IAM users\. Not updating the permissions will result in users losing access to viewing, editing, and removing reports on the console reports page\.
 
 
 | Permission Name | Description | 
@@ -43,9 +43,10 @@ Starting July 22, 2019, the permissions `cur:DescribeReportDefinitions`, `cur:Pu
 | budgets:ModifyBudget |  Allow or deny IAM users permission to modify [Budgets](https://portal.aws.amazon.com/billing/home#/budgets)\. To allow IAM users to view and modify budgets, you must also allow `ViewBilling`\.  | 
 | aws\-portal:ViewPaymentMethods |  Allow or deny IAM users permission to view [Payment Methods](https://portal.aws.amazon.com/billing/home#/paymentmethods)\.  | 
 | aws\-portal:ModifyPaymentMethods |  Allow or deny IAM users permission to modify [Payment Methods](https://portal.aws.amazon.com/billing/home#/paymentmethods)\. To allow users to modify payment methods, you must allow both `ModifyPaymentMethods` and `ViewPaymentMethods`\.  | 
-|  `cur:DescribeReportDefinitions`  |  Allow or deny IAM users permission to view a [AWS Cost and Usage Report](billing-reports-costusage.md) using the API\. Starting July 22, 2019, this permission applies to both API and Billing and Cost Management console\. For an example policy, see [Example 10: Create, view, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
-|  `cur:PutReportDefinitions`  |  Allow or deny IAM users permission to create a [AWS Cost and Usage Report](billing-reports-costusage.md)\. Starting July 22, 2019, this permission applies to both API and Billing and Cost Management console\. For an example policy, see [Example 10: Create, view, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
-|  `cur:DeleteReportDefinition`  |  Allow or deny IAM users permission to delete [AWS Cost and Usage Report](billing-reports-costusage.md) using the API\. Starting July 22, 2019, this permission applies to both API and Billing and Cost Management console\. For an example policy, see [Example 10: Create, view, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
+|  `cur:DescribeReportDefinitions`  |  Allow or deny IAM users permission to view a [AWS Cost and Usage Report](billing-reports-costusage.md) using the API\. Starting August 19, 2019, this permission applies to both API and Billing and Cost Management console\. For an example policy, see [Example 10: Create, view, edit, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
+|  `cur:PutReportDefinition`  |  Allow or deny IAM users permission to create a [AWS Cost and Usage Report](billing-reports-costusage.md)\. Starting August 19, 2019, this permission applies to both API and Billing and Cost Management console\. For an example policy, see [Example 10: Create, view, edit, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
+|  `cur:DeleteReportDefinition`  |  Allow or deny IAM users permission to delete [AWS Cost and Usage Report](billing-reports-costusage.md) using the API\. Starting August 19, 2019, this permission applies to both API and Billing and Cost Management console\. For an example policy, see [Example 10: Create, view, edit, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
+| cur:ModifyReportDefinition |  Allow or deny IAM users permission to modify [AWS Cost and Usage Report](billing-reports-costusage.md) using the API\. This permission applies to both API and Billing and Cost Management console\. For an example policy, see [Example 10: Create, view, edit, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
 | aws\-portal:ViewUsage |  Allow or deny IAM users permission to view AWS usage [Reports](https://portal.aws.amazon.com/billing/home#/reports)\. To allow IAM users to view usage reports, you must allow both `ViewUsage` and `ViewBilling`\. For an example policy, see [Example 2: Allow IAM users to access the Reports console page](#example-billing-view-reports)\.   | 
 | pricing:DescribeServices |  Allow or deny IAM users permission to view AWS service products and pricing via the AWS Price List Service API\. To allow IAM users to use AWS Price List Service API, you must allow `DescribeServices`, `GetAttributeValues`, and `GetProducts`\. For an example policy, see [Example 11: Find products and prices](#example-policy-pe-api)\.  | 
 | pricing:GetAttributeValues |  Allow or deny IAM users permission to view AWS service products and pricing via the AWS Price List Service API\. To allow IAM users to use AWS Price List Service API, you must allow `DescribeServices`, `GetAttributeValues`, and `GetProducts`\. For an example policy, see [Example 11: Find products and prices](#example-policy-pe-api)\.  | 
@@ -90,7 +91,7 @@ These policies require that you activate IAM user access to the Billing and Cost
 + [Example 7: Allow IAM users to create budgets](#example-billing-allow-createbudgets)
 + [Example 8: Deny access to Account Settings, but allow full access to all other billing and usage information](#example-billing-deny-modifyaccount)
 + [Example 9: Deposit reports into an Amazon S3 bucket](#example-billing-s3-bucket)
-+ [Example 10: Create, view, or delete an AWS Cost and Usage report](#example-policy-report-definition)
++ [Example 10: Create, view, edit, or delete an AWS Cost and Usage report](#example-policy-report-definition)
 + [Example 11: Find products and prices](#example-policy-pe-api)
 + [Example 12: View costs and usage](#example-policy-ce-api)
 + [Example 13: Enable and Disable Regions](#enable-disable-regions)
@@ -124,6 +125,8 @@ To allow an IAM user to view your billing information without giving the IAM use
 
 To allow an IAM user to access the **Reports** console page and to view the usage reports that contain account activity information, use a policy similar to this example policy\.
 
+For definitions of each action, see [Billing Actions](#user-permissions)\.
+
 ```
 {
     "Version": "2012-10-17",
@@ -132,7 +135,11 @@ To allow an IAM user to access the **Reports** console page and to view the usag
             "Effect": "Allow",
             "Action": [
                 "aws-portal:ViewUsage",
-                "aws-portal:ViewBilling"
+                "aws-portal:ViewBilling",
+                "cur:DescribeReportDefinitions",
+                "cur:PutReportDefinition",
+                "cur:DeleteReportDefinition",
+                "cur:ModifyReportDefinition"
             ],
             "Resource": "*"
         }
@@ -330,9 +337,9 @@ For more information, see [ Using Bucket Policies and User Policies](https://doc
 }
 ```
 
-### Example 10: Create, view, or delete an AWS Cost and Usage report<a name="example-policy-report-definition"></a>
+### Example 10: Create, view, edit, or delete an AWS Cost and Usage report<a name="example-policy-report-definition"></a>
 
-This policy allows an IAM user to create, view, or delete `sample-report` using the API\.
+This policy allows an IAM user to create, view, edit, or delete `sample-report` using the API\.
 
 ```
 {
@@ -343,6 +350,7 @@ This policy allows an IAM user to create, view, or delete `sample-report` using 
             "Action": [
                 "cur:PutReportDefinition", 
                 "cur:DeleteReportDefinition"
+                "cur:ModifyReportDefinition"
             ],
             "Resource": "arn:aws:cur:*:123456789012:definition/sample-report"
         },

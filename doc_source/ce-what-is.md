@@ -16,4 +16,5 @@ Cost Explorer uses the same dataset that is used to generate the AWS Cost and Us
 + [Exploring Your Data Using Cost Explorer](ce-exploring-data.md)
 + [Using Cost Explorer Reports](ce-reports.md)
 + [Understanding Your Reservations With Cost Explorer](ce-ris.md)
++ [Optimizing Your Cost with Rightsizing Recommendations](ce-rightsizing.md)
 + [Using the AWS Cost Explorer API](ce-api.md)

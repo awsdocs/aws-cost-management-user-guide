@@ -108,11 +108,3 @@ The data in the preceding table shows the following information:
 + The unblended rate for the three Reserved Instances is $0\.00\. The unblended cost of an RI is always $0\.00 because RI charges are not included in blended rate calculations\.
 + The unblended rate for the On\-Demand Instance is $0\.023\. Unblended rates are associated with the current price of the product\. They can't be verified from information in the preceding table\. 
 + The blended rate is calculated by dividing the total cost \($6\.90\) by the total amount of Amazon EC2 usage \(2460 hours\)\. This produces a rate of $0\.002804878 dollars per hour\.
-
-You can check that your AWS Cost and Usage report is balanced by ensuring that the sum of the blended costs of each member account line item and the rounding error line item equals the total of all master account line items\. 
-
-**Note**  
-You can download the AWS Cost and Usage report into a \.csv file, and then use an Excel spreadsheet to find the member account line items to balance against master account line items in the report\. To do that, filter on the following columns in the following order:   
-Product Name
-Usage Type
-Operation

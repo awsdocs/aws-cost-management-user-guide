@@ -6,7 +6,7 @@ You can sign up to receive notifications when AWS prices change, such as when AW
 
 You can use the console to sign up for Amazon SNS notifications\.
 
-1. Sign in to the AWS Management Console and open the Amazon SNS console at [https://console\.aws\.amazon\.com/sns/v2/home](https://console.aws.amazon.com/sns/v2/home)\.
+1. Sign in to the AWS Management Console and open the Amazon SNS console at [https://console\.aws\.amazon\.com/sns/v3/home](https://console.aws.amazon.com/sns/v3/home)\.
 
 1. If you are new to Amazon SNS, choose **Get Started**\.
 

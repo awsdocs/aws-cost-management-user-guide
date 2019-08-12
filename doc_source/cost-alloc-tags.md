@@ -19,9 +19,8 @@ You can also use tags to filter views in Cost Explorer\. For more information ab
  For more information about activating the AWS generated tags, see [Activating the AWS\-Generated Cost Allocation Tags](activate-built-in-tags.md)\. For more information about applying and activating user\-defined tags, see [User\-Defined Cost Allocation Tags](custom-tags.md)\. All tags can take up to 24 hours to appear in the Billing and Cost Management console\.
 
 **Note**  
+As a best practice, do not include sensitive information in tags\.
 You can't delete or merge tags\. Instead, deactivate tags so that they aren't used in your billing reports\.
-
-**Note**  
 Only master accounts in an organization and single accounts that are not members of an organization have access to the **Cost Allocation Tags** manager in the Billing console\.
 
 **Topics**

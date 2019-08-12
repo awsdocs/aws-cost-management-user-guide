@@ -134,6 +134,7 @@ To use Athena, you must set up an AWS Glue crawler, an AWS Glue database, and an
 + Amazon Athena
 **Important**  
 The AWS CloudFormation template removes all events associated with your Amazon S3 bucket, so we strongly recommend that you use a new Amazon S3 bucket\.
+Be sure to align your AWS CloudFormation Region with your Amazon S3 bucket\.
 
 1. Open the Amazon S3 console at [https://console\.aws\.amazon\.com/s3/](https://console.aws.amazon.com/s3/)\.
 
@@ -151,9 +152,11 @@ The AWS CloudFormation template removes all events associated with your Amazon S
 
 1. If you have never used AWS CloudFormation before, choose **Create New Stack**\. Otherwise, choose **Create Stack**\. 
 
-1. Under **Choose a template**, choose **Upload a template to Amazon S3**\.
+1. Under **Prepare template**, choose **Template is ready**\.
 
-1. Choose **Browse\.\.\.**, choose the downloaded template, and then choose **Open**\.
+1. Under **Template source**, choose **Upload a template file**\.
+
+1. Select **Choose file**, choose the downloaded `.yml` template, and then choose **Open**\.
 
 1. Choose **Next**\.
 
@@ -161,7 +164,7 @@ The AWS CloudFormation template removes all events associated with your Amazon S
 
 1. Choose **Next**\.
 
-1. Select **I acknowledge that AWS CloudFormation might create IAM resources\.** This template creates the following resources:
+1. At the bottom of the page, select **I acknowledge that AWS CloudFormation might create IAM resources\.** This template creates the following resources:
    + Three IAM roles
    + An AWS Glue database
    + An AWS Glue crawler

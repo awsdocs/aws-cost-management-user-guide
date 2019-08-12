@@ -37,6 +37,7 @@ You can continue refining your cost analysis by using multiple filters, by group
 Cost Explorer displays a chart that represents the data in common to the filters that you have selected, which means that you can use filters together to analyze subsets of cost data\. For example, if you set the **Service** filter to show costs related to Amazon EC2 and Amazon RDS services and then select **Reserved** using the **Purchase Option** filter, the cost chart shows how much money **Reserved** instances on Amazon EC2 and Amazon RDS cost for each of the three months specified\.
 
 **Note**  
+AWS Cost and Usage report in Cost Explorer is limited to 1024 filters\.
 The RI Utilization reports allow filtering by only one service at a time, and only for the following services:  
 Amazon EC2
 Amazon Redshift
@@ -91,7 +92,7 @@ The RI Utilization reports allow filtering by only one service at a time, and on
   Label that you can use to track costs associated with specific areas/entities within your business\. For more information about working with tags, see [Applying User\-Defined Cost Allocation Tags](custom-tags.md#allocation-how)\.
 + **Tenancy**
 
-  Specifies whether you share an Amazon EC2 RI with another user\. Tenancy is either **Dedicated** or **Default**\. 
+  Specifies if the Amazon EC2 instance is hosted on shared or single\-tenant hardware\. Some tenancy values include **Shared \(Default\)**, **Dedicated**, **Host**\.
 + **Usage Type**
 
   Usage types are the units that each service uses to measure the usage of a specific type of resource\. For example, the `BoxUsage:t2.micro(Hrs)` usage type filters by the running hours of Amazon EC2 `t2.micro` instances\.

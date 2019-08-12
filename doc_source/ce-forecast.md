@@ -1,20 +1,25 @@
 # Forecasting with Cost Explorer<a name="ce-forecast"></a>
 
-You create a forecast by selecting a future time range for your report\. For more information, see [Choosing Time Ranges for the Data That You Want to View](ce-modify.md#ce-timerange)\. The following discussion talks about the accuracy of the forecasts created by Cost Explorer and how to read them\. 
+You create a forecast by selecting a future time range for your report\. For more information, see [Choosing Time Ranges for the Data That You Want to View](ce-modify.md#ce-timerange)\. The following section discusses the accuracy of the forecasts created by Cost Explorer and how to read them\. 
 
-A forecast is a prediction of how much you will use AWS services over the forecast time period you selected, based on your past usage\. Forecasting provides an estimate of what your AWS bill will be and enables you to use alarms and budgets for amounts that you're predicted to use\. Because forecasts are predictions, the forecasted billing amounts are estimated and might differ from your actual charges for each statement period\. 
+A forecast is a prediction of how much you will use AWS services over the forecast time period that you selected, based on your past usage\. Forecasting provides an estimate of what your AWS bill will be and enables you to use alarms and budgets for amounts that you're predicted to use\. Because forecasts are predictions, the forecasted billing amounts are estimated and might differ from your actual charges for each statement period\. 
 
-Like weather forecasts, billing forecasts can vary in accuracy\. Different ranges of accuracy have different confidence intervals\. The higher the confidence interval, the more likely the forecast is to be correct\. For example, suppose you have a budget set to 100 dollars, and you've used 75 dollars in the past three weeks\. Cost Explorer forecasts that there is an 80% probability that your billed costs will be in the 90–100 dollar range\. 
+Like weather forecasts, billing forecasts can vary in accuracy\. Different ranges of accuracy have different prediction intervals\. The higher the prediction interval, the more likely the forecast will have a wider range\. For example, suppose that you have a budget set to 100 dollars for a given month\. An 80% prediction interval might forecast your spend between 90 and 100, with a mean of 95\. The range in the prediction band is dependent on your historical spend volatility, or fluctuations\. The more consistent and predictable the historical spend, the narrower the prediction range in forecast spend\.
 
-Cost Explorer forecasts have a confidence interval of 80%\. If AWS doesn't have enough data to forecast within an 80% confidence interval, Cost Explorer doesn't show a forecast\. 
+Cost Explorer forecasts have a prediction interval of 80%\. If AWS doesn't have enough data to forecast in an 80% prediction interval, Cost Explorer doesn't show a forecast\. This is common for accounts that have less than one full billing cycle\.
 
 ## Reading Forecasts<a name="reading-forecasts"></a>
 
-How you read the Cost Explorer forecasts depends on the type of chart that you're using\. Forecasts are available for both line and bar charts\.
+How you read the Cost Explorer forecasts depends on the type of chart that you're using\. Forecasts are available for both line charts and bar charts\.
 
-When you use line charts, there is a set of lines on either side of your costs line\. The lines indicate the 80% confidence interval\. The wider the range included in the forecast, the higher the probability that your bill will fall in the forecasted range\.
+The 80% prediction interal appears differently on each type of chart:
++ Line charts represent the prediction interval as a set of lines on either side of your costs line
++ Bar charts represent the prediction interval as two lines on either side of of the top of your bar
 
-When you are using bar charts there are two lines on either side of the top of your bar\. The lines indicate the 80% confidence interval\. The wider the range included in the forecast, the higher the probability that your bill will fall in the forecasted range\.
+**Note**  
+The forecast model learns your daily spend patterns and seasonality and forecasts based on those trends\. This means that the current model doesn't include retroactively applied, monthly\-level costs in the forecast \(e\.g\., costs for the Enterprise support plan\)\. If you use the applicable services, you need to make a manual adjustment to include these costs\. 
+
+If you receive discounts, we encourage you to use **Show net unblended costs** when forecasting your monthly costs to include discounts\. Unblended costs don't include discounts, but instead separates discounts into their own line item\. For more information about different costs, see [Cost Explorer Advanced Options](ce-advanced.md)\.
 
 ## Using Forecasts with Consolidated Billing<a name="budget-consolidated"></a>
 

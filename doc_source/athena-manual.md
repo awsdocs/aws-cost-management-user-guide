@@ -35,7 +35,7 @@ AWS includes the SQL that you need to run to create this table in your AWS Cost 
 1. In the **New query 1** query pane, paste the following SQL\. For *`<database name>.<table name>`*, use the database and table name from the first line of the SQL that you copied\.
 
    ```
-   CREATE DATABASE <database name>.<table name>
+   CREATE DATABASE <database name>.
    ```
 
 1. Choose **Run query**\.

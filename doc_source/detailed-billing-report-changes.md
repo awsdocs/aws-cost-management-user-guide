@@ -99,7 +99,7 @@ Utilizing the CUR, you can understand your unused RI usage and costs by referrin
 
 | lineitem/ Productcode | UsageType | lineitem/ LineItemType | lineitem/ LineItemDescription | lineitem/ UsageAmount | lineitem/ NormalizedUsageAmount | lineitem/ UnblendedRate | lineitem/ UnblendedCost | reservation/ UnusedQuantity | reservation/ UnusedRecurringFee | reservation/ UnusedAmortizedUpfrontFeeForBillingPeriod | reservation/ RecurringFeeForUsage | reservation/ AmortizedUpfrontCostForUsage | reservation/ EffectiveCost | 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
-|  Amazon EC2  | HeavyUsage:c3\.8xlarge | RI Fee | USD 0\.10 hourly fee per Linux/UNIX \(Amazon VPC\), c3:8xlarge | 744 | 47,616 | 0\.1 | 74\.4 | 100 | 0 | 1 |  |  |  | 
+|  Amazon EC2  | HeavyUsage:c3\.8xlarge | RI Fee | USD 0\.10 hourly fee per Linux/UNIX \(Amazon VPC\), c3:8xlarge | 744 | 47,616 | 0\.1 | 74\.4 | 100 | 0 | 10 |  |  |  | 
 |  Amazon EC2  | USW2\-BoxUsage:c3\.8xlarge | DiscountedUsage | USD 0\.00 hourly fee per Linux/UNIX \(Amazon VPC\), c3:8xlarge | 644 | 47,216 | 0 | 0 |  |  |  | 64\.4 | 5 | 69\.4 | 
 
 In addition to matching the current functionality supported by DBR/DBR\-RT, CUR has the following advantages:

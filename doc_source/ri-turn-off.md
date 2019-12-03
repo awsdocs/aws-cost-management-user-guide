@@ -1,6 +1,6 @@
 # Turning Off Reserved Instance Sharing<a name="ri-turn-off"></a>
 
-The payer account of an organization can turn off Reserved Instance \(RI\) sharing for any accounts in that organization, including the payer account\. This means that Reserved Instances aren't shared between any accounts that have sharing turned off\. To share an RI with an account, both accounts must have sharing turned on\. This preference isn't permanent, and you can change it at any time\. Each estimated bill is computed using the last set of preferences\. The final bill for the month is calculated based on the preferences set at 23:59:59 UTC time on the last day of the month\.
+The payer account of an organization can turn off Reserved Instance \(RI\) sharing for any accounts in that organization, including the payer account\. This means that Reserved Instances aren't shared between any accounts that have sharing turned off\. To share an RI with an account, the payer account must have the RI and Savings Plans discounts sharing turned on to the specific member account\. This preference isn't permanent, and you can change it at any time\. Each estimated bill is computed using the last set of preferences\. The final bill for the month is calculated based on the preferences set at 23:59:59 UTC time on the last day of the month\.
 
 **Important**  
 Turning off RI sharing can result in a higher monthly bill\.

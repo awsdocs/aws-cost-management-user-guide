@@ -24,8 +24,13 @@ To be able to grant your IAM users access to your account's Billing and Cost Man
 
 1. Next to **IAM User and Role Access to Billing Information**, choose **Edit**\. 
 
-1. Select the ** Activate IAM Access** check box to activate access to the Billing and Cost Management pages\. You can now use IAM policies to control which pages a user can access\.
+1. Select the ** Activate IAM Access** check box to activate access to the Billing and Cost Management pages\. 
 
-   After you have activated IAM user access, you can attach IAM policies to grant or deny access to specific billing features\. For more information about using policies to grant IAM users access to Billing and Cost Management features, see [Billing and Cost Management Permissions Reference](billing-permissions-ref.md)\.
+1. Choose **Update**\.
+
+ You can now use IAM policies to control which pages a user can access\.
+
+After you have activated IAM user access, you can attach IAM policies to grant or deny access to specific billing features\. For more information about using policies to grant IAM users access to Billing and Cost Management features, see [Billing and Cost Management Permissions Reference](billing-permissions-ref.md)\.
+
 **Important**  
 When you activate IAM user access to the Billing and Cost Management console, you grant full access to all users who already have full access to the AWS APIs\. You can restrict their access by applying an IAM policy that constrains their permissions\. See Example [Example 4: Allow full access to AWS services but deny IAM users access to the Billing and Cost Management console](billing-permissions-ref.md#ExampleAllowAllDenyBilling)\.

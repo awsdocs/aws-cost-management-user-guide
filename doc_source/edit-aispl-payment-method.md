@@ -6,18 +6,20 @@ If your account is with AISPL, follow the procedures in this section to manage y
 If you have questions about payment methods, see [Contacting Customer Support About Your Bill](billing-get-answers.md)\.
 + [Supported Payment Methods](#aispl-supported-payment)
 + [View Your Credit Cards](#aispl-view-credit-sec)
-+ [Add A Credit Card](#aispl-add-cc-sec)
-+ [Make A Payment](#aispl-pay-bill-sec)
++ [Add a Credit Card](#aispl-add-cc-sec)
++ [Add a Net Banking Account](#aispl-add-net-acc)
++ [Make a Payment Using a Credit Card](#aispl-pay-bill-sec)
++ [Make a Payment Using Net Banking](#aispl-pay-net-sec)
 + [Enable Recurring Payments](#aispl-enable-recurring-sec)
-+ [Remove Payment Methods](#aispl-remove-credit-sec)
++ [Remove a Payment Method](#aispl-remove-credit-sec)
 + [Disable Recurring Payments](#aispl-disable-recurring-sec)
 + [Activate Your Subscription](#aispl-activate-subscriptions-sec)
 
 ## Supported Payment Methods<a name="aispl-supported-payment"></a>
 
-AWS supports Visa, Master, and AMEX credit cards for AISPL accounts\.
+AWS supports Visa, Mastercard, and AMEX credit cards for AISPL accounts\.
 
-For bank details supporting recurring payments, see [Enable Recurring Payments](#aispl-enable-recurring-sec)
+For bank details supporting recurring payments, see [Enable Recurring Payments](#aispl-enable-recurring-sec)\.
 
 ## View Your Credit Cards<a name="aispl-view-credit-sec"></a>
 
@@ -29,7 +31,7 @@ You can use the console to view the credit cards associated with your account\.<
 
 1. In the navigation pane, choose **Payment Methods**\. 
 
-## Add A Credit Card<a name="aispl-add-cc-sec"></a>
+## Add a Credit Card<a name="aispl-add-cc-sec"></a>
 
 You can use the console to add a credit card to your account\.
 
@@ -55,7 +57,25 @@ If you use Visa or Mastercard, you might be redirected to your bank to authorize
 
 1. \(If you chose **Make Default**\) In the dialog box, choose **Ok**\.
 
-## Make A Payment<a name="aispl-pay-bill-sec"></a>
+## Add a Net Banking Account<a name="aispl-add-net-acc"></a>
+
+You can use the console to add internet banking \(Net Banking\) accounts as your payment method\. This payment option is available to all AISPL customers\.<a name="aispl-add-net"></a>
+
+**To add a Net Banking account to your AISPL account**
+
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+
+1. In the navigation pane, choose **Payment Methods**\.
+
+1. Choose **Add an account**\.
+
+1. Under **Net Banking information**, select your bank name,
+
+1. In the **Billing Address Information** section, enter your name, billing address, and phone number\.
+
+1. Choose **Create**\.
+
+## Make a Payment Using a Credit Card<a name="aispl-pay-bill-sec"></a>
 
 You can use the console to pay your AISPL bills\.
 
@@ -66,9 +86,9 @@ If your bill is less than 10,000 rupees and you have recurring payments set up, 
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
-1. In the navigation pane, choose **Payment History**\. 
+1. In the navigation pane, choose **Orders and invoices**\. 
 
-1. Next to the invoice that you want to pay, choose **Pay Now**\. You're redirected to your payment methods\.
+1. Next to the invoice that you want to pay, choose **Verify and pay**\. You're redirected to your payment methods\.
 
 1. On the **Payment Methods** page, select the payment method that you want to use\.
 
@@ -76,13 +96,36 @@ If your bill is less than 10,000 rupees and you have recurring payments set up, 
 
 1. In the dialog box, choose **Ok**\.
 
-1. For Visa and Mastercard payment methods, you're redirected to your bank to verify your payment\. For American Express payment methods, your bank processes your payment with no action required from you\. After your payment is verified, you're redirected to your account page\. Your invoice shows the **Pay Now** link until your bank processes your payment\.
+1. For Visa and Mastercard payment methods, you're redirected to your bank to verify your payment\. For American Express payment methods, your bank processes your payment with no action required from you\. After your payment is verified, you're redirected to your account page\. Your invoice shows the **Verify and pay** link until your bank processes your payment\.
+
+## Make a Payment Using Net Banking<a name="aispl-pay-net-sec"></a>
+
+You can use the console to pay your AISPL bills using Net Banking\.
+
+**Note**  
+Due to the current AISPL regulations, you're redirected to your bank to authorize the charge with each AWS payment\. You can't use Net Banking for automatic payments\.<a name="aispl-pay-net"></a>
+
+**To pay your AISPL bill**
+
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+
+1. In the navigation pane, choose **Orders and invoices**\. 
+
+1. Next to the invoice that you want to pay, choose **Verify and pay**\. You're redirected to your payment methods\.
+
+1. On the **Payment Methods** page, select your Net Banking account\.
+
+1. Choose **Make Payment**\.
+
+1. You're redirected to your bank's website to verify your payment\. Log in and follow the prompts to approve the payment\.
+
+1. After your payment is verified, you're redirected to your account page, which shows a success message at the top\. 
 
 ## Enable Recurring Payments<a name="aispl-enable-recurring-sec"></a>
 
 You can use the console to enable recurring payments for your account\.
 
-HDFC, SBI, and Axis bank do not support recurring payments or auto\-charge on their debit cards\. However, customers can still use these debit cards to make manual payments\.<a name="aispl-enable-recurring"></a>
+HDFC, SBI, and Axis Bank don't support recurring payments or auto\-charge on their debit cards\. However, customers can still use these debit cards to make manual payments\.<a name="aispl-enable-recurring"></a>
 
 **To enable recurring payments for your AISPL account**
 
@@ -90,9 +133,9 @@ HDFC, SBI, and Axis bank do not support recurring payments or auto\-charge on th
 
 1. In the navigation pane, choose **Payment Methods**\.
 
-1. Above your credit cards, select the **Reccuring payments for default payments enabled\.** check box\.
+1. Above your credit cards, select the **Recurring payments for default payments enabled\.** check box\.
 
-## Remove Payment Methods<a name="aispl-remove-credit-sec"></a>
+## Remove a Payment Method<a name="aispl-remove-credit-sec"></a>
 
 You can use the console to remove a credit card from your account\.<a name="aispl-remove-credit"></a>
 
@@ -116,7 +159,7 @@ You can use the console to disable recurring payments for your account\.
 
 1. In the navigation pane, choose **Payment Methods**\.
 
-1. Above your credit cards, clear the **Reccuring payments for default payments enabled\.** check box\.
+1. Above your credit cards, clear the **Recurring payments for default payments enabled\.** check box\.
 
 1. In the **Are you sure?** dialog box, choose **Yes**\.
 
@@ -128,12 +171,12 @@ You can use the console to activate your subscription\.
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
-1. In the navigation pane, choose **Payment History**\. 
+1. In the navigation pane, choose **Orders and invoices**\. 
 
-1. Next to the invoice for your subscription, choose **Pay Now**\. You're redirected to your payment methods\.
+1. Next to the invoice for your subscription, choose **Verify and pay**\. You're redirected to your payment methods\.
 
 1. On the **Payment Methods** page, select the payment method that you want to use\.
 
 1. In the **Make Payment** box, enter the three\-digit or four\-digit security code of your payment method and then choose **Make Payment**\.
 
-1. For Visa and Mastercard payment methods, you're redirected to your bank to verify your payment\. For American Express payment methods, your bank processes your payment with no action required from you\. Once your payment is verified, your subscription is activated, and you're redirected to your account page\. Your invoice shows the **Pay Now** link until your bank has processed your payment\.
+1. For Visa and Mastercard payment methods, you're redirected to your bank to verify your payment\. For American Express payment methods, your bank processes your payment with no action required from you\. Once your payment is verified, your subscription is activated, and you're redirected to your account page\. Your invoice shows the **Verify and pay** link until your bank has processed your payment\.

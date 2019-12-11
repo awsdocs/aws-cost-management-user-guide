@@ -26,8 +26,8 @@ Billing and Cost Management offers you a number of different ways to view and mo
 You can also check the status of your free tier with the provided AWS Free Tier usage alerts using AWS Budgets\. For more information about AWS Free Tier usage alerts, see [Free Tier Usage Alerts Using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.   
 **Bills**  
  Choose [Bills](https://console.aws.amazon.com/billing/home?region=us-east-1#/bill) to see details about your current charges\.   
-**Payment History**  
- Choose [Payment History](https://console.aws.amazon.com/billing/home?region=us-east-1#/paymenthistory/history?redirected) to see your past payment transactions\. 
+**Orders and Invoices**  
+ Choose [Orders and invoices](https://console.aws.amazon.com/billing/home?region=us-east-1#/paymenthistory/history?redirected) to see your past payment transactions\. 
 
 ## Step 2: Turn on Reports<a name="step-2"></a>
 

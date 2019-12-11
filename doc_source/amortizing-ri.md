@@ -27,8 +27,7 @@ Valid values are: `Original`, `System`, `ManualWithData`, and `Manual`\.
 You can use the following columns to understand the amortized costs of your RIs for the billing period\. The values for these columns appear only for RI subscription line items \(also known as `RI Fee` line items\) and not for the actual instances using the RIs\.
 
 ** reservation/amortizedUpfrontFeeForBillingPeriod**  
-The initial upfront payment for All Upfront RIs and Partial Upfront RIs, amortized over this month\. Because there are no upfront fees for No Upfront RIs, the value for No Upfront RIs is `0`\.  
-This tells you how much the upfront fee for this reservation costs you for this billing period\. 
+Describes how much of the upfront fee for this reservation is costing you for the billing period\. The initial upfront payment for All Upfront RIs and Partial Upfront RIs, amortized over this month\. Because there are no upfront fees for No Upfront RIs, the value for No Upfront RIs is `0`\.
 
 ** reservation/unusedQuantity**  
 The number of RI hours that you didn't use during this billing period\.
@@ -37,11 +36,10 @@ The number of RI hours that you didn't use during this billing period\.
 The number of unused normalized units for a size\-flexible regional RI that you didn't use during this billing period\.
 
 ** reservation/unusedRecurringFee**  
-The recurring fees associated with your unused reservation hours for Partial Upfront and No Upfront RIs\.  
-Because All Upfront RIs don't have recurring fees greater than `0`, the value for All Upfront RIs is `0`\.
+The recurring fees associated with your unused reservation hours for Partial Upfront and No Upfront RIs\. Because All Upfront RIs don't have recurring fees greater than `0`, the value for All Upfront RIs is `0`\.
 
 ** reservation/unusedAmortizedUpfrontFeeForBillingPeriod**  
-The amortized portion of the initial upfront fee for All Upfront RIs and Partial Upfront RIs\. Because there are no upfront payments for No Upfront RIs, the value for No Upfront RIs is `0`\.
+The amortized\-upfront\-fee\-for\-billing\-period\-column amortized portion of the initial upfront fee for All Upfront RIs and Partial Upfront RIs\. Because there are no upfront payments for No Upfront RIs, the value for No Upfront RIs is `0`\.
 
 ## Reserved Instance Effective Costs<a name="effective-costs"></a>
 
@@ -51,7 +49,7 @@ You can use the following columns to understand your effective cost at the insta
 The initial upfront payment for All Upfront RIs and Partial Upfront RIs amortized for usage time\. Because there are no upfront payments for No Upfront RIs, the value for a No Upfront RI is `0`\.
 
 ** reservation/recurringFeeForUsage**  
-For Partial Upfront RIs and No Upfront RIs, this is the recurring fee amortized for usage time\. Because All Upfront RIs don't have recurring fee payments greater than `0`, the value for All Upfront RIs is `0`\.
+The recurring fee amortized for usage time, for Partial Upfront RIs and No Upfront RIs\. Because All Upfront RIs don't have recurring fee payments greater than `0`, the value for All Upfront RIs is `0`\.
 
 ** reservation/effectiveCost**  
-The total effective cost of your usage with RI rates applied\. This is calculated by taking the `amortizedUpfrontCostForUsage` and adding it to the `recurringFeeForUsage`\.
+The sum of both the upfront and hourly rate of your RI, averaged into an effective hourly rate\. `EffectiveCost` is calculated by taking the `amortizedUpfrontCostForUsage` and adding it to the `recurringFeeForUsage`\. For more information, see [Amazon EC2 Reserved Instances Pricing](https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/)\.

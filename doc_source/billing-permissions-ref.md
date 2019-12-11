@@ -35,7 +35,7 @@ Starting August 19, 2019, the permissions `cur:DescribeReportDefinitions`, `cur:
 
 | Permission Name | Description | 
 | --- | --- | 
-|  `aws-portal:ViewBilling`  |  Allow or deny IAM users permission to view the following Billing and Cost Management console pages: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html)  | 
+|  `aws-portal:ViewBilling`  |  Allow or deny IAM users permission to view the Billing and Cost Management console pages\.  | 
 |  `aws-portal:ModifyBilling`  |  Allow or deny IAM users permission to modify the following Billing and Cost Management console pages: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html) To allow IAM users to modify these console pages, you must allow both `ModifyBilling` and `ViewBilling`\. For an example policy, see [Example 6: Allow IAM users to modify billing information](#example-billing-deny-modifybilling)\.  | 
 |  `aws-portal:ViewAccount`  |  Allow or deny IAM users permission to view the following Billing and Cost Management console pages: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html)  | 
 | aws\-portal:ModifyAccount |  Allow or deny IAM users permission to modify [Account Settings](https://portal.aws.amazon.com/billing/home#/account)\. To allow IAM users to modify account settings, you must allow both `ModifyAccount` and `ViewAccount`\. For an example of a policy that explicitly denies an IAM user access to the **Account Settings** console page, see [Example 8: Deny access to Account Settings, but allow full access to all other billing and usage information](#example-billing-deny-modifyaccount)\.   | 
@@ -43,6 +43,11 @@ Starting August 19, 2019, the permissions `cur:DescribeReportDefinitions`, `cur:
 | budgets:ModifyBudget |  Allow or deny IAM users permission to modify [Budgets](https://portal.aws.amazon.com/billing/home#/budgets)\. To allow IAM users to view and modify budgets, you must also allow `ViewBilling`\.  | 
 | aws\-portal:ViewPaymentMethods |  Allow or deny IAM users permission to view [Payment Methods](https://portal.aws.amazon.com/billing/home#/paymentmethods)\.  | 
 | aws\-portal:ModifyPaymentMethods |  Allow or deny IAM users permission to modify [Payment Methods](https://portal.aws.amazon.com/billing/home#/paymentmethods)\. To allow users to modify payment methods, you must allow both `ModifyPaymentMethods` and `ViewPaymentMethods`\.  | 
+| ce:CreateCostCategoryDefinition |  Allow or deny IAM users permissions to create cost categories\. For an example policy, see [Example 14: View and manage Cost Categories](#example-policy-cc-api)\.  | 
+| ce:DeleteCostCategoryDefinition |  Allow or deny IAM users permissions to delete cost categories\. For an example policy, see [Example 14: View and manage Cost Categories](#example-policy-cc-api)\.  | 
+| ce:DescribeCostCategoryDefinition |  Allow or deny IAM users permissions to view cost categories\. For an example policy, see [Example 14: View and manage Cost Categories](#example-policy-cc-api)\.  | 
+| ce:ListCostCategoryDefinitions |  Allow or deny IAM users permissions to list cost categories\. For an example policy, see [Example 14: View and manage Cost Categories](#example-policy-cc-api)\.  | 
+| ce:UpdateCostCategoryDefinition |  Allow or deny IAM users permissions to update cost categories\. For an example policy, see [Example 14: View and manage Cost Categories](#example-policy-cc-api)\.  | 
 |  `cur:DescribeReportDefinitions`  |  Allow or deny IAM users permission to view a [AWS Cost and Usage Report](billing-reports-costusage.md) using the API\. Starting August 19, 2019, this permission applies to both API and Billing and Cost Management console\. For an example policy, see [Example 10: Create, view, edit, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
 |  `cur:PutReportDefinition`  |  Allow or deny IAM users permission to create a [AWS Cost and Usage Report](billing-reports-costusage.md)\. Starting August 19, 2019, this permission applies to both API and Billing and Cost Management console\. For an example policy, see [Example 10: Create, view, edit, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
 |  `cur:DeleteReportDefinition`  |  Allow or deny IAM users permission to delete [AWS Cost and Usage Report](billing-reports-costusage.md) using the API\. Starting August 19, 2019, this permission applies to both API and Billing and Cost Management console\. For an example policy, see [Example 10: Create, view, edit, or delete an AWS Cost and Usage report](#example-policy-report-definition)\.  | 
@@ -95,6 +100,7 @@ These policies require that you activate IAM user access to the Billing and Cost
 + [Example 11: Find products and prices](#example-policy-pe-api)
 + [Example 12: View costs and usage](#example-policy-ce-api)
 + [Example 13: Enable and Disable Regions](#enable-disable-regions)
++ [Example 14: View and manage Cost Categories](#example-policy-cc-api)
 
 ### Example 1: Allow IAM users to view your billing information<a name="example-billing-view-billing-only"></a>
 
@@ -102,7 +108,7 @@ To allow an IAM user to view your billing information without giving the IAM use
 + **Dashboard**
 + **Cost Explorer**
 + **Bills**
-+ **Payment History**
++ **Orders and invoices**
 + **Consolidated Billing**
 + **Preferences**
 + **Credits**
@@ -215,7 +221,7 @@ To allow IAM users to modify account billing information in the Billing and Cost
 + **Dashboard**
 + **Cost Explorer**
 + **Bills**
-+ **Payment History**
++ **Orders and invoices**
 + **Advance Payment**
 
 ```
@@ -411,3 +417,28 @@ To allow IAM users to use the AWS Cost Explorer API, use the following policy to
 ### Example 13: Enable and Disable Regions<a name="enable-disable-regions"></a>
 
 For an example IAM policy that allows users to enable and disable Regions, see [AWS: Allows Enabling and Disabling AWS Regions](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_aws-enable-disable-regions.html) in the *IAM User Guide*\. 
+
+### Example 14: View and manage Cost Categories<a name="example-policy-cc-api"></a>
+
+To allow IAM users to use, view, and manage Cost Categories, use the following policy to grant them access\.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "aws-portal:ViewBilling",
+        "ce:DescribeCostCategoryDefinition",
+        "ce:UpdateCostCategoryDefinition",
+        "ce:CreateCostCategoryDefinition",
+        "ce:DeleteCostCategoryDefinition",
+        "ce:ListCostCategoryDefinitions"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+```

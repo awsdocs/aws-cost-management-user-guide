@@ -15,6 +15,7 @@ The AWS Price List API provides pricing details for your information only\. If t
 + [Downloading an Offer Index File](#download-the-offer-index)
 + [Downloading an Offer File](#download-offers)
 + [Finding Prices in an Offer File](procedures.md)
++ [Finding Savings Plan Prices in an Offer File](sp-offer-file.md)
 + [Reading an Offer File](reading-an-offer.md)
 + [Reading the Offer Index File](reading-the-offer-index.md)
 
@@ -46,4 +47,10 @@ The offer index file includes the JSON URLs\. To download the CSV version, repla
 https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json
 ```
 
-If you access the offer files programmatically, you can use the offer index file to find the current URLs\. For more information about the offer index file, see [Finding Prices in an Offer File](procedures.md) and [Reading an Offer File](reading-an-offer.md)\.
+To download the offer file for Savings Plans that apply to a particular service, go to the Savings Plans URL for that service\. For example, to download the current JSON version of Compute Savings Plans, use the following [URL](https://pricing.us-east-1.amazonaws.com/savingsPlan/v1.0/aws/AWSComputeSavingsPlan/current/index.json)\. You can use this URL for the regional offer files directly\.
+
+```
+https://pricing.us-east-1.amazonaws.com/savingsPlan/v1.0/aws/AWSComputeSavingsPlan/current/index.json
+```
+
+If you access the offer files programmatically, you can use the offer index file to find the current URLs\. For more information about the offer index file, see [Finding Prices in an Offer File](procedures.md), [Finding Savings Plan Prices in an Offer File](sp-offer-file.md), and [Reading an Offer File](reading-an-offer.md)\.

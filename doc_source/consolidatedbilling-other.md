@@ -12,11 +12,10 @@ Bob receives the cost benefit from Susan's Reserved Instances only if he launche
 
 For an Amazon RDS Reserved DB Instances example, suppose that Bob and Susan each have an account in an organization\. Susan has five Reserved DB Instances, and Bob has none\. During one particular hour, Susan uses three DB Instances and Bob uses six, for a total of nine DB Instances on the consolidated bill\. AWS bills five as Reserved DB Instances, and the remaining four as On\-Demand DB Instances \(for Amazon RDS Reserved DB Instance charges, see the [pricing page](https://aws.amazon.com/rds/pricing/)\)\. Bob receives the cost benefit from Susan's Reserved DB Instances only if he launches his DB Instances in the same region where Susan purchased her Reserved DB Instances\.
 
-Also, all the attributes of Susan's Reserved DB Instances \(DB Engine, DB Instance class, Deployment type, and License Model\) should match the attributes of the DB Instances launched by Bob\. For example, let's say Susan purchased a Reserved DB Instance in `us-west-2` with the following attributes:
-+ DB Engine: MySQL
+Also, all of the relevant attributes of Susan's Reserved DB Instances should match the attributes of the DB Instances launched by Bob as described in [Reserved DB Instances](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithReservedDBInstances.html)\. For example, let's say Susan purchased a Reserved DB Instance in `us-west-2` with the following attributes:
++ DB Engine: Oracle
 + DB Instance Class: `m1.xlarge`
 + Deployment Type: Multi\-AZ
-+ License Model: General Public License
 
 This means that Bob must launch his DB Instances in `us-west-2` with the exact same attributes to get the cost benefit on the organization's consolidated bill\. 
 

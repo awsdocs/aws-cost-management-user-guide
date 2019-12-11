@@ -19,7 +19,9 @@ You can choose to view your cost data in monthly or daily *levels of granularity
 
 1. Start Cost Explorer\.
 
-1. Choose a time granularity of **Daily** or **Monthly**\. 
+1. Choose a time granularity of **Daily**, **Monthly**, or **Hourly**\.
+**Note**  
+To enable hourly granularity, opt\-in through the Cost Explorer settings page as the payer account\. Once enabled, information for the previous 14 days are available\.
 
 1. For your monthly or daily data, open the calendar and define a custom period for your report or choose a preconfigured period at the bottom of the calendar\. You can choose from a number of historical or forecast time periods\. The name of the period that you choose appears in the calendar\.
 
@@ -63,6 +65,9 @@ The following list defines each time range option for your past costs in Cost Ex
 ### Forecast Time Range Options<a name="timerangereforecast"></a>
 
 The following list defines each time range option for your forecast costs in Cost Explorer\. You can select a **Historical** time period and a **Forecasted** period to display together\. For example, you can select a **Historical** period of one month \(1M\) and select a **Forecasted** period of three months \(3M\)\. Your report includes historical data for the previous month plus forecasted data for the next 3 months\. To clear a **Historical** time period and see only the forecast, choose the **Historical** period again\. 
+
+**Note**  
+If you choose any Forecasted dates, your current date’s cost and usage data shows as Forecast\. The current date’s cost and usage will not include historical data\. 
 + Custom
 
   Displays forecast data for the time range in the **From** and **To** dates that you specify with calendar controls\.

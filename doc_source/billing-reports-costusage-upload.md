@@ -12,11 +12,11 @@ AWS provides the commands to create your Amazon Redshift table, upload your repo
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
-1. In the navigation pane, choose **Reports**\.
+1. In the navigation pane, choose ****\.
 
-1. Choose the arrow next to the report that you want to upload to Amazon Redshift\.
+1. Choose report name that you want to upload to Amazon Redshift\.
 
-1. Next to **Helper files**, choose **Redshift file**\.
+1. Next to **You have enabled viewing reports in the following service\(s\):**, choose **Amazon Redshift**\.
 
 1. Copy the commands from the dialog box and paste them into your SQL client\.
 

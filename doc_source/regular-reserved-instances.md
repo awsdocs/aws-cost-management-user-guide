@@ -8,7 +8,7 @@ The **Fee** line item is added to your bill when you purchase an `All Upfront` o
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
 
  **Recurring Monthly RI Fee**  
-The **RI Fee** line item describes the recurring monthly charges that are associated with `Partial Upfront` and `No Upfront` RIs\. The **RI Fee** initially is added to your bill on the day of purchase and on the first day of each billing period thereafter\.  
+The **RI Fee** line item describes the recurring monthly charges that are associated RIs applied that month\. The **RI Fee** initially is added to your bill on the day of purchase and on the first day of each billing period thereafter\.  
 The **RI Fee** is calculated by multiplying your discounted hourly rate and the number of hours in the month\. The following screenshot shows how the recurring monthly charges appear in the report\.  
 
 ![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)

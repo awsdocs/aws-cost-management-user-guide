@@ -48,3 +48,6 @@ Choose the operating system that your RI runs on\. **Platform** is either **Linu
 
 **Tenancy**  
 Choose whether you share an RI with another user or not\. **Tenancy** is either **Dedicated** or **Default**\.
+
+**Savings Plans Type**  
+Choose what you want to budget for, between **Compute Savings Plans** and **EC2 Instance Savings Plans**\. The Savings Plans type filter is only available for Savings Plans utilization budgets\.

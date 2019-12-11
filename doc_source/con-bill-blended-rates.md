@@ -6,6 +6,7 @@ If you manage an organization in AWS Organizations, you can use consolidated bil
 + [Calculating Consolidated Bills](#Calculating)
 + [Pricing Tiers](#Blended_Rate_Overview)
 + [Reserved Instances](#Instance_Reservations)
++ [Savings Plans](#cb_savingsplans)
 + [Blended Rates and Costs](#Blended_CB)
 
 ## Calculating Consolidated Bills<a name="Calculating"></a>
@@ -19,7 +20,7 @@ Like member accounts, a master account can incur usage charges\. However, as a b
 
 Some AWS services are priced in *tiers*, which specify unit costs for defined amounts of AWS usage\. As your usage increases, your usage crosses thresholds into new pricing tiers that specify lower unit costs for additional usage in a month\. Your AWS usage is measured every month\. To measure usage, AWS treats all accounts in an organization as a single account\. Member accounts don't reach tier thresholds individually\. Instead, all usage in the organization is aggregated for each service, which ensures faster access to lower\-priced tiers\. As each month begins, your service usage is reset to zero\.
 
-Each AWS service publishes its pricing information independently\. You can access all individual pricing pages from the [AWS Pricing](http://aws.amazon.com/pricing/) page\. The AWS whitepaper [ How AWS Pricing Works](https://aws.amazon.com/whitepapers/how-aws-pricing-works/) also discusses usage scenarios and pricing options\.
+Each AWS service publishes its pricing information independently\. You can access all individual pricing pages from the [AWS Pricing](http://aws.amazon.com/pricing/) page\.
 
 ### Calculating Costs for Amazon S3 Standard Storage<a name="tier-example"></a>
 
@@ -47,7 +48,7 @@ The preceding example shows how using consolidated billing in AWS Organizations 
 
 AWS also offers discounted hourly rates in exchange for an upfront fee and term contract\.
 
-### Capacity Reservations<a name="Capacity_Reservations"></a>
+### Zonal Reserved Instances<a name="Capacity_Reservations"></a>
 
 A Reserved Instance is a reservation that provides a discounted hourly rate in exchange for an upfront fee and term contract\. Services such as Amazon Elastic Compute Cloud \([Amazon EC2](http://aws.amazon.com/ec2/reserved-instances/)\) and Amazon Relational Database Service \([Amazon RDS](http://aws.amazon.com/rds/reserved-instances/)\) use this approach to sell reserved capacity for hourly use of *Reserved Instances*\. It is not a virtual machine\. It is a commitment to pay in advance for specific Amazon EC2 or Amazon RDS instances\. In return, you get a discounted rate as compared to On\-Demand Instance usage\. From a technical perspective, there is no difference between a Reserved Instance and an On\-Demand Instance\. When you launch an instance, AWS checks for qualifying usage across all accounts in an organization that can be applied to an active reservation\. For more information, see [Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide//concepts-on-demand-reserved-instances.html) in the *Amazon EC2 User Guide for Linux Instances* and [ Working with Reserved DB Instances](https://docs.aws.amazon.com/AmazonRDS/latest/DeveloperGuide/USER_WorkingWithReservedDBInstances.html) in the *Amazon Relational Database Service Developer Guide*\.
 
@@ -59,7 +60,7 @@ Regional Reserved Instances don't reserve capacity\. Instead, they provide Avail
 
 ### Calculating Costs for Amazon EC2 with Reserved Instances<a name="Blended_Calculated"></a>
 
-AWS calculates blended rates for Amazon EC2 instances by aggregating all the EC2 usage for a specific instance type in a specific AWS Region for an organization\. AWS applies all available discounts, calculates the cost tier for the organization, and then divides the organization's costs by the total amount of usage\.
+AWS calculates the charges for Amazon EC2 instances by aggregating all the EC2 usage for a specific instance type in a specific AWS Region for an organization\.
 
 #### Calculation Process<a name="Calculation_Process"></a>
 
@@ -71,6 +72,16 @@ AWS calculates blended rates for Amazon EC2 instances using the following logic:
 **Note**  
 When AWS assigns Reserved Instance hours to member accounts, it always starts with the account that purchased the reservation\. If there are hours from the capacity reservation left over, AWS applies them to other accounts that operate identical usage types in the same Availability Zone\.  
 AWS allocates a regional RI by instance size: The RI is applied first to the smallest instance in the instance family, then to the next smallest, and so on\. AWS applies an RI or a fraction of an RI based on the [normalization factor](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/apply_ri.html#apply-regional-ri) of the instance\. The order in which AWS applies RIs doesn't result in a price difference\.
+
+## Savings Plans<a name="cb_savingsplans"></a>
+
+Savings Plans is a flexible pricing model that can help you reduce your AWS usage bill\. Compute Savings Plans enables you to commit to an amount each hour, and receive discounted Amazon EC2 and Fargate usage up to that amount\.
+
+### Calculating Costs with Savings Plans<a name="cb_calculating_sp"></a>
+
+AWS calculates the charges for Amazon EC2 and AWS Fargate by aggregating all usage that's not covered by Reserved Instances, and applying the Savings Plans rates starting with the highest discount\.
+
+The Savings Plans are applied to the account that owns the Savings Plans\. Then, it is shared with other accounts in the AWS organization\.
 
 ## Blended Rates and Costs<a name="Blended_CB"></a>
 

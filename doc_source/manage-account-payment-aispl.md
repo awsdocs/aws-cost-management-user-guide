@@ -12,7 +12,6 @@ As part of the credit card verification during signup, AISPL charges your credit
 + [Determining Which Company Your Account is With](#determine-seller)
 + [Signing Up for AISPL](#aisplsignup)
 + [Managing Your AISPL Account](#manage-aispl-account)
-+ [Switching to AISPL FAQ](aispl-switch-faq.md)
 
 ## Determining Which Company Your Account Is With<a name="determine-seller"></a>
 

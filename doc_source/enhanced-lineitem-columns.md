@@ -22,7 +22,7 @@ The provider of your AWS services\. Possible values are the following:
 + **Amazon Internet Services Pvt\. Ltd** – The local Indian entity that acts as a reseller for AWS services in India\.
 
 ** lineItem/LineItemType**  
-The type of charge covered by this line item\. There are seven possible types:  
+The type of charge covered by this line item\. Possible types are the following:  
 + **Credit** – Any credits that AWS applied to your bill\. Check the **Description** column for details\. AWS might update reports after they have been finalized if AWS applies a credit to your account for the month after finalizing your bill\.
 + **DiscountedUsage** – The rate for any instances for which you had Reserved Instance \(RI\) benefits\.
 + **Fee** – Any upfront annual fee that you paid for subscriptions\. For example, the upfront fee that you paid for an **All Upfront RI** or a **Partial Upfront RI**\.
@@ -30,6 +30,10 @@ The type of charge covered by this line item\. There are seven possible types:
 + **RIFee** – The monthly recurring fee for subscriptions\. For example, the recurring fee for **Partial Upfront RI**s, **No Upfront RI**s, and **All Upfront**s that you pay every month\.
 + **Tax** – Any taxes that AWS applied to your bill: for example, VAT or US sales tax\.
 + **Usage** – Any usage that is charged at On\-Demand Instance rates\.
++ **SavingsPlanUpfrontFee** – Any upfront fee you paid for your Savings Plans\. For example, the upfront fee that you paid for an **All Upfront Savings Plan** or a **Partial Upfront Savings Plan**\.
++ **SavingsPlanRecurringFee** – The monthly recurring fee for your Savings Plans related subscriptions\. For example, the recurring monthly fee for a **Partial Upfront Savings Plan** or **No Upfront Savings Plan**\.
++ **SavingsPlanCoveredUsage** – The instances that received benefits from a Savings Plan subscription\.
++ **SavingsPlanNegation** – The Savings Plans discount applied\. The line item contains negative costs \(discounts\)\. This enables you to find the net cost after Savings Plans discounts, using the total sum of the **Unblended Cost**\.
 
 ** lineItem/LineItemDescription**  
 The description of the line item type\. For example, the description of a usage line item summarizes what type of usage you incurred during a specific time period\.   

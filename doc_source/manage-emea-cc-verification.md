@@ -24,7 +24,7 @@ You can use the Billing and Cost Management console to confirm that you payment 
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
-1. In the navigation pane, choose **Payment history**\.
+1. In the navigation pane, choose **Orders and invoices**\.
 
 1. Under **Payments due**, locate the invoice that you want to pay and choose **Verify and pay**\.
 
@@ -34,7 +34,7 @@ You can use the Billing and Cost Management console to confirm that you payment 
 
 1. If your payment requires verification, you're redirected to your bank's website\. To complete verification, follow the provided prompts\.
 
-After your bank has processed our payment, you're redirected to the **Payment history** page\.
+After your bank has processed our payment, you're redirected to the **Orders and invoices** page\.
 
 **Note**  
 Your invoice appears with the status of **Payment processing** until your bank completes the payment process\. 

@@ -1,26 +1,50 @@
 # Controlling Access for Cost Explorer<a name="ce-access"></a>
 
-How you manage access to the information in Cost Explorer depends on how your AWS account is set up\. Your account might be set up to use the AWS Identity and Access Management \(IAM\) service to grant different levels of access to different IAM users\. Your account might be part of consolidated billing in AWS Organizations, in which case it is either a *master account* or a *member account*\. For information about managing access to Billing and Cost Management pages, see [Controlling Access](control-access-billing.md)\. For more information about consolidated billing, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
+You can manage access to your Cost Explorer in the following ways:
++ The payer \(master\) account can enable Cost Explorer at a root level, automatically enabling all linked \(member\) accounts\.
++ After member accounts are enabled, the master account can use the Cost Explorer settings to control the level of information you want to expose in Cost Explorer\. Levels of information can include cost, refunds, credits, and Reserved Instance \(RI\) recommendations\.
++ After you enable Cost Explorer at the payer level, you can control the IAM policies of your IAM users to restrict access to Cost Explorer at the account level\. Users either get all access or no access with this option\.
 
-## Granting Cost Explorer Access<a name="whocanenable"></a>
+This topic provides details about how to control access in Cost Explorer\.
 
-You can enable Cost Explorer only if you're the owner of the AWS account and you signed in to the account with your root credentials\. If you're the owner of a master account in an organization, enabling Cost Explorer enables Cost Explorer for all of the organization accounts\. In other words, all member accounts in the organization are also granted access\. You can't grant or deny access individually\.
+For information about managing access to Billing and Cost Management pages, see [Controlling Access](control-access-billing.md)\. For more information about consolidated billing, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
 
-## Cost Explorer and IAM Users<a name="howusertypes"></a>
+**Topics**
++ [Granting Cost Explorer Access](#grant-ce-access)
++ [Controlling Access Using Cost Explorer Settings](#ce-controlling-access)
++ [Cost Explorer and IAM Users](#ce-iam-users)
 
-An AWS account owner who isn't using consolidated billing has full access to all Billing and Cost Management information, including Cost Explorer\. After you enable Cost Explorer, you should interact with Cost Explorer as an IAM user\. If you have permission to view the Billing and Cost Management console, you can use Cost Explorer\. 
+## Granting Cost Explorer Access<a name="grant-ce-access"></a>
 
-An IAM user must be granted explicit permission to view pages in the Billing and Cost Management console\. With the appropriate permissions, the IAM user can view costs for the AWS account that the IAM user belongs to\. For the policy that grants the necessary permissions to an IAM user, see [Controlling Access](control-access-billing.md)\. 
+You can enable Cost Explorer access if you are signed into the master account with your root credentials through the Billing and Cost Management console\. Enabling Cost Explorer at the master account level enables Cost Explorer for all of your organization accounts\. All accounts in the organization are granted access, and you can't grant or deny access individually\.
 
-## Cost Explorer and Consolidated Billing<a name="cbconsiderations"></a>
+## Controlling Access Using Cost Explorer Settings<a name="ce-controlling-access"></a>
 
-The owner of the payer \(master\) account in an AWS Organizations organization has full access to all Billing and Cost Management information for costs incurred by the payer account and by linked \(member\) accounts\. The owner of a payer account can view all costs in Cost Explorer\. The owner can also grant linked accounts the permissions to see the costs for the linked account, refunds and credits, and RI recommendations\. Owners of a linked account can't see the costs, refunds, or RI recommendations for any other account in the organization\. For more information about consolidated billing, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
+A master account can grant access to Cost Explorer for all or none of the member accounts\. Access isn’t customizable for each individual member account\.
 
-### Granting Owners of a Member Account Access to Cost Explorer Data<a name="cb-granted-members-access"></a>
+The master account in AWS Organizations has full access to all Billing and Cost Management information for costs incurred by both the master account and member accounts\. Member accounts only have access to their own cost and usage data in Cost Explorer\.
 
-You can grant or restrict the access that a linked account has to some of the information from Cost Explorer\. <a name="grant-members-access"></a>
+The owner of a master account can:
++ View all costs in Cost Explorer\.
++ Grant all member accounts the permission to see the costs for their own member account, refunds, credits, and RI recommendations\.
 
-**To grant the owner of a linked account access to Cost Explorer data**
+Member account owners can't see costs, refunds, and RI recommendations for other accounts in the Organizations\. For more information about consolidated billing, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
+
+If you're an AWS account owner and not using consolidated billing, you have full access to all Billing and Cost Management information including Cost Explorer\.
+
+### Organizations Account Status Use Cases<a name="ce-ao-usecases"></a>
+
+An account’s status with an organization affects what cost and usage data is visible in the following ways:
++ If a standalone account joins an organization, the account loses access to cost and usage data from when the account was a standalone account\.
++ If a member account leaves an organization and becomes a standalone account, the account no longer has access to cost and usage data from when the account was a member of their previous organization\. The account only has access to the data that is generated as a standalone account\.
++ If a member account leaves organization A to join organization B, the account no longer has access to cost and usage data from organization A\. The account has access only to the data that is generated as a member of organization B\.
++ If an account rejoins an organization that it previously belonged to, the account regains access to its historical cost and usage data\.
+
+### Controlling Member Accounts’ Access Using Cost Explorer Settings<a name="ce-controlling-member-settings"></a>
+
+You can grant or restrict the access to all member accounts in your Organizations\. When you enable your account at the master level, all member accounts are granted access to their cost and usage data by default\.<a name="control-members-access"></a>
+
+**To control member account access to Cost Explorer data**
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
@@ -28,15 +52,14 @@ You can grant or restrict the access that a linked account has to some of the in
 
 1. On the Cost Explorer page, choose **Launch Cost Explorer**\.
 
-1. On the Cost Explorer dashboard, **Settings** on the top right\.
+1. On the upper\-right side of the Cost Explorer dashboard, choose **Settings**\.
 
-1. On the **Account Settings** page, select the data categories that you want your linked accounts to have access to\.
+1. On the **Account Settings** page, select or clear the **Linked Account Access** check box\.
 
 1. Choose **Save**\.
 
-**Note**  
-An account’s status with an organization affects what cost and usage data is visible:  
-When a standalone account joins an organization, the account no longer has access to cost and usage data from the time range when the account was a standalone account\.
-If a member account leaves an organization and becomes a standalone account, the account no longer has access to cost and usage data from the time range when the account was a member of the organization\. The account has access only to the data that is generated as a standalone account\. 
-If a member account leaves organization A to join organization B, the account no longer has access to cost and usage data from the time range when the account was a member of organization A\. The account has access only to the data that is generated as a member of organization B\. 
-If an account rejoins an organization that it previously belonged to, the account regains access to its historical cost and usage data\.
+## Cost Explorer and IAM Users<a name="ce-iam-users"></a>
+
+After you enable Cost Explorer at the master account level, you can use IAM to manage access to your billing data for individual IAM users\. This enables you to grant or revoke access on an individual level for each account, rather than granting access to all member accounts\.
+
+An IAM user must be granted explicit permission to view pages in the Billing and Cost Management console\. With the appropriate permissions, the IAM user can view costs for the AWS account that the IAM user belongs to\. For the policy that grants the necessary permissions to an IAM user, see [Controlling Access](control-access-billing.md)\. 

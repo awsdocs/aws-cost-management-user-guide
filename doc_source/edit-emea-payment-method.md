@@ -38,13 +38,13 @@ If you pay by SEPA direct debit, AWS provides you with your invoice and initiate
 
 1. If you're using a credit card, confirm that your card hasn't expired\.
 
-1. Choose **Make a Payment**\. You're redirected to the **Payment History** page\.
+1. Choose **Make a Payment**\. You're redirected to the **Orders and invoices** page\.
 
-1. If your account isn't past due, the **Payment History** page shows only previous invoices and payment status\. You don't need to take any action at this time\.
+1. If your account isn't past due, the **Orders and invoices** page shows only your previous invoices in the **Orders and invoice history** section\. You don't need to take any action at this time\.
 
-1. If you see a banner that states that you have an overdue payment, choose **Pay Now** for the invoice that is overdue\.
+1. If you see a banner that states that you have an overdue payment, choose **Verify and pay** for the invoice that is overdue in the **Payments Due** section\.
 
-   If you pay by SEPA direct debit and you receive an email from AWS Europe saying that AWS Europe can't charge your bank account and will attempt to charge your account again, work with your bank to understand what went wrong\. If you receive an email saying that AWS Europe failed the last attempt to charge your bank account, use the **Pay Now** button on the console to pay your invoice\. If you have questions about issues with charging your bank account or paying an overdue balance, create a case in the [Support Center](https://console.aws.amazon.com/support/home?#)\.
+   If you pay by SEPA direct debit and you receive an email from AWS Europe saying that AWS Europe can't charge your bank account and will attempt to charge your account again, work with your bank to understand what went wrong\. If you receive an email saying that AWS Europe failed the last attempt to charge your bank account, use the **Verify and pay** button on the console to pay your invoice\. If you have questions about issues with charging your bank account or paying an overdue balance, create a case in the [Support Center](https://console.aws.amazon.com/support/home?#)\.
 
    If you pay by electronic funds transfer and your account payment is overdue, create a case in the [Support Center](https://console.aws.amazon.com/support/home?#)\.<a name="remove-credit-emea"></a>
 

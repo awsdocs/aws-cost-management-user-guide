@@ -12,3 +12,4 @@ All time intervals include the start time and exclude the end time\. All times a
 + [Pricing Details](pricing-columns.md)
 + [Product Details](enhanced-product-columns.md)
 + [Resource Tags](enhanced-resource-columns.md)
++ [Savings Plans Details](savingsplans-columns.md)

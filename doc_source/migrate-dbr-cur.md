@@ -90,6 +90,9 @@ DBR has a fixed list of columns, limiting its flexibility\. CUR does not have a 
 | Pricingplanid | Not Supported | 
 | RateID | pricing/RateId | 
 
+**Note**  
+There is no equivalent for RecordId in CUR, but you can gather this information by combining identity/LineItemId, identity/TimeInterval, and bill/BillType\.
+
  
 
 

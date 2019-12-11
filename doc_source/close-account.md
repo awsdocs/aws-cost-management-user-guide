@@ -15,7 +15,10 @@ If you no longer need your AWS account, the root user of the account can close i
 
 Before closing your AWS account, you must pay all of the invoices for your account\. If your account is the master account of an AWS organization, you must also close or unlink all member accounts\.
 
-In addition, you should retrieve all of your content from the account, including any applications and data that you will need later\. For instructions on how to retrieve content from a particular AWS service, see the [ documentation for that service](https://docs.aws.amazon.com/)\. You should then delete any content and terminate all AWS services in your account\.
+In addition, you should retrieve all of your content from the account, including any applications and data that you will need later\. For instructions on how to retrieve content from a particular AWS service, see the [ documentation for that service](https://docs.aws.amazon.com/)\. Delete any content and terminate all AWS services in your account\.
+
+**Important**  
+You will continue to generate costs if you don't terminate your resources\.
 
 ## Closing Your AWS Account<a name="closing-the-account"></a><a name="closing-the-account-proc"></a>
 
@@ -43,7 +46,7 @@ During the Post\-Closure Period, AWS may retain any content that you didn't dele
 
 ## After the Post\-Closure Period<a name="post-closure-period"></a>
 
-After the Post\-Closure Period, we permanently close your AWS account, and you can't reopen it\. Any content that you didn't delete is deleted, and any AWS services that you didn't terminate are terminated\. You also can't create a new AWS account using the same email address that was registered to your AWS account at the time of its closure\.
+After the Post\-Closure Period, we permanently close your AWS account, and you can't reopen it\. Any content that you didn't delete is deleted, and any AWS services that you didn't terminate are terminated\. You also can't create a new AWS account using the same alias or email address that was registered to your AWS account at the time of its closure\.
 
 ## Your Payment Method<a name="closure-payment"></a>
 

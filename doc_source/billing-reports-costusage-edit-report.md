@@ -1,6 +1,6 @@
 # Editing an AWS Cost and Usage Report<a name="billing-reports-costusage-edit-report"></a>
 
-Use the **Reports** page of the Billing and Cost Management console to edit an AWS Cost and Usage report\.
+Use the **** page of the Billing and Cost Management console to edit an AWS Cost and Usage report\.
 
 **Note**  
 You can't edit the report name\. If you chose **Overwrite** for **Report versioning**, you can't edit the report name, whether the report includes resource IDs, the time granularity, or the report versioning\. If you delete a report set to **Overwrite** and create a new report with the same name, Amazon S3 bucket, and path prefix, your data could become corrupted and inaccurate\.
@@ -9,7 +9,7 @@ You can't edit the report name\. If you chose **Overwrite** for **Report version
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)
 
-1. On the navigation pane, choose **Reports**\.
+1. On the navigation pane, choose ****\.
 
 1. Select the report that you want to edit and choose **Edit report**\. 
 

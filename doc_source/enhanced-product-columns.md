@@ -1,12 +1,12 @@
 # Product Details<a name="enhanced-product-columns"></a>
 
-The product columns provide metadata about the product that incurred the expense, and the line item\. The product columns are dynamic, and their visibility in Cost and Usage Report depends on the usage of product in the billing period\. 
+The product columns provide metadata about the product that incurred the expense, and the line item\. The product columns are dynamic, and their visibility in Cost and Usage Report depends on the usage of product in the billing period\. The pricing columns are based off of the AWS Price List Service API\. AWS Price List Service API doesn't include Free Tier pricing, spot instances, products in AWS Marketplace, upfront annual subscription fees \(`Fee`\), and monthly recurring fees \(`RIFee`\)\.
 
 ## Downloading a Product Column Spreadsheet<a name="download"></a>
 
 The following is a subset of product columns and the corresponding definitions\. To download the full list of the columns that can appear in the Cost and Usage Report and the services that the columns apply to, choose [Column\_Attribute\_Service\.zip](samples/Column_Attribute_Service.zip)\.
 
- [A](#A) \|  [C](#C) \| [D](#D) \| [E](#E) \|  [G](#G) \|  [I](#I) \|  [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \|  [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \|  
+ [A](#A) \| B \| [C](#C) \| [D](#D) \| [E](#E) \| F \| [G](#G) \| H \| [I](#I) \| J \| K \| [L](#L) \| [M](#M) \| [N](#N) \| [O](#O) \| [P](#P) \| Q \| [R](#R) \| [S](#S) \| [T](#T) \| [U](#U) \| [V](#V) \| WXYZ 
 
 ## A<a name="product-details-A"></a>
 

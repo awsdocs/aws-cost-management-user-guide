@@ -17,4 +17,7 @@ After you create and apply user\-defined tags, you can activate them for cost al
 **Note**  
 User\-defined cost allocation tags created by linked accounts can take up to 24 hours to appear in the Billing and Cost Management console\. To speed up the process, you can trigger a manual refresh\. For more information, see [Refreshing User\-Defined Cost Allocation Tags](refresh-cost-alloc-tags.md)
 
-Some services launch other AWS resources that the service uses, such as Amazon EMR or AWS Marketplace launching an EC2 instance\. If the supporting service \(EC2\) supports tagging, you can tag the supporting resources \(such as the associated Amazon EC2 instance\) for your report\. For a full list of resources that can be tagged, use the Tag Editor to search\. For more information about how to search for resources using Tag Editor, see [ Searching for Resources to Tag](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/searching-resources-to-tag.html)\. 
+Some services launch other AWS resources that the service uses, such as Amazon EMR launching an EC2 instance\. If the supporting service \(EC2\) supports tagging, you can tag the supporting resources \(such as the associated Amazon EC2 instance\) for your report\. For a full list of resources that can be tagged, use the Tag Editor to search\. For more information about how to search for resources using Tag Editor, see [ Searching for Resources to Tag](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/searching-resources-to-tag.html)\.
+
+**Note**  
+AWS Marketplace line items are tagged with the associated Amazon EC2 instance tag\.

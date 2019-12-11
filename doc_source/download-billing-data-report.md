@@ -6,4 +6,4 @@ You can use the Billing and Cost Management console to see a list of the AWS Cos
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
-1. On the navigation pane, choose **Reports**\. Your AWS Cost and Usage reports are listed on the **Reports** page\.
+1. On the navigation pane, choose ****\. Your AWS Cost and Usage reports are listed on the **** page\.

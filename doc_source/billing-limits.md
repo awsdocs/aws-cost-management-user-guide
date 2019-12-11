@@ -5,6 +5,7 @@ The following table describes the current limits within Billing and Cost Managem
 **Topics**
 + [Budgets](#limits-budgets)
 + [Reports](#limits-reports)
++ [Cost Categories](#limits-categories)
 
 ## Budgets<a name="limits-budgets"></a>
 
@@ -20,4 +21,15 @@ The following table describes the current limits within Billing and Cost Managem
 
 |  |  | 
 | --- |--- |
-| Number of AWS Cost and Usage reports | 10 | 
+| Number of Free Tier AWS Cost and Usage reports | 10 | 
+
+## Cost Categories<a name="limits-categories"></a>
+
+
+|  |  | 
+| --- |--- |
+| Total number of Cost Categories per payer account | 50 | 
+| Cost Category Names | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
+| Total number of Cost Category values | `100` | 
+| Cost Category value names | Names do not have to be unique | 
+| Characters allowed in a Cost Category name and value name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  | 

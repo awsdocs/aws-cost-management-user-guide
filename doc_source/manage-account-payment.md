@@ -6,20 +6,20 @@ You can use the Billing and Cost Management console to change account settings, 
 Some sections can only be edited by the AWS account root user\. If you do not see the **Edit** option, switch to the root user\.
 
 **Topics**
-+ [Editing Your User Name, Password, and Email Address](#manage-account-payment-edit-user-name)
++ [Editing Your Account Name, Root User Password, and Root User Email Address](#manage-account-payment-edit-user-name)
 + [Editing Contact Information](#manage-account-payment-edit-contacts)
 + [Changing Which Currency You Use to Pay Your Bill](#manage-account-payment-change-currency)
 + [Adding, Changing, or Removing Alternate Contacts](#manage-account-payment-alternate-contacts)
 + [Enabling and Disabling Regions](#manage-account-payment-enable-disable-regions)
 + [Updating and Deleting Tax Registration Numbers](#manage-account-payment-update-delete-tax-numbers)
 
-## Editing Your User Name, Password, and Email Address<a name="manage-account-payment-edit-user-name"></a>
+## Editing Your Account Name, Root User Password, and Root User Email Address<a name="manage-account-payment-edit-user-name"></a>
 
-To edit your user name, password, or email address, perform the following procedure\.<a name="account-info"></a>
+To edit your account name, root user password, or email address, perform the following procedure\. Email in this case refers to the AWS account root user email address\. This is the email address you use to sign in\.<a name="account-info"></a>
 
-**To edit your user name, password, or email address**
+**To edit your account name, root user password, or root user email address**
 
-You can change the name, password, and email address associated with your account\.
+You can change the name, root user password, and root user email address associated with your AWS account\.
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 

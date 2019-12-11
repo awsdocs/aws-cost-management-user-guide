@@ -17,7 +17,7 @@ AWS applies credits in the following order:
 
 AWS applies the credit to the largest available charge across all eligible sellers of record\. This means that AWS tries to apply your credits before they expire even if they use a more generic credit for a specific service\.
 
- For example, Jorge has two credits available to him\. Credit one is for 10 dollars, expires January 2019, and can be used for either Amazon S3 or Amazon EC2\. Credit two is for 5 dollars, expires December 2019, and can be used only for Amazon EC2\. Jorge has two AWS charges: 100 dollars for Amazon EC2 and 50 dollars for Amazon S3\. AWS applies credit one, which expires in January, to the Amazon EC2 charge, which leaves him with a 90\-dollar Amazon EC2 charge and a 50\-dollar Amazon S3 charge\. AWS applies credit two to the remaining 90 dollars of Amazon EC2 usage, and Jorge has to pay 85 dollars for Amazon EC2 and 50 dollars for Amazon S3\. All his credits are now exhausted\.   
+ For example, Jorge has two credits available to him\. Credit one is for 10 dollars, expires January 2019, and can be used for either Amazon S3 or Amazon EC2\. Credit two is for 5 dollars, expires December 2019, and can be used only for Amazon EC2\. Jorge has two AWS charges: 100 dollars for Amazon EC2 and 50 dollars for Amazon S3\. AWS applies credit one, which expires in January, to the Amazon EC2 charge, which leaves him with a 90\-dollar Amazon EC2 charge and a 50\-dollar Amazon S3 charge\. AWS applies credit two to the remaining 90 dollars of Amazon EC2 usage, and Jorge has to pay 85 dollars for Amazon EC2 and 50 dollars for Amazon S3\. All his credits are now exhausted\.  
 
 ## Applying AWS Credits Across Single and Multiple Accounts<a name="credits-for-orgs"></a>
 

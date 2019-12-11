@@ -1,6 +1,6 @@
 # Creating an Amazon SNS Topic for Budget Notifications<a name="budgets-sns-policy"></a>
 
-When you create a budget that sends notifications to an Amazon Simple Notification Service \(Amazon SNS\) topic, you need to have a preexisting Amazon SNS topic or create one\. Amazon SNS topics enable you to send notifications over SMS in addition to email\. Your budget must have permissions to send a notification to your topic\. 
+When you create a budget that sends notifications to an Amazon Simple Notification Service \(Amazon SNS\) topic, you need to either have a preexisting Amazon SNS topic or create one\. Amazon SNS topics allow you to send notifications over SNS in addition to email\. Your budget must have permissions to send a notification to your topic\. 
 
 To create an Amazon SNS topic and grant permissions to your budget, use the Amazon SNS console\.
 
@@ -10,20 +10,13 @@ To create an Amazon SNS topic and grant permissions to your budget, use the Amaz
 
 1. On the navigation pane, choose **Topics**\.
 
-1. On the **Topics** page, choose **Create new topic**\.
+1. Choose **Create topic**\.
 
-1. For **Topic name**, enter the name for your notification topic\.
+1. For **Name**, enter the name for your notification topic\.
 
-1. For **Display name**, enter the name that you want displayed when you receive a notification\.
+1. \(Optional\) For **Display name**, enter the name that you want displayed when you receive a notification\.
 
-1. Choose **Create topic**\. Your topic appears in the list of topics on the **Topics** page\.
-
-1. Select your topic and copy the ARN next to its name\.  
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
-
-1. For **Actions**, choose **Edit topic policy**\.
-
-1. In the dialog box, choose **Advanced view**\.
+1. In **Access policy**, choose **Advanced**\.
 
 1. In the policy text field, after ** "Statement": \[**, add the following text:
 
@@ -44,9 +37,9 @@ To create an Amazon SNS topic and grant permissions to your budget, use the Amaz
 
 1. Replace *your topic ARN* with the Amazon SNS topic ARN from step 7\.
 
-1. Choose **Update policy**\. This grants your budget permissions to publish to your topic\.
+1. Choose **Create topic**\.
 
-You can now use the Amazon SNS topic ARN to set up Amazon SNS notifications for a budget\.
+   Your topic now appears in the list of topics on the **Topics** page\.
 
 ## Checking or Resending Notification Confirmation Emails<a name="budgets-confirm-subscription"></a>
 

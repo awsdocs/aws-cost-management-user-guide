@@ -1,6 +1,6 @@
-# Limits<a name="billing-limits"></a>
+# Quotas and Restrictions<a name="billing-limits"></a>
 
-The following table describes the current limits within Billing and Cost Management\.
+The following table describes the current quotas, restrictions, and naming constraints within Billing and Cost Management\.
 
 **Topics**
 + [Budgets](#limits-budgets)
@@ -29,7 +29,8 @@ The following table describes the current limits within Billing and Cost Managem
 |  |  | 
 | --- |--- |
 | Total number of Cost Categories per payer account | 50 | 
+| Number of Cost Category rules per Cost Category \(API\) | 500 | 
+| Number of Cost Category rules per Cost Category \(UI\) | 100 | 
 | Cost Category Names | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
-| Total number of Cost Category values | `100` | 
 | Cost Category value names | Names do not have to be unique | 
 | Characters allowed in a Cost Category name and value name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  | 

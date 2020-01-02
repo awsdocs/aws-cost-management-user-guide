@@ -1,8 +1,11 @@
 # Finding Prices in an Offer File<a name="procedures"></a>
 
-The Price List API provides prices for all AWS products for informational purposes, including On\-Demand and Reserved Instance pricing\. Price List API isn't available for limited\-period free tiers like AWS Free Tier pricing\.
+The Price List Service API provides prices for all AWS products for informational purposes, including On\-Demand and Reserved Instance pricing\.
 
 You can use the offer files to find the prices and terms for a specific product\. For example, you can find a list of Amazon EC2 instance prices\.
+
+**Note**  
+The Price List Service API is not a comprehensive source for limited period Free Tiers, such as AWS Free Tier pricing\. For complete information on Free Tier prices, see [AWS Free Tier](https://aws.amazon.com/free/)\.
 
 Use the following procedures to find prices for the products you're interested in\.
 
@@ -34,9 +37,9 @@ The following procedure shows how to find On\-Demand prices for services \(for e
 
 1. Open the JSON file with your program of choice\.
 
-1. Under **Terms** and **on\-demand**, find the SKU of interest\.
+1. Under **terms** and **On\-Demand**, find the SKU of interest\.
 
-   If you don't know the SKU, search for the **usage type** and **operation**\.
+   If you don't know the SKU, search under **products** for the **usage type** and **operation**\.
 
 1. See the **pricePerUnit** to find the corresponding On\-Demand price for the SKU\.
 
@@ -54,7 +57,7 @@ The following procedure shows how to find tiered prices for services \(for examp
 
 1. Find the usage type and operation of your choice\.
 
-1. In the **PricePerUnit** column, see the corresponding price for each **BeginRange** and **EndRange**\.<a name="S3-json-procedure"></a>
+1. In the **PricePerUnit** column, see the corresponding price for each **StartingRange** and **EndingRange**\.<a name="S3-json-procedure"></a>
 
 **To find tiered prices for services using the JSON file**
 
@@ -62,15 +65,17 @@ The following procedure shows how to find tiered prices for services \(for examp
 
 1. Open the JSON file with your program of choice\.
 
-1. Under **Terms** and **on\-demand**find the SKU of interest\.
+1. Under **terms** and **On\-Demand**find the SKU of interest\.
 
-   If you don't know the SKU, search for the **usage type** and **operation**\.
+   If you don't know the SKU, search under **products** for the **usage type** and **operation**\.
 
 1. Under each **beginRange** and **endRange**, see the **pricePerUnit** to find the corresponding tiered prices\.
 
 ## Finding tiered prices for services with Free Tier<a name="tiered-price-free"></a>
 
-The following procedure shows how to find tiered prices for services with Free Tier \(for example, AWS Lambda\)\.<a name="Lambda-csv-procedure"></a>
+The following procedure shows how to find AWS services that publish free tier prices in the Price List Service API \(for example, AWS Lambda\)\.
+
+All Free Tier prices are subject to the terms documented in [AWS Free Tier](https://aws.amazon.com/free/)\.<a name="Lambda-csv-procedure"></a>
 
 **To find prices for services with Free Tier using csv**
 
@@ -78,13 +83,33 @@ The following procedure shows how to find tiered prices for services with Free T
 
 1. Open the csv file with your program of choice\.
 
-1. Under the **TermType** column, filter to show **OnDemand** and **Location**\.
+1. Under the **TermType** column, filter to show **OnDemand**\.
 
-1. Choose **Any**\.
+1. Under the **Location** column, filter to show **Any**\.
 
-1. To find the covered usage by Free Tier across all locations, see the **BeginRange** and **EndRange**\.
+   **Any** does not represent all AWS Regions in this scenario\. It is a subset of Regions defined by other line items in the csv file, with a **RelatedTo** column matching the SKU for the location **Any** entry\.
 
-1. To find a list of eligible locations and SKU for any Free Tier SKU, replace **Global** in the **usageType** with a relevant Region or wild card character\. This shows all applicable products and AWSRegions\.<a name="Lambda-json-procedure"></a>
+1. To find a list of all eligible locations and products for a given Free Tier SKU, find the Free Tier SKU under the **RelatedTo** column\.
+
+1. To find the covered usage by Free Tier across all eligible locations, see the **StartingRange** and **EndingRange** for the location **Any**\.
+
+### Example<a name="tiered-price-free-example"></a>
+
+This example assumes there are no more entries in the price file where **RelatedTo** equals to the SKU `ABCD`\.
+
+The free tier offer with SKU `ABCD` is valid in Regions `Asia Pacific (Singapore)` and `US East (Ohio)`, but not in `AWS GovCloud (US)`\. The covered usage by Free Tier is 400,000 seconds total, used across both eligible Regions\.
+
+ 
+
+
+****  
+
+| SKU | StartingRage | EndingRange | Unit | RelatedTo | Location | 
+| --- | --- | --- | --- | --- | --- | 
+| ABCD | 0 | 400000 | seconds |  | Any | 
+| QWER | 0 | Inf | seconds | ABCD | Asia Pacific \(Singapore\) | 
+| WERT | 0 | Inf | seconds | ABCD | US East \(Ohio\) | 
+| ERTY | 0 | Inf | seconds |  | AWS GovCloud \(US\) | <a name="Lambda-json-procedure"></a>
 
 **To find tiered prices for services with Free Tier using the JSON file**
 
@@ -92,7 +117,7 @@ The following procedure shows how to find tiered prices for services with Free T
 
 1. Open the JSON file with your program of choice\.
 
-1. Under **products**, find the **usageType** with the Region prefix **Global**\.
+1. Under **products**, find the **usagetype** with the Region prefix **Global**\.
 
 1. Take note of the SKU and look for the same SKU under **terms** and **OnDemand**\.
 
@@ -122,8 +147,8 @@ The following procedure shows how to find prices for services with Reserved Inst
 
 1. Open the JSON file with your program of choice\.
 
-1. Under **Terms** and **Reserved**, find the SKU of interest\.
+1. Under **terms** and **Reserved**, find the SKU of interest\.
 
-   If you don't know the SKU, search for the **usage type** and **operation**\.
+   If you don't know the SKU, search under **products** for the **usage type** and **operation**\.
 
 You can find prices for all **LeaseContractLength**, **PurchaseOption**, and **OfferingClass** for the same product\.

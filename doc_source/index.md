@@ -1,7 +1,7 @@
 # AWS Billing and Cost Management User Guide
 
 -----
-*****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -47,6 +47,7 @@ Amazon's trademarks and trade dress may not be used in
          + [Product Details](enhanced-product-columns.md)
          + [Resource Tags](enhanced-resource-columns.md)
          + [Savings Plans Details](savingsplans-columns.md)
+         + [Cost Categories Details](cost-categories-columns.md)
       + [Reserved Instances](billing-reports-costusage-ri.md)
          + [Reserved Instance Line Items](regular-reserved-instances.md)
          + [Region Reserved Instance Line Items](region-reserved-instances.md)
@@ -160,7 +161,7 @@ Amazon's trademarks and trade dress may not be used in
          + [Turning on shared Reserved Instances and Savings Plans discounts](ri-turn-on-process.md)
    + [Understanding Consolidated Bills](con-bill-blended-rates.md)
    + [AWS Support Charges for Accounts in an Organization](consolidatedbilling-support.md)
-+ [Limits](billing-limits.md)
++ [Quotas and Restrictions](billing-limits.md)
 + [Contacting Customer Support About Your Bill](billing-get-answers.md)
 + [Document History](History.md)
 + [AWS Glossary](glossary.md)

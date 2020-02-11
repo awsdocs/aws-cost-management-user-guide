@@ -7,7 +7,7 @@ You can manage access to your Cost Explorer in the following ways:
 
 This topic provides details about how to control access in Cost Explorer\.
 
-For information about managing access to Billing and Cost Management pages, see [Controlling Access](control-access-billing.md)\. For more information about consolidated billing, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
+For information about managing access to Billing and Cost Management pages, see [Overview of Managing Access Permissions](control-access-billing.md)\. For more information about consolidated billing, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
 
 **Topics**
 + [Granting Cost Explorer Access](#grant-ce-access)
@@ -62,4 +62,4 @@ You can grant or restrict the access to all member accounts in your Organization
 
 After you enable Cost Explorer at the master account level, you can use IAM to manage access to your billing data for individual IAM users\. This enables you to grant or revoke access on an individual level for each account, rather than granting access to all member accounts\.
 
-An IAM user must be granted explicit permission to view pages in the Billing and Cost Management console\. With the appropriate permissions, the IAM user can view costs for the AWS account that the IAM user belongs to\. For the policy that grants the necessary permissions to an IAM user, see [Controlling Access](control-access-billing.md)\. 
+An IAM user must be granted explicit permission to view pages in the Billing and Cost Management console\. With the appropriate permissions, the IAM user can view costs for the AWS account that the IAM user belongs to\. For the policy that grants the necessary permissions to an IAM user, see [Overview of Managing Access Permissions](control-access-billing.md)\. 

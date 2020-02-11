@@ -2,6 +2,8 @@
 
 Follow these steps to have a PDF copy of your monthly invoice sent to the email address associated with your account\. 
 
+To edit your email recipients, see [Editing Contact Information](manage-account-payment.md#manage-account-payment-edit-contacts)\.
+
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
 1. Choose **Billing preferences** on the navigation pane\.

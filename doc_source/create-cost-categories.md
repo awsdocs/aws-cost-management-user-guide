@@ -3,7 +3,7 @@
 
 |  | 
 | --- |
-| Cost Category is in preview release for AWS Billing and Cost Management and is subject to change\. Your use of Cost Categories is subject to the Beta Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
+| Cost Category is in public beta for AWS Billing and Cost Management and is subject to change\. Your use of Cost Categories is subject to the Beta Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
 
 You can create Cost Categories to organize your cost and usage information\. Regular accounts and Payer accounts in AWS Organizations have default access to create Cost Categories\. Rules are not mutually exclusive, and you can control the order that the rules apply\. Please allow up to 24 hours after creating a Cost Category for your usage records to be updated with values\.
 

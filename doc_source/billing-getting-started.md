@@ -33,118 +33,7 @@ You can also check the status of your free tier with the provided AWS Free Tier 
 
  In addition to the features described in step 1, AWS Billing and Cost Management offers a set of billing reports about your AWS usage\. The reports show you which AWS services you used, the amount of time that you used them, the amount of data that you transferred in and out of storage, the average storage space that you used, and more\. 
 
- Billing and Cost Management can deliver your reports to an Amazon S3 bucket that you create\. Amazon S3 is the AWS Cloud storage offering\. The payer account must own the Amazon S3 bucket\. Reports can't be delivered to a bucket owned by a linked account\. 
-
-**To create an Amazon S3 bucket for your reports**
-
-1. Open the Amazon S3 console at [https://console\.aws\.amazon\.com/s3/](https://console.aws.amazon.com/s3/)\.
-
-1. Choose **Create Bucket**\.
-
-1. In the dialog box, for **Bucket Name**, enter the name for your bucket\.
-**Note**  
-Your bucket name must be all lowercase, from 3 to 63 characters long, and can't contain spaces\. You can use lowercase letters, numbers, hyphens \(\-\), and periods \(\.\) in your bucket name\.
-
-1. Choose the Region that you want your Amazon S3 bucket to be in\.
-
-1. Choose **Next**\.
-
-1. Choose **Next**\.
-
-1.  \(Optional\) If you choose **Grant Amazon Simple Storage Service Log Delivery group write access to this bucket**, you can enable access logs that track who accesses your Amazon S3 bucket\. Choose the bucket that you want the access logs to be delivered to and the name of a folder that you want the logs to be stored in\. 
-
-1. Choose **Next**\.
-
-1. Choose **Create bucket**\.
-
-**To grant Billing and Cost Management permission to deliver reports to your Amazon S3 bucket**
-
-1. Open the Amazon S3 console at [https://console\.aws\.amazon\.com/s3/](https://console.aws.amazon.com/s3/)\.
-
-1. From the list of buckets, choose the bucket that you want to receive reports in\.
-
-1. Choose **Permissions**\.
-
-1. Choose **Bucket Policy**\.
-
-1. Paste the following text into the bucket policy editor\.
-
-   ```
-   {
-     "Version": "2012-10-17",
-     "Statement": [
-     {
-       "Effect": "Allow",
-       "Principal": {
-         "Service": "billingreports.amazonaws.com"
-       },
-       "Action": [
-         "s3:GetBucketAcl",
-         "s3:GetBucketPolicy"
-       ],
-       "Resource": "arn:aws:s3:::bucketname"
-     },
-     {
-       "Effect": "Allow",
-       "Principal": {
-         "Service": "billingreports.amazonaws.com"
-       },
-       "Action": "s3:PutObject",
-       "Resource": "arn:aws:s3:::bucketname/*"
-     }
-     ]
-   }
-   ```
-
-1. Replace *bucketname* with the name of your bucket\. 
-
-1. Choose **Save**\.
-
-**To create an AWS Cost and Usage report**
-
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
-
-1. On the navigation pane, choose **Cost and Usage Reports**\.
-
-1. Choose **Create report**\.
-
-1. For **Report name**, enter a name for your report\.
-
-1. For **Additional report details**, to include the IDs of each individual resource in the report, select **Include resource IDs**\.
-
-1. For **Data refresh settings**, select whether you want the AWS Cost and Usage report to refresh if AWS applies refunds, credits, or support fees to your account after finalizing your bill\. When a report refreshes, a new report is uploaded to Amazon S3\.
-**Note**  
-Detailed billing reports \(DBRs\) don't refresh automatically, whether you select **Data refresh settings** or not\. To refresh a DBR, open a support case\. For more information, see [Contacting Customer Support About Your Bill](billing-get-answers.md)\.
-
-1. Choose **Next**\.
-
-1. For **S3 bucket**, choose **Configure**\.
-
-1. In the **Configure S3 Bucket** dialog box, do one of the following:
-   + Select an existing bucket from the drop down list and choose **Next**\.
-   + Enter a bucket name and the Region where you want to create a new bucket and choose **Next**\.
-
-1. Select **I have confirmed that this policy is correct** and choose **Save**\.
-
-1. For **Report path prefix**, enter the report path prefix that you want prepended to the name of your report\. 
-
-   This step is optional for Amazon Redshift or Amazon QuickSight, but required for Amazon Athena\.
-
-   If you don't specify a prefix, the default prefix is the name that you specified for the report in step 4 and the date range for the report, in the following format:
-
-   `/report-name/date-range/`
-
-1. For **Time granularity**, choose **Hourly** if you want the line items in the report to be aggregated by the hour\. Choose **Daily** if you want the line items in the report to be aggregated by the day\.
-
-1. For **Report versioning**, choose whether you want each version of the report to overwrite the previous version of the report or to be delivered in addition to the previous versions\.
-
-1. For **Enable report data integration for**, select whether you want to upload your AWS Cost and Usage report to Amazon Redshift, Amazon QuickSight, or Amazon Athena\. The report is compressed in the following formats:
-   + **Amazon Redshift or Amazon QuickSight**: \.gz compression
-   + **Athena**: parquet compression
-
-1. Choose **Next**\.
-
-1. After you have reviewed the settings for your report, choose **Review and Complete**\. 
+To learn more about how to set up your reports, see [Creating Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/creating-cur.html) in the *Cost and Usage Report Guide*\.
 
 ## Step 3: Download or Print Your Bill<a name="billing-gs-download"></a>
 
@@ -166,7 +55,7 @@ If you use the AWS Free Tier, Billing and Cost Management automatically provides
 
 In addition to the free tier usage alerts, you can use budgets to notify you when your monthly charges for using an AWS product exceed or are forecast to exceed a threshold that you set\. 
 
- By default, IAM users don't have access to billing information, and therefore don't have access to budgets\. If you're logged in to AWS as an IAM user, verify that the account owner has granted IAM users access to AWS Budgets\. For more information about IAM restrictions, see [Granting Access to Your Billing Information and Tools](grantaccess.md)\. <a name="cost-budget-alarm"></a>
+ By default, IAM users don't have access to billing information, and therefore don't have access to budgets\. If you're logged in to AWS as an IAM user, verify that the account owner has granted IAM users access to AWS Budgets\. For more information about IAM restrictions,  <a name="cost-budget-alarm"></a>
 
 **To create a budget**
 
@@ -257,7 +146,7 @@ If you have questions about your bill, see the [AWS Knowledge Center](http://aws
 
  Explore some of the features designed to help you dig a little deeper and streamline your accounting practices\. 
 + [Tracking Your Free Tier Usage](tracking-free-tier-usage.md)
-+ [Understanding Your Usage with Billing Reports](billing-reports.md)
++ [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)
 + [Analyzing Your Costs with Cost Explorer](ce-what-is.md)
 + [Managing Your Costs with Budgets](budgets-managing-costs.md)
 + [Consolidated Billing for Organizations](consolidated-billing.md)

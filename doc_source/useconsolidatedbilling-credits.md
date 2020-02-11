@@ -33,7 +33,7 @@ If you're more comfortable with numbers, assume that Susan owns a single account
 
 ## Sharing AWS Credits<a name="credit-sharing"></a>
 
-You can turn off credit sharing on the **Preferences** page on the Billing and Cost Management console\. The following rules specify how credits are applied to bills for single accounts and for organizations when credit sharing is turned off:
+You can turn off credit sharing on the **Billing Preferences** page on the Billing and Cost Management console\. The following rules specify how credits are applied to bills for single accounts and for organizations when credit sharing is turned off:
 + The billing cycle begins on the first day of each month\.
 + Credits are applied to only the account that received the credits\.
 + Bills are calculated using the credit sharing preference that is active on the last day of the month\.
@@ -45,7 +45,7 @@ You can turn off credit sharing through the Billing and Cost Management console\
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 
-1. In the navigation pane, choose **Preferences**\.
+1. In the navigation pane, choose **Billing Preferences**\.
 
 1. Select **Disable credit sharing**\. 
 

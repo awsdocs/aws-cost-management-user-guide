@@ -1,6 +1,6 @@
 # Monthly Cost Allocation Report<a name="configurecostallocreport"></a>
 
-The monthly cost allocation report lists the AWS usage for your account by product category and linked account user\. The report contains the same line items as the detailed billing report \(see [Understanding Your Usage with Billing Reports](billing-reports.md)\) and additional columns for your tag keys\. For more information, see the following topics\.
+The monthly cost allocation report lists the AWS usage for your account by product category and linked account user\. The report contains the same line items as the detailed billing report \(see the [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\) and additional columns for your tag keys\. For more information, see the following topics\.
 
 **Topics**
 + [Setting Up a Monthly Cost Allocation Report](#allocation-report)
@@ -14,7 +14,7 @@ By default, new tag keys that you add using the API or the AWS Management Consol
 When you select tag keys to include in your cost allocation report, each key becomes an additional column that lists the value for each corresponding line item\. Because you might use tags for more than just your cost allocation report \(for example, tags for security or operational reasons\), you can include or exclude individual tag keys for the report\. This ensures that you're seeing meaningful billing information that helps organize your costs\. A small number of consistent tag keys makes it easier to track your costs\. For more information, see [Viewing a Cost Allocation Report](#allocation-viewing)\.
 
 **Note**  
-AWS stores billing reports in an Amazon S3 bucket that you create and own\. You can retrieve these reports from the bucket using the Amazon S3 API, AWS Management Console for Amazon S3, or the Amazon S3 command line interface \(CLI\)\. You can't download the cost allocation report from the [Account Activity](https://console.aws.amazon.com/billing/home#//bill) page of the Billing and Cost Management console\. 
+AWS stores billing reports in an Amazon S3 bucket that you create and own\. You can retrieve these reports from the bucket using the Amazon S3 API, AWS Management Console for Amazon S3, or the Amazon S3 command line interface \(CLI\)\. You can't download the cost allocation report from the [Account Activity](https://console.aws.amazon.com/billing/home#/bill) page of the Billing and Cost Management console\. 
 
 **To set up the cost allocation report and activate tags**
 

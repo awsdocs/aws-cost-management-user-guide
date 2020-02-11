@@ -3,7 +3,7 @@
 At the end of a billing cycle or at the time you choose to incur a one\-time fee, AWS charges the credit card you have on file and issues your invoice as a PDF file\. You can download the PDF from the **Account Activity** page in the [Billing and Cost Management console](https://console.aws.amazon.com/billing/home?#/account) using the following steps\. 
 
 **Note**  
-IAM users need explicit permission to see some of the pages in the Billing and Cost Management console\. For more information, see [Controlling Access](control-access-billing.md)\.
+IAM users need explicit permission to see some of the pages in the Billing and Cost Management console\. 
 
 **To view your monthly charges**
 

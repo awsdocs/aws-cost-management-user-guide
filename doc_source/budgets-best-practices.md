@@ -17,7 +17,7 @@ To allow IAM users to create budgets in the AWS Billing and Cost Management cons
 + Create Amazon CloudWatch alarms
 + Create Amazon Simple Notification Service \(Amazon SNS\) notifications
 
-To learn more about giving users the ability to create budgets on the AWS Budgets console, see [Example 7: Allow IAM users to create budgets](billing-permissions-ref.md#example-billing-allow-createbudgets)\.
+To learn more about giving users the ability to create budgets on the AWS Budgets console, see [Example 7: Allow IAM users to create budgets](billing-example-policies.md#example-billing-allow-createbudgets)\.
 
 You can also create budgets programmatically using the Budgets API\. When configuring access to the Budgets API, we recommend creating a unique IAM user for allowing programmatic access\. This helps you define more precise access controls between who in your organization has access to the Budgets console and the API\. To give multiple IAM users query access to the Budgets API, we recommend creating a programmatic access IAM role for each of them\.
 

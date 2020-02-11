@@ -64,7 +64,7 @@ The `createdBy` tag is applied only to the following services and resources afte
 | AWS Elastic Beanstalk \(Elastic Beanstalk\) |  `CreateEnvironment`  |  Environment  | 
 |   |  `CreateApplication`  |  Application  | 
 | Elastic Load Balancing \(Elastic Load Balancing\) |  `CreateLoadBalancer`  |  Loadbalancer  | 
-| Amazon S3 Glacier \(Glacier\) |  `CreateVault`  |  Vault  | 
+| Amazon S3 Glacier \(S3 Glacier\) |  `CreateVault`  |  Vault  | 
 | Amazon Kinesis \(Kinesis\) |  `CreateStream`  |  Stream  | 
 | Amazon Relational Database Service \(Amazon RDS\) |  `CreateDBInstanceReadReplica`  |  Database  | 
 |   |  `CreateDBParameterGroup`  |  ParameterGroup  | 

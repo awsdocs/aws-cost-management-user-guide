@@ -1,6 +1,6 @@
 # Best Practices for the AWS Cost Explorer API<a name="ce-api-best-practices"></a>
 
-Note the following best practices when working with the Cost Explorer API\.
+The following are best practices when working with the [Cost Explorer API](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Operations_AWS_Cost_Explorer_Service.html)\.
 
 **Topics**
 + [Best Practices for Configuring Access to the Cost Explorer API](#ce-api-best-practices-access)
@@ -9,7 +9,7 @@ Note the following best practices when working with the Cost Explorer API\.
 
 ## Best Practices for Configuring Access to the Cost Explorer API<a name="ce-api-best-practices-access"></a>
 
-An IAM user must be granted explicit permission to query the Cost Explorer API\. Granting an IAM user access to the Cost Explorer API gives that user query access to any cost and usage data available to that account\. For the policy that grants the necessary permissions to an IAM user, see [Example 12: View costs and usage](billing-permissions-ref.md#example-policy-ce-api)\.
+An IAM user must be granted explicit permission to query the Cost Explorer API\. Granting an IAM user access to the Cost Explorer API gives that user query access to any cost and usage data available to that account\. For the policy that grants the necessary permissions to an IAM user, see [Example 11: View costs and usage](billing-example-policies.md#example-policy-ce-api)\.
 
 When configuring access to the Cost Explorer API, we recommend creating a unique IAM user for allowing programmatic access\. If you want to give multiple IAM users query access to the Cost Explorer API, we recommend creating a programmatic access IAM role for each of them\.
 

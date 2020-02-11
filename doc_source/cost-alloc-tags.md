@@ -12,7 +12,7 @@ The cost allocation report includes all of your AWS costs for each billing perio
 
 ![\[Partial Cost Allocation Report showing your tag names, which are also called keys, as columns\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/images/CostAllocationPartExampleReport.png)
 
-At the end of the billing cycle, the total charges \(tagged and untagged\) on the billing report with cost allocation tags reconciles with the total charges on your [https://console.aws.amazon.com/billing/home#//bill](https://console.aws.amazon.com/billing/home#//bill) page total and other billing reports for the same period\. 
+At the end of the billing cycle, the total charges \(tagged and untagged\) on the billing report with cost allocation tags reconciles with the total charges on your [https://console.aws.amazon.com/billing/home#/bill](https://console.aws.amazon.com/billing/home#/bill) page total and other billing reports for the same period\. 
 
 You can also use tags to filter views in Cost Explorer\. For more information about Cost Explorer, see [Analyzing Your Costs with Cost Explorer](ce-what-is.md)\. 
 
@@ -20,7 +20,6 @@ You can also use tags to filter views in Cost Explorer\. For more information ab
 
 **Note**  
 As a best practice, do not include sensitive information in tags\.
-You can't delete or merge tags\. Instead, deactivate tags so that they aren't used in your billing reports\.
 Only master accounts in an organization and single accounts that are not members of an organization have access to the **Cost Allocation Tags** manager in the Billing console\.
 
 **Topics**

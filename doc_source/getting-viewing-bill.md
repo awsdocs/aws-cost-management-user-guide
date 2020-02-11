@@ -7,5 +7,5 @@ At any time, you can view estimated charges for the current month and final char
 **Topics**
 + [Viewing Your Monthly Charges](invoice.md)
 + [Getting an Invoice Emailed to You](emailed-invoice.md)
-+ [Understanding Your Usage with Billing Reports](billing-reports.md)
++ [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)
 + [Managing Your Payments](manage-payments.md)

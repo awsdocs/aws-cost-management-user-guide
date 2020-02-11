@@ -23,6 +23,10 @@ The AWS Billing and Cost Management console includes the no\-cost [Cost Explorer
 You can use budgets to track your AWS usage and costs\. Budgets use the cost visualization provided by Cost Explorer to show you the status of your budgets, to provide forecasts of your estimated costs, and to track your AWS usage, including your free tier usage\. You can also use budgets to create Amazon SNS notifications that notify you when you go over your budgeted amounts, or when your estimated costs exceed your budgets\.  
 For more information about budgets, see [Managing Your Costs with Budgets](budgets-managing-costs.md)\.
 
+**AWS Cost and Usage Reports**  
+You can choose to have AWS publish billing reports to an Amazon Simple Storage Service \(Amazon S3\) bucket that you own\. You can receive reports that break down your costs by the hour or month, by product or product resource, or by tags that you define yourself\.  
+For more details about AWS Cost and Usage Reports, see the [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.
+
 **Payment Currencies**  
 You can view your estimated bills and pay your AWS invoices in your preferred currency by setting a payment currency\.  
 AWS converts your bill to your preferred currency after your bill is finalized\. Until then, all of the preferred currency amounts shown in the console are estimated in USD\. AWS guarantees your exchange rate, so that refunds use the same exchange rate as your original transaction\.  
@@ -32,11 +36,6 @@ Additional details:
 + The rates change daily\. The rate applied to your invoice is the current rate when your invoice is created\. You can check the current rate on the Billing and Cost Management console\.
 + You can switch back to USD\.
 + Currency conversion is provided by Amazon Services LLC\.
-
-**AWS Cost and Usage reports**  
-You can choose to have AWS publish billing reports to an Amazon Simple Storage Service \(Amazon S3\) bucket that you own\. You can receive reports that break down your costs by the hour or month, by product or product resource, or by tags that you define yourself\. AWS updates the report in your bucket once a day in comma\-separated value \(CSV\) format\. You can view the reports using spreadsheet software such as Microsoft Excel or Apache OpenOffice Calc, or access them from an application using the Amazon S3 API\.   
-If you use the consolidated billing feature in AWS Organizations, the Amazon S3 bucket that you designate to receive the billing reports must be owned by the master account in your organization\. You can't receive billing reports in a bucket that is owned by a member account\. If you use consolidated billing, you can also have your costs broken down by member account\.
-For more information about each of these reports and how to configure them, see [Understanding Your Usage with Billing Reports](billing-reports.md)\.
 
 ## Are You a First\-Time Billing User?<a name="billingresources"></a>
 
@@ -48,7 +47,6 @@ If you're new to AWS, we recommend that you review [Getting Started with AWS](ht
 
 **IAM**  
 The Billing and Cost Management service is tightly integrated with the AWS Identity and Access Management \(IAM\) service\. You can use IAM with Billing and Cost Management to ensure that other people who work in your account have only as much access as they need to get their job done\.  
-For more information about how to allow or deny access to your billing information, see [Controlling Access](control-access-billing.md)\.  
 The IAM service is also how you control access to all of your AWS resources, not just your billing information, so it's important to familiarize yourself with the basic concepts and best practices of IAM before you get too far along with setting up the structure of your AWS account\.  
 For details about how to work with IAM and why it's important to do so, see [IAM Concepts](https://docs.aws.amazon.com/IAM/latest/UserGuide/IAM_Concepts.html) and [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/IAMBestPractices.html) in the *IAM User Guide*\. 
 

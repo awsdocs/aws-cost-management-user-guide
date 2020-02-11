@@ -161,4 +161,9 @@ You can view your tax invoices in the console\.
 
 1. On the navigation pane, choose **Bills**\.
 
-1. Under **Other Details**, for **Tax Invoices**, choose **View Invoices**\.
+1. Under **Summary**, under **Credits and Tax Invoices**, choose **Tax Invoices**\.
+
+1. Choose an invoice hyperlink\.
+
+**Note**  
+The **Tax Invoices** is only visible if there are tax invoices available\.

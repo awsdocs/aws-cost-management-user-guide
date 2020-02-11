@@ -3,7 +3,7 @@
 
 |  | 
 | --- |
-| Cost Category is in preview release for AWS Billing and Cost Management and is subject to change\. Your use of Cost Categories is subject to the Beta Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
+| Cost Category is in public beta for AWS Billing and Cost Management and is subject to change\. Your use of Cost Categories is subject to the Beta Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
 
 You can delete your Cost Categories using the following procedure\.<a name="edit-cost-categories-steps"></a>
 

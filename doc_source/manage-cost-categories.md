@@ -3,7 +3,7 @@
 
 |  | 
 | --- |
-| Cost Category is in preview release for AWS Billing and Cost Management and is subject to change\. Your use of Cost Categories is subject to the Beta Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
+| Cost Category is in public beta for AWS Billing and Cost Management and is subject to change\. Your use of Cost Categories is subject to the Beta Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
 
 Cost Categories enables you to map your cost and usage into meaningful categories\. You can use Cost Categories to organize your costs using a rule\-based engine\. The rules you configure will organize your costs into categories\. You can use these categories across products in the Billing and Cost Management console, such as Cost Explorer and AWS Budgets\.
 

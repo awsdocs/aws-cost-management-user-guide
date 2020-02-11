@@ -1,3 +1,0 @@
-# Controlling Access to Your AWS Cost and Usage Report Files<a name="billing-reports-gettingstarted-access"></a>
-
-Anyone who has permissions to access the specified Amazon S3 bucket can see your billing report files\. Make sure that only people who have a business need to see your billing report files have this access\. If necessary, you can edit the bucket policy to control access to the contents of the bucket\. For more information about editing bucket policies, see [Access Control](https://docs.aws.amazon.com/AmazonS3/latest/dev/UsingAuthAccess.html) in the *[Amazon Simple Storage Service Developer Guide](https://docs.aws.amazon.com/AmazonS3/latest/dev/)*\.

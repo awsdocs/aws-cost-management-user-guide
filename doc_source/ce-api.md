@@ -15,4 +15,4 @@ The Cost Explorer API provides the following endpoint:
 
 ## Granting IAM Permissions to Use the AWS Cost Explorer API<a name="ce-iam"></a>
 
-An IAM user must be granted explicit permission to query the AWS Cost Explorer API\. For the policy that grants the necessary permissions to an IAM user, see [Example 12: View costs and usage](billing-permissions-ref.md#example-policy-ce-api)\. 
+An IAM user must be granted explicit permission to query the AWS Cost Explorer API\. For the policy that grants the necessary permissions to an IAM user, see [Example 11: View costs and usage](billing-example-policies.md#example-policy-ce-api)\. 

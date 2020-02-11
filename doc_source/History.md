@@ -4,6 +4,8 @@ The following table describes the documentation for this release of the *AWS Bil
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [New security chapter](security.html) | Added a new security chapter that provides information about various security controls\. Former "Controlling Access" chapter contents have been migrated here\. | February 6, 2020 | 
+| [New AWS Cost and Usage Report user guide](cur/latest/userguide/what-is-cur.html) | Migrated and reorganized all AWS Cost and Usage Report content to a seperate user guide\. | January 21, 2020 | 
 | [New Reporting Method Using AWS Budgets](reporting-cost-budget.html) | Added a new reporting functionality using AWS Budgets reports\. | June 27, 2019 | 
 | [Added normalized units to Cost Explorer](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-default-reports.html) | Cost Explorer reports now include normalized units\. | February 5, 2019 | 
 | [Credit application changes](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html) | AWS changed how they apply credits\. | January 17, 2019 | 
@@ -14,12 +16,12 @@ The following table describes the documentation for this release of the *AWS Bil
 | [Added budget history](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-view.html) | Added the ability to see the history of a budget\. | November 13, 2018 | 
 | [Expanded budget services](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html) | Expanded RI budgets to Amazon Elasticsearch Service\. | November 8, 2018 | 
 | [Added a new payment method](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-debit-emea.html) | Added the SEPA Direct Debit payment method\. | October 25, 2018 | 
-| [Added On\-Demand capacity reservations](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage-cr.html) | Added documentation about AWS Cost and Usage report line items that apply to capacity reservations\. | October 25, 2018 | 
+| [Added On\-Demand capacity reservations](#History) | Added documentation about AWS Cost and Usage report line items that apply to capacity reservations\. | October 25, 2018 | 
 | [Redesigned budget experience](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create.html) | Updated the budget UI and workflow\. | October 23, 2018 | 
 | [New Reserved Instance recommendation columns](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-recommendations.html#saving-rex) | Added new columns to the Cost Explorer RI recommendations\. | October 18, 2018 | 
 | [New AWS CloudTrail actions](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/logging-using-cloudtrail.html) | More actions added to CloudTrail logging\.\. | October 18, 2018 | 
 | [Added a new Reserved Instance report](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-default-reports.html) | Expanded RI reports to Amazon Elasticsearch Service\. | October 10, 2018 | 
-| [New AWS Cost and Usage Report columns](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage-details.html) | New columns added to the AWS Cost and Usage report\. | September 27, 2018 | 
+| [New AWS Cost and Usage Report columns](#History) | New columns added to the AWS Cost and Usage report\. | September 27, 2018 | 
 | [Cost Explorer walkthrough](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-getting-started.html) | Cost Explorer now provides a walkthrough for the most common functionality\. | September 24, 2018 | 
 | [Added CloudTrail events](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/logging-using-cloudtrail.html) | Added additional CloudTrail events\. | August 13, 2018 | 
 | [Added a new payment method](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-debit.html) | Added the ACH Direct Debit payment method\. | July 24, 2018 | 
@@ -34,7 +36,7 @@ The following table describes the documentation for this release of the *AWS Bil
 | [Unblend linked account bills ](#History) | Linked account bills no longer show the blended rate for the organization\. | May 7, 2018 | 
 | [Updated AWS tax settings](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-account-payment-aispl.html#aispl-edit-pan) | Added the ability to bulk edit tax settings\. | April 25, 2018 | 
 | [Added Amazon RDS Recommendations to Cost Explorer](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-recommendations.html) | Added Amazon RDS Recommendations to Cost Explorer\. | April 19, 2018 | 
-| [Added a new Cost Explorer dimension and AWS Cost and Usage Report line item](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage-details.html) | Added a new Cost Explorer dimension and AWS Cost and Usage Report line item\. | March 27, 2018 | 
+| [Added a new Cost Explorer dimension and AWS Cost and Usage Report line item](#History) | Added a new Cost Explorer dimension and AWS Cost and Usage Report line item\. | March 27, 2018 | 
 | [Added purchase recommendations to the Cost Explorer API ](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_GetReservationPurchaseRecommendation.html) | Added access to the Amazon EC2 Reserved Instance \(RI\) purchase recommendations via the Cost Explorer API\. | March 20, 2018 | 
 | [Added RI coverage for Amazon RDS, Amazon Redshift, and ElastiCache](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-explorer-new-report.html#ce-coverage-views) | Reserved Instance \(RI\) coverage for Amazon RDS, Amazon Redshift, and ElastiCache \. | March 13, 2018 | 
 | [Added RI coverage to the Cost Explorer API](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_GetReservationCoverage.html) | Added `GetReservationCoverage` to the Cost Explorer API\. | February 22, 2018 | 
@@ -60,10 +62,10 @@ The following table describes the documentation for this release of the *AWS Bil
 | [Added a Cost Explorer report](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-explorer-new-report.html#ce-utilization-views) | You can now track your daily Amazon EC2 Reserved Instance \(RI\) utilization in Cost Explorer\.  | December 15, 2016 | 
 | [Added AWS\-generated cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) | You can now activate the AWS\-generated tag `createdBy` to track who created an AWS resource\. | December 12, 2016 | 
 | [Added Cost Explorer advanced options](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/advanced.html#show-untagged-resources) | You can now exclude tagged resources from your Cost Explorer reports\. | November 18, 2016 | 
-| [Amazon QuickSight integration for AWS Cost and Usage reports](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage.html) | AWS Cost and Usage reports now provide customized queries for uploading your data into Amazon QuickSight\. | November 15, 2016 | 
+| [Amazon QuickSight integration for AWS Cost and Usage reports](#History) | AWS Cost and Usage reports now provide customized queries for uploading your data into Amazon QuickSight\. | November 15, 2016 | 
 | [Expanded budget functionality](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html) | You can now use budgets to track usage data\. | October 20, 2016 | 
 | [Expanded Cost Explorer functionality](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-what-is.html) | You can now use Cost Explorer to visualize your costs by usage type groups\. | September 15, 2016 | 
-| [Improved Amazon Redshift integration for AWS Cost and Usage reports](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage-upload.html) | AWS Cost and Usage reports now provide customized queries for uploading your data into Amazon Redshift\. | August 18, 2016 | 
+| [Improved Amazon Redshift integration for AWS Cost and Usage reports](#History) | AWS Cost and Usage reports now provide customized queries for uploading your data into Amazon Redshift\. | August 18, 2016 | 
 | [AWS Cost and Usage reports](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports.html) | You can now create and download AWS Cost and Usage reports\. | December 16, 2015 | 
 | [AWS Price List API](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/price-changes.html) | You can now download offer files that list the products, prices, and restrictions for a single AWS service\. | December 9, 2015 | 
 | [Cost Explorer report manager](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-explorer-saved-reports.html) | You can now save Cost Explorer queries\.  | November 12, 2015 | 

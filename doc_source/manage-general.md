@@ -7,4 +7,4 @@ You can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/p
 + [Managing Your Credit Card Payment Methods](manage-cc.md)
 + [Managing Your ACH Direct Debit Payment Methods](manage-debit.md)
 
-If you have questions about payment methods, see [Contacting Customer Support About Your Bill](billing-get-answers.md)\.
+If you have questions about payment methods, see [Getting Help with AWS Billing and Cost Management](billing-get-answers.md)\.

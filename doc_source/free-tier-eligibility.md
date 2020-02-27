@@ -4,10 +4,10 @@ You receive the benefits of the Free Tier automatically for 12 months after you 
 
 If you have an existing AWS account but you’re not sure if it’s still eligible for the Free Tier, open the [Billing and Cost Management console](https://console.aws.amazon.com/billing/home#/)\. If your account is eligible for the Free Tier, you see a message in the **Alerts & Notifications** section, as shown in the following screenshot\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
+![\[Screenshot of a console alert notifying that you are eligible for the AWS Free Tier.\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Screenshot of a console alert notifying that you are eligible for the AWS Free Tier.\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Screenshot of a console alert notifying that you are eligible for the AWS Free Tier.\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
 
 You can also choose **Bills** in the navigation pane of the console to see when you created your AWS account\. In the **Date** drop\-down box, you will find one bill for each month since you opened your account even if you didn't have charges\.
 
-If your company creates your AWS account through AWS Organizations, Free Tier eligibility for all member accounts begins on the day that the master account of the organization is created\. For more information, see the *[AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/)*\.
+If your company creates your AWS account through AWS Organizations, Free Tier eligibility for all member accounts begins on the day that the master account of the organization is created\. For more information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/)\.
 
 When your Free Tier eligibility is coming to an end, AWS sends a notification to the email address that you used when you signed up for AWS\. If you decide to continue using AWS after your Free Tier eligibility ends, be sure to clean up any resources that you no longer need to avoid being charged for their use\. If you decide not to continue using AWS, you can [close your account](close-account.md)\.

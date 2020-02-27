@@ -3,7 +3,7 @@
 If your account is with AISPL, follow the procedures in this section to manage your payment methods and payments and to verify credit card payments with your bank\. To learn whether your account is with AWS or AISPL, see the procedure [Determining Which Company Your Account is With](manage-account-payment-aispl.md#determine-seller)\. 
 
 **Note**  
-If you have questions about payment methods, see [Contacting Customer Support About Your Bill](billing-get-answers.md)\.
+If you have questions about payment methods, see [Getting Help with AWS Billing and Cost Management](billing-get-answers.md)\.
 + [Supported Payment Methods](#aispl-supported-payment)
 + [View Your Credit Cards](#aispl-view-credit-sec)
 + [Add a Credit Card](#aispl-add-cc-sec)

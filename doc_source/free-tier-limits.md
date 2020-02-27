@@ -14,7 +14,7 @@ Some services, such as Amazon EC2, Amazon RDS, and Elastic Load Balancing, charg
 
 In some cases, leaving your resources running maximizes your Free Tier benefits\. For example, if you run an Amazon EC2 instance for only a portion of an hour, AWS counts that as an entire hour\. Therefore, if you stop and start an Amazon EC2 instance three times in a single hour, you use up three hours of your monthly allotment\. The following diagram illustrates how this works\. Both the red and green usage scenarios use up three hours of your monthly allotment\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
+![\[Diagram of EC2 instance usage showing examples of 3 hours of free tier usage.\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Diagram of EC2 instance usage showing examples of 3 hours of free tier usage.\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Diagram of EC2 instance usage showing examples of 3 hours of free tier usage.\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
 
 **Note**  
 Several services measure usage in seconds\. See each service page's details to see how your service is measured and billed\.
@@ -30,4 +30,4 @@ Third\-party applications or services from AWS Marketplace aren't eligible for t
 
 AMIs that are eligible for the Free Tier are marked in the Amazon EC2 Launch Wizard as **Free tier eligible**\. The Free Tier allotment for Linux and Microsoft Windows instances is counted separately\. You can run 750 hours of a Linux `t2.micro` or `t1.micro` instance plus 750 hours of a Windows `t2.micro` or `t1.micro` instance each month for the first 12 months\.
 
-For more information, see [Amazon EC2 Pricing](https://aws.amazon.com/ec2/pricing/)\.
+For more information, see [Amazon EC2 pricing](https://aws.amazon.com/ec2/pricing/)\.

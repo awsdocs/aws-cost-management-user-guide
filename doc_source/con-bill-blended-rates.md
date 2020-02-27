@@ -75,11 +75,11 @@ AWS allocates a regional RI by instance size: The RI is applied first to the sma
 
 ## Savings Plans<a name="cb_savingsplans"></a>
 
-Savings Plans is a flexible pricing model that can help you reduce your AWS usage bill\. Compute Savings Plans enables you to commit to an amount each hour, and receive discounted Amazon EC2 and Fargate usage up to that amount\.
+Savings Plans is a flexible pricing model that can help you reduce your AWS usage bill\. Compute Savings Plans enables you to commit to an amount each hour, and receive discounted Amazon EC2, Fargate, and AWS Lambda usage up to that amount\.
 
 ### Calculating Costs with Savings Plans<a name="cb_calculating_sp"></a>
 
-AWS calculates the charges for Amazon EC2 and AWS Fargate by aggregating all usage that's not covered by Reserved Instances, and applying the Savings Plans rates starting with the highest discount\.
+AWS calculates the charges for Amazon EC2, Fargate, and AWS Lambda by aggregating all usage that's not covered by Reserved Instances, and applying the Savings Plans rates starting with the highest discount\.
 
 The Savings Plans are applied to the account that owns the Savings Plans\. Then, it is shared with other accounts in the AWS organization\. For more information, see [Understanding How Savings Plans are Applied to Your Usage](https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-applying.html) in the *Savings Plans User Guide*\.
 

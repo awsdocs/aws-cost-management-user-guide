@@ -5,8 +5,6 @@ This topic contains example policies that you can attach to your IAM user or gro
 + `Effect` is always `Allow` or `Deny`\.
 + `Action` is the name of the action or a wildcard \(`*`\)\. 
 
-  For consoles, the action prefix in China is `awsbillingconsole`\. Everywhere else, it's `aws-portal`\.
-
   The action prefix is `budgets` for AWS Budgets, `cur` for AWS Cost and Usage reports, `aws-portal` for AWS Billing, or `ce` for Cost Explorer\.
 + `Resource` is always `*` for AWS Billing\.
 
@@ -30,6 +28,7 @@ These policies require that you activate IAM user access to the Billing and Cost
 + [Example 11: View costs and usage](#example-policy-ce-api)
 + [Example 12: Enable and Disable Regions](#enable-disable-regions)
 + [Example 13: View and manage Cost Categories](#example-policy-cc-api)
++ [Example 14: Create, view, edit, or delete AWS Cost and Usage Reports](#example-policy-report-definition)
 
 ## Example 1: Allow IAM users to view your billing information<a name="example-billing-view-billing-only"></a>
 
@@ -342,5 +341,32 @@ To allow IAM users to use, view, and manage Cost Categories, use the following p
       "Resource": "*"
     }
   ]
+}
+```
+
+## Example 14: Create, view, edit, or delete AWS Cost and Usage Reports<a name="example-policy-report-definition"></a>
+
+This policy allows an IAM user to create, view, edit, or delete `sample-report` using the API\.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "ManageSampleReport",
+            "Action": [
+                "cur:PutReportDefinition", 
+                "cur:DeleteReportDefinition",
+                "cur:ModifyReportDefinition"
+            ],
+            "Resource": "arn:aws:cur:*:123456789012:definition/sample-report"
+        },
+        {
+            "Sid": "DescribeReportDefs",
+            "Effect": "Allow",
+            "Action": "cur:DescribeReportDefinitions",
+            "Resource": "*"
+        }
+    ]
 }
 ```

@@ -10,7 +10,7 @@ For more information about AWS Cost and Usage Reports, see the [https://docs.aws
 
 ## Cost Explorer<a name="billing-security-logging-ce"></a>
 
-Cost Explorer enables you to view and analyze your costs and usage\. You can monitor data for up to the last 13 months, forecast how much you're likely to spend for the next three months, and get recommendations for what Reserved Instances to purchase\. You can use Cost Explorer to identify areas that need further inquiry and see trends that you can use to understand your costs\.
+Cost Explorer enables you to view and analyze your costs and usage\. You can monitor data for up to the last 12 months, forecast how much you're likely to spend for the next three months, and get recommendations for what Reserved Instances to purchase\. You can use Cost Explorer to identify areas that need further inquiry and see trends that you can use to understand your costs\.
 
 For more information about Cost Explorer, see the [Analyzing Your Costs with Cost Explorer](ce-what-is.md)\.
 

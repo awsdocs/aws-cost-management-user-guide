@@ -1,6 +1,6 @@
 # Optimizing Your Cost with Rightsizing Recommendations<a name="ce-rightsizing"></a>
 
-Rightsizing recommendations helps you identify cost saving opportunities in Cost Explorer, downsizing or terminating instances in your Amazon Elastic Compute Cloud \(Amazon EC2\)\. Rightsizing recommendations analyzes your Amazon EC2 resources and usage and terminates idle instances to lower your spending\. You can see all of your underutilized Amazon EC2 instances in every Region and linked account in a single view to immediately identify how much you can save\. After you’ve identified your recommendations, you can take action on the Amazon EC2 console\. 
+Rightsizing recommendations helps you identify cost saving opportunities in Cost Explorer, downsizing or terminating instances in your Amazon Elastic Compute Cloud \(Amazon EC2\)\. Rightsizing recommendations analyzes your Amazon EC2 resources and usage to show opportunities on how you can lower your spendings\. You can see all of your underutilized Amazon EC2 instances in every Region and linked account in a single view to immediately identify how much you can save\. After you’ve identified your recommendations, you can take action on the Amazon EC2 console\. 
 
 **Note**  
 GPU instances aren't supported in this feature, and rightsizing recommendations aren't provided for those instances\. 

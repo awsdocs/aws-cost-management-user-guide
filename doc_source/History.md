@@ -4,8 +4,9 @@ The following table describes the documentation for this release of the *AWS Bil
 
 | Change | Description | Date | 
 | --- |--- |--- |
-| [New security chapter](security.html) | Added a new security chapter that provides information about various security controls\. Former "Controlling Access" chapter contents have been migrated here\. | February 6, 2020 | 
-| [New AWS Cost and Usage Report user guide](cur/latest/userguide/what-is-cur.html) | Migrated and reorganized all AWS Cost and Usage Report content to a seperate user guide\. | January 21, 2020 | 
+| [New China Bank Redirect Payment Method](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-cny-payment.html) | Added a new payment method that allows China CNY customers using AWS Inc\. to pay their overdue payments using China Bank Redirect\. | February 20, 2020 | 
+| [New security chapter](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security.html) | Added a new security chapter that provides information about various security controls\. Former "Controlling Access" chapter contents have been migrated here\. | February 6, 2020 | 
+| [New AWS Cost and Usage Report user guide](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html) | Migrated and reorganized all AWS Cost and Usage Report content to a seperate user guide\. | January 21, 2020 | 
 | [New Reporting Method Using AWS Budgets](reporting-cost-budget.html) | Added a new reporting functionality using AWS Budgets reports\. | June 27, 2019 | 
 | [Added normalized units to Cost Explorer](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-default-reports.html) | Cost Explorer reports now include normalized units\. | February 5, 2019 | 
 | [Credit application changes](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html) | AWS changed how they apply credits\. | January 17, 2019 | 

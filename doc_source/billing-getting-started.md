@@ -140,7 +140,7 @@ When you finish creating a budget with Amazon SNS notifications, Amazon SNS send
 
 ## Step 5: Get Answers to Questions About Your Bill<a name="billing-gs-answer"></a>
 
-If you have questions about your bill, see the [AWS Knowledge Center](http://aws.amazon.com/premiumsupport/knowledge-center/)\. If you don't find the answer that you're looking for in the Knowledge Center, you can access account and billing support free of charge\. For more information about AWS Support, see [Contacting Customer Support About Your Bill](billing-get-answers.md)\. For information about closing your account, see [Closing an Account](close-account.md)\.
+If you have questions about your bill, see the [AWS Knowledge Center](http://aws.amazon.com/premiumsupport/knowledge-center/)\. If you don't find the answer that you're looking for in the Knowledge Center, you can access account and billing support free of charge\. For more information about AWS Support, see [Getting Help with AWS Billing and Cost Management](billing-get-answers.md)\. For information about closing your account, see [Closing an Account](close-account.md)\.
 
 ## Where Do I Go from Here?<a name="whereto"></a>
 

@@ -8,4 +8,4 @@ If your account is with AWS Europe, follow the procedures in this section to man
 + [Managing Your AWS Europe Credit Card Payment Verifications](manage-emea-cc-verification.md)
 + [Managing Your SEPA Direct Debit Payment Methods](manage-debit-emea.md)
 
-If you have questions about payment methods, see [Contacting Customer Support About Your Bill](billing-get-answers.md)\.
+If you have questions about payment methods, see [Getting Help with AWS Billing and Cost Management](billing-get-answers.md)\.

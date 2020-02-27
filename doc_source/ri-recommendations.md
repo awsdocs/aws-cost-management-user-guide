@@ -5,7 +5,6 @@ If you enable Cost Explorer, you automatically get Amazon EC2, Amazon RDS, Elast
 + Collects your usage into categories that are eligible for an RI
 + Simulates every combination of RIs in each category of usage
 + Identifies the best number of each type of RI to purchase to maximize your estimated savings
-+ Calculates your recommendations presuming that sharing is enabled across all accounts\. To see your current sharing status, see **Billing Preferences** from your root account\.
 
 For example, Cost Explorer automatically aggregates your Amazon EC2 Linux, shared tenancy, and c4 family usage in the US West \(Oregon\) Region and recommends that you buy size\-flexible regional RIs to apply to the c4 family usage\. Cost Explorer recommends the smallest size instance in an instance family\. This makes it easier to purchase a size\-flexible RI\. Cost Explorer also shows the equal number of normalized units so that you can purchase any instance size that you want\. For this example, your RI recommendation would be for `c4.large` because that is the smallest size instance in the c4 instance family\.
 

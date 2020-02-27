@@ -20,13 +20,22 @@ The offer index file looks like this:
    "[disclaimer](#offer-index-disclaimer)":"The disclaimers for this offer index",
    "[publicationDate](#offer-index-publication-date)":"The publication date of this offer index",
    "[offers](#offer-index-offers)":{
-      "[offerCode](#offer-index-offer-code)":{
-         "[offerCode](#offer-index-offer-code)":"The service that this price list is for",
-         "[currentVersionUrl](#offer-index-offer-current-version-url)":"The URL for this offer file",
-         "[currentRegionIndexUrl](#offer-index-regional-index-url)":"The URL for the regional offer index file"
-         "[savingsPlanVersionIndexUrl](#offer-index-savingsplan-url)":"The URL for the Savings Plan index file (if applicable)"
-      },
-   },
+        "firstService":{
+             "[offerCode](#offer-index-offer-code)":{
+             "[offerCode](#offer-index-offer-code)":"The service that this price list is for",
+             "[currentVersionUrl](#offer-index-offer-current-version-url)":"The URL for this offer file",
+             "[currentRegionIndexUrl](#offer-index-regional-index-url)":"The URL for the regional offer index file"
+             "[savingsPlanVersionIndexUrl](#offer-index-savingsplan-url)":"The URL for the Savings Plan index file (if applicable)"
+        },
+        "secondService":{
+             "[offerCode](#offer-index-offer-code)":{
+             "[offerCode](#offer-index-offer-code)":"The service that this price list is for",
+             "[currentVersionUrl](#offer-index-offer-current-version-url)":"The URL for this offer file",
+             "[currentRegionIndexUrl](#offer-index-regional-index-url)":"The URL for the regional offer index file"
+             "[savingsPlanVersionIndexUrl](#offer-index-savingsplan-url)":"The URL for the Savings Plan index file (if applicable)"
+        },
+        ...
+   }, 
 }
 ```
 

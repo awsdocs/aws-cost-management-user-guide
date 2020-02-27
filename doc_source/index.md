@@ -15,6 +15,7 @@ Amazon's trademarks and trade dress may not be used in
 -----
 ## Contents
 + [What Is AWS Billing and Cost Management?](billing-what-is.md)
++ [Getting Help with AWS Billing and Cost Management](billing-get-answers.md)
 + [Getting Started](billing-getting-started.md)
 + [Using the AWS Free Tier](billing-free-tier.md)
    + [Eligibility for the Free Tier](free-tier-eligibility.md)
@@ -23,6 +24,7 @@ Amazon's trademarks and trade dress may not be used in
 + [Managing Your Payments](manage-payments.md)
    + [Managing Your AWS Payments](manage-general.md)
       + [Managing Your AWS Payment Methods](manage-payment-method.md)
+         + [Use China Bank Redirect Payment Methods](manage-cny-payment.md)
       + [Managing Your Credit Card Payment Methods](manage-cc.md)
       + [Managing Your ACH Direct Debit Payment Methods](manage-debit.md)
    + [Managing Your Payments in India](edit-aispl-payment-method.md)
@@ -127,6 +129,5 @@ Amazon's trademarks and trade dress may not be used in
    + [Resilience in AWS Billing and Cost Management](disaster-recovery-resiliency.md)
    + [Infrastructure Security in AWS Billing and Cost Management](infrastructure-security.md)
 + [Quotas and Restrictions](billing-limits.md)
-+ [Contacting Customer Support About Your Bill](billing-get-answers.md)
 + [Document History](History.md)
 + [AWS Glossary](glossary.md)

@@ -113,7 +113,7 @@ The following is a list of fields in the downloadable CSV form from the **Rights
 + **Recommended Instance Type 1** – The instance family and size of the recommended instance type\. For termination recommendations, this field is empty\.
 + **Recommended Instance Type 1 Estimated Saving** – The projected savings based on the recommended action, instance type, associated rates, as well as your current Reserved Instance \(RI\) portfolio\.
 + **Recommended Instance Type 1 Projected CPU** – The projected value of the CPU utilization based on utilization of current instance disk and recommended instance specifications\.
-+ **Recommended Instance Type 1 Projected Memory** – The projected value of the disk utilization based on utilization of current instance memory and recommended instance specifications\.
++ **Recommended Instance Type 1 Projected Memory** – The projected value of the memory utilization based on utilization of current instance memory and recommended instance specifications\.
 + **Recommended Instance Type 1 Projected Disk** – The projected value of the disk utilization based on utilization of current instance disk and recommended instance specifications\.
 + **Recommended Instance Type 1 Network Capacity** – The maximum network input/output operations per second capacity of the recommended instance\. This isn't a measure of actual instance use or performance, only capacity\. It's not considered in the recommendation\.
 

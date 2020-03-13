@@ -6,6 +6,7 @@ The following table describes the current quotas, restrictions, and naming const
 + [Budgets](#limits-budgets)
 + [Reports](#limits-reports)
 + [Cost Categories](#limits-categories)
++ [Cost Explorer](#limits-ce)
 
 ## Budgets<a name="limits-budgets"></a>
 
@@ -34,3 +35,10 @@ The following table describes the current quotas, restrictions, and naming const
 | Cost Category Names | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
 | Cost Category value names | Names do not have to be unique | 
 | Characters allowed in a Cost Category name and value name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  | 
+
+## Cost Explorer<a name="limits-ce"></a>
+
+
+|  |  | 
+| --- |--- |
+| Maximum number of reports that you can save per account | 50 | 

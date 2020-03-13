@@ -4,3 +4,7 @@ The payer account of an organization can turn off Reserved Instance \(RI\) disco
 
 **Important**  
 Turning off RI and sharing can result in a higher monthly bill\.
+
+**Topics**
++ [Turning off shared Reserved Instances and Savings Plans discounts](ri-turn-off-process.md)
++ [Turning on shared Reserved Instances and Savings Plans discounts](ri-turn-on-process.md)

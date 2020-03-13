@@ -10,7 +10,7 @@ You can use the console to sign up for Amazon SNS notifications\.<a name="price-
 
 1. If you are new to Amazon SNS, choose **Get Started**\.
 
-1. If necessary, change the Region on the navigation bar to US East \(N\. Virginia\)\. The billing metric data is stored in this Region, even for resources in other Regions\.
+1. If necessary, change the Region on the navigation bar to **US East \(N\. Virginia\)**\.
 
 1. On the navigation pane, choose **Subscriptions**\.
 
@@ -25,3 +25,6 @@ You can use the console to sign up for Amazon SNS notifications\.<a name="price-
 1. For **Endpoint**, choose the format that you want to receive the notification in, such as Amazon SQS, Lambda, or email\.
 
 1. Choose **Create Subscription**\.
+
+**Important**  
+If you get an error message Couldn't create subscription\. Error code: InvalidParameter \- Error message: Invalid parameter: TopicArn, it's likely that your Region is not set to **US East \(N\. Virginia\)**\. The billing metric data is stored in this Region, even for resources in other Regions\. Repeat the process with close attention to step 3\.

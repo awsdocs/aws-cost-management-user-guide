@@ -125,7 +125,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Using Identity-Based Policies (IAM Policies) for Billing and Cost Management](billing-permissions-ref.md)
       + [Billing and Cost Management Policy Examples](billing-example-policies.md)
    + [Logging and Monitoring in AWS Billing and Cost Management](billing-security-logging.md)
-   + [Compliance Validation for AWS Billing and Cost Management](SERVICENAME-compliance.md)
+   + [Compliance Validation for AWS Billing and Cost Management](Billing-compliance.md)
    + [Resilience in AWS Billing and Cost Management](disaster-recovery-resiliency.md)
    + [Infrastructure Security in AWS Billing and Cost Management](infrastructure-security.md)
 + [Quotas and Restrictions](billing-limits.md)

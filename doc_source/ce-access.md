@@ -2,7 +2,7 @@
 
 You can manage access to your Cost Explorer in the following ways:
 + The payer \(master\) account can enable Cost Explorer at a root level, automatically enabling all linked \(member\) accounts\.
-+ After member accounts are enabled, the master account can use the Cost Explorer settings to control the level of information you want to expose in Cost Explorer\. Levels of information can include cost, refunds, credits, discounts \(for example, reservation volume discounts and bundled discounts\), and Reserved Instance \(RI\) recommendations\.
++ After member accounts are enabled, the master account can use the Cost Explorer settings to control the level of information you want to expose in Cost Explorer\. Levels of information can include cost, refunds or credits, discounts \(for example, reservation volume discounts, bundled discounts\), and Reserved Instance \(RI\) recommendations\.
 + After you enable Cost Explorer at the payer level, you can control the IAM policies of your IAM users to restrict access to Cost Explorer at the account level\. Users either get all access or no access with this option\.
 
 This topic provides details about how to control access in Cost Explorer\.

@@ -1,4 +1,4 @@
-# Use China Bank Redirect Payment Methods<a name="manage-cny-payment"></a>
+# Use China bank redirect payment methods<a name="manage-cny-payment"></a>
 
 If you have overdue payments on your AWS account and you’re a China customer with CNY payments enabled, you can use the China bank redirect payment method to complete your payments\. With the China bank redirect method, you can make payments in CNY for AWS Inc\. invoices up to a total of $50,000 USD at a time\.
 
@@ -6,18 +6,18 @@ If you have overdue payments on your AWS account and you’re a China customer w
 This payment method is only available for overdue payments and is not available as a default payment method\.
 
 **Topics**
-+ [Requirements to Use China Bank Redirect](#requirements-cny-redirect)
-+ [Enabling China Bank Redirect](#enable-cny-redirect)
-+ [Making Payments Using China Bank Redirect](#payment-cny-redirect)
++ [Requirements to use China bank redirect](#requirements-cny-redirect)
++ [Enabling China bank redirect](#enable-cny-redirect)
++ [Making payments using China bank redirect](#payment-cny-redirect)
 
-## Requirements to Use China Bank Redirect<a name="requirements-cny-redirect"></a>
+## Requirements to use China bank redirect<a name="requirements-cny-redirect"></a>
 
 To enable a China bank account as a payment method, your account must meet the following requirements:
 + Your account must be an Amazon Web Services, Inc\. customer\.
 + You must have a [China Union Pay credit card payment method](manage-cc.md#yuan-cc-first-time) in CNY enabled\.
 + You must have CNY set as your preferred currency\.
 
-## Enabling China Bank Redirect<a name="enable-cny-redirect"></a>
+## Enabling China bank redirect<a name="enable-cny-redirect"></a>
 
 To use China bank redirect, you must enable the payment method on the Billing and Cost Management console\. You can only enable China bank redirect when you have overdue invoices\.<a name="enable-cny-steps"></a>
 
@@ -31,7 +31,7 @@ To use China bank redirect, you must enable the payment method on the Billing an
 
 1. Under **China bank redirect**, choose **Enable bank redirect**\.
 
-## Making Payments Using China Bank Redirect<a name="payment-cny-redirect"></a>
+## Making payments using China bank redirect<a name="payment-cny-redirect"></a>
 
 After enabling the payment method, you can use China bank redirect to make payments on your invoices that are past due\.<a name="pay-cny-steps"></a>
 

@@ -1,4 +1,4 @@
-# Billing and Cost Management Policy Examples<a name="billing-example-policies"></a>
+# Billing and Cost Management policy examples<a name="billing-example-policies"></a>
 
 This topic contains example policies that you can attach to your IAM user or group to control access to your account's billing information and tools\. The following basic rules apply to IAM policies for Billing and Cost Management:
 + `Version` is always `2012-10-17`\.
@@ -12,22 +12,22 @@ This topic contains example policies that you can attach to your IAM user or gro
 + It's possible to have multiple statements in one policy\.
 
 **Note**  
-These policies require that you activate IAM user access to the Billing and Cost Management console on the [Account Settings](https://portal.aws.amazon.com/billing/home#/account) console page\. For more information, see [Activating Access to the Billing and Cost Management Console](control-access-billing.md#ControllingAccessWebsite-Activate)\.
+These policies require that you activate IAM user access to the Billing and Cost Management console on the [Account Settings](https://portal.aws.amazon.com/billing/home#/account) console page\. For more information, see [Activating access to the Billing and Cost Management console](control-access-billing.md#ControllingAccessWebsite-Activate)\.
 
-**Example Topics**
+**Example topics**
 + [Example 1: Allow IAM users to view your billing information](#example-billing-view-billing-only)
-+ [Example 2: Allow IAM users to access the Reports console page](#example-billing-view-reports)
++ [Example 2: Allow IAM users to access the reports console page](#example-billing-view-reports)
 + [Example 3: Deny IAM users access to the Billing and Cost Management console](#example-billing-deny-all)
 + [Example 4: Allow full access to AWS services but deny IAM users access to the Billing and Cost Management console](#ExampleAllowAllDenyBilling)
-+ [Example 5: Allow IAM users to view the Billing and Cost Management console except for Account Settings](#example-billing-read-only)
++ [Example 5: Allow IAM users to view the Billing and Cost Management console except for account settings](#example-billing-read-only)
 + [Example 6: Allow IAM users to modify billing information](#example-billing-deny-modifybilling)
 + [Example 7: Allow IAM users to create budgets](#example-billing-allow-createbudgets)
-+ [Example 8: Deny access to Account Settings, but allow full access to all other billing and usage information](#example-billing-deny-modifyaccount)
++ [Example 8: Deny access to account settings, but allow full access to all other billing and usage information](#example-billing-deny-modifyaccount)
 + [Example 9: Deposit reports into an Amazon S3 bucket](#example-billing-s3-bucket)
 + [Example 10: Find products and prices](#example-policy-pe-api)
 + [Example 11: View costs and usage](#example-policy-ce-api)
-+ [Example 12: Enable and Disable Regions](#enable-disable-regions)
-+ [Example 13: View and manage Cost Categories](#example-policy-cc-api)
++ [Example 12: Enable and disable regions](#enable-disable-regions)
++ [Example 13: View and manage cost categories](#example-policy-cc-api)
 + [Example 14: Create, view, edit, or delete AWS Cost and Usage Reports](#example-policy-report-definition)
 
 ## Example 1: Allow IAM users to view your billing information<a name="example-billing-view-billing-only"></a>
@@ -55,11 +55,11 @@ To allow an IAM user to view your billing information without giving the IAM use
 }
 ```
 
-## Example 2: Allow IAM users to access the Reports console page<a name="example-billing-view-reports"></a>
+## Example 2: Allow IAM users to access the reports console page<a name="example-billing-view-reports"></a>
 
 To allow an IAM user to access the **Reports** console page and to view the usage reports that contain account activity information, use a policy similar to this example policy\.
 
-For definitions of each action, see [Billing Actions](billing-permissions-ref.md#user-permissions)\.
+For definitions of each action, see [Billing actions](billing-permissions-ref.md#user-permissions)\.
 
 ```
 {
@@ -121,7 +121,7 @@ This policy doesn't allow any actions\. Use this policy in combination with othe
 }
 ```
 
-## Example 5: Allow IAM users to view the Billing and Cost Management console except for Account Settings<a name="example-billing-read-only"></a>
+## Example 5: Allow IAM users to view the Billing and Cost Management console except for account settings<a name="example-billing-read-only"></a>
 
 This policy allows read\-only access to all of the Billing and Cost Management console, including the **Payments Method** and **Reports** console pages, but denies access to the **Account Settings** page, thus protecting the account password, contact information, and security questions\. 
 
@@ -210,7 +210,7 @@ To allow IAM users to create budgets in the Billing and Cost Management console,
 }
 ```
 
-## Example 8: Deny access to Account Settings, but allow full access to all other billing and usage information<a name="example-billing-deny-modifyaccount"></a>
+## Example 8: Deny access to account settings, but allow full access to all other billing and usage information<a name="example-billing-deny-modifyaccount"></a>
 
 To protect your account password, contact information, and security questions, you can deny IAM user access to **Account Settings** while still enabling full access to the rest of the functionality in the Billing and Cost Management console, as shown in the following example\.
 
@@ -315,11 +315,11 @@ To allow IAM users to use the AWS Cost Explorer API, use the following policy to
 }
 ```
 
-## Example 12: Enable and Disable Regions<a name="enable-disable-regions"></a>
+## Example 12: Enable and disable regions<a name="enable-disable-regions"></a>
 
 For an example IAM policy that allows users to enable and disable Regions, see [AWS: Allows Enabling and Disabling AWS Regions](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_aws-enable-disable-regions.html) in the *IAM User Guide*\. 
 
-## Example 13: View and manage Cost Categories<a name="example-policy-cc-api"></a>
+## Example 13: View and manage cost categories<a name="example-policy-cc-api"></a>
 
 To allow IAM users to use, view, and manage Cost Categories, use the following policy to grant them access\.
 
@@ -336,7 +336,8 @@ To allow IAM users to use, view, and manage Cost Categories, use the following p
         "ce:UpdateCostCategoryDefinition",
         "ce:CreateCostCategoryDefinition",
         "ce:DeleteCostCategoryDefinition",
-        "ce:ListCostCategoryDefinitions"
+        "ce:ListCostCategoryDefinitions",
+        "pricing:DescribeServices"
       ],
       "Resource": "*"
     }

@@ -3,7 +3,6 @@
 For basic tag restrictions, see [Tag Restrictions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#tag-restrictions) in the Amazon EC2 User Guide\.
 
 The following restrictions apply to user\-defined tags for Cost Allocation:
-+ The maximum active tag keys for Billing and Cost Management reports is 500\.
 + The reserved prefix is `aws:`\.
 
   AWS generated tag names and values are automatically assigned the `aws:` prefix, which you can't assign\. User\-defined tag names have the prefix `user:` in the cost allocation report\.

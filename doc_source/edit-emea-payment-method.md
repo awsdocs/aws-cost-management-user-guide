@@ -1,4 +1,4 @@
-# Managing Your AWS Europe Payment Methods<a name="edit-emea-payment-method"></a>
+# Managing your AWS Europe payment methods<a name="edit-emea-payment-method"></a>
 
 You can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console to perform the following tasks for all payment types:
 + [View payment methods associated with your account](#view-credit-emea)
@@ -6,7 +6,7 @@ You can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/p
 + [Make a payment](#making-a-payment-emea)
 + [Remove a payment method from your AWS Europe account](#remove-credit-emea)
 
-In addition, you can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console to manage your credit cards and direct debit accounts\. For more information, see [Managing Your Credit Card Payment Methods](manage-cc.md) and [Managing Your SEPA Direct Debit Payment Methods](manage-debit-emea.md)\.<a name="view-credit-emea"></a>
+In addition, you can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console to manage your credit cards and direct debit accounts\. For more information, see [Managing your credit card payment methods](manage-cc.md) and [Managing your SEPA direct debit payment methods](manage-debit-emea.md)\.<a name="view-credit-emea"></a>
 
 **To view payment methods associated with your AWS account**
 
@@ -28,7 +28,7 @@ You can use the console to view the payment methods associated with your account
 
 AWS Europe charges your default payment method automatically at the beginning of each month\. If that charge doesn't process successfully, you can use the console to update your payment method and make a payment\.
 **Note**  
-If you pay by SEPA direct debit, AWS provides you with your invoice and initiates the charge to your payment method either the following day or the invoice due date, whichever is latest\. It can take up to 5 business days for your payment to succeed\. For more information, see [Managing Your SEPA Direct Debit Payment Methods](manage-debit-emea.md)\.
+If you pay by SEPA direct debit, AWS provides you with your invoice and initiates the charge to your payment method either the following day or the invoice due date, whichever is latest\. It can take up to 5 business days for your payment to succeed\. For more information, see [Managing your SEPA direct debit payment methods](manage-debit-emea.md)\.
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 

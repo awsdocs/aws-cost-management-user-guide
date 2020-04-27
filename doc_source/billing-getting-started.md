@@ -1,16 +1,16 @@
-# Getting Started<a name="billing-getting-started"></a>
+# Getting started<a name="billing-getting-started"></a>
 
 The following steps discuss a few of the most common tasks that you're likely to perform when using the Billing and Cost Management console\. 
 
 **Topics**
-+ [Step 1: Review Your Usage](#billing-gs-review)
-+ [Step 2: Turn on Reports](#step-2)
-+ [Step 3: Download or Print Your Bill](#billing-gs-download)
-+ [Step 4: Set Up Budgets to Monitor Your Account](#billing-gs-alerts)
-+ [Step 5: Get Answers to Questions About Your Bill](#billing-gs-answer)
-+ [Where Do I Go from Here?](#whereto)
++ [Step 1: Review your usage](#billing-gs-review)
++ [Step 2: Turn on reports](#step-2)
++ [Step 3: Download or print your bill](#billing-gs-download)
++ [Step 4: Set up budgets to monitor your account](#billing-gs-alerts)
++ [Step 5: Get answers to questions about your bill](#billing-gs-answer)
++ [Where do I go from here?](#whereto)
 
-## Step 1: Review Your Usage<a name="billing-gs-review"></a>
+## Step 1: Review your usage<a name="billing-gs-review"></a>
 
 Billing and Cost Management offers you a number of different ways to view and monitor your AWS usage\. Here's how to quickly check to see what you have used so far in the current month\.
 
@@ -20,22 +20,22 @@ Billing and Cost Management offers you a number of different ways to view and mo
 
 1. On the navigation pane, choose the applicable option:  
 **Cost Explorer**  
- Choose [Cost Explorer](https://console.aws.amazon.com/cost-reports/home?#/custom) to track and analyze your AWS usage\. Cost Explorer is free for all accounts\. For more information about Cost Explorer, see [Analyzing Your Costs with Cost Explorer](ce-what-is.md)\.   
+ Choose [Cost Explorer](https://console.aws.amazon.com/cost-reports/home?#/custom) to track and analyze your AWS usage\. Cost Explorer is free for all accounts\. For more information about Cost Explorer, see [Analyzing your costs with Cost Explorer](ce-what-is.md)\.   
 **Budgets**  
- Choose [Budgets](https://console.aws.amazon.com/billing/home?region=us-east-1#/budgets) to manage budgets for your account\. For more information about budgets, see [Monitoring Your Usage and Costs](monitoring-costs.md)\.   
-You can also check the status of your free tier with the provided AWS Free Tier usage alerts using AWS Budgets\. For more information about AWS Free Tier usage alerts, see [Free Tier Usage Alerts Using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.   
+ Choose [Budgets](https://console.aws.amazon.com/billing/home?region=us-east-1#/budgets) to manage budgets for your account\. For more information about budgets, see [Monitoring your usage and costs](monitoring-costs.md)\.   
+You can also check the status of your free tier with the provided AWS Free Tier usage alerts using AWS Budgets\. For more information about AWS Free Tier usage alerts, see [Free Tier usage alerts using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.   
 **Bills**  
  Choose [Bills](https://console.aws.amazon.com/billing/home?region=us-east-1#/bill) to see details about your current charges\.   
 **Orders and Invoices**  
  Choose [Orders and invoices](https://console.aws.amazon.com/billing/home?region=us-east-1#/paymenthistory/history?redirected) to see your past payment transactions\. 
 
-## Step 2: Turn on Reports<a name="step-2"></a>
+## Step 2: Turn on reports<a name="step-2"></a>
 
  In addition to the features described in step 1, AWS Billing and Cost Management offers a set of billing reports about your AWS usage\. The reports show you which AWS services you used, the amount of time that you used them, the amount of data that you transferred in and out of storage, the average storage space that you used, and more\. 
 
 To learn more about how to set up your reports, see [Creating Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/creating-cur.html) in the *Cost and Usage Report Guide*\.
 
-## Step 3: Download or Print Your Bill<a name="billing-gs-download"></a>
+## Step 3: Download or print your bill<a name="billing-gs-download"></a>
 
 AWS Billing and Cost Management closes the billing period at midnight on the last day of each month and then calculates your bill\. Most bills are ready for you to download by the seventh accounting day of the month\. 
 
@@ -49,7 +49,7 @@ AWS Billing and Cost Management closes the billing period at midnight on the las
 
 1. Choose **Download CSV** to download a comma\-separated variable file or choose **Print**\.
 
-## Step 4: Set Up Budgets to Monitor Your Account<a name="billing-gs-alerts"></a>
+## Step 4: Set up budgets to monitor your account<a name="billing-gs-alerts"></a>
 
 If you use the AWS Free Tier, Billing and Cost Management automatically provides AWS Free Tier usage alerts via AWS Budgets to track your free tier usage\. Billing and Cost Management notifies you when you go over the free tier limits or are forecasted to go over the free tier limits\. AWS sends these notifications to the email that you used to create your AWS account\.
 
@@ -127,7 +127,7 @@ The amortized cost of any reservation hours that you used\. For more information
 
    AWS verifies that your budget has permission to send notifications to your Amazon SNS topic by sending a test email to your Amazon SNS topic\. If the Amazon SNS topic ARN is valid but the **Verify** step fails, check the Amazon SNS topic policy to make sure that it allows your budget to publish to that topic\. 
 
-   For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS Topic for Budget Notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
+   For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
 
    To receive a notification, you must specify an email address\. You can also specify an Amazon SNS topic\.
 
@@ -138,15 +138,15 @@ The amortized cost of any reservation hours that you used\. For more information
 **Important**  
 When you finish creating a budget with Amazon SNS notifications, Amazon SNS sends a confirmation email to the email addresses that you specify\. The subject line is **AWS Notification \- Subscription Confirmation**\. A recipient must choose **Confirm subscription** in the confirmation email to begin receiving notifications\. 
 
-## Step 5: Get Answers to Questions About Your Bill<a name="billing-gs-answer"></a>
+## Step 5: Get answers to questions about your bill<a name="billing-gs-answer"></a>
 
-If you have questions about your bill, see the [AWS Knowledge Center](http://aws.amazon.com/premiumsupport/knowledge-center/)\. If you don't find the answer that you're looking for in the Knowledge Center, you can access account and billing support free of charge\. For more information about AWS Support, see [Getting Help with AWS Billing and Cost Management](billing-get-answers.md)\. For information about closing your account, see [Closing an Account](close-account.md)\.
+If you have questions about your bill, see the [AWS Knowledge Center](http://aws.amazon.com/premiumsupport/knowledge-center/)\. If you don't find the answer that you're looking for in the Knowledge Center, you can access account and billing support free of charge\. For more information about AWS Support, see [Getting help with AWS Billing and Cost Management](billing-get-answers.md)\. For information about closing your account, see [Closing an account](close-account.md)\.
 
-## Where Do I Go from Here?<a name="whereto"></a>
+## Where do I go from here?<a name="whereto"></a>
 
  Explore some of the features designed to help you dig a little deeper and streamline your accounting practices\. 
-+ [Tracking Your Free Tier Usage](tracking-free-tier-usage.md)
++ [Tracking your Free Tier usage](tracking-free-tier-usage.md)
 + [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)
-+ [Analyzing Your Costs with Cost Explorer](ce-what-is.md)
-+ [Managing Your Costs with Budgets](budgets-managing-costs.md)
-+ [Consolidated Billing for Organizations](consolidated-billing.md)
++ [Analyzing your costs with Cost Explorer](ce-what-is.md)
++ [Managing your costs with AWS Budgets](budgets-managing-costs.md)
++ [Consolidated billing for AWS Organizations](consolidated-billing.md)

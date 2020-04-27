@@ -1,12 +1,12 @@
-# Reading the Offer Index File<a name="reading-the-offer-index"></a>
+# Reading the offer index file<a name="reading-the-offer-index"></a>
 
 After you have the offer index file, you can use it to find an offer file\.
 
 **Topics**
-+ [Offer Index File](#offer-index-example)
-+ [Offer Index Definitions](#offer-index-termdef)
++ [Offer index file](#offer-index-example)
++ [Offer index definitions](#offer-index-termdef)
 
-## Offer Index File<a name="offer-index-example"></a>
+## Offer index file<a name="offer-index-example"></a>
 
 The offer index file is available as a JSON file\. You can read the file multiple ways, such as using a text program to read the JSON file or a program that parses the JSON\.
 
@@ -39,7 +39,7 @@ The offer index file looks like this:
 }
 ```
 
-## Offer Index Definitions<a name="offer-index-termdef"></a>
+## Offer index definitions<a name="offer-index-termdef"></a>
 
 The following list defines the terms that are used in the offer index file:
 

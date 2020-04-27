@@ -1,10 +1,10 @@
-# Using the Default Cost Explorer Reports<a name="ce-default-reports"></a>
+# Using the default Cost Explorer reports<a name="ce-default-reports"></a>
 
 Cost Explorer provides you with a couple of default reports\. You can't modify these reports, but you can use them to create your own custom reports\.
-+ [Cost and Usage Reports](#ce-cost-usage-reports)
-+ [Reserved Instance Reports](#ce-ri-reports)
++ [Cost and usage reports](#ce-cost-usage-reports)
++ [Reserved Instance reports](#ce-ri-reports)
 
-## Cost and Usage Reports<a name="ce-cost-usage-reports"></a>
+## Cost and usage reports<a name="ce-cost-usage-reports"></a>
 
 Cost Explorer provides you with the following reports for understanding your costs\.
 + [AWS Marketplace](#ce-marketplace)
@@ -33,15 +33,15 @@ The **Monthly costs by service** report shows your costs for the last six months
 
 The **Monthly EC2 running hours costs and usage** report shows how much you have spent on active Reserved Instances \(RIs\)\.
 
-## Reserved Instance Reports<a name="ce-ri-reports"></a>
+## Reserved Instance reports<a name="ce-ri-reports"></a>
 
 Cost Explorer provides you with the following reports for understanding your reservations\.
 
 The reservation reports show your Amazon EC2 coverage and utilization in either hours or normalized units\. Normalized units enable you to see your Amazon EC2 usage for multiple sizes of instances in a uniform way\. For example, suppose you run an `xlarge` instance and a `2xlarge` instance\. If you run both instances for the same amount of time, the `2xlarge` instance uses twice as much of your reservation as the `xlarge` instance, even though both instances show only one instance\-hour\. Using normalized units instead of instance\-hours, the `xlarge` instance used 8 normalized units, and the `2xlarge` instance used 16 normalized units\. For more information, see [Instance Size Flexibility for EC2 Reserved Instances](https://aws.amazon.com/blogs/aws/new-instance-size-flexibility-for-ec2-reserved-instances)\.
-+ [RI Utilization Reports](#ce-utilization-views)
-+ [RI Coverage Reports](#ce-coverage-views)
++ [RI utilization reports](#ce-utilization-views)
++ [RI coverage reports](#ce-coverage-views)
 
-### RI Utilization Reports<a name="ce-utilization-views"></a>
+### RI utilization reports<a name="ce-utilization-views"></a>
 
 The RI Utilization reports show how much of your Amazon EC2, Amazon Redshift, Amazon RDS, Amazon Elasticsearch Service, and Amazon ElastiCache Reserved Instance \(RIs\) that you use, how much you saved by using RIs, how much you overspent on RIs, and your net savings from purchasing RIs during the selected time range\. This helps you to see if you have purchased too many RIs\. 
 
@@ -50,9 +50,9 @@ The RI Utilization charts display the number of RI hours that your account uses,
 The following table shows an example of potential savings \(all costs are in USD\)\.
 
 
-**RI Utilization Example**  
+**RI utilization example**  
 
-| **Account** | **RI Utilization** | **RI Hours Purchased** | **RI Hours Used** | **RI Hours Unused** | **On\-Demand Cost of RI Hours Used** | **Effective RI Cost** | **Net Savings** | **Total Potential Savings** | 
+| **Account** | **RI utilization** | **RI hours purchased** | **RI hours used** | **RI hours unused** | **On\-Demand cost of RI hours used** | **Effective RI cost** | **Net savings** | **Total potential savings** | 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
 |  Martha  |  0\.50  |  100  |  50  |  50  |  $200  |  $150  |  $50  |  $250  | 
 |  Liu Jie  |  0\.75  |  100  |  75  |  25  |  $300  |  $150  |  $150  |  $250  | 
@@ -65,7 +65,7 @@ As shown in the preceding table, Martha, Liu Jie, and Saanvi purchase RIs at $1\
 
 The reports allow you to define a utilization threshold, known as a *utilization target*, and identify RIs that meet your utilization target and RIs that are underutilized\. The chart shows RI utilization as the percentage of purchased RI hours that are used by matching instances, rounded to the nearest percentage\. 
 
-Target utilization is shown on the chart as a dotted line in the chart and in the table below the chart as a colored RI utilization status bar\. RIs with a red status bar are RIs with no hours used\. RIs with a yellow status bar are under your utilization target\. RIs with a green status bar have met your utilization target\. Instances with a gray bar aren't using reservations\. You can change the utilization target in the **Display Options** section\. To remove the utilization target line from the chart, clear the **Show target line on chart** check box\. You can also create budgets that enable AWS to notify you if you fall below your utilization targets\. For more information, see [Managing Your Costs with Budgets](budgets-managing-costs.md)\.
+Target utilization is shown on the chart as a dotted line in the chart and in the table below the chart as a colored RI utilization status bar\. RIs with a red status bar are RIs with no hours used\. RIs with a yellow status bar are under your utilization target\. RIs with a green status bar have met your utilization target\. Instances with a gray bar aren't using reservations\. You can change the utilization target in the **Display Options** section\. To remove the utilization target line from the chart, clear the **Show target line on chart** check box\. You can also create budgets that enable AWS to notify you if you fall below your utilization targets\. For more information, see [Managing your costs with AWS Budgets](budgets-managing-costs.md)\.
 
 You can filter the chart to analyze the purchasing accounts, instance types, and more\. RI reports use a combination of RI\-specific filters and regular Cost Explorer filters\. The RI\-specific filters are available only for the Cost Explorer RI Utilization and RI Coverage reports\. They aren't available anywhere else that AWS uses Cost Explorer filters\. The following filters are available:
 + **Availability Zone** – Filter your RI usage by specific Availability Zones\.
@@ -117,7 +117,7 @@ You can use this information to track how many RI usage hours you used and how m
 
 The Daily RI Utilization chart displays your RI utilization for the previous three months on a daily basis\. The Monthly RI Utilization chart displays your RI utilization for the previous 12 months on a monthly basis\. 
 
-### RI Coverage Reports<a name="ce-coverage-views"></a>
+### RI coverage reports<a name="ce-coverage-views"></a>
 
 The RI Coverage reports show how many of your Amazon EC2, Amazon Redshift, Amazon RDS, Amazon Elasticsearch Service, and Amazon ElastiCache instance hours are covered by RIs, how much you spent on On\-Demand Instances, and how much you might have saved had you purchased more reservations\. This enables you to see if you have under\-purchased RIs\. 
 
@@ -125,7 +125,7 @@ The RI coverage charts display the percentage of instance hours that your accoun
 
 You can define a threshold for how much coverage you want from RIs, known as a *coverage target*, which enables you to see where you can reserve more RIs\. 
 
-Target coverage is shown on the chart as a dotted line, and the average coverage is shown in the table below the chart as a colored status bar\. Instances with a red status bar are instances with no RI coverage\. Instances with a yellow status bar are under your coverage target\. Instances with a green status bar have met your coverage target\. Instances with a gray bar aren't using reservations\. You can change the coverage target in the **Display Options** section\. To remove the coverage target line from the chart, clear the **Show target line on chart** check box\. You can also create coverage budgets that enable AWS to notify you if you fall below your coverage target\. For more information, see [Managing Your Costs with Budgets](budgets-managing-costs.md)\.
+Target coverage is shown on the chart as a dotted line, and the average coverage is shown in the table below the chart as a colored status bar\. Instances with a red status bar are instances with no RI coverage\. Instances with a yellow status bar are under your coverage target\. Instances with a green status bar have met your coverage target\. Instances with a gray bar aren't using reservations\. You can change the coverage target in the **Display Options** section\. To remove the coverage target line from the chart, clear the **Show target line on chart** check box\. You can also create coverage budgets that enable AWS to notify you if you fall below your coverage target\. For more information, see [Managing your costs with AWS Budgets](budgets-managing-costs.md)\.
 
 The RI coverage reports use the Cost Explorer filters instead of the RI Utilization filters\. You can filter the chart to analyze the purchasing accounts, instance types, and more\. RI reports use a combination of RI\-specific filters and regular Cost Explorer filters\. The RI\-specific filters are available only for the Cost Explorer RI Utilization and RI Coverage reports, and aren't available anywhere else that AWS uses Cost Explorer filters\. The following filters are available:
 + **Availability Zone** – Filter your RI usage by specific Availability Zones\.

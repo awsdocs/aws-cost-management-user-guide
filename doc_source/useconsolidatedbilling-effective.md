@@ -1,4 +1,4 @@
-# Effective Billing Date<a name="useconsolidatedbilling-effective"></a>
+# Effective billing date<a name="useconsolidatedbilling-effective"></a>
 
 When the linked account owner accepts your request to join the organization, you immediately become responsible for the linked account's charges\. If the linked account joins in the middle of the month, the payer account is billed only for the latter part of the month\. The linked account's original owner is still billed for the first part of the month, as shown in the following diagram\.
 

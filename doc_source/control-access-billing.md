@@ -1,14 +1,14 @@
-# Overview of Managing Access Permissions<a name="control-access-billing"></a>
+# Overview of managing access permissions<a name="control-access-billing"></a>
 
 AWS Billing and Cost Management integrates with the AWS Identity and Access Management \(IAM\) service so that you can control who in your organization has access to specific pages on the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing/home#/)\. You can control access to invoices and detailed information about charges and account activity, budgets, payment methods, and credits\.
 
 For more information on how to activate access to the Billing Console, see [Tutorial: Delegate Access to the Billing Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_billing.html) in the *IAM User Guide*\.
 
 **Topics**
-+ [Granting Access to Your Billing Information and Tools](#grantaccess)
-+ [Activating Access to the Billing and Cost Management Console](#ControllingAccessWebsite-Activate)
++ [Granting access to your billing information and tools](#grantaccess)
++ [Activating access to the Billing and Cost Management console](#ControllingAccessWebsite-Activate)
 
-## Granting Access to Your Billing Information and Tools<a name="grantaccess"></a>
+## Granting access to your billing information and tools<a name="grantaccess"></a>
 
 The AWS account owner can access billing information and tools by signing in to the AWS Management Console using the account password\. We recommend that you don't use the account password for everyday access to the account, and especially that you don't share account credentials with others to give them access to your account\. 
 
@@ -18,9 +18,9 @@ By default, IAM users do not have access to the [AWS Billing and Cost Management
 
 **Note**  
 IAM is a feature of your AWS account\. If you are already signed up for a product that is integrated with IAM, you don't need to do anything else to sign up for IAM, nor will you be charged for using it\.  
-Permissions for Cost Explorer apply to all accounts and linked accounts, regardless of IAM policies\. For more information about Cost Explorer access, see [Controlling Access for Cost Explorer](ce-access.md)
+Permissions for Cost Explorer apply to all accounts and linked accounts, regardless of IAM policies\. For more information about Cost Explorer access, see [Controlling access for Cost Explorer](ce-access.md)
 
-## Activating Access to the Billing and Cost Management Console<a name="ControllingAccessWebsite-Activate"></a>
+## Activating access to the Billing and Cost Management console<a name="ControllingAccessWebsite-Activate"></a>
 
 To be able to grant your IAM user and role access to your account's Billing and Cost Management console, you must *activate* the functionality\. 
 
@@ -41,4 +41,4 @@ When you activate IAM user access to the Billing and Cost Management console, yo
 
  You can now use IAM policies to control which pages a user can access\.
 
-After you have activated IAM user access, you can attach IAM policies to grant or deny access to specific billing features\. For more information about using policies to grant IAM users access to Billing and Cost Management features, see [Using Identity\-Based Policies \(IAM Policies\) for Billing and Cost Management](billing-permissions-ref.md)\.
+After you have activated IAM user access, you can attach IAM policies to grant or deny access to specific billing features\. For more information about using policies to grant IAM users access to Billing and Cost Management features, see [Using identity\-based policies \(IAM policies\) for Billing and Cost Management](billing-permissions-ref.md)\.

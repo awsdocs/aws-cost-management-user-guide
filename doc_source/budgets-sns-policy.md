@@ -1,4 +1,4 @@
-# Creating an Amazon SNS Topic for Budget Notifications<a name="budgets-sns-policy"></a>
+# Creating an Amazon SNS topic for budget notifications<a name="budgets-sns-policy"></a>
 
 When you create a budget that sends notifications to an Amazon Simple Notification Service \(Amazon SNS\) topic, you need to either have a preexisting Amazon SNS topic or create one\. Amazon SNS topics allow you to send notifications over SNS in addition to email\. Your budget must have permissions to send a notification to your topic\. 
 
@@ -41,7 +41,7 @@ To create an Amazon SNS topic and grant permissions to your budget, use the Amaz
 
    Your topic now appears in the list of topics on the **Topics** page\.
 
-## Checking or Resending Notification Confirmation Emails<a name="budgets-confirm-subscription"></a>
+## Checking or resending notification confirmation emails<a name="budgets-confirm-subscription"></a>
 
 When you create a budget with notifications, you also create Amazon SNS notifications\. For notifications to be sent, you must accept the subscription to the Amazon SNS notification topic\.
 
@@ -61,7 +61,7 @@ To confirm that your notification subscriptions have been accepted or to resend 
 
    When each owner of an endpoint receives the email, they must choose the **Confirm subscription** link to activate the notification\.
 
-## Protecting Your Amazon SNS Budget Alerts Data with SSE and AWS KMS<a name="protect-sns-sse"></a>
+## Protecting your Amazon SNS budget alerts data with SSE and AWS KMS<a name="protect-sns-sse"></a>
 
 You can use server\-side encryption \(SSE\) to transfer sensitive data in encrypted topics\. SSE protects Amazon SNS messages by using keys managed in AWS Key Management Service \(AWS KMS\)\.
 
@@ -71,7 +71,7 @@ To create encrypted topics using AWS CloudFormation, see the [AWS CloudFormation
 
 SSE encrypts messages as soon as Amazon SNS receives them\. The messages are stored encrypted and are decrypted using Amazon SNS only when they're sent\.
 
-### Configuring AWS KMS Permissions<a name="configure-kms-perm"></a>
+### Configuring AWS KMS permissions<a name="configure-kms-perm"></a>
 
 You must configure your AWS KMS key policies before you can use SSE\. The configuration enables you to encrypt topics, as well as encrypt and decrypt messages\. For details about AWS KMS permissions, see [AWS KMS API Permissions: Actions and Resources Reference](https://docs.aws.amazon.com/kms/latest/developerguide/kms-api-permissions-reference.html) in the *AWS Key Management Service Developer Guide*\.
 

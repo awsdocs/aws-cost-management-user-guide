@@ -1,14 +1,14 @@
-# Managing Your Saved Cost Explorer Reports<a name="ce-custom-reports"></a>
+# Managing your saved Cost Explorer reports<a name="ce-custom-reports"></a>
 
 You can save the results of a Cost Explorer query as a Cost Explorer report\. This enables you to track your Cost Explorer results and forecasts over time\.
 
 **Topics**
-+ [Creating a Cost Explorer Report](#save-ce-reports)
-+ [Viewing a Cost Explorer Report](#view-saved-ce-reports)
-+ [Editing a Cost Explorer Report](#edit-saved-ce-reports)
-+ [Deleting a Cost Explorer Report](#delete-saved-ce-report)
++ [Creating a Cost Explorer report](#save-ce-reports)
++ [Viewing a Cost Explorer report](#view-saved-ce-reports)
++ [Editing a Cost Explorer report](#edit-saved-ce-reports)
++ [Deleting a Cost Explorer report](#delete-saved-ce-report)
 
-## Creating a Cost Explorer Report<a name="save-ce-reports"></a>
+## Creating a Cost Explorer report<a name="save-ce-reports"></a>
 
 You can use the console to save the results of a Cost Explorer query as a report\.
 
@@ -35,7 +35,7 @@ Cost Explorer is available in any AWS account for no cost\.
 
 1. In the **Save report** dialog box, choose **Continue**\.
 
-## Viewing a Cost Explorer Report<a name="view-saved-ce-reports"></a>
+## Viewing a Cost Explorer report<a name="view-saved-ce-reports"></a>
 
 You can use the console to view saved Cost Explorer reports\.
 
@@ -53,7 +53,7 @@ Cost Explorer is available in any AWS account for no cost\.
 
 1. To return to the Cost Explorer page, choose **Back**\.
 
-## Editing a Cost Explorer Report<a name="edit-saved-ce-reports"></a>
+## Editing a Cost Explorer report<a name="edit-saved-ce-reports"></a>
 
 You can use the console to edit Cost Explorer reports\.
 
@@ -77,7 +77,7 @@ You can't edit the preconfigured reports\. If you choose one of the preconfigure
 
 1. In the **Save report** dialog box, choose **Continue**\.
 
-## Deleting a Cost Explorer Report<a name="delete-saved-ce-report"></a>
+## Deleting a Cost Explorer report<a name="delete-saved-ce-report"></a>
 
 You can use the console to delete saved Cost Explorer reports\.
 

@@ -1,4 +1,4 @@
-# Identity and Access Management for AWS Billing and Cost Management<a name="security-iam"></a>
+# Identity and access management for AWS Billing and Cost Management<a name="security-iam"></a>
 
 AWS Identity and Access Management \(IAM\) is an AWS service that helps an administrator securely control access to AWS resources\. IAM administrators control who can be *authenticated* \(signed in\) and *authorized* \(have permissions\) to use Billing and Cost Management resources\. IAM is an AWS service that you can use with no additional charge\.
 
@@ -6,9 +6,9 @@ For more information on how to activate access to the Billing Console, see [Tuto
 
 **Topics**
 + [Audience](#security_iam_audience)
-+ [Overview of Managing Access Permissions](control-access-billing.md)
-+ [Using Identity\-Based Policies \(IAM Policies\) for Billing and Cost Management](billing-permissions-ref.md)
-+ [Billing and Cost Management Policy Examples](billing-example-policies.md)
++ [Overview of managing access permissions](control-access-billing.md)
++ [Using identity\-based policies \(IAM policies\) for Billing and Cost Management](billing-permissions-ref.md)
++ [Billing and Cost Management policy examples](billing-example-policies.md)
 
 ## Audience<a name="security_iam_audience"></a>
 
@@ -23,9 +23,9 @@ How you use AWS Identity and Access Management \(IAM\) differs, depending on the
 This table summarizes the default actions that are permitted in Billing and Cost Management for each type of billing user\.
 
 
-**User Types and Billing Permissions**  
+**User types and billing permissions**  
 
-| User Type | Description | Billing Permissions | 
+| User type | Description | Billing permissions | 
 | --- | --- | --- | 
 | Account owner |  The person or entity in whose name your account is set up as\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security-iam.html)  | 
 | IAM user |  A person or application defined as a user in an account by an account owner or administrative user\. Accounts can contain multiple IAM users\.  |  [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security-iam.html)  | 

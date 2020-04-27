@@ -1,12 +1,12 @@
-# Receiving Budget Alerts in Amazon Chime and Slack<a name="sns-alert-chime"></a>
+# Receiving budget alerts in Amazon Chime and slack<a name="sns-alert-chime"></a>
 
 You can receive your AWS Budgets alerts in Amazon Chime and Slack by using AWS Chatbot\.
 
 AWS Chatbot enables you to receive AWS Budgets alerts directly into your designated Slack channel or Amazon Chime chat room\.<a name="receive-alerts-chime"></a>
 
-**To begin receiving your budget alerts in Slack and Amazon Chime**
+**To begin receiving your budget alerts in slack and Amazon Chime**
 
-1. Follow [Creating a Budget](budgets-create.md) or [Editing a Budget](budgets-edit.md) and select **Configure alerts**\.
+1. Follow [Creating a budget](budgets-create.md) or [Editing a budget](budgets-edit.md) and select **Configure alerts**\.
 
 1. Add an Amazon SNS topic as an alert recipient to a specific alert or alerts\. To ensure that AWS Budgets has permissions to publish to your Amazon SNS topics, see [Creating an Amazon SNS Topic for Budget Notifications](budgets-sns-policy.md)\.
 

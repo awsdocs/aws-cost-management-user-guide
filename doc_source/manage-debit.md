@@ -1,4 +1,4 @@
-# Managing Your ACH Direct Debit Payment Methods<a name="manage-debit"></a>
+# Managing your ACH direct debit payment Methods<a name="manage-debit"></a>
 
 If you meet the eligibility requirements, you can add a US bank account as an ACH direct debit payment method to your payment methods\. 
 

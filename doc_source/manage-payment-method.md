@@ -1,17 +1,17 @@
-# Managing Your AWS Payment Methods<a name="manage-payment-method"></a>
+# Managing your AWS payment methods<a name="manage-payment-method"></a>
 
 You can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console to perform the following tasks for all payment types:
 
 **Topics**
-+ [View Your Payment Methods](#manage-view-credit)
-+ [Designate a Default Payment Method](#manage-designate-default)
-+ [Make a Payment](#manage-making-a-payment)
-+ [Remove a Payment Method](#manage-remove-credit)
-+ [Use China Bank Redirect Payment Methods](manage-cny-payment.md)
++ [View your payment methods](#manage-view-credit)
++ [Designate a default payment method](#manage-designate-default)
++ [Make a payment](#manage-making-a-payment)
++ [Remove a payment method](#manage-remove-credit)
++ [Use China bank redirect payment methods](manage-cny-payment.md)
 
-In addition, you can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console to manage your credit cards and direct debit accounts\. For more information, see [Managing Your Credit Card Payment Methods](manage-cc.md) and [Managing Your ACH Direct Debit Payment Methods](manage-debit.md)\.
+In addition, you can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console to manage your credit cards and direct debit accounts\. For more information, see [Managing your credit card payment methods](manage-cc.md) and [Managing your ACH direct debit payment Methods](manage-debit.md)\.
 
-## View Your Payment Methods<a name="manage-view-credit"></a>
+## View your payment methods<a name="manage-view-credit"></a>
 
 You can use the console to view the payment methods that are associated with your account\.<a name="view-credit"></a>
 
@@ -21,7 +21,7 @@ You can use the console to view the payment methods that are associated with you
 
 1. In the navigation pane, choose [Payment methods](https://console.aws.amazon.com/billing/home#/paymentmethods)\. 
 
-## Designate a Default Payment Method<a name="manage-designate-default"></a>
+## Designate a default payment method<a name="manage-designate-default"></a>
 
 You can use the console to designate a default payment method for your AWS account\.<a name="designate-default"></a>
 
@@ -33,12 +33,12 @@ You can use the console to designate a default payment method for your AWS accou
 
 1. Next to the payment method that you want to use as your default payment method, choose **Make Default**\.
 
-## Make a Payment<a name="manage-making-a-payment"></a>
+## Make a payment<a name="manage-making-a-payment"></a>
 
 AWS charges your default payment method automatically at the beginning of each month\. If that charge doesn't process successfully, you can use the console to update your payment method and make a payment\.
 
 **Note**  
-If you pay by ACH direct debit, AWS provides you with your invoice and initiates the charge to your payment method within 10 days of the start of the month\. It can take 3–5 days for your payment to succeed\. For more information, see [Managing Your ACH Direct Debit Payment Methods](manage-debit.md)\.<a name="making-a-payment"></a>
+If you pay by ACH direct debit, AWS provides you with your invoice and initiates the charge to your payment method within 10 days of the start of the month\. It can take 3–5 days for your payment to succeed\. For more information, see [Managing your ACH direct debit payment Methods](manage-debit.md)\.<a name="making-a-payment"></a>
 
 **To make a payment**
 
@@ -60,7 +60,7 @@ If you pay by ACH direct debit, AWS provides you with your invoice and initiates
 
    If you pay by electronic funds transfer and your account payment is overdue, create a case in the [Support Center](https://console.aws.amazon.com/support/home?#)\.
 
-## Remove a Payment Method<a name="manage-remove-credit"></a>
+## Remove a payment method<a name="manage-remove-credit"></a>
 
 You can use the console to remove a payment method from your account\.<a name="remove-credit"></a>
 

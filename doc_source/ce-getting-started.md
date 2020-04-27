@@ -1,4 +1,4 @@
-# Getting Started With Cost Explorer<a name="ce-getting-started"></a>
+# Getting started with Cost Explorer<a name="ce-getting-started"></a>
 
 After you enable Cost Explorer, you can launch it from the Billing and Cost Management console\.
 

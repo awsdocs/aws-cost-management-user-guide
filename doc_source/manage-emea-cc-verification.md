@@ -1,22 +1,22 @@
-# Managing Your AWS Europe Credit Card Payment Verifications<a name="manage-emea-cc-verification"></a>
+# Managing your AWS Europe credit card payment verifications<a name="manage-emea-cc-verification"></a>
 
 To comply with the recent EU regulation, your bank might ask you for verification whenever you use a credit card to pay AWS online, add or update a credit card, or register a new AWS account\. Banks typically verify by sending unique security codes to credit card holders before online purchases are completed\. If your bank needs to verify your payment, you will receive an email from AWS\. After verification, you're redirected to the AWS website\. 
 
-If you prefer not to verify payments, register a bank account as your payment method\. For more information about direct debit payment eligibility, see [Managing Your SEPA Direct Debit Payment Methods](manage-debit-emea.md)\.
+If you prefer not to verify payments, register a bank account as your payment method\. For more information about direct debit payment eligibility, see [Managing your SEPA direct debit payment methods](manage-debit-emea.md)\.
 
 To learn more about the EU regulation, see the [European Commission’s website](https://ec.europa.eu/info/law/payment-services-psd-2-directive-eu-2015-2366_en)\.
-+ [Best Practices for Verification](#emea-cc-mfa-bp)
-+ [Payment Verification](#emea-payment-verification)
-+ [Troubleshooting Payment Verification](#emea-cc-bp)
++ [Best practices for verification](#emea-cc-mfa-bp)
++ [Payment verification](#emea-payment-verification)
++ [Troubleshooting payment verification](#emea-cc-bp)
 + [AWS Organizations](#emea-cc-awsorg)
-+ [Subscription Purchases](#emea-bulk-purchases)
++ [Subscription purchases](#emea-bulk-purchases)
 
-## Best Practices for Verification<a name="emea-cc-mfa-bp"></a>
+## Best practices for verification<a name="emea-cc-mfa-bp"></a>
 + Confirm that your credit card information is up to date\. Banks send verification codes only to the registered card owner\.
 + Enter the newest code\. If you close the authentication portal or request a new code, you might experience a delay in receiving your newest code\.
 + Enter the code as prompted\. Don't enter the phone number that the code is sent from\.
 
-## Payment Verification<a name="emea-payment-verification"></a>
+## Payment verification<a name="emea-payment-verification"></a>
 
 You can use the Billing and Cost Management console to confirm that you payment requires verification or to reattempt any failed payments\.<a name="emea-payment-verification-process"></a>
 
@@ -39,7 +39,7 @@ After your bank has processed our payment, you're redirected to the **Orders and
 **Note**  
 Your invoice appears with the status of **Payment processing** until your bank completes the payment process\. 
 
-## Troubleshooting Payment Verification<a name="emea-cc-bp"></a>
+## Troubleshooting payment verification<a name="emea-cc-bp"></a>
 
 If you can't successfully complete your verification, we recommend that you take any of the following actions:
 + Contact your bank to confirm that your contact information is up to date
@@ -51,12 +51,12 @@ If you can't successfully complete your verification, we recommend that you take
 
 If you're a member account in AWS Organizations, your purchased services that require upfront payments might not activate until the master account user verifies the payment\. If verification is required, AWS notifies the billing contact of the master account by email\.
 
-Establish a communication process between your master and member accounts\. To change your payment method, see [Managing Your AWS Europe Credit Card Payment Methods](manage-cc-emea.md)\.
+Establish a communication process between your master and member accounts\. To change your payment method, see [Managing your AWS Europe credit card payment methods](manage-cc-emea.md)\.
 
-## Subscription Purchases<a name="emea-bulk-purchases"></a>
+## Subscription purchases<a name="emea-bulk-purchases"></a>
 
 If you purchase multiple subscriptions at a time \(or in bulk\) and your bank requests verification, the bank might ask you to verify each individual purchase\.
 
 Subscriptions can include immediate purchases such as Reserved Instances, Business support plan, and Route 53 domains\. Subscriptions don't include AWS Marketplace charges\.
 
-Be sure to complete validation for all purchases or register a bank account as your payment method\. For more information about eligibility for direct debit payment, see [Managing Your SEPA Direct Debit Payment Methods](manage-debit-emea.md)\.
+Be sure to complete validation for all purchases or register a bank account as your payment method\. For more information about eligibility for direct debit payment, see [Managing your SEPA direct debit payment methods](manage-debit-emea.md)\.

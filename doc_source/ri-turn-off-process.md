@@ -1,8 +1,8 @@
-# Turning off shared Reserved Instances and Savings Plans discounts<a name="ri-turn-off-process"></a>
+# Turning off shared reserved instances and Savings Plans discounts<a name="ri-turn-off-process"></a>
 
 You can turn off RI sharing and Savings Plans discounts for individual linked accounts\.
 
-**To turn off shared Reserved Instances and Savings Plans discounts**
+**To turn off shared reserved instances and Savings Plans discounts**
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 

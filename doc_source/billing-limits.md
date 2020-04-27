@@ -1,4 +1,4 @@
-# Quotas and Restrictions<a name="billing-limits"></a>
+# Quotas and restrictions<a name="billing-limits"></a>
 
 The following table describes the current quotas, restrictions, and naming constraints within Billing and Cost Management\.
 
@@ -41,4 +41,4 @@ The following table describes the current quotas, restrictions, and naming const
 
 |  |  | 
 | --- |--- |
-| Maximum number of reports that you can save per account | 50 | 
+| Maximum number of reports that you can save per account | 300 | 

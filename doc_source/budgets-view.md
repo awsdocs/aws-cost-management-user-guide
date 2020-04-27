@@ -1,4 +1,4 @@
-# Viewing Your Budgets<a name="budgets-view"></a>
+# Viewing your budgets<a name="budgets-view"></a>
 
 The **Budgets** dashboard shows you the state of your budgets at a glance\. Your budgets are listed on the dashboard along with the following data:
 + Your current costs and usage incurred for a budget during the budget period
@@ -15,7 +15,7 @@ The **Budgets** dashboard shows you the state of your budgets at a glance\. Your
 
 1. To see the filters and cost variances for your budgets, choose the budget's name in your list of budgets\. 
 
-## Reading Your Budgets<a name="reading-budgets"></a>
+## Reading your budgets<a name="reading-budgets"></a>
 
 After you choose your budget name, you see your budget details page\. This page includes the following information:
 + **Current vs budgeted** – Your current incurred costs compared to your budgeted costs\.

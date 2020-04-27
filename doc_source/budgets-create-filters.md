@@ -1,4 +1,4 @@
-# Available Budget Filters<a name="budgets-create-filters"></a>
+# Available budget filters<a name="budgets-create-filters"></a>
 
 **Usage Type Group**  
 Choose one of the groups provided, such as `S3: Data Transfer - Internet (Out) (GB)`\. A usage type group is a collection of usage types that have the same unit of measure\. If you choose both the **Usage Type Group** and the **Usage Type** filters, Cost Explorer shows you usage types that are automatically constrained to the group unit of measure\. For example, when you choose the group `EC2: Running Hours (Hrs)` and then choose the `EC2-Instances` filter for **Usage Type**, Cost Explorer shows you only the usage types that are measured in hours\.

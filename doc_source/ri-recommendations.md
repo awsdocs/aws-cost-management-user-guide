@@ -43,7 +43,7 @@ Linked accounts need the following permissions to view recommendations:
 + `ViewBilling`
 + `ViewAccount`
 
-For more information, see [Using Identity\-Based Policies \(IAM Policies\) for Billing and Cost Management](billing-permissions-ref.md)\.
+For more information, see [Using identity\-based policies \(IAM policies\) for Billing and Cost Management](billing-permissions-ref.md)\.
 
 **To view your RI recommendations**
 

@@ -1,4 +1,4 @@
-# Consolidated Billing in India<a name="useconsolidatedbilling-India"></a>
+# Consolidated billing in India<a name="useconsolidatedbilling-India"></a>
 
 If you sign up for a new account and choose India for your contact address, your user agreement is with Amazon Internet Services Pvt\. Ltd \(AISPL\), a local AWS seller in India\. AISPL manages your billing, and your invoice total is listed in rupees instead of in dollars\. After you create an account with AISPL, you can't change the country in your contact information\.
 

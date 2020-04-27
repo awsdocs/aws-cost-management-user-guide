@@ -1,17 +1,17 @@
-# Modifying Your Chart<a name="ce-modify"></a>
+# Modifying your chart<a name="ce-modify"></a>
 
 You can modify the parameters that Cost Explorer uses to create your chart, enabling you to explore different sets of data\.
-+ [Selecting a Style for Your Chart](#ce-style)
-+ [Choosing Time Ranges for the Data That You Want to View](#ce-timerange)
-+ [Grouping Data by Filter Type](#ce-group)
-+ [Filtering the Data That You Want to View](ce-filtering.md)
-+ [Choosing Advanced Options](ce-advanced.md)
++ [Selecting a style for your chart](#ce-style)
++ [Choosing time ranges for the data that you want to view](#ce-timerange)
++ [Grouping data by filter type](#ce-group)
++ [Filtering the data that you want to view](ce-filtering.md)
++ [Choosing advanced options](ce-advanced.md)
 
-## Selecting a Style for Your Chart<a name="ce-style"></a>
+## Selecting a style for your chart<a name="ce-style"></a>
 
 Cost Explorer provides two styles for charting your cost data: bar charts \(**Bar**\) or line graphs \(**Line**\)\. You can set the style by using the view dropdown\. 
 
-## Choosing Time Ranges for the Data That You Want to View<a name="ce-timerange"></a>
+## Choosing time ranges for the data that you want to view<a name="ce-timerange"></a>
 
 You can choose to view your cost data in monthly or daily *levels of granularity*\. You can use preconfigured time ranges or set custom start and end dates\. 
 
@@ -27,7 +27,7 @@ To enable hourly granularity, opt\-in through the Cost Explorer settings page as
 
 1. Choose **Apply**\.
 
-### Historical Time Range Options<a name="timerangeref"></a>
+### Historical time range options<a name="timerangeref"></a>
 
 In Cost Explorer, months are defined as calendar months\. Days are defined as 12:00:00 AM to 11:59:59 PM\. Based on these definitions, when you choose **Last 3 Months** for a date range, you see cost data for three previous months, not including the present month\. For example, if you view your chart on June 6, 2017, and select **Last 3 Months**, your chart includes data for March, April, and May 2017\. All times are in Universal Coordinated Time \(UTC\)\. 
 
@@ -62,7 +62,7 @@ The following list defines each time range option for your past costs in Cost Ex
 
   Displays cost data from the last calendar year\.
 
-### Forecast Time Range Options<a name="timerangereforecast"></a>
+### Forecast time range options<a name="timerangereforecast"></a>
 
 The following list defines each time range option for your forecast costs in Cost Explorer\. You can select a **Historical** time period and a **Forecasted** period to display together\. For example, you can select a **Historical** period of one month \(1M\) and select a **Forecasted** period of three months \(3M\)\. Your report includes historical data for the previous month plus forecasted data for the next 3 months\. To clear a **Historical** time period and see only the forecast, choose the **Historical** period again\. 
 
@@ -81,7 +81,7 @@ If you choose any Forecasted dates, your current date’s cost and usage data sh
 
   Displays forecast data for the current day and the next 3 months\.
 
-## Grouping Data by Filter Type<a name="ce-group"></a>
+## Grouping data by filter type<a name="ce-group"></a>
 
 Use the **Group by** button to have Cost Explorer display the cost data groups by filter type\. By default, Cost Explorer doesn't use grouping\. Forecasting isn't available for charts that have grouping\. If you don't select a **Group by** option, Cost Explorer displays total costs for the specified date range\. 
 

@@ -24,9 +24,9 @@ Here are some examples of tag values:
 
 ```
 Root:1234567890
-Root:1234567890:exampleUser
-IAMUser:EXAMPLEACCESSKEY:exampleUser
-AssumedRole:EXAMPLEACCESSKEY:exampleRole
+Root: 111122223333 :exampleUser
+IAMUser: AIDACKCEVSQ6C2EXAMPLE :exampleUser
+AssumedRole: AKIAIOSFODNN7EXAMPLE :exampleRole
 FederatedUser:1234567890:exampleUser
 ```
 

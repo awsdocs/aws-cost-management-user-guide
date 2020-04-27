@@ -1,4 +1,4 @@
-# Finding Savings Plan Prices in an Offer File<a name="sp-offer-file"></a>
+# Finding Savings Plan prices in an offer file<a name="sp-offer-file"></a>
 
 You can use the offer files to find prices and discounts when Savings Plans are applied to your usage\.
 

@@ -6,13 +6,13 @@ If you use a programming language that AWS provides an SDK for, we recommend tha
 
 For more information about available SDKs, see [Tools for Amazon Web Services](https://aws.amazon.com/tools)\. For more information about the AWS Cost Explorer API, see the [AWS Billing and Cost Management API Reference](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/)\.
 
-## Service Endpoint<a name="ce-endpoint"></a>
+## Service endpoint<a name="ce-endpoint"></a>
 
 Service Endpoint
 
 The Cost Explorer API provides the following endpoint:
 + https://ce\.us\-east\-1\.amazonaws\.com
 
-## Granting IAM Permissions to Use the AWS Cost Explorer API<a name="ce-iam"></a>
+## Granting IAM permissions to use the AWS Cost Explorer API<a name="ce-iam"></a>
 
 An IAM user must be granted explicit permission to query the AWS Cost Explorer API\. For the policy that grants the necessary permissions to an IAM user, see [Example 11: View costs and usage](billing-example-policies.md#example-policy-ce-api)\. 

@@ -1,4 +1,4 @@
-# Managing an AWS Account<a name="manage-account-payment"></a>
+# Managing an AWS account<a name="manage-account-payment"></a>
 
 You can use the Billing and Cost Management console to change account settings, including your contact and alternate contact information, the currency that you pay your bills in, the Regions that you can create resources in, and your tax registration numbers\.
 
@@ -6,14 +6,15 @@ You can use the Billing and Cost Management console to change account settings, 
 Some sections can only be edited by the AWS account root user\. If you do not see the **Edit** option, switch to the root user\.
 
 **Topics**
-+ [Editing Your Account Name, Root User Password, and Root User Email Address](#manage-account-payment-edit-user-name)
-+ [Editing Contact Information](#manage-account-payment-edit-contacts)
-+ [Changing Which Currency You Use to Pay Your Bill](#manage-account-payment-change-currency)
-+ [Adding, Changing, or Removing Alternate Contacts](#manage-account-payment-alternate-contacts)
-+ [Enabling and Disabling Regions](#manage-account-payment-enable-disable-regions)
-+ [Updating and Deleting Tax Registration Numbers](#manage-account-payment-update-delete-tax-numbers)
++ [Editing Your Account name, root user password, and root user email address](#manage-account-payment-edit-user-name)
++ [Editing contact information](#manage-account-payment-edit-contacts)
++ [Changing which currency you use to pay your bill](#manage-account-payment-change-currency)
++ [Adding, changing, or removing alternate contacts](#manage-account-payment-alternate-contacts)
++ [Enabling and disabling regions](#manage-account-payment-enable-disable-regions)
++ [Updating and deleting tax registration numbers](#manage-account-payment-update-delete-tax-numbers)
++ [Enabling tax setting inheritance](#manage-account-tax-linked-accounts)
 
-## Editing Your Account Name, Root User Password, and Root User Email Address<a name="manage-account-payment-edit-user-name"></a>
+## Editing Your Account name, root user password, and root user email address<a name="manage-account-payment-edit-user-name"></a>
 
 To edit your account name, root user password, or email address, perform the following procedure\. Email in this case refers to the AWS account root user email address\. This is the email address you use to sign in\.<a name="account-info"></a>
 
@@ -33,7 +34,7 @@ You can change the name, root user password, and root user email address associa
 
 1. After you have made all of your changes, choose **Done**\.
 
-## Editing Contact Information<a name="manage-account-payment-edit-contacts"></a>
+## Editing contact information<a name="manage-account-payment-edit-contacts"></a>
 
 You can change the contact information associated with your account, including your mailing address, telephone number, and website address\. To edit your contact information, perform the following procedure\.<a name="contact-info"></a>
 
@@ -50,7 +51,7 @@ You can change the contact information associated with your account, including y
 **Note**  
 You can add an email address for billing in the **Alternate Contacts** section to have AWS send a copy of billing\-related emails to that email address\. For example, AWS sends your **Billing contact address** a message that your monthly bill is ready\.
 
-## Changing Which Currency You Use to Pay Your Bill<a name="manage-account-payment-change-currency"></a>
+## Changing which currency you use to pay your bill<a name="manage-account-payment-change-currency"></a>
 
 To change the currency that you use to pay your bill, for example, from Danish kroner to South African rand, perform the following procedure\.<a name="local-currency"></a>
 
@@ -64,7 +65,7 @@ To change the currency that you use to pay your bill, for example, from Danish k
 
 1. For **Select Payment Currency**, select the currency to pay your bill in and then choose **Update**\.
 
-## Adding, Changing, or Removing Alternate Contacts<a name="manage-account-payment-alternate-contacts"></a>
+## Adding, changing, or removing alternate contacts<a name="manage-account-payment-alternate-contacts"></a>
 
 Alternate contacts enable AWS to contact another person about issues with your account, even if you're unavailable\. To add, change, or delete alternate contacts for your account, perform the following procedure\.<a name="account-contacts"></a>
 
@@ -78,14 +79,14 @@ Alternate contacts enable AWS to contact another person about issues with your a
 
 1. For the fields to change, enter your updated information and choose **Update**\.
 
-## Enabling and Disabling Regions<a name="manage-account-payment-enable-disable-regions"></a>
+## Enabling and disabling regions<a name="manage-account-payment-enable-disable-regions"></a>
 
 AWS originally enabled all new Regions by default, which enabled your users to create resources in any Region\. Now when AWS adds a Region, the new Region is disabled by default\. If you want your users to be able to create resources in a new Region, you enable the Region\.
 
 Note the following about enabling and disabling Regions:
 
 **You can use IAM permissions to control access to Regions**  
-IAM added three new permissions, which let you control which users can enable, disable, and list Regions\. For more information, see [Billing Actions](billing-permissions-ref.md#user-permissions)\.
+IAM added three new permissions, which let you control which users can enable, disable, and list Regions\. For more information, see [Billing actions](billing-permissions-ref.md#user-permissions)\.
 
 **Enabling a Region is free**  
 There is no charge to enable a Region\. You're only charged for resources that you create in the new Region\.
@@ -137,7 +138,7 @@ You can disable some Regions on your **My Account** page\.
 
 1. In the dialog box, for **To confirm disabling in this region, ** enter **disable** and choose **Disable region**\.
 
-## Updating and Deleting Tax Registration Numbers<a name="manage-account-payment-update-delete-tax-numbers"></a>
+## Updating and deleting tax registration numbers<a name="manage-account-payment-update-delete-tax-numbers"></a>
 
 To update or delete one or more tax registration numbers, perform the applicable procedure:
 + [To update tax registration numbers](#edit-tax)
@@ -168,3 +169,23 @@ You can remove one or more tax registration numbers\.
 1. For **Manage Tax Registration**, choose **Delete**\.
 
 1. In the **Delete tax registration** dialog box, choose **Delete**\.
+
+## Enabling tax setting inheritance<a name="manage-account-tax-linked-accounts"></a>
+
+You can use your tax registration information with your linked accounts by enabling your **Tax Settings Inheritance**\. After you enable it, your tax registration information is added to your other AWS Organizations accounts, saving you the effort of registering redundant information\. Tax invoices are processed with the consistent tax information, and your usage from linked accounts will consolidate to a single tax invoice\.
+
+Tax registration information includes:
++ Business legal name
++ Tax address
++ Tax registration number
++ Special exemptions \(does not apply for US sales tax exemptions\)<a name="enable-tax-inheritance"></a>
+
+**To enable tax setting inheritance**
+
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+
+1. In the navigation pane, choose **Tax Settings**\.
+
+1. Under **Manage Tax Registration Numbers**, select **Enable Tax Settings Inheritance**\.
+
+1. Choose **Continue**\.

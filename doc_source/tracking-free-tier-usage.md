@@ -1,13 +1,13 @@
-# Tracking Your Free Tier Usage<a name="tracking-free-tier-usage"></a>
+# Tracking your Free Tier usage<a name="tracking-free-tier-usage"></a>
 
 You can track your AWS Free Tier usage to help you stay under the Free Tier limits\. AWS automatically provides alerts through AWS Budgets to notify you by email when you exceed 85 percent of your Free Tier limits for each service\. You can also view the **Top Free Tier Services by Usage** table on the Billing and Cost Management dashboard to see which five services you have used the most and how much you have used them\.
 
 **Topics**
-+ [Free Tier Usage Alerts Using AWS Budgets](#free-budget)
-+ [Top Free Tier Services Table](#free-tier-table)
-+ [Trackable Free Tier Services](#free-tier-services)
++ [Free Tier usage alerts using AWS Budgets](#free-budget)
++ [Top Free Tier services table](#free-tier-table)
++ [Trackable Free Tier services](#free-tier-services)
 
-## Free Tier Usage Alerts Using AWS Budgets<a name="free-budget"></a>
+## Free Tier usage alerts using AWS Budgets<a name="free-budget"></a>
 
 AWS automatically provides AWS Free Tier usage alerts using AWS Budgets to help you track your Free Tier usage\. These Free Tier usage alerts allow AWS to notify you when you're exceeding 85 percent of your usage for the month\. For additional Free Tier visibility, you can also use AWS Budgets to track 100 percent of your Free Tier usage for a specific service\. AWS Budgets has the additional ability to select usage targets and alert thresholds that you can customize\. For example, receive alerts when you're forecasted to exceed 100 percent of your Free Tier usage for Amazon Elastic Block Store\. Any usage over the Free Tier limits is charged at the public On\-Demand rate\.
 
@@ -16,7 +16,7 @@ When you exceed a service\-specific Free Tier limit, AWS sends an alert to the e
 **Important**  
 If you launch more AWS resources than the Free Tier covers in a short period of time, you can exceed the Free Tier limits before AWS can proactively notify you about exceeding the Free Tier usage limits\. If that happens, AWS still notifies you that your incurred usage exceeded 85 percent of the Free Tier limit\.
 
-AWS Free Tier usage alerts cover non\-expiring Free Tier offerings, such as the first 25 GB of Amazon DynamoDB storage or the first 10 custom Amazon CloudWatch metrics\. The alerts also cover Free Tier offerings that expire after 12 months, such as the 750 hours per month of Amazon EC2 `Windows t2.micro` instance usage and the first 5 GB of standard Amazon S3 storage\. For the full list of services and usage types covered by the Free Tier usage alerts, see [Trackable Free Tier Services](#free-tier-services)\. 
+AWS Free Tier usage alerts cover non\-expiring Free Tier offerings, such as the first 25 GB of Amazon DynamoDB storage or the first 10 custom Amazon CloudWatch metrics\. The alerts also cover Free Tier offerings that expire after 12 months, such as the 750 hours per month of Amazon EC2 `Windows t2.micro` instance usage and the first 5 GB of standard Amazon S3 storage\. For the full list of services and usage types covered by the Free Tier usage alerts, see [Trackable Free Tier services](#free-tier-services)\. 
 
 AWS Free Tier usage alerts are enabled automatically for all individual accounts, but not for a master account in an organization in AWS Organizations\. If you're an owner of a master account in an organization, or Consolidated Billing family, you can opt in to the usage alerts on the **Preferences** page on the Billing and Cost Management console\. The same Free Tier limit applies to all accounts in an organization \(both master and member accounts\), so the same budget also applies to all of the accounts\. For example, if Alejandro has a member account and uses 400 Amazon EC2 hours and Mary has a member account and uses 400 Amazon EC2 hours, for a total of 800 hours, the organization has exceeded the Free Tier limit by 50 Amazon EC2 hours\.<a name="opt-in-out"></a>
 
@@ -42,7 +42,7 @@ AWS sends Free Tier usage alerts to the email address that you used when you cre
 
 1. Scroll to the end of the page and choose **Save preferences**\.
 
-## Top Free Tier Services Table<a name="free-tier-table"></a>
+## Top Free Tier services table<a name="free-tier-table"></a>
 
 If you are eligible for the Free Tier and you use a Free Tier offering, you can track your usage with the **Top Free Tier Services by Usage** table on the dashboard of the [Billing and Cost Management console](https://console.aws.amazon.com/billing/home)\. The following conditions might limit whether you see the Free Tier table data: 
 + You use an AWS service that doesn't offer a Free Tier\.
@@ -60,7 +60,7 @@ To see more details about your Free Tier usage, including all of your active Fre
 
 ![\[Screenshot of the top free tier services by usage table with all columns showing.\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Screenshot of the top free tier services by usage table with all columns showing.\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Screenshot of the top free tier services by usage table with all columns showing.\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
 
-## Trackable Free Tier Services<a name="free-tier-services"></a>
+## Trackable Free Tier services<a name="free-tier-services"></a>
 
 AWS enables you to track how much you used Free Tier services and what service usage types you used\. Usage types are the specific type of usage that AWS tracks\. For example, the usage type `Global-BoxUsage:freetier.micro` means that you used an Amazon EC2 micro instance\.
 

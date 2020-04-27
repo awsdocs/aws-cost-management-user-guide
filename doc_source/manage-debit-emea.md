@@ -1,4 +1,4 @@
-# Managing Your SEPA Direct Debit Payment Methods<a name="manage-debit-emea"></a>
+# Managing your SEPA direct debit payment methods<a name="manage-debit-emea"></a>
 
 If you meet the eligibility requirements, you can add an EU bank account as a SEPA direct debit payment method to your payment methods\. To meet these requirements, your account must:
 + Be an AWS Europe customer 

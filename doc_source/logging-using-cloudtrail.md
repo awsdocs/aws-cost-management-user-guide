@@ -1,10 +1,10 @@
-# Logging Billing and Cost Management API Calls with AWS CloudTrail<a name="logging-using-cloudtrail"></a>
+# Logging Billing and Cost Management API calls with AWS CloudTrail<a name="logging-using-cloudtrail"></a>
 
 Billing and Cost Management is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in Billing and Cost Management\. CloudTrail captures all of API calls for Billing and Cost Management as events, including calls from the Billing and Cost Management console and from code calls to the Billing and Cost Management APIs\. If you create a trail, you can enable continuous delivery of CloudTrail events to an Amazon S3 bucket, including events for Billing and Cost Management\. If you don't configure a trail, you can still view the most recent events in the CloudTrail console in **Event history**\. Using the information collected by CloudTrail, you can determine the request that was made to Billing and Cost Management, the IP address from which the request was made, who made the request, when it was made, and additional details\. 
 
 To learn more about CloudTrail, including how to configure and enable it, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/)\.
 
-## Billing and Cost Management Information in CloudTrail<a name="service-name-info-in-cloudtrail"></a>
+## Billing and Cost Management information in CloudTrail<a name="service-name-info-in-cloudtrail"></a>
 
 CloudTrail is enabled on your AWS account when you create the account\. When supported event activity occurs in Billing and Cost Management, that activity is recorded in a CloudTrail event along with other AWS service events in **Event history**\. You can view, search, and download recent events in your AWS account\. For more information, see [Viewing Events with CloudTrail Event History](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/view-cloudtrail-events.html)\. 
 
@@ -21,7 +21,7 @@ Every event or log entry contains information about who generated the request\. 
 
 For more information, see the [CloudTrail userIdentity Element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html)\.
 
-## Example: Billing and Cost Management Log File Entries<a name="understanding-service-name-entries"></a>
+## Example: Billing and Cost Management log file entries<a name="understanding-service-name-entries"></a>
 
  A trail is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify\. CloudTrail log files contain one or more log entries\. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on\. CloudTrail log files are not an ordered stack trace of the public API calls, so they don't appear in any specific order\.
 
@@ -31,8 +31,8 @@ The following example shows a CloudTrail log entry that demonstrates the `SetCon
 {
         "eventVersion": "1.05",
         "userIdentity": {
-            "accountId": "444455556666",
-            "accessKeyId": "AKIAIOSFODNN7EXAMPLE"
+            "accountId": "111122223333",
+            "accessKeyId": "AIDACKCEVSQ6C2EXAMPLE"
         },
         "eventTime": "2018-05-30T16:44:04Z",
         "eventSource": "billingconsole.amazonaws.com",
@@ -58,6 +58,6 @@ The following example shows a CloudTrail log entry that demonstrates the `SetCon
         "eventID": "5923c499-063e-44ac-80fb-b40example9f",
         "readOnly": false,
         "eventType": "AwsConsoleAction",
-        "recipientAccountId": "111122223333"
+        "recipientAccountId": "1111-2222-3333"
     }
 ```

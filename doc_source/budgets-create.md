@@ -1,14 +1,14 @@
-# Creating a Budget<a name="budgets-create"></a>
+# Creating a budget<a name="budgets-create"></a>
 
 You can create budgets to track your service costs and usage, RI utilization and coverage, and your Savings Plans utilization and coverage\. Single accounts and master and member accounts in an AWS Organizations organization can, by default, create budgets\.
-+ [Creating a Cost Budget](#create-cost-budget)
-+ [Creating a Usage Budget](#create-usage-budget)
-+ [Creating a Reservation Budget](#create-reservation-budget)
-+ [Creating a Savings Plans Budget](#create-savingsplans-budget)
++ [Creating a cost budget](#create-cost-budget)
++ [Creating a usage budget](#create-usage-budget)
++ [Creating a reservation budget](#create-reservation-budget)
++ [Creating a Savings Plans budget](#create-savingsplans-budget)
 
 When you create a budget, AWS Budgets provides a Cost Explorer graph to help you see your incurred costs and usage\. If you haven't used Cost Explorer, then this graph is blank and AWS Budgets enables Cost Explorer when you start to create your first budget\. You can create your budget without enabling Cost Explorer\. It can take up to 24 hours for this graph to appear after you or AWS Budgets enable Cost Explorer\.
 
-## Creating a Cost Budget<a name="create-cost-budget"></a>
+## Creating a cost budget<a name="create-cost-budget"></a>
 
 Use this procedure to create a cost\-based budget\.<a name="cost-budget"></a>
 
@@ -82,7 +82,7 @@ The amortized cost of any reservation hours that you used\. For more information
 
    AWS verifies that your budget has permission to send notifications to your Amazon SNS topic by sending a test email to your Amazon SNS topic\. If the Amazon SNS topic ARN is valid but the **Verify** step fails, check the Amazon SNS topic policy to make sure that it allows your budget to publish to that topic\. 
 
-   For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS Topic for Budget Notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
+   For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
 
    To receive a notification, you must specify an email address, You can also specify an Amazon SNS topic\.
 
@@ -93,7 +93,7 @@ The amortized cost of any reservation hours that you used\. For more information
 **Important**  
 When you finish creating a budget with Amazon SNS notifications, Amazon SNS sends a confirmation email to the email addresses that you specify\. The subject line is **AWS Notification \- Subscription Confirmation**\. A recipient must choose **Confirm subscription** in the confirmation email to begin receiving notifications\. 
 
-## Creating a Usage Budget<a name="create-usage-budget"></a>
+## Creating a usage budget<a name="create-usage-budget"></a>
 
 Use this procedure to create a usage\-based budget\.<a name="usage-budget"></a>
 
@@ -155,7 +155,7 @@ You must choose **Usage Type**, **Usage Type Group**, or both\. You can create a
 
    AWS verifies that your budget has permission to send notifications to your Amazon SNS topic by sending a test email to your Amazon SNS topic\. If the Amazon SNS topic ARN is valid but the **Verify** step fails, check the Amazon SNS topic policy to make sure that it allows your budget to publish to that topic\. 
 
-   For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS Topic for Budget Notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
+   For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
 
    To receive a notification, you must specify an email address, You can also specify an Amazon SNS topic\.
 
@@ -166,7 +166,7 @@ You must choose **Usage Type**, **Usage Type Group**, or both\. You can create a
 **Important**  
 When you finish creating a budget with Amazon SNS notifications, Amazon SNS sends a confirmation email to the email addresses that you specify\. The subject line is **AWS Notification \- Subscription Confirmation**\. A recipient must choose **Confirm subscription** in the confirmation email to begin receiving notifications\. 
 
-## Creating a Reservation Budget<a name="create-reservation-budget"></a>
+## Creating a reservation budget<a name="create-reservation-budget"></a>
 
 Use this procedure to create a budget for RI utilization or RI coverage\.<a name="reservation-budget"></a>
 
@@ -212,7 +212,7 @@ Use this procedure to create a budget for RI utilization or RI coverage\.<a name
 
    AWS verifies that your budget has permission to send notifications to your Amazon SNS topic by sending a test email to your Amazon SNS topic\. If the Amazon SNS topic ARN is valid but the **Verify** step fails, check the Amazon SNS topic policy to make sure that it allows your budget to publish to that topic\. 
 
-   For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS Topic for Budget Notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
+   For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
 
    To receive a notification, you must specify an email address, You can also specify an Amazon SNS topic\.
 
@@ -223,7 +223,7 @@ Use this procedure to create a budget for RI utilization or RI coverage\.<a name
 **Important**  
 When you finish creating a budget with Amazon SNS notifications, Amazon SNS sends a confirmation email to the email addresses that you specify\. The subject line is **AWS Notification \- Subscription Confirmation**\. A recipient must choose **Confirm subscription** in the confirmation email to begin receiving notifications\. 
 
-## Creating a Savings Plans Budget<a name="create-savingsplans-budget"></a>
+## Creating a Savings Plans budget<a name="create-savingsplans-budget"></a>
 
 Use this procedure to create a budget for savings plans utilization or Savings Plans coverage\.<a name="savingsplans-budget"></a>
 
@@ -269,6 +269,6 @@ Use this procedure to create a budget for savings plans utilization or Savings P
 
    AWS verifies that your budget has permission to send notifications to your Amazon SNS topic by sending a test email to your Amazon SNS topic\. If the Amazon SNS topic ARN is valid but the **Verify** step fails, check the Amazon SNS topic policy to make sure that it allows your budget to publish to that topic\. 
 
-   For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS Topic for Budget Notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
+   For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
 
 1. Choose **Confirm budget**\.

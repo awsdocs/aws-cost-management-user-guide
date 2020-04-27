@@ -1,4 +1,4 @@
-# Compliance Validation for AWS Billing and Cost Management<a name="Billing-compliance"></a>
+# Compliance validation for AWS Billing and Cost Management<a name="Billing-compliance"></a>
 
 Third\-party auditors assess the security and compliance of AWS services as part of multiple AWS compliance programs\. Billing and Cost Management is not in scope of any AWS compliance programs\.
 

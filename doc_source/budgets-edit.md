@@ -1,4 +1,4 @@
-# Editing a Budget<a name="budgets-edit"></a>
+# Editing a budget<a name="budgets-edit"></a>
 
 You can't edit the budget name\.
 

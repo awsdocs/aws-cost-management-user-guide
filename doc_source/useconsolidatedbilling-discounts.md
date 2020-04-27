@@ -1,4 +1,4 @@
-# Volume Discounts<a name="useconsolidatedbilling-discounts"></a>
+# Volume discounts<a name="useconsolidatedbilling-discounts"></a>
 
 For billing purposes, AWS treats all of the accounts in the organization as if they were one account\. Some services, such as AWS Data Transfer and Amazon S3, have volume pricing tiers across certain usage dimensions that give you lower prices the more you use the service\. With consolidated billing, AWS combines the usage from all accounts to determine which volume pricing tiers to apply, giving you a lower overall price whenever possible\. AWS then allocates each linked account a portion of the overall volume discount based on the account's usage\.
 
@@ -14,10 +14,12 @@ For the 12 TB that Bob and Susan used, Bob's payer account is charged \($174\.08
 
 Without the benefit of tiering across the consolidated bill, AWS would have charged Bob and Susan each $174\.08 per TB for their usage, for a total of $2,088\.96\.
 
-## AWS Free Tier for Organizations<a name="cb-free"></a>
+To learn more about pricing, see [AWS Pricing](http://aws.amazon.com/pricing/)\.
+
+## AWS Free Tier for AWS Organizations<a name="cb-free"></a>
 
 For services such as Amazon EC2 that support a free tier, AWS applies the free tier to the total usage across all accounts in an AWS organization\. AWS doesn't apply the free tier to each account individually\.
 
 AWS provides budgets that track whether you exceed the free tier limits or are forecasted to go over the free tier limits\. Free tier budgets are not enabled for organizations by default\. Payer accounts can opt in to free tier usage alerts through the Billing and Cost Management console\. Free tier usage alerts aren't available to individual linked accounts\.
 
-For more information about free tiers, see [AWS Free Usage Tier FAQs](https://aws.amazon.com/free/faqs/)\. For more information about AWS Free Tier usage alerts through AWS Budgets and opting in, see [Free Tier Usage Alerts Using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.
+For more information about free tiers, see [AWS Free Usage Tier FAQs](https://aws.amazon.com/free/faqs/)\. For more information about AWS Free Tier usage alerts through AWS Budgets and opting in, see [Free Tier usage alerts using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.

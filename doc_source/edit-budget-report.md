@@ -1,4 +1,4 @@
-# Editing an AWS Budgets Report<a name="edit-budget-report"></a>
+# Editing an AWS Budgets report<a name="edit-budget-report"></a>
 
 You can use this procedure to edit an AWS Budgets report\.<a name="editing-budget-report-steps"></a>
 

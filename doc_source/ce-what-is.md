@@ -1,4 +1,4 @@
-# Analyzing Your Costs with Cost Explorer<a name="ce-what-is"></a>
+# Analyzing your costs with Cost Explorer<a name="ce-what-is"></a>
 
 Cost Explorer is a tool that enables you to view and analyze your costs and usage\. You can explore your usage and costs using the main graph, the Cost Explorer cost and usage reports, or the Cost Explorer RI reports\. You can view data for up to the last 12 months, forecast how much you're likely to spend for the next three months, and get recommendations for what Reserved Instances to purchase\. You can use Cost Explorer to identify areas that need further inquiry and see trends that you can use to understand your costs\. 
 
@@ -12,9 +12,9 @@ Cost Explorer uses the same dataset that is used to generate the AWS Cost and Us
 
 **Topics**
 + [Enabling Cost Explorer](ce-enable.md)
-+ [Getting Started With Cost Explorer](ce-getting-started.md)
-+ [Exploring Your Data Using Cost Explorer](ce-exploring-data.md)
-+ [Using Cost Explorer Reports](ce-reports.md)
-+ [Understanding Your Reservations With Cost Explorer](ce-ris.md)
-+ [Optimizing Your Cost with Rightsizing Recommendations](ce-rightsizing.md)
++ [Getting started with Cost Explorer](ce-getting-started.md)
++ [Exploring your data using Cost Explorer](ce-exploring-data.md)
++ [Using Cost Explorer reports](ce-reports.md)
++ [Understanding your reservations with Cost Explorer](ce-ris.md)
++ [Optimizing your cost with Rightsizing Recommendations](ce-rightsizing.md)
 + [Using the AWS Cost Explorer API](ce-api.md)

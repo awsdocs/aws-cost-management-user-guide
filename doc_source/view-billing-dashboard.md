@@ -1,4 +1,4 @@
-# Reading Your Dashboard Graphs<a name="view-billing-dashboard"></a>
+# Reading your dashboard graphs<a name="view-billing-dashboard"></a>
 
 Even if you're using the free tier, it's a good idea to periodically check the Billing and Cost Management console dashboard\. From the dashboard, you can check various graphs that show different breakdowns of your AWS usage\.
 
@@ -16,7 +16,7 @@ The **Month\-to\-Date Spend by Service** graph shows the top services that you u
 **Month\-to\-Date Top Services by Spend**  
 The **Month\-to\-Date Top Services by Spend** graph shows the services that you use most, along with the costs incurred for the month to date\. The **Month\-to\-Date Top Services by Spend** graph doesn't include forecasting\.
 
-## Opening the Billing and Cost Management Console and Dashboard<a name="opening-billing-dashboard"></a>
+## Opening the Billing and Cost Management console and dashboard<a name="opening-billing-dashboard"></a>
 
 **To open the Billing and Cost Management console and dashboard**
 + Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.

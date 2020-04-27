@@ -9,9 +9,9 @@ Security is a shared responsibility between AWS and you\. The [shared responsibi
 This documentation helps you understand how to apply the shared responsibility model when using Billing and Cost Management\. The following topics show you how to configure Billing and Cost Management to meet your security and compliance objectives\. You also learn how to use other AWS services that help you to monitor and secure your Billing and Cost Management resources\. 
 
 **Topics**
-+ [Data Protection in AWS Billing and Cost Management](data-protection.md)
-+ [Identity and Access Management for AWS Billing and Cost Management](security-iam.md)
-+ [Logging and Monitoring in AWS Billing and Cost Management](billing-security-logging.md)
-+ [Compliance Validation for AWS Billing and Cost Management](Billing-compliance.md)
++ [Data protection in AWS Billing and Cost Management](data-protection.md)
++ [Identity and access management for AWS Billing and Cost Management](security-iam.md)
++ [Logging and monitoring in AWS Billing and Cost Management](billing-security-logging.md)
++ [Compliance validation for AWS Billing and Cost Management](Billing-compliance.md)
 + [Resilience in AWS Billing and Cost Management](disaster-recovery-resiliency.md)
-+ [Infrastructure Security in AWS Billing and Cost Management](infrastructure-security.md)
++ [Infrastructure security in AWS Billing and Cost Management](infrastructure-security.md)

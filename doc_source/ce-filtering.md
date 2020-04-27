@@ -1,4 +1,4 @@
-# Filtering the Data That You Want to View<a name="ce-filtering"></a>
+# Filtering the data that you want to view<a name="ce-filtering"></a>
 
 With Cost Explorer, you can filter how you view your AWS costs by one or more of the following values:
 + **API operation**
@@ -32,7 +32,7 @@ Each time that you apply filters to your costs, Cost Explorer creates a new char
 
 You can continue refining your cost analysis by using multiple filters, by grouping your data by filter type, and by using the options in the **Advanced Options** tab\. 
 
-## Combining Filters to Show Data in Common<a name="filtersandoperators"></a>
+## Combining filters to show data in common<a name="filtersandoperators"></a>
 
 Cost Explorer displays a chart that represents the data in common to the filters that you have selected, which means that you can use filters together to analyze subsets of cost data\. For example, if you set the **Service** filter to show costs related to Amazon EC2 and Amazon RDS services and then select **Reserved** using the **Purchase Option** filter, the cost chart shows how much money **Reserved** instances on Amazon EC2 and Amazon RDS cost for each of the three months specified\.
 
@@ -45,13 +45,13 @@ Amazon RDS
 ElastiCache
 Amazon ES
 
-## Filters and Logical Operations \(AND/OR\)<a name="logicops"></a>
+## Filters and logical operations \(AND/OR\)<a name="logicops"></a>
 
 When you select multiple filters, and values for each filter, Cost Explorer applies rules that emulate the logical AND and OR operators to your selections\. Within each filter, Cost Explorer emulates the logical OR filter to your selection of filter types\. In other words, the chart it displays adds the aggregate costs for each item together\. Using the previous example, you see bars for both of the selected services, Amazon EC2 and Amazon RDS\. 
 
 When you select multiple filters, Cost Explorer applies the logical AND operator to your selections\. In other words, if you use the **Services** filter and specify Amazon EC2 and Amazon RDS costs for inclusion and then also apply the **Purchase Options** filter to select a single type of purchase option, you see *only* the **Non\-Reserved** charges incurred by Amazon EC2 and Amazon RDS\. 
 
-## Filter and Group Options<a name="filtergrouptypes"></a>
+## Filter and group options<a name="filtergrouptypes"></a>
 
 In Cost Explorer, you can filter by the following groups:
 + **API Operation**
@@ -71,7 +71,7 @@ In Cost Explorer, you can filter by the following groups:
   The provider of your AWS services\. For AWS service charges, AWS is the legal entity\. For AWS service charges in India, AISPL is the legal entity\. 
 + **Linked Account**
 
-  The member accounts in an organization\. For more information, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
+  The member accounts in an organization\. For more information, see [Consolidated billing for AWS Organizations](consolidated-billing.md)\.
 + **Platform**
 
   The operating system that your RI runs on\. **Platform** is either **Linux** or **Windows**\.

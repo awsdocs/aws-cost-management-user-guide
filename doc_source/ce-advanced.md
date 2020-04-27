@@ -1,4 +1,4 @@
-# Choosing Advanced Options<a name="ce-advanced"></a>
+# Choosing advanced options<a name="ce-advanced"></a>
 
 You can customize how you view your data in Cost Explorer using **Advanced Options** to include or exclude specific types of data\. 
 

@@ -1,12 +1,12 @@
-# Getting Help with AWS Billing and Cost Management<a name="billing-get-answers"></a>
+# Getting help with AWS Billing and Cost Management<a name="billing-get-answers"></a>
 
 There are many resources available for you if have any questions about your AWS Billing and Cost Management console tools, your charges, or payment methods\.
 
 **Topics**
 + [AWS Knowledge Center](#billing-support-KC)
 + [Contacting AWS Support](#billing-support)
-+ [Understanding Your Charged Usage](#billing-support-usage)
-+ [Monitoring Your Free Tier Usage](#billing-support-Free)
++ [Understanding your charged usage](#billing-support-usage)
++ [Monitoring your Free Tier usage](#billing-support-Free)
 
 ## AWS Knowledge Center<a name="billing-support-KC"></a>
 
@@ -50,18 +50,18 @@ If you have closed your AWS account, you can still sign in to AWS Support and vi
 
 1. Choose **Submit**\.
 
-## Understanding Your Charged Usage<a name="billing-support-usage"></a>
+## Understanding your charged usage<a name="billing-support-usage"></a>
 
 If you want to see the usage behind your charged amount, you can check your usage yourself by enabling Cost Explorer\. This tool enables you to analyze your costs in depth by providing you with premade reports and graphs\.
 
 Cost Explorer is available 24 hours after you activate the feature\.
 
-For more information about Cost Explorer, see [Analyzing Your Costs with Cost Explorer](ce-what-is.md)\.
+For more information about Cost Explorer, see [Analyzing your costs with Cost Explorer](ce-what-is.md)\.
 
-## Monitoring Your Free Tier Usage<a name="billing-support-Free"></a>
+## Monitoring your Free Tier usage<a name="billing-support-Free"></a>
 
 You can track your AWS Free Tier usage to keep you under the Free Tier limits\. You can set up alerts on your AWS account when your Free Tier limits reach a threshold, and monitor your usage through the Billing and Cost Management console\.
 
-For more information about using these features, see [Tracking Your Free Tier Usage](tracking-free-tier-usage.md)\.
+For more information about using these features, see [Tracking your Free Tier usage](tracking-free-tier-usage.md)\.
 
-To see details for usage that was charged beyond your Free Tier limit, see the [Understanding Your Charged Usage](#billing-support-usage) section\.
+To see details for usage that was charged beyond your Free Tier limit, see the [Understanding your charged usage](#billing-support-usage) section\.

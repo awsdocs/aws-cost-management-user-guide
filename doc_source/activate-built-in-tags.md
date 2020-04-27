@@ -10,6 +10,8 @@ You can activate the `createdBy` tag in the Billing and Cost Management console\
 
 1. In the navigation pane, choose **Cost Allocation Tags**\.
 
-1. Under **AWS\-Generated Cost Allocation Tags**, choose **Activate**\.
+1. Under **AWS\-Generated Cost Allocation Tags**, choose the `createdBy` tag\.
+
+1. Choose **Activate**\.
 
 It can take up to 24 hours for tags to activate\.

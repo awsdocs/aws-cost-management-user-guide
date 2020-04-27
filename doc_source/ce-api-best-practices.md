@@ -1,19 +1,19 @@
-# Best Practices for the AWS Cost Explorer API<a name="ce-api-best-practices"></a>
+# Best practices for the AWS Cost Explorer API<a name="ce-api-best-practices"></a>
 
 The following are best practices when working with the [Cost Explorer API](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Operations_AWS_Cost_Explorer_Service.html)\.
 
 **Topics**
-+ [Best Practices for Configuring Access to the Cost Explorer API](#ce-api-best-practices-access)
-+ [Best Practices for Querying the Cost Explorer API](#ce-api-best-practices-query)
-+ [Best Practices for Optimizing Your Cost Explorer API Costs](#ce-api-best-practices-optimize-costs)
++ [Best practices for configuring access to the Cost Explorer API](#ce-api-best-practices-access)
++ [Best practices for querying the Cost Explorer API](#ce-api-best-practices-query)
++ [Best practices for optimizing your Cost Explorer API costs](#ce-api-best-practices-optimize-costs)
 
-## Best Practices for Configuring Access to the Cost Explorer API<a name="ce-api-best-practices-access"></a>
+## Best practices for configuring access to the Cost Explorer API<a name="ce-api-best-practices-access"></a>
 
 An IAM user must be granted explicit permission to query the Cost Explorer API\. Granting an IAM user access to the Cost Explorer API gives that user query access to any cost and usage data available to that account\. For the policy that grants the necessary permissions to an IAM user, see [Example 11: View costs and usage](billing-example-policies.md#example-policy-ce-api)\.
 
 When configuring access to the Cost Explorer API, we recommend creating a unique IAM user for allowing programmatic access\. If you want to give multiple IAM users query access to the Cost Explorer API, we recommend creating a programmatic access IAM role for each of them\.
 
-## Best Practices for Querying the Cost Explorer API<a name="ce-api-best-practices-query"></a>
+## Best practices for querying the Cost Explorer API<a name="ce-api-best-practices-query"></a>
 
 When querying the Cost Explorer API, we recommend using filtering conditions to refine your queries so that you receive only the data that you need\. You can do this by restricting the time range to a smaller interval or by using filters to limit the result set that your request returns\. This enables your queries to return data more quickly than if you're accessing a larger set of data\.
 
@@ -21,7 +21,7 @@ Adding one or more grouping dimensions to your query can increase the size of yo
 
 The Cost Explorer API can access up to 12 months of historical data and data for the current month\. It can also provide 3 months of cost forecast data at the daily level of granularity and 12 months of cost forecast data at the monthly level of granularity\.
 
-## Best Practices for Optimizing Your Cost Explorer API Costs<a name="ce-api-best-practices-optimize-costs"></a>
+## Best practices for optimizing your Cost Explorer API costs<a name="ce-api-best-practices-optimize-costs"></a>
 
 Because you're charged for the Cost Explorer API per paginated request, we recommend identifying the exact dataset to access before submitting queries\.
 

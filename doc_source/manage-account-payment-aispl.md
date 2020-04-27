@@ -1,8 +1,8 @@
-# Managing an Account in India<a name="manage-account-payment-aispl"></a>
+# Managing an account in India<a name="manage-account-payment-aispl"></a>
 
 If you sign up for a new account and choose India for your contact address, your user agreement is with Amazon Internet Services Pvt\. Ltd \(AISPL\), a local AWS seller in India\. AISPL manages your billing, and your invoice total is listed in rupees instead of dollars\. After you create an account with AISPL, you can't change the country in your contact information\. 
 
-If you have an existing account with an India address, your account is either with AWS or AISPL, depending on when you opened the account\. To learn whether your account is with AWS or AISPL, see the procedure [Determining Which Company Your Account is With](#determine-seller)\. If you are an existing AWS customer, you can continue to use your AWS account\. You also can choose to have both an AWS account and an AISPL account, though they can't be consolidated into the same payment family\. For information about managing an AWS account, see [Managing an AWS Account](manage-account-payment.md)\. 
+If you have an existing account with an India address, your account is either with AWS or AISPL, depending on when you opened the account\. To learn whether your account is with AWS or AISPL, see the procedure [Determining Which Company Your Account is With](#determine-seller)\. If you are an existing AWS customer, you can continue to use your AWS account\. You also can choose to have both an AWS account and an AISPL account, though they can't be consolidated into the same payment family\. For information about managing an AWS account, see [Managing an AWS account](manage-account-payment.md)\. 
 
 If your account is with AISPL, follow the procedures in this chapter to manage your account\. This chapter explains how to sign up for an AISPL account, edit information about your AISPL account, and add or edit your Permanent Account Number \(PAN\)\. 
 
@@ -10,10 +10,10 @@ As part of the credit card verification during signup, AISPL charges your credit
 
 **Topics**
 + [Determining Which Company Your Account is With](#determine-seller)
-+ [Signing Up for AISPL](#aisplsignup)
-+ [Managing Your AISPL Account](#manage-aispl-account)
++ [Signing up for AISPL](#aisplsignup)
++ [Managing your AISPL account](#manage-aispl-account)
 
-## Determining Which Company Your Account Is With<a name="determine-seller"></a>
+## Determining which company your account is with<a name="determine-seller"></a>
 
 AWS services are provided by both AWS and AISPL\. Use this procedure to determine which seller your account is with\.
 
@@ -23,7 +23,7 @@ AWS services are provided by both AWS and AISPL\. Use this procedure to determin
 
 1. In the page footer, look at the copyright notice\. If the copyright is for Amazon Web Services, Inc\., then your account is with AWS\. If the copyright is for Amazon Internet Services Private Ltd\., then your account is with AISPL\.
 
-## Signing Up for AISPL<a name="aisplsignup"></a>
+## Signing up for AISPL<a name="aisplsignup"></a>
 
 AISPL is a local seller of AWS\. Use the following procedure to sign up for an AISPL account if your contact address is in India\.
 
@@ -59,7 +59,7 @@ If your contact address is in India and you want to open an account, you sign up
 
 1. On the **Support Plan** page, select your support plan, and then choose **Continue**\. After your payment method is verified and your account is activated, you receive an email confirming the activation of your account\.
 
-## Managing Your AISPL Account<a name="manage-aispl-account"></a>
+## Managing your AISPL account<a name="manage-aispl-account"></a>
 
 Use the [Account Settings](https://console.aws.amazon.com/billing/home#/account) and [Tax Settings](https://console.aws.amazon.com/billing/home#/tax) pages of the Billing and Cost Management console to perform the following tasks:
 + [Edit your user name, password, or email address](#aispl-account-info)

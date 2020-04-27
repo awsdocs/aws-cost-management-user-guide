@@ -1,25 +1,25 @@
-# Reading an Offer File<a name="reading-an-offer"></a>
+# Reading an offer file<a name="reading-an-offer"></a>
 
 An offer file lists the products and prices for a single AWS service in all Regions or a single AWS service in a specific Region\. Offer files are available as either CSV or JSON files\. You can read the files in multiple ways, such as using a spreadsheet program to read and sort the CSV file, a text program to read the file, or a program that parses JSON\.
 
 Offer files include the following types of information:
-+ [Offer File Details](#offer-term-defs) – File metadata about the offer file itself, such as the format version and the publication date\.
-+ [Product Details](#offer-product-defs) – Product metadata that lists the products in an offer file along with product information\.
-+ [Pricing Details \(Terms\)](#pricing-details) – Prices for all the products in this offer file\.
++ [Offer file details](#offer-term-defs) – File metadata about the offer file itself, such as the format version and the publication date\.
++ [Product details](#offer-product-defs) – Product metadata that lists the products in an offer file along with product information\.
++ [Pricing details \(terms\)](#pricing-details) – Prices for all the products in this offer file\.
 
 **Note**  
 In a CSV file, the product and pricing details are combined into one section\. In a JSON file, the product details and pricing details are in separate sections\.
 
 **Topics**
-+ [CSV File](#csv)
-+ [JSON File](#json)
-+ [Offer File Definitions](#pps-defs)
++ [CSV file](#csv)
++ [JSON file](#json)
++ [Offer file definitions](#pps-defs)
 
-## CSV File<a name="csv"></a>
+## CSV file<a name="csv"></a>
 
 The first five rows of the CSV are the metadata for the offer file\. The sixth row has all the column names for the products and their attributes, such as the SKU, the `OfferTermCode`, the `RateCode`, the `TermType`, and more\. The number of columns varies depending on the service\. The first 12 columns contain all the pricing details, while the other columns contain the product details for a service\.
 
-## JSON File<a name="json"></a>
+## JSON file<a name="json"></a>
 
 In the JSON files, the product details and pricing details are in separate sections\. The same product can be offered under multiple terms, and the same term could apply to multiple products\. For example, an EC2 instance is available for an `Hourly` or `Reserved` term\. Use the SKU of a product to identify the terms that are available for that product\.
 
@@ -32,7 +32,7 @@ A JSON offer file looks like this:
    "[offerCode](#offer-code)":"The code for the service", 
    "[version](#offer-version)":"The version of the offer file",
    "[publicationDate](#offer-publication-date)":"The publication date of the offer file", 
-   "[Product Details](#offer-product-defs)": {  
+   "[Products](#offer-product-defs)": {  
       "[sku](#offer-product-skus)": {
          "[sku](#offer-product-skus)":"The SKU of the product",
          "[productFamily](#offer-product-family)":"The product family of the product", 
@@ -41,7 +41,7 @@ A JSON offer file looks like this:
          }    
       }  
    }, 
-   "[Pricing Details \(Terms\)](#pricing-details)": {
+   "[Terms](#pricing-details)": {
       "[termType](#offer-term-type)": {
          "[sku](#offer-term-skus)": {
             "[sku](#offer-term-skus)": {      
@@ -71,19 +71,19 @@ A JSON offer file looks like this:
 }
 ```
 
-## Offer File Definitions<a name="pps-defs"></a>
+## Offer file definitions<a name="pps-defs"></a>
 
 Each of the sections in an offer file includes specific details about that product:
-+ [Offer File Details](#offer-term-defs) – File metadata about the offer file itself, such as the format version and the publication date\.
-+ [Product Details](#offer-product-defs) – Product metadata that lists the products in an offer file along with product information\.
-+ [Pricing Details \(Terms\)](#pricing-details) – Prices for all the products in this offer file\.
++ [Offer file details](#offer-term-defs) – File metadata about the offer file itself, such as the format version and the publication date\.
++ [Product details](#offer-product-defs) – Product metadata that lists the products in an offer file along with product information\.
++ [Pricing details \(terms\)](#pricing-details) – Prices for all the products in this offer file\.
 
 **Note**  
 In a CSV file, the product and pricing details are combined into one section\. In a JSON file, the product details and pricing details are in separate sections\.
 
 The following lists provide definitions for each detail\.
 
-### Offer File Details<a name="offer-term-defs"></a>
+### Offer file details<a name="offer-term-defs"></a>
 
 This section provides metadata about the offer file itself\.
 
@@ -102,7 +102,7 @@ An attribute that tracks the version of the offer file\. Each time a new file is
 **Publication Date**  
 The date and time \(UTC\) when an offer file was published\. For example, `2015-04-09T02:22:05Z`, `2015-09-10T18:21:05Z`\.
 
-### Product Details<a name="offer-product-defs"></a>
+### Product details<a name="offer-product-defs"></a>
 
 This section provides information about products in an AWS service offer file\. Products are indexed by SKU\.
 
@@ -121,7 +121,7 @@ The name of a product attribute\. For example, `Instance Type`, `Processor`, or 
 **Product Details:SKU:Attributes:Attribute Value**  
 The value of a product attribute\. For example, `m1.small` \(an instance type\), `xen` \(a type of processor\), or `Linux` \(a type of OS\)\. 
 
-### Pricing Details \(Terms\)<a name="pricing-details"></a>
+### Pricing details \(terms\)<a name="pricing-details"></a>
 
 This section provides information about the prices for products in an AWS service offer file\. Prices are indexed first by the terms \(`onDemand` and `reserved`\), and then by SKU\.
 

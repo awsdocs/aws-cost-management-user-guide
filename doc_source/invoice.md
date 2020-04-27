@@ -1,4 +1,4 @@
-# Viewing Your Monthly Charges<a name="invoice"></a>
+# Viewing your monthly charges<a name="invoice"></a>
 
 At the end of a billing cycle or at the time you choose to incur a one\-time fee, AWS charges the credit card you have on file and issues your invoice as a PDF file\. You can download the PDF from the **Account Activity** page in the [Billing and Cost Management console](https://console.aws.amazon.com/billing/home?#/account) using the following steps\. 
 
@@ -15,7 +15,7 @@ IAM users need explicit permission to see some of the pages in the Billing and C
 
    The **Summary** section displays a summary and details of your charges for that month\. It is not an invoice, however, until the month's activity closes and AWS calculates final charges\. 
 
-   If you use the consolidated billing feature in AWS Organizations, the **Bills** page lists totals for all accounts on the **Consolidated Bill Details** tab\. Choose the **Bill Details by Account** tab to see the activity for each account in the organization\. For more information about consolidated billing, see [Consolidated Billing for Organizations](consolidated-billing.md)\.
+   If you use the consolidated billing feature in AWS Organizations, the **Bills** page lists totals for all accounts on the **Consolidated Bill Details** tab\. Choose the **Bill Details by Account** tab to see the activity for each account in the organization\. For more information about consolidated billing, see [Consolidated billing for AWS Organizations](consolidated-billing.md)\.
 
 **To view your charges for a different month**
 + On the **Bills** page, select the month you want from the **Date** list\.

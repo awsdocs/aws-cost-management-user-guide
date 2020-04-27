@@ -1,8 +1,8 @@
-# Turning on shared Reserved Instances and Savings Plans discounts<a name="ri-turn-on-process"></a>
+# Turning on shared reserved instances and Savings Plans discounts<a name="ri-turn-on-process"></a>
 
 You can use the console to turn RI sharing and Savings Plans discounts back on for an account\.
 
-**To turn on shared Reserved Instances and Savings Plans discounts**
+**To turn on shared reserved instances and Savings Plans discounts**
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
 

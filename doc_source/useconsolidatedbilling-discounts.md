@@ -6,7 +6,7 @@ The **Bills** page for each linked account displays an average tiered rate that 
 
 As shown in the following illustration, Bob transfers 8 TB of data during the month and Susan transfers 4 TB\.
 
-For the purposes of this example, AWS charges $0\.17 per GB for the first 10 TB of data transferred and $0\.13 for the next 40 TB\. This translates into $174\.08 per TB \(= \.17\*1024\) for the first 10 TB, and $133\.12 per TB \(= \.13\*1024\) for the next 40 TB\. Remember that 1 TB = 1024 GB\.
+For the purposes of this example, AWS charges $0\.17 per GB for the first 10 TB of data transferred and $0\.13 for the next 2 TB\. This translates into $174\.08 per TB \(= \.17\*1024\) for the first 10 TB, and $133\.12 per TB \(= \.13\*1024\) for the next 2 TB\. Remember that 1 TB = 1024 GB\.
 
 For the 12 TB that Bob and Susan used, Bob's payer account is charged \($174\.08 \* 10 TB\) \+ \($133\.12 \* 2 TB\) = $1740\.80 \+ $266\.24 = $2,007\.04\.
 

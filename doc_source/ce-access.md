@@ -7,18 +7,22 @@ You can manage access to your Cost Explorer in the following ways:
 
 This topic provides details about how to control access in Cost Explorer\.
 
-For information about managing access to Billing and Cost Management pages, see [Overview of managing access permissions](control-access-billing.md)\. For more information about consolidated billing, see [Consolidated billing for AWS Organizations](consolidated-billing.md)\.
+For information about managing access to Billing and Cost Management pages, see [Overview of managing access permissions](control-access-billing.md)\. 
+
+To reference Cost Explorer IAM policies, see [Using identity\-based policies \(IAM policies\) for Billing and Cost Management](billing-permissions-ref.md)\.
+
+For more information about consolidated billing, see [Consolidated billing for AWS Organizations](consolidated-billing.md)\.
 
 **Topics**
 + [Granting Cost Explorer access](#grant-ce-access)
-+ [Controlling access using Cost Explorer settings](#ce-controlling-access)
++ [Controlling access using Cost Explorer preferences](#ce-controlling-access)
 + [Cost Explorer and IAM users](#ce-iam-users)
 
 ## Granting Cost Explorer access<a name="grant-ce-access"></a>
 
 You can enable Cost Explorer access if you are signed into the master account with your root credentials through the Billing and Cost Management console\. Enabling Cost Explorer at the master account level enables Cost Explorer for all of your organization accounts\. All accounts in the organization are granted access, and you can't grant or deny access individually\.
 
-## Controlling access using Cost Explorer settings<a name="ce-controlling-access"></a>
+## Controlling access using Cost Explorer preferences<a name="ce-controlling-access"></a>
 
 A master account can grant access to Cost Explorer for all or none of the member accounts\. Access isn’t customizable for each individual member account\.
 
@@ -40,7 +44,7 @@ An account’s status with an organization affects what cost and usage data is v
 + If a member account leaves organization A to join organization B, the account no longer has access to cost and usage data from organization A\. The account has access only to the data that is generated as a member of organization B\.
 + If an account rejoins an organization that it previously belonged to, the account regains access to its historical cost and usage data\.
 
-### Controlling member accounts’ access using Cost Explorer settings<a name="ce-controlling-member-settings"></a>
+### Controlling member accounts’ access using Cost Explorer preferences<a name="ce-controlling-member-settings"></a>
 
 You can grant or restrict the access to all member accounts in your Organizations\. When you enable your account at the master level, all member accounts are granted access to their cost and usage data by default\.<a name="control-members-access"></a>
 
@@ -52,9 +56,9 @@ You can grant or restrict the access to all member accounts in your Organization
 
 1. On the Cost Explorer page, choose **Launch Cost Explorer**\.
 
-1. On the upper\-right side of the Cost Explorer dashboard, choose **Settings**\.
+1. In the navigation pane, choose **Preferences**\.
 
-1. On the **Account Settings** page, select or clear the **Linked Account Access** check box\.
+1. On the **Preferences** page, select or clear the **Linked Account Access** check box\.
 
 1. Choose **Save**\.
 

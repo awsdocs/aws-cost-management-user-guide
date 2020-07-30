@@ -26,9 +26,10 @@ These policies require that you activate IAM user access to the Billing and Cost
 + [Example 9: Deposit reports into an Amazon S3 bucket](#example-billing-s3-bucket)
 + [Example 10: Find products and prices](#example-policy-pe-api)
 + [Example 11: View costs and usage](#example-policy-ce-api)
-+ [Example 12: Enable and disable regions](#enable-disable-regions)
++ [Example 12: Enable and disable AWS Regions](#enable-disable-regions)
 + [Example 13: View and manage cost categories](#example-policy-cc-api)
 + [Example 14: Create, view, edit, or delete AWS Cost and Usage Reports](#example-policy-report-definition)
++ [Example 15: View and manage purchase orders](#example-view-manage-purchaseorders)
 
 ## Example 1: Allow IAM users to view your billing information<a name="example-billing-view-billing-only"></a>
 
@@ -315,7 +316,7 @@ To allow IAM users to use the AWS Cost Explorer API, use the following policy to
 }
 ```
 
-## Example 12: Enable and disable regions<a name="enable-disable-regions"></a>
+## Example 12: Enable and disable AWS Regions<a name="enable-disable-regions"></a>
 
 For an example IAM policy that allows users to enable and disable Regions, see [AWS: Allows Enabling and Disabling AWS Regions](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_aws-enable-disable-regions.html) in the *IAM User Guide*\. 
 
@@ -369,5 +370,27 @@ This policy allows an IAM user to create, view, edit, or delete `sample-report` 
             "Resource": "*"
         }
     ]
+}
+```
+
+## Example 15: View and manage purchase orders<a name="example-view-manage-purchaseorders"></a>
+
+This policy allows an IAM user to view and manage purchase orders, using the following policy to grant access\.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "aws-portal:ViewBilling",
+        "purchase-orders:ViewPurchaseOrders",
+        "purchase-orders:ModifyPurchaseOrders"
+      ],
+      "Resource": "*"
+    }
+  ]
 }
 ```

@@ -49,14 +49,16 @@ You can see the following top\-level key performance indicators \(KPIs\) in your
 
 1. In the **Resource optimization recommendations** section, choose **Enable rightsizing recommendations**\.
 
-1. In the menu on the right side, filter your recommendations by selecting any or all of the following check boxes:
-+ Idle instances \(termination recommendations\)
-+ Underutilized instances
-+ Account ID \(option available from the payer account\)
-+ Region
-+ Cost allocation tag
-+ Include Savings Plans and Reserved Instances \(option to consider existing Savings Plans or RI coverage in recommendation savings calculations\)
-+ Generate recommendations \(option to generate recommendations within the instance family, or across multiple instance families\)
+1. At the top of the **Rightsizing Recommendations** page, filter your recommendations by selecting any or all of the following check boxes:
+   + Idle instances \(termination recommendations\)
+   + Underutilized instances
+   + Include Savings Plans and Reserved Instances \(option to consider existing Savings Plans or RI coverage in recommendation savings calculations\)
+   + Generate recommendations \(option to generate recommendations within the instance family, or across multiple instance families\)
+
+1. Above the **Findings** table, use the search bar to filter by the following parameters:
+   + Account ID \(option available from the payer account\)
+   + Region
+   + Cost allocation tag
 
 **To view your rightsizing recommendations details**
 
@@ -97,7 +99,9 @@ The following is a list of fields in the downloadable CSV form from the **Rights
 + **Account ID** – The AWS account ID that owns the instance that the recommendation is based off of\.
 + **Account Name** – The name of the account that owns the instance that the recommendation is based off of\.
 + **Instance ID** – The unique instance identifier\.
++ **Instance Name** – The name you've given to the instance\.
 + **Instance Type** – The instance family and size of the original instance\.
++ **Instance Name** – The name you've given an instance\. This field will show as blank if you haven't given the instance a name\.
 + **OS** – The operating system or platform of the current instance\.
 + **Region** – The AWS Region that the instance is running in\.
 + **Running Hours** – The total number of running hours of the instance over the last 14 days\.
@@ -122,7 +126,7 @@ This section provides an overview of the savings calculations that are used in y
 
 ### Consolidated billing family<a name="consolidated-fam"></a>
 
-To identify all instances for all accounts in the consolidated billing family, rightsizing recommendations look at the usage for the last 14 days for each account\. If the instance wasn't run in the last 3 days, we consider it terminated and remove it from consideration\. For all remaining instances, we call CloudWatch to get maximum CPU utilization data for the last 14 days\. This is to produce conservative recommendations, not to recommend instance modifications that could be detrimental to application performance or that could unexpectedly impact your performance\.
+To identify all instances for all accounts in the consolidated billing family, rightsizing recommendations look at the usage for the last 14 days for each account\. If the instance was stopped or terminated, we remove it from consideration\. For all remaining instances, we call CloudWatch to get maximum CPU utilization data for the last 14 days\. This is to produce conservative recommendations, not to recommend instance modifications that could be detrimental to application performance or that could unexpectedly impact your performance\.
 
 ### Determining if an instance is idle, underutilized, or neither<a name="determine-status"></a>
 

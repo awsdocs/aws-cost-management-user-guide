@@ -1,8 +1,8 @@
-# Identity and access management for AWS Billing and Cost Management<a name="security-iam"></a>
+# AWS Identity and Access Management for AWS Billing and Cost Management<a name="security-iam"></a>
 
 AWS Identity and Access Management \(IAM\) is an AWS service that helps an administrator securely control access to AWS resources\. IAM administrators control who can be *authenticated* \(signed in\) and *authorized* \(have permissions\) to use Billing and Cost Management resources\. IAM is an AWS service that you can use with no additional charge\.
 
-For more information on how to activate access to the Billing Console, see [Tutorial: Delegate Access to the Billing Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_billing.html) in the *IAM User Guide*\.
+To start activating access to the Billing console, first see [Tutorial: Delegate Access to the Billing Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_billing.html) in the *IAM User Guide*\.
 
 **Topics**
 + [Audience](#security_iam_audience)
@@ -12,7 +12,7 @@ For more information on how to activate access to the Billing Console, see [Tuto
 
 ## Audience<a name="security_iam_audience"></a>
 
-How you use AWS Identity and Access Management \(IAM\) differs, depending on the work you do in Billing and Cost Management\.
+How you use IAM differs, depending on the work you do in Billing and Cost Management\.
 
 **Service user** – If you use the Billing and Cost Management service to do your job, then your administrator provides you with the credentials and permissions that you need\. As you use more Billing and Cost Management features to do your work, you might need additional permissions\. Understanding how access is managed can help you request the right permissions from your administrator\.
 

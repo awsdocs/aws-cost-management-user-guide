@@ -22,4 +22,4 @@ For services such as Amazon EC2 that support a free tier, AWS applies the free t
 
 AWS provides budgets that track whether you exceed the free tier limits or are forecasted to go over the free tier limits\. Free tier budgets are not enabled for organizations by default\. Payer accounts can opt in to free tier usage alerts through the Billing and Cost Management console\. Free tier usage alerts aren't available to individual linked accounts\.
 
-For more information about free tiers, see [AWS Free Usage Tier FAQs](https://aws.amazon.com/free/faqs/)\. For more information about AWS Free Tier usage alerts through AWS Budgets and opting in, see [Free Tier usage alerts using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.
+For more information about free tiers, see [AWS Free Usage Tier FAQs](https://aws.amazon.com/free/faqs/)\. For more information about AWS Free Tier usage alerts through AWS Budgets and opting in, see [AWS Free Tier usage alerts using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.

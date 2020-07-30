@@ -10,7 +10,7 @@ This documentation helps you understand how to apply the shared responsibility m
 
 **Topics**
 + [Data protection in AWS Billing and Cost Management](data-protection.md)
-+ [Identity and access management for AWS Billing and Cost Management](security-iam.md)
++ [AWS Identity and Access Management for AWS Billing and Cost Management](security-iam.md)
 + [Logging and monitoring in AWS Billing and Cost Management](billing-security-logging.md)
 + [Compliance validation for AWS Billing and Cost Management](Billing-compliance.md)
 + [Resilience in AWS Billing and Cost Management](disaster-recovery-resiliency.md)

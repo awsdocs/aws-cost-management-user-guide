@@ -79,6 +79,13 @@ Alternate contacts enable AWS to contact another person about issues with your a
 
 1. For the fields to change, enter your updated information and choose **Update**\.
 
+### Examples for alternate contacts<a name="manage-account-payment-alternate-contacts-example"></a>
+
+We would reach out to each contact type in the following scenarios:
++ **Billing** \- When your monthly invoice is available, or your payment method needs to be updated\. If your **Receive PDF Invoice By Email** is turned on in your **Billing preferences**, your alternate billing contact will receive the PDF invoices as well\.
++ **Operations** \- When your service is, or will be, temporarily unavailable in one of more Regions\. Any notification related to operations\.
++ **Security** \- When you have notifications from the AWS Abuse team for potentially fraudulent activity on your AWS account\. Any notification related to security\.
+
 ## Enabling and disabling regions<a name="manage-account-payment-enable-disable-regions"></a>
 
 AWS originally enabled all new Regions by default, which enabled your users to create resources in any Region\. Now when AWS adds a Region, the new Region is disabled by default\. If you want your users to be able to create resources in a new Region, you enable the Region\.

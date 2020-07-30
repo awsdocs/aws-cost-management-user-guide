@@ -20,7 +20,8 @@ The RI utilization and RI coverage reports allow filtering by only one service a
 Choose the provider that provides your AWS services\. For AWS services, **AWS** is the legal entity\. For third\-party services that are sold through AWS Marketplace, **AWS Marketplace** is the legal entity\. 
 
 **Linked Account**  
-Choose an AWS account that is linked to the account that you're creating the budget for\.
+Choose an AWS account that is linked to the account that you're creating the budget for\.  
+Do not use this filter within a linked account\. If the current account is a linked account, filtering by `linked account` is not supported\.
 
 **Tag**  
 If you have activated any tags, choose a resource tag\. A tag is a label that you can use to organize your resource costs and track them on a detailed level\. There are AWS generated tags and user\-defined tags\. You must activate tags to use them\. For more information, see [Activating the AWS\-Generated Cost Allocation Tags](activate-built-in-tags.md) and [Activating User\-Defined Cost Allocation Tags](activating-tags.md)\.

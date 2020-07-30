@@ -9,7 +9,7 @@ You can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/p
 + [Remove a payment method](#manage-remove-credit)
 + [Use China bank redirect payment methods](manage-cny-payment.md)
 
-In addition, you can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console to manage your credit cards and direct debit accounts\. For more information, see [Managing your credit card payment methods](manage-cc.md) and [Managing your ACH direct debit payment Methods](manage-debit.md)\.
+In addition, you can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console to manage your credit cards and direct debit accounts\. For more information, see [Managing your credit card payment methods](manage-cc.md) and [Managing your ACH direct debit payment methods](manage-debit.md)\.
 
 ## View your payment methods<a name="manage-view-credit"></a>
 
@@ -38,7 +38,7 @@ You can use the console to designate a default payment method for your AWS accou
 AWS charges your default payment method automatically at the beginning of each month\. If that charge doesn't process successfully, you can use the console to update your payment method and make a payment\.
 
 **Note**  
-If you pay by ACH direct debit, AWS provides you with your invoice and initiates the charge to your payment method within 10 days of the start of the month\. It can take 3–5 days for your payment to succeed\. For more information, see [Managing your ACH direct debit payment Methods](manage-debit.md)\.<a name="making-a-payment"></a>
+If you pay by ACH direct debit, AWS provides you with your invoice and initiates the charge to your payment method within 10 days of the start of the month\. It can take 3–5 days for your payment to succeed\. For more information, see [Managing your ACH direct debit payment methods](manage-debit.md)\.<a name="making-a-payment"></a>
 
 **To make a payment**
 

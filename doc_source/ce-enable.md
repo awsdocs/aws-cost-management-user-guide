@@ -1,6 +1,6 @@
 # Enabling Cost Explorer<a name="ce-enable"></a>
 
-You can enable Cost Explorer for your account using this procedure on the Billing and Cost Management console\. You can't enable Cost Explorer using the API\. After you enable Cost Explorer, AWS prepares the data about your costs for the current month and the last three months, and then calculates the forecast for the next three months\. The current month's data is available for viewing in about 24 hours\. The rest of your data takes a few days longer\. Cost Explorer updates your cost data at least once every 24 hours\.
+You can enable Cost Explorer for your account using this procedure on the Billing and Cost Management console\. You can't enable Cost Explorer using the API\. After you enable Cost Explorer, AWS prepares the data about your costs for the current month and the last 12 months, and then calculates the forecast for the next 12 months\. The current month's data is available for viewing in about 24 hours\. The rest of your data takes a few days longer\. Cost Explorer updates your cost data at least once every 24 hours\.
 
 By default, you can launch Cost Explorer if your account is a member account in an organization\. The master account can, however, block your access\. For more information, see [Consolidated billing for AWS Organizations](consolidated-billing.md)\.
 

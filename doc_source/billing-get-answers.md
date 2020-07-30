@@ -62,6 +62,6 @@ For more information about Cost Explorer, see [Analyzing your costs with Cost Ex
 
 You can track your AWS Free Tier usage to keep you under the Free Tier limits\. You can set up alerts on your AWS account when your Free Tier limits reach a threshold, and monitor your usage through the Billing and Cost Management console\.
 
-For more information about using these features, see [Tracking your Free Tier usage](tracking-free-tier-usage.md)\.
+For more information about using these features, see [Tracking your AWS Free Tier usage](tracking-free-tier-usage.md)\.
 
 To see details for usage that was charged beyond your Free Tier limit, see the [Understanding your charged usage](#billing-support-usage) section\.

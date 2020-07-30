@@ -9,3 +9,4 @@ The following restrictions apply to the AWS generated tags:
 + The reserved prefix is `aws:`\.
 
   AWS generated tag names and values are automatically assigned the `aws:` prefix, which you can't assign\. AWS generated tag names don't count towards the user\-defined resource tag limit of 50\. User\-defined tag names have the prefix `user:` in the cost allocation report\.
++ Null tag values will not appear in Cost Explorer and AWS Budgets\. If there is only one tag value that is also null, the tag key will also not appear in Cost Explorer or AWS Budgets\.

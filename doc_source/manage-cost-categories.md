@@ -35,10 +35,6 @@ For more information about Cost Categories quotas, see [Quotas and restrictions]
 | SavingsPlanRecurringFee | Savings Plan Recurring Fee | 
 | Tax | Tax | 
 | Credit | Credit | 
-| EDP\_Discount | Enterprise Discount Program Discount | 
-| RVD\_Discount | RI Volume Discount | 
-| PRC\_Discount | Private Rate Card Discount | 
-| UBD\_Discount | Bundled Discount | 
 | SavingsPlanNegation | Savings Plan Negation | 
 
 **Topics**

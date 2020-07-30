@@ -4,9 +4,10 @@ The following table describes the current quotas, restrictions, and naming const
 
 **Topics**
 + [Budgets](#limits-budgets)
-+ [Reports](#limits-reports)
++ [Budget Reports](#limits-reports)
 + [Cost Categories](#limits-categories)
 + [Cost Explorer](#limits-ce)
++ [Purchase Orders](#limits-po)
 
 ## Budgets<a name="limits-budgets"></a>
 
@@ -17,12 +18,14 @@ The following table describes the current quotas, restrictions, and naming const
 | Total number of budgets per master account | 20,000 | 
 | Characters allowed in a budget name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
 
-## Reports<a name="limits-reports"></a>
+## Budget Reports<a name="limits-reports"></a>
 
 
 |  |  | 
 | --- |--- |
-| Number of Free Tier AWS Cost and Usage reports | 10 | 
+| Maximum number of budget reports | 50 | 
+| Maximum number of budgets per budget report | 50 | 
+| Maximum email recipients in a budget report | 50 | 
 
 ## Cost Categories<a name="limits-categories"></a>
 
@@ -41,4 +44,13 @@ The following table describes the current quotas, restrictions, and naming const
 
 |  |  | 
 | --- |--- |
-| Maximum number of reports that you can save per account | 300 | 
+| Maximum number of reports that you can save per account | 50 | 
+
+## Purchase Orders<a name="limits-po"></a>
+
+
+|  |  | 
+| --- |--- |
+| Characters allowed in a purchase order ID | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
+| Number of characters allowed in a purchase order ID | 100 | 
+| Number of line items per purchase order | 100 | 

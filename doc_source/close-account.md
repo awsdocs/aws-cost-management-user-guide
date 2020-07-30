@@ -1,6 +1,6 @@
 # Closing an account<a name="close-account"></a>
 
-Only the AWS account root user can close an AWS account\. AWS can't close accounts on your behalf\. If you have any questions throughout the process, you can contact your account representative or contact us to open a billing or account support case for assistance\.
+Only the AWS account root user can close an AWS account\. AWS can't close accounts on your behalf\. If you have any questions throughout the process, you can contact your account representative or contact AWS Support for assistance\. For more information about contacting AWS Support, see [Contacting AWS Support](billing-get-answers.md#billing-support)\.
 
 **Topics**
 + [Considerations before you close your AWS account](#before-closing)

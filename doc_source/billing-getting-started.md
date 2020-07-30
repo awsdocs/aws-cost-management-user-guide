@@ -23,7 +23,7 @@ Billing and Cost Management offers you a number of different ways to view and mo
  Choose [Cost Explorer](https://console.aws.amazon.com/cost-reports/home?#/custom) to track and analyze your AWS usage\. Cost Explorer is free for all accounts\. For more information about Cost Explorer, see [Analyzing your costs with Cost Explorer](ce-what-is.md)\.   
 **Budgets**  
  Choose [Budgets](https://console.aws.amazon.com/billing/home?region=us-east-1#/budgets) to manage budgets for your account\. For more information about budgets, see [Monitoring your usage and costs](monitoring-costs.md)\.   
-You can also check the status of your free tier with the provided AWS Free Tier usage alerts using AWS Budgets\. For more information about AWS Free Tier usage alerts, see [Free Tier usage alerts using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.   
+You can also check the status of your free tier with the provided AWS Free Tier usage alerts using AWS Budgets\. For more information about AWS Free Tier usage alerts, see [AWS Free Tier usage alerts using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.   
 **Bills**  
  Choose [Bills](https://console.aws.amazon.com/billing/home?region=us-east-1#/bill) to see details about your current charges\.   
 **Orders and Invoices**  
@@ -145,7 +145,7 @@ If you have questions about your bill, see the [AWS Knowledge Center](http://aws
 ## Where do I go from here?<a name="whereto"></a>
 
  Explore some of the features designed to help you dig a little deeper and streamline your accounting practices\. 
-+ [Tracking your Free Tier usage](tracking-free-tier-usage.md)
++ [Tracking your AWS Free Tier usage](tracking-free-tier-usage.md)
 + [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)
 + [Analyzing your costs with Cost Explorer](ce-what-is.md)
 + [Managing your costs with AWS Budgets](budgets-managing-costs.md)

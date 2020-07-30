@@ -27,40 +27,40 @@ A JSON offer file looks like this:
 
 ```
 {
-   "[formatVersion](#offer-format-version)":"The version of the file format",
-   "[disclaimer](#offer-disclaimer)":"The disclaimers for the offer file",
-   "[offerCode](#offer-code)":"The code for the service", 
-   "[version](#offer-version)":"The version of the offer file",
-   "[publicationDate](#offer-publication-date)":"The publication date of the offer file", 
-   "[Products](#offer-product-defs)": {  
-      "[sku](#offer-product-skus)": {
-         "[sku](#offer-product-skus)":"The SKU of the product",
-         "[productFamily](#offer-product-family)":"The product family of the product", 
-         "[attributes](#offer-product-attributes)": {
-            "[attributeName](#offer-product-attribute-name)":"[attributeValue](#offer-product-attribute-value)", 
+   "":"The version of the file format",
+   "":"The disclaimers for the offer file",
+   "":"The code for the service", 
+   "":"The version of the offer file",
+   "":"The publication date of the offer file", 
+   "Products": {  
+      "": {
+         "":"The SKU of the product",
+         "":"The product family of the product", 
+         "": {
+            "":"", 
          }    
       }  
    }, 
-   "[Terms](#pricing-details)": {
-      "[termType](#offer-term-type)": {
-         "[sku](#offer-term-skus)": {
-            "[sku](#offer-term-skus)": {      
-               "[offerTermCode](#offer-term-code)":"The term code of the product", 
-               "[sku](#offer-term-skus)":"The SKU of the product",
-               "[effectiveDate](#offer-term-effective-date)":"The effective date of the pricing details", 
-               "[termAttributesType](#offer-term-attribute-type)":"The attribute type of the terms", 
-               "[termAttributes](#offer-term-attributes)": { 
-                  "[attributeName](#offer-term-attribute-name)":"[attributeValue](#offer-term-attribute-value)", 
+   "Terms": {
+      "": {
+         "": {
+            "": {      
+               "":"The term code of the product", 
+               "":"The SKU of the product",
+               "":"The effective date of the pricing details", 
+               "":"The attribute type of the terms", 
+               "": { 
+                  "":"", 
                }, 
-               "[priceDimensions](#offer-term-price-dimensions)": {       
-                  "[rateCode](#offer-term-rate-codes)": {     
-                     "[rateCode](#offer-term-rate-codes)":"The rate code of the price", 
-                     "[description](#offer-term-description)":"The description of the term", 
-                     "[unit](#offer-term-unit)":"The usage measurement unit for the price", 
-                     "[startingRange](#offer-term-starting-range)":"The start range for the term", 
-                     "[endingRange](#offer-term-ending-range)":"The end range for the term", 
-                     "[pricePerUnit](#offer-term-price-per-unit)": {       
-                        "[currencyCode](#offer-term-currency-code)":"[currencyRate](#offer-term-currency-rate)", 
+               "": {       
+                  "": {     
+                     "":"The rate code of the price", 
+                     "":"The description of the term", 
+                     "":"The usage measurement unit for the price", 
+                     "":"The start range for the term", 
+                     "":"The end range for the term", 
+                     "": {       
+                        "":"", 
                      }            
                   }          
                }        

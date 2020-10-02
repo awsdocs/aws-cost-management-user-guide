@@ -19,7 +19,7 @@ AWS services are provided by both AWS and AISPL\. Use this procedure to determin
 
 **To determine which company your account is with**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the page footer, look at the copyright notice\. If the copyright is for Amazon Web Services, Inc\., then your account is with AWS\. If the copyright is for Amazon Internet Services Private Ltd\., then your account is with AISPL\.
 
@@ -74,7 +74,7 @@ Use the [Account Settings](https://console.aws.amazon.com/billing/home#/account)
 
 You can change the name, password, and email address associated with your AISPL account\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
 
@@ -90,7 +90,7 @@ You can change the name, password, and email address associated with your AISPL 
 
 You can change the contact information associated with your AISPL account, including your mailing address, telephone number, and website address\. You cannot change your country\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
 
@@ -105,7 +105,7 @@ You can choose to add an email address for billing in the **Alternate Contacts**
 
 You can add alternate contacts to your account\. Alternate contacts enable AISPL to contact another person about issues with your account, even if you are unavailable\. 
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
 
@@ -117,7 +117,7 @@ You can add alternate contacts to your account\. Alternate contacts enable AISPL
 
 You can add your Permanent Account Number \(PAN\) to your account and edit it\. 
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Tax Settings**\.
 
@@ -129,7 +129,7 @@ You can add your Permanent Account Number \(PAN\) to your account and edit it\.
 
 You can edit multiple Permanent Account Numbers \(PANs\) in your account\. 
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Tax Settings**\.
 
@@ -143,7 +143,7 @@ You can edit multiple Permanent Account Numbers \(PANs\) in your account\.
 
 You can edit multiple Goods and Services Tax numbers \(GSTs\) in your account\. 
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation pane, choose **Tax Settings**\.
 
@@ -157,7 +157,7 @@ You can edit multiple Goods and Services Tax numbers \(GSTs\) in your account\.
 
 You can view your tax invoices in the console\. 
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation pane, choose **Bills**\.
 

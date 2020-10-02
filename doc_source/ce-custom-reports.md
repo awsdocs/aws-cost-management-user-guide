@@ -17,13 +17,7 @@ Cost Explorer reports can be modified\. We strongly recommend that you don't use
 
 **To save a Cost Explorer report**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
-
-1. In the navigation pane, choose **Cost Explorer**\.
-
-1. On the **Cost Explorer** page, choose **Launch Cost Explorer**\.
-**Note**  
-Cost Explorer is available in any AWS account for no cost\.
+Sign in to the AWS Management Console and open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
 
 1. Choose **New report**\. This resets all of your Cost Explorer settings to your default settings\. 
 
@@ -41,13 +35,7 @@ You can use the console to view saved Cost Explorer reports\.
 
 **To view your saved reports**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
-
-1. In the navigation pane, choose **Cost Explorer**\.
-
-1. On the **Cost Explorer** page, choose **Launch Cost Explorer**\.
-**Note**  
-Cost Explorer is available in any AWS account for no cost\.
+Open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
 
 1. On the report dropdown menu, choose **View/Manage all reports**\.
 
@@ -59,13 +47,7 @@ You can use the console to edit Cost Explorer reports\.
 
 **To edit your report**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
-
-1. In the navigation pane, choose **Cost Explorer**\.
-
-1. On the **Cost Explorer** page, choose **Launch Cost Explorer**\.
-**Note**  
-Cost Explorer is available in any AWS account for no cost\.
+Open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
 
 1. On the report dropdown menu, choose the report that you want to edit\.
 **Note**  
@@ -83,13 +65,7 @@ You can use the console to delete saved Cost Explorer reports\.
 
 **To delete a saved report**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
-
-1. In the navigation pane, choose **Cost Explorer**\.
-
-1. On the **Cost Explorer** page, choose **Launch Cost Explorer**\.
-**Note**  
-Cost Explorer is available in any AWS account for no cost\.
+Open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
 
 1. On the report dropdown menu, choose **View/Manage all reports**\.
 

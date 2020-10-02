@@ -19,6 +19,6 @@ The **Month\-to\-Date Top Services by Spend** graph shows the services that you 
 ## Opening the Billing and Cost Management console and dashboard<a name="opening-billing-dashboard"></a>
 
 **To open the Billing and Cost Management console and dashboard**
-+ Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
++ Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
   The console opens to the **Dashboard**, where you can see your current month\-to\-date usage graphs\.

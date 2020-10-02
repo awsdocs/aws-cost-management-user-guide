@@ -22,7 +22,7 @@ You can use the Billing and Cost Management console to confirm that you payment 
 
 **To verify your payment**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Orders and invoices**\.
 
@@ -49,9 +49,9 @@ If you can't successfully complete your verification, we recommend that you take
 
 ## AWS Organizations<a name="emea-cc-awsorg"></a>
 
-If you're a member account in AWS Organizations, your purchased services that require upfront payments might not activate until the master account user verifies the payment\. If verification is required, AWS notifies the billing contact of the master account by email\.
+If you're a member account in AWS Organizations, your purchased services that require upfront payments might not activate until the Master account user verifies the payment\. If verification is required, AWS notifies the billing contact of the Master account by email\.
 
-Establish a communication process between your master and member accounts\. To change your payment method, see [Managing your AWS Europe credit card payment methods](manage-cc-emea.md)\.
+Establish a communication process between your Master account and member accounts\. To change your payment method, see [Managing your AWS Europe credit card payment methods](manage-cc-emea.md)\.
 
 ## Subscription purchases<a name="emea-bulk-purchases"></a>
 

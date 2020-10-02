@@ -6,7 +6,7 @@ You can copy an existing budget to a new one\. This enables you to retain the fi
 
 Budgets use the same filters as Cost Explorer\. For more information about the filters, see [Filtering the data that you want to view](ce-filtering.md)\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation pane, choose **Budgets**\.
 

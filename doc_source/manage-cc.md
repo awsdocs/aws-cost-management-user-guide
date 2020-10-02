@@ -12,7 +12,7 @@ You can use the console to add a credit card to your account\.<a name="add-credi
 
 **To add a credit card to your AWS account**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose [Payment methods](https://console.aws.amazon.com/billing/home#/paymentmethods)\.
 

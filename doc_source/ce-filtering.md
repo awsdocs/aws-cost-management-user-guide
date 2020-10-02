@@ -18,7 +18,7 @@ With Cost Explorer, you can filter how you view your AWS costs by one or more of
 + **Usage Type**
 + **Usage Type Group**
 
-You can use Cost Explorer to see which service you use the most, which Availability Zone \(AZ\) most of your traffic is in, which linked account uses AWS the most, and more\. You can also apply multiple filters to look at intersecting datasets\. For example, you can use the **Linked Account** and **Services** filters to identify the linked account that spent the most money on Amazon EC2\. 
+You can use Cost Explorer to see which service you use the most, which Availability Zone \(AZ\) most of your traffic is in, which member account uses AWS the most, and more\. You can also apply multiple filters to look at intersecting datasets\. For example, you can use the **Linked Account** and **Services** filters to identify the member account that spent the most money on Amazon EC2\. 
 
 **To filter your data**
 
@@ -37,7 +37,7 @@ You can continue refining your cost analysis by using multiple filters, by group
 Cost Explorer displays a chart that represents the data in common to the filters that you have selected, which means that you can use filters together to analyze subsets of cost data\. For example, if you set the **Service** filter to show costs related to Amazon EC2 and Amazon RDS services and then select **Reserved** using the **Purchase Option** filter, the cost chart shows how much money **Reserved** instances on Amazon EC2 and Amazon RDS cost for each of the three months specified\.
 
 **Note**  
-AWS Cost and Usage report in Cost Explorer is limited to 1024 filters\.
+AWS Cost and Usage Reports in Cost Explorer is limited to 1024 filters\.
 The RI Utilization reports allow filtering by only one service at a time, and only for the following services:  
 Amazon EC2
 Amazon Redshift
@@ -85,7 +85,7 @@ In Cost Explorer, you can filter by the following groups:
 
   The unique identifier for your resources\.
 **Note**  
-To enable resource granularity, opt\-in through on the Cost Explorer settings page as the payer account\. This is available for Amazon EC2 instances\.
+To enable resource granularity, opt\-in through on the Cost Explorer settings page as the master account\. This is available for Amazon EC2 instances\.
 + **Service**
 
   AWS products\. To learn what's available, see [AWS Products and Services](https://aws.amazon.com/products/)\. You can use this dimension to filter costs by specific AWS Marketplace software, including your costs for AMIs, web services, and desktop apps\. See the [ What is AWS Marketplace? ](https://docs.aws.amazon.com/marketplace/latest/controlling-access/what-is-marketplace.html) guide for more information\. 

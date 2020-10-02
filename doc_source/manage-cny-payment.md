@@ -23,7 +23,7 @@ To use China bank redirect, you must enable the payment method on the Billing an
 
 **To enable China bank redirect payments**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose [Orders and Invoices](https://console.aws.amazon.com/billing/home#/paymentmethods)\.
 

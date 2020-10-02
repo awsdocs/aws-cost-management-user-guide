@@ -47,7 +47,7 @@ For more information, see [Using identity\-based policies \(IAM policies\) for B
 
 **To view your RI recommendations**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
    The console opens to the **Dashboard**, where you can see your current month\-to\-date usage graphs\.
 
@@ -88,7 +88,7 @@ Instead of forecasting your future usage, Cost Explorer assumes that your future
 
 **To modify your RI recommendations**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
    The console opens to the **Dashboard**, where you can see your current month\-to\-date usage graphs\.
 

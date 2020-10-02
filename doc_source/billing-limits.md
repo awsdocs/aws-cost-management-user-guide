@@ -1,13 +1,14 @@
 # Quotas and restrictions<a name="billing-limits"></a>
 
-The following table describes the current quotas, restrictions, and naming constraints within Billing and Cost Management\.
+The following table describes the current quotas, restrictions, and naming constraints within AWS Billing and Cost Management\.
 
 **Topics**
 + [Budgets](#limits-budgets)
-+ [Budget Reports](#limits-reports)
++ [Budget reports](#limits-reports)
 + [Cost Categories](#limits-categories)
 + [Cost Explorer](#limits-ce)
-+ [Purchase Orders](#limits-po)
++ [Purchase orders](#limits-po)
++ [Anomaly detection](#limits-ad)
 
 ## Budgets<a name="limits-budgets"></a>
 
@@ -18,7 +19,7 @@ The following table describes the current quotas, restrictions, and naming const
 | Total number of budgets per master account | 20,000 | 
 | Characters allowed in a budget name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
 
-## Budget Reports<a name="limits-reports"></a>
+## Budget reports<a name="limits-reports"></a>
 
 
 |  |  | 
@@ -32,7 +33,7 @@ The following table describes the current quotas, restrictions, and naming const
 
 |  |  | 
 | --- |--- |
-| Total number of Cost Categories per payer account | 50 | 
+| Total number of Cost Categories per master account | 50 | 
 | Number of Cost Category rules per Cost Category \(API\) | 500 | 
 | Number of Cost Category rules per Cost Category \(UI\) | 100 | 
 | Cost Category Names | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
@@ -46,7 +47,7 @@ The following table describes the current quotas, restrictions, and naming const
 | --- |--- |
 | Maximum number of reports that you can save per account | 50 | 
 
-## Purchase Orders<a name="limits-po"></a>
+## Purchase orders<a name="limits-po"></a>
 
 
 |  |  | 
@@ -54,3 +55,12 @@ The following table describes the current quotas, restrictions, and naming const
 | Characters allowed in a purchase order ID | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
 | Number of characters allowed in a purchase order ID | 100 | 
 | Number of line items per purchase order | 100 | 
+
+## Anomaly detection<a name="limits-ad"></a>
+
+
+|  |  | 
+| --- |--- |
+| The maximum number of monitors you can create for an AWS service monitor type |  1 monitor per master account  | 
+| The maximum number of monitors you can create for other monitor types \(member account, cost category, cost allocation tag\) | 100 total monitors per master account | 
+| Unsupported services | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 

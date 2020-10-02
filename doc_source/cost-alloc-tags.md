@@ -20,7 +20,7 @@ You can also use tags to filter views in Cost Explorer\. For more information ab
 
 **Note**  
 As a best practice, do not include sensitive information in tags\.
-Only master accounts in an organization and single accounts that are not members of an organization have access to the **Cost Allocation Tags** manager in the Billing console\.
+Only master account in an organization and single accounts that are not members of an organization have access to the **Cost Allocation Tags** manager in the Billing console\.
 
 **Topics**
 + [AWS\-Generated Cost Allocation Tags](aws-tags.md)

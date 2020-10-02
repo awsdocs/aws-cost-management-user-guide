@@ -1,6 +1,6 @@
 # Optimizing your cost with Rightsizing Recommendations<a name="ce-rightsizing"></a>
 
-The rightsizing recommendations feature in Cost Explorer helps you identify cost\-saving opportunities by downsizing or terminating instances in Amazon Elastic Compute Cloud \(Amazon EC2\)\. Rightsizing recommendations analyze your Amazon EC2 resources and usage to show opportunities for how you can lower your spending\. You can see all of your underutilized Amazon EC2 instances across linked accounts in a single view to immediately identify how much you can save\. After you identify your recommendations, you can take action on the Amazon EC2 console\. 
+The rightsizing recommendations feature in Cost Explorer helps you identify cost\-saving opportunities by downsizing or terminating instances in Amazon Elastic Compute Cloud \(Amazon EC2\)\. Rightsizing recommendations analyze your Amazon EC2 resources and usage to show opportunities for how you can lower your spending\. You can see all of your underutilized Amazon EC2 instances across member accounts in a single view to immediately identify how much you can save\. After you identify your recommendations, you can take action on the Amazon EC2 console\. 
 
 **Topics**
 + [Getting started with rightsizing recommendations](#rr-getting-started)
@@ -14,7 +14,7 @@ You can access your reservation recommendations and resource\-based recommendati
 
 **To access rightsizing recommendations**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Cost Explorer**\.
 
@@ -31,7 +31,7 @@ You can access your reservation recommendations and resource\-based recommendati
 1. In the **Resource optimization recommendations** section, choose **Enable rightsizing recommendations**\.
 
 **Note**  
-Only regular or payer accounts can enable rightsizing recommendations\. After you enable the feature, both linked and payer accounts can access rightsizing recommendations unless the payer account specifically prohibits linked account access on the **settings** page\.   
+Only regular or a master account can enable rightsizing recommendations\. After you enable the feature, both member and master account can access rightsizing recommendations unless the master account specifically prohibits member account access on the **settings** page\.   
 To improve the recommendation quality, AWS might use your published utilization metrics, such as disk or memory utilization, to improve our recommendation models and algorithms\. All metrics are anonymized and aggregated before AWS uses them for model training\. If you want to opt out of this experience and request that your metrics not be stored and used for model improvement, contact AWS Support\. For more information, see [AWS Service Terms](https://aws.amazon.com/service-terms/)\.
 
 ## Using your rightsizing recommendations<a name="rr-use"></a>
@@ -56,7 +56,7 @@ You can see the following top\-level key performance indicators \(KPIs\) in your
    + Generate recommendations \(option to generate recommendations within the instance family, or across multiple instance families\)
 
 1. Above the **Findings** table, use the search bar to filter by the following parameters:
-   + Account ID \(option available from the payer account\)
+   + Account ID \(option available from the master account\)
    + Region
    + Cost allocation tag
 

@@ -61,7 +61,7 @@ In addition to the free tier usage alerts, you can use budgets to notify you whe
 
 Use this procedure to create a cost\-based budget\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Budgets**\.
 
@@ -93,7 +93,7 @@ Use this procedure to create a cost\-based budget\.
 
 1. \(Optional\) Under **Budget parameters \(optional\)**, for **Advanced options**, choose one or more of the following filters\. If you're signed in from a member account in an organization instead of from a master account, you might not see all of the advanced options\.  
 **Refunds**  
-Any refunds that you received\.   
+Any refunds that you received\.  
 **Credits**  
 Any AWS credits that are applied to your account\.  
 **Upfront reservation fees**  
@@ -104,8 +104,7 @@ Any recurring charges to your account\. When you purchase a Partial Upfront or N
 Any taxes that are associated with the charges or fees in your budget\.  
 **Support charges**  
 Any charges that AWS charges you for a support plan\. When you purchase a support plan from AWS, you pay a monthly charge in exchange for service support\.   
-**Other subscription costs**  
-Other applicable subscription costs that are not covered by the other data categories\. These costs can include data such as AWS training fees, AWS competency fees, out\-of\-cycle charges such as registering a domain with Route 53, and more\.  
+**Other subscription costs**    
 **Use blended costs**  
 The cost of the instance hours that you used\. A blended rate doesn't include either the RI upfront costs or the RI discounted hourly rate\.  
 **Use amortized costs**  

@@ -12,13 +12,13 @@ In addition, you can use the [Payment Methods](https://console.aws.amazon.com/bi
 
 You can use the console to view the payment methods associated with your account\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods)\. <a name="designate-default-emea"></a>
 
 **To designate a default payment method**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods)\. 
 
@@ -30,7 +30,7 @@ AWS Europe charges your default payment method automatically at the beginning of
 **Note**  
 If you pay by SEPA direct debit, AWS provides you with your invoice and initiates the charge to your payment method either the following day or the invoice due date, whichever is latest\. It can take up to 5 business days for your payment to succeed\. For more information, see [Managing your SEPA direct debit payment methods](manage-debit-emea.md)\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Payment Methods**\.
 
@@ -52,7 +52,7 @@ If you pay by SEPA direct debit, AWS provides you with your invoice and initiate
 
 You can use the console to remove a payment method from your account\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Payment Methods**\.
 

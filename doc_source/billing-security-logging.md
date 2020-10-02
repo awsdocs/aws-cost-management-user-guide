@@ -2,11 +2,11 @@
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of your AWS account\. There are several tools available to monitor your Billing and Cost Management usage\.
 
-## AWS Cost and Usage Reports<a name="billing-security-logging-cur"></a>
+## <a name="billing-security-logging-cur"></a>
 
-AWS Cost and Usage Reports tracks your AWS usage and provides estimated charges associated with your account\. Each report contains line items for each unique combination of AWS products, usage type, and operation that you use in your AWS account\. You can customize the AWS Cost and Usage Reports to aggregate the information either by the hour or by the day\.
+ tracks your AWS usage and provides estimated charges associated with your account\. Each report contains line items for each unique combination of AWS products, usage type, and operation that you use in your AWS account\. You can customize the to aggregate the information either by the hour or by the day\.
 
-For more information about AWS Cost and Usage Reports, see the [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.
+For more information about , see the [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.
 
 ## Cost Explorer<a name="billing-security-logging-ce"></a>
 

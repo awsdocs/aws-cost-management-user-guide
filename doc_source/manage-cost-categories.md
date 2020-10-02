@@ -1,6 +1,6 @@
 # Managing your costs with Cost Categories<a name="manage-cost-categories"></a>
 
-You can use Cost Categories to map your AWS costs and usage into meaningful categories\. With Cost Categories, you can organize your costs using a rule\-based engine\. The rules that you configure will organize your costs into categories\. You can then use these categories across products in the AWS Billing and Cost Management console, such as Cost Explorer, AWS Budgets, and AWS Cost and Usage Reports \(AWS CUR\)\.
+You can use Cost Categories to map your AWS costs and usage into meaningful categories\. With Cost Categories, you can organize your costs using a rule\-based engine\. The rules that you configure will organize your costs into categories\. You can then use these categories across products in the AWS Billing and Cost Management console, such as Cost Explorer, AWS Budgets, and \(AWS CUR\)\.
 
 You can create groupings of costs using Cost Categories\. For example, your business is organized by teams, and each team has multiple accounts within\. To build this structure in Cost Categories, first create a Cost Category named *Team*\. Then, you can map costs to a Cost Categories value named `Team 123`\.
 
@@ -13,7 +13,7 @@ After they are created, your Cost Categories appear in Cost Explorer, AWS Budget
 **Note**  
 Cost Categories are effective at the start of the current month\. If you create or update your Cost Category in the middle of the month, it retroactively takes effect on cost and usage from the beginning of the month\.
 
-This is an administrative feature, and can only be customized by Payer accounts or Regular accounts in AWS Organizations\.
+This is an administrative feature, and can only be customized by the master account or regular accounts in AWS Organizations\.
 
 ## Limits<a name="cost-categories-limits"></a>
 

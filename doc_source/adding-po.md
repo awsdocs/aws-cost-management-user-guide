@@ -9,13 +9,13 @@ You can use the Billing and Cost Management console to add purchase orders to us
 
 **To add a purchase order**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Purchase orders**\.
 
 1. Choose **Add purchase order**\.
 
-1. For **Purchase order ID**, enter your purchase order ID\. Purchase order IDs must be unique within your account\. For details about character restrictions for your purchase ID, see [Purchase Orders](billing-limits.md#limits-po)\.
+1. For **Purchase order ID**, enter your purchase order ID\. Purchase order IDs must be unique within your account\. For details about character restrictions for your purchase ID, see [Purchase orders](billing-limits.md#limits-po)\.
 
 1. \(Optional\) For **Description**, describe your purchase order, including any notes for your reference\.
 

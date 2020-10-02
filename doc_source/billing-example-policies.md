@@ -5,7 +5,7 @@ This topic contains example policies that you can attach to your IAM user or gro
 + `Effect` is always `Allow` or `Deny`\.
 + `Action` is the name of the action or a wildcard \(`*`\)\. 
 
-  The action prefix is `budgets` for AWS Budgets, `cur` for AWS Cost and Usage reports, `aws-portal` for AWS Billing, or `ce` for Cost Explorer\.
+  The action prefix is `budgets` for AWS Budgets, `cur` for AWS Cost and Usage Reports, `aws-portal` for AWS Billing, or `ce` for Cost Explorer\.
 + `Resource` is always `*` for AWS Billing\.
 
   For actions performed on a `budget` resource, specify the budget Amazon Resource Name \(ARN\)\.
@@ -30,6 +30,7 @@ These policies require that you activate IAM user access to the Billing and Cost
 + [Example 13: View and manage cost categories](#example-policy-cc-api)
 + [Example 14: Create, view, edit, or delete AWS Cost and Usage Reports](#example-policy-report-definition)
 + [Example 15: View and manage purchase orders](#example-view-manage-purchaseorders)
++ [Example 16: Allow read\-only access to anomaly detection](#example-policy-ce-ad)
 
 ## Example 1: Allow IAM users to view your billing information<a name="example-billing-view-billing-only"></a>
 
@@ -389,6 +390,25 @@ This policy allows an IAM user to view and manage purchase orders, using the fol
         "purchase-orders:ViewPurchaseOrders",
         "purchase-orders:ModifyPurchaseOrders"
       ],
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+## Example 16: Allow read\-only access to anomaly detection<a name="example-policy-ce-ad"></a>
+
+To allow IAM users read\-only access to anomaly detection, use the following policy to grant them access\. `ce:ProvideAnomalyFeedback` is optional as a part of the read\-only access\.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Action": [
+        "ce:Get*"
+      ],
+      "Effect": "Allow",
       "Resource": "*"
     }
   ]

@@ -1,12 +1,12 @@
 # Creating Cost Categories<a name="create-cost-categories"></a>
 
-You can create Cost Categories to organize your cost and usage information\. Regular accounts and Payer accounts in AWS Organizations have default access to create Cost Categories\. Rules are not mutually exclusive, and you can control the order in which the rules apply\. Allow up to 24 hours after creating a Cost Category for your usage records to be updated with values\.
+You can create Cost Categories to organize your cost and usage information\. Regular accounts and master account in AWS Organizations have default access to create Cost Categories\. Rules are not mutually exclusive, and you can control the order in which the rules apply\. Allow up to 24 hours after creating a Cost Category for your usage records to be updated with values\.
 
 Use the following procedure to create a new Cost Category\.<a name="create-cost-categories-steps"></a>
 
 **To create a Cost Category**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Cost Categories**\.
 

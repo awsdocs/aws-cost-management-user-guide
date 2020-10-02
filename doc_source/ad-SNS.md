@@ -1,8 +1,11 @@
-# Creating an Amazon SNS topic for budget notifications<a name="budgets-sns-policy"></a>
+# Creating an Amazon SNS topic for anomaly detection<a name="ad-SNS"></a>
 
-When you create a budget that sends notifications to an Amazon Simple Notification Service \(Amazon SNS\) topic, you need to either have a preexisting Amazon SNS topic or create one\. Amazon SNS topics allow you to send notifications over SNS in addition to email\. Your budget must have permissions to send a notification to your topic\. 
 
-To create an Amazon SNS topic and grant permissions to your budget, use the Amazon SNS console\.
+|  | 
+| --- |
+| Anomaly detection is in public preview for AWS Billing and Cost Management and is subject to change\. Your use of anomaly detection is subject to the Preview Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
+
+When you create an anomaly detection monitor that sends notifications to an Amazon Simple Notification Service \(Amazon SNS\) topic, you must either have a preexisting Amazon SNS topic or create one\. Amazon SNS topics allow you to send notifications over SNS in addition to email\. Anomaly detection must have permissions to send a notification to your topic\. 
 
 **To create an Amazon SNS notification topic and grant permissions**
 
@@ -23,46 +26,27 @@ To create an Amazon SNS topic and grant permissions to your budget, use the Amaz
    ```
        
    {
-     "Sid": "E.g., AWSBudgetsSNSPublishingPermissions",
+     "Sid": "E.g., AWSAnomalyDetectionSNSPublishingPermissions",
      "Effect": "Allow",
      "Principal": {
-       "Service": "budgets.amazonaws.com"
+       "Service": "costalerts.amazonaws.com"
      },
      "Action": "SNS:Publish",
      "Resource": "your topic ARN"
    },
    ```
 
-1. Replace **E\.g\., AWSBudgetsSNSPublishingPermissions** with a string\. The `Sid` must be unique within the policy\.
+1. Replace *E\.g\., AWSAnomalyDetectionSNSPublishingPermissions* with a string\. The `Sid` must be unique within the policy\.
+
+1. Replace *your topic ARN* with the Amazon SNS topic Amazon Resource Name \(ARN\) from step 7 in this procedure\.
 
 1. Choose **Create topic**\.
 
-1. Under **Details**, save your ARN\.
-
-1. Choose **Edit**\.
-
-1. Under **Access policy**, replace *your topic ARN* with the Amazon SNS topic ARN from step 10\.
-
-1. Choose **Save changes**\.
-
    Your topic now appears in the list of topics on the **Topics** page\.
 
-## Troubleshooting<a name="budgets-sns-troubleshoot"></a>
+## Checking or resending notification confirmation emails<a name="ad-confirm-subscription"></a>
 
-You might encounter the following error messages when you’re creating your Amazon SNS topic for budget notifications\.
-
-**Please comply with SNS ARN format**  
-There’s a syntax error in the ARN you replaced \(step 9\)\. Confirm the ARN for proper syntax and formatting\.
-
-**Invalid SNS topic**  
-AWS Budgets doesn’t have access to the SNS topic\. Confirm that you’ve allowed budget\.amazonaws\.com the ability to publish messages to this SNS topic, in the SNS topic’s resource based policy\.
-
-**The SNS topic is encrypted**  
-You have **encryption** enabled on the SNS topic\. The SNS topic won’t work without additional permissions\. Disable encryption on the topic, and refresh the **Budget edit** page\. 
-
-## Checking or resending notification confirmation emails<a name="budgets-confirm-subscription"></a>
-
-When you create a budget with notifications, you also create Amazon SNS notifications\. For notifications to be sent, you must accept the subscription to the Amazon SNS notification topic\.
+When you create an anomaly detection monitor with notifications, you also create Amazon SNS notifications\. For notifications to be sent, you must accept the subscription to the Amazon SNS notification topic\.
 
 To confirm that your notification subscriptions have been accepted or to resend a subscription confirmation email, use the Amazon SNS console\.
 
@@ -72,7 +56,7 @@ To confirm that your notification subscriptions have been accepted or to resend 
 
 1. On the navigation pane, choose **Subscriptions**\.
 
-1. On the **Subscriptions** page, for **Filter**, enter `budget`\. A list of your budget notifications appears\.
+1. On the **Subscriptions** page, for **Filter**, enter `monitor`\. A list of your monitor notifications appears\.
 
 1. Check the status of your notification\. Under **Status**, `PendingConfirmation` appears if a subscription hasn't been accepted and confirmed\.
 
@@ -80,11 +64,11 @@ To confirm that your notification subscriptions have been accepted or to resend 
 
    When each owner of an endpoint receives the email, they must choose the **Confirm subscription** link to activate the notification\.
 
-## Protecting your Amazon SNS budget alerts data with SSE and AWS KMS<a name="protect-sns-sse"></a>
+## Protecting your Amazon SNS anomaly detection alerts data with SSE and AWS KMS<a name="protect-sns-sse"></a>
 
 You can use server\-side encryption \(SSE\) to transfer sensitive data in encrypted topics\. SSE protects Amazon SNS messages by using keys managed in AWS Key Management Service \(AWS KMS\)\.
 
-To manage SSE using AWS Management Console or the AWS Service Development Kit \(SDK\), see [Enabling Server\-Side Encryption \(SSE\) for an Amazon SNS Topic](https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-enable-encryption-for-topic.html) in the *Amazon Simple Notification Service Getting Started Guide*\.
+To manage SSE using AWS Management Console or the AWS SDK, see [Enabling Server\-Side Encryption \(SSE\) for an Amazon SNS Topic](https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-enable-encryption-for-topic.html) in the *Amazon Simple Notification Service Getting Started Guide*\.
 
 To create encrypted topics using AWS CloudFormation, see the [AWS CloudFormation User Guide](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)\.
 
@@ -92,15 +76,15 @@ SSE encrypts messages as soon as Amazon SNS receives them\. The messages are sto
 
 ### Configuring AWS KMS permissions<a name="configure-kms-perm"></a>
 
-You must configure your AWS KMS key policies before you can use SSE\. The configuration enables you to encrypt topics, as well as encrypt and decrypt messages\. For details about AWS KMS permissions, see [AWS KMS API Permissions: Actions and Resources Reference](https://docs.aws.amazon.com/kms/latest/developerguide/kms-api-permissions-reference.html) in the *AWS Key Management Service Developer Guide*\.
+You must configure your AWS KMS key policies before you can use SSE\. The configuration enables you to encrypt topics, in addition to encrypting and decrypting messages\. For details about AWS KMS permissions, see [AWS KMS API Permissions: Actions and Resources Reference](https://docs.aws.amazon.com/kms/latest/developerguide/kms-api-permissions-reference.html) in the *AWS Key Management Service Developer Guide*\.
 
 You can also use IAM policies to manage AWS KMS key permissions\. For more information, see [Using IAM Policies with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/iam-policies.html)\.
 
 **Note**  
-Although you can configure global permissions to send and receive message from Amazon SNS, AWS KMS requires you to name the full ARN of customer master keys \(CMK\) in the specific Regions\. You can find this in the **Resource** section of an IAM policy\.  
+Although you can configure global permissions to send and receive message from Amazon SNS, AWS KMS requires you to name the full ARN of the customer master keys \(CMK\) in the specific Regions\. You can find this in the **Resource** section of an IAM policy\.  
 You must ensure that the key policies of the CMK allow the necessary permissions\. To do this, name the principals that produce and consume encrypted messages in Amazon SNS as users in the CMK policy\.<a name="enable-compatiblility"></a>
 
-**To enable compatibility between AWS Budgets and encrypted Amazon SNS topics**
+**To enable compatibility between anomaly detection and encrypted Amazon SNS topics**
 
 1. [Create a CMK](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#create-keys-console)\.
 
@@ -113,7 +97,7 @@ You must ensure that the key policies of the CMK allow the necessary permissions
        "Statement": [{
            "Effect": "Allow",
            "Principal": {
-               "Service": "budgets.amazonaws.com"
+               "Service": "costalerts.amazonaws.com"
            },
        "Action": [
            "kms:GenerateDataKey*",
@@ -126,6 +110,6 @@ You must ensure that the key policies of the CMK allow the necessary permissions
 
 1. [Enable SSE for your SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-enable-encryption-for-topic.html)\.
 **Note**  
-Be sure that you're using the same CMK that grants AWS Budgets the permissions to publish to encrypted Amazon SNS topics\.
+Be sure that you're using the same CMK that grants anomaly detection the permissions to publish to encrypted Amazon SNS topics\.
 
 1. Choose **Save Changes**\.

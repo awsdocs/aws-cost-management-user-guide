@@ -4,7 +4,7 @@ When you want to review comprehensive detail, you can download a CSV file of the
 
 **To download a CSV file**
 
-1. Launch Cost Explorer\.
+1. Sign in to the AWS Management Console and open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
 
 1. Configure Cost Explorer to use the options that you want to see in the CSV file\. 
 

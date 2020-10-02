@@ -1,9 +1,9 @@
 # Controlling access for Cost Explorer<a name="ce-access"></a>
 
 You can manage access to your Cost Explorer in the following ways:
-+ The payer \(master\) account can enable Cost Explorer at a root level, automatically enabling all linked \(member\) accounts\.
++ The master account account can enable Cost Explorer at a root level, automatically enabling all member accounts\.
 + After member accounts are enabled, the master account can use the Cost Explorer settings to control the level of information you want to expose in Cost Explorer\. Levels of information can include cost, refunds or credits, discounts \(for example, reservation volume discounts, bundled discounts\), and Reserved Instance \(RI\) recommendations\.
-+ After you enable Cost Explorer at the payer level, you can control the IAM policies of your IAM users to restrict access to Cost Explorer at the account level\. Users either get all access or no access with this option\.
++ After you enable Cost Explorer at the master account level, you can control the IAM policies of your IAM users to restrict access to Cost Explorer at the account level\. Users either get all access or no access with this option\.
 
 This topic provides details about how to control access in Cost Explorer\.
 
@@ -46,11 +46,11 @@ An account’s status with an organization affects what cost and usage data is v
 
 ### Controlling member accounts’ access using Cost Explorer preferences<a name="ce-controlling-member-settings"></a>
 
-You can grant or restrict the access to all member accounts in your Organizations\. When you enable your account at the master level, all member accounts are granted access to their cost and usage data by default\.<a name="control-members-access"></a>
+You can grant or restrict the access to all member accounts in your Organizations\. When you enable your account at the master account level, all member accounts are granted access to their cost and usage data by default\.<a name="control-members-access"></a>
 
 **To control member account access to Cost Explorer data**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Cost Explorer**\.
 

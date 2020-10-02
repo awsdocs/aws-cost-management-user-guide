@@ -4,15 +4,8 @@ You can customize how you view your data in Cost Explorer using **Advanced Optio
 
 **To exclude data from your chart**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
-
-1. In the navigation pane, choose **Cost Explorer**\.
-
-1. On the **Cost Explorer** page, choose **Launch Cost Explorer**\.
-**Note**  
-Cost Explorer is available in any AWS account for no cost\.
-
-1. In the right pane, under **Advanced Options**, under **Include costs related to**, deselect the data type that you want to exclude\. 
+Open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
++ In the right pane, under **Advanced Options**, under **Include costs related to**, deselect the data type that you want to exclude\. 
 
 In addition to the costs that Cost Explorer includes, you can show specific costs such as untagged resources or blended costs\. This enables you to see the following alternate views of your costs\.
 
@@ -40,12 +33,5 @@ You can show these specific costs by using the following procedure\.
 
 **To show specific cost types in your chart**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
-
-1. In the navigation pane, choose **Cost Explorer**\.
-
-1. On the **Cost Explorer** page, choose **Launch Cost Explorer**\.
-**Note**  
-Cost Explorer is available in any AWS account for no cost\.
-
-1. In the right pane, under **Advanced Options**, under **Other**, select the cost type that you want to show\. 
+Open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
++ In the right pane, under **Advanced Options**, under **Other**, select the cost type that you want to show\. 

@@ -4,7 +4,7 @@ You can use this procedure to edit an AWS Budgets report\.<a name="editing-budge
 
 **To edit an AWS Budgets report**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Budget Reports**\.
 

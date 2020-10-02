@@ -66,9 +66,9 @@ AWS calculates the charges for Amazon EC2 instances by aggregating all the EC2 u
 
 AWS calculates blended rates for Amazon EC2 instances using the following logic:
 
-1. AWS aggregates usage for all accounts in an organization for the month or partial month, and calculates costs based on unblended rates such as rates for On\-Demand and Reserved Instances\. Line items for these costs are created for the master account\. This bill computation model attempts to apply the lowest unblended rates that each line item is eligible for\. The allocation logic first applies Reserved Instance hours, then free tier hours, and then On\-Demand rates to any remaining usage\. In the AWS Cost and Usage report, you can see line items for these aggregated costs\.
+1. AWS aggregates usage for all accounts in an organization for the month or partial month, and calculates costs based on unblended rates such as rates for On\-Demand and Reserved Instances\. Line items for these costs are created for the master account\. This bill computation model attempts to apply the lowest unblended rates that each line item is eligible for\. The allocation logic first applies Reserved Instance hours, then free tier hours, and then On\-Demand rates to any remaining usage\. In the AWS Cost and Usage Reports, you can see line items for these aggregated costs\.
 
-1. AWS identifies each Amazon EC2 usage type in each AWS Region and allocates cost from the aggregated master account to the corresponding member account line items for identical usage types in the same region\. In the AWS Cost and Usage report, the **Unblended Rate** column shows that rate applied to each line item\.
+1. AWS identifies each Amazon EC2 usage type in each AWS Region and allocates cost from the aggregated master account to the corresponding member account line items for identical usage types in the same region\. In the AWS Cost and Usage Reports, the **Unblended Rate** column shows that rate applied to each line item\.
 **Note**  
 When AWS assigns Reserved Instance hours to member accounts, it always starts with the account that purchased the reservation\. If there are hours from the capacity reservation left over, AWS applies them to other accounts that operate identical usage types in the same Availability Zone\.  
 AWS allocates a regional RI by instance size: The RI is applied first to the smallest instance in the instance family, then to the next smallest, and so on\. AWS applies an RI or a fraction of an RI based on the [normalization factor](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/apply_ri.html#apply-regional-ri) of the instance\. The order in which AWS applies RIs doesn't result in a price difference\.
@@ -88,7 +88,7 @@ The Savings Plans are applied to the account that owns the Savings Plans\. Then,
 Blended rates are the averaged rates of the Reserved Instances and On\-Demand Instances that are used by member accounts in an organization in AWS Organizations\. AWS calculates blended costs by multiplying the blended rate for each service with an account’s usage of that service\.
 
 **Note**  
-AWS shows each linked account their charges as unblended costs\. AWS continues to apply all of the consolidated billing benefits such as reservations and tiered prices across all linked accounts in an AWS Organizations organization\. 
+AWS shows each member account their charges as unblended costs\. AWS continues to apply all of the consolidated billing benefits such as reservations and tiered prices across all member accounts in an AWS Organizations organization\. 
 
  This section includes examples that show how AWS calculates blended rates for the following services\.
 + [Calculating Blended Rates for Amazon S3 Standard Storage](#Blended_S3_Stand_Storage)

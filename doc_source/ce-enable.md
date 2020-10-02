@@ -11,11 +11,11 @@ If a member account leaves an organization and becomes a standalone account, the
 If a member account leaves organization A to join organization B, the account no longer has access to cost and usage data from the time range when the account was a member of organization A\. The account has access only to the data that is generated as a member of organization B\. 
 If an account rejoins an organization that it previously belonged to, the account regains access to its historical cost and usage data\.
 
-Signing up to receive the AWS Cost and Usage Report or the Detailed Billing Report doesn't automatically enable Cost Explorer\. You must still enable it by performing the following procedure\.
+Signing up to receive the AWS Cost and Usage Reports or the Detailed Billing Report doesn't automatically enable Cost Explorer\. You must still enable it by performing the following procedure\.
 
 **To sign up for Cost Explorer**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation pane, choose **Cost Explorer**\.
 

@@ -21,7 +21,7 @@ You can choose to view your cost data in monthly or daily *levels of granularity
 
 1. Choose a time granularity of **Daily**, **Monthly**, or **Hourly**\.
 **Note**  
-To enable hourly granularity, opt\-in through the Cost Explorer settings page as the payer account\. Once enabled, information for the previous 14 days are available\.
+To enable hourly granularity, opt\-in through the Cost Explorer settings page as the master account\. Once enabled, information for the previous 14 days are available\.
 
 1. For your monthly or daily data, open the calendar and define a custom period for your report or choose a preconfigured period at the bottom of the calendar\. You can choose from a number of historical or forecast time periods\. The name of the period that you choose appears in the calendar\.
 

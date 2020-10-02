@@ -40,9 +40,9 @@ The AWS Billing and Cost Management console includes the no\-cost [Cost Explorer
 You can use AWS Budgets to track your AWS usage and costs\. Budgets use the cost visualization provided by Cost Explorer to show you the status of your budgets\. This provides forecasts of your estimated costs and tracks your AWS usage, including your free tier usage\. You can also use budgets to create Amazon Simple Notification Service \(Amazon SNS\) notifications that tell you when you go over your budgeted amounts, or when your estimated costs exceed your budgets\.  
 For more information about budgets, see [Managing your costs with AWS Budgets](budgets-managing-costs.md)\.
 
-**AWS Cost and Usage Reports**  
+****  
 You can choose to have AWS publish billing reports to an Amazon Simple Storage Service \(Amazon S3\) bucket that you own\. You can receive reports that break down your costs by the hour or month, by product or product resource, or by tags that you define yourself\.  
-For more details about AWS Cost and Usage Reports, see the [AWS Cost and Usage Reports User Guide](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.
+For more details about , see the [ User Guide](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.
 
 **Manage Your payments**  
 You can view your estimated bills and pay your AWS invoices in your preferred currency by setting a payment currency\.  

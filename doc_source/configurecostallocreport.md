@@ -18,7 +18,7 @@ AWS stores billing reports in an Amazon S3 bucket that you create and own\. You 
 
 **To set up the cost allocation report and activate tags**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home\#/](https://console.aws.amazon.com/billing/home)\.
+1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. Under **Preferences** in the navigation pane, choose **Billing Preferences**
 

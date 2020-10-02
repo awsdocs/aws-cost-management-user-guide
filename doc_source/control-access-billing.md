@@ -18,7 +18,7 @@ By default, IAM users do not have access to the [AWS Billing and Cost Management
 
 **Note**  
 IAM is a feature of your AWS account\. If you are already signed up for a product that is integrated with IAM, you don't need to do anything else to sign up for IAM, nor will you be charged for using it\.  
-Permissions for Cost Explorer apply to all accounts and linked accounts, regardless of IAM policies\. For more information about Cost Explorer access, see [Controlling access for Cost Explorer](ce-access.md)\.
+Permissions for Cost Explorer apply to all accounts and member accounts, regardless of IAM policies\. For more information about Cost Explorer access, see [Controlling access for Cost Explorer](ce-access.md)\.
 
 ## Activating access to the Billing and Cost Management console<a name="ControllingAccessWebsite-Activate"></a>
 

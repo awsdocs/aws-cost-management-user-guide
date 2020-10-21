@@ -1,6 +1,6 @@
 # Creating a budget<a name="budgets-create"></a>
 
-You can create budgets to track your service costs and usage, RI utilization and coverage, and your Savings Plans utilization and coverage\. Single accounts, master account and member accounts in an AWS Organizations organization can, by default, create budgets\.
+You can create budgets to track and take action on your costs and usage\. You can also create budgets to track your aggregate Reserved Instance \(RI\) and Savings Plans utilization and coverage\. By default, single accounts, the management account, and member accounts in an AWS Organizations organization can create budgets\.
 + [Creating a cost budget](#create-cost-budget)
 + [Creating a usage budget](#create-usage-budget)
 + [Creating a reservation budget](#create-reservation-budget)
@@ -46,7 +46,7 @@ After all of the **Budgeted Amounts** values in Planned Budget are used, the bud
 **Note**  
 You can't use the `linked account` filter within a linked account\.
 
-1. \(Optional\) Under **Budget parameters \(optional\)**, for **Advanced options**, choose one or more of the following filters\. If you are signed in from a member account in an organization instead of from a master account, you might not see all of the advanced options\.  
+1. \(Optional\) Under **Budget parameters \(optional\)**, for **Advanced options**, choose one or more of the following filters\. If you are signed in from a member account in an organization instead of from a management account, you might not see all of the advanced options\.  
 **Refunds**  
 Any refunds that you received\.  
 **Credits**  
@@ -80,7 +80,7 @@ Any enterprise discount such as RI volume discounts\. Discount line items do not
 
 1. \(Optional\) For **Email contacts**, enter the email addresses that you want the notifications to be sent to and choose **Add email contact**\. Separate multiple email addresses with a comma\. A notification can have up to 10 email addresses\.
 
-   To receive a notification, you must specify an email address, You can also specify an Amazon SNS topic\.
+   To receive a notification, you must specify an email address\. You can also specify an Amazon SNS topic\.
 
 1. \(Optional\) For **SNS topic ARN**, enter the ARN for your Amazon SNS topic and then choose **Verify**\. If you want to use an Amazon SNS topic for your notification but don't have one, see [Create a Topic](https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html) in the *Amazon Simple Notification Service Developer Guide*\.
 
@@ -88,7 +88,21 @@ Any enterprise discount such as RI volume discounts\. Discount line items do not
 
    For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
 
-   To receive a notification, you must specify an email address, You can also specify an Amazon SNS topic\.
+   To receive a notification, you must specify an email address\. You can also specify an Amazon SNS topic\.
+
+1. \(Optional\) Choose **Add a budget action**\.
+
+   1. Configure your notification settings for your action\. This defaults to the same notification settings created in [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)\.
+
+   1. In the **Choose your budget action** section, choose an IAM role to allow AWS Budgets to perform an action on your behalf\. If you don't have the proper permissions assigned, AWS Budgets can't run your configured actions\.
+
+      For more information and examples for IAM role permissions, see [Allow AWS Budgets to apply IAM policies and SCPs and target EC2 and RDS instances](billing-example-policies.md#example-budgets-applySCP)\.
+
+   1. Choose the action type you want AWS Budgets to apply on your behalf\.
+
+      You can choose from applying an IAM policy, a service control policy \(SCP\), or targeting specific Amazon EC2 or Amazon RDS instances\. You can apply multiple budget actions to a single threshold\. Only a management account can apply SCPs\.
+
+   1. Choose whether you want to run these actions automatically or through a workflow approval process\. The workflow approval is set as your default experience\.
 
 1. Choose **Confirm budget**\.
 
@@ -127,7 +141,7 @@ Use this procedure to create a usage\-based budget\.<a name="usage-budget"></a>
 
    1. For **Usage Type**, choose the service that you want to include in the budget and then choose the unit of measurement that you want the budget to use\.
 
-1. For a fixed **Budgeted Amount**, enter the total amount of units that you want to use for this budget period\. For **Monthly** and **Quarterly** Planning budgets, enter the amount you want to spend for each planned period\.
+1. For a fixed **Budgeted Amount**, enter the total number of units that you want to use for this budget period\. For **Monthly** and **Quarterly** planning budgets, enter the amount you want to spend for each planned period\.
 **Note**  
 After all of the **Budgeted Amounts** values in Planned Budget are used, the budget continues to use the last limit as the **Budgeted Amount**\. At that point, the planned budget provides the same experience as a fixed budget\. 
 
@@ -159,7 +173,7 @@ You must choose **Usage Type**, **Usage Type Group**, or both\. You can create a
 
 1. \(Optional\) For **Email contacts**, enter the email addresses that you want the notifications to be sent to and choose **Add email contact**\. Separate multiple email addresses with a comma\. A notification can have up to 10 email addresses\.
 
-   To receive a notification, you must specify an email address, You can also specify an Amazon SNS topic\.
+   To receive a notification, you must specify an email address\. You can also specify an Amazon SNS topic\.
 
 1. \(Optional\) For **SNS topic ARN**, enter the ARN for your Amazon SNS topic and then choose **Verify**\. If you want to use an Amazon SNS topic for your notification but don't have one, see [Create a Topic](https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html) in the *Amazon Simple Notification Service Developer Guide*\.
 
@@ -167,7 +181,21 @@ You must choose **Usage Type**, **Usage Type Group**, or both\. You can create a
 
    For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
 
-   To receive a notification, you must specify an email address, You can also specify an Amazon SNS topic\.
+   To receive a notification, you must specify an email address\. You can also specify an Amazon SNS topic\.
+
+1. \(Optional\) Choose **Add a budget action**\.
+
+   1. Configure your notification settings for your action\. This defaults to the same notification settings created in [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)\.
+
+   1. In the **Choose your budget action** section, choose an IAM role to allow AWS Budgets to perform an action on your behalf\. If you don't have the proper permissions assigned, AWS Budgets can't run your configured actions\.
+
+      For more information and examples for IAM role permissions, see [Allow AWS Budgets to apply IAM policies and SCPs and target EC2 and RDS instances](billing-example-policies.md#example-budgets-applySCP)\.
+
+   1. Choose the action type you want AWS Budgets to apply on your behalf\.
+
+      You can choose from applying an IAM policy, a service control policy \(SCP\), or targeting specific Amazon EC2 or Amazon RDS instances\. You can apply multiple budget actions to a single threshold\. Only a management account can apply SCPs\.
+
+   1. Choose whether you want to run these actions automatically or through a workflow approval process\. The workflow approval is set as your default experience\.
 
 1. Choose **Confirm budget**\.
 
@@ -208,7 +236,7 @@ Use this procedure to create a budget for RI utilization or RI coverage\.<a name
 
 1. For **Service**, choose the service whose instances you want the budget to track\.
 
-1. For **Utilization threshold**, enter the utilization or coverage percentage that you want AWS to notify you at\. For example, for a utilization budget where you want to stay above 80% RI utilization, enter 80, and the budget notifies you when you go below 80% utilization\. For a coverage budget where you want to make sure that you stay above 80%, enter 80, and the budget notifies you when your instance coverage goes below 80%\.
+1. For **Utilization threshold**, enter the utilization or coverage percentage that you want AWS to notify you at\. For example, for a utilization budget where you want to stay above 80 percent RI utilization, enter **80**, and the budget notifies you when you go below 80 percent utilization\. For a coverage budget where you want to make sure that you stay above 80 percent, enter **80**, and the budget notifies you when your instance coverage goes below 80 percent\.
 
 1. \(Optional\) Under **Budget parameters \(optional\)**, for **Filtering**, choose one or more of the [available filters](budgets-create-filters.md)\. Your choice of budget type determines the set of filters that is displayed on the console\.
 
@@ -216,7 +244,7 @@ Use this procedure to create a budget for RI utilization or RI coverage\.<a name
 
 1. \(Optional\) Under **Configure alerts**, for **Email contacts**, enter the email addresses that you want the notifications to be sent to and then choose **Add email contact**\. Separate multiple email addresses with a comma\. A notification can have up to 10 email addresses\.
 
-   To receive a notification, you must specify an email address, You can also specify an Amazon SNS topic\.
+   To receive a notification, you must specify an email address\. You can also specify an Amazon SNS topic\.
 
 1. \(Optional\) Under **Configure alerts**, for **SNS topic ARN**, select **Notify via Amazon Simple Notification Service \(SNS\) topic** and enter or paste the ARN for your Amazon SNS topic and then choose **Verify**\. If you want to use an Amazon SNS topic for your notification but don't have one, see [Create a Topic](https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html) in the *Amazon Simple Notification Service Developer Guide*\.
 
@@ -224,7 +252,7 @@ Use this procedure to create a budget for RI utilization or RI coverage\.<a name
 
    For a sample policy and instructions on granting your budget permissions, see [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)\. A notification can be subscribed to only one Amazon SNS topic\.
 
-   To receive a notification, you must specify an email address, You can also specify an Amazon SNS topic\.
+   To receive a notification, you must specify an email address\. You can also specify an Amazon SNS topic\.
 
 1. Choose **Confirm budget**\.
 
@@ -273,7 +301,7 @@ Use this procedure to create a budget for savings plans utilization or Savings P
 
 1. \(Optional\) For **Email contacts**, enter the email addresses that you want the notifications to be sent to and choose **Add email contact**\. Separate multiple email addresses with a comma\. A notification can have up to 10 email addresses\.
 
-   To receive a notification, you must specify an email address, You can also specify an Amazon SNS topic\.
+   To receive a notification, you must specify an email address\. You can also specify an Amazon SNS topic\.
 
 1. \(Optional\) For **SNS topic ARN**, enter the ARN for your Amazon SNS topic and then choose **Verify**\. If you want to use an Amazon SNS topic for your notification but don't have one, see [Create a Topic](https://docs.aws.amazon.com/sns/latest/dg/CreateTopic.html) in the *Amazon Simple Notification Service Developer Guide*\.
 

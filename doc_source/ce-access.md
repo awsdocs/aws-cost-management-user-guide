@@ -1,9 +1,9 @@
 # Controlling access for Cost Explorer<a name="ce-access"></a>
 
 You can manage access to your Cost Explorer in the following ways:
-+ The master account account can enable Cost Explorer at a root level, automatically enabling all member accounts\.
-+ After member accounts are enabled, the master account can use the Cost Explorer settings to control the level of information you want to expose in Cost Explorer\. Levels of information can include cost, refunds or credits, discounts \(for example, reservation volume discounts, bundled discounts\), and Reserved Instance \(RI\) recommendations\.
-+ After you enable Cost Explorer at the master account level, you can control the IAM policies of your IAM users to restrict access to Cost Explorer at the account level\. Users either get all access or no access with this option\.
++ The management account account can enable Cost Explorer at a root level, automatically enabling all member accounts\.
++ After member accounts are enabled, the management account can use the Cost Explorer settings to control the level of information you want to expose in Cost Explorer\. Levels of information can include cost, refunds or credits, discounts \(for example, reservation volume discounts, bundled discounts\), and Reserved Instance \(RI\) recommendations\.
++ After you enable Cost Explorer at the management account level, you can control the IAM policies of your IAM users to restrict access to Cost Explorer at the account level\. Users either get all access or no access with this option\.
 
 This topic provides details about how to control access in Cost Explorer\.
 
@@ -20,15 +20,15 @@ For more information about consolidated billing, see [Consolidated billing for A
 
 ## Granting Cost Explorer access<a name="grant-ce-access"></a>
 
-You can enable Cost Explorer access if you are signed into the master account with your root credentials through the Billing and Cost Management console\. Enabling Cost Explorer at the master account level enables Cost Explorer for all of your organization accounts\. All accounts in the organization are granted access, and you can't grant or deny access individually\.
+You can enable Cost Explorer access if you are signed into the management account with your root credentials through the Billing and Cost Management console\. Enabling Cost Explorer at the management account level enables Cost Explorer for all of your organization accounts\. All accounts in the organization are granted access, and you can't grant or deny access individually\.
 
 ## Controlling access using Cost Explorer preferences<a name="ce-controlling-access"></a>
 
-A master account can grant access to Cost Explorer for all or none of the member accounts\. Access isn’t customizable for each individual member account\.
+A management account can grant access to Cost Explorer for all or none of the member accounts\. Access isn’t customizable for each individual member account\.
 
-The master account in AWS Organizations has full access to all Billing and Cost Management information for costs incurred by both the master account and member accounts\. Member accounts only have access to their own cost and usage data in Cost Explorer\.
+The management account in AWS Organizations has full access to all Billing and Cost Management information for costs incurred by both the management account and member accounts\. Member accounts only have access to their own cost and usage data in Cost Explorer\.
 
-The owner of a master account can:
+The owner of a management account can:
 + View all costs in Cost Explorer\.
 + Grant all member accounts the permission to see the costs for their own member account, refunds, credits, and RI recommendations\.
 
@@ -46,7 +46,7 @@ An account’s status with an organization affects what cost and usage data is v
 
 ### Controlling member accounts’ access using Cost Explorer preferences<a name="ce-controlling-member-settings"></a>
 
-You can grant or restrict the access to all member accounts in your Organizations\. When you enable your account at the master account level, all member accounts are granted access to their cost and usage data by default\.<a name="control-members-access"></a>
+You can grant or restrict the access to all member accounts in your Organizations\. When you enable your account at the management account level, all member accounts are granted access to their cost and usage data by default\.<a name="control-members-access"></a>
 
 **To control member account access to Cost Explorer data**
 
@@ -64,6 +64,6 @@ You can grant or restrict the access to all member accounts in your Organization
 
 ## Cost Explorer and IAM users<a name="ce-iam-users"></a>
 
-After you enable Cost Explorer at the master account level, you can use IAM to manage access to your billing data for individual IAM users\. This enables you to grant or revoke access on an individual level for each account, rather than granting access to all member accounts\.
+After you enable Cost Explorer at the management account level, you can use IAM to manage access to your billing data for individual IAM users\. This enables you to grant or revoke access on an individual level for each account, rather than granting access to all member accounts\.
 
 An IAM user must be granted explicit permission to view pages in the Billing and Cost Management console\. With the appropriate permissions, the IAM user can view costs for the AWS account that the IAM user belongs to\. For the policy that grants the necessary permissions to an IAM user, see [Overview of managing access permissions](control-access-billing.md)\. 

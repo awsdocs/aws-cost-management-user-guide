@@ -49,9 +49,9 @@ If you can't successfully complete your verification, we recommend that you take
 
 ## AWS Organizations<a name="emea-cc-awsorg"></a>
 
-If you're a member account in AWS Organizations, your purchased services that require upfront payments might not activate until the Master account user verifies the payment\. If verification is required, AWS notifies the billing contact of the Master account by email\.
+If you're a member account in AWS Organizations, your purchased services that require upfront payments might not activate until the Management account user verifies the payment\. If verification is required, AWS notifies the billing contact of the Management account by email\.
 
-Establish a communication process between your Master account and member accounts\. To change your payment method, see [Managing your AWS Europe credit card payment methods](manage-cc-emea.md)\.
+Establish a communication process between your Management account and member accounts\. To change your payment method, see [Managing your AWS Europe credit card payment methods](manage-cc-emea.md)\.
 
 ## Subscription purchases<a name="emea-bulk-purchases"></a>
 

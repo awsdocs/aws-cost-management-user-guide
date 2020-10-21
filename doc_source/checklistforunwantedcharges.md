@@ -24,7 +24,7 @@ If you close your account or unsubscribe from a service, make sure that you take
 If you use the free tier, make sure that your usage does not exceed the limits that are specified at [AWS Free Tier](http://aws.amazon.com/free/)\. You are charged On\-Demand Instance rates for any usage that exceeds the free tier limits\. You can check your AWS Free Tier usage alerts and your free tier usage alerts on the Billing and Cost Management console\.
 
 **Note**  
-Free tier usage alerts are available only to the master account in an organization\. They aren't available for individual member accounts in an organization\. 
+Free tier usage alerts are available only to the management account in an organization\. They aren't available for individual member accounts in an organization\. 
 
 For more information about tracking your free tier usage, see [Tracking your AWS Free Tier usage](tracking-free-tier-usage.md)\.
 

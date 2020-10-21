@@ -1,10 +1,5 @@
 # Enabling purchase order notifications<a name="notify-po-details"></a>
 
-
-|  | 
-| --- |
-| Purchase order is in public preview for AWS Billing and Cost Management and is subject to change\. Your use of purchase orders is subject to the Preview Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
-
 You can enable email notifications on the Billing and Cost Management console by adding contacts to your purchase orders\. You need at least one purchase order contact added to receive notifications\.
 
 Notifications are beneficial to proactively take action on your expiring, or out of balance purchase orders\. This helps you make payments without delay\. To update your contacts information, see [Editing your purchase orders](edit-po.md)\.

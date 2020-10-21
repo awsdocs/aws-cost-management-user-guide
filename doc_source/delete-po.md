@@ -1,10 +1,5 @@
 # Deleting your purchase orders<a name="delete-po"></a>
 
-
-|  | 
-| --- |
-| Purchase order is in public preview for AWS Billing and Cost Management and is subject to change\. Your use of purchase orders is subject to the Preview Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
-
 You can use the Billing and Cost Management console to delete your purchase order at any time, along with all of its notifications and associated contacts\. A deleted purchase order can't be recovered\.<a name="delete-po-steps"></a>
 
 **To delete a purchase order**

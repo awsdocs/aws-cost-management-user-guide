@@ -27,13 +27,13 @@ This section shows a full list of the CloudTrail events related to Billing and C
 | SetPayInformation | Logs the payment method history \(invoice or credit/debit card\) for the account\. | 
 | RedeemPromoCode | Logs the redemption of promotional credits for an account\. | 
 | SetCostExplorerPreferences  | Logs the opt\-in history of AWS Cost Explorer for the account\. | 
-| CreateOrigamiReportPreference | Logs the creation of the cost and usage report; master account only\. | 
-| UpdateOrigamiReportPreference | Logs the update of the cost and usage report; master account only\. | 
-| DeleteOrigamiReportPreferences | Logs the deletion of the cost and usage report; master account only\. | 
+| CreateOrigamiReportPreference | Logs the creation of the cost and usage report; management account only\. | 
+| UpdateOrigamiReportPreference | Logs the update of the cost and usage report; management account only\. | 
+| DeleteOrigamiReportPreferences | Logs the deletion of the cost and usage report; management account only\. | 
 | SetCreatedByOptIn | Logs the opt\-in of the awscreatedby cost allocation tag preference\. | 
 | SetTagKeysState | Logs the active or inactive state of a particular cost allocation tag\. | 
-| SetRISharing | Logs the history of the RI/Savings Plans sharing preference for the master account\. | 
-| SetCreditSharing | Logs the history of the credit sharing preference for the master account\. | 
+| SetRISharing | Logs the history of the RI/Savings Plans sharing preference for the management account\. | 
+| SetCreditSharing | Logs the history of the credit sharing preference for the management account\. | 
 | SetAccountPreferences | Logs the updates of the account name, email, and password\. | 
 | EnableBillingAlerts | Logs the opt\-in of receiving CloudWatch billing alerts for estimated charges\. | 
 | SetFreetierBudgetsPreference | Logs the preference \(opt\-in or opt\-out\) of receiving Free Tier usage alerts\. | 

@@ -25,7 +25,7 @@ Permissions for Cost Explorer apply to all accounts and member accounts, regardl
 To be able to grant your IAM user and role access to your account's Billing and Cost Management console, you must *activate* the functionality\. 
 
 **Important**  
-When you activate IAM user access to the Billing and Cost Management console, you grant full access to all users who already have full access to the AWS APIs\. You can restrict their access by applying an IAM policy that constrains their permissions\. See [Example 4: Allow full access to AWS services but deny IAM users access to the Billing and Cost Management console](billing-example-policies.md#ExampleAllowAllDenyBilling)\.
+When you activate IAM user access to the Billing and Cost Management console, you grant full access to all users who already have full access to the AWS APIs\. You can restrict their access by applying an IAM policy that constrains their permissions\. See [Allow full access to AWS services but deny IAM users access to the Billing and Cost Management console](billing-example-policies.md#ExampleAllowAllDenyBilling)\.
 
 **To activate IAM user and role access to the Billing and Cost Management console**
 

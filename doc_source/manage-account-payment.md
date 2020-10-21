@@ -91,7 +91,7 @@ AWS originally enabled all new Regions by default, which enabled your users to c
 Note the following about enabling and disabling Regions:
 
 **You can use IAM permissions to control access to Regions**  
-IAM added three new permissions, which let you control which users can enable, disable, and list Regions\. For more information, see [Billing actions](billing-permissions-ref.md#user-permissions)\.
+IAM added three new permissions, which let you control which users can enable, disable, and list Regions\. For more information, see [Billing and Cost Management actions policies](billing-permissions-ref.md#user-permissions)\.
 
 **Enabling a Region is free**  
 There is no charge to enable a Region\. You're only charged for resources that you create in the new Region\.

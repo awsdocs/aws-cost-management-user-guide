@@ -17,4 +17,4 @@ AWS Price List Service API provides the following two endpoints:
 
 ## Granting IAM permissions to use the AWS Price List Service API<a name="pe-iam"></a>
 
-An IAM user must be granted explicit permission to query the AWS Price List Service API\. For the policy that grants the necessary permissions to an IAM user, see [Example 10: Find products and prices](billing-example-policies.md#example-policy-pe-api)\. 
+An IAM user must be granted explicit permission to query the AWS Price List Service API\. For the policy that grants the necessary permissions to an IAM user, see [Find products and prices](billing-example-policies.md#example-policy-pe-api)\. 

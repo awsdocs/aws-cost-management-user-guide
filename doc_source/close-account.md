@@ -23,6 +23,7 @@ Before closing your AWS account, consider the following:
 + [Charges if you reopen your AWS account](#reopen-charges)
 + [Closing a member account](#closing-member-account)
 + [Cross\-account access to the account you’re closing](#cross-access)
++ [Removing Amazon VPC peering connection](#vpc-peering)
 
 ### Your agreement with AWS<a name="aws-agreement"></a>
 
@@ -76,10 +77,14 @@ To avoid having the account count against the limit, remove member accounts from
 
 After you close your AWS account, any access requests to your closed account's AWS services from other AWS accounts fail\. This occurs even if you have granted the other accounts permission to access your account's AWS services\. If you reopen your AWS account, other AWS accounts can access your account's AWS services if you have granted the other accounts the necessary permissions\.
 
+### Removing Amazon VPC peering connection<a name="vpc-peering"></a>
+
+AWS currently does not delete Amazon VPC peering connections when you close one of the accounts participating in the VPC peering connection\. Any traffic destined for the VPC peering connection originating from other active accounts is dropped because AWS terminates instances and deletes any security groups in the closed account\. To remove the VPC peering connection, you can delete it from your account using the Amazon VPC console, AWS CLI, or Amazon EC2 API\.
+
 ## Troubleshooting errors when closing an AWS account<a name="troubleshooting-closing"></a>
 
 If you receive an error message while trying to close your AWS account, you can contact your account representative or contact us to open a billing or account support case for assistance\. Common reasons why you might not be able to close your AWS account include the following:
-+ Your account is the master account of an organization in AWS Organizations with open member accounts\.
++ Your account is the management account of an organization in AWS Organizations with open member accounts\.
 + You have unpaid invoices for your account\.
 + You have not signed in to the account as the root user\.
 + You are an active AWS Marketplace seller\.

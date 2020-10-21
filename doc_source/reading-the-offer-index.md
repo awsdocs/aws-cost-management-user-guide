@@ -16,21 +16,21 @@ The offer index file looks like this:
 
 ```
 {
-   "":"The version number for the offer index format",
-   "":"The disclaimers for this offer index",
-   "":"The publication date of this offer index",
-   "":{
+   "formatVersion":"The version number for the offer index format",
+   "disclaimer":"The disclaimers for this offer index",
+   "publicationDate":"The publication date of this offer index",
+   "offers":{
       "firstService":{
-         "":"The service that this price list is for",
-         "":"The URL for this offer file",
-         "":"The URL for the regional offer index file",
-         "":"The URL for the Savings Plan index file (if applicable)"
+         "offerCode":"The service that this price list is for",
+         "currentVersionUrl":"The URL for this offer file",
+         "currentRegionIndexUrl":"The URL for the regional offer index file",
+         "savingsPlanVersionIndexUrl":"The URL for the Savings Plan index file (if applicable)"
       },
       "secondService":{
-         "": ...,
-         "": ...,
-         "": ...,
-         "":...
+         "offerCode": ...,
+         "currentVersionUrl": ...,
+         "currentRegionIndexUrl": ...,
+         "savingsPlanVersionIndexUrl":...
       },
       ...
    },

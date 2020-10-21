@@ -31,7 +31,7 @@ You can access your reservation recommendations and resource\-based recommendati
 1. In the **Resource optimization recommendations** section, choose **Enable rightsizing recommendations**\.
 
 **Note**  
-Only regular or a master account can enable rightsizing recommendations\. After you enable the feature, both member and master account can access rightsizing recommendations unless the master account specifically prohibits member account access on the **settings** page\.   
+Only regular or a management account can enable rightsizing recommendations\. After you enable the feature, both member and management account can access rightsizing recommendations unless the management account specifically prohibits member account access on the **settings** page\.   
 To improve the recommendation quality, AWS might use your published utilization metrics, such as disk or memory utilization, to improve our recommendation models and algorithms\. All metrics are anonymized and aggregated before AWS uses them for model training\. If you want to opt out of this experience and request that your metrics not be stored and used for model improvement, contact AWS Support\. For more information, see [AWS Service Terms](https://aws.amazon.com/service-terms/)\.
 
 ## Using your rightsizing recommendations<a name="rr-use"></a>
@@ -56,7 +56,7 @@ You can see the following top\-level key performance indicators \(KPIs\) in your
    + Generate recommendations \(option to generate recommendations within the instance family, or across multiple instance families\)
 
 1. Above the **Findings** table, use the search bar to filter by the following parameters:
-   + Account ID \(option available from the master account\)
+   + Account ID \(option available from the management account\)
    + Region
    + Cost allocation tag
 
@@ -112,6 +112,10 @@ The following is a list of fields in the downloadable CSV form from the **Rights
 + **Memory Utilization** – The maximum memory utilization of the instance over the look\-back period \(if available from the Amazon CloudWatch agent\)\.
 + **Disk Utilization** – The maximum disk utilization of the instance over the look\-back period \(if available from the CloudWatch agent \- currently not supported\)\.
 + **Network Capacity** – The maximum network input/output operations per second capacity of the current instance\. This isn't a measure of actual instance use or performance, only capacity\. It's not considered in the recommendation\.
++ **EBS Read Throughput** – The maximum number of read operations per second\.
++ **EBS Write Throughput** – The maximum number of write operations per second\.
++ **EBS Read Bandwidth** – The maximum volume of read KiB per second\.
++ **EBS Write Bandwidth** – The maximum volume of write KiB per second\.
 + **Recommended Action** – The recommended action, either modify or terminate the instance\.
 + **Recommended Instance Type 1** – The instance family and size of the recommended instance type\. For termination recommendations, this field is empty\.
 + **Recommended Instance Type 1 Estimated Saving** – The projected savings based on the recommended action, instance type, associated rates, and your current Reserved Instance \(RI\) portfolio\.
@@ -126,7 +130,7 @@ This section provides an overview of the savings calculations that are used in y
 
 ### Consolidated billing family<a name="consolidated-fam"></a>
 
-To identify all instances for all accounts in the consolidated billing family, rightsizing recommendations look at the usage for the last 14 days for each account\. If the instance was stopped or terminated, we remove it from consideration\. For all remaining instances, we call CloudWatch to get maximum CPU utilization data for the last 14 days\. This is to produce conservative recommendations, not to recommend instance modifications that could be detrimental to application performance or that could unexpectedly impact your performance\.
+To identify all instances for all accounts in the consolidated billing family, rightsizing recommendations look at the usage for the last 14 days for each account\. If the instance was stopped or terminated, we remove it from consideration\. For all remaining instances, we call CloudWatch to get maximum CPU utilization data, memory utilization \(if enabled\), network in/out, local disk input/ output \(I/O\), and performance of attached EBS volumes for the last 14 days\. This is to produce conservative recommendations, not to recommend instance modifications that could be detrimental to application performance or that could unexpectedly impact your performance\.
 
 ### Determining if an instance is idle, underutilized, or neither<a name="determine-status"></a>
 

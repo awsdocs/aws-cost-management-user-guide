@@ -1,10 +1,5 @@
 # Reading your purchase order details page<a name="reading-po-details"></a>
 
-
-|  | 
-| --- |
-| Purchase order is in public preview for AWS Billing and Cost Management and is subject to change\. Your use of purchase orders is subject to the Preview Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
-
 You can review the contents of your individual purchase orders on the **Purchase order details** page of the Billing and Cost Management console\.
 
 To change your purchase order or line items, see [Editing your purchase orders](edit-po.md)\.
@@ -15,7 +10,7 @@ To change your purchase order or line items, see [Editing your purchase orders](
 + **Currency **– Your preferred invoice payment currency\.
 + **Effective month**– The month your purchase order is effective from\. Your purchase order is used for generated invoices starting this month\.
 + **Expiration month**– The month your purchase order expires\. Your purchase order is not used for any invoices that are generated past this month\.
-+ **Contacts **– A list of all contacts for this purchase order\. Choose **View contacts** to see all listed\.
++ **Contacts **– A list of all contacts for this purchase order\. Choose **Manage contacts** to see all listed\.
 + **Status **– The current status of your purchase order\.
   + **Active **– Eligible for invoice association\.
   + **Suspended **– Not eligible for invoice association\. You can suspend an active or expired purchase order\.

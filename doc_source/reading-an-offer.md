@@ -27,40 +27,40 @@ A JSON offer file looks like this:
 
 ```
 {
-   "":"The version of the file format",
-   "":"The disclaimers for the offer file",
-   "":"The code for the service", 
-   "":"The version of the offer file",
-   "":"The publication date of the offer file", 
+   "formatVersion":"The version of the file format",
+   "disclaimer":"The disclaimers for the offer file",
+   "offerCode":"The code for the service", 
+   "version":"The version of the offer file",
+   "publicationDate":"The publication date of the offer file", 
    "Products": {  
-      "": {
-         "":"The SKU of the product",
-         "":"The product family of the product", 
-         "": {
-            "":"", 
+      "sku": {
+         "sku":"The SKU of the product",
+         "productFamily":"The product family of the product", 
+         "attributes": {
+            "attributeName":"attributeValue", 
          }    
       }  
    }, 
    "Terms": {
-      "": {
-         "": {
-            "": {      
-               "":"The term code of the product", 
-               "":"The SKU of the product",
-               "":"The effective date of the pricing details", 
-               "":"The attribute type of the terms", 
-               "": { 
-                  "":"", 
+      "termType": {
+         "sku": {
+            "sku": {      
+               "offerTermCode":"The term code of the product", 
+               "sku":"The SKU of the product",
+               "effectiveDate":"The effective date of the pricing details", 
+               "termAttributesType":"The attribute type of the terms", 
+               "termAttributes": { 
+                  "attributeName":"attributeValue", 
                }, 
-               "": {       
-                  "": {     
-                     "":"The rate code of the price", 
-                     "":"The description of the term", 
-                     "":"The usage measurement unit for the price", 
-                     "":"The start range for the term", 
-                     "":"The end range for the term", 
-                     "": {       
-                        "":"", 
+               "priceDimensions": {       
+                  "rateCode": {     
+                     "rateCode":"The rate code of the price", 
+                     "description":"The description of the term", 
+                     "unit":"The usage measurement unit for the price", 
+                     "startingRange":"The start range for the term", 
+                     "endingRange":"The end range for the term", 
+                     "pricePerUnit": {       
+                        "currencyCode":"currencyRate", 
                      }            
                   }          
                }        

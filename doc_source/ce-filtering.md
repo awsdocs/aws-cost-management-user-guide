@@ -85,7 +85,7 @@ In Cost Explorer, you can filter by the following groups:
 
   The unique identifier for your resources\.
 **Note**  
-To enable resource granularity, opt\-in through on the Cost Explorer settings page as the master account\. This is available for Amazon EC2 instances\.
+To enable resource granularity, opt\-in through on the Cost Explorer settings page as the management account\. This is available for Amazon EC2 instances\.
 + **Service**
 
   AWS products\. To learn what's available, see [AWS Products and Services](https://aws.amazon.com/products/)\. You can use this dimension to filter costs by specific AWS Marketplace software, including your costs for AMIs, web services, and desktop apps\. See the [ What is AWS Marketplace? ](https://docs.aws.amazon.com/marketplace/latest/controlling-access/what-is-marketplace.html) guide for more information\. 

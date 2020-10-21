@@ -10,7 +10,7 @@ For information about , see the [https://docs.aws.amazon.com/cur/latest/userguid
 + [Managing your costs with AWS Budgets](budgets-managing-costs.md)
 + [Reporting your budget metrics with budget reports](reporting-cost-budget.md)
 + [Detecting unusual spend with anomaly detection](manage-ad.md)
-+ [Managing your costs with Cost Categories](manage-cost-categories.md)
++ [Managing your costs with AWS Cost Categories](manage-cost-categories.md)
 + [Using Cost Allocation Tags](cost-alloc-tags.md)
 + [Using the AWS Price List API](price-changes.md)
 + [Logging Billing and Cost Management API calls with AWS CloudTrail](logging-using-cloudtrail.md)

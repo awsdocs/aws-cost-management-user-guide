@@ -9,7 +9,7 @@ The following are best practices when working with the [Cost Explorer API](https
 
 ## Best practices for configuring access to the Cost Explorer API<a name="ce-api-best-practices-access"></a>
 
-An IAM user must be granted explicit permission to query the Cost Explorer API\. Granting an IAM user access to the Cost Explorer API gives that user query access to any cost and usage data available to that account\. For the policy that grants the necessary permissions to an IAM user, see [Example 11: View costs and usage](billing-example-policies.md#example-policy-ce-api)\.
+An IAM user must be granted explicit permission to query the Cost Explorer API\. Granting an IAM user access to the Cost Explorer API gives that user query access to any cost and usage data available to that account\. For the policy that grants the necessary permissions to an IAM user, see [View costs and usage](billing-example-policies.md#example-policy-ce-api)\.
 
 When configuring access to the Cost Explorer API, we recommend creating a unique IAM user for allowing programmatic access\. If you want to give multiple IAM users query access to the Cost Explorer API, we recommend creating a programmatic access IAM role for each of them\.
 

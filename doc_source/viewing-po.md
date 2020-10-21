@@ -1,10 +1,5 @@
 # Viewing your purchase orders<a name="viewing-po"></a>
 
-
-|  | 
-| --- |
-| Purchase order is in public preview for AWS Billing and Cost Management and is subject to change\. Your use of purchase orders is subject to the Preview Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
-
 Your purchase order dashboard on the Billing and Cost Management console shows you the state of your purchase orders at a glance\. Your purchase orders are listed on the dashboard, along with the following information\.
 + **Purchase order ID** – The unique identifier for your purchase order\.
 + **Value** – Your purchase order amount\. This is the sum of all line item amounts\.

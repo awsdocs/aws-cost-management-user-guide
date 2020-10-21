@@ -19,9 +19,9 @@ Anomaly detection is a feature within Cost Explorer\. To access anomaly detectio
 
 ## Controlling access using IAM<a name="access-iam-ad"></a>
 
-After you enable Cost Explorer at the master account level, you can use AWS Identity and Access Management \(IAM\) to manage access to your billing data for individual IAM users\. You can then grant or revoke access on an individual level for each account, rather than granting access to all member accounts\.
+After you enable Cost Explorer at the management account level, you can use AWS Identity and Access Management \(IAM\) to manage access to your billing data for individual IAM users\. You can then grant or revoke access on an individual level for each account, rather than granting access to all member accounts\.
 
-An IAM user must be granted explicit permission to view pages in the Billing and Cost Management console\. With the appropriate permissions, the IAM user can view costs for the AWS account that the IAM user belongs to\. For the policy that grants the necessary permissions to an IAM user, see [Billing actions](billing-permissions-ref.md#user-permissions)\. 
+An IAM user must be granted explicit permission to view pages in the Billing and Cost Management console\. With the appropriate permissions, the IAM user can view costs for the AWS account that the IAM user belongs to\. For the policy that grants the necessary permissions to an IAM user, see [Billing and Cost Management actions policies](billing-permissions-ref.md#user-permissions)\. 
 
 ## Accessing the console<a name="access-ad"></a>
 

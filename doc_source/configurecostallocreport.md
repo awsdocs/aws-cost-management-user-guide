@@ -37,7 +37,7 @@ AWS stores billing reports in an Amazon S3 bucket that you create and own\. You 
 
 1. Choose **Activate**\.
 
-If you own the master account in an organization, your cost allocation report includes all the usage, costs, and tags for the member accounts\. By default, all keys registered by member accounts are available for you to include or exclude from your report\. The detailed billing report with resources and tags also includes any cost allocation tag keys that you select using the preceding steps\. 
+If you own the management account in an organization, your cost allocation report includes all the usage, costs, and tags for the member accounts\. By default, all keys registered by member accounts are available for you to include or exclude from your report\. The detailed billing report with resources and tags also includes any cost allocation tag keys that you select using the preceding steps\. 
 
 ## Getting an hourly cost allocation report<a name="allocation-get"></a>
 

@@ -5,7 +5,7 @@ The following table describes the current quotas, restrictions, and naming const
 **Topics**
 + [Budgets](#limits-budgets)
 + [Budget reports](#limits-reports)
-+ [Cost Categories](#limits-categories)
++ [AWS Cost Categories](#limits-categories)
 + [Cost Explorer](#limits-ce)
 + [Purchase orders](#limits-po)
 + [Anomaly detection](#limits-ad)
@@ -16,7 +16,7 @@ The following table describes the current quotas, restrictions, and naming const
 |  |  | 
 | --- |--- |
 | Number of free budgets per account | 2 | 
-| Total number of budgets per master account | 20,000 | 
+| Total number of budgets per management account | 20,000 | 
 | Characters allowed in a budget name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
 
 ## Budget reports<a name="limits-reports"></a>
@@ -28,17 +28,17 @@ The following table describes the current quotas, restrictions, and naming const
 | Maximum number of budgets per budget report | 50 | 
 | Maximum email recipients in a budget report | 50 | 
 
-## Cost Categories<a name="limits-categories"></a>
+## AWS Cost Categories<a name="limits-categories"></a>
 
 
 |  |  | 
 | --- |--- |
-| Total number of Cost Categories per master account | 50 | 
+| Total number of AWS Cost Categories per management account | 50 | 
 | Number of Cost Category rules per Cost Category \(API\) | 500 | 
 | Number of Cost Category rules per Cost Category \(UI\) | 100 | 
-| Cost Category Names | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
-| Cost Category value names | Names do not have to be unique | 
-| Characters allowed in a Cost Category name and value name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  | 
+|  Names | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
+|  value names | Names do not have to be unique | 
+| Characters allowed in a name and value name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  | 
 
 ## Cost Explorer<a name="limits-ce"></a>
 
@@ -46,6 +46,7 @@ The following table describes the current quotas, restrictions, and naming const
 |  |  | 
 | --- |--- |
 | Maximum number of reports that you can save per account | 50 | 
+| Maximum number of filters in the GetCostAndUsage operation \(API\) | 100 | 
 
 ## Purchase orders<a name="limits-po"></a>
 
@@ -61,6 +62,6 @@ The following table describes the current quotas, restrictions, and naming const
 
 |  |  | 
 | --- |--- |
-| The maximum number of monitors you can create for an AWS service monitor type |  1 monitor per master account  | 
-| The maximum number of monitors you can create for other monitor types \(member account, cost category, cost allocation tag\) | 100 total monitors per master account | 
+| The maximum number of monitors you can create for an AWS service monitor type |  1 monitor per management account  | 
+| The maximum number of monitors you can create for other monitor types \(member account, cost category, cost allocation tag\) | 100 total monitors per management account | 
 | Unsupported services | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 

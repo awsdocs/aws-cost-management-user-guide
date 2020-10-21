@@ -91,7 +91,7 @@ Use this procedure to create a cost\-based budget\.
 
 1. \(Optional\) Under **Budget parameters \(optional\)**, for **Filtering**, choose one or more of the [available filters](budgets-create-filters.md)\. Your choice of budget type determines the set of filters that is displayed on the console\.
 
-1. \(Optional\) Under **Budget parameters \(optional\)**, for **Advanced options**, choose one or more of the following filters\. If you're signed in from a member account in an organization instead of from a master account, you might not see all of the advanced options\.  
+1. \(Optional\) Under **Budget parameters \(optional\)**, for **Advanced options**, choose one or more of the following filters\. If you're signed in from a member account in an organization instead of from a management account, you might not see all of the advanced options\.  
 **Refunds**  
 Any refunds that you received\.  
 **Credits**  

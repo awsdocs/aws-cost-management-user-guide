@@ -1,7 +1,7 @@
 # Restrictions on AWS\-Generated Cost Allocation Tags<a name="aws-tag-restrictions"></a>
 
 The following restrictions apply to the AWS generated tags:
-+ Only a master account can activate AWS generated tags\.
++ Only a management account can activate AWS generated tags\.
 + You can't update, edit, or delete AWS generated tags\.
 + AWS\-generated cost allocation tags aren't applied to resources that were created before the tag was activated\.
 + The maximum active tag keys for Billing and Cost Management reports is 500\.

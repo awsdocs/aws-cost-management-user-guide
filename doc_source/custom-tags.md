@@ -4,7 +4,7 @@ User\-defined tags are tags that you define, create, and apply to resources\. Af
 
 **Note**  
 As a best practice, do not include sensitive information in tags\.
-Only a master account in an organization and single accounts that aren't members of an organization have access to the **Cost Allocation Tags** manager in the Billing and Cost Management console\.
+Only a management account in an organization and single accounts that aren't members of an organization have access to the **Cost Allocation Tags** manager in the Billing and Cost Management console\.
 
 ## Applying User\-Defined Cost Allocation Tags<a name="allocation-how"></a>
 

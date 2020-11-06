@@ -19,6 +19,6 @@ Signing up to receive the AWS Cost and Usage Reports or the Detailed Billing Rep
 
 1. On the navigation pane, choose **Cost Explorer**\.
 
-1. On the **Welcome to Cost Explorer** page, choose **Enable Cost Explorer**\. 
+1. On the **Welcome to Cost Explorer** page, choose **Launch Cost Explorer**\. 
 
 For more information about controlling access to Cost Explorer, see [Controlling access for Cost Explorer](ce-access.md)\. 

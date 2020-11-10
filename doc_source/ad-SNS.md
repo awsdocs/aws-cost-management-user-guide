@@ -56,8 +56,6 @@ To confirm that your notification subscriptions have been accepted or to resend 
 
 1. On the navigation pane, choose **Subscriptions**\.
 
-1. On the **Subscriptions** page, for **Filter**, enter `monitor`\. A list of your monitor notifications appears\.
-
 1. Check the status of your notification\. Under **Status**, `PendingConfirmation` appears if a subscription hasn't been accepted and confirmed\.
 
 1. \(Optional\) To resend a confirmation request, select the subscription with a pending confirmation and choose **Request confirmation**\. Amazon SNS sends a confirmation request to the endpoints that are subscribed to the notification\.

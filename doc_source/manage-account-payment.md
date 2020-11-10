@@ -20,9 +20,7 @@ To edit your account name, root user password, or email address, perform the fol
 
 **To edit your account name, root user password, or root user email address**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
-
-1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
+1. Sign in to the **Account Settings** page in the AWS Management Console at [https://console\.aws\.amazon\.com/billing/home?\#/account](https://console.aws.amazon.com/billing/home?#/account)\. 
 
 1. On the **Account Settings** page, next to **Account Settings**, choose **Edit**\.
 

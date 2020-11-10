@@ -22,10 +22,12 @@ Permissions for Cost Explorer apply to all accounts and member accounts, regardl
 
 ## Activating access to the Billing and Cost Management console<a name="ControllingAccessWebsite-Activate"></a>
 
-To be able to grant your IAM user and role access to your account's Billing and Cost Management console, you must *activate* the functionality\. 
+Access to the Billing and Cost Management console \(except for Anomaly detection, Savings Plan Overview, Savings Plans inventory, Purchase Savings Plan, and Savings Plan cart consoles\) is controlled by the **Activate IAM Access** functionality\. If you want to activate the Billing and Cost Management console for all linked accounts in your organization, you can do so by selecting **Activate IAM Access** from your root account\. Once IAM access is activated, IAM Users, Roles, and Groups with the necessary IAM policies \(see [Using identity\-based policies \(IAM policies\) for Billing and Cost Management](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html)\) will be able to access AWS Billing and Cost Management consoles\. If IAM access is not activated using this procedure, accounts in your organization won’t be able to access AWS Billing and Cost Management consoles, regardless of if they have the necessary IAM policies\.
+
+This IAM access setting does not control access to Anomaly detection, Savings Plan overview, Savings Plans inventory, Purchase Savings Plan, and Savings Plan cart pages within Cost Explorer console\. You do not need to select **Activate IAM Access** for these pages\. Access to these pages is controlled using IAM policies only\. 
 
 **Important**  
-When you activate IAM user access to the Billing and Cost Management console, you grant full access to all users who already have full access to the AWS APIs\. You can restrict their access by applying an IAM policy that constrains their permissions\. See [Allow full access to AWS services but deny IAM users access to the Billing and Cost Management console](billing-example-policies.md#ExampleAllowAllDenyBilling)\.
+This functionality activates only AWS Billing and Cost Management console access and does not control access to Billing and Cost management information via the AWS APIs\. See see [Using the Cost Explorer API](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-api.html) for information on how to access billing and cost information using APIs\. In addition to activating IAM access, an IAM User, Role, or Group must have the required IAM actions included in their IAM policy to be able to access AWS Billing and Cost Management console\. 
 
 **To activate IAM user and role access to the Billing and Cost Management console**
 

@@ -32,7 +32,7 @@ These policies require that you activate IAM user access to the Billing and Cost
 + [View and manage purchase orders](#example-view-manage-purchaseorders)
 + [View and update the Cost Explorer preferences page](#example-view-update-ce)
 + [View, create, update, and delete using the Cost Explorer reports page](#example-view-ce-reports)
-+ [View, create, update, and delete reservation expiration alerts](#example-view-ce-expiration)
++ [View, create, update, and delete reservation and Savings Plans alerts](#example-view-ce-expiration)
 + [Allow read\-only access to anomaly detection](#example-policy-ce-ad)
 + [Allow AWS Budgets to apply IAM policies and SCPs and target EC2 and RDS instances](#example-budgets-applySCP)
 
@@ -248,7 +248,7 @@ The following policy allows Billing and Cost Management to save your detailed AW
 
 Replace *bucketname* with the name of your bucket\.
 
-For more information, see [ Using Bucket Policies and User Policies](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-iam-policies.html)\.
+For more information, see [ Using Bucket Policies and User Policies](https://docs.aws.amazon.com/AmazonS3/latest/dev/using-iam-policies.html) in the *Amazon Simple Storage Service Developer Guide*\.
 
 ```
 {
@@ -327,7 +327,7 @@ For an example IAM policy that allows users to enable and disable Regions, see [
 
 ## View and manage cost categories<a name="example-policy-cc-api"></a>
 
-To allow IAM users to use, view, and manage Cost Categories, use the following policy to grant them access\.
+To allow IAM users to use, view, and manage cost categories, use the following policy to grant them access\.
 
 ```
 {
@@ -554,9 +554,9 @@ The following policy allows IAM users to view Cost Explorer, but deny permission
 }
 ```
 
-## View, create, update, and delete reservation expiration alerts<a name="example-view-ce-expiration"></a>
+## View, create, update, and delete reservation and Savings Plans alerts<a name="example-view-ce-expiration"></a>
 
-This policy allows an IAM user to view, create, update, and delete [reservation expiration alerts](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-ris.html)\. To edit Reservation Expiration Alerts, a user needs all three granular actions `ce:CreateNotificationSubscription`, `ce:UpdateNotificationSubscription`, **ce:DeleteNotificationSubscription**\.
+This policy allows an IAM user to view, create, update, and delete [reservation expiration alerts](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-ris.html) and [Savings Plans alerts](https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-overview.html#sp-alert)\. To edit reservation expiration alerts or Savings Plans alerts, a user needs all three granular actions: `ce:CreateNotificationSubscription`, `ce:UpdateNotificationSubscription`, and `ce:DeleteNotificationSubscription`\.
 
 ```
 {
@@ -577,7 +577,7 @@ This policy allows an IAM user to view, create, update, and delete [reservation 
 }
 ```
 
-The following policy allows IAM users to view Cost Explorer, but deny permission to view or edit the **Reservation Expiration Alerts** page\.
+The following policy allows IAM users to view Cost Explorer, but denies permission to view or edit the **Reservation Expiration Alerts** and **Savings Plans alert** pages\.
 
 ```
 {
@@ -606,7 +606,7 @@ The following policy allows IAM users to view Cost Explorer, but deny permission
 }
 ```
 
-The following policy allows IAM users to view Cost Explorer, but deny permission to edit the **Reservation Expiration Alerts** page\.
+The following policy allows IAM users to view Cost Explorer, but denies permission to edit the **Reservation Expiration Alerts** and **Savings Plans alert** pages\.
 
 ```
 {

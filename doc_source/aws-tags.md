@@ -85,3 +85,7 @@ The `createdBy` tag is applied only to the following services and resources afte
 
 **Note**  
 The `CreateDBSnapshot` tag isn't applied to the snapshot backup storage\.
+
+## AWS Marketplace vendor\-provided tags<a name="marketplace-isv-tags"></a>
+
+Certain AWS Marketplace vendors can create tags and associate them with your software usage\. These tags will have the prefix `aws:marketplace:isv:`\. To use the tags, a management account owner must activate the tag in the Billing and Cost Management console\. When a management account owner activates the tag, the tag is also activated for all member accounts\. Similar to `aws:createdBy` tags, these tags appear only in the Billing and Cost Management console and does not count towards your tags per resource limit\. You can find the tag keys that apply to the product on the [AWS Marketplace](http://aws.amazon.com/marketplace/) product pages\.

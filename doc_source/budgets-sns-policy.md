@@ -55,7 +55,7 @@ You might encounter the following error messages when you’re creating your Ama
 There’s a syntax error in the ARN you replaced \(step 9\)\. Confirm the ARN for proper syntax and formatting\.
 
 **Invalid SNS topic**  
-AWS Budgets doesn’t have access to the SNS topic\. Confirm that you’ve allowed budget\.amazonaws\.com the ability to publish messages to this SNS topic, in the SNS topic’s resource based policy\.
+AWS Budgets doesn’t have access to the SNS topic\. Confirm that you’ve allowed budgets\.amazonaws\.com the ability to publish messages to this SNS topic, in the SNS topic’s resource based policy\.
 
 **The SNS topic is encrypted**  
 You have **encryption** enabled on the SNS topic\. The SNS topic won’t work without additional permissions\. Disable encryption on the topic, and refresh the **Budget edit** page\. 

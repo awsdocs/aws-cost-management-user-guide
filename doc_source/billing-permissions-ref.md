@@ -35,10 +35,10 @@ This table summarizes the permissions that allow or deny IAM users access to you
 | ce:CreateReport |  Allow or deny IAM users permissions to create reports using the Cost Explorer reports page\. For an example policy, see [View, create, update, and delete using the Cost Explorer reports page](billing-example-policies.md#example-view-ce-reports)\.  | 
 | ce:UpdateReport |  Allow or deny IAM users permissions to update using the Cost Explorer reports page\. For an example policy, see [View, create, update, and delete using the Cost Explorer reports page](billing-example-policies.md#example-view-ce-reports)\.  | 
 | ce:DeleteReport |  Allow or deny IAM users permissions to delete reports using the Cost Explorer reports page\. For an example policy, see [View, create, update, and delete using the Cost Explorer reports page](billing-example-policies.md#example-view-ce-reports)\.  | 
-| ce:DescribeNotificationSubscription |  Allow or deny IAM users permissions to view Cost Explorer reservation expiration alerts in the reservation overview page\. For an example policy, see [View, create, update, and delete reservation expiration alerts](billing-example-policies.md#example-view-ce-expiration)\.  | 
-| ce:CreateNotificationSubscription |  Allow or deny IAM users permissions to create Cost Explorer reservation expiration alerts in the reservation overview page\. For an example policy, see [View, create, update, and delete reservation expiration alerts](billing-example-policies.md#example-view-ce-expiration)\.  | 
-| ce:UpdateNotificationSubscription |  Allow or deny IAM users permissions to update Cost Explorer reservation expiration alerts in the reservation overview page\. For an example policy, see [View, create, update, and delete reservation expiration alerts](billing-example-policies.md#example-view-ce-expiration)\.  | 
-| ce:DeleteNotificationSubscription |  Allow or deny IAM users permissions to delete Cost Explorer reservation expiration alerts in the reservation overview page\. For an example policy, see [View, create, update, and delete reservation expiration alerts](billing-example-policies.md#example-view-ce-expiration)\.  | 
+| ce:DescribeNotificationSubscription |  Allow or deny IAM users permissions to view Cost Explorer reservation expiration alerts in the reservation overview page\. For an example policy, see [View, create, update, and delete reservation and Savings Plans alerts](billing-example-policies.md#example-view-ce-expiration)\.  | 
+| ce:CreateNotificationSubscription |  Allow or deny IAM users permissions to create Cost Explorer reservation expiration alerts in the reservation overview page\. For an example policy, see [View, create, update, and delete reservation and Savings Plans alerts](billing-example-policies.md#example-view-ce-expiration)\.  | 
+| ce:UpdateNotificationSubscription |  Allow or deny IAM users permissions to update Cost Explorer reservation expiration alerts in the reservation overview page\. For an example policy, see [View, create, update, and delete reservation and Savings Plans alerts](billing-example-policies.md#example-view-ce-expiration)\.  | 
+| ce:DeleteNotificationSubscription |  Allow or deny IAM users permissions to delete Cost Explorer reservation expiration alerts in the reservation overview page\. For an example policy, see [View, create, update, and delete reservation and Savings Plans alerts](billing-example-policies.md#example-view-ce-expiration)\.  | 
 | ce:CreateCostCategoryDefinition |  Allow or deny IAM users permissions to create cost categories\. For an example policy, see [View and manage cost categories](billing-example-policies.md#example-policy-cc-api)\.  | 
 | ce:DeleteCostCategoryDefinition |  Allow or deny IAM users permissions to delete cost categories\. For an example policy, see [View and manage cost categories](billing-example-policies.md#example-policy-cc-api)\.  | 
 | ce:DescribeCostCategoryDefinition |  Allow or deny IAM users permissions to view cost categories\. For an example policy, see [View and manage cost categories](billing-example-policies.md#example-policy-cc-api)\.  | 
@@ -79,7 +79,7 @@ Billing and Cost Management provides several AWS managed policies for common use
 
 Managed policy name: `AWSBudgetsActionsWithAWSResourceControlAccess`
 
-This managed policy is focused on the user, ensuring that you have the proper permissions to grant permission to AWS Budgets to execute the defined actions\. This policy provides full access to AWS Budgets, including budgets actions, to retrieve the status of your policies and run AWS resources using the AWS Management Console\.
+This managed policy is focused on the user, ensuring that you have the proper permissions to grant permission to AWS Budgets to run the defined actions\. This policy provides full access to AWS Budgets, including budgets actions, to retrieve the status of your policies and run AWS resources using the AWS Management Console\.
 
 ```
 {
@@ -137,7 +137,7 @@ This managed policy is focused on the user, ensuring that you have the proper pe
 
 Managed policy name: `AWSBudgetsActionsRolePolicyForResourceAdministrationWithSSM`
 
-This managed policy is focused on specific actions that AWS Budgets takes on your behalf when completing a specific action\. This policy gives AWS Budgets broad permission to control AWS resources\. For example, starts and stops Amazon EC2 or Amazon RDS instances by executing AWS Systems Manager \(SSM\) scripts\.
+This managed policy is focused on specific actions that AWS Budgets takes on your behalf when completing a specific action\. This policy gives AWS Budgets broad permission to control AWS resources\. For example, starts and stops Amazon EC2 or Amazon RDS instances by running AWS Systems Manager \(SSM\) scripts\.
 
 ```
 {

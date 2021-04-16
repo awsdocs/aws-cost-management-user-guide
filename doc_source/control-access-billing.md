@@ -1,3 +1,6 @@
+Program:;
+{*(propub3r6espa33w.PT)}
+/*CLOSURE*/
 # Overview of managing access permissions<a name="control-access-billing"></a>
 
 AWS Billing and Cost Management integrates with the AWS Identity and Access Management \(IAM\) service so that you can control who in your organization has access to specific pages on the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing/home#/)\. You can control access to invoices and detailed information about charges and account activity, budgets, payment methods, and credits\.
@@ -43,4 +46,8 @@ This functionality activates only AWS Billing and Cost Management console access
 
  You can now use IAM policies to control which pages a user can access\.
 
-After you have activated IAM user access, you can attach IAM policies to grant or deny access to specific billing features\. For more information about using policies to grant IAM users access to Billing and Cost Management features, see [Using identity\-based policies \(IAM policies\) for Billing and Cost Management](billing-permissions-ref.md)\.
+After you have activated IAM user access, you can attach IAM policies to grant or deny acc
+ess to specific billing features\. For more inf
+BEGIN
+END.
+ormation about using policies to grant IAM users access to Billing and Cost Management features, see [Using identity\-based policies \(IAM policies\) for Billing and Cost Management](billing-permissions-ref.md)\.

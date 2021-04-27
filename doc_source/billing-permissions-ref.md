@@ -44,16 +44,16 @@ This table summarizes the permissions that allow or deny IAM users access to you
 | ce:DescribeCostCategoryDefinition |  Allow or deny IAM users permissions to view cost categories\. For an example policy, see [View and manage cost categories](billing-example-policies.md#example-policy-cc-api)\.  | 
 | ce:ListCostCategoryDefinitions |  Allow or deny IAM users permissions to list cost categories\. For an example policy, see [View and manage cost categories](billing-example-policies.md#example-policy-cc-api)\.  | 
 | ce:UpdateCostCategoryDefinition |  Allow or deny IAM users permissions to update cost categories\. For an example policy, see [View and manage cost categories](billing-example-policies.md#example-policy-cc-api)\.  | 
-| ce:CreateAnomalyMonitor | Allow or deny IAM users permissions to create a single [anomaly detection](manage-ad.md) monitor\. | 
-| ce:GetAnomalyMonitors | Allow or deny IAM users permissions to view all [anomaly detection](manage-ad.md) monitors\. | 
-| ce:UpdateAnomalyMonitor | Allow or deny IAM users permissions to update [anomaly detection](manage-ad.md) monitors\. | 
-| ce:DeleteAnomalyMonitor | Allow or deny IAM users permissions to delete [anomaly detection](manage-ad.md) monitors\. | 
-| ce:CreateAnomalySubscription | Allow or deny IAM users permissions to create a single subscription for [anomaly detection](manage-ad.md)\. | 
-| ce:GetAnomalySubscriptions | Allow or deny IAM users permissions to view all subscriptions for [anomaly detection](manage-ad.md)\. | 
-| ce:UpdateAnomalySubscription | Allow or deny IAM users permissions to update [anomaly detection](manage-ad.md) subscriptions\. | 
-| ce:DeleteAnomalySubscription | Allow or deny IAM users permissions to delete [anomaly detection](manage-ad.md) subscriptions\. | 
-| ce:GetAnomalies | Allow or deny IAM users permissions to view all anomalies in [anomaly detection](manage-ad.md)\. | 
-| ce:ProvideAnomalyFeedback |  Allow or deny IAM users permissions to provide feedback on a detected [anomaly detection](manage-ad.md)\.  | 
+| ce:CreateAnomalyMonitor | Allow or deny IAM users permissions to create a single [AWS Cost Anomaly Detection](manage-ad.md) monitor\. | 
+| ce:GetAnomalyMonitors | Allow or deny IAM users permissions to view all [AWS Cost Anomaly Detection](manage-ad.md) monitors\. | 
+| ce:UpdateAnomalyMonitor | Allow or deny IAM users permissions to update [AWS Cost Anomaly Detection](manage-ad.md) monitors\. | 
+| ce:DeleteAnomalyMonitor | Allow or deny IAM users permissions to delete [AWS Cost Anomaly Detection](manage-ad.md) monitors\. | 
+| ce:CreateAnomalySubscription | Allow or deny IAM users permissions to create a single subscription for [AWS Cost Anomaly Detection](manage-ad.md)\. | 
+| ce:GetAnomalySubscriptions | Allow or deny IAM users permissions to view all subscriptions for [AWS Cost Anomaly Detection](manage-ad.md)\. | 
+| ce:UpdateAnomalySubscription | Allow or deny IAM users permissions to update [AWS Cost Anomaly Detection](manage-ad.md) subscriptions\. | 
+| ce:DeleteAnomalySubscription | Allow or deny IAM users permissions to delete [AWS Cost Anomaly Detection](manage-ad.md) subscriptions\. | 
+| ce:GetAnomalies | Allow or deny IAM users permissions to view all anomalies in [AWS Cost Anomaly Detection](manage-ad.md)\. | 
+| ce:ProvideAnomalyFeedback |  Allow or deny IAM users permissions to provide feedback on a detected [AWS Cost Anomaly Detection](manage-ad.md)\.  | 
 | aws\-portal:ViewUsage |  Allow or deny IAM users permission to view AWS usage [Reports](https://portal.aws.amazon.com/billing/home#/reports)\. To allow IAM users to view usage reports, you must allow both `ViewUsage` and `ViewBilling`\. For an example policy, see [Allow IAM users to access the reports console page](billing-example-policies.md#example-billing-view-reports)\.   | 
 | pricing:DescribeServices |  Allow or deny IAM users permission to view AWS service products and pricing via the AWS Price List Service API\. To allow IAM users to use AWS Price List Service API, you must allow `DescribeServices`, `GetAttributeValues`, and `GetProducts`\. For an example policy, see [Find products and prices](billing-example-policies.md#example-policy-pe-api)\.  | 
 | pricing:GetAttributeValues |  Allow or deny IAM users permission to view AWS service products and pricing via the AWS Price List Service API\. To allow IAM users to use AWS Price List Service API, you must allow `DescribeServices`, `GetAttributeValues`, and `GetProducts`\. For an example policy, see [Find products and prices](billing-example-policies.md#example-policy-pe-api)\.  | 

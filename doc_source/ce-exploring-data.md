@@ -3,6 +3,9 @@
 On the Cost Explorer dashboard, Cost Explorer shows your estimated costs for the month to date, your forecasted costs for the month, a graph of your daily costs, your five top cost trends, and a list of reports that you recently viewed\. 
 
 All costs reflect your usage up to the previous day\. For example, if today is December 2, the data includes your usage through December 1\.
+
+**Note**  
+In the current billing period, the data depends on your upstream data from your billing applications, and some data might be updated later than 24 hours\.
 + [Your Cost Explorer costs](#ce-costs)
 + [Your Cost Explorer trends](#ce-trends)
 + [Your daily unblended costs](#ce-graph)

@@ -1,14 +1,17 @@
 # Managing your costs with AWS Cost Categories<a name="manage-cost-categories"></a>
 
-You can use AWS Cost Categories to map your AWS costs and usage into meaningful categories\. With cost categories, you can organize your costs using a rule\-based engine\. The rules that you configure will organize your costs into categories\. You can then use these categories across products in the AWS Billing and Cost Management console, including Cost Explorer, AWS Budgets, and AWS Cost and Usage Reports \(AWS CUR\)\.
+ You can use AWS Cost Categories to map your AWS costs and usage into meaningful categories\. With cost categories, you can organize your costs using a rule\-based engine\. The rules that you configure will organize your costs into categories\. You can then use these categories across products in the AWS Billing and Cost Management console, including Cost Explorer, AWS Budgets, AWS Cost and Usage Reports \(AWS CUR\), and Cost Anomaly Detection\.
 
-You can create groupings of costs using cost categories\. For example, your business is organized by teams, and each team has multiple accounts within\. To build this structure in cost categories, first create a cost category named *Team*\. Then, you can map costs to a cost category value named `Team 123`\.
+You can create groupings of costs using cost categories\. For example, your business is organized by teams, and each team has multiple accounts within\. To build this structure in cost categories, first create a cost category named *Team*\. Then, you can map costs to a cost category value named `Team 1`\.
 
-Companies commonly have multiple perspectives on their business, such as projects, cost centers, and applications, and you can create cost categories to match these perspectives\. Cost category values are groups within cost categories, similar to `Team 123` or `Team 456` from the previous example\. By creating cost categories, you can view your business in multiple, corresponding perspectives\.
+Companies commonly have multiple perspectives on their business, such as projects, cost centers, and applications, and you can create cost categories to match these perspectives\. Cost category values are groups within cost categories, similar to `Team 1` or `Team 2` from the previous example\. By creating cost categories, you can view your business in multiple, corresponding perspectives\. Furthermore, you can create multilevel hierarchical relationships among your cost categories to replicate your organizational structure\. For example, you can create a cost category named `Business Unit` which includes groupings of multiple teams\. You can then define a cost category value named `BU1` with `Team 1` and `Team 2` selected from your `Teams` cost category and a cost category value `BU2` with `Team 3` and `Team 4` selected from the `Teams` cost category\. 
 
-You can start using cost categories by creating a unique category name\. Then, map costs to cost category values within the cost categories\. In each cost category value, map the type of costs that belong to that value\. For example, if your `Team 123` consists of multiple accounts, you can write that expression by choosing the accounts dimension \(`is` option\) and selecting the applicable accounts\. After creating the cost category value, continue to create other teams by adding values\.
+You can start using cost categories by creating a unique category name\. Then, map costs to cost category values within the cost categories\. In each cost category value, map the type of costs that belong to that value\. For example, if your `Team 1` consists of multiple accounts, you can write that expression by choosing the accounts dimension \(`is` option\) and selecting the applicable accounts\. After creating the cost category value, continue to create other teams by adding values\.
 
-After your cost categories are created, they appear in Cost Explorer, AWS Budgets, and AWS CUR\. In Cost Explorer and AWS Budgets, a cost category appears as an additional billing dimension\. You can use this to filter for the specific cost category value, or group by the cost category\. In AWS CUR, the cost category appears as a new column with the cost category value in each row\.
+**Note**  
+To create hierarchical relationships among your cost categories, you select the cost category dimension from the parent cost category\. This was `Business Unit` in the previous example\. The child cost category would be the cost category name \(`Teams` in the previous example\)\. You can then select values belonging to the child cost category, such as `Team 1` and `Team 2`, into the parent cost category value \(`BU 1` in the example\)\.
+
+ After you create the cost categories, they appear in Cost Explorer, AWS Budgets, AWS CUR and Cost Anomaly Detection\. In Cost Explorer and AWS Budgets, a cost category appears as an additional billing dimension\. You can use this to filter for the specific cost category value, or group by the cost category\. In AWS CUR, the cost category appears as a new column with the cost category value in each row\. In Cost Anomaly Detection, you can use cost category as a monitor type to monitor your total costs across specified cost category values\.
 
 **Note**  
 Cost categories are effective at the start of the current month\. If you create or update your cost category in the middle of the month, it retroactively takes effect on cost and usage from the beginning of the month\.
@@ -18,10 +21,13 @@ This is an administrative feature, and it can only be customized by the manageme
 **Topics**
 + [Supported dimensions](#cost-categories-dimensions)
 + [Supported operations](#cost-categories-ops)
++ [Supported rule types](#cost-categories-rule-types)
++ [Default value](#cost-categories-default-value)
 + [Status](#cost-categories-stat)
 + [Limits](#cost-categories-limits)
 + [Term comparisons](#cost-categories-terms)
 + [Creating cost categories](create-cost-categories.md)
++ [Viewing cost categories](view-cost-categories.md)
 + [Editing cost categories](edit-cost-categories.md)
 + [Deleting cost categories](delete-cost-categories.md)
 
@@ -67,17 +73,33 @@ The approximate match used to filter for a text string that starts with this val
 **Ends with**  
 The approximate match used to filter for a text string that ends with this value\. This value is case sensitive\.
 
+## Supported rule types<a name="cost-categories-rule-types"></a>
+
+Use rule type to define which cost category values to use to categorize your costs\.
+
+The following rule types are supported\.
+
+**Regular Rule**  
+This rule type adds statically defined cost category values that categorize costs based on the defined dimension rules\.
+
+**Inherited Value**  
+This rule type adds the flexibility of defining a rule that dynamically inherits the cost category value from the dimension value defined\. For example, if you wanted to dynamically group costs based on the value of a specific tag key, you would first choose the inherited value rule type, then choose the `Tag` dimension and specify the tag key to use\. For example, you could use a tag key, `teams`, to tag your resources with values as `alpha`, `beta`, and `gamma`\. Then, with an inherited value rule, you could select `Tag` as the dimension and use `teams` as the tag key\. This would generate dynamic cost category values `alpha`, `beta`, and `gamma`\. 
+
+## Default value<a name="cost-categories-default-value"></a>
+
+Optionally, if no rules are matched for the cost category, you can define this value to be used instead\.
+
 ## Status<a name="cost-categories-stat"></a>
 
-You can use the console to confirm the status of whether your cost categories completed the processing of the cost and usage information\. After you create or edit a cost category, it takes approximately 8 hours before it has categorized your cost and usage information in the AWS Cost and Usage Report or Cost Explorer\.
+You can use the console to confirm the status of whether your cost categories completed the processing of the cost and usage information\. After you create or edit a cost category, it can take up to 24 hours before it has categorized your cost and usage information in the AWS Cost and Usage Report, Cost Explorer, and other cost management products\.
 
 There are two status states\.
 
 **Applied**  
-Cost categories completed processing, and the information in AWS Cost and Usage Report and Cost Explorer is up to date with the new rules\.
+Cost categories completed processing, and the information in AWS Cost and Usage Report, Cost Explorer, and other cost management products is up to date with the new rules\.
 
 **Processing**  
-The cost categories are still in progress\.
+The cost category updates are still in progress\.
 
 ## Limits<a name="cost-categories-limits"></a>
 

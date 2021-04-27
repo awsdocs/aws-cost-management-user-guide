@@ -16,11 +16,9 @@ You can track your reservations and their expiration in Cost Explorer\. Reservat
 
 **To turn on reservation expiration alerts**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
 
-1. On the navigation pane, choose **Cost Explorer**\.
-
-1. Navigate to the **Reservation summary** page\.
+1. Navigate to the **Overview** page under the **Reservations** section\.
 
 1. In the **Reservation expiring** section, choose **Manage alerts** in the upper right corner\.
 

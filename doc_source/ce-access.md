@@ -1,7 +1,7 @@
 # Controlling access for Cost Explorer<a name="ce-access"></a>
 
 You can manage access to your Cost Explorer in the following ways:
-+ The management account account can enable Cost Explorer at a root level, automatically enabling all member accounts\.
++ The management account can enable Cost Explorer at a root level, automatically enabling all member accounts\.
 + After member accounts are enabled, the management account can use the Cost Explorer settings to control the level of information you want to expose in Cost Explorer\. Levels of information can include cost, refunds or credits, discounts \(for example, reservation volume discounts, bundled discounts\), and Reserved Instance \(RI\) recommendations\.
 + After you enable Cost Explorer at the management account level, you can control the IAM policies of your IAM users to restrict access to Cost Explorer at the account level\. Users either get all access or no access with this option\.
 

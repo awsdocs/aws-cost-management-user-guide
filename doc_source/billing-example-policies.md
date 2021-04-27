@@ -33,7 +33,7 @@ These policies require that you activate IAM user access to the Billing and Cost
 + [View and update the Cost Explorer preferences page](#example-view-update-ce)
 + [View, create, update, and delete using the Cost Explorer reports page](#example-view-ce-reports)
 + [View, create, update, and delete reservation and Savings Plans alerts](#example-view-ce-expiration)
-+ [Allow read\-only access to anomaly detection](#example-policy-ce-ad)
++ [Allow read\-only access to AWS Cost Anomaly Detection](#example-policy-ce-ad)
 + [Allow AWS Budgets to apply IAM policies and SCPs and target EC2 and RDS instances](#example-budgets-applySCP)
 
 ## Allow IAM users to view your billing information<a name="example-billing-view-billing-only"></a>
@@ -361,7 +361,8 @@ This policy allows an IAM user to create, view, edit, or delete `sample-report` 
     "Statement": [
         {
             "Sid": "ManageSampleReport",
-            "Action": [
+            "Effect": "Allow",
+			"Action": [
                 "cur:PutReportDefinition", 
                 "cur:DeleteReportDefinition",
                 "cur:ModifyReportDefinition"
@@ -634,9 +635,9 @@ The following policy allows IAM users to view Cost Explorer, but denies permissi
 }
 ```
 
-## Allow read\-only access to anomaly detection<a name="example-policy-ce-ad"></a>
+## Allow read\-only access to AWS Cost Anomaly Detection<a name="example-policy-ce-ad"></a>
 
-To allow IAM users read\-only access to anomaly detection, use the following policy to grant them access\. `ce:ProvideAnomalyFeedback` is optional as a part of the read\-only access\.
+To allow IAM users read\-only access to AWS Cost Anomaly Detection, use the following policy to grant them access\. `ce:ProvideAnomalyFeedback` is optional as a part of the read\-only access\.
 
 ```
 {

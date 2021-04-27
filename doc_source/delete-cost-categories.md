@@ -11,3 +11,5 @@ You can delete your cost categories using the following procedure\.<a name="edit
 1. Select the cost category to delete\.
 
 1. Choose **Delete cost category**\.
+
+ 

@@ -23,7 +23,7 @@ The **Daily costs** report shows how much you've spent in the last six months, a
 
 ### Monthly costs by linked account<a name="ce-linked-costs"></a>
 
-The **Monthly costs by linked account** report shows your costs for the last six months, grouped by linked account\. The top five linked accounts are shown by themselves, and the rest are grouped into one bar\.
+The **Monthly costs by linked account** report shows your costs for the last six months, grouped by linked, or member account\. The top five member accounts are shown by themselves, and the rest are grouped into one bar\.
 
 ### Monthly costs by service<a name="ce-service-costs"></a>
 
@@ -130,7 +130,7 @@ Target coverage is shown on the chart as a dotted line, and the average coverage
 The RI coverage reports use the Cost Explorer filters instead of the RI Utilization filters\. You can filter the chart to analyze the purchasing accounts, instance types, and more\. RI reports use a combination of RI\-specific filters and regular Cost Explorer filters\. The RI\-specific filters are available only for the Cost Explorer RI Utilization and RI Coverage reports, and aren't available anywhere else that AWS uses Cost Explorer filters\. The following filters are available:
 + **Availability Zone** – Filter your RI usage by specific Availability Zones\.
 + **Instance Type** – Filter your RI usage by specific instance types, such as **t2\.micro** or **m3\.medium**\. This also applies to Amazon RDS instance classes such as **db\.m4**\.
-+ **Linked Account** – Filter your RI usage by specific linked accounts\.
++ **Linked Account** – Filter your RI usage by specific member accounts\.
 + **Platform** – Filter your RI usage by platform, such as **Linux** or **Windows**\. This also applies to Amazon RDS database engines\.
 + **Region** – Filter your RI usage by specific regions, such as **US East \(N\. Virginia\)** or **Asia Pacific \(Singapore\)**\.
 + **Scope** \(Amazon EC2\) – Filter your Amazon EC2 usage to show RIs that are purchased for use in specific Availability Zones or regions\.

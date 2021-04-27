@@ -1,5 +1,7 @@
 # Available budget filters<a name="budgets-create-filters"></a>
 
+
+
 **Usage Type Group**  
 Choose one of the groups provided, such as `S3: Data Transfer - Internet (Out) (GB)`\. A usage type group is a collection of usage types that have the same unit of measure\. If you choose both the **Usage Type Group** and the **Usage Type** filters, Cost Explorer shows you usage types that are automatically constrained to the group unit of measure\. For example, when you choose the group `EC2: Running Hours (Hrs)` and then choose the `EC2-Instances` filter for **Usage Type**, Cost Explorer shows you only the usage types that are measured in hours\.
 
@@ -16,8 +18,6 @@ The RI utilization and RI coverage reports allow filtering by only one service a
 + Amazon ElastiCache
 + Amazon Elasticsearch Service
 
-**Legal Entity**  
-Choose the provider that provides your AWS services\. For AWS services, **AWS** is the legal entity\. For third\-party services that are sold through AWS Marketplace, **AWS Marketplace** is the legal entity\. 
 
 **Linked Account**  
 Choose an AWS account that is a member of the account that you're creating the budget for\.  
@@ -27,7 +27,7 @@ Do not use this filter within a member account\. If the current account is a mem
 If you have activated any tags, choose a resource tag\. A tag is a label that you can use to organize your resource costs and track them on a detailed level\. There are AWS generated tags and user\-defined tags\. You must activate tags to use them\. For more information, see [Activating the AWS\-Generated Cost Allocation Tags](activate-built-in-tags.md) and [Activating User\-Defined Cost Allocation Tags](activating-tags.md)\.
 
 **Purchase Option**  
-Choose `On Demand Instances` or `Standard Reserved Instances`\.
+Choose `On Demand Instances`, `Standard Reserved Instances`, or `Savings Plans`\.
 
 **Availability Zone**  
 Choose the `Availability Zone` in which the resource that you want to create a budget for is running\.

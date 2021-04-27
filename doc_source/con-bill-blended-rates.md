@@ -14,13 +14,15 @@ If you manage an organization in AWS Organizations, you can use consolidated bil
 In an organization, the management account is responsible for paying all charges that the member accounts incur\. If you're an administrator of a management account and you have the appropriate permissions, you can view aggregated usage costs for Reserved Instance discounts and volume tiering for all member accounts\. You can also view the charges that individual member accounts incur, because AWS creates a separate bill for each member account based on that account’s usage\. AWS also includes invoice summaries for each account in the management account invoice\. During each billing period, AWS calculates your estimated charges several times each day so that you can track your costs as your organization incurs them\. Your bill is not finalized until the beginning of the next month\.
 
 **Note**  
-Like member accounts, a management account can incur usage charges\. However, as a best practice you shouldn't use the management account to run AWS services\. An exception is for services and resources that are required to manage the organization itself\. For example, as part of managing your consolidated billing you might create an S3 bucket in the management account to store AWS Cost and Usage reports\. 
+Like member accounts, a management account can incur usage charges\. However, as a best practice you shouldn't use the management account to run AWS services\. An exception is for services and resources that are required to manage the organization itself\. For example, as part of managing your consolidated billing you might create an S3 bucket in the management account to store AWS Cost and Usage Reports\. 
 
 ## Pricing Tiers<a name="Blended_Rate_Overview"></a>
 
 Some AWS services are priced in *tiers*, which specify unit costs for defined amounts of AWS usage\. As your usage increases, your usage crosses thresholds into new pricing tiers that specify lower unit costs for additional usage in a month\. Your AWS usage is measured every month\. To measure usage, AWS treats all accounts in an organization as a single account\. Member accounts don't reach tier thresholds individually\. Instead, all usage in the organization is aggregated for each service, which ensures faster access to lower\-priced tiers\. As each month begins, your service usage is reset to zero\.
 
 Each AWS service publishes its pricing information independently\. You can access all individual pricing pages from the [AWS Pricing](http://aws.amazon.com/pricing/) page\.
+
+
 
 ### Calculating Costs for Amazon S3 Standard Storage<a name="tier-example"></a>
 

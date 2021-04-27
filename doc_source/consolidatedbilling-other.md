@@ -4,6 +4,8 @@ There are a few other things to know about how consolidated billing works with s
 
 ## Amazon EC2 reserved instances<a name="consolidatedbilling-ec2"></a>
 
+
+
 For an Amazon EC2 Reserved Instances example, suppose that Bob and Susan each have an account in an organization\. Susan has five Reserved Instances of the same type, and Bob has none\. During one particular hour, Susan uses three instances and Bob uses six, for a total of nine instances on the organization's consolidated bill\. AWS bills five instances as Reserved Instances, and the remaining four instances as regular instances\. 
 
 Bob receives the cost benefit from Susan's Reserved Instances only if he launches his instances in the same Availability Zone where Susan purchased her Reserved Instances\. For example, if Susan specifies `us-west-2a` when she purchases her Reserved Instances, Bob must specify `us-west-2a` when he launches his instances to get the cost benefit on the organization's consolidated bill\. However, the actual locations of Availability Zones are independent from one account to another\. For example, the `us-west-2a` Availability Zone for Bob's account might be in a different location than the location for Susan's account\.

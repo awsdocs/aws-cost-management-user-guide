@@ -14,21 +14,17 @@ You can access your reservation recommendations and resource\-based recommendati
 
 **To access rightsizing recommendations**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
 
-1. In the navigation pane, choose **Cost Explorer**\.
-
-1. On the Cost Explorer page, choose **Launch Cost Explorer**\.
-
-1. In the navigation pane, choose **Recommendations**\.
+1. In the navigation pane, choose **Rightsizing recommendations**\.
 
 **To enable rightsizing recommendations**
 
-1. Choose **Launch Cost Explorer**\.
+1. Open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
 
-1. In the navigation pane, choose **Recommendations**\.
+1. In the navigation pane, choose **Preferences**\.
 
-1. In the **Resource optimization recommendations** section, choose **Enable rightsizing recommendations**\.
+1. In the **Recommendations** section, choose **Receive Amazon EC2 resource recommendations**\.
 
 **Note**  
 Only regular or a management account can enable rightsizing recommendations\. After you enable the feature, both member and management account can access rightsizing recommendations unless the management account specifically prohibits member account access on the **settings** page\.   
@@ -43,11 +39,9 @@ You can see the following top\-level key performance indicators \(KPIs\) in your
 
 **To filter your rightsizing recommendations**
 
-1. Choose **Launch Cost Explorer**\.
+1. Open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
 
-1. In the left navigation pane, choose **Recommendations**\.
-
-1. In the **Resource optimization recommendations** section, choose **Enable rightsizing recommendations**\.
+1. In the left navigation pane, choose **Rightsizing recommendations**\.
 
 1. At the top of the **Rightsizing Recommendations** page, filter your recommendations by selecting any or all of the following check boxes:
    + Idle instances \(termination recommendations\)
@@ -62,9 +56,9 @@ You can see the following top\-level key performance indicators \(KPIs\) in your
 
 **To view your rightsizing recommendations details**
 
-1. Choose **Launch Cost Explorer**\.
+1. Open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
 
-1. In the left navigation pane, choose **Recommendations**\.
+1. In the left navigation pane, choose **Rightsizing recommendations**\.
 
 1. Choose **View**\.
 

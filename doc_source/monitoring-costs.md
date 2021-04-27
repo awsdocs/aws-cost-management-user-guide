@@ -9,7 +9,7 @@ For information about , see the [https://docs.aws.amazon.com/cur/latest/userguid
 + [Analyzing your costs with Cost Explorer](ce-what-is.md)
 + [Managing your costs with AWS Budgets](budgets-managing-costs.md)
 + [Reporting your budget metrics with budget reports](reporting-cost-budget.md)
-+ [Detecting unusual spend with anomaly detection](manage-ad.md)
++ [Detecting unusual spend with AWS Cost Anomaly Detection](manage-ad.md)
 + [Managing your costs with AWS Cost Categories](manage-cost-categories.md)
 + [Using Cost Allocation Tags](cost-alloc-tags.md)
 + [Using the AWS Price List API](price-changes.md)

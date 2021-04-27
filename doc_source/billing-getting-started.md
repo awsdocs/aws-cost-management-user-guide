@@ -104,7 +104,8 @@ Any recurring charges to your account\. When you purchase a Partial Upfront or N
 Any taxes that are associated with the charges or fees in your budget\.  
 **Support charges**  
 Any charges that AWS charges you for a support plan\. When you purchase a support plan from AWS, you pay a monthly charge in exchange for service support\.   
-**Other subscription costs**    
+**Other subscription costs**  
+  
 **Use blended costs**  
 The cost of the instance hours that you used\. A blended rate doesn't include either the RI upfront costs or the RI discounted hourly rate\.  
 **Use amortized costs**  

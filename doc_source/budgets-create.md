@@ -137,6 +137,8 @@ Use this procedure to create a usage\-based budget\.<a name="usage-budget"></a>
 
 1. Under **Usage unit\(s\)**, choose either **Usage Type Group** or **Usage Type**\. A usage type group is a collection of usage types that have the same unit of measure, such as resources that measure usage by the hour\.
 
+   
+
    1. For **Usage Type Group**, choose the unit of measurement that you want the budget to use\.
 
    1. For **Usage Type**, choose the service that you want to include in the budget and then choose the unit of measurement that you want the budget to use\.

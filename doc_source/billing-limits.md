@@ -8,7 +8,7 @@ The following table describes the current quotas, restrictions, and naming const
 + [AWS Cost Categories](#limits-categories)
 + [Cost Explorer](#limits-ce)
 + [Purchase orders](#limits-po)
-+ [Anomaly detection](#limits-ad)
++ [AWS Cost Anomaly Detection](#limits-ad)
 
 ## Budgets<a name="limits-budgets"></a>
 
@@ -57,11 +57,11 @@ The following table describes the current quotas, restrictions, and naming const
 | Number of characters allowed in a purchase order ID | 100 | 
 | Number of line items per purchase order | 100 | 
 
-## Anomaly detection<a name="limits-ad"></a>
+## AWS Cost Anomaly Detection<a name="limits-ad"></a>
 
 
 |  |  | 
 | --- |--- |
-| The maximum number of monitors you can create for an AWS service monitor type |  1 monitor per management account  | 
+| The maximum number of monitors you can create for an AWS service monitor type |  1 monitor per account  | 
 | The maximum number of monitors you can create for other monitor types \(member account, cost category, cost allocation tag\) | 100 total monitors per management account | 
 | Unsupported services | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 

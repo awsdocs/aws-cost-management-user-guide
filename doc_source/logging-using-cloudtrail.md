@@ -15,28 +15,38 @@ This section shows a full list of the CloudTrail events related to Billing and C
 
 | Event name | Definition | 
 | --- | --- | 
-| SetContactAddress | Logs the creation, deletion, or update of the account owner address\. | 
-| SetFxPaymentCurrency | Logs the creation, deletion, or update of the preferred currency used to pay your invoice\. | 
-| SetAdditionalContacts | Logs the creation, deletion, or update of the alternate contacts for billing, operations, and security communications\. | 
-| SetSecurityQuestions | Logs the creation, deletion, or update of the security challenge questions to help AWS identify you as the owner of the account\. | 
-| SetIAMAccessPreference | Logs the creation, deletion, or update of the IAM user's ability to access to the billing console\. This setting is only for customers with root access\. | 
-| SetAccountContractMetadata | Logs the creation, deletion, or update of the necessary contract information for public sector customers\. | 
-| CloseAccount | Logs the closing of an account\. | 
 | AcceptFxPaymentCurrencyTermsAndConditions | Logs the acceptance of the terms and conditions of paying in a currency other than USD\. | 
-| SetTaxRegistration | Logs the creation, deletion, or update of the tax registration number for an account\. | 
-| SetPayInformation | Logs the payment method history \(invoice or credit/debit card\) for the account\. | 
-| RedeemPromoCode | Logs the redemption of promotional credits for an account\. | 
-| SetCostExplorerPreferences  | Logs the opt\-in history of AWS Cost Explorer for the account\. | 
+| CloseAccount | Logs the closing of an account\. | 
 | CreateOrigamiReportPreference | Logs the creation of the cost and usage report; management account only\. | 
-| UpdateOrigamiReportPreference | Logs the update of the cost and usage report; management account only\. | 
 | DeleteOrigamiReportPreferences | Logs the deletion of the cost and usage report; management account only\. | 
-| SetCreatedByOptIn | Logs the opt\-in of the awscreatedby cost allocation tag preference\. | 
-| SetTagKeysState | Logs the active or inactive state of a particular cost allocation tag\. | 
-| SetRISharing | Logs the history of the RI/Savings Plans sharing preference for the management account\. | 
-| SetCreditSharing | Logs the history of the credit sharing preference for the management account\. | 
-| SetAccountPreferences | Logs the updates of the account name, email, and password\. | 
+| DownloadCommercialInvoice | Logs the download of a commercial invoice\. | 
+| DownloadECSVForBillingPeriod | Logs the download of the eCSV file \(monthly usage report\) for a specific billing period\. | 
+| DownloadTaxInvoice | Logs the download of a tax invoice\. | 
 | EnableBillingAlerts | Logs the opt\-in of receiving CloudWatch billing alerts for estimated charges\. | 
+| GetBillsForBillingPeriod | Logs the access of the account's usage and charges for a specific billing period\. | 
+| GetBillsForLinkedAccount | Logs the access of a management account retrieving the usage and charges of one of the membr accounts in the consolidated billing family for a specific billing period\. | 
+| GetCommercialInvoicesForBillingPeriod | Logs the access to the account's commercial invoices metadata for the specific billing period\. | 
+| GetConsolidatedBillingFamilySummary | Logs the access of the management account retrieving the summary of the entire consolidated billing family\. | 
+| GetLinkedAccountNames | Logs the retrieval from a management account of the member account names belonging to its consolidated billing family for a specific billing period\. | 
+| GetTaxInvoicesMetadata | Logs the retrieval of tax invoices metadata\. | 
+| GetTotalAmountForForecast | Logs the access to the forecasted charges for the specific billing period\. | 
+| RedeemPromoCode | Logs the redemption of promotional credits for an account\. | 
+| SetAccountContractMetadata | Logs the creation, deletion, or update of the necessary contract information for public sector customers\. | 
+| SetAccountPreferences | Logs the updates of the account name, email, and password\. | 
+| SetAdditionalContacts | Logs the creation, deletion, or update of the alternate contacts for billing, operations, and security communications\. | 
+| SetContactAddress | Logs the creation, deletion, or update of the account owner address\. | 
+| SetCostExplorerPreferences | Logs the opt\-in history of AWS Cost Explorer for the account\. | 
+| SetCreatedByOptIn | Logs the opt\-in of the awscreatedby cost allocation tag preference\. | 
+| SetCreditSharing | Logs the history of the credit sharing preference for the management account\. | 
 | SetFreetierBudgetsPreference | Logs the preference \(opt\-in or opt\-out\) of receiving Free Tier usage alerts\. | 
+| SetFxPaymentCurrency | Logs the creation, deletion, or update of the preferred currency used to pay your invoice\. | 
+| SetIAMAccessPreference | Logs the creation, deletion, or update of the IAM user's ability to access to the billing console\. This setting is only for customers with root access\. | 
+| SetPayInformation | Logs the payment method history \(invoice or credit/debit card\) for the account\. | 
+| SetRISharing | Logs the history of the RI/Savings Plans sharing preference for the management account\. | 
+| SetSecurityQuestions | Logs the creation, deletion, or update of the security challenge questions to help AWS identify you as the owner of the account\. | 
+| SetTagKeysState | Logs the active or inactive state of a particular cost allocation tag\. | 
+| SetTaxRegistration | Logs the creation, deletion, or update of the tax registration number for an account\. | 
+| UpdateOrigamiReportPreference | Logs the update of the cost and usage report; management account only\. | 
 
 ## Billing and Cost Management information in CloudTrail<a name="service-name-info-in-cloudtrail"></a>
 

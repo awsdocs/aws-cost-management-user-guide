@@ -1,7 +1,7 @@
 # AWS Billing and Cost Management User Guide
 
 -----
-*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy;  Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -29,11 +29,13 @@ Amazon's trademarks and trade dress may not be used in
    + [Managing your AWS payments](manage-general.md)
       + [Managing your AWS payment methods](manage-payment-method.md)
          + [Use China bank redirect payment methods](manage-cny-payment.md)
+      + [Making payments, checking unapplied funds, and viewing your payment history](manage-making-a-payment.md)
       + [Managing your credit card payment methods](manage-cc.md)
       + [Managing your ACH direct debit payment methods](manage-debit.md)
    + [Managing your payments in India](edit-aispl-payment-method.md)
    + [Managing your payments in AWS Europe](emea-payments.md)
       + [Managing your AWS Europe payment methods](edit-emea-payment-method.md)
+      + [Making payments, checking unapplied funds, and viewing your payment history in AWS Europe](manage-making-a-payment-emea.md)
       + [Managing your AWS Europe credit card payment methods](manage-cc-emea.md)
       + [Managing your AWS Europe credit card payment verifications](manage-emea-cc-verification.md)
       + [Managing your SEPA direct debit payment methods](manage-debit-emea.md)
@@ -83,19 +85,20 @@ Amazon's trademarks and trade dress may not be used in
       + [Deleting a budget](budgets-delete.md)
       + [Configuring AWS Budgets controls](budgets-controls.md)
       + [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)
-      + [Receiving budget alerts in Amazon Chime and slack](sns-alert-chime.md)
+      + [Receiving budget alerts in Amazon Chime and Slack](sns-alert-chime.md)
    + [Reporting your budget metrics with budget reports](reporting-cost-budget.md)
       + [Creating an AWS Budgets report](create-budget-report.md)
       + [Editing an AWS Budgets report](edit-budget-report.md)
       + [Copying an AWS Budgets report](copy-budget-report.md)
       + [Deleting an AWS Budgets report](delete-budget-report.md)
-   + [Detecting unusual spend with anomaly detection](manage-ad.md)
+   + [Detecting unusual spend with AWS Cost Anomaly Detection](manage-ad.md)
       + [Setting up your anomaly detection](settingup-ad.md)
-      + [Getting started with anomaly detection](getting-started-ad.md)
+      + [Getting started with AWS Cost Anomaly Detection](getting-started-ad.md)
       + [Editing your alerting preferences](edit-alert-pref.md)
       + [Creating an Amazon SNS topic for anomaly detection](ad-SNS.md)
    + [Managing your costs with AWS Cost Categories](manage-cost-categories.md)
       + [Creating cost categories](create-cost-categories.md)
+      + [Viewing cost categories](view-cost-categories.md)
       + [Editing cost categories](edit-cost-categories.md)
       + [Deleting cost categories](delete-cost-categories.md)
    + [Using Cost Allocation Tags](cost-alloc-tags.md)

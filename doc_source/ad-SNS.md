@@ -1,11 +1,6 @@
 # Creating an Amazon SNS topic for anomaly detection<a name="ad-SNS"></a>
 
-
-|  | 
-| --- |
-| Anomaly detection is in public preview for AWS Billing and Cost Management and is subject to change\. Your use of anomaly detection is subject to the Preview Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
-
-When you create an anomaly detection monitor that sends notifications to an Amazon Simple Notification Service \(Amazon SNS\) topic, you must either have a preexisting Amazon SNS topic or create one\. Amazon SNS topics allow you to send notifications over SNS in addition to email\. Anomaly detection must have permissions to send a notification to your topic\. 
+When you create an anomaly detection monitor that sends notifications to an Amazon Simple Notification Service \(Amazon SNS\) topic, you must either have a preexisting Amazon SNS topic or create one\. Amazon SNS topics allow you to send notifications over SNS in addition to email\. AWS Cost Anomaly Detection must have permissions to send a notification to your topic\. 
 
 **To create an Amazon SNS notification topic and grant permissions**
 
@@ -79,14 +74,14 @@ You must configure your AWS KMS key policies before you can use SSE\. The config
 You can also use IAM policies to manage AWS KMS key permissions\. For more information, see [Using IAM Policies with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/iam-policies.html)\.
 
 **Note**  
-Although you can configure global permissions to send and receive message from Amazon SNS, AWS KMS requires you to name the full ARN of the customer master keys \(CMK\) in the specific Regions\. You can find this in the **Resource** section of an IAM policy\.  
-You must ensure that the key policies of the CMK allow the necessary permissions\. To do this, name the principals that produce and consume encrypted messages in Amazon SNS as users in the CMK policy\.<a name="enable-compatiblility"></a>
+Although you can configure global permissions to send and receive message from Amazon SNS, AWS KMS requires you to name the full ARN of the AWS KMS keys \(KMS keys\) in the specific Regions\. You can find this in the **Resource** section of an IAM policy\.  
+You must ensure that the key policies of the KMS key allow the necessary permissions\. To do this, name the principals that produce and consume encrypted messages in Amazon SNS as users in the KMS key policy\.<a name="enable-compatiblility"></a>
 
-**To enable compatibility between anomaly detection and encrypted Amazon SNS topics**
+**To enable compatibility between AWS Cost Anomaly Detection and encrypted Amazon SNS topics**
 
-1. [Create a CMK](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#create-keys-console)\.
+1. [Create a KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#create-keys-console)\.
 
-1. Add the following text to the CMK policy\.
+1. Add the following text to the KMS key policy\.
 
    ```
        
@@ -108,6 +103,6 @@ You must ensure that the key policies of the CMK allow the necessary permissions
 
 1. [Enable SSE for your SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-enable-encryption-for-topic.html)\.
 **Note**  
-Be sure that you're using the same CMK that grants anomaly detection the permissions to publish to encrypted Amazon SNS topics\.
+Be sure that you're using the same KMS key that grants AWS Cost Anomaly Detection the permissions to publish to encrypted Amazon SNS topics\.
 
 1. Choose **Save Changes**\.

@@ -99,8 +99,6 @@ This example assumes there are no more entries in the price file where **Related
 
 The free tier offer with SKU `ABCD` is valid in Regions `Asia Pacific (Singapore)` and `US East (Ohio)`, but not in `AWS GovCloud (US)`\. The covered usage by Free Tier is 400,000 seconds total, used across both eligible Regions\.
 
- 
-
 
 ****  
 

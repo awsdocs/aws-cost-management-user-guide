@@ -42,44 +42,44 @@ The `createdBy` tag is applied only to the following services and resources afte
 | AWS CloudFormation \(AWS CloudFormation\) |  `CreateStack`  |  Stack  | 
 | AWS Data Pipeline \(AWS Data Pipeline\) |  `CreatePipeline`  |  Pipeline  | 
 | Amazon Elastic Compute Cloud \(Amazon EC2\) |  `CreateCustomerGateway`  |  Customer gateway  | 
-|   |  `CreateDhcpOptions`  |  DHCP options  | 
-|   |  `CreateImage`  |  Image  | 
-|   |  `CreateInternetGateway`  |  Internet gateway  | 
-|   |  `CreateNetworkAcl`  |  Network ACL  | 
-|   |  `CreateNetworkInterface`  |  Network interface  | 
-|   |  `CreateRouteTable`  |  Route table  | 
-|   |  `CreateSecurityGroup`  |  Security group  | 
-|   |  `CreateSnapshot`  |  Snapshot  | 
-|   |  `CreateSubnet`  |  Subnet  | 
-|   |  `CreateVolume`  |  Volume  | 
-|   |  `CreateVpc`  |  VPC  | 
-|   |  `CreateVpcPeeringConnection`  |  VPC peering connection  | 
-|   |  `CreateVpnConnection`  |  VPN connection  | 
-|   |  `CreateVpnGateway`  |  VPN gateway  | 
-|   |  `PurchaseReservedInstancesOffering`  |  Reserved\-instance  | 
-|   |  `RequestSpotInstances`  |  Spot\-instance\-request  | 
-|   |  `RunInstances`  |  Instance  | 
+|    |  `CreateDhcpOptions`  |  DHCP options  | 
+|    |  `CreateImage`  |  Image  | 
+|    |  `CreateInternetGateway`  |  Internet gateway  | 
+|    |  `CreateNetworkAcl`  |  Network ACL  | 
+|    |  `CreateNetworkInterface`  |  Network interface  | 
+|    |  `CreateRouteTable`  |  Route table  | 
+|    |  `CreateSecurityGroup`  |  Security group  | 
+|    |  `CreateSnapshot`  |  Snapshot  | 
+|    |  `CreateSubnet`  |  Subnet  | 
+|    |  `CreateVolume`  |  Volume  | 
+|    |  `CreateVpc`  |  VPC  | 
+|    |  `CreateVpcPeeringConnection`  |  VPC peering connection  | 
+|    |  `CreateVpnConnection`  |  VPN connection  | 
+|    |  `CreateVpnGateway`  |  VPN gateway  | 
+|    |  `PurchaseReservedInstancesOffering`  |  Reserved\-instance  | 
+|    |  `RequestSpotInstances`  |  Spot\-instance\-request  | 
+|    |  `RunInstances`  |  Instance  | 
 | Amazon ElastiCache \(ElastiCache\) |  `CreateSnapshot`  |  Snapshot  | 
-|   |  `CreateCacheCluster`  |  Cluster  | 
+|    |  `CreateCacheCluster`  |  Cluster  | 
 | AWS Elastic Beanstalk \(Elastic Beanstalk\) |  `CreateEnvironment`  |  Environment  | 
-|   |  `CreateApplication`  |  Application  | 
+|    |  `CreateApplication`  |  Application  | 
 | Elastic Load Balancing \(Elastic Load Balancing\) |  `CreateLoadBalancer`  |  Loadbalancer  | 
 | Amazon S3 Glacier \(S3 Glacier\) |  `CreateVault`  |  Vault  | 
 | Amazon Kinesis \(Kinesis\) |  `CreateStream`  |  Stream  | 
 | Amazon Relational Database Service \(Amazon RDS\) |  `CreateDBInstanceReadReplica`  |  Database  | 
-|   |  `CreateDBParameterGroup`  |  ParameterGroup  | 
-|   |  `CreateDBSnapshot`  |  Snapshot  | 
-|   |  `CreateDBSubnetGroup`  |  SubnetGroup  | 
-|   |  `CreateEventSubscription`  |  EventSubscription  | 
-|   |  `CreateOptionGroup`  |  OptionGroup  | 
-|   |  `PurchaseReservedDBInstancesOffering`  |  ReservedDBInstance  | 
-|   |  `CreateDBInstance`  |  Database  | 
+|    |  `CreateDBParameterGroup`  |  ParameterGroup  | 
+|    |  `CreateDBSnapshot`  |  Snapshot  | 
+|    |  `CreateDBSubnetGroup`  |  SubnetGroup  | 
+|    |  `CreateEventSubscription`  |  EventSubscription  | 
+|    |  `CreateOptionGroup`  |  OptionGroup  | 
+|    |  `PurchaseReservedDBInstancesOffering`  |  ReservedDBInstance  | 
+|    |  `CreateDBInstance`  |  Database  | 
 | Amazon Redshift \(Amazon Redshift\) |  `CreateClusterParameterGroup`  |  ParameterGroup  | 
-|   |  `CreateClusterSnapshot`  |  Snapshot  | 
-|   |  `CreateClusterSubnetGroup`  |  SubnetGroup  | 
-|   |  `CreateCluster`  |  Cluster  | 
+|    |  `CreateClusterSnapshot`  |  Snapshot  | 
+|    |  `CreateClusterSubnetGroup`  |  SubnetGroup  | 
+|    |  `CreateCluster`  |  Cluster  | 
 | Amazon Route 53 \(Route 53\) |  `CreateHealthCheck`  |  HealthCheck  | 
-|   |  `CreatedHostedZone`  |  HostedZone  | 
+|    |  `CreatedHostedZone`  |  HostedZone  | 
 | Amazon Simple Storage Service \(Amazon S3\) |  `CreateBucket`  |  Bucket  | 
 | AWS Storage Gateway \(AWS Storage Gateway\) |  `ActivateGateway`  |  Gateway  | 
 

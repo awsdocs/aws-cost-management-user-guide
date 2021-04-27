@@ -24,9 +24,13 @@ IAM users need explicit permission to see some of the pages in the Billing and C
 
 1. On the **Bills** page, select a month from the **Date** list for which all activity is closed\.
 
-1. On the **Summary** tab, choose **Usage Charges and Recurring Fees**\.
+1. Under **Total**, choose **Amazon Web Services, Inc\. \- Service Charges**\.
 
-1. Choose the **Invoice <invoiceID>** link\. 
+1. Choose **Invoice <invoiceID>**\.
+
+1. \(For entities other than AWS EMEA SARL\) To download a copy of a particular tax invoice, choose the **Invoice <invoiceID>** in the **Tax Invoices** section\.
+
+1. \(For AWS EMEA SARL\) To download a copy of a particular tax invoice, choose the **Invoice <invoiceID>** in the **Amazon Web Services EMEA SARL – Service Charges** section\.
 
 **To download a monthly report**
 + Choose the **Download CSV** button, and then choose the appropriate option\.

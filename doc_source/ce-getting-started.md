@@ -25,5 +25,3 @@ The first time that you use Cost Explorer, Cost Explorer walks you through the m
 1. In the navigation pane, choose **Cost Explorer**\.
 
 1. On the **Cost Explorer** page, choose **Launch Cost Explorer**\.
-
-1. On the service bar, choose **?** and choose **View Cost Explorer tutorial**\. 

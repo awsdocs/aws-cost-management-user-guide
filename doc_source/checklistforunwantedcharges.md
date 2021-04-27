@@ -75,10 +75,19 @@ For more information about deleting snapshots, see [Deleting an Amazon EBS Snaps
 Deleting a snapshot might not reduce your organization's data storage costs\. Other snapshots might reference that snapshot's data, and referenced data is always preserved\.   
 For example, when you take the first snapshot of a volume with 10 GiB of data, the size of the snapshot is also 10 GiB\. Because snapshots are incremental, the second snapshot that you take of the same volume contains only blocks of data that changed since the first snapshot was taken\. The second snapshot also references the data in the first snapshot\. That is, if you modify 4 GiB of data and take a second snapshot, the size of the second snapshot is 4 GiB\. In addition, the second snapshot references the unchanged 6 GiB in the first snapshot\. For more information, see [ How Incremental Snapshots Work](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html#how_snapshots_work)\.   
 The previous example will show two entries in your daily AWS Cost and Usage Reports \(AWS CUR\)\. AWS CUR captures the snapshot usage amount for a single day\. In this example, the usage is 0\.33 GiB \(10 GiB/ 30 days\) for snap\-A, and 0\.1333 GiB \(4 GiB/ 30 days\) for snap\-B\. Using the rate of $0\.05 per GB month, snap\-A costs you 0\.33 GiB x $0\.05 = $0\.0165\. Snap\-B costs you 0\.133 GiB x $0\.05 = $0\.0066, and you are charged $0\.0231 per day for both snapshots\. For more information about AWS Cost and Usage Reports, see the [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.  
-   
+
+
+| **lineItem/ Operation** | **lineItem/ ResourceId** | **lineItem/ UsageAmount** | **lineItem/ UnblendedCost** | **resourceTags/ user:usage** | 
+| --- | --- | --- | --- | --- | 
+| CreateSnapshot | arn:aws:ec2:us\-east\-1:123:snapshot/snap\-A | 0\.33 | 0\.0165 | dev | 
+| CreateSnapshot | arn:aws:ec2:us\-east\-1:123:snapshot/snap\-B | 0\.133 | 0\.0066 | dev | 
 If you delete the first snapshot \(snap\-A in the first row of the preceding table\), any data that is referenced by the second snapshot \(snap\-B in the second row of the preceding table\) is preserved\. Remember that the second snapshot contains the 4 GiB of incremental data, and references 6 GiB from the first snapshot\. Once you delete snap\-A, the size of snap\-B becomes 10 GiB \(4 changed GiB from the snap\-B and 6 unchanged GiB from snap\-A\)\.  
 In you daily AWS CUR, you will then see the usage amount for snap\-B as 0\.33 GiB \(10 GiB/ 30 days\), charged at $0\.0165 per day\. When you delete a snapshot, the charges for the remaining snapshots are recalculated daily, resulting in the possibility that the cost for each snapshot can change daily as well\. For more information, see [Cost Allocation for EBS Snapshots](http://aws.amazon.com/blogs/aws/new-cost-allocation-for-ebs-snapshots/)\.  
-   
+
+
+| **lineItem/ Operation** | **lineItem/ ResourceId** | **lineItem/ UsageAmount** | **lineItem/ UnblendedCost** | **resourceTags/ user:usage** | 
+| --- | --- | --- | --- | --- | 
+| CreateSnapshot | arn:aws:ec2:us\-east\-1:123:snapshot/snap\-B | 0\.33 | 0\.0165 | dev | 
 
 ## Elastic IP addresses<a name="checkelasticipaddresses"></a>
 

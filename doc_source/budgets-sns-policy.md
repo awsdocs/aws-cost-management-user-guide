@@ -97,14 +97,14 @@ You must configure your AWS KMS key policies before you can use SSE\. The config
 You can also use IAM policies to manage AWS KMS key permissions\. For more information, see [Using IAM Policies with AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/iam-policies.html)\.
 
 **Note**  
-Although you can configure global permissions to send and receive message from Amazon SNS, AWS KMS requires you to name the full ARN of customer master keys \(CMK\) in the specific Regions\. You can find this in the **Resource** section of an IAM policy\.  
-You must ensure that the key policies of the CMK allow the necessary permissions\. To do this, name the principals that produce and consume encrypted messages in Amazon SNS as users in the CMK policy\.<a name="enable-compatiblility"></a>
+Although you can configure global permissions to send and receive message from Amazon SNS, AWS KMS requires you to name the full ARN of AWS KMS keys \(KMS key\) in the specific Regions\. You can find this in the **Resource** section of an IAM policy\.  
+You must ensure that the key policies of the KMS keys allow the necessary permissions\. To do this, name the principals that produce and consume encrypted messages in Amazon SNS as users in the KMS key policy\.<a name="enable-compatiblility"></a>
 
 **To enable compatibility between AWS Budgets and encrypted Amazon SNS topics**
 
-1. [Create a CMK](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#create-keys-console)\.
+1. [Create a KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html#create-keys-console)\.
 
-1. Add the following text to the CMK policy\.
+1. Add the following text to the KMS key policy\.
 
    ```
        
@@ -126,6 +126,6 @@ You must ensure that the key policies of the CMK allow the necessary permissions
 
 1. [Enable SSE for your SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-enable-encryption-for-topic.html)\.
 **Note**  
-Be sure that you're using the same CMK that grants AWS Budgets the permissions to publish to encrypted Amazon SNS topics\.
+Be sure that you're using the same KMS key that grants AWS Budgets the permissions to publish to encrypted Amazon SNS topics\.
 
 1. Choose **Save Changes**\.

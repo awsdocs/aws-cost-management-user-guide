@@ -192,10 +192,8 @@ The RI Utilization reports allow filtering by only one service at a time, and on
     Filters by costs associated with how many hours that your Amazon EC2 instances ran\.
 
     This **Usage Type Group** contains only the following **Usage Types**:
-    + AlwaysOnUsage
     + BoxUsage
     + DedicatedUsage
-    + HighUsage
     + HostBoxUsage
     + HostUsage
     + ReservedHostUsage

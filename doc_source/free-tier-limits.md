@@ -17,7 +17,7 @@ In some cases, leaving your resources running maximizes your AWS Free Tier benef
 **Note**  
 Several services measure usage in seconds\. See each service page's details to see how your service is measured and billed\.  
 Resources related to the instance might continue to be billed, even if the instance is stopped or terminated\. Some examples of these resources include Elastic IPs that were detached but never released, and Amazon Elastic Block Store \(Amazon EBS\) volumes that might have been associated to the instance but not deleted\.  
-If you run Linux instances, you will be billed per second\. For example, if you run your Amazon Linux instance for 30 seconds, you'll be charges for 30 seconds\.
+If you run Linux instances, you will be billed per second\. For example, if you run your Amazon Linux instance for 30 seconds, you'll be charged for 30 seconds\.
 
 For more information, see [Amazon EC2 Pricing](https://aws.amazon.com/ec2/pricing/)\.
 

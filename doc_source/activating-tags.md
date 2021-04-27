@@ -12,6 +12,6 @@ For tags to appear on your billing reports, you must activate your applied tags 
 
 1. Choose **Activate**\.
 
-It can take up to 24 hours for tags to activate\.
+After you create and apply user\-defined tags to your resources, it can take up to 24 hours for the tags to appear on your Cost Allocation Tags page for activation\. After you select your tags for activation, it can take up to 24 hours for tags to activate\.
 
 For an example of how tags appear in your billing report with cost allocation tags, see [Viewing a cost allocation report](configurecostallocreport.md#allocation-viewing)\.

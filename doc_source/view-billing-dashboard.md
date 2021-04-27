@@ -16,6 +16,9 @@ The **Month\-to\-Date Spend by Service** graph shows the top services that you u
 **Month\-to\-Date Top Services by Spend**  
 The **Month\-to\-Date Top Services by Spend** graph shows the services that you use most, along with the costs incurred for the month to date\. The **Month\-to\-Date Top Services by Spend** graph doesn't include forecasting\.
 
+**Note**  
+The Billing and Cost Management console has a refresh time of approximately 24 hours to reflect your billing data\.
+
 ## Opening the Billing and Cost Management console and dashboard<a name="opening-billing-dashboard"></a>
 
 **To open the Billing and Cost Management console and dashboard**

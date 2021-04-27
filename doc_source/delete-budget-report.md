@@ -8,6 +8,6 @@ Use the following procedure to delete an AWS Budgets report\.<a name="delete-bud
 
 1. In the navigation pane, choose **Budget Reports**\.
 
-1. Select either the **Report name** or **\.\.\.** located on the right of each row\.
+1. Select the **\.\.\.** located on the right of each row\.
 
 1. Choose **Delete**\.

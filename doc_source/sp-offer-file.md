@@ -2,7 +2,7 @@
 
 You can use the offer files to find prices and discounts when Savings Plans are applied to your usage\.
 
-The following procedures show how to find Amazon EC2, Fargate, or AWS Lambda products by downloading a Savings Plans CSV or JSON file\.<a name="find-sp-procedure"></a>
+The following procedures show how to find products participating in Savings Plans by downloading a Savings Plans CSV or JSON file\.<a name="find-sp-procedure"></a>
 
 **To find Savings Plans for a service**
 

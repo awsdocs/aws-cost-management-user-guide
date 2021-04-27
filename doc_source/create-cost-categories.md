@@ -24,13 +24,21 @@ Use the following procedure to create a new cost category\.<a name="create-cost-
 
 1. For **Value**, enter the name of the cost category value\.
 
-1. Choose a billing **Dimension** from the dropdown list\. You can choose **Accounts**, **Service**, **Charge Type** \(for example, recurring reservation fee\), or **Tag key** \(Cost Allocation tag key\)\.
+1. Choose a **Rule Type**, either **Regular** or **Inherited value**\.
 
-1. Choose **Operator** from the dropdown list\. Your options are **Is**, **Contains**, **Starts with**, and **Ends with**\.
+1. Choose a billing **Dimension** from the dropdown list\. For a regular rule type, you can choose **Accounts**, **Service**, **Charge Type** \(for example, recurring reservation fee\), **Tag key**, or **Cost Category** \(to create hierarchical relationships among your cost categories\)\. For an inherited value rule type, you can choose **Account** or **Tag key** \(Cost Allocation tag key\)\.
+
+1. For a regular rule type, choose **Operator** from the dropdown list\. Your options are **Is**, **Contains**, **Starts with**, and **Ends with**\.
 **Note**  
 **Contains**, **Starts with**, and **Ends with** are only supported with Accounts and Tag dimensions\. If you use these operators with Accounts, the engine evaluates against account name, and not account ID\.
 
-1. Choose a filtered value for your **Dimension** in the attribute selector\.
+   Choose a filtered value for your **Dimension** in the attribute selector\.
+
+1. For an inherited value rule type, choose **Account** or **Tag** for **Dimension**\. If **Tag** is the **Dimension**, choose the **Tag key** to inherit the cost category value from\.
+**Note**  
+The **Account** dimension uses account names, not account IDs for the inherited cost category value\.
+
+1. \(Optional\) Add a default value, which will categorize all unmatched costs to this value\.
 
 1. \(Optional\) To rearrange the rule order, use the arrows or change the number on the top right of each rule\.
 

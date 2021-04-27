@@ -20,7 +20,9 @@ To edit your account name, root user password, or email address, perform the fol
 
 **To edit your account name, root user password, or root user email address**
 
-1. Sign in to the **Account Settings** page in the AWS Management Console at [https://console\.aws\.amazon\.com/billing/home?\#/account](https://console.aws.amazon.com/billing/home?#/account)\. 
+1. Sign in to the **Account Settings** page in the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home?\#/account](https://console.aws.amazon.com/billing/home?#/account)\.
+
+   You can also find this by signing into the Billing and Cost Management console \([https://console\.aws\.amazon\.com/billing/home](https://console.aws.amazon.com/billing/home?#/account)\), selecting your account name on the top right, and choosing **My account**\. 
 
 1. On the **Account Settings** page, next to **Account Settings**, choose **Edit**\.
 
@@ -63,9 +65,11 @@ To change the currency that you use to pay your bill, for example, from Danish k
 
 ## Adding, changing, or removing alternate contacts<a name="manage-account-payment-alternate-contacts"></a>
 
-Alternate contacts enable AWS to contact another person about issues with your account, even if you're unavailable\. To add, change, or delete alternate contacts for your account, perform the following procedure\.<a name="account-contacts"></a>
+Alternate contacts enable AWS to contact another person about issues with your account, even if you're unavailable\. The alternate contact doesn't have to be a specific person\. You could instead add an email distribution list if you have a team that is responsible for managing billing, operations and security related issues\. To add, change, or delete alternate contacts for your account, perform the following procedure\.<a name="account-contacts"></a>
 
 **To add, update, or remove alternate contacts**
+
+
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
@@ -115,6 +119,8 @@ Perform the applicable procedure:
 
 **To enable a Region**
 
+
+
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
@@ -149,6 +155,8 @@ To update or delete one or more tax registration numbers, perform the applicable
 
 **To update tax registration numbers**
 
+
+
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Tax Settings**\.
@@ -175,7 +183,10 @@ You can remove one or more tax registration numbers\.
 
 ## Enabling tax setting inheritance<a name="manage-account-tax-linked-accounts"></a>
 
-You can use your tax registration information with your linked accounts by enabling your **Tax Settings Inheritance**\. After you enable it, your tax registration information is added to your other AWS Organizations accounts, saving you the effort of registering redundant information\. Tax invoices are processed with the consistent tax information, and your usage from linked accounts will consolidate to a single tax invoice\.
+You can use your tax registration information with your linked accounts by enabling your **Tax Settings Inheritance**\. After you enable it, your tax registration information is added to your other AWS Organizations accounts, saving you the effort of registering redundant information\. Tax invoices are processed with the consistent tax information, and your usage from member accounts will consolidate to a single tax invoice\.
+
+**Note**  
+Tax inheritance settings are only available to accounts after a member account is added\.
 
 Tax registration information includes:
 + Business legal name
@@ -184,6 +195,8 @@ Tax registration information includes:
 + Special exemptions \(does not apply for US sales tax exemptions\)<a name="enable-tax-inheritance"></a>
 
 **To enable tax setting inheritance**
+
+
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 

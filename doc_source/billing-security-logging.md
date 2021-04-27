@@ -2,11 +2,11 @@
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of your AWS account\. There are several tools available to monitor your Billing and Cost Management usage\.
 
-## <a name="billing-security-logging-cur"></a>
+## AWS Cost and Usage Reports<a name="billing-security-logging-cur"></a>
 
- tracks your AWS usage and provides estimated charges associated with your account\. Each report contains line items for each unique combination of AWS products, usage type, and operation that you use in your AWS account\. You can customize the to aggregate the information either by the hour or by the day\.
+AWS Cost and Usage Reports tracks your AWS usage and provides estimated charges associated with your account\. Each report contains line items for each unique combination of AWS products, usage type, and operation that you use in your AWS account\. You can customize the AWS Cost and Usage Reports to aggregate the information either by the hour or by the day\.
 
-For more information about , see the [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.
+For more information about AWS Cost and Usage Reports, see the [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.
 
 ## Cost Explorer<a name="billing-security-logging-ce"></a>
 
@@ -16,7 +16,7 @@ For more information about Cost Explorer, see the [Analyzing your costs with Cos
 
 ## Budgets<a name="billing-security-logging-budget"></a>
 
-Budgets enables you to track your AWS cost and usage by using the cost visualization provided by Cost Explorer\. Budgets shows the status of your budgets, provides forecasts of yoru estimated costs, and tracks your AWS usage, including Free Tier\. You can also receive notifications when your estimated costs exceed your budgets\.
+Budgets enables you to track your AWS cost and usage by using the cost visualization provided by Cost Explorer\. Budgets shows the status of your budgets, provides forecasts of your estimated costs, and tracks your AWS usage, including Free Tier\. You can also receive notifications when your estimated costs exceed your budgets\.
 
 For more information about Budgets, see the [Managing your costs with AWS Budgets](budgets-managing-costs.md)\.
 

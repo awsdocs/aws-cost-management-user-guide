@@ -1,11 +1,6 @@
 # Setting up your anomaly detection<a name="settingup-ad"></a>
 
-
-|  | 
-| --- |
-| Anomaly detection is in public preview for AWS Billing and Cost Management and is subject to change\. Your use of anomaly detection is subject to the Preview Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\. | 
-
-The overviews in this section help you get started with anomaly detection in AWS Billing and Cost Management\.
+The overviews in this section help you get started with AWS Cost Anomaly Detection in AWS Billing and Cost Management\.
 
 **Topics**
 + [Enabling Cost Explorer](#enable-ce-ad)
@@ -15,7 +10,7 @@ The overviews in this section help you get started with anomaly detection in AWS
 
 ## Enabling Cost Explorer<a name="enable-ce-ad"></a>
 
-Anomaly detection is a feature within Cost Explorer\. To access anomaly detection, enable Cost Explorer\. For information about how to enable Cost Explorer using the console, see [Enabling Cost Explorer](ce-enable.md)\.
+AWS Cost Anomaly Detection is a feature within Cost Explorer\. To access AWS Cost Anomaly Detection, enable Cost Explorer\. For information about how to enable Cost Explorer using the console, see [Enabling Cost Explorer](ce-enable.md)\.
 
 ## Controlling access using IAM<a name="access-iam-ad"></a>
 
@@ -25,14 +20,14 @@ An IAM user must be granted explicit permission to view pages in the Billing and
 
 ## Accessing the console<a name="access-ad"></a>
 
-When your setup is complete, access anomaly detection\.<a name="access-ad-process"></a>
+When your setup is complete, access AWS Cost Anomaly Detection\.<a name="access-ad-process"></a>
 
-**To access anomaly detection**
+**To access AWS Cost Anomaly Detection**
 
 1. Sign in to the AWS Management Console and open the AWS Cost Management at [https://console\.aws\.amazon\.com/cost\-management/home](https://console.aws.amazon.com/cost-management/home)\.
 
-1. On the navigation pane, choose **Anomaly Detection**\.
+1. On the navigation pane, choose **Cost Anomaly Detection**\.
 
 ## Limits<a name="limits-ad-section"></a>
 
-For the default limit, see [Anomaly detection](billing-limits.md#limits-ad)\.
+For the default limit, see [AWS Cost Anomaly Detection](billing-limits.md#limits-ad)\.

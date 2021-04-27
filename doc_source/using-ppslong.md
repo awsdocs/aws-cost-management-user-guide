@@ -53,4 +53,10 @@ To download the offer file for Savings Plans that apply to a particular service,
 https://pricing.us-east-1.amazonaws.com/savingsPlan/v1.0/aws/AWSComputeSavingsPlan/current/index.json
 ```
 
+To download the current JSON version of SageMaker Savings Plans, use the following [URL](https://pricing.us-east-1.amazonaws.com/savingsPlan/v1.0/aws/AWSMachineLearningSavingsPlans/current/index.json)\.
+
+```
+https://pricing.us-east-1.amazonaws.com/savingsPlan/v1.0/aws/AWSMachineLearningSavingsPlans/current/index.json
+```
+
 If you access the offer files programmatically, you can use the offer index file to find the current URLs\. For more information about the offer index file, see [Finding prices in an offer file](procedures.md), [Finding Savings Plan prices in an offer file](sp-offer-file.md), and [Reading an offer file](reading-an-offer.md)\.

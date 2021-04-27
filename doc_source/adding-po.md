@@ -10,7 +10,7 @@ You can use the Billing and Cost Management console to add purchase orders to us
 
 1. Choose **Add purchase order**\.
 
-1. For **Purchase order ID**, enter your purchase order ID\. Purchase order IDs must be unique within your account\. For details about character restrictions for your purchase ID, see [Purchase orders](billing-limits.md#limits-po)\.
+1. For **Purchase order ID**, enter a unique identifier for your purchase order ID\. Purchase order IDs must be unique within your account\. For details about character restrictions for your purchase ID, see [Purchase orders](billing-limits.md#limits-po)\.
 
 1. \(Optional\) For **Description**, describe your purchase order, including any notes for your reference\.
 
@@ -30,7 +30,7 @@ Remittance details are different for each **Bill from** location\. Be sure to ve
 
 1. Choose **Configure line items**\.
 
-1. For **Line item number**, enter your line item number\.
+1. For **Line item number**, enter a unique identifier for your line item number\.
 
 1. \(Optional\) For **Description**, enter a description for your line item\.
 

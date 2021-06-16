@@ -301,6 +301,14 @@ Any recurring charges to your account\. When you purchase a Partial Upfront or N
 Any refunds that you received\. Refunds are listed as a separate line item in the data table\. They do not appear as an item in the chart because they represent a negative value in the calculation of your costs\. The chart displays only positive values\.  
 **Reservation applied usage **  
 Usage that AWS applied reservation discounts to\.  
+**Savings Plan upfront fee**  
+Any one\-time upfront fee from your purchase of an All Upfront or Partial Upfront Savings Plan\.  
+**Savings Plan recurring fee**  
+Any recurring hourly charges that correspond with your No Upfront or Partial Upfront Savings Plan\. The Savings Plan recurring fee is initially added to your bill on the day that you purchase a No Upfront or Partial Upfront Savings Plan\. After the initial purchase, AWS adds the recurring fee to the first day of each billing period thereafter\.  
+**Savings Plan covered usage**  
+Any on\-demand cost that is covered by your Savings Plan\. In an **Unblended costs **view, this represents the covered usage at on\-demand rates\. In an **Amortized costs** view, this represents the covered usage at your Savings Plan rates\. Savings Plan covered usage line items are offset by the corresponding Savings Plan negation items\.  
+**Savings Plan negation**  
+Any offset cost through your Savings Plan benefit that’s associated with the corresponding Savings Plan covered usage item\.  
 **Support fee**  
 Any charges that AWS charges you for a support plan\. When you purchase a support plan from AWS, you pay a monthly charge in exchange for service support\. The monthly fees can result in spikes on the first day of every month, when AWS charges your account\.  
 **Tax**  

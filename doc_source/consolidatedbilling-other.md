@@ -25,7 +25,7 @@ This means that Bob must launch his DB Instances in `us-west-2` with the exact s
 
 For an Amazon ElastiCache Reserved Nodes example, suppose Bob and Susan each have an account in an organization\. Susan has five Reserved Nodes, and Bob has none\. During one particular hour, Susan uses three nodes and Bob uses six\. This makes a total of nine nodes used on the consolidated bill\. 
 
-AWS bills five as Reserved Nodes\. AWS bills the remaining four as On\-Demand nodes\. \(For Amazon ElastiCache Reserved Nodes charges, see [Amazon ElastiCache Pricing](https://aws.amazon.com/elasticache/pricing/)\.\) Bob receives the cost benefit from Susan's Reserved Nodes only if he launches his On\-Demand nodes in the same region where Susan purchased her Reserved Nodes\.
+AWS bills five as Reserved Nodes\. AWS bills the remaining four as On\-Demand nodes\. \(For Amazon ElastiCache Reserved Nodes charges, see [Amazon ElastiCache Pricing](http://aws.amazon.com/elasticache/pricing/)\.\) Bob receives the cost benefit from Susan's Reserved Nodes only if he launches his On\-Demand nodes in the same region where Susan purchased her Reserved Nodes\.
 
 Also, to receive the cost benefit of Susan’s Reserved Nodes, all attributes of Bob's nodes must match the attributes of the nodes launched by Susan\. For example, let's say Susan purchased Reserved Nodes in `us-west-2` with the following attributes: 
 + Cache engine: Redis
@@ -37,6 +37,6 @@ Bob must launch his ElastiCache nodes in `us-west-2` with the same attributes to
 
 For an Amazon Elasticsearch Service Reserved Nodes example, suppose Bob and Susan each have an account in an organization\. Susan has five Reserved Instances, and Bob has none\. During one particular hour, Susan uses three instances and Bob uses six\. This makes a total of nine instances used on the consolidated bill\.
 
-AWS bills five as Reserved Instances\. AWS bills the remaining four as On\-Demand instances\. \(For Amazon Elasticsearch Service Reserved Instance charges, see [Amazon Elasticsearch Service Pricing](https://aws.amazon.com/elasticsearch-service/pricing/)\.\) Bob receives the cost benefit from Susan's Reserved Instances only if he launches his On\-Demand instances in the same region where Susan purchased her Reserved Instances\.
+AWS bills five as Reserved Instances\. AWS bills the remaining four as On\-Demand instances\. \(For Amazon Elasticsearch Service Reserved Instance charges, see [Amazon Elasticsearch Service Pricing](http://aws.amazon.com/elasticsearch-service/pricing/)\.\) Bob receives the cost benefit from Susan's Reserved Instances only if he launches his On\-Demand instances in the same region where Susan purchased her Reserved Instances\.
 
 To receive the cost benefit of Susan’s Reserved Instances, Bob also must use the same instance type that Susan reserved\. For example, let's say Susan purchased `m4.large.elasticsearch` instances in `us-west-2`\. Bob must launch his Amazon Elasticsearch Service domains in `us-west-2` with the same instance type to get the cost benefit on the organization's consolidated bill\.

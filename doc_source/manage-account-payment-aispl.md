@@ -21,7 +21,7 @@ AWS services are provided by both AWS and AISPL\. Use this procedure to determin
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. In the page footer, look at the copyright notice\. If the copyright is for Amazon Web Services, Inc\., then your account is with AWS\. If the copyright is for Amazon Internet Services Private Ltd\., then your account is with AISPL\.
+1. In the page footer, look at the copyright notice\. If the copyright is for Amazon Web Services, then your account is with AWS\. If the copyright is for Amazon Internet Services Private Ltd\., then your account is with AISPL\.
 
 ## Signing up for AISPL<a name="aisplsignup"></a>
 

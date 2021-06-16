@@ -12,6 +12,9 @@ In addition to the costs that Cost Explorer includes, you can show specific cost
 **Show only untagged resources**  
 By default, Cost Explorer includes costs both for resources that have cost allocation tags and for resources that don't have cost allocation tags\. To find untagged resources that add to your costs, select **Show only untagged resources**\. For more information about cost allocation tags, see [Using Cost Allocation Tags](cost-alloc-tags.md)\.
 
+**Show only uncategorized resources**  
+By default, Cost Explorer includes costs both for resources that are mapped to a cost category and for resources that aren’t mapped to a cost category\. To find uncategorized resources that add to your costs, select **Show only uncategorized resources**\. For more information about cost categories, see [Managing your costs with AWS Cost Categories](manage-cost-categories.md)\.
+
 **Show blended costs**  
 This cost metric reflects the average cost of usage across the consolidated billing family\. If you use the consolidated billing feature in AWS Organizations, you can view costs using *blended rates*\. For more information, see [Blended Rates](con-bill-blended-rates.md#Blended_CB)\.
 

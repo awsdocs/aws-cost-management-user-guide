@@ -32,8 +32,7 @@ AWS stores billing reports in an Amazon S3 bucket that you create and own\. You 
 
    The page displays a list of tags that you've created using either the API or the console for the applicable AWS service\. Tag keys that currently appear in the report are selected, and the check boxes for excluded tag keys are cleared\. 
 
-1. For **Filter**, choose **Inactive tags** in the dropdown list and select the tags that you want to activate for your report\.  
-![\[Cost Allocation Management page\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Cost Allocation Management page\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Cost Allocation Management page\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
+1. For **Filter**, choose **Inactive tags** in the dropdown list and select the tags that you want to activate for your report\.
 
 1. Choose **Activate**\.
 

@@ -22,7 +22,7 @@ To edit your account name, root user password, or email address, perform the fol
 
 1. Sign in to the **Account Settings** page in the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home?\#/account](https://console.aws.amazon.com/billing/home?#/account)\.
 
-   You can also find this by signing into the Billing and Cost Management console \([https://console\.aws\.amazon\.com/billing/home](https://console.aws.amazon.com/billing/home?#/account)\), selecting your account name on the top right, and choosing **My account**\. 
+   You can also find this by signing into the Billing and Cost Management console \([https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\), selecting your account name on the top right, and choosing **My account**\. 
 
 1. On the **Account Settings** page, next to **Account Settings**, choose **Edit**\.
 
@@ -82,9 +82,9 @@ Alternate contacts enable AWS to contact another person about issues with your a
 ### Examples for alternate contacts<a name="manage-account-payment-alternate-contacts-example"></a>
 
 We would reach out to each contact type in the following scenarios:
-+ **Billing** \- When your monthly invoice is available, or your payment method needs to be updated\. If your **Receive PDF Invoice By Email** is turned on in your **Billing preferences**, your alternate billing contact will receive the PDF invoices as well\.
-+ **Operations** \- When your service is, or will be, temporarily unavailable in one of more Regions\. Any notification related to operations\.
-+ **Security** \- When you have notifications from the AWS Abuse team for potentially fraudulent activity on your AWS account\. Any notification related to security\.
++ **Billing** \- When your monthly invoice is available, or your payment method needs to be updated\. If your **Receive PDF Invoice By Email** is turned on in your **Billing preferences**, your alternate billing contact will receive the PDF invoices as well\. Notifications can be from AWS Support, or other AWS service teams\.
++ **Operations** \- When your service is, or will be, temporarily unavailable in one of more Regions\. Any notification related to operations\. Notifications can be from AWS Support, or other AWS service teams
++ **Security** \- When you have notifications from the AWS Security, AWS Trust and Safety, or AWS service teams\. These notifications might include security issues or potential abusive or fraudulent activities on your AWS account\. Notifications can be from AWS Support, or other AWS service teams concerning security related topics associated with your AWS account usage\. Do not include sensitive information in the subject line or full name fields since this might be used in email communications to you\.
 
 ## Enabling and disabling regions<a name="manage-account-payment-enable-disable-regions"></a>
 

@@ -64,6 +64,9 @@ The exact match operation used to filter for the exact value specified\.
 **Is not**  
 The exact match operation used to filter for the exact value that is not specified\.
 
+**Is absent**  
+The exact match operation used to exclude the tag key that matches this value\.
+
 **Contains**  
 The approximate match used to filter for a text string containing this value\. This value is case sensitive\.
 

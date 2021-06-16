@@ -1,7 +1,7 @@
 # AWS Billing and Cost Management User Guide
 
 -----
-*****Copyright &copy;  Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -39,6 +39,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Managing your AWS Europe credit card payment methods](manage-cc-emea.md)
       + [Managing your AWS Europe credit card payment verifications](manage-emea-cc-verification.md)
       + [Managing your SEPA direct debit payment methods](manage-debit-emea.md)
+   + [Managing your advance pay](manage-advancepay.md)
 + [Viewing your bill](getting-viewing-bill.md)
    + [Viewing your monthly charges](invoice.md)
    + [Getting an invoice emailed to you](emailed-invoice.md)
@@ -67,7 +68,7 @@ Amazon's trademarks and trade dress may not be used in
          + [Using the default Cost Explorer reports](ce-default-reports.md)
          + [Saving reports and results](ce-saving.md)
             + [Saving your Cost Explorer configuration with bookmarks or favorites](ce-bookmarks.md)
-            + [Downloading the CSV file](ce-download-csv.md)
+            + [Downloading the cost data CSV file](ce-download-csv.md)
             + [Managing your saved Cost Explorer reports](ce-custom-reports.md)
       + [Understanding your reservations with Cost Explorer](ce-ris.md)
          + [Accessing Reserved Instance Recommendations](ri-recommendations.md)
@@ -83,7 +84,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Downloading a budget](budgets-export.md)
       + [Copying a budget](budgets-copy.md)
       + [Deleting a budget](budgets-delete.md)
-      + [Configuring AWS Budgets controls](budgets-controls.md)
+      + [Configuring AWS Budgets actions](budgets-controls.md)
       + [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)
       + [Receiving budget alerts in Amazon Chime and Slack](sns-alert-chime.md)
    + [Reporting your budget metrics with budget reports](reporting-cost-budget.md)

@@ -19,7 +19,7 @@ Before closing your AWS account, consider the following:
 + [Existing content and services still in use](#existing-content)
 + [Your payment method](#closure-payment)
 + [On\-Demand charges](#on-demand-closure)
-+ [Domains registered with Amazon Route 53](#closure-domains)
++ [Domains registered with Amazon Route 53](#closure-domains)
 + [Charges if you reopen your AWS account](#reopen-charges)
 + [Closing a member account](#closing-member-account)
 + [Cross\-account access to the account you’re closing](#cross-access)
@@ -41,7 +41,10 @@ After the post\-closure period, any remaining content in your AWS account is del
 
 We charge you through your designated payment method for any usage fees incurred before you closed your AWS account\. We might issue you any refunds that are due through that same payment method\. If you have active subscriptions \(such as a Reserved Instance that you pay for monthly\), even after your account is closed, you might continue to be charged for the subscription through your designated payment method until the subscription expires or is sold according to the terms governing the subscription\. These charges and refunds might occur after you close your account\.
 
-In addition, if you reopen your account, you might be charged for the cost of running AWS services \(that you didn't terminate before closing your account\) during the post\-closure period\. Closing your AWS account doesn't affect payment methods that you use on Amazon\.com or other Amazon websites\.
+In addition, if you reopen your account, you might be charged for the cost of running AWS services \(that you didn't terminate before closing your account\) during the post\-closure period\.
+
+**Important**  
+Closing your AWS account doesn't affect payment methods that you use on Amazon\.com or other Amazon websites\.
 
 ### On\-Demand charges<a name="on-demand-closure"></a>
 
@@ -50,12 +53,12 @@ During the post\-closure period, billing for On\-Demand charges stops\. However,
 **Important**  
 You will continue to generate costs if you don't terminate your resources\.
 
-### Domains registered with Amazon Route 53<a name="closure-domains"></a>
+### Domains registered with Amazon Route 53<a name="closure-domains"></a>
 
-Domains that are registered with Route 53 are not deleted automatically\. When you're closing your AWS account, you have three options:
-+ You can disable automatic renewal, and the domains are deleted when the registration period expires\. For more information, see [Enabling or Disabling Automatic Renewal for a Domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-enable-disable-auto-renewal.html) in the *Amazon Route 53 Developer Guide*\.
-+ You can transfer the domains to another AWS account\. For more information, see [Transferring a Domain to a Different AWS Account](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-between-aws-accounts.html)\.
-+ You can transfer the domains to another domain registrar\. For more information, see [Transferring a Domain from Route 53 to Another Registrar](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-from-route-53.html)\.
+Domains that are registered with Route 53 are not deleted automatically\. When you're closing your AWS account, you have three options:
++ You can disable automatic renewal, and the domains are deleted when the registration period expires\. For more information, see [Enabling or Disabling Automatic Renewal for a Domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-enable-disable-auto-renewal.html) in the *Amazon Route 53 Developer Guide*\.
++ You can transfer the domains to another AWS account\. For more information, see [Transferring a Domain to a Different AWS account](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-between-aws-accounts.html)\.
++ You can transfer the domains to another domain registrar\. For more information, see [Transferring a Domain from Route 53 to Another Registrar](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-from-route-53.html)\.
 
 If you already closed the account, you can open a case with AWS Support to get help with disabling automatic renewal or transferring your domains\. For more information, see [Contacting AWS Support About Domain Registration Issues](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-contact-support.html)\. There is no charge to open a case for domain registration issues\.
 
@@ -71,7 +74,7 @@ You reopen your AWS account 30 days after closure, and your AWS account had only
 
 When you close an account that was created with AWS Organizations, that account is not removed from the organization until after the post\-closure period\. During the post\-closure period, a closed member account still counts toward your limit of accounts in the organization\.
 
-To avoid having the account count against the limit, remove member accounts from the organization before closing it\. For more information, see [Closing an AWS Account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_close.html) in the *AWS Organizations User Guide*\.
+To avoid having the account count against the limit, remove member accounts from the organization before closing it\. For more information, see [Closing an AWS account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_close.html) in the *AWS Organizations User Guide*\.
 
 ### Cross\-account access to the account you’re closing<a name="cross-access"></a>
 

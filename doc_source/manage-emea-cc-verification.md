@@ -57,6 +57,6 @@ Establish a communication process between your Management account and member acc
 
 If you purchase multiple subscriptions at a time \(or in bulk\) and your bank requests verification, the bank might ask you to verify each individual purchase\.
 
-Subscriptions can include immediate purchases such as Reserved Instances, Business support plan, and Route 53 domains\. Subscriptions don't include AWS Marketplace charges\.
+Subscriptions can include immediate purchases such as Reserved Instances, Business support plan, and Route 53 domains\. Subscriptions don't include AWS Marketplace charges\.
 
 Be sure to complete validation for all purchases or register a bank account as your payment method\. For more information about eligibility for direct debit payment, see [Managing your SEPA direct debit payment methods](manage-debit-emea.md)\.

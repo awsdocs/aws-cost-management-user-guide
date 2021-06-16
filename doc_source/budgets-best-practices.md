@@ -32,7 +32,7 @@ If you don't have proper permissions configured and assigned for the user and fo
 
 For details about managed policies, see [Managed policies](billing-permissions-ref.md#managed-policies)\.
 
-To learn more about AWS Budgets actions, see the [Configuring AWS Budgets controls](budgets-controls.md) section\.
+To learn more about AWS Budgets actions, see the [Configuring AWS Budgets actions](budgets-controls.md) section\.
 
 ### Using Amazon EC2 Auto Scaling<a name="budgets-best-practices-actions-auto"></a>
 

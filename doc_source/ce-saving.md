@@ -4,5 +4,5 @@ You can save your Cost Explorer filters and data multiple ways\. You can save th
 
 **Topics**
 + [Saving your Cost Explorer configuration with bookmarks or favorites](ce-bookmarks.md)
-+ [Downloading the CSV file](ce-download-csv.md)
++ [Downloading the cost data CSV file](ce-download-csv.md)
 + [Managing your saved Cost Explorer reports](ce-custom-reports.md)

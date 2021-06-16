@@ -6,8 +6,10 @@ Use the following procedure to delete an AWS Budgets report\.<a name="delete-bud
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. In the navigation pane, choose **Budget Reports**\.
+1. In the navigation pane, choose **Budgets Reports**\.
 
-1. Select the **\.\.\.** located on the right of each row\.
+1. From the list of reports, select the report that you want to delete\.
 
-1. Choose **Delete**\.
+1. At the top of the page, choose **Actions**, and then choose **Delete**\.
+
+1. Choose **Confirm**\.

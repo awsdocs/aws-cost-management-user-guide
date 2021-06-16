@@ -3,7 +3,7 @@
 If you meet the eligibility requirements, you can add a US bank account as an ACH direct debit payment method to your payment methods\. 
 
 To be eligible, your account must meet the following requirements:
-+ It is an Amazon Web Services, Inc\. customer\. 
++ It is an Amazon Web Services customer\. 
 + It is at least 60 days old\.
 + It has paid at least one invoice in full in the previous 12 months\.
 + It has paid at least $100 cumulative over the previous 12 months\.
@@ -11,9 +11,7 @@ To be eligible, your account must meet the following requirements:
 
 If you pay by ACH direct debit, AWS provides you with your invoice and initiates the charge to your payment method within 10 days of the start of the month\. It can take up to 20 days for the payment to complete successfully, even if the payment shows as **Succeeded** on the Billing and Cost Management console\.
 
-You can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console to perform the following ACH direct debit tasks:
-+ [Add a direct debit account to your AWS payment methods](#add-debit)
-+ [Update your linked debit account](#update-debit)<a name="add-debit"></a>
+You can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console to add or update a direct debit account\.<a name="add-debit"></a>
 
 **To add a direct debit account to your AWS payment methods**
 
@@ -50,7 +48,7 @@ To add an ACH direct debit account, you must have the following information read
 
 1. For **Make Default**, select whether you want this direct debit account to be your default payment method\.
 
-1. For **Billing Address Information**, enter the billing address of the primary account holder\.
+1. For **Billing Address Information**, enter the valid US billing address of the primary account holder\.
 
 1. Choose **Create** to agree to the **Terms and Conditions** and add your direct debit account\.<a name="update-debit"></a>
 

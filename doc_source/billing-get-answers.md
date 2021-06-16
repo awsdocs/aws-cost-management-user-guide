@@ -14,7 +14,7 @@ All AWS account owners have access to account and billing support free of charge
 
 **To find your question or request**
 
-1. Open AWS Knowledge Center at [https://aws\.amazon\.com/premiumsupport/knowledge\-center/](http://aws.amazon.com/premiumsupport/knowledge-center/)\.
+1. Open [AWS Knowledge Center](http://aws.amazon.com/premiumsupport/knowledge-center/)\.
 
 1. Choose **Billing Management**\. 
 
@@ -42,7 +42,7 @@ If you have closed your AWS account, you can still sign in to AWS Support and vi
 
 **To contact AWS Support when you can't sign in to AWS**
 
-1. Recover your password or submit a form at [https://support\.aws\.amazon\.com/\#/contacts/aws\-account\-support](https://support.aws.amazon.com/#/contacts/aws-account-support )\.
+1. Recover your password or submit a form at [AWS account support](https://support.aws.amazon.com/#/contacts/aws-account-support )\.
 
 1. Choose an inquiry type in the **Request information** section\. 
 

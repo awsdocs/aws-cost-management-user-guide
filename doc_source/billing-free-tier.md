@@ -8,6 +8,9 @@ To avoid charges while on the AWS Free Tier, you must keep your usage below the 
 
 If you don't use the full benefits provided by the AWS Free Tier in a given month, the benefits don't roll over to the next month\. To maximize your AWS Free Tier benefits, be sure to spend time with AWS each month, trying out the services that you're curious about\.
 
+**Note**  
+Data transfer charges aren't covered under AWS Free Tier\.
+
 For more information about which services offer a AWS Free Tier, see [AWS Free Tier](http://aws.amazon.com/free/)\.
 
 **Topics**

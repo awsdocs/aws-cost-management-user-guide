@@ -6,7 +6,10 @@ When you create an AWS account, you're automatically signed up for the AWS Free 
 
 To avoid charges while on the AWS Free Tier, you must keep your usage below the AWS Free Tier limits\. You are charged for any usage that exceeds the limits\. To help you stay within the limits, you can track your AWS Free Tier usage and set a billing alarm to notify you if you start incurring charges\. For more information, see [AWS Free Tier limits](free-tier-limits.md) and [Tracking your AWS Free Tier usage](tracking-free-tier-usage.md)\. For tips about avoiding unexpected charges, see [Avoiding unexpected charges](checklistforunwantedcharges.md)\. Contact [AWS Support](https://aws.amazon.com/contact-us/) if you require additional explanation of unexpected charges on your bill\. 
 
-If you don't use the full benefits provided by the AWS Free Tier in a given month, the benefits don't roll over to the next month\. To maximize your AWS Free Tier benefits, be sure to spend time with AWS each month, trying out the services that you're curious about\.
+If you don't use the full benefits provided by the AWS Free Tier in a given month, the benefits don't roll over to the next month\. To maximize your AWS Free Tier benefits, be sure to spend time with AWS each month, trying out the services that you're curious about\. If you want to close your account after using the AWS Free Tier, see [Closing an account](close-account.md)\.
+
+**Note**  
+Data transfer charges aren't covered under AWS Free Tier\.
 
 For more information about which services offer a AWS Free Tier, see [AWS Free Tier](http://aws.amazon.com/free/)\.
 

@@ -9,59 +9,71 @@ The following table describes the current quotas, restrictions, and naming const
 + [Cost Explorer](#limits-ce)
 + [Purchase orders](#limits-po)
 + [AWS Cost Anomaly Detection](#limits-ad)
++ [Advance Pay](#limits-ap)
 
 ## Budgets<a name="limits-budgets"></a>
 
 
 |  |  | 
 | --- |--- |
-| Number of free budgets per account | 2 | 
-| Total number of budgets per management account | 20,000 | 
-| Characters allowed in a budget name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
+| The number of free budgets allowed for an account | 2 | 
+| The total number of budgets allowed for a management account | 20,000 | 
+| The number and type of characters that are allowed in a budget name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
 
 ## Budget reports<a name="limits-reports"></a>
 
 
 |  |  | 
 | --- |--- |
-| Maximum number of budget reports | 50 | 
-| Maximum number of budgets per budget report | 50 | 
-| Maximum email recipients in a budget report | 50 | 
+| The maximum number of budget reports allowed | 50 | 
+| The maximum number of budgets allowed in a budget report | 50 | 
+|  The maximum number of email recipients allowed in a budget report  | 50 | 
 
 ## AWS Cost Categories<a name="limits-categories"></a>
 
 
 |  |  | 
 | --- |--- |
-| Total number of AWS Cost Categories per management account | 50 | 
-| Number of Cost Category rules per Cost Category \(API\) | 500 | 
-| Number of Cost Category rules per Cost Category \(UI\) | 100 | 
+| The total number of AWS Cost Categories for a management account | 50 | 
+| The number of cost category rules for a cost category \(API\) | 500 | 
+| The number of cost category rules for a cost category \(UI\) | 100 | 
 |  Names | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
-|  value names | Names do not have to be unique | 
-| Characters allowed in a name and value name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  | 
+|  value names | Names don't have to be unique | 
+| The type and number of characters allowed in a name and value name | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html)  | 
+| The number of split charge rules for a cost category | 10 | 
 
 ## Cost Explorer<a name="limits-ce"></a>
 
 
 |  |  | 
 | --- |--- |
-| Maximum number of reports that you can save per account | 50 | 
-| Maximum number of filters in the GetCostAndUsage operation \(API\) | 100 | 
+| The maximum number of reports that you can save for an account | 50 | 
+| The maximum number of filters in the GetCostAndUsage operation \(API\) | 100 | 
 
 ## Purchase orders<a name="limits-po"></a>
 
 
 |  |  | 
 | --- |--- |
-| Characters allowed in a purchase order ID | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
-| Number of characters allowed in a purchase order ID | 100 | 
-| Number of line items per purchase order | 100 | 
+| The type of characters that are allowed in a purchase order ID | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
+| The number of characters allowed in a purchase order ID | 100 | 
+| The number of line items allowed for a purchase order | 100 | 
 
 ## AWS Cost Anomaly Detection<a name="limits-ad"></a>
 
 
 |  |  | 
 | --- |--- |
-| The maximum number of monitors you can create for an AWS service monitor type |  1 monitor per account  | 
-| The maximum number of monitors you can create for other monitor types \(member account, cost category, cost allocation tag\) | 100 total monitors per management account | 
+| The maximum number of monitors that you can create for an AWS service monitor type |  1 monitor for each account  | 
+| The maximum number of monitors that you can create for other monitor types \(member account, cost category, cost allocation tag\) | 100 total monitors for each management account | 
 | Unsupported services | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
+
+## Advance Pay<a name="limits-ap"></a>
+
+
+|  |  | 
+| --- |--- |
+| User entity  | AWS Inc | 
+| Currency | USD | 
+| Fund usage after funds are added to your Advance Pay | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
+| If there are unused funds in your Advance Pay | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 

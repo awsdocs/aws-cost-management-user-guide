@@ -6,7 +6,7 @@ The overviews in this section help you get started with AWS Cost Anomaly Detecti
 + [Enabling Cost Explorer](#enable-ce-ad)
 + [Controlling access using IAM](#access-iam-ad)
 + [Accessing the console](#access-ad)
-+ [Limits](#limits-ad-section)
++ [Quotas](#limits-ad-section)
 
 ## Enabling Cost Explorer<a name="enable-ce-ad"></a>
 
@@ -28,6 +28,6 @@ When your setup is complete, access AWS Cost Anomaly Detection\.<a name="access-
 
 1. On the navigation pane, choose **Cost Anomaly Detection**\.
 
-## Limits<a name="limits-ad-section"></a>
+## Quotas<a name="limits-ad-section"></a>
 
-For the default limit, see [AWS Cost Anomaly Detection](billing-limits.md#limits-ad)\.
+For the default quotas, see [AWS Cost Anomaly Detection](billing-limits.md#limits-ad)\.

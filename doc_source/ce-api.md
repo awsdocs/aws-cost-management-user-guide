@@ -8,10 +8,9 @@ For more information about available SDKs, see [Tools for Amazon Web Services](h
 
 ## Service endpoint<a name="ce-endpoint"></a>
 
-Service Endpoint
-
 The Cost Explorer API provides the following endpoint:
-+ https://ce\.us\-east\-1\.amazonaws\.com
+
+https://ce\.us\-east\-1\.amazonaws\.com
 
 ## Granting IAM permissions to use the AWS Cost Explorer API<a name="ce-iam"></a>
 

@@ -1,5 +1,6 @@
 # Editing a budget<a name="budgets-edit"></a>
 
+**Note**  
 You can't edit the budget name\.
 
 **To edit a budget**
@@ -8,14 +9,12 @@ You can't edit the budget name\.
 
 1. On the navigation pane, choose **Budgets**\.
 
-1. On the **Budgets** page, choose the budget that you want to edit from your list of budgets\.
+1. On the **Budgets** page, from your list of budgets, choose the budget that you want to edit\.
 
-1. Choose **Edit budget**\.
+1. Choose **Edit**\.
 
 1. Change the parameters that you want to edit\. You can't change the budget name\.
 
-1. Choose **Configure alerts**\.
+1. After you make your changes on each page, choose **Next**\.
 
-1. Choose **Confirm budget**\.
-
-1. Choose **Done**\.
+1. Choose **Save**\.

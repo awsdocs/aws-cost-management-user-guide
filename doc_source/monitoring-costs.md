@@ -2,7 +2,7 @@
 
 You can monitor your AWS usage with the following methods\.
 
-For information about , see the [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.
+For information about AWS Cost and Usage Reports, see the [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.
 
 **Topics**
 + [Reading your dashboard graphs](view-billing-dashboard.md)

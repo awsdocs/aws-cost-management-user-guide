@@ -12,7 +12,7 @@ Choose a filter such as `S3` and then choose a usage type value, such as `DataTr
 Choose an AWS service\. You can also use the **Service** dimension to filter costs by specific AWS Marketplace software\. This includes your costs for specific AMIs, web services, and desktop apps\. For more information, see [ What Is AWS Marketplace?](https://docs.aws.amazon.com/marketplace/latest/controlling-access/what-is-marketplace.html)  
 You can use this filter only for cost, RI utilization, or RI coverage budgets\. Cost Explorer doesn't show revenue or usage for the AWS Marketplace software seller\.   
 The RI utilization and RI coverage reports allow filtering by only one service at a time and only for the following services:  
-+ Amazon Elastic Compute Cloud \- Compute
++ Amazon Elastic Compute Cloud
 + Amazon Redshift
 + Amazon Relational Database Service
 + Amazon ElastiCache

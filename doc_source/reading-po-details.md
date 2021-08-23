@@ -6,6 +6,9 @@ To change your purchase order or line items, see [Editing your purchase orders](
 + **Bill to **– The address reflected on your invoice\. To change your billing address, update the information from your [Payment methods](https://console.aws.amazon.com/billing/home#/paymentmethods)\.
 + **Ship to **– Your purchase order's shipping address\.
 + **Bill from **– The AWS legal entity you're billed from\.
++ **Tax registration numbers** – The tax registration numbers that you selected for your purchase order\. Your purchase order is associated with the invoices generated for these tax registration numbers\.
+**Note**  
+The **Tax registration number** selection is available for only the **Amazon Web Services EMEA SARL** billing entity\. For more information on your tax registration number settings, see [Managing your account](change-account-settings.md)\.
 + **Payment terms **– Your negotiated AWS payment terms\.
 + **Currency **– Your preferred invoice payment currency\.
 + **Effective month**– The month your purchase order is effective from\. Your purchase order is used for generated invoices starting this month\.

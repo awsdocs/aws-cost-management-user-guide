@@ -32,8 +32,7 @@ AWS stores billing reports in an Amazon S3 bucket that you create and own\. You 
 
    The page displays a list of tags that you've created using either the API or the console for the applicable AWS service\. Tag keys that currently appear in the report are selected, and the check boxes for excluded tag keys are cleared\. 
 
-1. For **Filter**, choose **Inactive tags** in the dropdown list and select the tags that you want to activate for your report\.  
-![\[Cost Allocation Management page\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Cost Allocation Management page\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)![\[Cost Allocation Management page\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
+1. For **Filter**, choose **Inactive tags** in the dropdown list and select the tags that you want to activate for your report\.
 
 1. Choose **Activate**\.
 
@@ -51,10 +50,6 @@ During the current billing period \(monthly\), AWS generates an estimated cost a
 The following example tracks the charges for several cost centers and applications\. Resources \(such as Amazon EC2 instances and Amazon S3 buckets\) are assigned tags like "Cost Center"="78925" and "Application"="Widget1"\. In the cost allocation report, the user\-defined tag keys have the prefix `user`, such as `user:Cost Center` and `user:Application`\. AWS generated tag keys have the prefix `aws`\. The keys are column headings identifying each tagged line item's value, such as "78925"\.
 
 ![\[Keys in the Downloadable Report\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/images/CostAllocationPartExampleReport.png)
-
-You can use a desktop spreadsheet application to create pivot tables that group the keys and the values for each key so that you can see combined values for tagged resources\. The following example organizes information first by Cost Center and, within each cost center further organizes the information by the Application tag\.
-
-![\[An Example of a Microsoft Excel Pivot Table using tagged resources\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/images/AllocatedBillingReport.png)
 
 Pick your keys carefully so that you have a consistent hierarchy of values\. Otherwise, your report won't group costs effectively, and you will have many line items\.
 

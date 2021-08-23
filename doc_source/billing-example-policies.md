@@ -8,7 +8,7 @@ This topic contains example policies that you can attach to your IAM user or gro
   The action prefix is `budgets` for AWS Budgets, `cur` for AWS Cost and Usage Reports, `aws-portal` for AWS Billing, or `ce` for Cost Explorer\.
 + `Resource` is always `*` for AWS Billing\.
 
-  For actions performed on a `budget` resource, specify the budget Amazon Resource Name \(ARN\)\.
+  For actions that are performed on a `budget` resource, specify the budget Amazon Resource Name \(ARN\)\.
 + It's possible to have multiple statements in one policy\.
 
 **Note**  
@@ -34,11 +34,12 @@ These policies require that you activate IAM user access to the Billing and Cost
 + [View, create, update, and delete using the Cost Explorer reports page](#example-view-ce-reports)
 + [View, create, update, and delete reservation and Savings Plans alerts](#example-view-ce-expiration)
 + [Allow read\-only access to AWS Cost Anomaly Detection](#example-policy-ce-ad)
++ [Allow AWS Budgets to apply IAM policies and SCPs](#example-budgets-IAM-SCP)
 + [Allow AWS Budgets to apply IAM policies and SCPs and target EC2 and RDS instances](#example-budgets-applySCP)
 
 ## Allow IAM users to view your billing information<a name="example-billing-view-billing-only"></a>
 
-To allow an IAM user to view your billing information without giving the IAM user access to sensitive account information, such as your password and account activity reports, use a policy similar to the following example policy\. This policy allows IAM users to view the following Billing and Cost Management console pages, without giving them access to the **Account Settings** or **Reports** console pages:
+To allow an IAM user to view your billing information without giving the IAM user access to sensitive account information, use a policy similar to the following example policy\. Such a policy prevents users from accessing your password and account activity reports\. This policy allows IAM users to view the following Billing and Cost Management console pages, without giving them access to the **Account Settings** or **Reports** console pages:
 + **Dashboard**
 + **Cost Explorer**
 + **Bills**
@@ -106,7 +107,7 @@ To explicitly deny an IAM user access to the all Billing and Cost Management con
 
 ## Allow full access to AWS services but deny IAM users access to the Billing and Cost Management console<a name="ExampleAllowAllDenyBilling"></a>
 
-To deny IAM users access to everything on the Billing and Cost Management console, use the following policy\. In this case, you should also deny user access to AWS Identity and Access Management \(IAM\) so that the users can't access the policies that control access to billing information and tools\.
+To deny IAM users access to everything on the Billing and Cost Management console, use the following policy\. Deny user access to AWS Identity and Access Management \(IAM\) to prevent access to the policies that control access to billing information and tools\.
 
 **Important**  
 This policy doesn't allow any actions\. Use this policy in combination with other policies that allow specific actions\.
@@ -129,7 +130,7 @@ This policy doesn't allow any actions\. Use this policy in combination with othe
 
 ## Allow IAM users to view the Billing and Cost Management console except for account settings<a name="example-billing-read-only"></a>
 
-This policy allows read\-only access to all of the Billing and Cost Management console, including the **Payments Method** and **Reports** console pages, but denies access to the **Account Settings** page, thus protecting the account password, contact information, and security questions\. 
+This policy allows read\-only access to all of the Billing and Cost Management console\. This includes the **Payments Method** and **Reports** console pages\. However, this policy denies access to the **Account Settings** page\. This means it protects the account password, contact information, and security questions\. 
 
 ```
 {
@@ -151,7 +152,7 @@ This policy allows read\-only access to all of the Billing and Cost Management c
 
 ## Allow IAM users to modify billing information<a name="example-billing-deny-modifybilling"></a>
 
-To allow IAM users to modify account billing information in the Billing and Cost Management console, you must also allow IAM users to view your billing information\. The following policy example allows an IAM user to modify the **Consolidated Billing**, **Preferences**, and **Credits** console pages\. It also allows an IAM user to view the following Billing and Cost Management console pages:
+To allow IAM users to modify account billing information in the Billing and Cost Management console, allow IAM users to view your billing information\. The following policy example allows an IAM user to modify the **Consolidated Billing**, **Preferences**, and **Credits** console pages\. It also allows an IAM user to view the following Billing and Cost Management console pages:
 + **Dashboard**
 + **Cost Explorer**
 + **Bills**
@@ -173,7 +174,7 @@ To allow IAM users to modify account billing information in the Billing and Cost
 
 ## Allow IAM users to create budgets<a name="example-billing-allow-createbudgets"></a>
 
-To allow IAM users to create budgets in the Billing and Cost Management console, you must also allow IAM users to view your billing information, create CloudWatch alarms, and create Amazon SNS notifications\. The following policy example allows an IAM user to modify the **Budget** console page\.
+To allow IAM users to create budgets in the Billing and Cost Management console, llow IAM users to view your billing information, create CloudWatch alarms, and create Amazon SNS notifications\. The following policy example allows an IAM user to modify the **Budget** console page\.
 
 ```
 {
@@ -218,7 +219,7 @@ To allow IAM users to create budgets in the Billing and Cost Management console,
 
 ## Deny access to account settings, but allow full access to all other billing and usage information<a name="example-billing-deny-modifyaccount"></a>
 
-To protect your account password, contact information, and security questions, you can deny IAM user access to **Account Settings** while still enabling full access to the rest of the functionality in the Billing and Cost Management console, as shown in the following example\.
+To protect your account password, contact information, and security questions, deny IAM user access to **Account Settings** while still enabling full access to the rest of the functionality in the Billing and Cost Management console\. The following is an example policy\.
 
 ```
 {
@@ -244,7 +245,7 @@ To protect your account password, contact information, and security questions, y
 
 ## Deposit reports into an Amazon S3 bucket<a name="example-billing-s3-bucket"></a>
 
-The following policy allows Billing and Cost Management to save your detailed AWS bills to an Amazon S3 bucket, as long as you own both the AWS account and the Amazon S3 bucket\. Note that this policy must be applied to the Amazon S3 bucket, instead of to an IAM user\. That is, it's a resource\-based policy, not a user\-based policy\. You should deny IAM user access to the bucket for IAM users who don't need access to your bills\.
+The following policy allows Billing and Cost Management to save your detailed AWS bills to an Amazon S3 bucket if you own both the AWS account and the Amazon S3 bucket\. This policy must be applied to the Amazon S3 bucket, rather than an IAM user\. This is because it's a resource\-based policy, not a user\-based policy\. We recommend that you deny IAM user access to the bucket for IAM users who don't need access to your bills\.
 
 Replace *bucketname* with the name of your bucket\.
 
@@ -648,6 +649,32 @@ To allow IAM users read\-only access to AWS Cost Anomaly Detection, use the foll
         "ce:Get*"
       ],
       "Effect": "Allow",
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+## Allow AWS Budgets to apply IAM policies and SCPs<a name="example-budgets-IAM-SCP"></a>
+
+This policy allows AWS Budgets to apply IAM policies and service control policies \(SCPs\) on behalf of the user\.
+
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "iam:AttachGroupPolicy",
+        "iam:AttachRolePolicy",
+        "iam:AttachUserPolicy",
+        "iam:DetachGroupPolicy",
+        "iam:DetachRolePolicy",
+        "iam:DetachUserPolicy",
+        "organizations:AttachPolicy",
+        "organizations:DetachPolicy"
+      ],
       "Resource": "*"
     }
   ]

@@ -24,6 +24,19 @@ You can also create budgets programmatically using the Budgets API\. When config
 
 ## Best practices for budget actions<a name="budgets-best-practices-actions"></a>
 
+You can configure AWS Budgets to take actions on your behalf when your budget exceeds a certain cost or usage threshold\. To learn more about budget actions, see [Configuring AWS Budgets actions](budgets-controls.md)\.
+
+### Granting access to budget actions<a name="budgets-best-practices-granting-access"></a>
+
+To get started with budget actions, you must configure the correct permissions for both your IAM users and for the AWS Budgets service\.
+
+For IAM users, you can assign permissions to manage budget actions or to retrieve information about budget actions\. For the list of permissions available, see the `budgets:` permissions in [Billing and Cost Management actions policies](billing-permissions-ref.md#user-permissions)\.
+
+**Note**  
+To view an account's budget actions in the console, IAM users must have permission to `budgets:DescribeBudgetActionsForAccount`\. Without this permission, the **Actions** column doesn't load and the console returns an error message\.
+
+For AWS Budgets to perform budget actions on your behalf, the service must have permissions to run those operations on your resources\. To learn more about how to grant permissions to AWS Budgets, see [Setting up a role for AWS Budgets to run budget actions](budgets-controls.md#budgets-action-role)\.
+
 ### Using managed policies<a name="budgets-best-practices-actions-policies"></a>
 
 There are two AWS managed policies to help get you started with budget actions\. One for the user, and the other for budgets\. These policies are related\. The first policy ensures a user can pass a role to the budgets service, and the second allows budgets to execute the action\.
@@ -31,8 +44,6 @@ There are two AWS managed policies to help get you started with budget actions\.
 If you don't have proper permissions configured and assigned for the user and for AWS Budgets, AWS Budgets can't execute your configured actions\. To ensure proper configuration and execution, we've configured these managed policies so your AWS Budgets actions work as intended\. We recommend you use these IAM policies to be sure you don't have to update your existing IAM policy for AWS Budgets when a new functionality is included\. We will add new capabilities to the managed policy by default\.
 
 For details about managed policies, see [Managed policies](billing-permissions-ref.md#managed-policies)\.
-
-To learn more about AWS Budgets actions, see the [Configuring AWS Budgets controls](budgets-controls.md) section\.
 
 ### Using Amazon EC2 Auto Scaling<a name="budgets-best-practices-actions-auto"></a>
 

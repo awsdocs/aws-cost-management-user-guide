@@ -5,7 +5,7 @@ You can use AWS Budgets to track and take action on your AWS cost and usage\. Yo
 You can use AWS Budgets to enable simple\-to\-complex cost and usage tracking\. Some examples include:
 + Setting a monthly cost budget with a fixed target amount to track all costs associated with your account\. You can choose to be alerted for both actual \(after accruing\) and forecasted \(before accruing\) spends\.
 + Setting a monthly cost budget with a variable target amount, with each subsequent month growing the budget target by 5 percent each month\. Then, you can configure your notifications for 80 percent of your budgeted amount and apply an action\. For example, you could automatically apply a custom IAM policy that denies you the ability to provision additional resources within an account\.
-+ Setting a monthly usage budget with a fixed usage amount and forecasted notifications to help ensure that you are staying within the service limits for a specific service\. You can also be sure you are staying under a specific AWS Free Tier offering\.
++ Setting a monthly usage budget with a fixed usage amount and forecasted notifications to help ensure that you are staying within the service quotas for a specific service\. You can also be sure you are staying under a specific AWS Free Tier offering\.
 + Setting a daily utilization or coverage budget to track your RI or Savings Plans\. You can choose to be notified through email and Amazon SNS topics when your utilization drops below 80 percent for a given day\.
 
 AWS Budgets information is updated up to three times a day\. Updates typically occur 8–12 hours after the previous update\. Budgets can track your unblended costs, amortized, and blended costs\. Budgets can include or exclude charges such as descriptions, refunds, support fees, and taxes\. 
@@ -35,6 +35,6 @@ There can be a delay between when you incur a charge and when you receive a noti
 + [Downloading a budget](budgets-export.md)
 + [Copying a budget](budgets-copy.md)
 + [Deleting a budget](budgets-delete.md)
-+ [Configuring AWS Budgets controls](budgets-controls.md)
++ [Configuring AWS Budgets actions](budgets-controls.md)
 + [Creating an Amazon SNS topic for budget notifications](budgets-sns-policy.md)
 + [Receiving budget alerts in Amazon Chime and Slack](sns-alert-chime.md)

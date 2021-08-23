@@ -14,13 +14,17 @@ You can use the Billing and Cost Management console to add purchase orders to us
 
 1. \(Optional\) For **Description**, describe your purchase order, including any notes for your reference\.
 
-1. For **Ship to**, enter your shipping address\.
-
-   \(Optional\) Select **Copy Bill to address** to copy and edit the address populated from your **Bill to** field\.
-
 1. For **Bill from**, choose the AWS billing entity that you are invoiced from\.
 **Note**  
 Remittance details are different for each **Bill from** location\. Be sure to verify your **Bill from** selection\. You must make your payments to the legal entity that you're billed from\. We don't recommend configuring more than one **Bill from** location for a purchase order\.
+
+1. \(Optional\) If your purchase order is invoiced from the **Amazon Web Services EMEA SARL** billing entity: For **Tax registration number**, select the tax registration numbers that you want to associate with your purchase order\. Your purchase order is associated with only the invoices generated for the tax registration numbers that you select\.
+**Note**  
+The **Tax registration number** selection is available for only the **Amazon Web Services EMEA SARL** billing entity\. For more information on your tax registration number settings, see [Managing your account](change-account-settings.md)\.
+
+1. For **Ship to**, enter your shipping address\.
+
+   \(Optional\) Select **Copy Bill to address** to copy and edit the address populated from your **Bill to** field\.
 
 1. For **Effective month**, choose the month you want your purchase order to start from\. Your purchase order is eligible for invoice associations starting from this month\.
 

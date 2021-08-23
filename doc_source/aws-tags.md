@@ -1,6 +1,6 @@
 # AWS\-Generated Cost Allocation Tags<a name="aws-tags"></a>
 
-The AWS generated tags `createdBy` is a tag that AWS defines and applies to supported AWS resources for cost allocation purposes\. To use the AWS generated tags, a management account owner must activate it in the Billing and Cost Management console\. When a management account owner activates the tag, the tag is also activated for all member accounts\. After the tag is activated, AWS starts applying the tag to resources that are created after the AWS generated tags was activated\.  The AWS generated tags is available only in the Billing and Cost Management console and reports, and doesn't appear anywhere else in the AWS console, including the AWS Tag Editor\. The `createdBy` tag does not count towards your tags per resource limit\.
+The AWS generated tags `createdBy` is a tag that AWS defines and applies to supported AWS resources for cost allocation purposes\. To use the AWS generated tags, a management account owner must activate it in the Billing and Cost Management console\. When a management account owner activates the tag, the tag is also activated for all member accounts\. After the tag is activated, AWS starts applying the tag to resources that are created after the AWS generated tags was activated\.  The AWS generated tags is available only in the Billing and Cost Management console and reports, and doesn't appear anywhere else in the AWS console, including the AWS Tag Editor\. The `createdBy` tag does not count towards your tags per resource quota\.
 
 The `createdBy` tag uses the following key\-value definition:
 
@@ -78,7 +78,7 @@ The `createdBy` tag is applied only to the following services and resources afte
 |    |  `CreateClusterSnapshot`  |  Snapshot  | 
 |    |  `CreateClusterSubnetGroup`  |  SubnetGroup  | 
 |    |  `CreateCluster`  |  Cluster  | 
-| Amazon Route 53 \(Route 53\) |  `CreateHealthCheck`  |  HealthCheck  | 
+| Amazon Route 53 \(Route 53\) |  `CreateHealthCheck`  |  HealthCheck  | 
 |    |  `CreatedHostedZone`  |  HostedZone  | 
 | Amazon Simple Storage Service \(Amazon S3\) |  `CreateBucket`  |  Bucket  | 
 | AWS Storage Gateway \(AWS Storage Gateway\) |  `ActivateGateway`  |  Gateway  | 
@@ -88,4 +88,4 @@ The `CreateDBSnapshot` tag isn't applied to the snapshot backup storage\.
 
 ## AWS Marketplace vendor\-provided tags<a name="marketplace-isv-tags"></a>
 
-Certain AWS Marketplace vendors can create tags and associate them with your software usage\. These tags will have the prefix `aws:marketplace:isv:`\. To use the tags, a management account owner must activate the tag in the Billing and Cost Management console\. When a management account owner activates the tag, the tag is also activated for all member accounts\. Similar to `aws:createdBy` tags, these tags appear only in the Billing and Cost Management console and does not count towards your tags per resource limit\. You can find the tag keys that apply to the product on the [AWS Marketplace](http://aws.amazon.com/marketplace/) product pages\.
+Certain AWS Marketplace vendors can create tags and associate them with your software usage\. These tags will have the prefix `aws:marketplace:isv:`\. To use the tags, a management account owner must activate the tag in the Billing and Cost Management console\. When a management account owner activates the tag, the tag is also activated for all member accounts\. Similar to `aws:createdBy` tags, these tags appear only in the Billing and Cost Management console and they don't count towards your tags per resource quota\. You can find the tag keys that apply to the product on the [AWS Marketplace](http://aws.amazon.com/marketplace/) product pages\.

@@ -13,7 +13,7 @@ This payment method is only available for overdue payments and is not available 
 ## Requirements to use China bank redirect<a name="requirements-cny-redirect"></a>
 
 To enable a China bank account as a payment method, your account must meet the following requirements:
-+ Your account must be an Amazon Web Services, Inc\. customer\.
++ Your account must be an Amazon Web Services customer\.
 + You must have a [China Union Pay credit card payment method](manage-cc.md#yuan-cc-first-time) in CNY enabled\.
 + You must have CNY set as your preferred currency\.
 

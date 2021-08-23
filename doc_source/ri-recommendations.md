@@ -8,7 +8,7 @@ If you enable Cost Explorer, you automatically get Amazon EC2, Amazon RDS, Elast
 
 For example, Cost Explorer automatically aggregates your Amazon EC2 Linux, shared tenancy, and c4 family usage in the US West \(Oregon\) Region and recommends that you buy size\-flexible regional RIs to apply to the c4 family usage\. Cost Explorer recommends the smallest size instance in an instance family\. This makes it easier to purchase a size\-flexible RI\. Cost Explorer also shows the equal number of normalized units so that you can purchase any instance size that you want\. For this example, your RI recommendation would be for `c4.large` because that is the smallest size instance in the c4 instance family\.
 
-Cost Explorer recommendations are based on a single account or organization usage of the past seven, 30, or 60 days\. Cost Explorer ignores usage that is already covered by an RI\. Amazon EC2, ElastiCache, Amazon ES, and Amazon Redshift recommendations are for RIs scoped to Region, not Availability Zones, and your estimated savings reflects the application of those RIs to your usage\. Amazon RDS recommendations are scoped to either Single\-AZ or Multi\-AZ RIs\. Cost Explorer updates your recommendations at least once every 24 hours\.
+Cost Explorer recommendations are based on a single account or organization usage of the past seven, 30, or 60 days\. Cost Explorer uses On\-Demand instance usage during the selected look\-back period to generate recommendations\. All other usage in the look\-back period that are covered by features such as RI, SPOT, and Savings Plans aren't included\. Amazon EC2, ElastiCache, Amazon ES, and Amazon Redshift recommendations are for RIs scoped to Region, not Availability Zones, and your estimated savings reflects the application of those RIs to your usage\. Amazon RDS recommendations are scoped to either Single\-AZ or Multi\-AZ RIs\. Cost Explorer updates your recommendations at least once every 24 hours\.
 
 **Note**  
 Cost Explorer doesn't forecast your usage or take forecasts into account when recommending RIs\. Instead, Cost Explorer assumes that your historical usage reflects your future usage when determining which RIs to recommend\. 
@@ -55,7 +55,9 @@ For more information, see [Using identity\-based policies \(IAM policies\) for B
 
 1. On the **Cost Explorer** page, choose **Launch Cost Explorer**\.
 
-1. On the navigation bar, choose the menu\. Under **Select a service**, choose the service that you want recommendations for\. The default recommendation is for RIs with a one\-year term and a payment option of Partial Upfront \(based on your previous 30 days of usage\)\.
+1. In the navigation pane, under **Reservations**, choose **Recommendations**\.
+
+1. For **Select recommendation type**, choose the service that you want recommendations for\.
 
 ## Reading the Cost Explorer RI Recommendations<a name="reading-rex"></a>
 

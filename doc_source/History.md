@@ -4,6 +4,9 @@ The following table describes the documentation for this release of the *AWS Bil
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [New AWS Cost Anomaly Detection](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-ad.html) | Added a new AWS Cost Anomaly Detection feature that uses machine learning to continuously monitor your cost and usage to detect unusual spends\. | December 16, 2020 | 
+| [New Purchase Order Management](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-purchaseorders.html) | Added a new purchase order feature to configure how your purchases are reflected on your invoices\. | October 15, 2020 | 
+| [New Budget Actions](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-controls.html) | Added a new AWS Budgets actions feature to run an action on your behalf when a budget exceeds a certain cost or usage threshold\. | October 15, 2020 | 
 | [New AWS Cost Categories](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-cost-categories.html) | Added a new AWS Cost Categories feature to map AWS costs into meaningful categories\. | April 20, 2020 | 
 | [New Heritage Tax feature](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-account-payment.html#manage-account-tax-linked-accounts) | Added a new feature that enables you to use your tax registration information with your linked accounts\. | March 19, 2020 | 
 | [New china bank redirect payment method](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-cny-payment.html) | Added a new payment method that allows China CNY customers using AWS to pay their overdue payments using China Bank Redirect\. | February 20, 2020 | 

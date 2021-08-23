@@ -6,16 +6,12 @@ Use the following procedure to copy an AWS Budgets report\.<a name="copy-budget-
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. In the navigation pane, choose **Budget Reports**\.
+1. In the navigation pane, choose **Budgets Reports**\.
 
-1. Select either the **Report name** or **\.\.\.** on the right of each row\.
+1. From the list of reports, select the report that you want to copy\.
 
-1. Choose **Copy**\.
+1. At the top of the page, choose **Actions**, and then choose **Copy**\.
 
-1. Change the report name\.
+1. Change the parameters that you want to update\.
 
-1. \(Optional\) Change any parameter that you want to edit\.
-
-1. Choose **Configure delivery settings**\.
-
-1. Choose **Confirm budget report**\.
+1. Choose **Create budget report**\.

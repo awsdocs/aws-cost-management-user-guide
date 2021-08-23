@@ -25,7 +25,7 @@ You can use the icons in the left pane to do the following:
 
 ## Your Cost Explorer costs<a name="ce-costs"></a>
 
-At the top of the **Cost Explorer** page are the **Month\-to\-date costs** and **Forecasted month end costs**\. The **Month\-to\-date costs** shows how much you're estimated to have incurred in charges so far this month and compares it to this time last month\. The **Forecasted month end costs** shows how much Cost Explorer estimates that you will owe at the end of the month and compares your estimates costs to your actual costs of the previous month\. The **Month\-to\-date costs** and the **Forecasted month end costs** don't include refunds\.
+At the top of the **Cost Explorer** page are the **Month\-to\-date costs** and **Forecasted month end costs**\. The **Month\-to\-date costs** shows how much you're estimated to have incurred in charges so far this month and compares it to this time last month\. The **Forecasted month end costs** shows how much Cost Explorer estimates that you will owe at the end of the month and compares your estimated costs to your actual costs of the previous month\. The **Month\-to\-date costs** and the **Forecasted month end costs** don't include refunds\.
 
 ## Your Cost Explorer trends<a name="ce-trends"></a>
 

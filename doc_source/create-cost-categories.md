@@ -1,6 +1,16 @@
 # Creating cost categories<a name="create-cost-categories"></a>
 
-You can create cost categories to organize your cost and usage information\. Regular accounts and the management account in AWS Organizations have default access to create cost categories\. Rules are not mutually exclusive, and you can control the order in which the rules apply\. Allow up to 24 hours after creating a cost category for your usage records to be updated with values\.
+You can create cost categories to organize your cost and usage information\. Regular accounts and the management account in AWS Organizations have default access to create cost categories\. Rules aren't mutually exclusive, and you can control the order that the rules apply in\. Allow up to 24 hours after creating a cost category for your usage records to be updated with values\.
+
+There are three major steps in creating cost categories\.
+
+1. Define a name for your cost category \(for example, `business units`, `Teams`\)\.
+
+1. Write the rules to categorize your costs into cost category values \(for example, `Team-A`, `Team-B`, `Team-C`\)\.
+
+1. \(Optional\) Define rules to split charges between your cost category values\.
+
+   For more information about split charges, see [Splitting charges within cost categories](splitcharge-cost-categories.md)\.
 
 Use the following procedure to create a new cost category\.<a name="create-cost-categories-steps"></a>
 
@@ -26,7 +36,7 @@ Use the following procedure to create a new cost category\.<a name="create-cost-
 
 1. Choose a **Rule Type**, either **Regular** or **Inherited value**\.
 
-1. Choose a billing **Dimension** from the dropdown list\. For a regular rule type, you can choose **Accounts**, **Service**, **Charge Type** \(for example, recurring reservation fee\), **Tag key**, or **Cost Category** \(to create hierarchical relationships among your cost categories\)\. For an inherited value rule type, you can choose **Account** or **Tag key** \(Cost Allocation tag key\)\.
+1. Choose a billing **Dimension** from the dropdown list\. For a regular rule type, you can choose **Accounts**, **Service**, **Charge Type** \(for example, recurring reservation fee\), **Tag key**, or **Cost Category**\. \(You can choose **Cost Category** to create hierarchical relationships among your cost categories\.\) For an inherited value rule type, you can choose **Account** or **Tag key** \(Cost Allocation tag key\)\.
 
 1. For a regular rule type, choose **Operator** from the dropdown list\. Your options are **Is**, **Contains**, **Starts with**, and **Ends with**\.
 **Note**  
@@ -38,8 +48,30 @@ Use the following procedure to create a new cost category\.<a name="create-cost-
 **Note**  
 The **Account** dimension uses account names, not account IDs for the inherited cost category value\.
 
-1. \(Optional\) Add a default value, which will categorize all unmatched costs to this value\.
+1. \(Optional\) Add a default value\. It categorizes all unmatched costs to this value\.
 
 1. \(Optional\) To rearrange the rule order, use the arrows or change the number on the top right of each rule\.
 
-1. \(Optional\) To delete a rule, select **Remove** on the top right of each rule\.
+1. \(Optional\) To delete a rule, choose **Remove** on the top right of each rule\.
+
+1. \(Optional\) Under **Define split charges**, choose **Next**\.
+
+   For more information about split charge rules, see [Splitting charges within cost categories](splitcharge-cost-categories.md)\.
+
+   1. Choose **Add a split charge**\.
+
+   1. Under **Source value**, choose your cost category value\.
+
+      **Uncategorized** cost isn't an option at this time, but is an available source if you edit your cost category\. For more information, see [Editing cost categories](edit-cost-categories.md)\.
+
+   1. Under **Target values**, choose one or more cost category values you wish to allocate split charges to\.
+
+   1. Under **Charge allocation method**, choose how you want to allocate your costs\. Your choices are **proportional**, **fixed**, and **even split**\.
+
+      For **fixed** charge allocation, enter the percentage amount to allocate each target cost category value\.
+
+   1. Choose **Create split charge**\.
+
+   1. Choose **Add a split charge** and repeat steps to define more split charges\.
+
+1. Choose **Create cost category**\.

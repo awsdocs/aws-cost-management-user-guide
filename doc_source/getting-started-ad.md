@@ -12,7 +12,7 @@ When you start using AWS Cost Anomaly Detection in AWS Billing and Cost Manageme
 
 You can configure AWS Cost Anomaly Detection so that it detects anomalies at a lower granularity and spend patterns, in context to your monitor type\.
 
-For example, your spend patterns for Amazon EC2 usage might be different from your AWS Lambda or Amazon S3 spend patterns\. By segmenting spends by AWS services, AWS Cost Anomaly Detection can detect separate spend patterns that help decrease false positive alerts\. You can also create cost monitors that evaluate specific cost allocation tags, member accounts, and cost categories based on your AWS account structure\.
+For example, your spend patterns for Amazon EC2 usage might be different from your AWS Lambda or Amazon S3 spend patterns\. By segmenting spends by AWS services, AWS Cost Anomaly Detection can detect separate spend patterns that help decrease false positive alerts\. You can also create cost monitors that evaluate specific cost allocation tags, member accounts within an organization \(AWS Organizations\), and cost categories based on your AWS account structure\.
 
 As you create your cost monitors, you can configure your alert subscriptions specific to each monitor\.<a name="ad-alert-process"></a>
 
@@ -44,7 +44,8 @@ An alert subscription notifies you when a cost monitor detects an anomaly\. Depe
 
    For **Threshold**, enter the dollar amount threshold to receive alerts\.
 **Note**  
-An alert threshold is the dollar value above which you want to be notified\. It does not impact anomaly detection because that is done by machine learning models looking at historical spend\. Alert recipients will receive notifications of events greater than the threshold amount\. For example, if you set a $10 threshold, alert receipts will receive notifications of events greater than $10\. All anomalies detected by machine learning models \(both greater and less than $10\) will be available in the **Detection history** tab\.
+AWS Cost Anomaly Detection sends you a notification when the difference between your actual spend and normal spend pattern has exceeded the **Threshold**\. For example, if your normal spend pattern is $100 and you set a $10 threshold, then alert recipients get anomaly notifications when the cost exceeds $110\. If anomalies repeat over multiple days, then alert recipients continue to get notifications while the aggregate cost impact of the anomalies exceed the threshold amount\.  
+The machine learning model continues to detect spend anomalies on your account even if the anomaly is below the alert threshold\. All anomalies detected by the machine learning model \(with cost impacts greater and less than the threshold\) are available in the **Detection history** tab\.
 
    Under **Alerting frequency**, choose your preferred notification frequency\.
    + **Individual alerts** \- The alert notifies you as soon as an anomaly is detected\. You might receive multiple alerts throughout a day\. These notifications require an Amazon SNS topic\.
@@ -69,7 +70,8 @@ You must create at least one alert subscription per monitor\. The "create cost m
 
 1. For **Threshold**, enter the dollar amount threshold to receive alerts\.
 **Note**  
-An alert threshold is the dollar value above which you want to be notified\. It does not impact anomaly detection because that is done by machine learning models looking at historical spend\. Alert recipients will receive notifications of events greater than the threshold amount\. For example, if you set a $10 threshold, alert receipts will receive notifications of events greater than $10\. All anomalies detected by machine learning models \(both greater and less than $10\) will be available in the **Detection history** tab\.
+AWS Cost Anomaly Detection sends you a notification when the difference between your actual spend and normal spend pattern has exceeded the **Threshold**\. For example, if your normal spend pattern is $100 and you set a $10 threshold, then alert recipients get anomaly notifications when the cost exceeds $110\. If anomalies repeat over multiple days, then alert recipients continue to get notifications while the aggregate cost impact of the anomalies exceed the threshold amount\.  
+The machine learning model continues to detect spend anomalies on your account even if the anomaly is below the alert threshold\. All anomalies detected by the machine learning model \(with cost impacts greater and less than the threshold\) are available in the **Detection history** tab\.
 
 1. Under **Alerting frequency**, choose your preferred notification frequency\.
    + **Individual alerts** \- The alert notifies you as soon as an anomaly is detected\. You might receive multiple alerts throughout a day\. These notifications require an Amazon SNS topic\.
@@ -102,6 +104,9 @@ The following information is included on the **Detection History** page:
 
 **Duration**  
  The duration that the anomaly lasted\. An anomaly can be on\-going\. 
+
+**Monitor name**  
+ The name of the anomaly monitor\. 
 
 **Service**  
  The service that caused the anomaly\. If the service field is empty, AWS has detected an anomaly, but the root cause is unclear\. 
@@ -137,13 +142,49 @@ After you create your monitors, AWS Cost Anomaly Detection evaluates your future
 
 1. \(Optional\) On the **Detection history** tab, use the search area to narrow the list of detected anomalies for a particular Severity, Assessment, Service, Account ID, Usage Type, Region, or Monitor Type\.
 
-1. \(Optional\)Choose **Detection date** to view the details for a particular anomaly\.
+1. \(Optional\) Choose **Detection date** to view the details for a particular anomaly\.
 
 1. On the **Anomaly details** page, you can view the root cause analysis and cost impact of the anomaly\.
 
 1. \(Optional\) Choose **View in Cost Explorer** to view a graph of the time series, automatically filtered by root causes\.
 
-1. \(Optional\) Choose **Did you find this detected anomaly to be helpful?** to provide feedback and help improve our detection accuracy\.
+1. \(Optional\) Choose **Did you find this detected anomaly to be helpful?** to provide feedback and help improve our detection accuracy\.<a name="view-anomaly-sns"></a>
+
+**To view your anomalies from an Amazon SNS topic**
+
+1. Subscribe an endpoint to the Amazon SNS topic that you created for a cost monitor with individual alerts\. For instructions, see [Subscribing to an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html) in the *Amazon Simple Notification Service Developer Guide*\.
+
+1. After your endpoint receives messages from the Amazon SNS topic, open a message and then find the **anomalyDetailsLink** URL\. The following example is a message from AWS Cost Anomaly Detection through Amazon SNS:
+
+   ```
+   {
+      "accountId": "123456789012",
+      "anomalyStartDate": "2021-05-25",
+      "anomalyEndDate": "2021-05-25",
+      "anomalyId": "newAnomalyId",
+      "dimensionalValue": "ServiceName",
+      "monitorArn": "arn:aws:ce::123456789012:anomalymonitor/abcdefgh-1234-4ea0-84cc-918a97d736ef",
+      "anomalyScore": {
+         "maxScore": 0.47,
+         "currentScore": 0.47
+      },
+      "impact": {
+         "maxImpact": 151,
+         "totalImpact": 1001
+      },
+      "rootCauses": [
+         {
+            "service": "AnomalousServiceName",
+            "region": "AnomalousRegionName",
+            "linkedAccount": "AnomalousLinkedAccount",
+            "usageType": "AnomalousUsageType"
+         }
+      ],
+      "anomalyDetailsLink": "https://console.aws.amazon.com/cost-management/home#/anomaly-detection/monitors/abcdefgh-1234-4ea0-84cc-918a97d736ef/anomalies/newAnomaly"
+   }
+   ```
+
+1. Open the **anomalyDetailsLink** URL in a web browser\. The URL takes you to the associated **Anomaly details** page, which shows the root cause analysis and cost impact of the anomaly\.
 
 ## Monitor types<a name="monitor-type-def"></a>
 

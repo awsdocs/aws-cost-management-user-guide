@@ -34,7 +34,7 @@ This section shows a full list of the CloudTrail events related to Billing and C
 | SetAccountContractMetadata | Logs the creation, deletion, or update of the necessary contract information for public sector customers\. | 
 | SetAccountPreferences | Logs the updates of the account name, email, and password\. | 
 | SetAdditionalContacts | Logs the creation, deletion, or update of the alternate contacts for billing, operations, and security communications\. | 
-| SetContactAddress | Logs the creation, deletion, or update of the account owner address\. | 
+| SetContactAddress | Logs the creation, deletion, or update of the account owner contact information, including the address and phone number\. | 
 | SetCostExplorerPreferences | Logs the opt\-in history of AWS Cost Explorer for the account\. | 
 | SetCreatedByOptIn | Logs the opt\-in of the awscreatedby cost allocation tag preference\. | 
 | SetCreditSharing | Logs the history of the credit sharing preference for the management account\. | 

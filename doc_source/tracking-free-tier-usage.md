@@ -73,7 +73,7 @@ The AWS Free Tier usage alerts and the **Top AWS Free Tier Services by Usage** t
 | --- | --- | 
 |  Amazon API Gateway   |  `Global-ApiGatewayRequest`  | 
 |  AWS CodeBuild   |  `Global-Build-Min:Linux:g1.small`  | 
-|  Amazon GameLift   |  `Global-BoxUsage:c3.large`  | 
+|  Amazon GameLift   |  `Global-BoxUsage:c5.large`  | 
 |  AWS Storage Gateway   |  `Global-Uploaded-Bytes`  | 
 |  Amazon Cloud Directory   |  `Global-Requests-Tier1` `Global-Requests-Tier2` `Global-TimedStorage-ByteHrs`  | 
 |  Amazon CloudFront   |  `Global-DataTransfer-Out-Bytes` `Global-Requests-Tier1`  | 

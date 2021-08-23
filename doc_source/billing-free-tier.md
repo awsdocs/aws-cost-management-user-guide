@@ -11,6 +11,9 @@ If you don't use the full benefits provided by the AWS Free Tier in a given mont
 **Note**  
 Data transfer charges aren't covered under AWS Free Tier\.
 
+**Note**  
+Data transfer charges aren't covered under AWS Free Tier\.
+
 For more information about which services offer a AWS Free Tier, see [AWS Free Tier](http://aws.amazon.com/free/)\.
 
 **Topics**

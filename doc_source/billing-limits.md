@@ -9,7 +9,11 @@ The following table describes the current quotas, restrictions, and naming const
 + [Cost Explorer](#limits-ce)
 + [Purchase orders](#limits-po)
 + [AWS Cost Anomaly Detection](#limits-ad)
+<<<<<<< HEAD
 + [Advance Pay](#limits-ap)
+=======
++ [Advance pay](#limits-ap)
+>>>>>>> 1c5a2625c261959b8ad1810f08be25e73efa18ed
 
 ## Budgets<a name="limits-budgets"></a>
 
@@ -64,16 +68,29 @@ The following table describes the current quotas, restrictions, and naming const
 
 |  |  | 
 | --- |--- |
+<<<<<<< HEAD
 | The maximum number of monitors that you can create for an AWS service monitor type |  1 monitor for each account  | 
 | The maximum number of monitors that you can create for other monitor types \(member account, cost category, cost allocation tag\) | 100 total monitors for each management account | 
 | Unsupported services | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
 
 ## Advance Pay<a name="limits-ap"></a>
+=======
+| The maximum number of monitors you can create for an AWS service monitor type |  1 monitor per account  | 
+| The maximum number of monitors you can create for other monitor types \(member account, cost category, cost allocation tag\) | 100 total monitors per management account | 
+| Unsupported services | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
+
+## Advance pay<a name="limits-ap"></a>
+>>>>>>> 1c5a2625c261959b8ad1810f08be25e73efa18ed
 
 
 |  |  | 
 | --- |--- |
 | User entity  | AWS Inc | 
 | Currency | USD | 
+<<<<<<< HEAD
 | Fund usage after funds are added to your Advance Pay | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
 | If there are unused funds in your Advance Pay | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
+=======
+| Fund usage once funds are added to your advance pay | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
+| If there are unused funds in your advance pay | [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-limits.html) | 
+>>>>>>> 1c5a2625c261959b8ad1810f08be25e73efa18ed

@@ -1,6 +1,6 @@
 # Accessing Reserved Instance Recommendations<a name="ri-recommendations"></a>
 
-If you enable Cost Explorer, you automatically get Amazon EC2, Amazon RDS, ElastiCache, Amazon ES, and Amazon Redshift Reserved Instance \(RI\) purchase recommendations that could help you reduce your costs\. RIs provide a discounted hourly rate \(up to 75%\) compared to On\-Demand pricing\. Cost Explorer generates your RI recommendations using the following process:
+If you enable Cost Explorer, you automatically get Amazon EC2, Amazon RDS, ElastiCache, OpenSearch Service, and Amazon Redshift Reserved Instance \(RI\) purchase recommendations that could help you reduce your costs\. RIs provide a discounted hourly rate \(up to 75%\) compared to On\-Demand pricing\. Cost Explorer generates your RI recommendations using the following process:
 + Identifies your On\-Demand Instance usage for a service during a specific time period
 + Collects your usage into categories that are eligible for an RI
 + Simulates every combination of RIs in each category of usage
@@ -8,7 +8,7 @@ If you enable Cost Explorer, you automatically get Amazon EC2, Amazon RDS, Elast
 
 For example, Cost Explorer automatically aggregates your Amazon EC2 Linux, shared tenancy, and c4 family usage in the US West \(Oregon\) Region and recommends that you buy size\-flexible regional RIs to apply to the c4 family usage\. Cost Explorer recommends the smallest size instance in an instance family\. This makes it easier to purchase a size\-flexible RI\. Cost Explorer also shows the equal number of normalized units so that you can purchase any instance size that you want\. For this example, your RI recommendation would be for `c4.large` because that is the smallest size instance in the c4 instance family\.
 
-Cost Explorer recommendations are based on a single account or organization usage of the past seven, 30, or 60 days\. Cost Explorer uses On\-Demand instance usage during the selected look\-back period to generate recommendations\. All other usage in the look\-back period that are covered by features such as RI, SPOT, and Savings Plans aren't included\. Amazon EC2, ElastiCache, Amazon ES, and Amazon Redshift recommendations are for RIs scoped to Region, not Availability Zones, and your estimated savings reflects the application of those RIs to your usage\. Amazon RDS recommendations are scoped to either Single\-AZ or Multi\-AZ RIs\. Cost Explorer updates your recommendations at least once every 24 hours\.
+Cost Explorer recommendations are based on a single account or organization usage of the past seven, 30, or 60 days\. Cost Explorer uses On\-Demand instance usage during the selected look\-back period to generate recommendations\. All other usage in the look\-back period that are covered by features such as RI, SPOT, and Savings Plans aren't included\. Amazon EC2, ElastiCache, OpenSearch Service, and Amazon Redshift recommendations are for RIs scoped to Region, not Availability Zones, and your estimated savings reflects the application of those RIs to your usage\. Amazon RDS recommendations are scoped to either Single\-AZ or Multi\-AZ RIs\. Cost Explorer updates your recommendations at least once every 24 hours\.
 
 **Note**  
 Cost Explorer doesn't forecast your usage or take forecasts into account when recommending RIs\. Instead, Cost Explorer assumes that your historical usage reflects your future usage when determining which RIs to recommend\. 
@@ -179,11 +179,11 @@ To purchase the recommended reservations, go to the purchase page on a service c
 
 1. Purchase your reservations by following the instructions at [Purchasing a Reserved Node Offering with the Amazon Redshift Console](https://docs.aws.amazon.com/redshift/latest/mgmt/purchase-reserved-node-offering-console.html) in the *Amazon Redshift Cluster Management Guide*\.<a name="use-rex-es"></a>
 
-**To use Amazon Elasticsearch Service recommendations**
+**To use Amazon OpenSearch Service recommendations**
 
-1. On the **Reserved Instances** page in the Amazon ES console, choose **Purchase Reserved Instance**\. 
+1. On the **Reserved Instances** page in the OpenSearch Service console, choose **Purchase Reserved Instance**\. 
 
-1. Purchase your reservations by following the instructions at [Amazon Elasticsearch Service Reserved Instances](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-ri.html) in the *Amazon Elasticsearch Service Developer Guide*\.<a name="use-rex-elc"></a>
+1. Purchase your reservations by following the instructions at [Amazon OpenSearch Service Reserved Instances](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/aes-ri.html) in the *Amazon OpenSearch Service Developer Guide*\.<a name="use-rex-elc"></a>
 
 **To use Amazon ElastiCache recommendations**
 

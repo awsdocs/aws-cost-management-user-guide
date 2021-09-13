@@ -40,6 +40,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Managing your AWS Europe credit card payment verifications](manage-emea-cc-verification.md)
       + [Managing your SEPA direct debit payment methods](manage-debit-emea.md)
    + [Managing your Advance Pay](manage-advancepay.md)
+   + [Managing your payment profiles](manage-paymentprofiles.md)
 + [Viewing your bill](getting-viewing-bill.md)
    + [Viewing your monthly charges](invoice.md)
    + [Getting an invoice emailed to you](emailed-invoice.md)

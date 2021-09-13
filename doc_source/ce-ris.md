@@ -12,7 +12,7 @@ To take advantage of your potential savings, see [Accessing Reserved Instance Re
 
 ## Managing your reservation expiration alerts<a name="managing-ri-alerts"></a>
 
-You can track your reservations and their expiration in Cost Explorer\. Reservation expiration alerts enable you to receive email alerts 7, 30, or 60 days in advance before your reservation expiration date\. These notifications also alert you on the date of expiration and can be sent to up to 10 email recipients\. Reservation expiration alerts are supported for Amazon EC2, Amazon RDS, Amazon Redshift, Amazon ElastiCache, and Amazon Elasticsearch Service reservations\.
+You can track your reservations and their expiration in Cost Explorer\. Reservation expiration alerts enable you to receive email alerts 7, 30, or 60 days in advance before your reservation expiration date\. These notifications also alert you on the date of expiration and can be sent to up to 10 email recipients\. Reservation expiration alerts are supported for Amazon EC2, Amazon RDS, Amazon Redshift, Amazon ElastiCache, and Amazon OpenSearch Service reservations\.
 
 **To turn on reservation expiration alerts**
 

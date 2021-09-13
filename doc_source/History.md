@@ -20,13 +20,13 @@ The following table describes the documentation for this release of the *AWS Bil
 | [Updated the Cost Explorer UI](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-exploring-data.html) | Updated the Cost Explorer UI\. | November 15, 2018 | 
 | [Integrated Amazon Athena into AWS Cost and Usage Reports](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/athena.html) | Added the ability to upload the data from an AWS Cost and Usage Reports into Athena\. | November 15, 2018 | 
 | [Added budget history](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-view.html) | Added the ability to see the history of a budget\. | November 13, 2018 | 
-| [Expanded budget services](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html) | Expanded RI budgets to Amazon Elasticsearch Service\. | November 8, 2018 | 
+| [Expanded budget services](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-managing-costs.html) | Expanded RI budgets to Amazon OpenSearch Service\. | November 8, 2018 | 
 | [Added a new payment method](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-debit-emea.html) | Added the SEPA Direct Debit payment method\. | October 25, 2018 | 
 | [Added On\-Demand capacity reservations](#History) | Added documentation about AWS Cost and Usage Reports line items that apply to capacity reservations\. | October 25, 2018 | 
 | [Redesigned budget experience](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create.html) | Updated the budget UI and workflow\. | October 23, 2018 | 
 | [New Reserved Instance recommendation columns](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-recommendations.html#saving-rex) | Added new columns to the Cost Explorer RI recommendations\. | October 18, 2018 | 
 | [New AWS CloudTrail actions](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/logging-using-cloudtrail.html) | More actions added to CloudTrail logging\.\. | October 18, 2018 | 
-| [Added a new Reserved Instance report](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-default-reports.html) | Expanded RI reports to Amazon Elasticsearch Service\. | October 10, 2018 | 
+| [Added a new Reserved Instance report](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-default-reports.html) | Expanded RI reports to Amazon OpenSearch Service\. | October 10, 2018 | 
 | [New AWS Cost and Usage Reports columns](#History) | New columns added to the AWS Cost and Usage Reports\. | September 27, 2018 | 
 | [Cost Explorer walkthrough](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-getting-started.html) | Cost Explorer now provides a walkthrough for the most common functionality\. | September 24, 2018 | 
 | [Added CloudTrail events](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/logging-using-cloudtrail.html) | Added additional CloudTrail events\. | August 13, 2018 | 

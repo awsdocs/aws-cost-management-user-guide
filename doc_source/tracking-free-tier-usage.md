@@ -87,7 +87,7 @@ The AWS Free Tier usage alerts and the **Top AWS Free Tier Services by Usage** t
 |  Amazon Elastic Container Registry   |  `Global-TimedStorage-ByteHrs`  | 
 |  Amazon Elastic File System   |  `Global-TimedStorage-ByteHrs`  | 
 |  Amazon ElastiCache   |  `Global-NodeUsage:cache.t1.micro`  | 
-|  Amazon Elasticsearch Service   |  `Global-ES:freetier-Storage` `Global-ESInstance:freetier.micro`  | 
+|  Amazon OpenSearch Service   |  `Global-ES:freetier-Storage` `Global-ESInstance:freetier.micro`  | 
 |  Amazon Elastic Transcoder   |  `Global-ets-hd-success` `Global-ets-sd-success` `Global-ets-audio-success`  | 
 |  AWS IoT   |  `AWSIoT-messages`  | 
 |  AWS Key Management Service   |  `Global-KMS-Requests`  | 

@@ -33,4 +33,23 @@ IAM users need explicit permission to see some of the pages in the Billing and C
 1. \(For AWS EMEA SARL\) To download a copy of a particular tax invoice, choose the **Invoice <invoiceID>** in the **Amazon Web Services EMEA SARL – Service Charges** section\.
 
 **To download a monthly report**
-+ Choose the **Download CSV** button, and then choose the appropriate option\.
+
+Once you turn on the reports, you can download CSV files for any future billing periods\.
+
+1. Turn on monthly reports by choosing **Billing preferences** in the navigation pane\.
+
+1. Under **Detailed Billing Reports**, select **Turn on the legacy Detailed Billing Reports feature to receive ongoing reports of your AWS charges**\.
+
+1. Choose **Configure** to specify where your reports will be delivered to\.
+   + Under **Select existing bucket**, choose an existing Amazon S3 bucket name as your report destination\.
+   + If you prefer to create a new Amazon S3 bucket to deliver reports to, enter an **Amazon S3 bucket name** and **Region** under **Create a bucket**\.
+
+     1. Choose **Next**\.
+
+     1. Verify your IAM policy and select **I have confirmed that this policy is correct**\.
+
+     1. Choose **Save**\.
+
+1. Choose **Save preferences**\.
+
+1. On the **Bills** page, choose **Download CSV**\.

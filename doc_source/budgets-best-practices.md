@@ -45,11 +45,6 @@ If you don't have proper permissions configured and assigned for the user and fo
 
 For details about managed policies, see [Managed policies](billing-permissions-ref.md#managed-policies)\.
 
-<<<<<<< HEAD
-=======
-To learn more about AWS Budgets actions, see the [Configuring AWS Budgets actions](budgets-controls.md) section\.
-
->>>>>>> 1c5a2625c261959b8ad1810f08be25e73efa18ed
 ### Using Amazon EC2 Auto Scaling<a name="budgets-best-practices-actions-auto"></a>
 
 If a budget action is used to stop an Amazon EC2 instance in an Auto Scaling group, Amazon EC2 Auto Scaling restarts the instance, or launches new instances to replace the stopped instance\. Therefore, budget actions is not effective to control cost in this use case\.

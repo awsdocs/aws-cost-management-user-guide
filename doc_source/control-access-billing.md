@@ -61,6 +61,7 @@ The **Activate IAM Access** setting doesn't control access to the following page
 + The console pages for AWS Cost Anomaly Detection, Savings Plans overview, Savings Plans inventory, Purchase Savings Plans, and Savings Plans cart
 + The Cost Management view in the AWS Console Mobile Application
 + The Billing and Cost Management SDK APIs \(AWS Cost Explorer, AWS Budgets, and AWS Cost and Usage Reports APIs\)
++ The cost and usage widget on the AWS Console Home page
 
 To activate the **Activate IAM Access** setting, you must log in to your AWS account using the root user credentials, and then select the setting in the [My Account](https://console.aws.amazon.com/billing/home#/account) page\. Activate this setting in each account where you want to allow IAM user and role access to the Billing and Cost Management console pages\. If you use AWS Organizations, activate this setting in each management or member account where you want to allow IAM user and role access to console pages\.
 

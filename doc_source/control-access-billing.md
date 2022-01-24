@@ -59,7 +59,6 @@ Activating IAM access alone doesn't grant IAM users and roles the necessary perm
 
 The **Activate IAM Access** setting doesn't control access to the following pages and resources:
 + The console pages for AWS Cost Anomaly Detection, Savings Plans overview, Savings Plans inventory, Purchase Savings Plans, and Savings Plans cart
-+ The Cost Management view in the AWS Console Mobile Application
 + The Billing and Cost Management SDK APIs \(AWS Cost Explorer, AWS Budgets, and AWS Cost and Usage Reports APIs\)
 + The cost and usage widget on the AWS Console Home page
 

@@ -1,6 +1,6 @@
-## AWS Cost Management User Guide
+## AWS Billing User Guide
 
-The open source version of the AWS Billing and Cost Management docs. You can submit feedback & requests for changes by submitting issues in this repo or by making proposed changes & submitting a pull request.
+The open source version of the AWS Billing docs. You can submit feedback & requests for changes by submitting issues in this repo or by making proposed changes & submitting a pull request.
 
 ## License Summary
 

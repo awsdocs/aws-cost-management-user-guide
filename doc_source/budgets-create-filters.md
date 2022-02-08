@@ -16,7 +16,7 @@ The RI utilization and RI coverage reports allow filtering by only one service a
 + Amazon Redshift
 + Amazon Relational Database Service
 + Amazon ElastiCache
-+ Amazon Elasticsearch Service
++ Amazon OpenSearch Service
 
 
 **Linked Account**  

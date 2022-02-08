@@ -68,9 +68,6 @@ The exact match operation that's used to filter for the exact value that isn't s
 **Is absent**  
 The exact match operation that's used to exclude the tag key that matches this value\.
 
-**Is absent**  
-The exact match operation used to exclude the tag key that matches this value\.
-
 **Contains**  
 The approximate match that's used to filter for a text string containing this value\. This value is case sensitive\.
 

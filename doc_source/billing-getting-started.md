@@ -1,47 +1,50 @@
 # Getting started<a name="billing-getting-started"></a>
 
-The following steps discuss a few of the most common tasks that you're likely to perform when using the Billing and Cost Management console\. 
+This section provides information that you need to get started with using the Billing console\.
 
 **Topics**
-+ [Step 1: Review your usage](#billing-gs-review)
-+ [Step 2: Turn on reports](#step-2)
-+ [Step 3: Download or print your bill](#billing-gs-download)
-+ [Step 4: Set up budgets to monitor your account](#billing-gs-alerts)
-+ [Step 5: Get answers to questions about your bill](#billing-gs-answer)
-+ [Where do I go from here?](#whereto)
++ [Step 1: Sign up for AWS](#billing-gs-review)
++ [Step 2: Attach the required IAM policy to an IAM identity](#step-2)
++ [Step 3: Review your bills and usage](#step-3)
++ [Step 4: Download or print your bill](#billing-gs-download)
++ [Step 5: Learn more about the Billing features](#billing-gs-features)
++ [What do I do next?](#what-next)
 
-## Step 1: Review your usage<a name="billing-gs-review"></a>
+## Step 1: Sign up for AWS<a name="billing-gs-review"></a>
 
-Billing and Cost Management offers you a number of different ways to view and monitor your AWS usage\. Here's how to quickly check to see what you have used so far in the current month\.
+If you're new to AWS, create an AWS account\. For more information, see [Getting Started with AWS](http://aws.amazon.com/getting-started/)\.
 
-**To open the Billing and Cost Management console and review your usage and charges**
+## Step 2: Attach the required IAM policy to an IAM identity<a name="step-2"></a>
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\. The console opens to the **Dashboard**, where you can see your current month\-to\-date usage graphs\. 
+AWS account owners can delegate access to specific IAM users who need to view or manage the Billing data for an AWS account\. To start activating access to the Billing console and AWS Cost Management console, see [IAM tutorial: Delegate access to the billing console](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_billing.html) in the *IAM User Guide*\.
 
-1. On the navigation pane, choose the applicable option:  
-**Cost Explorer**  
- Choose [Cost Explorer](https://console.aws.amazon.com/cost-reports/home?#/custom) to track and analyze your AWS usage\. Cost Explorer is free for all accounts\. For more information about Cost Explorer, see [Analyzing your costs with Cost Explorer](ce-what-is.md)\.   
-**Budgets**  
- Choose [Budgets](https://console.aws.amazon.com/billing/home?region=us-east-1#/budgets) to manage budgets for your account\. For more information about budgets, see [Monitoring your usage and costs](monitoring-costs.md)\.   
-You can also check the status of your free tier with the provided AWS Free Tier usage alerts using AWS Budgets\. For more information about AWS Free Tier usage alerts, see [AWS Free Tier usage alerts using AWS Budgets](tracking-free-tier-usage.md#free-budget)\.   
-**Bills**  
- Choose [Bills](https://console.aws.amazon.com/billing/home?region=us-east-1#/bill) to see details about your current charges\.   
-**Orders and Invoices**  
- Choose [Orders and invoices](https://console.aws.amazon.com/billing/home?region=us-east-1#/paymenthistory/history?redirected) to see your past payment transactions\. 
+For detailed information about IAM policies specific for Billing, see [Using identity\-based policies \(IAM policies\) for AWS Billing](billing-permissions-ref.md)\.
 
-## Step 2: Turn on reports<a name="step-2"></a>
+To reference a list of Billing policy examples, see [AWS Billing policy examples](billing-example-policies.md)\.
 
- In addition to the features described in step 1, AWS Billing and Cost Management offers a set of billing reports about your AWS usage\. The reports show you which AWS services you used, the amount of time that you used them, the amount of data that you transferred in and out of storage, the average storage space that you used, and more\. 
+## Step 3: Review your bills and usage<a name="step-3"></a>
 
-To learn more about how to set up your reports, see [Creating Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/creating-cur.html) in the *Cost and Usage Report Guide*\.
+Use features in the Billing console to view your current AWS charges and AWS usage\.
 
-## Step 3: Download or print your bill<a name="billing-gs-download"></a>
+**To open the Billing console and view your usage and charges**
 
-AWS Billing and Cost Management closes the billing period at midnight on the last day of each month and then calculates your bill\. Most bills are ready for you to download by the seventh accounting day of the month\. 
+1. Sign into the AWS Management Console and open the Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+
+1. Choose **Bills** to see details about your current charges\.
+
+   Choose **Payments** to see your historical payment transactions\.
+
+   Choose **AWS Cost and Usage Reports** to see reports that break down your costs\.
+
+For more information about setting up and using AWS Cost and Usage Reports, see the [AWS Cost and Usage Reports User Guide](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.
+
+## Step 4: Download or print your bill<a name="billing-gs-download"></a>
+
+AWS Billing closes the billing period at midnight on the last day of each month and calculates your bill\. Most bills are ready for you to download by the seventh accounting day of the month\.
 
 **To download your bill**
 
-1. Sign into the AWS Management Console and open the Billing and Cost Management at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\. 
+1. Sign into the AWS Management Console and open the Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\. 
 
 1. On the navigation pane, choose **Bills**\.
 
@@ -49,23 +52,40 @@ AWS Billing and Cost Management closes the billing period at midnight on the las
 
 1. Choose **Download CSV** to download a comma\-separated variable file or choose **Print**\.
 
-## Step 4: Set up budgets to monitor your account<a name="billing-gs-alerts"></a>
+## Step 5: Learn more about the Billing features<a name="billing-gs-features"></a>
 
-If you use the AWS Free Tier, Billing and Cost Management automatically provides AWS Free Tier usage alerts through AWS Budgets\. With free tier usage alerts, AWS Budgets notifies you if you exceed any one of the free tier quotas\. It also notifies you if you're forecasted to exceed any of the free tier quotas\. AWS Budgets sends these notiﬁcations to the email address that you used to create your account\.
+Understand the features available to you in the Billing console\.
++ **Account settings**: [Managing your account](change-account-settings.md)
++ **AWS Free Tier**: [Using the AWS Free Tier](billing-free-tier.md)
++ **Payments**: [Managing your payments](manage-payments.md)
++ **Viewing your bills**: [Viewing your bill](getting-viewing-bill.md)
++ **AWS Cost Categories**: [Managing your costs with AWS Cost Categories](manage-cost-categories.md)
++ **Cost Allocation Tags**: [Using Cost Allocation Tags](cost-alloc-tags.md)
++ **AWS Purchase Orders**: [Managing your purchase orders](manage-purchaseorders.md)
++ **AWS Cost and Usage Reports**: [Using AWS Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)
++ **Using AWS CloudTrail**: [Logging Billing and Cost Management API calls with AWS CloudTrail](logging-using-cloudtrail.md)
++ **Consolidated billing**: [Consolidated billing for AWS Organizations](consolidated-billing.md)
 
-In addition to the free tier usage alerts, you can use AWS Budgets to notify you if your cost or usage exceeds or is forecasted to exceed a threshold that you set\. For more information, see [Creating a budget](budgets-create.md)
+## What do I do next?<a name="what-next"></a>
 
-By default, IAM users can't access billing information, and therefore don't have access to budgets\. If you're logged in to AWS as an IAM user, verify that the account owner granted IAM users access to AWS Budgets\. For more information about IAM restrictions, see [AWS Identity and Access Management for AWS Billing and Cost Management](security-iam.md)\.
+Now that you can view and pay your AWS bill, you're ready to use the features available to you\. The rest of this guide helps you navigate your journey using the console\.
 
-## Step 5: Get answers to questions about your bill<a name="billing-gs-answer"></a>
+### Optimize your spending using AWS Cost Management features<a name="Billing-CMG"></a>
 
-If you have questions about your bill, see the [AWS Knowledge Center](http://aws.amazon.com/premiumsupport/knowledge-center/)\. If you don't find the answer that you're looking for in the Knowledge Center, you can access account and billing support free of charge\. For more information about AWS Support, see [Getting help with AWS Billing and Cost Management](billing-get-answers.md)\. For information about closing your account, see [Closing an account](close-account.md)\.
+Use the AWS Cost Management features to budget and forecast costs so you can optimize your AWS spends and reduce your overall AWS bill\. Combine and use the Billing console resources to manage your payments, while using AWS Cost Management features to optimize your future costs\.
 
-## Where do I go from here?<a name="whereto"></a>
+For more information about AWS Cost Management features, see the [AWS Cost Management User Guide](https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html)\.
 
- Explore some of the features designed to help you dig a little deeper and streamline your accounting practices\. 
-+ [Tracking your AWS Free Tier usage](tracking-free-tier-usage.md)
-+ [https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)
-+ [Analyzing your costs with Cost Explorer](ce-what-is.md)
-+ [Managing your costs with AWS Budgets](budgets-managing-costs.md)
-+ [Consolidated billing for AWS Organizations](consolidated-billing.md)
+### Using the Billing and Cost Management API<a name="Billing-API"></a>
+
+Use the [AWS Billing and Cost Management API Reference](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/Welcome.html) to programmatically use some AWS Cost Management features\.
+
+### Learn more<a name="Billing-tutorials"></a>
+
+You can find more information about Billing features including presentations, virtual workshops, and blog posts on the marketing page [Cloud Financial Management with AWS](http://aws.amazon.com/aws-cost-management/)\.
+
+You can find virtual workshops by choosing the **Services** drop\-down and selecting your feature\.
+
+### Get help<a name="Billing-gethelp"></a>
+
+If you have questions about any Billing features, there are many resources available for you\. To learn more, see [Getting help with AWS Billing and Cost Management](billing-get-answers.md)\.

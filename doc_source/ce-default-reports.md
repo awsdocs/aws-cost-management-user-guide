@@ -43,7 +43,7 @@ The reservation reports show your Amazon EC2 coverage and utilization in either 
 
 ### RI utilization reports<a name="ce-utilization-views"></a>
 
-The RI Utilization reports show how much of your Amazon EC2, Amazon Redshift, Amazon RDS, Amazon Elasticsearch Service, and Amazon ElastiCache Reserved Instance \(RIs\) that you use, how much you saved by using RIs, how much you overspent on RIs, and your net savings from purchasing RIs during the selected time range\. This helps you to see if you have purchased too many RIs\. 
+The RI Utilization reports show how much of your Amazon EC2, Amazon Redshift, Amazon RDS, Amazon OpenSearch Service, and Amazon ElastiCache Reserved Instance \(RIs\) that you use, how much you saved by using RIs, how much you overspent on RIs, and your net savings from purchasing RIs during the selected time range\. This helps you to see if you have purchased too many RIs\. 
 
 The RI Utilization charts display the number of RI hours that your account uses, helping you to understand and monitor your combined usage \(utilization\) across all of your RIs and services\. It also shows how much you saved over On\-Demand Instance costs by purchasing a reservation, the amortized costs of your unused reservations, and your total net savings from purchasing reservations\. AWS calculates your total net savings by subtracting the costs of your unused reservations from your reservations savings\. 
 
@@ -119,7 +119,7 @@ The Daily RI Utilization chart displays your RI utilization for the previous thr
 
 ### RI coverage reports<a name="ce-coverage-views"></a>
 
-The RI Coverage reports show how many of your Amazon EC2, Amazon Redshift, Amazon RDS, Amazon Elasticsearch Service, and Amazon ElastiCache instance hours are covered by RIs, how much you spent on On\-Demand Instances, and how much you might have saved had you purchased more reservations\. This enables you to see if you have under\-purchased RIs\. 
+The RI Coverage reports show how many of your Amazon EC2, Amazon Redshift, Amazon RDS, Amazon OpenSearch Service, and Amazon ElastiCache instance hours are covered by RIs, how much you spent on On\-Demand Instances, and how much you might have saved had you purchased more reservations\. This enables you to see if you have under\-purchased RIs\. 
 
 The RI coverage charts display the percentage of instance hours that your account used that were covered by reservations, helping you to understand and monitor the combined coverage across all of your RIs\. It also shows how much you spent on On\-Demand Instances and how much you might have saved had you purchased more reservations\.
 

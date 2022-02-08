@@ -26,7 +26,7 @@ Each AWS service publishes its pricing information independently\. You can acces
 
 ### Calculating Costs for Amazon S3 Standard Storage<a name="tier-example"></a>
 
-The following table shows an example of pricing tiers \(your costs might vary\)\. 
+The following table shows an example of pricing tiers \(your costs might vary\)\. For more information, see [Amazon S3 pricing](http://aws.amazon.com/s3/pricing/)\.
 
 **Amazon S3 Pricing Tiers**
 

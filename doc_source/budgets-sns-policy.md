@@ -21,7 +21,6 @@ To create an Amazon SNS topic and grant permissions to your budget, use the Amaz
 1. In the policy text field, after ** "Statement": \[**, add the following text:
 
    ```
-       
    {
      "Sid": "E.g., AWSBudgetsSNSPublishingPermissions",
      "Effect": "Allow",
@@ -107,21 +106,22 @@ You must ensure that the key policies of the KMS keys allow the necessary permis
 1. Add the following text to the KMS key policy\.
 
    ```
-       
+   {
+     "Version": "2012-10-17",
+     "Statement": [
        {
-       "Version": "2012-10-17",
-       "Statement": [{
-           "Effect": "Allow",
-           "Principal": {
-               "Service": "budgets.amazonaws.com"
-           },
-       "Action": [
+         "Effect": "Allow",
+         "Principal": {
+           "Service": "budgets.amazonaws.com"
+         },
+         "Action": [
            "kms:GenerateDataKey*",
            "kms:Decrypt"
-           ],
-       "Resource": "*"
-       }]
+         ],
+         "Resource": "*"
        }
+     ]
+   }
    ```
 
 1. [Enable SSE for your SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-enable-encryption-for-topic.html)\.

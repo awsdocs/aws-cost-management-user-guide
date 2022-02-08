@@ -18,7 +18,7 @@ To allow IAM users to create budgets in the AWS Billing and Cost Management cons
 + Create Amazon CloudWatch alarms
 + Create Amazon Simple Notification Service \(Amazon SNS\) notifications
 
-To learn more about giving users the ability to create budgets on the AWS Budgets console, see [Allow IAM users to create budgets](billing-example-policies.md#example-billing-allow-createbudgets)\.
+To learn more about giving users the ability to create budgets on the AWS Budgets console, see [Allow IAM users to create budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/billing-example-policies.html#example-billing-allow-createbudgets) in the *AWS Cost Management user guide*\.
 
 You can also create budgets programmatically using the Budgets API\. When configuring access to the Budgets API, we recommend creating a unique IAM user for allowing programmatic access\. This helps you define more precise access controls between who in your organization has access to the AWS Budgets console and the API\. To give multiple IAM users query access to the Budgets API, we recommend creating a programmatic access IAM role for each of them\.
 
@@ -30,7 +30,7 @@ You can configure AWS Budgets to take actions on your behalf when your budget ex
 
 To get started with budget actions, you must configure the correct permissions for both your IAM users and for the AWS Budgets service\.
 
-For IAM users, you can assign permissions to manage budget actions or to retrieve information about budget actions\. For the list of permissions available, see the `budgets:` permissions in [Billing and Cost Management actions policies](billing-permissions-ref.md#user-permissions)\.
+For IAM users, you can assign permissions to manage budget actions or to retrieve information about budget actions\. For the list of permissions available, see the `budgets:` permissions in [AWS Billing actions policies](billing-permissions-ref.md#user-permissions)\.
 
 **Note**  
 To view an account's budget actions in the console, IAM users must have permission to `budgets:DescribeBudgetActionsForAccount`\. Without this permission, the **Actions** column doesn't load and the console returns an error message\.
@@ -45,11 +45,6 @@ If you don't have proper permissions configured and assigned for the user and fo
 
 For details about managed policies, see [Managed policies](billing-permissions-ref.md#managed-policies)\.
 
-<<<<<<< HEAD
-=======
-To learn more about AWS Budgets actions, see the [Configuring AWS Budgets actions](budgets-controls.md) section\.
-
->>>>>>> 1c5a2625c261959b8ad1810f08be25e73efa18ed
 ### Using Amazon EC2 Auto Scaling<a name="budgets-best-practices-actions-auto"></a>
 
 If a budget action is used to stop an Amazon EC2 instance in an Auto Scaling group, Amazon EC2 Auto Scaling restarts the instance, or launches new instances to replace the stopped instance\. Therefore, budget actions is not effective to control cost in this use case\.

@@ -12,7 +12,7 @@ Some sections can only be edited by the AWS account root user\. If you do not se
 + [Adding, changing, or removing alternate contacts](#manage-account-payment-alternate-contacts)
 + [Enabling and disabling regions](#manage-account-payment-enable-disable-regions)
 + [Updating and deleting tax registration numbers](#manage-account-payment-update-delete-tax-numbers)
-+ [Enabling tax setting inheritance](#manage-account-tax-linked-accounts)
++ [Turning on tax setting inheritance](#manage-account-tax-linked-accounts)
 
 ## Editing Your Account name, root user password, and root user email address<a name="manage-account-payment-edit-user-name"></a>
 
@@ -65,7 +65,7 @@ To change the currency that you use to pay your bill, for example, from Danish k
 
 ## Adding, changing, or removing alternate contacts<a name="manage-account-payment-alternate-contacts"></a>
 
-Alternate contacts enable AWS to contact another person about issues with your account, even if you're unavailable\. The alternate contact doesn't have to be a specific person\. You could instead add an email distribution list if you have a team that is responsible for managing billing, operations and security related issues\. To add, change, or delete alternate contacts for your account, perform the following procedure\.<a name="account-contacts"></a>
+Alternate contacts allows AWS to contact another person about issues with your account, even if you're unavailable\. The alternate contact doesn't have to be a specific person\. You could instead add an email distribution list if you have a team that is responsible for managing billing, operations and security related issues\. To add, change, or delete alternate contacts for your account, perform the following procedure\.<a name="account-contacts"></a>
 
 **To add, update, or remove alternate contacts**
 
@@ -88,36 +88,36 @@ We would reach out to each contact type in the following scenarios:
 
 ## Enabling and disabling regions<a name="manage-account-payment-enable-disable-regions"></a>
 
-AWS originally enabled all new Regions by default, which enabled your users to create resources in any Region\. Now when AWS adds a Region, the new Region is disabled by default\. If you want your users to be able to create resources in a new Region, you enable the Region\.
+AWS originally activates all new Regions by default, which allows your users to create resources in any Region\. Now when AWS adds a Region, the new Region is deactivated by default\. If you want your users to be able to create resources in a new Region, you activate the Region\.
 
-Note the following about enabling and disabling Regions:
+Note the following about activating and deactivating Regions:
 
 **You can use IAM permissions to control access to Regions**  
-IAM added three new permissions, which let you control which users can enable, disable, and list Regions\. For more information, see [Billing and Cost Management actions policies](billing-permissions-ref.md#user-permissions)\.
+IAM added three new permissions, which let you control which users can activate, deactivate, and list Regions\. For more information, see [AWS Billing actions policies](billing-permissions-ref.md#user-permissions)\.
 
-**Enabling a Region is free**  
-There is no charge to enable a Region\. You're only charged for resources that you create in the new Region\.
+**Activating a Region is free**  
+There is no charge to activate a Region\. You're only charged for resources that you create in the new Region\.
 
-**Disabling a Region disables access to resources in the Region**  
-If you disable a Region that still includes AWS resources, such as Amazon EC2 instances, you can't access the resources in that Region\. For example, you can't use the AWS Management Console or any programmatic method to view or change the configuration of any EC2 instances in that Region\.
+**Deactivating a Region removes access to resources in the Region**  
+If you deactivate a Region that still includes AWS resources, such as Amazon EC2 instances, you can't access the resources in that Region\. For example, you can't use the AWS Management Console or any programmatic method to view or change the configuration of any EC2 instances in that Region\.
 
-**Charges continue if you disable a Region**  
-If you disable a Region that still includes AWS resources, charges for those resources \(if any\) continue to accrue at the standard rate\. For example, if you disable a Region that contains Amazon EC2 instances, you still have to pay the charges for those instances even though the instances are inaccessible\.
+**Charges continue if you deactivate a Region**  
+If you deactivate a Region that still includes AWS resources, charges for those resources \(if any\) continue to accrue at the standard rate\. For example, if you deactivate a Region that contains Amazon EC2 instances, you still have to pay the charges for those instances even though the instances are inaccessible\.
 
-**Disabling a Region isn't always immediately visible**  
-If you disable a Region, the change takes time to become visible in all possible endpoints\. Disabling a Region can take between a few seconds to minutes to take effect\. 
+**Deactivate a Region isn't always immediately visible**  
+If you deactivate a Region, the change takes time to become visible in all possible endpoints\. Deactivating a Region can take between a few seconds to minutes to take effect\. 
 
-**Existing Regions are enabled by default**  
-The original Regions \(the Regions that existed before we added the ability to enable and disable Regions\) are all enabled by default and can't be disabled\.
+**Existing Regions are active by default**  
+The original Regions \(the Regions that existed before we added the ability to activate and deactivate Regions\) are all activated by default and can't be deactivated\.
 
-**Enabling a Region takes a few minutes for most accounts**  
-Enabling a Region generally takes effect in a few minutes, although it can take longer for some accounts\. If enabling a Region takes longer than nine hours, sign in to the AWS Support Center and open a case with AWS Support\.
+**Activating a Region takes a few minutes for most accounts**  
+Activating a Region generally takes effect in a few minutes, although it can take longer for some accounts\. If activating a Region takes longer than nine hours, sign in to the AWS Support Center and open a case with AWS Support\.
 
 Perform the applicable procedure:
-+ [To enable a Region](#enable-region)
-+ [To disable a Region](#disable-region)<a name="enable-region"></a>
++ [To activate a Region](#enable-region)
++ [To deactivate a Region](#disable-region)<a name="enable-region"></a>
 
-**To enable a Region**
+**To activate a Region**
 
 
 
@@ -125,33 +125,29 @@ Perform the applicable procedure:
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
 
-1. Under **AWS Regions**, next to the Region to enable, choose **Enable**\.
+1. Under **AWS Regions**, next to the Region to activate, choose **Enable**\.
 
-   Older Regions are enabled by default\.
+   Older Regions are activated by default\.
 
 1. In the dialog box, choose **Enable region**\.
 
 For more information about enabling a Region, including the permissions required, see [Managing AWS Regions](https://docs.aws.amazon.com/general/latest/gr/rande-manage.html)\.<a name="disable-region"></a>
 
-**To disable a Region**
-
-You can disable some Regions on your **My Account** page\.
+**To deactivate a Region**
 
 1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
 
-1. Under **AWS Regions**, next to the Region to disable, choose **Disable**\.
+1. Under **AWS Regions**, next to the Region to deactivate, choose **Disable**\.
 
-   Not all Regions can be disabled\.
+   Not all Regions can be deactivated\.
 
 1. In the dialog box, for **To confirm disabling in this region, ** enter **disable** and choose **Disable region**\.
 
 ## Updating and deleting tax registration numbers<a name="manage-account-payment-update-delete-tax-numbers"></a>
 
-To update or delete one or more tax registration numbers, perform the applicable procedure:
-+ [To update tax registration numbers](#edit-tax)
-+ [To delete tax registration numbers](#remove-tax)<a name="edit-tax"></a>
+Use the following steps to update or delete one or more tax registration numbers\.<a name="edit-tax"></a>
 
 **To update tax registration numbers**
 
@@ -181,12 +177,13 @@ You can remove one or more tax registration numbers\.
 
 1. In the **Delete tax registration** dialog box, choose **Delete**\.
 
-## Enabling tax setting inheritance<a name="manage-account-tax-linked-accounts"></a>
+## Turning on tax setting inheritance<a name="manage-account-tax-linked-accounts"></a>
 
-You can use your tax registration information with your linked accounts by enabling your **Tax Settings Inheritance**\. After you enable it, your tax registration information is added to your other AWS Organizations accounts, saving you the effort of registering redundant information\. Tax invoices are processed with the consistent tax information, and your usage from member accounts will consolidate to a single tax invoice\.
+You can use your tax registration information with your member accounts by turning on your **Tax Settings Inheritance**\. After you activate it, your tax registration information is added to your other AWS Organizations accounts, saving you the effort of registering redundant information\. Tax invoices are processed with the consistent tax information, and your usage from member accounts will consolidate to a single tax invoice\.
 
 **Note**  
-Tax inheritance settings are only available to accounts after a member account is added\.
+Tax inheritance settings are only available to accounts after a member account is added\.  
+If you turn off tax inheritance, the member accounts revert to the account's original TRN setting\. If there was no TRN originally set for the account, no TRN will be assigned\.
 
 Tax registration information includes:
 + Business legal name
@@ -194,7 +191,7 @@ Tax registration information includes:
 + Tax registration number
 + Special exemptions \(does not apply for US sales tax exemptions\)<a name="enable-tax-inheritance"></a>
 
-**To enable tax setting inheritance**
+**To turn on tax setting inheritance**
 
 
 

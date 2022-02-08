@@ -9,7 +9,7 @@ This topic provides details about how to control access in Cost Explorer\.
 
 For information about managing access to Billing and Cost Management pages, see [Overview of managing access permissions](control-access-billing.md)\. 
 
-To reference Cost Explorer IAM policies, see [Using identity\-based policies \(IAM policies\) for Billing and Cost Management](billing-permissions-ref.md)\.
+To reference Cost Explorer IAM policies, see [Using identity\-based policies \(IAM policies\) for AWS Billing](billing-permissions-ref.md)\.
 
 For more information about consolidated billing, see [Consolidated billing for AWS Organizations](consolidated-billing.md)\.
 

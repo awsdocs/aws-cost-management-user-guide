@@ -78,10 +78,10 @@ The `createdBy` tag is applied only to the following services and resources afte
 |    |  `CreateClusterSnapshot`  |  Snapshot  | 
 |    |  `CreateClusterSubnetGroup`  |  SubnetGroup  | 
 |    |  `CreateCluster`  |  Cluster  | 
-| Amazon Route 53 \(Route 53\) |  `CreateHealthCheck`  |  HealthCheck  | 
+| Amazon Route 53 \(Route 53\) |  `CreateHealthCheck`  |  HealthCheck  | 
 |    |  `CreatedHostedZone`  |  HostedZone  | 
 | Amazon Simple Storage Service \(Amazon S3\) |  `CreateBucket`  |  Bucket  | 
-| AWS Storage Gateway \(AWS Storage Gateway\) |  `ActivateGateway`  |  Gateway  | 
+| AWS Storage Gateway \(Storage Gateway\) |  `ActivateGateway`  |  Gateway  | 
 
 **Note**  
 The `CreateDBSnapshot` tag isn't applied to the snapshot backup storage\.

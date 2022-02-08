@@ -1,4 +1,4 @@
-# AWS Billing and Cost Management User Guide
+# AWS Billing User Guide
 
 -----
 *****Copyright &copy; Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
@@ -14,7 +14,7 @@ Amazon's trademarks and trade dress may not be used in
 
 -----
 ## Contents
-+ [What is AWS Billing and Cost Management?](billing-what-is.md)
++ [What is AWS Billing?](billing-what-is.md)
 + [Getting help with AWS Billing and Cost Management](billing-get-answers.md)
 + [Getting started](billing-getting-started.md)
 + [Managing your account](change-account-settings.md)
@@ -40,6 +40,10 @@ Amazon's trademarks and trade dress may not be used in
       + [Managing your AWS Europe credit card payment verifications](manage-emea-cc-verification.md)
       + [Managing your SEPA direct debit payment methods](manage-debit-emea.md)
    + [Managing your Advance Pay](manage-advancepay.md)
+   + [Managing your payment profiles](manage-paymentprofiles.md)
+      + [Creating your payment profiles](manage-paymentprofiles-setup.md)
+      + [Editing your payment profiles](manage-paymentprofiles-edit.md)
+      + [Deleting your payment profiles](manage-paymentprofiles-delete.md)
 + [Viewing your bill](getting-viewing-bill.md)
    + [Viewing your monthly charges](invoice.md)
    + [Getting an invoice emailed to you](emailed-invoice.md)
@@ -51,8 +55,9 @@ Amazon's trademarks and trade dress may not be used in
    + [Viewing your purchase orders](viewing-po.md)
    + [Reading your purchase order details page](reading-po-details.md)
    + [Enabling purchase order notifications](notify-po-details.md)
++ [Managing your costs with AWS Cost and Usage Reports](monitoring-cur.md)
 + [Monitoring your usage and costs](monitoring-costs.md)
-   + [Reading your dashboard graphs](view-billing-dashboard.md)
+   + [Using the AWS Billing console dashboard](view-billing-dashboard.md)
    + [Analyzing your costs with Cost Explorer](ce-what-is.md)
       + [Enabling Cost Explorer](ce-enable.md)
          + [Controlling access for Cost Explorer](ce-access.md)
@@ -138,10 +143,10 @@ Amazon's trademarks and trade dress may not be used in
    + [AWS Support charges for accounts in an AWS Organizations](consolidatedbilling-support.md)
 + [Security in AWS Billing and Cost Management](security.md)
    + [Data protection in AWS Billing and Cost Management](data-protection.md)
-   + [AWS Identity and Access Management for AWS Billing and Cost Management](security-iam.md)
+   + [AWS Identity and Access Management for AWS Billing](security-iam.md)
       + [Overview of managing access permissions](control-access-billing.md)
-      + [Using identity-based policies (IAM policies) for Billing and Cost Management](billing-permissions-ref.md)
-      + [Billing and Cost Management policy examples](billing-example-policies.md)
+      + [Using identity-based policies (IAM policies) for AWS Billing](billing-permissions-ref.md)
+      + [AWS Billing policy examples](billing-example-policies.md)
    + [Logging and monitoring in AWS Billing and Cost Management](billing-security-logging.md)
    + [Compliance validation for AWS Billing and Cost Management](Billing-compliance.md)
    + [Resilience in AWS Billing and Cost Management](disaster-recovery-resiliency.md)

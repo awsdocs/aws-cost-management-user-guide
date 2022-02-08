@@ -1,11 +1,11 @@
 # Finding prices in an offer file<a name="procedures"></a>
 
-The Price List Service API provides prices for all AWS products for informational purposes, including On\-Demand and Reserved Instance pricing\.
+The AWS Price List Bulk API provides prices for all AWS products for informational purposes, including On\-Demand and Reserved Instance pricing\.
 
 You can use the offer files to find the prices and terms for a specific product\. For example, you can find a list of Amazon EC2 instance prices\.
 
 **Note**  
-The Price List Service API is not a comprehensive source for limited period Free Tiers, such as AWS Free Tier pricing\. For complete information on Free Tier prices, see [AWS Free Tier](https://aws.amazon.com/free/)\.
+The AWS Price List Bulk API is not a comprehensive source for limited period Free Tiers, such as AWS Free Tier pricing\. For complete information on Free Tier prices, see [AWS Free Tier](https://aws.amazon.com/free/)\.
 
 Use the following procedures to find prices for the products you're interested in\.
 
@@ -73,7 +73,7 @@ The following procedure shows how to find tiered prices for services \(for examp
 
 ## Finding tiered prices for services with free tier<a name="tiered-price-free"></a>
 
-The following procedure shows how to find AWS services that publish free tier prices in the Price List Service API \(for example, AWS Lambda\)\.
+The following procedure shows how to find AWS services that publish free tier prices in the AWS Price List Bulk API \(for example, AWS Lambda\)\.
 
 All Free Tier prices are subject to the terms documented in [AWS Free Tier](https://aws.amazon.com/free/)\.<a name="Lambda-csv-procedure"></a>
 

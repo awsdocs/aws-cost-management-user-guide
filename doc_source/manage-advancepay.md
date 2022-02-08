@@ -1,7 +1,7 @@
 # Managing your Advance Pay<a name="manage-advancepay"></a>
 
 ****  
-**Advance pay is in public preview for AWS Billing and Cost Management and is subject to change\. This feature is available for a select group of customers\. Your use of advance pay is subject to the Preview Service Participation terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 1\.10\)\.**
+**Advance pay is in public preview for AWS Billing and Cost Management and is subject to change\. This feature is available for a select group of customers\. Your use of advance pay is subject to the Betas and Previews terms of the [AWS Service Terms](https://aws.amazon.com/service-terms/) \(Section 2\)\.**
 
 Use *Advance Pay* to pay for your AWS usage in advance\. AWS uses the funds to pay for your invoices automatically when they are due\.
 

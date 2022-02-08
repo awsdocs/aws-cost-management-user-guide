@@ -1,66 +1,65 @@
-# What is AWS Billing and Cost Management?<a name="billing-what-is"></a>
+# What is AWS Billing?<a name="billing-what-is"></a>
 
-AWS Billing and Cost Management is the service that you use to pay your AWS bill, monitor your usage, and analyze and control your costs\. 
+Welcome to the Billing User Guide\.
 
-AWS automatically charges the credit card that you provided when you signed up for a new account with AWS\. Charges appear on your monthly credit card bill\. You can view or update your credit card information, including designating a different credit card for AWS to charge, on the [https://console.aws.amazon.com/billing/home?#/paymentmethods](https://console.aws.amazon.com/billing/home?#/paymentmethods) page in the Billing and Cost Management console\. AWS Billing and Cost Management provides useful tools to help you gather information related to your cost and usage, analyze your cost drivers and usage trends, and take action to budget your spending\.
+The AWS Billing console contains features to organize and report your AWS cost and usage based on user\-defined methods, and manage your billing and control costs\.
 
-**Topics**
-+ [Are you a first\-time billing user?](#billingresources)
-+ [Features in Billing and Cost Management](#billingfeatures)
-+ [Related services](#relatedservices)
+The Billing console works closely with the AWS Cost Management console so you can holistically manage your costs\. The Billing console contains resources to manage your ongoing payments, while the AWS Cost Management console resources are designed to help you optimize your future costs\. For information about AWS resources to optimize your costs, see the [https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html](https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html)\.
 
-## Are you a first\-time billing user?<a name="billingresources"></a>
+AWS automatically charges the credit card that you provided when you signed up for a new account with AWS\. Charges appear on your monthly credit card bill\. You can view or update your credit card information, including designating a different credit card for AWS to charge, on the [https://console.aws.amazon.com/billing/home?#/paymentmethods](https://console.aws.amazon.com/billing/home?#/paymentmethods) page in the Billing console\. Billing provides useful tools to help you gather information related to your cost and usage, analyze your cost drivers and usage trends, and take action to budget your spending\.
 
-If you're new to AWS, we recommend that you review [Getting Started with AWS](http://docs.aws.amazon.com/gettingstarted/latest/awsgsg-intro/getstarted.html)\. This guide has useful general information about using AWS and managing your account\. 
+With the AWS Cost Management console and the Billing console, you can do the following tasks:
 
-If you're new to the AWS Billing and Cost Management service, we recommend that you read the following:
 
-1. [Getting started](billing-getting-started.md) \- Shows you how to use the [Billing and Cost Management](https://console.aws.amazon.com/billing/home) console\. It also shows the feature options that you can use to monitor your AWS usage\.
+| Use cases | Description | AWS Cost Management feature names | Billing console feature names | 
+| --- | --- | --- | --- | 
+| Organize | Construct your cost allocation and governance foundation with your own tagging strategy\. | \- | [AWS Cost Categories](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-cost-categories.html) [AWS Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) | 
+|  Report  | Raise awareness and accountability of your cloud spend with the detailed, allocable cost data\. |  [AWS Cost Explorer](ce-what-is.md)  | [AWS Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html) | 
+| Access | Track billing information across the organization in a consolidated view\. | \- | [AWS Consolidated Billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html) [AWS Purchase Order Management](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-purchaseorders.html) [AWS Credits](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/useconsolidatedbilling-credits.html) | 
+|  Control  | Establish effective governance mechanisms with the right guardrails in place\. |  [AWS Cost Anomaly Detection](manage-ad.md)  | \- | 
+| Forecast | Estimate your resource utilization and spend with forecast dashboards that you create\. | [AWS Cost Explorer](ce-what-is.md) [AWS Budgets](budgets-managing-costs.md) | \- | 
+| Budget | Keep your spend in check with custom budget threshold and auto alert notification\. | [AWS Budgets](budgets-managing-costs.md) [AWS Budgets Actions](budgets-controls.md) | \- | 
+| Purchase | Leverage free trials and programmatic discounts based on your workload pattern and needs\. |  [Savings Plans](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html) [AWS Reserved Instances](ri-recommendations.md)  | [AWS Free Tier](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-free-tier.html) | 
+| Rightsize | Align your service allocation size to your actual workload demand\. |  [Rightsizing Recommendations](ri-recommendations.md)  | \- | 
+| Inspect | Stay up\-to\-date with your resource deployment and cost optimization opportunities\. |  [AWS Cost Explorer](ce-what-is.md)  | \- | 
 
-1. [Using the AWS Free Tier](billing-free-tier.md) \- Describes how you can use the AWS Free Tier for your first 12 months after signing up\.
+## Features of Billing<a name="billingfeatures"></a>
 
-1. [Managing your payments](manage-payments.md) \- Shows you how to set up your payment methods on your AWS account\.
+**Manage your account**  
+Use the AWS Management Console and Billing console to manage your account settings\. This includes specifying your default currency, editing alternate contacts, adding or removing Regions, updating your tax information, and closing your AWS account\. The [Closing an account](close-account.md) section calls out considerations such as terminating resources before you proceed with closing an account, so you aren't charged for unused services\.  
+**Documentation:** [Managing your account](change-account-settings.md)
 
-1. [Actions](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_Operations.html) \- Describes the Billing and Cost Management API operations\.
+**View your bill**  
+You can use the Billing console to view your past bill details or your estimated charges for your current month at any time\. This section outlines how you can view your bills, download PDF copies of your charges, set up monthly emails to receive your invoices, and how you can utilize other resources like [AWS Cost and Usage Reports](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.  
+**Documentation:** [Viewing your bill](getting-viewing-bill.md)
 
-1. [Getting help](billing-get-answers.md) \- Shows you how to get help for your tools and find answers to questions about your bill\. It includes the steps you can take to contact AWS Support about your AWS charges\.
-
-## Features in Billing and Cost Management<a name="billingfeatures"></a>
-
-The Billing and Cost Management service provides features that you can use to do the following:
-+ Estimate and plan your AWS costs
-+ Receive alerts if your costs exceed a threshold that you set
-+ Assess your biggest investments in AWS resources
-+ Simplify your accounting if you work with multiple AWS accounts
-
-**Analyzing Costs with Cost Explorer**  
-The AWS Billing and Cost Management console includes the no\-cost [Cost Explorer](ce-what-is.md) tool for viewing your AWS cost data as a graph\. With Cost Explorer, you can filter graphs by values such as API operation, Availability Zone, AWS service, custom cost allocation tag, Amazon EC2 instance type, purchase option, AWS Region, usage type, usage type group, and more\. If you use consolidated billing, you can also filter by member account\. In addition, you can see a forecast of future costs based on your historical cost data\.
-
-**AWS Budgets**  
-You can use AWS Budgets to track your AWS usage and costs\. Budgets use the cost visualization provided by Cost Explorer to show you the status of your budgets\. This provides forecasts of your estimated costs and tracks your AWS usage, including your free tier usage\. You can also use budgets to create Amazon Simple Notification Service \(Amazon SNS\) notifications that tell you when you go over your budgeted amounts, or when your estimated costs exceed your budgets\.  
-For more information about budgets, see [Managing your costs with AWS Budgets](budgets-managing-costs.md)\.
-
-****  
-You can choose to have AWS publish billing reports to an Amazon Simple Storage Service \(Amazon S3\) bucket that you own\. You can receive reports that break down your costs by the hour or month, by product or product resource, or by tags that you define yourself\.  
-For more details about , see the [ User Guide](https://docs.aws.amazon.com/cur/latest/userguide/what-is-cur.html)\.
-
-**Manage Your payments**  
-You can view your estimated bills and pay your AWS invoices in your preferred currency by setting a payment currency\.  
-AWS converts your bill to your preferred currency after your bill is finalized\. Until then, all of the preferred currency amounts shown in the console are estimated in USD\. AWS guarantees your exchange rate, so that refunds use the same exchange rate as your original transaction\.  
-+ AWS Marketplace invoices are not eligible for this service and are processed in USD\.
+**Managing your payments**  
+You can view your estimated bills and pay your AWS invoices in your preferred currency by setting a payment currency\. AWS converts your bill to your preferred currency after your bill is finalized\. Until then, all of the preferred currency amounts shown in the console are estimated in US dollar\. AWS guarantees your exchange rate, so that refunds use the same exchange rate as your original transaction\.  
++ AWS Marketplace invoices are not eligible for this service and are processed in US dollar\.
 + This service is available only if your default payment method is Visa or MasterCard\.
-+ The rates change daily\. The rate applied to your invoice is the current rate when your invoice is created\. You can check the current rate on the Billing and Cost Management console\.
-+ You can switch back to USD\.
++ The rates change daily\. The rate applied to your invoice is the current rate when your invoice is created\. You can check the current rate on the Billing console\.
 + Currency conversion is provided by Amazon Services LLC\.
-For more details about your payment methods, see [Managing your payments](manage-payments.md)\.
+**Documentation:** [Managing your payments](manage-payments.md)\.
+
+**AWS Purchase Order Management**  
+Manage your AWS purchase orders in a self\-service manner by centralizing the management of multiple purchase orders, reduce overhead costs, and increase the accuracy and efficiency in you procure\-to\-pay process\. Use the Billing console to manage your purchase orders and configure how they reflect on your invoices\. In this chapter, learn how to add, edit, view details, and set up notifications regarding your purchase orders in the console\.  
+**Documentation:** [Managing your purchase orders](manage-purchaseorders.md)
+
+**AWS Cost Categories**  
+Manage your AWS costs with AWS Cost Categories by mapping your cost and usage into meaningful categories\. This section defines terms used in the console for supported dimensions, operations, rule types, and status\. The section also provides more information on how you can create, edit, delete, and split the charges within cost categories\.  
+**Documentation:** [Managing your costs with AWS Cost Categories](manage-cost-categories.md)
+
+**Consolidate billing for AWS Organizations**  
+Use the consolidated billing feature for AWS Organizations to combine your billing for multiple AWS accounts\. This chapter outlines the consolidated billing process, differences for Amazon Internet Services Pvt\. Ltd accounts, and details for discounts\.  
+**Documentation:** [Consolidated billing for AWS Organizations](consolidated-billing.md)
 
 ## Related services<a name="relatedservices"></a>
 
 **IAM**  
-The Billing and Cost Management service is tightly integrated with AWS Identity and Access Management \(IAM\)\. You can use IAM with Billing and Cost Management to ensure that other people who work in your account have only as much access as they need to get their job done\.  
+The Billing service and AWS Cost Management service is tightly integrated with AWS Identity and Access Management \(IAM\)\. You can use IAM with Billing to ensure that other people who work in your account have as much access as they need to get their jobs done\.  
 You also use IAM to control access to all of your AWS resources, not just your billing information\. It's important that you familiarize yourself with the basic concepts and best practices of IAM before you get too far along with setting up the structure of your AWS account\.  
 For details about how to work with IAM and why it's important to do so, see [IAM Concepts](https://docs.aws.amazon.com/IAM/latest/UserGuide/IAM_Concepts.html) and [IAM Best Practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/IAMBestPractices.html) in the *IAM User Guide*\. 
 
 **AWS Organizations \(Consolidated Billing\)**  
 AWS products and services are designed to accommodate every size of company, from small start\-ups to enterprises\. If your company is large or likely to grow, you might want to set up multiple AWS accounts that reflect your company's structure\. For example, you can have one account for the entire company and accounts for each employee, or an account for the entire company with IAM users for each employee\. You can have an account for the entire company, accounts for each department or team within the company, and accounts for each employee\.  
-If you create multiple accounts, you can use the Consolidated Billing feature of AWS Organizations to combine all member accounts under a management account, and receive a single bill\. For more information, see [Consolidated billing for AWS Organizations](consolidated-billing.md)\.
+If you create multiple accounts, you can use the consolidated billing feature of AWS Organizations to combine all member accounts under a management account, and receive a single bill\. For more information, see [Consolidated billing for AWS Organizations](consolidated-billing.md)\.

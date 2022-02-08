@@ -1,6 +1,6 @@
 # Using the bulk API<a name="using-ppslong"></a>
 
-The AWS Price List API is actually a URL that provides up\-to\-date pricing information on the current AWS products and services\. To access pricing information using the AWS Price List API, download the offer file:
+The AWS Price List Bulk API is actually a URL that provides up\-to\-date pricing information on the current AWS products and services\. To access pricing information using the bulk API, download the offer file:
 + **Offer file** – A JSON or CSV file that lists the products and prices for either a single AWS service in all Regions or a single AWS service in a specific Region\. For more information, see [Downloading an offer file](#download-offers)\.
 
 To find a list of all available offer files, download the offer index file:
@@ -9,7 +9,7 @@ To find a list of all available offer files, download the offer index file:
 Offer files don't include information about expiring free tier offers or Amazon EC2 Spot Instances\. 
 
 **Note**  
-The AWS Price List API provides pricing details for your information only\. If there is a discrepancy between the offer file and a service pricing page, AWS charges the prices that are listed on the service pricing page\. For more information about AWS service pricing, see [Cloud Services Pricing](https://aws.amazon.com/pricing/services/)\.
+The AWS Price List Bulk API provides pricing details for your information only\. If there is a discrepancy between the offer file and a service pricing page, AWS charges the prices that are listed on the service pricing page\. For more information about AWS service pricing, see [Cloud Services Pricing](https://aws.amazon.com/pricing/services/)\.
 
 **Topics**
 + [Downloading an offer index file](#download-the-offer-index)

@@ -5,7 +5,7 @@ You can use purchase orders and their line item attributes to flexibly define a 
 You can configure separate purchase orders for different time periods by choosing distinct effective and expiration months\.
 
 **Note**  
-To be matched with a line item, the invoice's creation date must be within the line item's start and end month, and it must also match the line item type\.
+To be matched with a line item, the invoice's billing period must be within the line item's start and end month, and it must also match the line item type\.
 
 **Example 1**  
 If you use monthly purchase orders, you can define one purchase order for each month by selecting the same effective and expiration month for each purchase order\. The purchase order will only apply to invoices that are generated during that month\.   

@@ -19,7 +19,7 @@ Before closing your AWS account, consider the following:
 + [Existing content and services still in use](#existing-content)
 + [Your payment method](#closure-payment)
 + [On\-Demand charges](#on-demand-closure)
-+ [Domains registered with Amazon Route 53](#closure-domains)
++ [Domains registered with Amazon Route 53](#closure-domains)
 + [Charges if you reopen your AWS account](#reopen-charges)
 + [Closing a member account](#closing-member-account)
 + [Cross\-account access to the account you’re closing](#cross-access)
@@ -45,7 +45,9 @@ Your access to the AWS Management Console for the closed AWS account is restrict
 
 ### Existing content and services still in use<a name="existing-content"></a>
 
-After the post\-closure period, any remaining content in your AWS account is deleted, and services that are still in use are terminated\. Before closing your account, you should retrieve all content from the account\. For instructions on how to retrieve your content, see the documentation for that service\. For more information about the post\-closure period, see [Accessing your AWS account after closure](#accessing-after-closure)\.
+Before you close your AWS account, we recommend that you retrieve the content that you want to keep and delete the remaining resources\. For instructions on how to retrieve data and delete resources, see the documentation for that service\.
+
+After the post\-closure period, any remaining content in your AWS account is deleted, and services that are still in use are terminated\. For more information about the post\-closure period, see [Accessing your AWS account after closure](#accessing-after-closure)\.
 
 ### Your payment method<a name="closure-payment"></a>
 
@@ -63,12 +65,12 @@ During the post\-closure period, billing for On\-Demand charges stops\. However,
 **Important**  
 If you don't terminate your resources, you will continue to generate costs\.
 
-### Domains registered with Amazon Route 53<a name="closure-domains"></a>
+### Domains registered with Amazon Route 53<a name="closure-domains"></a>
 
-Domains that are registered with Route 53 are not deleted automatically\. When you're closing your AWS account, you have three options:
-+ You can disable automatic renewal, and the domains are deleted when the registration period expires\. For more information, see [Enabling or Disabling Automatic Renewal for a Domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-enable-disable-auto-renewal.html) in the *Amazon Route 53 Developer Guide*\.
+Domains that are registered with Route 53 are not deleted automatically\. When you're closing your AWS account, you have three options:
++ You can disable automatic renewal, and the domains are deleted when the registration period expires\. For more information, see [Enabling or Disabling Automatic Renewal for a Domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-enable-disable-auto-renewal.html) in the *Amazon Route 53 Developer Guide*\.
 + You can transfer the domains to another AWS account\. For more information, see [Transferring a Domain to a Different AWS account](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-between-aws-accounts.html)\.
-+ You can transfer the domains to another domain registrar\. For more information, see [Transferring a Domain from Route 53 to Another Registrar](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-from-route-53.html)\.
++ You can transfer the domains to another domain registrar\. For more information, see [Transferring a Domain from Route 53 to Another Registrar](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-transfer-from-route-53.html)\.
 
 If you already closed the account, you can open a case with AWS Support to get help with disabling automatic renewal or transferring your domains\. For more information, see [Contacting AWS Support About Domain Registration Issues](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-contact-support.html)\. There is no charge to open a case for domain registration issues\.
 

@@ -1,12 +1,12 @@
 # Overview of managing access permissions<a name="control-access-billing"></a>
 
-AWS Billing and Cost Management integrates with the AWS Identity and Access Management \(IAM\) service so that you can control who in your organization has access to specific pages on the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing/)\. You can control access to invoices and detailed information about charges and account activity, budgets, payment methods, and credits\.
+AWS Billing integrates with the AWS Identity and Access Management \(IAM\) service so that you can control who in your organization has access to specific pages on the [AWS Billing console](https://console.aws.amazon.com/billing/)\. You can control access to invoices and detailed information about charges and account activity, budgets, payment methods, and credits\.
 
-For instructions on how to activate access to the Billing and Cost Management Console, see [Tutorial: Delegate Access to the Billing Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_billing.html) in the *IAM User Guide*\.
+For instructions on how to activate access to the AWS Billing console, see [Tutorial: Delegate Access to the Billing Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_billing.html) in the *IAM User Guide*\.
 
 **Topics**
 + [Granting access to your billing information and tools](#grantaccess)
-+ [Activating access to the Billing and Cost Management console](#ControllingAccessWebsite-Activate)
++ [Activating access to the AWS Billing console](#ControllingAccessWebsite-Activate)
 
 ## Granting access to your billing information and tools<a name="grantaccess"></a>
 
@@ -14,15 +14,15 @@ The AWS account owner can access billing information and tools by signing in to 
 
 Instead, you should create a special user identity that's called an *IAM user* for anyone who might need access to the account\. This approach provides individual sign\-in information for each user, and you can grant each user only the permissions they need\. More specifically, you can grant some users limited access to some of your billing information and tools\. Then, grant others complete access to all of the information and tools\. We also recommend that the account owner also access the account by using an IAM user identity\.
 
-By default, IAM users don't have access to the [AWS Billing and Cost Management console](https://console.aws.amazon.com/billing/)\. You or your account administrator must grant users access\. You can do this by activating IAM user access to the Billing and Cost Management console and attaching an IAM policy to your users\. This can be either managed or custom\. Then, you must activate IAM user access for IAM policies to take effect\. You only need to activate IAM user access once\.
+By default, IAM users don't have access to the [AWS Billing console](https://console.aws.amazon.com/billing/)\. You or your account administrator must grant users access\. You can do this by activating IAM user access to the Billing console and attaching an IAM policy to your users\. This can be either managed or custom\. Then, you must activate IAM user access for IAM policies to take effect\. You only need to activate IAM user access once\.
 
 **Note**  
 IAM is a feature of your AWS account\. If you're already signed up for a product that's integrated with IAM, you don't need to do anything else to sign up for IAM\. Moreover, you're not charged for using IAM\.  
 Permissions for Cost Explorer apply to all accounts and member accounts, regardless of the IAM policies\. For more information about Cost Explorer access, see [Controlling access for Cost Explorer](ce-access.md)\.
 
-## Activating access to the Billing and Cost Management console<a name="ControllingAccessWebsite-Activate"></a>
+## Activating access to the AWS Billing console<a name="ControllingAccessWebsite-Activate"></a>
 
-By default, IAM users and roles within an AWS account can't access the Billing and Cost Management console pages\. This is true even if the IAM user or role has IAM policies that grant access to certain Billing and Cost Management features\. The AWS account root user can allow IAM users and roles access to Billing and Cost Management console pages by using the **Activate IAM Access** setting\.
+By default, IAM users and roles within an AWS account can't access the Billing console pages\. This is true even if the IAM user or role has IAM policies that grant access to certain Billing features\. The AWS account root user can allow IAM users and roles access to Billing console pages by using the **Activate IAM Access** setting\.
 
 On the Billing console, the **Activate IAM Access** setting controls IAM user and role access to the following pages:
 + Home
@@ -55,19 +55,20 @@ On the Cost Management console, the **Activate IAM Access** setting controls IAM
 + Preferences
 
 **Important**  
-Activating IAM access alone doesn't grant IAM users and roles the necessary permissions for these Billing and Cost Management console pages\. In addition to activating IAM access, you must also attach the required IAM policies to those users or roles\. For more information, see [Using identity\-based policies \(IAM policies\) for Billing and Cost Management](billing-permissions-ref.md)\.
+Activating IAM access alone doesn't grant IAM users and roles the necessary permissions for these Billing console pages\. In addition to activating IAM access, you must also attach the required IAM policies to those users or roles\. For more information, see [Using identity\-based policies \(IAM policies\) for AWS Billing](billing-permissions-ref.md)\.
 
 The **Activate IAM Access** setting doesn't control access to the following pages and resources:
 + The console pages for AWS Cost Anomaly Detection, Savings Plans overview, Savings Plans inventory, Purchase Savings Plans, and Savings Plans cart
 + The Cost Management view in the AWS Console Mobile Application
-+ The Billing and Cost Management SDK APIs \(AWS Cost Explorer, AWS Budgets, and AWS Cost and Usage Reports APIs\)
++ The Billing SDK APIs \(AWS Cost Explorer, AWS Budgets, and AWS Cost and Usage Reports APIs\)
++ The cost and usage widget on the AWS Console and AWS Systems Manager Application Manager\.
 
-To activate the **Activate IAM Access** setting, you must log in to your AWS account using the root user credentials, and then select the setting in the [My Account](https://console.aws.amazon.com/billing/home#/account) page\. Activate this setting in each account where you want to allow IAM user and role access to the Billing and Cost Management console pages\. If you use AWS Organizations, activate this setting in each management or member account where you want to allow IAM user and role access to console pages\.
+To activate the **Activate IAM Access** setting, you must log in to your AWS account using the root user credentials, and then select the setting in the [My Account](https://console.aws.amazon.com/billing/home#/account) page\. Activate this setting in each account where you want to allow IAM user and role access to the Billing console pages\. If you use AWS Organizations, activate this setting in each management or member account where you want to allow IAM user and role access to console pages\.
 
 **Note**  
 The **Activate IAM Access** setting isn't available to IAM users with administrator access\. This setting is available only to the root user of the account\.
 
-If the **Activate IAM Access** setting isn't activated, then IAM users and roles in the account can't access the Billing and Cost Management console pages\. This is true even if they have administrator access or the required IAM policies\.<a name="billing-activate-iam-access"></a>
+If the **Activate IAM Access** setting isn't activated, then IAM users and roles in the account can't access the Billing console pages\. This is true even if they have administrator access or the required IAM policies\.<a name="billing-activate-iam-access"></a>
 
 **To activate IAM user and role access to the Billing and Cost Management console**
 
@@ -81,4 +82,4 @@ If the **Activate IAM Access** setting isn't activated, then IAM users and roles
 
 1. Choose **Update**\.
 
-After you activate IAM access, you must also attach the required IAM policies to the IAM users or roles\. The IAM policies can grant or deny access to specific Billing and Cost Management features\. For more information, see [Using identity\-based policies \(IAM policies\) for Billing and Cost Management](billing-permissions-ref.md)\.
+After you activate IAM access, you must also attach the required IAM policies to the IAM users or roles\. The IAM policies can grant or deny access to specific Billing features\. For more information, see [Using identity\-based policies \(IAM policies\) for AWS Billing](billing-permissions-ref.md)\.

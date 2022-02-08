@@ -43,7 +43,7 @@ Amazon EC2
 Amazon Redshift
 Amazon RDS
 ElastiCache
-Amazon ES
+OpenSearch Service
 
 ## Filters and logical operations \(AND/OR\)<a name="logicops"></a>
 

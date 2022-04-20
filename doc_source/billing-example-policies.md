@@ -39,6 +39,7 @@ These policies require that you activate IAM user access to the Billing and Cost
 + [Allow read\-only access to AWS Cost Anomaly Detection](#example-policy-ce-ad)
 + [Allow AWS Budgets to apply IAM policies and SCPs](#example-budgets-IAM-SCP)
 + [Allow AWS Budgets to apply IAM policies and SCPs and target EC2 and RDS instances](#example-budgets-applySCP)
++ [Allow IAM users to view US tax exemptions and create AWS Support cases](#example-awstaxexemption)
 
 ## Allow IAM users to view your billing information<a name="example-billing-view-billing-only"></a>
 
@@ -712,5 +713,30 @@ Permissions policy
       "Resource": "*"
     }
   ]
+}
+```
+
+## Allow IAM users to view US tax exemptions and create AWS Support cases<a name="example-awstaxexemption"></a>
+
+This policy allows an IAM user to view US tax exemptions and create AWS Support cases to upload exemption certificates in the tax exemption console\.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "aws-portal:*",
+                "tax:GetExemptions",
+                "tax:UpdateExemptions",
+                "support:CreateCase",
+                "support:AddAttachmentsToSet"
+            ],
+            "Resource": [
+                "*"
+            ],
+            "Effect": "Allow"
+        }
+    ]
 }
 ```

@@ -14,7 +14,7 @@ You can choose any cost category name in the Billing and Cost Management console
 
 **To view your cost category details page**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Cost categories**\.
 
@@ -39,7 +39,7 @@ You can download an offline copy of your month\-to\-date cost category spend\.<a
 
 **To download your cost category details page**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane, choose **Cost categories**\.
 

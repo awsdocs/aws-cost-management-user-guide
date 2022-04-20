@@ -2,11 +2,13 @@
 
 You can use the console to turn RI sharing discounts back on for an account\.
 
-You can't share Savings Plans with a set of accounts\. You can choose to restrict the benefit to the account that purchased the Savings Plans, but not share amongst a group of accounts\.
+You can share Savings Plans with a set of accounts\. You can either choose to not share the benefit with other accounts, or to open up line item eligibility for the entire consolidated billing family of accounts\.
 
 **To turn on shared reserved instances discounts**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+**Note**  
+Ensure you're logged in to the management account of your AWS Organizations\.
 
 1. In the navigation pane, choose **Billing Preferences**\.
 

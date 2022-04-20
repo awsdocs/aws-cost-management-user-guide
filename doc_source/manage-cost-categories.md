@@ -27,6 +27,7 @@ This is an administrative feature, and it can only be customized by the manageme
 + [Quotas](#cost-categories-limits)
 + [Term comparisons](#cost-categories-terms)
 + [Creating cost categories](create-cost-categories.md)
++ [Tagging cost categories](tag-cost-categories.md)
 + [Viewing cost categories](view-cost-categories.md)
 + [Editing cost categories](edit-cost-categories.md)
 + [Deleting cost categories](delete-cost-categories.md)

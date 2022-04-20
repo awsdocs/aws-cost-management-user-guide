@@ -11,13 +11,13 @@ In addition, you can use the [Payment Methods](https://console.aws.amazon.com/bi
 
 You can use the console to view the payment methods associated with your account\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods)\. <a name="designate-default-emea"></a>
 
 **To designate a default payment method**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods)\. 
 
@@ -27,7 +27,7 @@ You can use the console to view the payment methods associated with your account
 
 You can use the console to remove a payment method from your account\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Payment Methods**\.
 

@@ -16,7 +16,7 @@ If you have questions about payment methods, see [Getting help with AWS Billing 
 
 ## Supported payment methods<a name="aispl-supported-payment"></a>
 
-AWS supports Visa, Mastercard, and AMEX credit cards for AISPL accounts\.
+AWS supports Visa, Mastercard, and American Express credit cards for AISPL accounts\.
 
 ## View your credit cards<a name="aispl-view-credit-sec"></a>
 
@@ -24,7 +24,7 @@ You can use the console to view the credit cards associated with your account\.<
 
 **To view credit cards associated with your AISPL account**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Payment Methods**\. 
 
@@ -38,7 +38,7 @@ If you use Visa or Mastercard, you might be redirected to your bank to authorize
 
 **To add a credit card to your AISPL account**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Payment Methods**\.
 
@@ -60,7 +60,7 @@ You can use the console to add internet banking \(Net Banking\) accounts as your
 
 **To add a net banking account to your AISPL account**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Payment Methods**\.
 
@@ -78,7 +78,7 @@ You can use the console to pay your AISPL bills\.<a name="aispl-pay-bill"></a>
 
 **To pay your AISPL bill**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Orders and invoices**\. 
 
@@ -101,7 +101,7 @@ Due to the current AISPL regulations, you're redirected to your bank to authoriz
 
 **To pay your AISPL bill**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Orders and invoices**\. 
 
@@ -121,7 +121,7 @@ You can use the console to remove a credit card from your account\.<a name="aisp
 
 **To remove a credit card from your AISPL account**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Payment Methods**\.
 

@@ -4,7 +4,7 @@ Management account owners can deactivate the AWS generated tags in the Billing a
 
 **To deactivate the AWS generated tags**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Cost Allocation Tags**\.
 

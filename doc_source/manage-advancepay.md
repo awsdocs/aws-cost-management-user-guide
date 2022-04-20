@@ -19,7 +19,7 @@ You can use the AWS Billing and Cost Management console to register for Advance 
 
 **To register for Advance Pay**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Payments**\.
 
@@ -35,7 +35,7 @@ You can add funds to Advance Pay using electronic funds transfer, or a personal 
 
 **To add funds to your Advance Pay using electronic funds transfer**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane, choose **Payments**\.
 
@@ -59,7 +59,7 @@ You can add funds to Advance Pay using electronic funds transfer, or a personal 
 
 **To add funds to your Advance Pay using a bank account**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane, choose **Payments**\.
 

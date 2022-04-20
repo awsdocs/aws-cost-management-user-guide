@@ -1,6 +1,8 @@
 # Closing an account<a name="close-account"></a>
 
-Only the AWS account root user can close an AWS account\. AWS can't close accounts on your behalf\. If you have any questions throughout the process, you can contact your account representative or contact AWS Support for assistance\. For more information about contacting AWS Support, see [Contacting AWS Support](billing-get-answers.md#billing-support)\.
+This page highlights some key concepts for those considering closing your AWS account\. If you have any questions throughout the process, you can contact your account representative or contact AWS Support for assistance\. For more information about contacting AWS Support, see [Contacting AWS Support](billing-get-answers.md#billing-support)\.
+
+For details about closing your AWS Organizations accounts, see [Closing an AWS account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_close.html) in the *AWS Organizations User Guide*\.
 
 **Topics**
 + [Considerations before you close your AWS account](#before-closing)
@@ -18,6 +20,7 @@ Before closing your AWS account, consider the following:
 + [AWS management console access](#console-access)
 + [Existing content and services still in use](#existing-content)
 + [Your payment method](#closure-payment)
++ [Accounts protected by MFA](#mfa-closure)
 + [On\-Demand charges](#on-demand-closure)
 + [Domains registered with Amazon Route 53](#closure-domains)
 + [Charges if you reopen your AWS account](#reopen-charges)
@@ -27,7 +30,7 @@ Before closing your AWS account, consider the following:
 
 ### Your agreement with AWS<a name="aws-agreement"></a>
 
-Your closure of your AWS account serves as notice to us that you want to terminate the AWS customer agreement or other agreement with AWS that governs your AWS account, solely with respect to the specific AWS account\. If you reopen your AWS account during the *post\-closure period* \(that is, within 90 days after your account is closed\), you agree that the same agreement terms will govern your access to and use of the service offerings through your reopened AWS account\.
+Your closure of your AWS account serves as a notice to us that you want to terminate the AWS customer agreement or other agreements with AWS that governs your AWS account, solely with respect to the specific AWS account\. If you reopen your AWS account during the *post\-closure period* \(that is, within 90 days after your account is closed\), you agree that the same agreement terms will govern your access to and use of the service offerings through your reopened AWS account\.
 
 If you close the account that you're using for the AWS Firewall Manager administrator, AWS and Firewall Manager handle the closure as follows:
 
@@ -51,12 +54,18 @@ After the post\-closure period, any remaining content in your AWS account is del
 
 ### Your payment method<a name="closure-payment"></a>
 
-We charge you through your designated payment method for any usage fees incurred before you closed your AWS account\. We might issue you any refunds that are due through that same payment method\. If you have active subscriptions, even after your account is closed, you might continue to be charged for the subscription until the subscription expires or is sold according to the terms governing the subscription\. If you're charged, you're charged through your dersignated payment method\. This situation might apply to you if, for example, you have a Reserved Instance that you pay for on a monthly basis\. These charges and refunds might occur after you close your account\.
+We charge you through your designated payment method for any usage fees incurred before you closed your AWS account\. We might issue you any refunds that are due through that same payment method\. If you have active subscriptions, even after your account is closed, you might continue to be charged for the subscription until the subscription expires or is sold according to the terms governing the subscription\. If you're charged, you're charged through your designated payment method\. This situation might apply to you if, for example, you have a Reserved Instance that you pay for on a monthly basis\. These charges and refunds might occur after you close your account\.
 
 In addition, if you reopen your account, you might be charged for the cost of running AWS services during the post\-closure period\. This is specifically for any services that you didn't terminate before closing your account\.
 
 **Important**  
 Closing your AWS account doesn't affect payment methods that you use on Amazon\.com or other Amazon websites\.
+
+### Accounts protected by MFA<a name="mfa-closure"></a>
+
+If you've turned on [multi\-factor authentication \(MFA\)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html) on your AWS account root user, or configured an [MFA device on an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/console_sign-in-mfa.html), the MFA isn't removed automatically when you close the account\. If you choose to leave the MFA turned on during the 90 days post\-closure period, keep the virtual hardware MFA device active until the post\-closure period expired in case you need to access the account during that time\.
+
+You have the option to [turn off the MFA device](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_disable.html) before closing the account\. MFA devices for [IAM users](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_manage.html#id_users_deleting) must be deleted by the account administrator\.
 
 ### On\-Demand charges<a name="on-demand-closure"></a>
 
@@ -110,15 +119,15 @@ You can close your AWS account using the following procedure\.<a name="closing-t
 
 **To close your AWS account**
 
-1. [Sign in as the root user of the account](https://docs.aws.amazon.com/general/latest/gr/aws_tasks-that-require-root.html) that you want to close, using the email address and password that are associated with the account\. If you sign in as an AWS Identity and Access Management \(IAM\) user or role, you can't close an account\.
-
 1. Open the Billing and Cost Management console at [https://console.aws.amazon.com/billing/home#/](https://console.aws.amazon.com/billing/home#/)\.
 
-1. On the navigation bar in the upper\-right corner, choose your account name \(or alias\), and then choose **My Account**\.
+1. On the navigation bar in the upper\-right corner, choose your account name \(or alias\), and choose **Account**\.
 
-1. On the **Account Settings** page, scroll to the end of the page to the **Close Account** section\. Read and ensure that you understand the text next to the check box\. After you close an AWS account, you can no longer use it to access AWS services\.
+1. Scroll to the end of the page to the **Close Account** section\. Read and ensure that you understand the text next to the check box\. After you close an AWS account, you can no longer use it to access AWS services\.
 
-1. Select the check box to accept the terms, and then choose **Close Account**\.
+   If the account has a [multi\-factor authentication \(MFA\)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa.html) device turned on, keep your MFA device until the 90 day post\-closure period expires, or [turn off](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_mfa_disable.html) before closing the account\.
+
+1. Select the check box to accept the terms, and choose **Close Account**\.
 
 1. In the confirmation box, choose **Close Account**\.
 

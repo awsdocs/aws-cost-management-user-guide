@@ -17,7 +17,7 @@ Before making a payment, ensure that the payment method that you want automatica
 
 **To make a payment**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane, choose **Payments**\.
 
@@ -43,7 +43,7 @@ You can search and filter the **Payments due**, **Unapplied funds**, and **Payme
 
 **To view outstanding invoices**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane, choose **Payments**\.
 
@@ -59,7 +59,7 @@ You can search and filter the **Payments due**, **Unapplied funds**, and **Payme
 
 **To view unapplied funds**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane, choose **Payments**\.
 
@@ -69,7 +69,7 @@ You can search and filter the **Payments due**, **Unapplied funds**, and **Payme
 
 **To view payment history**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane, choose **Payments**\.
 

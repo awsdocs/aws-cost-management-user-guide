@@ -1,15 +1,10 @@
 # Creating your payment profiles<a name="manage-paymentprofiles-setup"></a>
 
-
-|  | 
-| --- |
-| The payment profiles feature is in public preview for AWS Billing and Cost Management and is subject to change\. This feature is available for a select group of customers\. Your use of payment profiles is subject to the Betas and Previews terms of the [AWS Service Terms](http://aws.amazon.com/service-terms/) \(Section 2\)\. | 
-
 You can create new custom profiles using the following steps in the Billing and Cost Management console\.
 
 **To create payment profiles**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane under **Preferences**, choose **Payment methods**\.
 
@@ -51,7 +46,7 @@ For your AWS Inc\. invoices, you can create a payment profile to pay using a EUR
 
 **To create a payment profile for this AWS Inc\. example**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane under **Preferences**, choose **Payment methods**\.
 
@@ -81,7 +76,7 @@ For your AWS Europe invoices, you can create a payment profile to pay using a US
 
 **To create a payment profiles for this AWS Europe example**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane under **Preferences**, choose **Payment methods**\.
 
@@ -109,7 +104,7 @@ For your AWS Brazil invoices, you can create a payment profile to pay using a Br
 
 **To create a payment profiles for this AWS Brazil example**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane under **Preferences**, choose **Payment methods**\.
 

@@ -6,7 +6,7 @@ Management account owners can activate the AWS generated tags in the Billing and
 
 You can activate the `createdBy` tag in the Billing and Cost Management console\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Cost Allocation Tags**\.
 

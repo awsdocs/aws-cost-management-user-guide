@@ -2,7 +2,7 @@
 
 You can use the dashboard page of the AWS Billing console to gain a general view of your AWS spending\. You can also use it to identify your highest cost service or Region and view trends in your spending over the past few months\. You can use the dashboard page to see various breakdowns of your AWS usage\. This is especially useful if you're a Free Tier user\. To view more details about your AWS costs and invoices, choose **Billing details** in the left navigation pane\. You can customize your dashboard layout at any time by choosing the gear icon at the top of the page to match your use case\.
 
-Viewing your AWS costs in the AWS Billing console dashboard doesn't require turning on Cost Explorer\. To turn on Cost Explorer to access additional views of your cost and usage data, see [Enabling Cost Explorer](ce-enable.md)\.
+Viewing your AWS costs in the AWS Billing console dashboard doesn't require turning on Cost Explorer\. To turn on Cost Explorer to access additional views of your cost and usage data, see [Enabling AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-enable.html)\.
 
 **To open the AWS Billing console and dashboard**
 + Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
@@ -17,7 +17,7 @@ Your AWS Billing console dashboard contains the following sections\. To create y
 This section is an overview of your AWS costs across all accounts, AWS Regions, service providers, and services, and other KPIs\. **Total compared to prior period** displays your total AWS costs for the most recent closed month\. It also provides a comparison to your total forecasted costs for the current month\. Choose the gear icon on the card to decide which KPIs you want to display\.
 
 **Highest cost and usage details**  
-This section shows your top service, account, or Region by estimated month\-to\-date \(MTD\) spend\. To choose which to view, choose the gear icon on the top right\.
+This section shows your top service, account, or AWS Region by estimated month\-to\-date \(MTD\) spend\. To choose which to view, choose the gear icon on the top right\.
 
 **Cost trend by top five services**  
 In this section, you can see the cost trend for your top five services for the most recent three to six closed billing periods\.  

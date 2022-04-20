@@ -13,6 +13,7 @@ Some sections can only be edited by the AWS account root user\. If you do not se
 + [Enabling and disabling regions](#manage-account-payment-enable-disable-regions)
 + [Updating and deleting tax registration numbers](#manage-account-payment-update-delete-tax-numbers)
 + [Turning on tax setting inheritance](#manage-account-tax-linked-accounts)
++ [Managing your US tax exemptions](#manage-account-tax-awstaxexemption)
 
 ## Editing Your Account name, root user password, and root user email address<a name="manage-account-payment-edit-user-name"></a>
 
@@ -38,7 +39,7 @@ You can change the contact information associated with your account, including y
 
 **To edit your contact information**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
 
@@ -55,7 +56,7 @@ To change the currency that you use to pay your bill, for example, from Danish k
 
 **To change the local currency associated with your account**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
 
@@ -71,7 +72,7 @@ Alternate contacts allows AWS to contact another person about issues with your a
 
 
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
 
@@ -121,7 +122,7 @@ Perform the applicable procedure:
 
 
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
 
@@ -135,7 +136,7 @@ For more information about enabling a Region, including the permissions required
 
 **To deactivate a Region**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
 
@@ -153,7 +154,7 @@ Use the following steps to update or delete one or more tax registration numbers
 
 
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Tax Settings**\.
 
@@ -167,7 +168,7 @@ Use the following steps to update or delete one or more tax registration numbers
 
 You can remove one or more tax registration numbers\. 
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Tax Settings**\.
 
@@ -195,10 +196,42 @@ Tax registration information includes:
 
 
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Tax Settings**\.
 
 1. Under **Manage Tax Registration Numbers**, select **Enable Tax Settings Inheritance**\.
 
 1. Choose **Continue**\.
+
+## Managing your US tax exemptions<a name="manage-account-tax-awstaxexemption"></a>
+
+If your state is eligible, you can manage your US tax exemptions on the **Tax Settings** page\. The documents you upload for the exemption are reviewed by AWS Support within 24 hours\.<a name="manage-account-tax-awstaxexemption-process"></a>
+
+**To upload or add your US tax exemption**
+
+
+
+1. \(Prerequisite\) Ensure you have the IAM permissions to view the **Tax exemptions** tab on the **Tax Settings** page in the Billing console\.
+
+   For an example IAM policy, see [Allow IAM users to view US tax exemptions and create AWS Support cases](billing-example-policies.md#example-awstaxexemption)\.
+
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+
+1. In the navigation pane, choose **Tax Settings**\.
+
+1. Choose **Set up tax exemption**\.
+
+   1. \(If you have existing tax exemptions uploaded\) Choose **Add tax exemption**\.
+
+1. Specify your exemption type and jurisdiction\.
+
+1. Upload certificate documents\.
+
+1. Review your information, and choose **Submit**\.
+
+Within 24 hours, AWS Support will notify you through a support case if they need additional information, or if any of your documents weren't valid\.
+
+Once the exemption is approved, you'll see it under the **Tax exemption** tab with an **Active** validity period\.
+
+You'll be notified through a support case contact if your exemption was rejected\.

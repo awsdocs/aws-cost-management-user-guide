@@ -6,6 +6,8 @@ There are three major steps in creating cost categories\.
 
 1. Define a name for your cost category \(for example, `business units`, `Teams`\)\.
 
+1. \(Optional\) Add a tag to your cost category\. For more information about tags, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference guide*\.
+
 1. Write the rules to categorize your costs into cost category values \(for example, `Team-A`, `Team-B`, `Team-C`\)\.
 
 1. \(Optional\) Define rules to split charges between your cost category values\.
@@ -16,13 +18,15 @@ Use the following procedure to create a new cost category\.<a name="create-cost-
 
 **To create a cost category**
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **AWS Cost Categories**\.
 
 1. At the top of the page, choose **Create Cost category**\.
 
 1. Under **Cost category details**, enter the name of your cost category\. Your cost category name must be unique within your account\.
+
+1. \(Optional\) To add a tag, choose **Add new resource tag** and enter a key and value\.
 
 1. Choose **Next**\.
 

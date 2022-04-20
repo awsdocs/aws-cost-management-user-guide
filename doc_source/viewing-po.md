@@ -10,7 +10,7 @@ Your purchase order dashboard on the Billing and Cost Management console shows y
 
 **To view your purchase orders**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane, choose **Purchase orders**\.
 

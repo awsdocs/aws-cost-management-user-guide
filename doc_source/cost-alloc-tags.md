@@ -14,7 +14,7 @@ The cost allocation report includes all of your AWS costs for each billing perio
 
 At the end of the billing cycle, the total charges \(tagged and untagged\) on the billing report with cost allocation tags reconciles with the total charges on your [https://console.aws.amazon.com/billing/home#/bill](https://console.aws.amazon.com/billing/home#/bill) page total and other billing reports for the same period\. 
 
-You can also use tags to filter views in Cost Explorer\. For more information about Cost Explorer, see [Analyzing your costs with Cost Explorer](ce-what-is.md)\. 
+You can also use tags to filter views in Cost Explorer\. For more information about Cost Explorer, see [Analyzing your costs with AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html) \. 
 
  For more information about activating the AWS generated tags, see [Activating the AWS\-Generated Cost Allocation Tags](activate-built-in-tags.md)\. For more information about applying and activating user\-defined tags, see [User\-Defined Cost Allocation Tags](custom-tags.md)\. All tags can take up to 24 hours to appear in the Billing and Cost Management console\.
 

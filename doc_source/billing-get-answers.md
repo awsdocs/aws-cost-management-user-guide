@@ -1,6 +1,6 @@
 # Getting help with AWS Billing and Cost Management<a name="billing-get-answers"></a>
 
-There are many resources available for you if have any questions about your AWS Billing and Cost Management console tools, your charges, or payment methods\.
+There are many resources available for you if you have any questions about your AWS Billing and Cost Management console tools, your charges, or payment methods\.
 
 **Topics**
 + [AWS Knowledge Center](#billing-support-KC)
@@ -22,7 +22,7 @@ All AWS account owners have access to account and billing support free of charge
 
 ## Contacting AWS Support<a name="billing-support"></a>
 
-Contacting AWS Support is the fastest and most direct method for communicating with an AWS associate about your questions\. AWS Support does not publish a direct phone number for reaching a support representative\. You can use the following process to have an associate reach out to you by email or phone instead\.
+Contacting AWS Support is the fastest and most direct method for communicating with an AWS associate about your questions\. AWS Support does not publish a direct phone number for reaching a support representative\. You can use the following process to have an associate contact to you by email or phone instead\.
 
 Only personalized technical support requires a support plan\. For more information, visit [AWS Support](https://aws.amazon.com/premiumsupport/)\.
 
@@ -56,7 +56,7 @@ If you want to see the usage behind your charged amount, you can check your usag
 
 Cost Explorer is available 24 hours after you activate the feature\.
 
-For more information about Cost Explorer, see [Analyzing your costs with Cost Explorer](ce-what-is.md)\.
+For more information about Cost Explorer, see [Analyzing your costs with AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html)\.
 
 ## Monitoring your Free Tier usage<a name="billing-support-Free"></a>
 

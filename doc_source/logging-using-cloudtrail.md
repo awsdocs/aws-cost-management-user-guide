@@ -32,7 +32,6 @@ This section shows a full list of the CloudTrail events related to Billing and C
 | GetTotalAmountForForecast | Logs the access to the forecasted charges for the specific billing period\. | 
 | RedeemPromoCode | Logs the redemption of promotional credits for an account\. | 
 | SetAccountContractMetadata | Logs the creation, deletion, or update of the necessary contract information for public sector customers\. | 
-| SetAccountPreferences | Logs the updates of the account name, email, and password\. | 
 | SetAdditionalContacts | Logs the creation, deletion, or update of the alternate contacts for billing, operations, and security communications\. | 
 | SetContactAddress | Logs the creation, deletion, or update of the account owner contact information, including the address and phone number\. | 
 | SetCostExplorerPreferences | Logs the opt\-in history of AWS Cost Explorer for the account\. | 
@@ -41,7 +40,9 @@ This section shows a full list of the CloudTrail events related to Billing and C
 | SetFreetierBudgetsPreference | Logs the preference \(opt\-in or opt\-out\) of receiving Free Tier usage alerts\. | 
 | SetFxPaymentCurrency | Logs the creation, deletion, or update of the preferred currency used to pay your invoice\. | 
 | SetIAMAccessPreference | Logs the creation, deletion, or update of the IAM user's ability to access to the billing console\. This setting is only for customers with root access\. | 
+| SetInvoicePreferences | Logs the update of the preference to receive PDF invoices by email\. | 
 | SetPayInformation | Logs the payment method history \(invoice or credit/debit card\) for the account\. | 
+| SetReportPreferences | Logs updates to the legacy Detailed Billing Reports preferences\. | 
 | SetRISharing | Logs the history of the RI/Savings Plans sharing preference for the management account\. | 
 | SetSecurityQuestions | Logs the creation, deletion, or update of the security challenge questions to help AWS identify you as the owner of the account\. | 
 | SetTagKeysState | Logs the active or inactive state of a particular cost allocation tag\. | 

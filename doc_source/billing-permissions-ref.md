@@ -40,6 +40,10 @@ For a list of actions policies for the AWS Cost Management console, see [AWS Cos
 | pricing:GetProducts |  Allow or deny IAM users permission to view AWS service products and pricing via the AWS Price List Service API\. To allow IAM users to use AWS Price List Service API, you must allow `DescribeServices`, `GetAttributeValues`, and `GetProducts`\. For an example policy, see [Find products and prices](billing-example-policies.md#example-policy-pe-api)\.  | 
 | purchase\-orders:ViewPurchaseOrders |  Allow or deny IAM users permission to view [Purchase Orders](manage-purchaseorders.md)\. For an example policy, see [View and manage purchase orders](billing-example-policies.md#example-view-manage-purchaseorders)\.  | 
 | purchase\-orders:ModifyPurchaseOrders |  Allow or deny IAM users permission to modify [Purchase Orders](manage-purchaseorders.md)\. For an example policy, see [View and manage purchase orders](billing-example-policies.md#example-view-manage-purchaseorders)\.  | 
+| tax:GetExemptions | Allows IAM users read\-only access to view exemptions history\. For an example policy, see [Allow IAM users to view US tax exemptions and create AWS Support cases](billing-example-policies.md#example-awstaxexemption)\. | 
+| tax:UpdateExemptions | Allows IAM users to upload an exemption to the US tax exemptions console\. For an example policy, see [Allow IAM users to view US tax exemptions and create AWS Support cases](billing-example-policies.md#example-awstaxexemption)\. | 
+| support:CreateCase | Allows IAM users to file support cases, required to upload exemption from tax exemptions console\.For an example policy, see [Allow IAM users to view US tax exemptions and create AWS Support cases](billing-example-policies.md#example-awstaxexemption)\. | 
+| support:AddAttachmentsToSet | Allows IAM users to attach documents to support cases that are required to upload exemption certificates to the tax exemption console\.For an example policy, see [Allow IAM users to view US tax exemptions and create AWS Support cases](billing-example-policies.md#example-awstaxexemption)\. | 
 
 ## Managed policies<a name="managed-policies"></a>
 

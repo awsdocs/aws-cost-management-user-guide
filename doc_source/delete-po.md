@@ -4,7 +4,7 @@ You can use the Billing and Cost Management console to delete your purchase orde
 
 **To delete a purchase order**
 
-1. Open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
+1. Open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/home?#/)\.
 
 1. In the navigation pane, choose **Purchase orders**\.
 

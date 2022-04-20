@@ -9,7 +9,7 @@ You can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/p
 
 You can use the console to add a credit card to your account\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods)\.
 
@@ -25,7 +25,7 @@ You can use the console to add a credit card to your account\.
 
 You can update the name, address, or phone number associated with your credit card\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Payment Methods**\.
 
@@ -39,7 +39,7 @@ You can update the name, address, or phone number associated with your credit ca
 
 You must have a valid, unexpired credit card on file to make a payment\.
 
-1. Sign in to the AWS Management Console and open the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
 1. In the navigation pane, choose **Payment Methods**\.
 

@@ -4,6 +4,8 @@ The following table describes the documentation for this release of the *AWS Bil
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [New customer carbon footprint tool](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/what-is-ccft.html) | Added a new customer carbon footprint tool feature to view estimates of the carbon emissions associated with your AWS products and services\. | February 28, 2022 | 
+| [New payment profiles](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-paymentprofiles.html) | Added a new payment profiles feature to assign automatic payment methods to invoices\. | February 17, 2022 | 
 | [AWSPurchaseOrdersServiceRolePolicy – Update to an existing policy](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#security-iam-awsmanpol-AWSPurchaseOrdersServiceRolePolicy) | AWS Billing removed unnecessary permissions\. | November 18, 2021 | 
 | [AWS Billing started tracking changes for AWS managed policies](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#security-iam-awsmanpol-updates) | AWS Billing started tracking changes for its AWS managed policies\. | November 18, 2021 | 
 | [New AWS Cost Management guide](https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html) | Split the Billing and Cost Management user guide and aligned the feature details into the Billing guide and AWS Cost Management guide to align with the console\. | October 20, 2021 | 

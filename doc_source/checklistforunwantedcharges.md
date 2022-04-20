@@ -1,13 +1,12 @@
 # Avoiding unexpected charges<a name="checklistforunwantedcharges"></a>
 
-Here are some suggestions to help you avoid unexpected charges on your bill\. The first two items are for those who use the one\-year AWS Free Tier\. The next items address specific features or behaviors within individual services from AWS that can sometimes result in unexpected charges, particularly if you unsubscribe from the service or close your account\.
+Here are some suggestions to help you avoid unexpected charges on your bill\. The next items address specific features or behaviors within individual services from AWS that can sometimes result in unexpected charges, particularly if you unsubscribe from the service or close your account\.
 
 **Note**  
 If you close your account or unsubscribe from a service, make sure that you take the appropriate steps for every region in which you've allocated AWS resources\.
 
 **Topics**
 + [Usage exceeds AWS Free Tier](#checkexceedfree)
-+ [AWS Free Tier expired](#checkfreetierexpired)
 + [Bill received after account closure](#checkbillafterclosure)
 + [Disabled regions](#check-disabled-region)
 + [Elastic Beanstalk environments](#checkelasticbeanstalk)
@@ -21,18 +20,7 @@ If you close your account or unsubscribe from a service, make sure that you take
 
 ## Usage exceeds AWS Free Tier<a name="checkexceedfree"></a>
 
-If you use the free tier, make sure that your usage does not exceed the limits that are specified at [AWS Free Tier](http://aws.amazon.com/free/)\. You are charged On\-Demand Instance rates for any usage that exceeds the free tier limits\. You can check your AWS Free Tier usage alerts and your free tier usage alerts on the Billing and Cost Management console\.
-
-**Note**  
-Free tier usage alerts are available only to the management account in an organization\. They aren't available for individual member accounts in an organization\. 
-
-For more information about tracking your free tier usage, see [Tracking your AWS Free Tier usage](tracking-free-tier-usage.md)\.
-
-## AWS Free Tier expired<a name="checkfreetierexpired"></a>
-
-If you receive unexpected charges after a period of inactivity, your free tier period might have expired\. Any resources that are allocated to your account after your free tier period expires begin to incur charges\. To check for resources in use, open the [AWS Management Console](https://console.aws.amazon.com/console/home?#)\. **Be sure to check each Region where you have allocated resources\.**
-
-For more information about free tier offerings and terms, see [AWS Free Tier](http://aws.amazon.com/free/)\.
+For more information on avoiding unexpected charges related to the AWS Free Tier, see [Avoiding unexpected charges after the AWS Free Tier](billing-free-tier.md#avoid-charges-after-free-tier)\.
 
 ## Bill received after account closure<a name="checkbillafterclosure"></a>
 

@@ -7,5 +7,6 @@ You can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/p
 + [Making payments, checking unapplied funds, and viewing your payment history](manage-making-a-payment.md)
 + [Managing your credit card payment methods](manage-cc.md)
 + [Managing your ACH direct debit payment methods](manage-debit.md)
++ [Managing your AWS payments in CNY](manage-payment-cny.md)
 
 If you have questions about payments or payment methods, see [Getting help with AWS Billing and Cost Management](billing-get-answers.md)\.

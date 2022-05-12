@@ -53,11 +53,9 @@ Additionally, if you create Amazon EC2 instances from an Amazon Machine Image \(
 
 ## Amazon Elastic Block Store volumes and snapshots<a name="checkebsvolumes"></a>
 
-Most Amazon EC2 instances are configured so that their associated Amazon EBS volumes are deleted when they are terminated, but it is possible to set up an instance that preserves its volume and the data\. Check the **Volumes** pane in the Amazon EC2 console for volumes that you don’t need anymore\. For more information, see [Deleting an Amazon EBS Volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-deleting-volume.html) in the *Amazon EC2 User Guide for Linux Instances*\. 
+Most Amazon EC2 instances are configured so that their associated Amazon EBS volumes are deleted when they are terminated, but it is possible to set up an instance that preserves its volume and the data\. Check the **Volumes** pane in the Amazon EC2 console for volumes that you don’t need anymore\. For more information about deleting volumes, see [Deleting an Amazon EBS Volume](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-deleting-volume.html) in the *Amazon EC2 User Guide for Linux Instances*\. 
 
-If you have stored snapshots of your Amazon EBS volumes and no longer need them, you should delete them as well\. Deleting a volume does not automatically delete the associated snapshots\. 
-
-For more information about deleting snapshots, see [Deleting an Amazon EBS Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-deleting-snapshot.html)\.
+If you have stored snapshots of your Amazon EBS volumes and no longer need them, you should delete them as well\. Deleting a volume does not automatically delete the associated snapshots. For more information about deleting snapshots, see [Deleting an Amazon EBS Snapshot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-deleting-snapshot.html)\.
 
 **Note**  
 Deleting a snapshot might not reduce your organization's data storage costs\. Other snapshots might reference that snapshot's data, and referenced data is always preserved\.   

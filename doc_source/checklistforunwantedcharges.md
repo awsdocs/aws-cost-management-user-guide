@@ -68,7 +68,7 @@ The previous example will show two entries in your daily AWS Cost and Usage Repo
 | CreateSnapshot | arn:aws:ec2:us\-east\-1:123:snapshot/snap\-A | 0\.33 | 0\.0165 | dev | 
 | CreateSnapshot | arn:aws:ec2:us\-east\-1:123:snapshot/snap\-B | 0\.133 | 0\.0066 | dev | 
 If you delete the first snapshot \(snap\-A in the first row of the preceding table\), any data that is referenced by the second snapshot \(snap\-B in the second row of the preceding table\) is preserved\. Remember that the second snapshot contains the 4 GiB of incremental data, and references 6 GiB from the first snapshot\. Once you delete snap\-A, the size of snap\-B becomes 10 GiB \(4 changed GiB from the snap\-B and 6 unchanged GiB from snap\-A\)\.  
-In you daily AWS CUR, you will then see the usage amount for snap\-B as 0\.33 GiB \(10 GiB/ 30 days\), charged at $0\.0165 per day\. When you delete a snapshot, the charges for the remaining snapshots are recalculated daily, resulting in the possibility that the cost for each snapshot can change daily as well\. For more information, see [Cost Allocation for EBS Snapshots](http://aws.amazon.com/blogs/aws/new-cost-allocation-for-ebs-snapshots/)\.  
+In your daily AWS CUR, you will then see the usage amount for snap\-B as 0\.33 GiB \(10 GiB/ 30 days\), charged at $0\.0165 per day\. When you delete a snapshot, the charges for the remaining snapshots are recalculated daily, resulting in the possibility that the cost for each snapshot can change daily as well\. For more information, see [Cost Allocation for EBS Snapshots](http://aws.amazon.com/blogs/aws/new-cost-allocation-for-ebs-snapshots/)\.  
 
 
 | **lineItem/ Operation** | **lineItem/ ResourceId** | **lineItem/ UsageAmount** | **lineItem/ UnblendedCost** | **resourceTags/ user:usage** | 

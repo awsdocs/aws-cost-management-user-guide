@@ -4,7 +4,7 @@ To comply with the recent EU regulation, your bank might ask you for verificatio
 
 If you prefer not to verify payments, register a bank account as your payment method\. For more information about direct debit payment eligibility, see [Managing your SEPA direct debit payment methods](manage-debit-emea.md)\.
 
-To learn more about the EU regulation, see the [European Commission’s website](https://ec.europa.eu/info/law/payment-services-psd-2-directive-eu-2015-2366_en)\.
+To learn more about the EU regulation, see the [European Commission’s website](https://commission.europa.eu/law_en)\.
 + [Best practices for verification](#emea-cc-mfa-bp)
 + [Payment verification](#emea-payment-verification)
 + [Troubleshooting payment verification](#emea-cc-bp)

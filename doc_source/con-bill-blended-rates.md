@@ -30,13 +30,24 @@ The following table shows an example of pricing tiers \(your costs might vary\)\
 
 **Amazon S3 Pricing Tiers**
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
+
+| Tier description | Price per GB | Price per TB | 
+| --- | --- | --- | 
+|  First 1 TB/month  | $0\.10 | $100\.00 | 
+|  Next 49 TB/month  |  $0\.08  | $80\.00 | 
+| Next 450 TB/month | $0\.06 | $60 | 
 
 The following table shows Amazon S3 usage for an organization that includes a management account and three member accounts\. 
 
 **Example S3 Usage Blended Cost**
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
+[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/con-bill-blended-rates.html)
+
+[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/con-bill-blended-rates.html)
+
+[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/con-bill-blended-rates.html)
+
+[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/con-bill-blended-rates.html)
 
 The costs in the preceding table are calculated as follows: 
 
@@ -90,7 +101,8 @@ The Savings Plans are applied to the account that owns the Savings Plans\. Then,
 Blended rates are the averaged rates of the Reserved Instances and On\-Demand Instances that are used by member accounts in an organization in AWS Organizations\. AWS calculates blended costs by multiplying the blended rate for each service with an account’s usage of that service\.
 
 **Note**  
-AWS shows each member account their charges as unblended costs\. AWS continues to apply all of the consolidated billing benefits such as reservations and tiered prices across all member accounts in an AWS Organizations organization\. 
+AWS shows each member account their charges as unblended costs\. AWS continues to apply all of the consolidated billing benefits such as reservations and tiered prices across all member accounts in AWS Organizations\. 
+Blended rates for Amazon EC2 are calculated at the hourly level\. 
 
  This section includes examples that show how AWS calculates blended rates for the following services\.
 + [Calculating Blended Rates for Amazon S3 Standard Storage](#Blended_S3_Stand_Storage)
@@ -100,7 +112,9 @@ AWS shows each member account their charges as unblended costs\. AWS continues t
 
 #### Calculating Blended Rates for Amazon S3 Standard Storage<a name="Blended_S3_Stand_Storage"></a>
 
-AWS calculates blended rates for Amazon S3 standard storage by taking the total cost of storage and dividing by the amount of data stored per month\. Using the example from [Calculating Consolidated Bills](#Calculating) where we calculated a cost of $6,720 for a management account and three member accounts, we calculate the blended rates for the accounts using the following logic:
+AWS calculates blended rates for Amazon S3 standard storage by taking the total cost of storage and dividing by the amount of data stored per month\.
+
+ Using the example from [Calculating Consolidated Bills](#Calculating) where we calculated a cost of $6,720 for a management account and three member accounts, we calculate the blended rates for the accounts using the following logic:
 
 1. The blended rate in GB is calculated by dividing the total cost \($6,720\) by the amount of storage \(95,000 GB\) to produce a blended rate of $0\.070737/GB\. The blended rate in TB is calculated by dividing the total cost \($6,720\) by the amount of storage \(95 TB\) to produce a blended rate of $70\.737/TB\.
 
@@ -108,16 +122,18 @@ AWS calculates blended rates for Amazon S3 standard storage by taking the total 
 
 #### Calculating Blended Rates for Amazon EC2<a name="blended-rate-example"></a>
 
-The following example shows how the consolidated billing logic aggregates Amazon EC2 costs to the management account and then allocates it to the member accounts based on proportional usage\. For this example, all usage is of the same usage type, occurs in the same Availability Zone, and is for the same Reserved Instance term\. This example covers Full Upfront and Partial Upfront Reserved Instances\.
+The consolidated billing logic aggregates Amazon EC2 costs to the management account and then allocates it to the member accounts based on proportional usage\.
+
+For this example, all usage is of the same usage type, occurs in the same Availability Zone, and is for the same Reserved Instance term\. This example covers Full Upfront and Partial Upfront Reserved Instances\.
 
 The following table shows line items that represent the calculation of line items for Amazon EC2 usage for a 720\-hour \(30\-day\) month\. Each instance is of the same usage type \(`t2.small`\) running in the same Availability Zone\. The organization has purchased three Reserved Instances for a one\-year term\. Member Account 1 has three Reserved Instances\. Member Account 2 has no Reserved Instances, but uses an On\-Demand Instance\.
 
-![\[Image NOT FOUND\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/)
+[\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/con-bill-blended-rates.html)
 
 The data in the preceding table shows the following information: 
-+ The organization has purchased 1,440 hours of Reserved Instance capacity at a Full Upfront rate \(two EC2 instances\)\.
-+ The organization has purchased 720 hours of Reserved Instance capacity at a Partial Upfront rate \(one EC2 instance\)\.
-+ Member account 1 completely uses the two Full Upfront Reserved Instances and the one Partial Upfront Reserved Instance for a total usage of 2,160 hours\. Member account 2 uses 300 hours of an On\-Demand Instance\. Total usage for the organization is 2,460 hours \(2160 \+ 300 = 2,460\)\.
++ The organization purchased 1,440 hours of Reserved Instance capacity at a Full Upfront rate \(two EC2 instances\)\.
++ The organization purchased 720 hours of Reserved Instance capacity at a Partial Upfront rate \(one EC2 instance\)\.
++ Member account 1 completely uses the two Full Upfront Reserved Instances and the one Partial Upfront Reserved Instance for a total usage of 2,160 hours\. Member account 2 uses 720 hours of an On\-Demand Instance\. Total usage for the organization is 2,880 hours \(2160 \+ 720 = 2,880\)\.
 + The unblended rate for the three Reserved Instances is $0\.00\. The unblended cost of an RI is always $0\.00 because RI charges are not included in blended rate calculations\.
 + The unblended rate for the On\-Demand Instance is $0\.023\. Unblended rates are associated with the current price of the product\. They can't be verified from information in the preceding table\. 
-+ The blended rate is calculated by dividing the total cost \($6\.90\) by the total amount of Amazon EC2 usage \(2460 hours\)\. This produces a rate of $0\.002804878 dollars per hour\.
++ The blended rate is calculated by dividing the total cost \($16\.56\) by the total amount of Amazon EC2 usage \(2,880 hours\)\. This produces a rate of $0\.005750000 dollars per hour\.

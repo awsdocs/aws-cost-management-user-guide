@@ -4,7 +4,7 @@ Your customer carbon footprint tool page contains the following sections\. This 
 
 The unit of measurement for carbon emissions is metric tons of carbon dioxide\-equivalent \(MTCO2e\), an industry\-standard measure\. This measurement considers multiple greenhouse gases, including carbon dioxide, methane, and nitrous oxide\. All greenhouse gas emissions are converted to the amount of carbon dioxide that would result in equivalent warming\.
 
-Carbon emissions data is available from January 2020 onwards\. New data is available monthly, with a delay of three months as AWS gathers and processes the data that's required to provide your carbon emissions estimates\. All values in the customer carbon footprint tool are rounded to the nearest one\-tenth ton\.
+Carbon emissions data is available from January 2020 onwards\. New data is available monthly, with a delay of three months as AWS gathers and processes the data that's required to provide your carbon emissions estimates\. All values in the customer carbon footprint tool are rounded to the nearest one\-tenth ton\. If the emissions don't round up to one\-tenth ton, the report will display as 0\.
 
 **Your carbon emissions summary**  
 This section shows your estimated AWS emissions and estimated emissions savings, relative to an equivalent on\-premises workload\. This is summarized under two categories:  

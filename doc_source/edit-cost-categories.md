@@ -12,4 +12,6 @@ You can edit your AWS Cost Categories using the following procedure\. Cost categ
 
 1. Choose **Edit cost category**\.
 
+1. If you want the changes to retroactively apply from a previous date, choose the month you want the parameter changes to apply from\.
+
 1. Make changes to parameters and choose **Confirm cost category**\.

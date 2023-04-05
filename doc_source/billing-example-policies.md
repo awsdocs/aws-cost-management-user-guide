@@ -1,5 +1,10 @@
 # AWS Billing policy examples<a name="billing-example-policies"></a>
 
+
+|  | 
+| --- |
+| ***The following AWS Identity and Access Management \(IAM\) actions will reach the end of standard support on July 2023: `aws-portal` namespace, `purchase-orders:ViewPurchaseOrders`, and `purchase-orders:ModifyPurchaseOrders`\. See the [Using fine\-grained AWS Billing actions ](migrate-granularaccess-whatis.md#migrate-user-permissions) to replace these actions with fine\-grained actions so you have access to AWS Billing, AWS Cost Management, and AWS accounts consoles\.*** ***If you created your AWS account, or are a part of an AWS Organizations created before March 6, 2023, 11:00 \(PDT\), the fine\-grained actions will be effective starting July 2023\. We recommend you to add the fine\-grained actions, but not remove your existing permissions with `aws-portal` or `purchase-orders` prefixes\.*** ***If you created your AWS account, or are a part of an AWS Organizations created on or after March 6, 2023, 11:00 \(PDT\), the fine\-grained actions are effective immediately\.***  | 
+
 This topic contains example policies that you can attach to your IAM user or group to control access to your account's billing information and tools\. The following basic rules apply to IAM policies for Billing and Cost Management:
 + `Version` is always `2012-10-17`\.
 + `Effect` is always `Allow` or `Deny`\.
@@ -18,10 +23,13 @@ These policies require that you activate IAM user access to the Billing and Cost
 
 **Topics**
 + [Allow IAM users to view your billing information](#example-billing-view-billing-only)
++ [Allow IAM users to view your billing information and carbon footprint report](#example-ccft-policy)
 + [Allow IAM users to access the reports console page](#example-billing-view-reports)
 + [Deny IAM users access to the Billing and Cost Management consoles](#example-billing-deny-all)
 + [Deny AWS Console cost and usage widget access for member accounts](#example-billing-deny-widget)
 + [Deny AWS Console cost and usage widget access for specific IAM users and roles](#example-billing-deny-ce)
++ [Allow IAM users to view your billing information, but deny access to carbon footprint report](#example-ccft-policy-deny)
++ [Allow IAM users to access carbon footprint reporting, but deny access to billing information](#example-ccft-policy-allow)
 + [Allow full access to AWS services but deny IAM users access to the Billing and Cost Management consoles](#ExampleAllowAllDenyBilling)
 + [Allow IAM users to view the Billing and Cost Management consoles except for account settings](#example-billing-read-only)
 + [Allow IAM users to modify billing information](#example-billing-deny-modifybilling)
@@ -60,6 +68,35 @@ To allow an IAM user to view your billing information without giving the IAM use
         {
             "Effect": "Allow",
             "Action": "aws-portal:ViewBilling",
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+## Allow IAM users to view your billing information and carbon footprint report<a name="example-ccft-policy"></a>
+
+To allow an IAM user to view both billing information and carbon footprint reporting, use a policy similar to the following example\. This policy prevents users from accessing your password and account activity reports\. This policy allows IAM users to view the following Billing and Cost Management console pages, without giving them access to the **Account Settings** or **Reports** console pages:
++ **Dashboard**
++ **Cost Explorer**
++ **Bills**
++ **Orders and invoices**
++ **Consolidated Billing**
++ **Preferences**
++ **Credits**
++ **Advance Payment**
++ **The AWS customer carbon footprint tool section of the AWS Cost and Usage Reports page**
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {"Effect": "Allow",
+            "Action": "aws-portal:ViewBilling",
+            "Resource": "*"
+        },
+        {"Effect": "Allow",
+            "Action": "sustainability:GetCarbonFootprintSummary",
             "Resource": "*"
         }
     ]
@@ -127,6 +164,46 @@ Adding this policy to an IAM user or role will deny users access to Cost Explore
         {
             "Effect": "Deny",
             "Action": "ce:*",
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+## Allow IAM users to view your billing information, but deny access to carbon footprint report<a name="example-ccft-policy-deny"></a>
+
+To allow an IAM user to both billing information in the Billing and Cost Management consoles, but doesn't allow access to the AWS customer carbon footprint tool\. This tool is located in the AWS Cost and Usage Reports page\.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {"Effect": "Allow",
+            "Action": "aws-portal:ViewBilling",
+            "Resource": "*"
+        },
+        {"Effect": "Deny",
+            "Action": "sustainability:GetCarbonFootprintSummary",
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+## Allow IAM users to access carbon footprint reporting, but deny access to billing information<a name="example-ccft-policy-allow"></a>
+
+To allow an IAM users to access the AWS customer carbon footprint tool tool in the AWS Cost and Usage Reports page, but denies access to view billing information in the Billing and Cost Management consoles\.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {"Effect": "Deny",
+            "Action": "aws-portal:ViewBilling",
+            "Resource": "*"
+        },
+        {"Effect": "Allow",
+            "Action": "sustainability:GetCarbonFootprintSummary",
             "Resource": "*"
         }
     ]
@@ -274,7 +351,9 @@ To allow an IAM user to use the AWS Price List Service API, use the following po
             "Action": [
                 "pricing:DescribeServices",
                 "pricing:GetAttributeValues",
-                "pricing:GetProducts"
+                "pricing:GetProducts",
+                "pricing:GetPriceListFileUrl",
+                "pricing:ListPriceLists"
             ],
             "Resource": [
                 "*"
@@ -322,11 +401,15 @@ To allow IAM users to use, view, and manage cost categories, use the following p
       "Effect": "Allow",
       "Action": [
         "aws-portal:ViewBilling",
+        "ce:GetCostAndUsage",
         "ce:DescribeCostCategoryDefinition",
         "ce:UpdateCostCategoryDefinition",
         "ce:CreateCostCategoryDefinition",
         "ce:DeleteCostCategoryDefinition",
         "ce:ListCostCategoryDefinitions",
+        "ce:TagResource",
+        "ce:UntagResource",
+        "ce:ListTagsForResource",
         "pricing:DescribeServices"
       ],
       "Resource": "*"

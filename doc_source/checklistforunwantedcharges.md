@@ -1,14 +1,20 @@
 # Avoiding unexpected charges<a name="checklistforunwantedcharges"></a>
 
-Here are some suggestions to help you avoid unexpected charges on your bill\. The next items address specific features or behaviors within individual services from AWS that can sometimes result in unexpected charges, particularly if you unsubscribe from the service or close your account\.
+
+|  | 
+| --- |
+| For questions about your AWS bills or to appeal your charges, contact AWS Support to address your inquiries immediately\. To get help, see [Getting help with AWS Billing](billing-get-answers.md)\. To understand your bills page contents, see [Viewing your monthly charges](invoice.md)\. | 
+
+ When you close resources, some AWS services require specific steps to ensure you aren't charged going forward\. The process to close your AWS account also requires some resources to be manually turned off ahead of time so you aren't charged after closing the account\. Here are some examples to help you avoid unexpected charges on your bill\. This page lists specific features or behaviors within individual services from AWS that can sometimes result in unexpected charges, particularly if you unsubscribe from the service or close your account\.
 
 **Note**  
-If you close your account or unsubscribe from a service, make sure that you take the appropriate steps for every region in which you've allocated AWS resources\.
+This is not an exhaustive list\. For any questions for your specific use case, contact AWS Support by following the process on [Getting help with AWS Billing](billing-get-answers.md)\.  
+If you close your account or unsubscribe from a service, make sure that you take the appropriate steps for every AWS Region you've allocated AWS resources\.
 
 **Topics**
 + [Usage exceeds AWS Free Tier](#checkexceedfree)
 + [Bill received after account closure](#checkbillafterclosure)
-+ [Disabled regions](#check-disabled-region)
++ [Turning off AWS Regions](#check-disabled-region)
 + [Elastic Beanstalk environments](#checkelasticbeanstalk)
 + [Elastic Load Balancing \(ELB\)](#checkloadbalancers)
 + [Services started in AWS OpsWorks](#opsworks)
@@ -26,9 +32,9 @@ For more information on avoiding unexpected charges related to the AWS Free Tier
 
 Each month’s usage is calculated and billed at the beginning of the following month\. If you close your account but use opt\-in services during the month, you receive a bill for the opt\-in service usage at the beginning of the following month\.
 
-## Disabled regions<a name="check-disabled-region"></a>
+## Turning off AWS Regions<a name="check-disabled-region"></a>
 
-If you disable a Region and you still have resources in that Region, you continue to incur charges for those resources\. \(There is no charge for enabling a Region, only charges for the resources that you create in a Region\.\) For more information, see [Enabling and disabling regions](manage-account-payment.md#manage-account-payment-enable-disable-regions)\.
+If you turn off an AWS Region that you still have resources in, you continue to incur charges for those resources\. There is no charge for turning on an AWS Region\. Charges only occur for the resources that you create in a Region\. For more information, see [Enabling and disabling regions](manage-account-payment.md#manage-account-payment-enable-disable-regions)\.
 
 ## Elastic Beanstalk environments<a name="checkelasticbeanstalk"></a>
 

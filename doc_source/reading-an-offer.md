@@ -94,7 +94,7 @@ An attribute that tracks which format version the offer file is in\. The `format
 Any disclaimers that apply to the offer file\.
 
 **Offer Code**  
-A unique code for the product of an AWS service\. For example, `AmazonEC2` for Amazon EC2 or `AmazonS3` for Amazon S3\.
+A unique code for the product of an AWS service\. For example, `AmazonEC2` for Amazon EC2 or `Amazon S3` for Amazon S3\.
 
 **Version**  
 An attribute that tracks the version of the offer file\. Each time a new file is published, it contains a new version number\. For example, `20150409T022205` and `20150910T182105`\.

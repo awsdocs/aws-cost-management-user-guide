@@ -21,8 +21,6 @@ Some services might not have Savings Plans that apply\.<a name="find-sp-rates"><
 
 1. Find the relevant `regionalIndexURLs` for the Regions\.
 
-   The Compute Savings Plans that apply across multiple Regions will be in the **global** Region\.
-
 1. Download the Savings Plans offer file\.
 + **Terms** includes the contract length and rates for all available Savings Plans\.
 + **Rates** lists all SKUs that are covered by Savings Plans along with the applicable rate\. Details of these SKUs are available in the individual service files\. For example, Amazon EC2, Fargate, and AWS Lambda\.

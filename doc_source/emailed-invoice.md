@@ -10,4 +10,4 @@ Follow these steps to have a PDF copy of your monthly invoice sent to the email 
 
 1. Choose **Save preferences**\. 
 
-The monthly invoices are sent to the account's root user and the alternate billing contact\. To edit the root user email address, see [Editing Your Account name, root user password, and root user email address](manage-account-payment.md#manage-account-payment-edit-user-name)\. To add or update the alternate billing contact, see [Adding, changing, or removing alternate contacts](manage-account-payment.md#manage-account-payment-alternate-contacts)\.
+The monthly invoices are sent to the AWS account root user and the alternate billing contact\. To edit the root user email address, see [Editing Your Account name, AWS account root user password, and AWS account root user email address](manage-account-payment.md#manage-account-payment-edit-user-name)\. To add or update the alternate billing contact, see [Adding, changing, or removing alternate contacts](manage-account-payment.md#manage-account-payment-alternate-contacts)\.

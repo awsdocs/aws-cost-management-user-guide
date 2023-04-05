@@ -8,7 +8,7 @@ You can configure separate purchase orders for different time periods by choosin
 To be matched with a line item, the invoice's billing period must be within the line item's start and end month, and it must also match the line item type\.
 
 **Example 1**  
-If you use monthly purchase orders, you can define one purchase order for each month by selecting the same effective and expiration month for each purchase order\. The purchase order will only apply to invoices that are generated during that month\.   
+If you use monthly purchase orders, you can define one purchase order for each month by selecting the same effective and expiration month for each purchase order\. The purchase order will only apply to the billing period of the invoices\.  
 Here are a few purchase order configurations that you can use for this setup:  
 + `PO #M1_2021` with the effective month set to Jan 2021 and expiration month Jan 2021\.
 + `PO #M2_2021` with the effective month set to Feb 2021 and expiration month Feb 2021\.

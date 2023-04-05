@@ -16,7 +16,7 @@ For details about closing your AWS Organizations accounts, see [Closing an AWS a
 Before closing your AWS account, consider the following:
 
 **Topics**
-+ [Your agreement with AWS](#aws-agreement)
++ [Your agreement with AWS services](#aws-agreement)
 + [AWS management console access](#console-access)
 + [Existing content and services still in use](#existing-content)
 + [Your payment method](#closure-payment)
@@ -28,11 +28,11 @@ Before closing your AWS account, consider the following:
 + [Cross\-account access to the account you’re closing](#cross-access)
 + [Removing Amazon VPC peering connection](#vpc-peering)
 
-### Your agreement with AWS<a name="aws-agreement"></a>
+### Your agreement with AWS services<a name="aws-agreement"></a>
 
-Your closure of your AWS account serves as a notice to us that you want to terminate the AWS customer agreement or other agreements with AWS that governs your AWS account, solely with respect to the specific AWS account\. If you reopen your AWS account during the *post\-closure period* \(that is, within 90 days after your account is closed\), you agree that the same agreement terms will govern your access to and use of the service offerings through your reopened AWS account\.
+Your closure of your AWS account serves as a notice to us that you want to terminate the AWS service customer agreement or other agreements with AWS services that governs your AWS account, solely with respect to the specific AWS account\. If you reopen your AWS account during the *post\-closure period* \(that is, within 90 days after your account is closed\), you agree that the same agreement terms will govern your access to and use of the service offerings through your reopened AWS account\.
 
-If you close the account that you're using for the AWS Firewall Manager administrator, AWS and Firewall Manager handle the closure as follows:
+If you close the account that you're using for the AWS Firewall Manager administrator, AWS services and Firewall Manager handle the closure as follows:
 
  AWS retains the policy data for the account for 90 days from the effective date of the administrator account closure\. At the end of the 90 day period, AWS permanently deletes all policy data for the account\. 
 +  To retain findings for more than 90 days, you can archive the policies\. You can also use a custom action with an EventBridge rule to store the findings in an S3 bucket\. 
@@ -56,7 +56,7 @@ After the post\-closure period, any remaining content in your AWS account is del
 
 We charge you through your designated payment method for any usage fees incurred before you closed your AWS account\. We might issue you any refunds that are due through that same payment method\. If you have active subscriptions, even after your account is closed, you might continue to be charged for the subscription until the subscription expires or is sold according to the terms governing the subscription\. If you're charged, you're charged through your designated payment method\. This situation might apply to you if, for example, you have a Reserved Instance that you pay for on a monthly basis\. These charges and refunds might occur after you close your account\.
 
-In addition, if you reopen your account, you might be charged for the cost of running AWS services during the post\-closure period\. This is specifically for any services that you didn't terminate before closing your account\.
+In addition, if you reopen your account, you might be charged for the cost of running AWS service services during the post\-closure period\. This is specifically for any services that you didn't terminate before closing your account\.
 
 **Important**  
 Closing your AWS account doesn't affect payment methods that you use on Amazon\.com or other Amazon websites\.
@@ -99,18 +99,18 @@ To avoid having the account count against the limit, remove member accounts from
 
 ### Cross\-account access to the account you’re closing<a name="cross-access"></a>
 
-After you close your AWS account, any access requests to your closed account's AWS services from other AWS accounts fail\. This occurs even if you have granted the other accounts permission to access your account's AWS services\. If you reopen your AWS account, other AWS accounts can access your account's AWS services if you have granted the other accounts the necessary permissions\.
+After you close your AWS account, any access requests to your closed account's AWS service services from other AWS accounts fail\. This occurs even if you have granted the other accounts permission to access your account's AWS services\. If you reopen your AWS account, other AWS accounts can access your account's AWS services if you have granted the other accounts the necessary permissions\.
 
 ### Removing Amazon VPC peering connection<a name="vpc-peering"></a>
 
-AWS currently doesn't delete Amazon VPC peering connections when you close one of the accounts participating in the VPC peering connection\. Any traffic that's destined for the VPC peering connection and originates from other active accounts is dropped\. This is because AWS terminates instances and deletes any security groups in the closed account\. To remove the VPC peering connection, you can delete it from your account using the Amazon VPC console, AWS CLI, or Amazon EC2 API\.
+AWS services currently doesn't delete Amazon VPC peering connections when you close one of the accounts participating in the VPC peering connection\. Any traffic that's destined for the VPC peering connection and originates from other active accounts is dropped\. This is because AWS services terminates instances and deletes any security groups in the closed account\. To remove the VPC peering connection, you can delete it from your account using the Amazon VPC console, AWS CLI, or Amazon EC2 API\.
 
 ## Troubleshooting errors when closing an AWS account<a name="troubleshooting-closing"></a>
 
 If you receive an error message while trying to close your AWS account, you can contact your account representative or contact us to open a billing or account support case\. Common reasons why you can't close your AWS account include the following situations:
 + Your account is the management account of an organization in AWS Organizations with open member accounts\.
 + You have unpaid invoices for your account\.
-+ You aren't signed in to the account as the root user\.
++ You aren't signed in to the account as the AWS account root user\.
 + You are an active AWS Marketplace seller\.
 
 ## Closing your AWS account<a name="closing-the-account"></a>
@@ -133,9 +133,9 @@ You can close your AWS account using the following procedure\.<a name="closing-t
 
 ## Accessing your AWS account after closure<a name="accessing-after-closure"></a>
 
-After you close an AWS account following the process described in the preceding steps, you can no longer use it to access AWS services\. However, during the Post\-Closure Period, which are the 90 days after your account is closed, you can still view your AWS account's past billing information and access [AWS Support](https://console.aws.amazon.com/support/home)\.
+After you close an AWS account following the process described in the preceding steps, you can no longer use it to access AWS services\. However, during the Post\-Closure Period, which are the 90 days after your account is closed, you can still view your AWS account's past billing information and access [AWS Support](https://console.aws.amazon.com/support/home)\. Your Amazon EC2 instances can be stopped after your account has been closed\. If you reopen your account, you might need to restart your Amazon EC2 instances\.
 
-During the Post\-Closure Period, AWS might retain any content that you didn't delete and any AWS services that you didn't terminate before you closed your AWS account\. You can access any remaining content or AWS services only by reopening your account during the Post\-Closure Period\. You can reopen your AWS account by contacting [AWS Support](https://console.aws.amazon.com/support/home)\. If you choose to reopen your account, you can access the content that you didn't delete and AWS services that you didn't terminate before closing your account\. However, you might be charged for the cost of running those AWS services during the Post\-Closure Period\. You can estimate the cost of running AWS services using the [AWS Pricing Calculator](https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html) in the *AWS Pricing Calculator User Guide*\.
+During the Post\-Closure Period, AWS services might retain any content that you didn't delete and any AWS services that you didn't terminate before you closed your AWS account\. You can access any remaining content or AWS services only by reopening your account during the Post\-Closure Period\. You can reopen your AWS account by contacting [AWS Support](https://console.aws.amazon.com/support/home)\. If you choose to reopen your account, you can access the content that you didn't delete and AWS services that you didn't terminate before closing your account\. However, you might be charged for the cost of running those AWS services during the Post\-Closure Period\. You can estimate the cost of running AWS services using the [AWS Pricing Calculator](https://docs.aws.amazon.com/pricing-calculator/latest/userguide/what-is-pricing-calculator.html) in the *AWS Pricing Calculator User Guide*\.
 
 ## After the post\-closure period<a name="post-closure-period"></a>
 

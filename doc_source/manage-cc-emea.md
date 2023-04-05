@@ -1,6 +1,6 @@
 # Managing your AWS Europe credit card payment methods<a name="manage-cc-emea"></a>
 
-You can use the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console to perform the following credit card tasks:
+You can use the [Payment preferences](https://console.aws.amazon.com/billing/home#/paymentpreferences) page of the AWS Billing console to perform the following credit card tasks:
 + [Add a credit card to your AWS Europe account](#add-credit-emea)
 + [Update your credit card](#update-cc-emea)
 + [Confirm that your credit card is up to date](#check-credit-card-expiration-date-emea)<a name="add-credit-emea"></a>
@@ -11,7 +11,7 @@ You can use the console to add a credit card to your account\.
 
 1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. In the navigation pane, choose [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods)\.
+1. In the navigation pane, choose [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentpreferences)\.
 
 1. Choose **Add a card**\.
 

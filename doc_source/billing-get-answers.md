@@ -1,4 +1,4 @@
-# Getting help with AWS Billing and Cost Management<a name="billing-get-answers"></a>
+# Getting help with AWS Billing<a name="billing-get-answers"></a>
 
 There are many resources available for you if you have any questions about your AWS Billing and Cost Management console tools, your charges, or payment methods\.
 
@@ -7,6 +7,7 @@ There are many resources available for you if you have any questions about your 
 + [Contacting AWS Support](#billing-support)
 + [Understanding your charged usage](#billing-support-usage)
 + [Monitoring your Free Tier usage](#billing-support-Free)
++ [Avoiding unexpected charges](checklistforunwantedcharges.md)
 
 ## AWS Knowledge Center<a name="billing-support-KC"></a>
 

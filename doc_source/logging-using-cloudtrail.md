@@ -10,44 +10,63 @@ To learn more about CloudTrail, including how to configure and enable it, see th
 
 This section shows a full list of the CloudTrail events related to Billing and Cost Management\.
 
+**Note**  
+The event source for `CreateCustomerCase`, `GetTaxExemptionTypes`, and `BatchGetTaxExemptions` are `taxconsole.amazonaws.com` instead of `billingconsole.amazonaws.com`\.
+
 
 ****  
 
 | Event name | Definition | 
 | --- | --- | 
 | AcceptFxPaymentCurrencyTermsAndConditions | Logs the acceptance of the terms and conditions of paying in a currency other than USD\. | 
+| BatchGetTaxExemptions | Logs the access to US tax exemptions of an account, and any linked accounts\.  | 
 | CloseAccount | Logs the closing of an account\. | 
+| CreateCustomerCase | Logs the creation of a customer support case to validate US tax exemption for an account\. | 
 | CreateOrigamiReportPreference | Logs the creation of the cost and usage report; management account only\. | 
 | DeleteOrigamiReportPreferences | Logs the deletion of the cost and usage report; management account only\. | 
 | DownloadCommercialInvoice | Logs the download of a commercial invoice\. | 
 | DownloadECSVForBillingPeriod | Logs the download of the eCSV file \(monthly usage report\) for a specific billing period\. | 
+| DownloadRegistrationDocument | Logs the download of the tax registration document\. | 
 | DownloadTaxInvoice | Logs the download of a tax invoice\. | 
 | EnableBillingAlerts | Logs the opt\-in of receiving CloudWatch billing alerts for estimated charges\. | 
+| FindECSVForBillingPeriod | Logs the retrieval of the ECSV file for a specific billing period\. | 
+| GetAccountEDPStatus | Logs the retrieval of the account’s EDP status\. | 
+| GetAddresses | Logs the access to tax address, billing address, and contact address of an account\. | 
+| GetAllAccounts | Logs the access to all member account numbers of the management account\. | 
+| GetAllAccountDetails | Logs the access to tax registration details of all member accounts of the management account\. | 
 | GetBillsForBillingPeriod | Logs the access of the account's usage and charges for a specific billing period\. | 
-| GetBillsForLinkedAccount | Logs the access of a management account retrieving the usage and charges of one of the membr accounts in the consolidated billing family for a specific billing period\. | 
+| GetBillsForLinkedAccount | Logs the access of a management account retrieving the usage and charges of one of the member accounts in the consolidated billing family for a specific billing period\. | 
 | GetCommercialInvoicesForBillingPeriod | Logs the access to the account's commercial invoices metadata for the specific billing period\. | 
 | GetConsolidatedBillingFamilySummary | Logs the access of the management account retrieving the summary of the entire consolidated billing family\. | 
 | GetLinkedAccountNames | Logs the retrieval from a management account of the member account names belonging to its consolidated billing family for a specific billing period\. | 
+| GetSupportedCountryCodes | Logs the access to all country codes supported by tax console\. | 
+| GetTaxExemptionTypes | Logs the access to all supported US exemption types by tax console\. | 
+| GetTaxInheritance | Logs the access to tax inheritance preference \(turning on or off\) of an account\. | 
 | GetTaxInvoicesMetadata | Logs the retrieval of tax invoices metadata\. | 
+| GetTaxRegistration | Logs the access to the tax registration number of an account\. | 
+| GetTotal | Logs the retrieval of the account’s total charges\. | 
 | GetTotalAmountForForecast | Logs the access to the forecasted charges for the specific billing period\. | 
+| ListCostAllocationTags | Logs the retrieval and listing of cost allocation tags\. | 
+| PreviewTaxRegistrationChange | Logs the preview of tax registration changes before confirmation\. | 
 | RedeemPromoCode | Logs the redemption of promotional credits for an account\. | 
 | SetAccountContractMetadata | Logs the creation, deletion, or update of the necessary contract information for public sector customers\. | 
+| SetAccountPreferences | Logs the updates of the account name, email, and password\. | 
 | SetAdditionalContacts | Logs the creation, deletion, or update of the alternate contacts for billing, operations, and security communications\. | 
 | SetContactAddress | Logs the creation, deletion, or update of the account owner contact information, including the address and phone number\. | 
-| SetCostExplorerPreferences | Logs the opt\-in history of AWS Cost Explorer for the account\. | 
 | SetCreatedByOptIn | Logs the opt\-in of the awscreatedby cost allocation tag preference\. | 
 | SetCreditSharing | Logs the history of the credit sharing preference for the management account\. | 
 | SetFreetierBudgetsPreference | Logs the preference \(opt\-in or opt\-out\) of receiving Free Tier usage alerts\. | 
 | SetFxPaymentCurrency | Logs the creation, deletion, or update of the preferred currency used to pay your invoice\. | 
-| SetIAMAccessPreference | Logs the creation, deletion, or update of the IAM user's ability to access to the billing console\. This setting is only for customers with root access\. | 
-| SetInvoicePreferences | Logs the update of the preference to receive PDF invoices by email\. | 
+| SetIAMAccessPreference | Logs the creation, deletion, or update of the IAM users ability to access to the billing console\. This setting is only for customers with root access\. | 
+| SetPANInformation | Logs the creating, deletion, or update of PAN information under AWS India\. | 
 | SetPayInformation | Logs the payment method history \(invoice or credit/debit card\) for the account\. | 
-| SetReportPreferences | Logs updates to the legacy Detailed Billing Reports preferences\. | 
 | SetRISharing | Logs the history of the RI/Savings Plans sharing preference for the management account\. | 
 | SetSecurityQuestions | Logs the creation, deletion, or update of the security challenge questions to help AWS identify you as the owner of the account\. | 
 | SetTagKeysState | Logs the active or inactive state of a particular cost allocation tag\. | 
+| SetTaxInheritance | Logs the preference \(opt\-in or opt\-out\) of tax inheritance\. | 
 | SetTaxRegistration | Logs the creation, deletion, or update of the tax registration number for an account\. | 
 | UpdateOrigamiReportPreference | Logs the update of the cost and usage report; management account only\. | 
+| ValidateAddress | Logs the validation of the tax address of an account\. | 
 
 ## Billing and Cost Management information in CloudTrail<a name="service-name-info-in-cloudtrail"></a>
 
@@ -68,7 +87,15 @@ Every event or log entry contains information about who generated the request\. 
 
 For more information, see the [CloudTrail userIdentity Element](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-event-reference-user-identity.html) in the *AWS CloudTrail User Guide*\.
 
-## Example: Billing and Cost Management log file entries<a name="understanding-service-name-entries"></a>
+## CloudTrail log entry examples<a name="CT-examples"></a>
+
+The following examples are provided for specific Billing and Cost Management CloudTrail log entry scenarios\.
+
+**Topics**
++ [Billing and Cost Management log file entries](#understanding-service-name-entries)
++ [Tax console](#CT-example-tax)
+
+### Billing and Cost Management log file entries<a name="understanding-service-name-entries"></a>
 
  A *trail* is a configuration that enables delivery of events as log files to an Amazon S3 bucket that you specify\. CloudTrail log files contain one or more log entries\. An event represents a single request from any source and includes information about the requested action, the date and time of the action, request parameters, and so on\. CloudTrail log files are not an ordered stack trace of the public API calls, so they don't appear in any specific order\.
 
@@ -107,4 +134,39 @@ The following example shows a CloudTrail log entry that demonstrates the `SetCon
         "eventType": "AwsConsoleAction",
         "recipientAccountId": "1111-2222-3333"
     }
+```
+
+### Tax console<a name="CT-example-tax"></a>
+
+The following example shows a CloudTrail log entry that uses the `CreateCustomerCase` action\.
+
+```
+{
+   "eventVersion":"1.05",
+   "userIdentity":{
+      "accountId":"111122223333",
+      "accessKeyId":"AIDACKCEVSQ6C2EXAMPLE"
+   },
+   "eventTime":"2018-05-30T16:44:04Z",
+   "eventSource":"taxconsole.amazonaws.com",
+   "eventName":"CreateCustomerCase",
+   "awsRegion":"us-east-1",
+   "sourceIPAddress":"100.100.10.10",
+   "requestParameters":{
+      "state":"NJ",
+      "exemptionType":"501C",
+      "exemptionCertificateList":[
+         {
+            "documentName":"ExemptionCertificate.png"
+         }
+      ]
+   },
+   "responseElements":{
+      "caseId":"case-111122223333-iris-2022-3cd52e8dbf262242"
+   },
+   "eventID":"5923c499-063e-44ac-80fb-b40example9f",
+   "readOnly":false,
+   "eventType":"AwsConsoleAction",
+   "recipientAccountId":"1111-2222-3333"
+}
 ```

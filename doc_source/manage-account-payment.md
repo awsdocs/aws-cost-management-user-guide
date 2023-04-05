@@ -6,24 +6,23 @@ You can use the Billing and Cost Management console to change account settings, 
 Some sections can only be edited by the AWS account root user\. If you do not see the **Edit** option, switch to the root user\.
 
 **Topics**
-+ [Editing Your Account name, root user password, and root user email address](#manage-account-payment-edit-user-name)
++ [Editing Your Account name, AWS account root user password, and AWS account root user email address](#manage-account-payment-edit-user-name)
 + [Editing contact information](#manage-account-payment-edit-contacts)
-+ [Changing which currency you use to pay your bill](#manage-account-payment-change-currency)
 + [Adding, changing, or removing alternate contacts](#manage-account-payment-alternate-contacts)
 + [Enabling and disabling regions](#manage-account-payment-enable-disable-regions)
 + [Updating and deleting tax registration numbers](#manage-account-payment-update-delete-tax-numbers)
 + [Turning on tax setting inheritance](#manage-account-tax-linked-accounts)
 + [Managing your US tax exemptions](#manage-account-tax-awstaxexemption)
 
-## Editing Your Account name, root user password, and root user email address<a name="manage-account-payment-edit-user-name"></a>
+## Editing Your Account name, AWS account root user password, and AWS account root user email address<a name="manage-account-payment-edit-user-name"></a>
 
-To edit your account name, root user password, or email address, perform the following procedure\. Email in this case refers to the AWS account root user email address\. This is the email address you use to sign in\.<a name="account-info"></a>
+To edit your account name, AWS account root user password, or email address, perform the following procedure\. Email in this case refers to the AWS account root user email address\. This is the email address you use to sign in\.<a name="account-info"></a>
 
-**To edit your account name, root user password, or root user email address**
+**To edit your account name, AWS account root user password, or AWS account root user email address**
 
 1. Sign in to the **Account Settings** page in the Billing and Cost Management console at [https://console\.aws\.amazon\.com/billing/home?\#/account](https://console.aws.amazon.com/billing/home?#/account)\.
 
-   You can also find this by signing into the Billing and Cost Management console \([https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\), selecting your account name on the top right, and choosing **My account**\. 
+   You can also find this by signing into the Billing and Cost Management console \([https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\), selecting your account name on the top right, and choose **Account**\. 
 
 1. On the **Account Settings** page, next to **Account Settings**, choose **Edit**\.
 
@@ -41,7 +40,7 @@ You can change the contact information associated with your account, including y
 
 1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
+1. On the navigation bar in the upper\-right corner, choose your account name \(or alias\), and choose **Account**\.
 
 1. Under **Contact Information**, choose **Edit**\.
 
@@ -49,20 +48,6 @@ You can change the contact information associated with your account, including y
 
 **Note**  
 You can add an email address for billing in the **Alternate Contacts** section to have AWS send a copy of billing\-related emails to that email address\. For example, AWS sends your **Billing contact address** a message that your monthly bill is ready\.
-
-## Changing which currency you use to pay your bill<a name="manage-account-payment-change-currency"></a>
-
-To change the currency that you use to pay your bill, for example, from Danish kroner to South African rand, perform the following procedure\.<a name="local-currency"></a>
-
-**To change the local currency associated with your account**
-
-1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
-
-1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
-
-1. Scroll down to the **Payment Currency Preference** section\. Next to **Payment Currency Preference**, choose **Edit**\.
-
-1. For **Select Payment Currency**, select the currency to pay your bill in and then choose **Update**\.
 
 ## Adding, changing, or removing alternate contacts<a name="manage-account-payment-alternate-contacts"></a>
 
@@ -74,7 +59,7 @@ Alternate contacts allows AWS to contact another person about issues with your a
 
 1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
+1. On the navigation bar in the upper\-right corner, choose your account name \(or alias\), and choose **Account**\.
 
 1. Scroll down to the **Alternate Contacts** section and choose **Edit**\.
 
@@ -124,7 +109,7 @@ Perform the applicable procedure:
 
 1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
+1. On the navigation bar in the upper\-right corner, choose your account name \(or alias\), and choose **Account**\.
 
 1. Under **AWS Regions**, next to the Region to activate, choose **Enable**\.
 
@@ -138,7 +123,7 @@ For more information about enabling a Region, including the permissions required
 
 1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
+1. On the navigation bar in the upper\-right corner, choose your account name \(or alias\), and choose **Account**\.
 
 1. Under **AWS Regions**, next to the Region to deactivate, choose **Disable**\.
 
@@ -220,9 +205,11 @@ If your state is eligible, you can manage your US tax exemptions on the **Tax Se
 
 1. In the navigation pane, choose **Tax Settings**\.
 
-1. Choose **Set up tax exemption**\.
+1. Choose all of the accounts to add the tax exemption\. Choose **Manage tax exemption** and select **Add tax exemption**\.
 
-   1. \(If you have existing tax exemptions uploaded\) Choose **Add tax exemption**\.
+   1. If you're logged in as a linked account, you can add tax exemptions to only the linked account\.
+
+   1. If you're logged in as a payer account, you can add tax exemptions to both payer and linked accounts\.
 
 1. Specify your exemption type and jurisdiction\.
 

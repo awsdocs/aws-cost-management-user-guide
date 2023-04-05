@@ -49,7 +49,7 @@ AWS services, such as Amazon EC2, Amazon RDS, and Amazon S3\.
 The type of charges based on line items details\. Also referred to as the `RECORD_TYPE` in the Cost Explorer API\. For more information, see [Term comparisons](#cost-categories-terms)\.
 
 **Tag key**  
-The cost allocation tag keys that are specified on the resource\. For more information, see [Using Cost Allocation Tags](cost-alloc-tags.md)\.
+The cost allocation tag keys that are specified on the resource\. For more information, see [Using AWS cost allocation tags](cost-alloc-tags.md)\.
 
 **Cost category**  
 A dimension from another cost category\. Using cost categories as a dimension helps you organize the levels of categories\.
@@ -119,11 +119,14 @@ For more information about cost categories quotas, see [Quotas and restrictions]
 
 | Value in API or JSON editor | Name used in the console | 
 | --- | --- | 
-| Usage | Usage | 
-| SavingsPlanCoveredUsage | Savings Plan Covered Usage | 
-| DiscountedUsage | Reservation applied usage | 
-| RIFee | Recurring reservation fee | 
-| SavingsPlanRecurringFee | Savings Plan Recurring Fee | 
-| Tax | Tax | 
 | Credit | Credit | 
+| DiscountedUsage | Reservation applied usage | 
+| Fee | Fee | 
+| Refund | Refund | 
+| RIFee | Recurring reservation fee | 
+| SavingsPlanCoveredUsage | Savings Plan Covered Usage | 
 | SavingsPlanNegation | Savings Plan Negation | 
+| SavingsPlanRecurringFee | Savings Plan Recurring Fee | 
+| SavingsPlanUpfrontFee | Savings Plan Upfront Fee | 
+| Tax | Tax | 
+| Usage | Usage | 

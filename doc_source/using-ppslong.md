@@ -23,7 +23,7 @@ To receive SNS notifications when prices change, see [Setting up notifications](
 
 ## Downloading an offer index file<a name="download-the-offer-index"></a>
 
-To download the offer index file, go to the following [URL](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/index.json):
+To download the offer index file, go to the following [URL](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/index.json) :
 
 ```
 https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/index.json
@@ -35,25 +35,25 @@ For more information, see [Reading the offer index file](reading-the-offer-index
 
 ## Downloading an offer file<a name="download-offers"></a>
 
-To download the offer file for the service that you want, go to the URL for that offer file\. For example, to download the current JSON version of the Amazon EC2 offer file, go to the following [URL](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/index.json):
+To download the offer file for the service that you want, go to the URL for that offer file\. For example, to download the current JSON version of the Amazon EC2 offer file, go to the following [URL](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/index.json) :
 
 ```
 https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/index.json
 ```
 
-The offer index file includes the JSON URLs\. To download the CSV version, replace the `.json` extension in the offer file URL with `.csv`\. If you want to download the offer file for a specific service and you know the service code, replace the `AmazonEC2` in the URL with the service code to download the offer file for that service\. If you don't know the service code, download the offer index file to find it\. If you want to download the offer file for a specific service in a specific Region and you know the service code and Region, use the URL for that regional offer file\. For example, to download the current JSON version of the Amazon EC2 offer file for US East \(N\. Virginia\), use the following [URL](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json):
+The offer index file includes the JSON URLs\. To download the CSV version, replace the `.json` extension in the offer file URL with `.csv`\. If you want to download the offer file for a specific service and you know the service code, replace the `AmazonEC2` in the URL with the service code to download the offer file for that service\. If you don't know the service code, download the offer index file to find it\. If you want to download the offer file for a specific service in a specific Region and you know the service code and Region, use the URL for that regional offer file\. For example, to download the current JSON version of the Amazon EC2 offer file for US East \(N\. Virginia\), use the following [URL](https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json) :
 
 ```
 https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/us-east-1/index.json
 ```
 
-To download the offer file for Savings Plans that apply to a particular service, go to the Savings Plans URL for that service\. For example, to download the current JSON version of Compute Savings Plans, use the following [URL](https://pricing.us-east-1.amazonaws.com/savingsPlan/v1.0/aws/AWSComputeSavingsPlan/current/index.json)\. You can use this URL for the regional offer files directly\.
+To download the offer file for Savings Plans that apply to a particular service, go to the Savings Plans URL for that service\. For example, to download the current JSON version of Compute Savings Plans, use the following [URL](https://pricing.us-east-1.amazonaws.com/savingsPlan/v1.0/aws/AWSComputeSavingsPlan/current/index.json) \. You can use this URL for the regional offer files directly\.
 
 ```
 https://pricing.us-east-1.amazonaws.com/savingsPlan/v1.0/aws/AWSComputeSavingsPlan/current/index.json
 ```
 
-To download the current JSON version of SageMaker Savings Plans, use the following [URL](https://pricing.us-east-1.amazonaws.com/savingsPlan/v1.0/aws/AWSMachineLearningSavingsPlans/current/index.json)\.
+To download the current JSON version of SageMaker Savings Plans, use the following [URL](https://pricing.us-east-1.amazonaws.com/savingsPlan/v1.0/aws/AWSMachineLearningSavingsPlans/current/index.json) \.
 
 ```
 https://pricing.us-east-1.amazonaws.com/savingsPlan/v1.0/aws/AWSMachineLearningSavingsPlans/current/index.json

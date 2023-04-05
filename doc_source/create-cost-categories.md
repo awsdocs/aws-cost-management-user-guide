@@ -2,11 +2,13 @@
 
 You can create cost categories to organize your cost and usage information\. Regular accounts and the management account in AWS Organizations have default access to create cost categories\. Rules aren't mutually exclusive, and you can control the order that the rules apply in\. Allow up to 24 hours after creating a cost category for your usage records to be updated with values\.
 
-There are three major steps in creating cost categories\.
+There are five major steps in creating cost categories\.
 
 1. Define a name for your cost category \(for example, `business units`, `Teams`\)\.
 
 1. \(Optional\) Add a tag to your cost category\. For more information about tags, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) in the *AWS General Reference guide*\.
+
+1. \(Optional\) Set the lookback period for your cost category rules\. The default will be set to the current month\.
 
 1. Write the rules to categorize your costs into cost category values \(for example, `Team-A`, `Team-B`, `Team-C`\)\.
 
@@ -28,6 +30,8 @@ Use the following procedure to create a new cost category\.<a name="create-cost-
 
 1. \(Optional\) To add a tag, choose **Add new resource tag** and enter a key and value\.
 
+1. \(Optional\) To add a lookback period for your cost category rules, choose the **Apply cost category rules starting any specified month from the previous 12 months** radio button, and select the month where you want to retroactively apply the rules\.
+
 1. Choose **Next**\.
 
 1. Choose **Define category values**\.
@@ -47,6 +51,8 @@ Use the following procedure to create a new cost category\.<a name="create-cost-
 **Contains**, **Starts with**, and **Ends with** are only supported with Accounts and Tag dimensions\. If you use these operators with Accounts, the engine evaluates against account name, and not account ID\.
 
    Choose a filtered value for your **Dimension** in the attribute selector\.
+
+1. Choose a dimension operator for your rule from the dropdown\. You can choose between `AND` and `OR`\. `AND` is the default operator\. Changing the operator impacts all dimensions in this rule\.
 
 1. For an inherited value rule type, choose **Account** or **Tag** for **Dimension**\. If **Tag** is the **Dimension**, choose the **Tag key** to inherit the cost category value from\.
 **Note**  

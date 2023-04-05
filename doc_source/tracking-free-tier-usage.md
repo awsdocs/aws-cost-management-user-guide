@@ -1,21 +1,21 @@
 # Tracking your AWS Free Tier usage<a name="tracking-free-tier-usage"></a>
 
 You can track your AWS Free Tier usage in the following ways:
-+ Set up Free Tier alerts using AWS Budgets\. By default, AWS Budgets automatically notifies you over email when you exceed 85 percent of the Free Tier limit for each service\. You can also configure AWS Budgets to track your usage to 100 percent of the Free Tier limit\.
-+ Review your AWS Free Tier usage using the **Top Free Tier Services by Usage** table in the Billing console\.
++ Turn on Free Tier usage alerts in **Billing preferences**\. By default, AWS Free Tier usage alerts automatically notifies you over email when you exceed 85 percent of the Free Tier limit for each service\. You can also configure AWS Budgets to track your usage to 100 percent of the Free Tier limit by setting a zero spend budget using the template\.
++ Review your AWS Free Tier usage using the **Free Tier** page in the Billing console\.
 
 **Topics**
-+ [AWS Free Tier usage alerts using AWS Budgets](#free-budget)
++ [Using AWS Free Tier usage alerts](#free-budget)
 + [Top AWS Free Tier services table](#free-tier-table)
 + [Trackable AWS Free Tier services](#free-tier-services)
 
-## AWS Free Tier usage alerts using AWS Budgets<a name="free-budget"></a>
+## Using AWS Free Tier usage alerts<a name="free-budget"></a>
 
-AWS Budgets allows you to track and take action on your cost and usage\. For more information about this feature, see [Managing your costs with AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html)\.
+You can use AWS Free Tier usage alerts to track and take action on your cost and usage\. For more information about this feature, see [Managing your costs with AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html)\.
 
-AWS Budgets automatically notifies you over email when you exceed 85 percent of your Free Tier limit for each service\. For additional tracking, you can set up AWS Budgets to track your usage to 100 percent of the Free Tier limit for each service\. For example, you can set up a budget to send you an alert when you’re forecasted to exceed 100 percent of the Free Tier limit for Amazon Elastic Block Store\. For instructions on how to set up a usage budget, see [Creating a usage budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html#create-usage-budget)\.
+AWS Free Tier usage alerts automatically notifies you over email when you exceed 85 percent of your Free Tier limit for each service\. For additional tracking, you can configure AWS Budgets to track your usage to 100% of the Free Tier limit by setting a `zero spend budget` using the template\. You can also filter your budget to track individual services\. For example, you can set up a budget to send you an alert when you’re forecasted to exceed 100 percent of the Free Tier limit for Amazon Elastic Block Store\. For instructions on how to set up a usage budget, see [Creating a usage budget](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-create.html#create-usage-budget)\.
 
-AWS Free Tier usage alerts cover non\-expiring Free Tier offerings, such as the first 25 GB of Amazon DynamoDB storage or the first 10 custom Amazon CloudWatch metrics\. The alerts also cover AWS Free Tier offerings that expire after 12 months, such as the 750 hours per month of Amazon EC2 Windows t2\.micro instance usage and the first 5 GB of standard Amazon S3 storage\. The alerts don’t cover Free Tier offerings that expire in less than 12 months, such as the first 30 days of using Amazon Lightsail\.
+AWS Free Tier usage alerts cover Free Tier offerings active in the current month, such as the first 25 GB of Amazon DynamoDB storage or the first 10 custom Amazon CloudWatch metrics\. It's common to have all three types of AWS Free Tier offerings active within the first 12 months\. For example, you use Amazon EC2, Amazon SageMaker, and Amazon S3\. You'll see Free Tier usage for those usage types in the AWS Billing console, **Free Tier** page\. After using SageMaker for two months, the short\-term trial will end while Amazon EC2 and Amazon S3 continue\. After 12 months from account creation, the Amazon EC2 12\-month free period expires, but Amazon S3 will continue because the service offers **Always free** status\.
 
 When you exceed the Free Tier limit for a service, AWS sends an email to the email address that you used to create your account\. Use the following procedure to change the email address for AWS Free Tier usage alerts\.<a name="customize-email"></a>
 

@@ -62,24 +62,15 @@ The **Activate IAM Access** setting doesn't control access to the following page
 + The Cost Management view in the AWS Console Mobile Application
 + The Billing SDK APIs \(AWS Cost Explorer, AWS Budgets, and AWS Cost and Usage Reports APIs\)
 + The cost and usage widget on the AWS Console and AWS Systems Manager Application Manager\.
++ The Account SDK APIs\.
 
 To activate the **Activate IAM Access** setting, you must log in to your AWS account using the root user credentials, and then select the setting in the [My Account](https://console.aws.amazon.com/billing/home#/account) page\. Activate this setting in each account where you want to allow IAM user and role access to the Billing console pages\. If you use AWS Organizations, activate this setting in each management or member account where you want to allow IAM user and role access to console pages\.
 
 **Note**  
-The **Activate IAM Access** setting isn't available to IAM users with administrator access\. This setting is available only to the root user of the account\.
+The **Activate IAM Access** setting isn't available to IAM users with administrator access\. This setting is available only to the AWS account root user\.
 
-If the **Activate IAM Access** setting isn't activated, then IAM users and roles in the account can't access the Billing console pages\. This is true even if they have administrator access or the required IAM policies\.<a name="billing-activate-iam-access"></a>
+If the **Activate IAM Access** setting isn't activated, then IAM users and roles in the account can't access the Billing console pages\. This is true even if they have administrator access or the required IAM policies\.
 
-**To activate IAM user and role access to the Billing and Cost Management console**
-
-1. Sign in to the AWS Management Console with your root account credentials \(specifically, the email address and password that you used to create your AWS account\)\.
-
-1. On the navigation bar, choose your account name, and then choose [My Account](https://console.aws.amazon.com/billing/home#/account)\.
-
-1. Next to **IAM User and Role Access to Billing Information**, choose **Edit**\.
-
-1. Select the **Activate IAM Access** check box to activate access to the Billing and Cost Management console pages\.
-
-1. Choose **Update**\.
+To activate IAM user and role access to the AWS Billing console, see [IAM tutorial: Delegate access to the AWS Billing console](https://docs.aws.amazon.com/IAM/latest/UserGuide/tutorial_billing.html) in the *IAM User Guide*\.
 
 After you activate IAM access, you must also attach the required IAM policies to the IAM users or roles\. The IAM policies can grant or deny access to specific Billing features\. For more information, see [Using identity\-based policies \(IAM policies\) for AWS Billing](billing-permissions-ref.md)\.

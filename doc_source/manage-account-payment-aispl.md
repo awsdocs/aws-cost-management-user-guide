@@ -1,35 +1,35 @@
 # Managing an account in India<a name="manage-account-payment-aispl"></a>
 
-If you sign up for a new account and choose India for your contact address, your user agreement is with Amazon Internet Services Pvt\. Ltd \(AISPL\), a local AWS seller in India\. AISPL manages your billing, and your invoice total is listed in rupees instead of dollars\. After you create an account with AISPL, you can't change the country in your contact information\. 
+If you sign up for a new account and choose India for your contact address, your user agreement is with Amazon Web Services India Private Limited \(AWS India\), a local AWS seller in India\. AWS India manages your billing, and your invoice total is listed in rupees instead of dollars\. After you create an account with AWS India, you can't change the country in your contact information\. 
 
-If you have an existing account with an India address, your account is either with AWS or AISPL, depending on when you opened the account\. To learn whether your account is with AWS or AISPL, see the procedure [Determining Which Company Your Account is With](#determine-seller)\. If you're an existing AWS customer, you can continue to use your AWS account\. You also can choose to have both an AWS account and an AISPL account, though they can't be consolidated into the same payment family\. For information about managing an AWS account, see [Managing an AWS account](manage-account-payment.md)\. 
+If you have an existing account with an India address, your account is either with AWS or AWS India, depending on when you opened the account\. To learn whether your account is with AWS or AWS India, see the procedure [Determining Which Company Your Account is With](#determine-seller)\. If you're an existing AWS customer, you can continue to use your AWS account\. You also can choose to have both an AWS account and an AWS India account, though they can't be consolidated into the same payment family\. For information about managing an AWS account, see [Managing an AWS account](manage-account-payment.md)\. 
 
-If your account is with AISPL, follow the procedures in this chapter to manage your account\. This chapter explains how to sign up for an AISPL account, edit information about your AISPL account, and add or edit your Permanent Account Number \(PAN\)\. 
+If your account is with AWS India, follow the procedures in this chapter to manage your account\. This chapter explains how to sign up for an AWS India account, edit information about your AWS India account, and add or edit your Permanent Account Number \(PAN\)\. 
 
-As part of the credit card verification during signup, AISPL charges your credit card 2 INR\. AISPL refunds the 2 INR after verification is done\. You might be redirected to your bank as part of the verification process\.
+As part of the credit card verification during signup, AWS India charges your credit card 2 INR\. AWS India refunds the 2 INR after verification is done\. You might be redirected to your bank as part of the verification process\.
 
 **Topics**
 + [Determining Which Company Your Account is With](#determine-seller)
-+ [Signing up for AISPL](#aisplsignup)
-+ [Managing your AISPL account](#manage-aispl-account)
++ [Signing up for AWS India](#aisplsignup)
++ [Managing your AWS India account](#manage-aispl-account)
 
 ## Determining which company your account is with<a name="determine-seller"></a>
 
-AWS services are provided by both AWS and AISPL\. Use this procedure to determine which seller your account is with\.
+AWS services are provided by both AWS and AWS India\. Use this procedure to determine which seller your account is with\.
 
 **To determine which company your account is with**
 
 1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. In the page footer, look at the copyright notice\. If the copyright is for Amazon Web Services, then your account is with AWS\. If the copyright is for Amazon Internet Services Private Ltd\., then your account is with AISPL\.
+1. In the page footer, look at the copyright notice\. If the copyright is for Amazon Web Services, then your account is with AWS\. If the copyright is for Amazon Internet Services Private Ltd\., then your account is with AWS India\.
 
-## Signing up for AISPL<a name="aisplsignup"></a>
+## Signing up for AWS India<a name="aisplsignup"></a>
 
-AISPL is a local seller of AWS\. Use the following procedure to sign up for an AISPL account if your contact address is in India\.
+AWS India is a local seller of AWS\. Use the following procedure to sign up for an AWS India account if your contact address is in India\.
 
-**To sign up for an AISPL account**
+**To sign up for an AWS India account**
 
-If your contact address is in India and you want to open an account, you sign up with AISPL instead of AWS\.
+If your contact address is in India and you want to open an account, you sign up with AWS India instead of AWS\.
 
 1. Go to https://console\.aws\.amazon\.com/, and then choose **Sign In to the Console**\.
 
@@ -47,36 +47,31 @@ If your contact address is in India and you want to open an account, you sign up
 
 1. Under **PAN Information**, choose **No** if you do not have a Permanent Account Number \(PAN\) or want to add it later\. If you have a PAN and want to add it now, choose **Yes**, and in the **PAN** field type your PAN\.
 
-1. Choose **Verify Card and Continue**\. You must provide your CVV as part of the verification process\. AISPL charges your card 2 INR as part of the verification process\. AISPL refunds the 2 INR after verification is done\.
+1. Choose **Verify Card and Continue**\. You must provide your CVV as part of the verification process\. AWS India charges your card 2 INR as part of the verification process\. AWS India refunds the 2 INR after verification is done\.
 
 1. For **Provide a telephone number**, type your phone number\. If you have a phone extension, for **Ext**, type your phone extension\.
 
 1. Choose **Call Me Now**\. After a few moments, a four\-digit pin will appear on your screen\.
 
-1. Accept the automated call from AISPL\. On your phone keypad, type the four\-digit pin displayed on your screen\.
+1. Accept the automated call from AWS India\. On your phone keypad, type the four\-digit pin displayed on your screen\.
 
 1. Once the automated call verifies your contact number, choose **Continue to Select Your Support Plan**\.
 
 1. On the **Support Plan** page, select your support plan, and then choose **Continue**\. After your payment method is verified and your account is activated, you receive an email confirming the activation of your account\.
 
-## Managing your AISPL account<a name="manage-aispl-account"></a>
+## Managing your AWS India account<a name="manage-aispl-account"></a>
 
 Use the [Account Settings](https://console.aws.amazon.com/billing/home#/account) and [Tax Settings](https://console.aws.amazon.com/billing/home#/tax) pages of the Billing and Cost Management console to perform the following tasks:
-+ [Edit your user name, password, or email address](#aispl-account-info)
-+ [Edit your contact information](#aispl-contact-info)
-+ [Add, update, or remove alternate contacts](#aispl-account-contacts)
-+ [Add or edit a Permanent Account Number (PAN)](#aispl-add-pan)
-+ [Edit multiple Permanent Account Numbers (PANs)](#aispl-edit-pan)
-+ [Edit multiple Goods and Services Tax Numbers (GSTs)](#aispl-edit-gst)
-+ [View a tax invoice](#aispl-view-tax)<a name="aispl-account-info"></a>
+
+**Topics**<a name="aispl-account-info"></a>
 
 **To edit your user name, password, or email address**
 
-You can change the name, password, and email address associated with your AISPL account\.
+You can change the name, password, and email address associated with your AWS India account\.
 
 1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
+1. On the navigation bar in the upper\-right corner, choose your account name \(or alias\), and choose **Account**\.
 
 1. Next to **Account Settings**, choose **Edit**\.
 
@@ -88,26 +83,26 @@ You can change the name, password, and email address associated with your AISPL 
 
 **To edit your contact information**
 
-You can change the contact information associated with your AISPL account, including your mailing address, telephone number, and website address\. You cannot change your country\.
+You can change the contact information associated with your AWS India account, including your mailing address, telephone number, and website address\. You cannot change your country\.
 
 1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
+1. On the navigation bar in the upper\-right corner, choose your account name \(or alias\), and choose **Account**\.
 
 1. Under **Contact Information**, choose **Edit**\.
 
 1. For the fields that you want to change, type your updated information, and then choose **Update**\.
 
 **Note**  
-You can choose to add an email address for billing in the **Alternate Contacts** section to have AISPL send a copy of billing\-related emails to that email address\. For example, AISPL sends a copy of your monthly bill to your Billing contact address\.<a name="aispl-account-contacts"></a>
+You can choose to add an email address for billing in the **Alternate Contacts** section to have AWS India send a copy of billing\-related emails to that email address\. For example, AWS India sends a copy of your monthly bill to your Billing contact address\.<a name="aispl-account-contacts"></a>
 
 **To add, update, or remove alternate contacts**
 
-You can add alternate contacts to your account\. Alternate contacts enable AISPL to contact another person about issues with your account\. This is even the case if you're unavailable\. 
+You can add alternate contacts to your account\. Alternate contacts enable AWS India to contact another person about issues with your account\. This is even the case if you're unavailable\. 
 
 1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
 
-1. On the navigation bar, choose your account name, and then choose [https://console.aws.amazon.com/billing/home#/account](https://console.aws.amazon.com/billing/home#/account)\.
+1. On the navigation bar in the upper\-right corner, choose your account name \(or alias\), and choose **Account**\.
 
 1. Scroll down to the **Alternate Contacts** section, and then choose **Edit**\.
 
@@ -123,7 +118,21 @@ You can add your Permanent Account Number \(PAN\) to your account and edit it\.
 
 1. On the **Tax Settings** navigation bar, choose **Edit**\.
 
-1. For **Permanent Account Number \(PAN\)**, enter your PAN, and then choose **Update**\.<a name="aispl-edit-pan"></a>
+1. For **Permanent Account Number \(PAN\)**, enter your PAN, and then choose **Update**\.<a name="aispl-remove-pan"></a>
+
+**To remove a PAN**
+
+You can remove your Permanent Account Number \(PAN\) in your account\. 
+
+1. Sign in to the AWS Management Console and open the AWS Billing console at [https://console\.aws\.amazon\.com/billing/](https://console.aws.amazon.com/billing/)\.
+
+1. In the navigation pane, choose **Tax Settings**\.
+
+1.  Choose the **Account ID** you want to remove the PAN from\.
+
+1. Choose **manage tax registration**\.
+
+1. Choose **Delete TRN**\.<a name="aispl-edit-pan"></a>
 
 **To edit multiple PAN numbers**
 

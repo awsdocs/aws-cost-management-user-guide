@@ -1,8 +1,13 @@
-# Using Cost Allocation Tags<a name="cost-alloc-tags"></a>
+# Using AWS cost allocation tags<a name="cost-alloc-tags"></a>
 
-A tag is a label that you or AWS assigns to an AWS resource\. Each tag consists of a *key* and a *value*\. For each resource, each tag key must be unique, and each tag key can have only one value\. You can use tags to organize your resources, and cost allocation tags to track your AWS costs on a detailed level\. After you activate cost allocation tags, AWS uses the cost allocation tags to organize your resource costs on your cost allocation report, to make it easier for you to categorize and track your AWS costs\. AWS provides two types of cost allocation tags, an *AWS generated tags* and *user\-defined tags*\. AWS, or AWS Marketplace ISV defines, creates, and applies the AWS generated tags for you, and you define, create, and apply user\-defined tags\. You must activate both types of tags separately before they can appear in Cost Explorer or on a cost allocation report\.
 
-The following diagram illustrates the concept\. In the example, you've assigned and activated tags on two Amazon EC2 instances, one tag called Cost Center and another tag called Stack\. Each of the tags has an associated value\. You also activated the AWS generated tags, `createdBy` before creating these resources\. The `createdBy` tag tracks who created a resource\. The user\-defined tags use the `user` prefix, and the AWS generated tag uses the `aws:` prefix\.
+|  | 
+| --- |
+| For questions about your AWS bills or to appeal your charges, contact AWS Support to address your inquiries immediately\. To get help, see [Getting help with AWS Billing](billing-get-answers.md)\. To understand your bills page contents, see [Viewing your monthly charges](invoice.md)\. | 
+
+A tag is a label that you or AWS assigns to an AWS resource\. Each tag consists of a *key* and a *value*\. For each resource, each tag key must be unique, and each tag key can have only one value\. You can use tags to organize your resources, and cost allocation tags to track your AWS costs on a detailed level\. After you activate cost allocation tags, AWS uses the cost allocation tags to organize your resource costs on your cost allocation report, to make it easier for you to categorize and track your AWS costs\. AWS provides two types of cost allocation tags, an *AWS\-generated tags* and *user\-defined tags*\. AWS, or AWS Marketplace ISV defines, creates, and applies the AWS\-generated tags for you, and you define, create, and apply user\-defined tags\. You must activate both types of tags separately before they can appear in Cost Explorer or on a cost allocation report\.
+
+The following diagram illustrates the concept\. In the example, you've assigned and activated tags on two Amazon EC2 instances, one tag called Cost Center and another tag called Stack\. Each of the tags has an associated value\. You also activated the AWS\-generated tags, `createdBy` before creating these resources\. The `createdBy` tag tracks who created a resource\. The user\-defined tags use the `user` prefix, and the AWS\-generated tag uses the `aws:` prefix\.
 
 ![\[Example Keys\]](http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/images/Tag_Example.png)
 
@@ -16,13 +21,13 @@ At the end of the billing cycle, the total charges \(tagged and untagged\) on th
 
 You can also use tags to filter views in Cost Explorer\. For more information about Cost Explorer, see [Analyzing your costs with AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html) \. 
 
- For more information about activating the AWS generated tags, see [Activating the AWS\-Generated Cost Allocation Tags](activate-built-in-tags.md)\. For more information about applying and activating user\-defined tags, see [User\-Defined Cost Allocation Tags](custom-tags.md)\. All tags can take up to 24 hours to appear in the Billing and Cost Management console\.
+ For more information about activating the AWS\-generated tags, see [Activating the AWS\-generated cost allocation tags](activate-built-in-tags.md)\. For more information about applying and activating user\-defined tags, see [User\-defined cost allocation tags](custom-tags.md)\. All tags can take up to 24 hours to appear in the Billing and Cost Management console\.
 
 **Note**  
 As a best practice, do not include sensitive information in tags\.
-Only management account in an organization and single accounts that are not members of an organization have access to the **Cost Allocation Tags** manager in the Billing console\.
+Only management account in an organization and single accounts that are not members of an organization have access to the **cost allocation tags** manager in the Billing console\.
 
 **Topics**
-+ [AWS\-Generated Cost Allocation Tags](aws-tags.md)
-+ [User\-Defined Cost Allocation Tags](custom-tags.md)
++ [AWS\-generated cost allocation tags](aws-tags.md)
++ [User\-defined cost allocation tags](custom-tags.md)
 + [Monthly cost allocation report](configurecostallocreport.md)

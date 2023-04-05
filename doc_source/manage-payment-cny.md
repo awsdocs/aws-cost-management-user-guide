@@ -21,7 +21,7 @@ To use China bank redirect as your payment method, your account must meet the fo
 
 ### Setting up China bank redirect payments<a name="enable-cny-redirect"></a>
 
-To use China bank redirect as your payment method, you must activate Chinese yuan payments on the Billing and Cost Management console\.
+To use China bank redirect as your payment method, you must activate Chinese yuan payments on the AWS Billing console\.
 
 To activate Chinese yuan payments, you must submit information for identity verification\. For a personal account, you need your national ID number for verification\. For a business account, you must have the following information:
 + Your uniform social credit code or organization code
@@ -96,13 +96,13 @@ To change your default payment method to Pay by invoice, follow these steps\.<a 
 
 1. In the **Change your payment method and currency** dialog box, choose **Yes, I want to proceed**\.
 
-After you change your payment method, your preferred currency defaults to US dollars\. To change your preferred currency back to Chinese yuan, choose **Make default** next to the China bank redirect payment method\. To change your preferred currency to another supported currency, see [Changing which currency you use to pay your bill](manage-account-payment.md#manage-account-payment-change-currency)\.
+After you change your payment method, your preferred currency defaults to US dollars\. To change your preferred currency back to Chinese yuan, choose **Make default** next to the China bank redirect payment method\. To change your preferred currency to another supported currency, see [Changing the currency to pay your bill](manage-payment-method.md#manage-account-payment-change-currency)\.
 
 ## Use a Chinese yuan credit card<a name="yuan-cc"></a>
 
 If you have an account with AWS Inc\., are charged in USD, and are based in China, you can use the following sections to add a Chinese yuan \(CNY\) credit card to your account\.
 
-You can use the **Payment Methods** page of the Billing and Cost Management console to perform the following tasks: 
+You can use the **Payment Methods** page of the AWS Billing console to perform the following tasks: 
 + [Set up a Chinese yuan credit card](#yuan-cc-first-time)
 + [Switch from a Chinese yuan credit card to an international credit card](#yuan-cc-to-international)
 + [Add a new Chinese yuan credit card](#yuan-cc-after-first-time)

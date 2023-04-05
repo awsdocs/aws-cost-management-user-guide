@@ -9,6 +9,7 @@ To start activating access to the Billing console, see [Tutorial: Delegate Acces
 + [Overview of managing access permissions](control-access-billing.md)
 + [Using identity\-based policies \(IAM policies\) for AWS Billing](billing-permissions-ref.md)
 + [AWS Billing policy examples](billing-example-policies.md)
++ [Migrating access control for AWS Billing](migrate-granularaccess-whatis.md)
 
 ## Audience<a name="security_iam_audience"></a>
 

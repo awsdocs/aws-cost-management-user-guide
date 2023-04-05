@@ -18,7 +18,7 @@ To learn more about the EU regulation, see the [European Commission’s website]
 
 ## Payment verification<a name="emea-payment-verification"></a>
 
-You can use the Billing and Cost Management console to confirm that you payment requires verification or to reattempt any failed payments\.<a name="emea-payment-verification-process"></a>
+You can use the AWS Billing console to confirm that you payment requires verification or to reattempt any failed payments\.<a name="emea-payment-verification-process"></a>
 
 **To verify your payment**
 
@@ -28,7 +28,7 @@ You can use the Billing and Cost Management console to confirm that you payment 
 
 1. Under **Payments due**, locate the invoice that you want to pay and choose **Verify and pay**\.
 
-1. On the choose [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page, select the preferred payment method\.
+1. On the choose [Payment preferences](https://console.aws.amazon.com/billing/home#/paymentpreferences) page, select the preferred payment method\.
 
 1. Choose **Complete payment**\.
 
@@ -45,7 +45,7 @@ If you can't successfully complete your verification, we recommend that you take
 + Contact your bank to confirm that your contact information is up to date
 + Contact your bank for details about why your verification has failed
 + Clear your cache and cookies or use a different browser
-+ Navigate to the [Payment Methods](https://console.aws.amazon.com/billing/home#/paymentmethods) page of the Billing and Cost Management console and update your billing contact information
++ Navigate to the [Payment preferences](https://console.aws.amazon.com/billing/home#/paymentpreferences) page of the AWS Billing console and update your billing contact information
 
 ## AWS Organizations<a name="emea-cc-awsorg"></a>
 
